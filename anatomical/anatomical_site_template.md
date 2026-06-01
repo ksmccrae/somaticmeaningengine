@@ -37,6 +37,12 @@ How sensation or activation from this site tends to move:
 - 
 - 
 
+## Associated Structures
+
+Related or functionally linked anatomical elements:
+- 
+- 
+
 ## Emotional / Symbolic Associations
 
 Common emotional or symbolic meanings attached to this site:
