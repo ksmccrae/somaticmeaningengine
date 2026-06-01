@@ -1,4 +1,4 @@
-# K.S. McCrae Ontology – Layer & Relationship Specification v1
+# K.S. McCrae Ontology: Somatic Meaning Engine
 
 **Status:** Draft v1  
 **Last Updated:** 2026-06-01  
