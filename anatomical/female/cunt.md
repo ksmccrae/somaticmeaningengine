@@ -45,6 +45,14 @@ How sensation or activation from this site tends to move:
 - Penetration → deep internal sensation → emotional and somatic opening or resistance
 - Often propagates strongly into clitoral and uterine mirrors
 
+## Associated Structures
+
+Related or functionally linked anatomical elements:
+- Labia
+- Clit
+- Urethra
+- Perineum
+
 ## Emotional / Symbolic Associations
 
 Common emotional or symbolic meanings:
