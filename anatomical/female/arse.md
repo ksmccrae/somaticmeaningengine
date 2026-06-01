@@ -41,6 +41,13 @@ How sensation or activation from this site tends to move:
 - External stimulation → pelvic floor and internal awareness → deep internal sensation
 - Often creates strong whole-pelvis resonance
 
+## Associated Structures
+
+Related or functionally linked anatomical elements:
+- Perineum
+- Cunt
+- Pelvic floor
+
 ## Emotional / Symbolic Associations
 
 Common emotional or symbolic meanings:
