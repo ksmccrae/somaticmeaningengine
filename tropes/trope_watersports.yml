@@ -1,0 +1,148 @@
+# ============================================================
+# K.S. McCRAE SOMATIC LEXICON SYSTEM
+# Trope: Watersports
+# Register: Female Sovereign / Male Devotional
+# Version: 2.0
+# ============================================================
+#
+# AUTHORING MODEL
+# Register Layer:  underscore tokens — controlled lexicon items
+# System Layer:    underscore tokens — behavioral primitives
+# Narrative Layer: natural language — expressive scene guidance
+# ============================================================
+
+Trope: watersports
+Version: "2.0"
+Register: Female Sovereign / Male Devotional
+Status: Active
+
+Metadata:
+  Canonical_ID: trope_watersports
+  Canonical_Label: Watersports
+  Aliases:
+    - watersports
+    - gold register
+    - golden stream
+    - chosen flow
+    - sovereign offering
+  Trope_Class: sovereign_offering
+  System_Class:
+    - sovereign_release
+    - deliberate_offering
+    - covenant_marking
+    - anointing
+  Primary_Modality:
+    - gold_offering
+    - sovereign_release
+  Secondary_Modality:
+    - marking
+    - anointing
+    - covenant_receipt
+  Consent_Load: explicit_high
+  Corpus_Status:
+    Present_In_Base_Trope_Set: true
+    Corpus_Extract_Reviewed: true
+    Stories_Confirmed: 2
+
+Identity:
+  Label: Watersports
+  Description: >
+    She offers gold. He receives. The offering is
+    intentional, chosen, and precise. This is not
+    degradation — it is the body's most intimate
+    offering given from sovereign position. He receives
+    open. Does not turn. Does not flinch. The gold
+    marks him as hers. Both are altered.
+
+Power_Map:
+  Default: She chooses when. She aims with deliberateness.
+
+System_Behavior:
+  Core_Dynamics:
+    - sovereign_release
+    - deliberate_aim
+    - covenant_receipt
+    - marking
+    - consecration
+  Activation_Requirements:
+    - explicit_consent
+    - position_established
+    - sovereign_choice_made
+  Narrative_Functions:
+    - sovereign_gift
+    - covenant_marking
+    - consecration
+    - anointing
+    - warmth_as_claim
+
+Active_Sites:
+  Note: female_cunt, shared_mouth, shared_lips_face, shared_skin, shared_throat
+
+Allowed_Register:
+
+  Register_Layer:
+    Primary_Terms:
+      - gold
+      - golden_arc
+      - chosen_flow
+      - covenant_stream
+      - consecration
+      - anointing
+      - sovereign_offering
+      - the_warm_claim
+      - christened_in_gold
+
+  System_Layer:
+    - sovereign_release
+    - deliberate_aim
+    - covenant_receipt
+    - anointing
+    - marking
+
+  Narrative_Layer:
+    - She adjusted position
+    - Not display — aim
+    - The first thread of warmth
+    - The stream established
+    - He receives open
+    - Does not close his mouth
+    - The scent of claiming
+
+Fluid_Palette:
+  Note: female_gold (primary), female_flood (preceded — still present), female_gloss (still present)
+
+Emotional_Arc:
+  - decision
+  - precision
+  - offering
+  - receipt
+  - consecration
+  - silence
+
+Banned_Frames:
+  - pissing_on_him
+  - golden_shower (porn cliché)
+  - toilet_play
+  - urination (clinical)
+  - piss (absolute)
+
+Prompt_Behavior:
+  Use_When:
+    - sovereign offering is the scene centre
+    - consecration through gold is the register
+    - Arc 4 Made to Receive
+  Avoid_When:
+    - degradation frame replaces consecration
+    - consent not explicitly established
+
+Build:
+  Session: Current
+  Version: "2.0"
+  Status: Complete
+  Corpus_Frequency: confirmed
+  Stories: 2
+  Upgrade_Actions:
+    - rebuilt_with_authoring_model
+    - metadata_layer_added
+    - system_behavior_added
+    - three_layer_register

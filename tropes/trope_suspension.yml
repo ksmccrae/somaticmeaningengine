@@ -1,0 +1,139 @@
+# ============================================================
+# K.S. McCRAE SOMATIC LEXICON SYSTEM
+# Trope: Suspension
+# Register: Variable
+# Version: 1.0
+# ============================================================
+#
+# AUTHORING MODEL
+# Register Layer:  underscore tokens — controlled lexicon items
+# System Layer:    underscore tokens — behavioral primitives
+# Narrative Layer: natural language — expressive scene guidance
+# ============================================================
+
+Trope: suspension
+Version: "1.0"
+Register: Variable
+Status: Active
+
+Metadata:
+  Canonical_ID: trope_suspension
+  Canonical_Label: Suspension
+  Aliases:
+    - suspension
+    - bondage suspension
+    - ritual suspension
+    - hook play
+    - endurance ritual
+    - devotion through endurance
+  Trope_Class: endurance_architecture
+  System_Class:
+    - load_bearing
+    - sustained_position
+    - pain_to_signal
+    - endurance_as_devotion
+  Primary_Modality:
+    - body_elevated
+    - sustained_position
+  Secondary_Modality:
+    - load_distribution
+    - endurance_register
+    - hook_register
+  Consent_Load: explicit_high
+  Corpus_Status:
+    Present_In_Base_Trope_Set: false
+    Corpus_Extract_Reviewed: true
+    Stories_Confirmed: 3
+    Corpus_Frequency: low
+
+Identity:
+  Label: Suspension
+  Description: >
+    The body elevated and held. Whether by rope or hook
+    or chain — the body lifted from the ground bears
+    its own weight differently. Gravity becomes the
+    architecture. The sustained position requires
+    total surrender. Endurance is the register.
+    The body held in the air as offering.
+
+Power_Map:
+  Default: The one who holds the ropes holds absolute
+
+System_Behavior:
+  Core_Dynamics:
+    - elevation
+    - load_distribution
+    - sustained_position
+    - endurance_register
+    - lowering_and_release
+  Activation_Requirements:
+    - explicit_consent
+    - structural_rigging
+    - weight_calculation
+    - time_limit_established
+  Narrative_Functions:
+    - endurance_as_devotion
+    - body_offered_to_air
+    - trust_made_physical
+    - load_carried_as_covenant
+  Typical_Tempo: deliberate
+
+Active_Sites:
+  Note: shared_hand (wrists), shared_skin (full surface), shared_arse (if hook active)
+
+Allowed_Register:
+
+  Register_Layer:
+    Primary_Terms:
+      - suspended
+      - the_chains_holding
+      - weight_carried_in_flesh
+      - endurance_as_offering
+      - elevated_and_held
+      - the_body_in_the_air
+
+  System_Layer:
+    - elevation
+    - load_distribution
+    - sustained_position
+    - endurance_register
+
+  Narrative_Layer:
+    - The body above the ground
+    - Gravity the architecture
+    - The weight carried in flesh
+    - Endurance as the only devotion
+    - The lowering as covenant release
+
+Fluid_Palette:
+  Note: shared_sweat (heavy under strain)
+
+Emotional_Arc:
+  - elevation
+  - sustained_endurance
+  - the_body_at_limit
+  - descent
+  - restoration
+
+Banned_Frames:
+  - rope_bunny (casual label)
+  - tied_up (casual)
+  - suspension_play (casual label)
+
+Prompt_Behavior:
+  Use_When:
+    - endurance is the scene's register
+    - physical trust architecture must be extreme
+    - the body as offering to air
+  Avoid_When:
+    - comfort is prioritised
+    - safety protocols absent
+    - urgency replaces endurance
+
+Build:
+  Session: Current
+  Version: "1.0"
+  Status: Complete
+  Corpus_Frequency: low
+  Stories: 3
+  Is_New_Trope: true

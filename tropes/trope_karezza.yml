@@ -1,0 +1,201 @@
+# ============================================================
+# K.S. McCRAE SOMATIC LEXICON SYSTEM
+# Trope: Karezza
+# Register: Variable — Equal or Sovereign
+# Version: 1.0
+# Cross-reference: female_cunt, male_cock, male_prostate,
+#                  male_seed, female_gloss,
+#                  pair_cunt_arse (dual site held),
+#                  trope_slow_sex, trope_orgasm_control,
+#                  trope_worship, trope_postpartum
+# Corpus: the_grammar_of_lineage (primary — named practice),
+#         his_balls_my_altar (non-ejaculatory register)
+# ============================================================
+
+Trope: karezza
+Version: "1.0"
+Register: Variable
+Status: Active
+
+Identity:
+  Label: Karezza
+  Register: Sustained_threshold_without_ejaculatory_release
+  Tone: Presence_over_performance / Union_held_not_spent
+  Description: >
+    Union sustained at the threshold without crossing
+    into ejaculatory release. The bodies in contact,
+    the cock within the cunt, both held at the edge
+    of the possible — and staying there. Not edging,
+    which approaches and withdraws. Not slow_sex,
+    which simply deprioritises climax. Karezza holds
+    the full bodily architecture of union at the
+    sustained threshold: seed not released, flood
+    held, the bodies present to each other in the
+    extended nearness of it. Time slows. The threshold
+    becomes its own state. The flood held becomes
+    meaning. What the bodies gave each other was not
+    the release but the sustained presence.
+
+Power_Map:
+  Configuration: Variable — equal or sovereign
+  Dynamic: >
+    Karezza does not require a power differential.
+    In the Grammar of Lineage it operates across
+    generational pairs in coordinated sustained union.
+    Both bodies contribute equally to the holding.
+    The challenge is the same for both — to sustain
+    the threshold without crossing it. In femdom
+    register she governs whether he crosses.
+    In equal register they hold together.
+  Sustained_Threshold: >
+    The physical discipline of remaining at the
+    threshold requires specific somatic attention.
+    The cock within without thrusting. The cunt
+    around without clenching toward release.
+    The bodies holding the architecture of union
+    without the movement that would resolve it.
+    Both bodies in continuous present-tense contact.
+
+Active_Sites:
+  Primary:
+    - female_cunt (holding without contracting)
+    - male_cock (within without thrusting)
+    - male_prostate (present but not milked)
+  Secondary:
+    - shared_skin (the contact of bodies held together)
+    - shared_breath (synchronised in the sustained state)
+    - female_gspot (bloom_point approached but not pressed)
+
+Allowed_Register:
+
+  Sustained_Register:
+    - held
+    - sustained
+    - within_without_moving
+    - the_threshold_held
+    - the_bodies_in_sustained_union
+    - still_inside_her
+    - the_cock_within_held
+    - the_cunt_around_held
+    - the_sustained_contact
+
+  Threshold_Register:
+    - at_the_edge_and_remaining
+    - the_flood_held
+    - seed_withheld_not_suppressed
+    - the_threshold_as_destination
+    - not_crossing_not_receding
+    - sustained_at_the_exact_edge
+    - the_bloom_point_approached_and_held
+
+  Presence_Register:
+    - bodies_present_to_each_other
+    - the_sustained_nearness
+    - contact_as_the_act
+    - being_within_as_the_act
+    - the_held_union
+    - presence_over_performance
+    - time_slowing_in_the_sustained_state
+
+  Breath_Register:
+    - breath_synchronised
+    - breathing_together
+    - the_braid_of_breath
+    - each_breath_felt_by_the_other
+    - inhale_expanding_what_is_held
+    - breath_as_the_only_movement
+
+  Sacred_Terms:
+    - flood_held_becomes_meaning
+    - the_threshold_as_covenant
+    - sustained_union_as_offering
+    - presence_as_the_gift
+    - the_held_edge_sacred
+    - bodies_as_continuum
+    - patience_as_power
+
+  Extended:
+    - the_bodies_in_the_sustained_state_like_water_held
+    - time_bending_in_the_sustained_threshold
+    - what_was_not_given_as_the_gift
+    - the_union_held_so_long_both_bodies_remade_by_holding
+    - the_flood_held_until_it_became_something_else
+
+Somatic_Sequence:
+  Entry:
+    - the_union_established
+    - both_bodies_stilling
+    - the_sustained_threshold_beginning
+
+  Held:
+    - neither_thrusting_nor_withdrawing
+    - the_cock_within_held
+    - the_cunt_around_attending
+    - breath_the_only_movement
+    - the_threshold_as_sustained_state
+
+  The_Discipline:
+    - the_body_wanting_to_move
+    - the_stillness_chosen
+    - the_threshold_held_through_the_wanting
+    - the_bloom_point_present_and_not_approached
+    - the_seed_present_and_not_summoned
+
+  Long_Threshold:
+    - time_losing_ordinary_measure
+    - the_bodies_present_to_each_other_fully
+    - the_threshold_state_as_its_own_completion
+    - or_the_bodies_eventually_subsiding
+
+  Release_Or_Subsiding:
+    - the_eventual_withdrawal_without_ejaculatory_event
+    - or_the_eventual_release_at_chosen_moment
+    - both_endings_valid
+    - the_altered_bodies_after
+
+Fluid_Palette:
+  Primary:
+    - female_gloss (sustained arousal throughout)
+    - male_pregloss (present without movement toward release)
+  Notably_Absent:
+    - male_seed (withheld — this is the architecture)
+    - female_flood (held unless threshold finally crossed)
+  Note: >
+    Karezza is the trope where seed and flood are
+    most purposefully withheld. The fluid palette is
+    gloss and pregloss — the continuous evidence of
+    sustained arousal — rather than the release fluids.
+    Write the continuous arousal without the release.
+
+Emotional_Arc:
+  - Union (the bodies in sustained contact)
+  - Threshold (approaching and remaining)
+  - The_held_state (time slowing — both present)
+  - Patience (the discipline of the holding)
+  - Meaning (what the holding built)
+  - Completion (the eventual end — with or without release)
+
+Banned_Frames:
+  Confused_With_Slow_Sex:
+    - just_slow_fucking (slow_sex is paced — karezza is held)
+    - taking_their_time (pace not threshold)
+  Confused_With_Orgasm_Control:
+    - edging_with_insertion (edging approaches and withdraws)
+    - denied_inside (orgasm_control is about permission)
+  Comic:
+    - tantric_sex (New_Age cliche — only if sacred framing absent)
+  Clinical:
+    - coitus_reservatus (clinical Latin)
+
+Build:
+  Session: Current
+  Version: "1.0"
+  Status: Complete
+  Notes: >
+    Grammar of Lineage is the primary corpus evidence —
+    karezza penetration across generational pairs held
+    at threshold until the eventual cascade. Distinct
+    from slow_sex (pace) and orgasm_control (permission).
+    Karezza is specifically the sustained threshold
+    architecture: within, held, both present, neither
+    moving toward resolution.

@@ -1,0 +1,190 @@
+# ============================================================
+# K.S. McCRAE SOMATIC LEXICON SYSTEM
+# Trope: Sensation Play
+# Register: Variable — Attending / Attended
+# Version: 1.0
+# Cross-reference: shared_skin, shared_nipples,
+#                  shared_thighs, female_cunt,
+#                  shared_hand, shared_tongue,
+#                  trope_temperature_play, trope_service,
+#                  trope_sensory_overload, trope_restraint
+# ============================================================
+
+Trope: sensation_play
+Version: "1.0"
+Register: Variable
+Status: Active
+
+Identity:
+  Label: Sensation Play
+  Register: Focused_sensory_attention / Building_without_overload
+  Tone: Precise_attention / Layered_sensation
+  Description: >
+    The architecture of sensation built deliberately —
+    layer by layer, site by site, intensity calibrated
+    precisely. Where sensory_overload is the body
+    beyond its own management, sensation play is the
+    body attended to: each sensation given its own
+    space, its own moment, before the next arrives.
+    The contrast between textures, the mapping of
+    surfaces with different instruments, the sustained
+    single sensation versus the sharp brief one.
+    The blindfold that makes each touch a discovery.
+    The feather before the pinwheel. The ice before
+    warmth. The building that has its own intelligence.
+
+Power_Map:
+  Attending: Variable — governs what sensation arrives
+  Attended: Variable — receives, discovers, registers
+  Dynamic: >
+    The attending body controls what sensation the
+    attended body receives, in what order, with what
+    intensity. The attended body cannot predict.
+    Often combined with restraint or blindfold so that
+    the attended body receives each sensation without
+    anticipating it. The attending body reads the
+    response — breath, skin, sound — and calibrates.
+    Precision is the register.
+
+Active_Sites:
+  Primary:
+    - shared_skin (primary sensory surface)
+    - shared_nipples (high sensitivity — contrast site)
+    - shared_thighs (inner — sensitive)
+    - female_cunt (attended as sensory site)
+    - female_clitoris (pearl — precise sensation)
+  Secondary:
+    - shared_nape (back of neck — neglected sensitivity)
+    - shared_belly (soft — tender)
+    - shared_lips (exterior mouth)
+  Instruments:
+    - shared_hand (fingers, nails, palm)
+    - shared_tongue (wet warmth)
+    - shared_breath (temperature of breath)
+    - implement_feather (light, diffuse)
+    - implement_pinwheel (sharp, rolling)
+    - implement_ice (cold — see also temperature_play)
+
+Allowed_Register:
+
+  Texture_Register:
+    - the_contrast_between
+    - soft_then_sharp
+    - warm_then_cold
+    - diffuse_then_precise
+    - the_feather_then_the_pinwheel
+    - the_nails_then_the_palm
+    - breath_then_tongue
+
+  Mapping_Register:
+    - mapping_the_surface
+    - attending_each_site_in_turn
+    - finding_the_sensitive_places
+    - the_survey_of_the_body
+    - each_site_given_its_moment
+    - the_body_discovered_in_order
+
+  Response_Register:
+    - the_skin_raising
+    - the_shiver_at_the_contrast
+    - the_inhale_that_answers_the_sensation
+    - the_body_unable_to_predict_the_next
+    - the_discovery_of_each_touch
+    - the_breath_that_tells_what_the_sensation_did
+
+  Building_Register:
+    - sensation_layering
+    - each_touch_adding_to_the_previous
+    - the_body_accumulating_sensation
+    - building_without_overwhelming
+    - the_sustained_attention_building
+    - the_intelligence_of_the_building
+
+  Sacred_Terms:
+    - the_body_attended_to_completely
+    - each_sensation_given_its_covenant
+    - the_attended_body_sovereign_in_its_discovery
+    - precision_as_devotion
+    - the_mapping_as_knowing
+
+  Extended:
+    - the_feather_after_the_pinwheel_as_revelation
+    - the_body_unable_to_predict_discovered_entirely
+    - each_site_named_by_the_sensation_it_was_given
+    - the_attending_body_reading_the_response_before_the_next
+    - sensation_as_vocabulary_between_two_bodies
+
+Somatic_Sequence:
+  Preparation:
+    - the_attended_body_stilled
+    - blindfold_or_sustained_presence
+    - the_first_sensation_as_beginning
+
+  Mapping:
+    - sensation_introduced_at_one_site
+    - the_body_registering
+    - the_next_sensation_somewhere_else
+    - the_mapping_proceeding
+
+  Contrast:
+    - soft_followed_by_sharp
+    - or_sharp_followed_by_soft
+    - the_contrast_as_the_event
+    - the_body_unable_to_settle_into_expectation
+
+  Building:
+    - sensation_accumulating
+    - the_body_increasingly_sensitised
+    - each_touch_landing_louder_than_the_last
+    - the_build_without_the_overflow
+
+  Completion:
+    - the_body_thoroughly_attended_to
+    - or_the_crossing_into_sensory_overload_register
+    - the_aftermath_of_the_attended_body
+
+Fluid_Palette:
+  Primary:
+    - female_gloss (builds throughout sensation map)
+    - shared_sweat (light — the arousal warmth)
+  Secondary:
+    - male_pregloss (under sustained sensation)
+  Note: >
+    Sensation play produces a slow fluid build — the
+    gloss increasing as the body is mapped, not sudden
+    flood. Write the gradual increasing of arousal
+    through the sensation sequence.
+
+Emotional_Arc:
+  - Stillness (the body waiting for what arrives)
+  - Discovery (each sensation a finding)
+  - Building (the accumulation of attended sensation)
+  - The_body_spoken_to_completely (every site known)
+  - Aftermath (the body still registering what it received)
+
+Banned_Frames:
+  Confused_With_Temperature_Play:
+    - temperature_only (sensation_play uses temperature
+      as one tool among many — not the centre)
+  Confused_With_Sensory_Overload:
+    - too_much (overload is past capacity — sensation play
+      is calibrated below that threshold)
+  Comic:
+    - tickling (comedy register)
+    - feather_duster (domestic comic)
+  Clinical:
+    - sensory_stimulation (clinical)
+    - tactile_therapy (clinical)
+
+Build:
+  Session: Current
+  Version: "1.0"
+  Status: Complete
+  Notes: >
+    Distinct from temperature_play (which centres on
+    hot/cold as the primary register) and sensory_overload
+    (which is the body past its capacity). Sensation play
+    is the calibrated, building, precise attention to
+    the body's sensory capacity — each sensation given
+    its own moment, the contrast between sensations
+    as the register, the mapping as the act.

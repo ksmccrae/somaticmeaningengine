@@ -1,0 +1,220 @@
+# ============================================================
+# K.S. McCRAE SOMATIC LEXICON SYSTEM
+# Trope: Voyeurism / Exhibition
+# Register: Variable — Watcher / Displayed
+# Version: 1.0
+# Cross-reference: shared_skin, shared_thighs,
+#                  female_cunt, male_cock,
+#                  pair_cunt_thighs, pair_skin_seed,
+#                  trope_body_altar, trope_gyno_play,
+#                  trope_public_sex
+# Corpus: the_cum_gallery, rise_of_breasts,
+#         open_air_open_cunt, the_red_grove
+# ============================================================
+
+Trope: voyeurism_exhibition
+Version: "1.0"
+Register: Variable
+Status: Active
+
+Identity:
+  Label: Voyeurism / Exhibition
+  Register: Sovereign_gaze / Sovereign_display
+  Tone: Witnessed / Witness
+  Description: >
+    Two sides of the same covenant. The watcher and
+    the watched. Exhibition is the erotic charge of
+    being seen — the body offered to an audience,
+    the display that is not performance but declaration.
+    Voyeurism is the erotic charge of seeing — the gaze
+    that attends without touching, the witness whose
+    arousal belongs entirely to what they observe.
+    Both are sovereign acts. Both are chosen. The body
+    displayed chooses to be seen. The watcher is
+    invited into their seeing. Nothing here is theft.
+
+Power_Map:
+  Displayed: Variable — sovereign in display
+  Watcher: Variable — sovereign in their gaze
+  Dynamic: >
+    The displayed body governs what is shown and when.
+    Exhibition is sovereign display, not passive exposure.
+    The watcher's role is to witness fully — their arousal
+    is the offering returned to the displayed body.
+    Power can sit with either body depending on scene
+    architecture. In rise_of_breasts the displayed body
+    holds all power. In the_cum_gallery the watchers
+    hold evaluative power. Both configurations valid.
+  Consent_Architecture: >
+    Exhibition is always chosen. The audience is
+    always invited. Voyeurism here is always
+    consensual — the watcher is known or permitted.
+    Non-consensual observation is excluded from
+    this trope entirely.
+
+Active_Sites:
+  Displayed_Body:
+    Primary:
+      - female_cunt (the primary display site in corpus)
+      - female_breasts (saturation register — rise_of_breasts)
+      - shared_skin (surface of display)
+    Secondary:
+      - male_cock (displayed and evaluated — cum_gallery)
+      - shared_thighs (spread — framing the display)
+      - female_clitoris (bared — exposed to gaze)
+  Watcher_Body:
+    Primary:
+      - shared_eyes (the gaze itself)
+      - male_cock (responding to watching — arousal evidence)
+      - shared_hand (self-stimulation during watching)
+
+Allowed_Register:
+
+  Display_Register:
+    - spread_open
+    - displayed
+    - offered_to_view
+    - opened_for_the_audience
+    - the_body_given_over_to_seeing
+    - held_open
+    - exposed_and_sovereign
+    - the_visible_cunt
+    - laid_bare
+    - offered_without_shame
+    - the_display_sovereign
+    - the_body_as_declaration
+
+  Gaze_Register:
+    - witnessed
+    - watched
+    - seen_fully
+    - the_audience_attending
+    - eyes_on_her
+    - the_circuit_of_looking
+    - attending_without_touching
+    - aroused_by_seeing
+    - the_watcher_receiving
+    - eyes_that_take_without_hands
+
+  Evaluation_Register:
+    - judged
+    - assessed
+    - measured
+    - selected
+    - catalogued
+    - the_inspection
+    - ranked_and_noted
+    - quantified_and_seen
+
+  Response_Register:
+    - arousal_through_being_seen
+    - cunt_responding_to_the_watching
+    - wet_under_their_gaze
+    - cock_rising_under_observation
+    - the_body_answering_the_audience
+    - the_displayed_body_producing_its_truth
+
+  Sacred_Terms:
+    - witness_as_covenant
+    - display_as_declaration
+    - the_seen_body_sovereign
+    - offered_to_view_as_offering
+    - the_audience_as_altar
+    - their_watching_received
+    - gaze_returned_as_arousal
+
+  Extended:
+    - the_open_body_under_the_lights
+    - cunt_spread_for_the_watchers
+    - their_eyes_the_only_touch
+    - the_circuit_completed_in_seeing
+    - the_watcher_spent_from_watching
+    - the_displayed_body_wet_from_their_looking
+
+Somatic_Sequence:
+  Exhibition_Arc:
+    Preparation:
+      - the_body_readied_for_display
+      - the_knowledge_that_they_will_see
+      - arousal_arriving_before_the_audience
+    Exposure:
+      - the_opening_to_their_view
+      - the_gaze_arriving_on_the_body
+      - the_body_registering_being_seen
+      - gloss_forming_under_their_watching
+    Under_Gaze:
+      - sustained_display
+      - the_body_producing_evidence_of_arousal
+      - the_audience_seeing_what_the_body_cannot_hide
+      - sovereign_in_the_exposure
+    Completion:
+      - the_circuit_closed
+      - the_watchers_spent
+      - the_displayed_body_marked_by_their_looking
+      - both_sides_of_the_gaze_altered
+
+  Voyeurism_Arc:
+    Arrival:
+      - the_watcher_in_position
+      - the_scene_beginning_without_them
+    Watching:
+      - the_gaze_attending_fully
+      - their_own_body_responding_to_the_seen
+      - the_arousal_that_belongs_only_to_watching
+      - hands_perhaps_or_stillness
+    Receipt:
+      - the_watcher_receiving_what_the_displayed_gives
+      - the_circuit_closed_between_watched_and_watching
+
+Fluid_Palette:
+  Displayed_Body:
+    - female_gloss (produces under their watching)
+    - female_flood (if climax reached under observation)
+    - male_pregloss (rises in the watcher)
+    - male_seed (released by watching — rise_of_breasts)
+  Atmospheric:
+    - shared_musk (concentrated in display space)
+  Saturation_Register:
+    - multiple_fluid_sources_landing_on_displayed_body
+    - the_saturation_of_rise_of_breasts
+
+Pairs_Active:
+  - pair_cunt_thighs (spread display — thighs framing)
+  - pair_skin_seed (when watchers release onto displayed body)
+
+Emotional_Arc:
+  - Sovereignty_of_display (the body chosen to be seen)
+  - The_gaze_received (feeling their watching)
+  - Arousal_through_being_witnessed (the body responding)
+  - Covenant_of_seeing (the watcher bound by what they watched)
+  - Saturation_or_selection (the scene's completion)
+
+Banned_Frames:
+  Non_Consent:
+    - peeping (non-consensual voyeurism register)
+    - spying (without consent)
+    - hidden_camera_register
+    - watched_without_knowing
+  Degrading:
+    - performing_for_them (performance not sovereignty)
+    - putting_on_a_show (comic/crude)
+    - flaunting (comic register)
+  Clinical:
+    - exhibitionism (clinical pathology term)
+    - voyeurism (clinical standalone — use as scene register only)
+
+Build:
+  Session: Current
+  Version: "1.0"
+  Status: Complete
+  Corpus_Evidence: >
+    the_cum_gallery (evaluative display of male bodies),
+    rise_of_breasts (sovereign reception under audience),
+    open_air_open_cunt (sequential visible acts),
+    the_red_grove (witnessed blood rite).
+  Notes: >
+    Complementary pair — exhibition and voyeurism are
+    two sides of the same scene. One trope entry covers
+    both because they are always architecturally linked.
+    The display implies a watcher; the watcher implies
+    a display.

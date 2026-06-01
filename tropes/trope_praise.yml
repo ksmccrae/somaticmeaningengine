@@ -1,0 +1,203 @@
+# ============================================================
+# K.S. McCRAE SOMATIC LEXICON SYSTEM
+# Trope: Praise
+# Register: Variable
+# Version: 1.0
+# Cross-reference: shared_mouth, shared_skin,
+#                  female_cunt, male_cock,
+#                  trope_worship, trope_power_exchange,
+#                  trope_awakening, trope_body_reclamation
+# Corpus: birth_of_cunt (claim it, say it, it is yours),
+#         rebirth_of_cunt (proof in grip),
+#         the_gospel_of_ms_girth (take it for me)
+# ============================================================
+
+Trope: praise
+Version: "1.0"
+Register: Variable
+Status: Active
+
+Identity:
+  Label: Praise
+  Register: Verbal_affirmation_as_erotic_register
+  Tone: Spoken_truth / Received_declaration
+  Description: >
+    The word that lands as confirmation. The sentence
+    that tells the body it is doing what it was made
+    to do. Praise in the erotic register is not
+    flattery — it is the spoken acknowledgment of the
+    body's truth. Good. Yes. Exactly that. You were
+    built for this. Say it. Yours. The word arrives and
+    the body opens further, produces more, holds longer.
+    The praised body is not diminished by needing to
+    hear it. The praising voice is not soft — it is
+    precise. The praise is true or it lands wrong.
+
+Power_Map:
+  Praising: Variable — the voice that confirms
+  Praised: Variable — the body that receives
+  Dynamic: >
+    Praise does not require a power differential but
+    it always acknowledges one implicitly: the praiser
+    knows what is good, the praised body is doing it.
+    In femdom register she praises the cock at the edge
+    of what it can hold. In devotional register she
+    praises the tongue that attends her. In awakening
+    register she names the cunt as it opens for the
+    first time. The power of the praise is in its
+    precision — it names exactly what the body did.
+  Naming_Register: >
+    Praise as naming: say it, claim it, yours.
+    The instruction to declare is praise in its
+    most demanding form — not telling the body
+    it did well, but requiring the body to claim
+    what it is. Birth of Cunt: say it. Say my cunt.
+    The saying is the claiming is the praise.
+
+Active_Sites:
+  Praised_Sites:
+    Primary:
+      - female_cunt (named, claimed, declared sovereign)
+      - male_cock (praised at threshold, in service)
+      - shared_skin (you are beautiful — not in this lexicon)
+    Secondary:
+      - female_breasts (praised in saturation)
+      - shared_arse (praised in depth)
+  Praising_Instrument:
+    - shared_mouth (the voice)
+    - shared_lips (the word)
+
+Allowed_Register:
+
+  Direct_Praise:
+    - good
+    - exactly_that
+    - yes
+    - there
+    - that_is_it
+    - right_there
+    - you_hold_it_well
+    - you_take_it
+    - you_were_built_for_this
+    - good_girl
+    - good_boy
+    - well_held
+    - perfectly_done
+
+  Naming_Register:
+    - say_it
+    - claim_it
+    - yours
+    - it_is_yours
+    - name_it
+    - tell_me_what_it_is
+    - say_my_cunt
+    - say_mine
+    - name_what_you_are
+
+  Declaration_Register:
+    - you_are_open
+    - you_can_hold_it
+    - built_to_do_this
+    - your_cunt_is_awake_now
+    - not_broken_not_borrowed
+    - no_more_pretending
+
+  Confirmation_Register:
+    - proof_in_grip
+    - the_body_confirming
+    - the_word_landing_true
+    - the_praise_received_as_true
+    - the_praised_body_opening_further
+    - more_because_told_so
+
+  Sacred_Terms:
+    - the_word_as_covenant
+    - praise_as_declaration_of_truth
+    - the_named_body_sovereign
+    - the_claim_made_aloud
+    - the_word_that_opens_what_was_closed
+
+  Extended:
+    - the_sentence_that_lands_in_the_body_not_the_ears
+    - told_what_she_already_knew_and_needed_said
+    - the_word_good_and_the_body_flooding
+    - say_it_and_the_cunt_clenching_as_it_did
+    - claimed_in_her_own_voice_because_she_was_told_to
+
+Somatic_Sequence:
+  The_Word_Before:
+    - the_anticipation_of_being_told
+    - the_threshold_before_praise_lands
+
+  Praise_Landing:
+    - the_word_arriving
+    - the_body_receiving_it_before_the_mind
+    - the_immediate_response_gloss_or_grip_or_breath
+    - the_body_more_open_for_having_been_told
+
+  The_Naming:
+    - told_to_say_it
+    - the_pause_before_claiming
+    - the_voice_saying_it_aloud
+    - the_body_altered_by_the_saying
+
+  Continuation:
+    - more_because_the_praise_gave_permission
+    - the_body_performing_better_having_been_seen_truly
+    - the_sustained_arousal_of_being_confirmed
+
+  Aftermath:
+    - the_praised_body_held_in_what_it_was_told
+    - the_claim_that_remains_after_the_word
+
+Fluid_Palette:
+  Primary:
+    - female_gloss (increases at praised word)
+    - male_pregloss (rises under praise at threshold)
+  Secondary:
+    - female_tears (cathartic — in awakening/reclamation)
+    - female_flood (triggered by claimed naming)
+  Note: >
+    Praise frequently triggers fluid response before
+    physical stimulation. The word good and the gloss
+    forming. The claim yours and the flood building.
+    Write the bodily response to the word, not just
+    to the act.
+
+Pairs_Active:
+  - pair_tongue_cunt (praised tongue at pearl)
+  - pair_hand_cunt (praised at depth)
+
+Emotional_Arc:
+  - Anticipation (of being seen truly and told so)
+  - Receipt (the word landing before thought)
+  - Opening (the body more for having been told)
+  - Claiming (the naming — mine, yours, say it)
+  - Integration (the claimed body sovereign in its claim)
+
+Banned_Frames:
+  Hollow_Praise:
+    - you_are_so_beautiful (generic flattery — not this)
+    - amazing (vague intensifier)
+    - incredible (non-specific)
+    - perfect (without specific referent)
+  Infantilising:
+    - good_baby (age play register — excluded)
+    - clever_girl (patronising diminutive)
+  Clinical:
+    - positive_reinforcement (behaviorist frame)
+    - verbal_affirmation (clinical)
+
+Build:
+  Session: Current
+  Version: "1.0"
+  Status: Complete
+  Notes: >
+    Praise is distinct from worship (which attends
+    to the body physically) and from body_reclamation
+    (which is the sovereign claiming of the body).
+    Praise is the word that lands. The specific spoken
+    confirmation that the body receives and responds to
+    before thought. Write the body's response to the
+    word, not the word alone.

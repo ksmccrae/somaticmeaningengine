@@ -1,0 +1,141 @@
+# ============================================================
+# K.S. McCRAE SOMATIC LEXICON SYSTEM
+# Trope: Slow Sex
+# Register: Variable / Presence Register
+# Version: 1.0
+# ============================================================
+#
+# AUTHORING MODEL
+# Register Layer:  underscore tokens — controlled lexicon items
+# System Layer:    underscore tokens — behavioral primitives
+# Narrative Layer: natural language — expressive scene guidance
+# ============================================================
+
+Trope: slow_sex
+Version: "1.0"
+Register: Variable / Presence Register
+Status: Active
+
+Metadata:
+  Canonical_ID: trope_slow_sex
+  Canonical_Label: Slow Sex
+  Aliases:
+    - slow sex
+    - karezza
+    - presence over performance
+    - arousal without climax
+    - collapse instead of climax
+    - non-goal-oriented sex
+  Trope_Class: presence_architecture
+  System_Class:
+    - non_goal_register
+    - sustained_threshold
+    - collapse_as_completion
+    - karezza_pacing
+  Primary_Modality:
+    - sustained_presence
+    - non_goal_movement
+  Secondary_Modality:
+    - threshold_sustained
+    - collapse_as_end
+    - karezza_register
+  Consent_Load: established_prior
+  Corpus_Status:
+    Present_In_Base_Trope_Set: false
+    Corpus_Extract_Reviewed: true
+    Stories_Confirmed: 3
+    Corpus_Frequency: low
+
+Identity:
+  Label: Slow Sex
+  Description: >
+    No rush toward a peak. The movement is the point.
+    The bodies present to each other without agenda.
+    Karezza — entry without thrust, stillness inside
+    each other, breath shared. Or the slow exploration
+    that has no destination. The collapse into shared
+    exhaustion that is its own completion. Neither
+    climax nor denial — just presence.
+
+Power_Map:
+  Default: Variable or absent. Slow sex often dissolves
+
+System_Behavior:
+  Core_Dynamics:
+    - non_goal_movement
+    - sustained_presence
+    - threshold_held_without_peak
+    - karezza_stillness
+    - collapse_as_completion
+  Activation_Requirements:
+    - urgency_absent
+    - presence_intent
+    - time_available
+  Narrative_Functions:
+    - presence_as_the_point
+    - non_goal_as_register
+    - bodies_without_agenda
+    - slow_as_devotion
+    - collapse_as_completion
+  Typical_Tempo: deliberate
+
+Active_Sites:
+  Note: full body — no single primary site
+
+Allowed_Register:
+
+  Register_Layer:
+    Primary_Terms:
+      - presence_without_urgency
+      - no_rush
+      - the_body_without_agenda
+      - rhythm_not_thrust
+      - sustained_threshold
+      - the_collapse_that_was_its_own_end
+
+  System_Layer:
+    - non_goal_register
+    - karezza_pacing
+    - sustained_presence
+    - threshold_held
+
+  Narrative_Layer:
+    - No rush toward anything
+    - The bodies present to each other
+    - Entry without thrust
+    - Stillness inside each other
+    - The collapse was completion
+    - No climax was needed
+
+Fluid_Palette:
+  Note: minimal — whatever is natural and present
+
+Emotional_Arc:
+  - presence
+  - sustained_stillness
+  - slow_build_without_peak
+  - collapse
+  - completion
+
+Banned_Frames:
+  - boring (dismissive)
+  - blue_balls (crude)
+  - frustration_register
+  - performance_register
+
+Prompt_Behavior:
+  Use_When:
+    - presence is the scene's subject
+    - non-goal movement is the register
+    - karezza or sustained-without-peak is the architecture
+  Avoid_When:
+    - urgency is part of the scene
+    - climax is the intended arc
+
+Build:
+  Session: Current
+  Version: "1.0"
+  Status: Complete
+  Corpus_Frequency: low
+  Stories: 3
+  Is_New_Trope: true

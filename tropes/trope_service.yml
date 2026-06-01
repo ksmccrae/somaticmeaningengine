@@ -1,0 +1,205 @@
+# ============================================================
+# K.S. McCRAE SOMATIC LEXICON SYSTEM
+# Trope: Service
+# Register: Variable — Serving / Served
+# Version: 1.0
+# Cross-reference: shared_tongue, shared_hand,
+#                  shared_mouth, male_cock, male_balls,
+#                  female_cunt, shared_arse,
+#                  pair_tongue_cunt, pair_mouth_cock,
+#                  trope_worship, trope_power_exchange,
+#                  trope_aftercare
+# Corpus: his_balls_my_altar (primary),
+#         the_gospel_of_ms_girth (altar system)
+# ============================================================
+
+Trope: service
+Version: "1.0"
+Register: Variable
+Status: Active
+
+Identity:
+  Label: Service
+  Register: Devoted_attendance / Skilled_role
+  Tone: Precision_devotion / Present_without_demand
+  Description: >
+    Service is the devoted attendance to another body
+    as skilled role. Not worship, which attends the
+    body as altar — service is the enacted skill,
+    the sustained precision, the continued presence
+    without requiring anything in return. The serving
+    body brings what it has — the mouth, the tongue,
+    the hands — and attends completely. The served
+    body receives without directing, without performing
+    gratitude. Both roles have full dignity.
+    Service submission is its own sovereignty:
+    the choice to serve is never lesser than the
+    choice to be served.
+
+Power_Map:
+  Serving: Variable — skilled attendance as chosen role
+  Served: Variable — receives without direction
+  Dynamic: >
+    Service does not require the served body to be
+    dominant. The served body may simply receive —
+    offering presence, offering the body to be
+    attended to. In His Balls My Altar the female
+    partner serves the male body through reading,
+    kissing, attending — without thrusting, without
+    climax, without the served body directing.
+    The serving body brings its own architecture
+    of attention. Skilled service governs itself.
+  Difference_From_Worship: >
+    Worship is body-as-altar — the attending body
+    consecrates through touch. Service is role-as-skill
+    — the attending body brings practiced, sustained
+    attention to what the other body has. Worship has
+    a sacred frame at its centre. Service has
+    craft and presence at its centre.
+
+Active_Sites:
+  Serving_Instruments:
+    Primary:
+      - shared_tongue (reading, tracing, attending)
+      - shared_mouth (kissing, licking, holding)
+      - shared_hand (cupping, weighing, tracing)
+      - shared_lips (the sealed attention)
+  Served_Sites:
+    Primary:
+      - male_balls (His Balls My Altar register)
+      - male_cock (attended without stroking)
+      - female_cunt (mapped, read, attended)
+    Secondary:
+      - male_prostate (in kneeling service)
+      - shared_arse (tended in rim service)
+      - shared_skin (the surface attended to)
+
+Allowed_Register:
+
+  Attendance_Register:
+    - attended
+    - attended_to
+    - read
+    - mapped
+    - served
+    - tended
+    - present_for
+    - given_to
+    - brought_skill_to
+    - the_tongue_in_service
+    - the_mouth_attending
+    - hands_in_service
+
+  Precision_Register:
+    - the_scar_read_as_text
+    - the_seam_traced
+    - each_feature_named
+    - the_anatomy_attended_to_in_detail
+    - the_weight_lifted_and_held
+    - the_tongue_knowing_what_it_attends
+    - the_precise_attention_of_service
+
+  Stillness_Register:
+    - he_held_still_in_receipt
+    - no_thrusting_no_direction
+    - offered_without_demand
+    - presence_without_performance
+    - the_body_given_over_to_being_attended
+    - still_under_her_hands
+
+  Duration_Register:
+    - sustained_attendance
+    - the_service_continuing
+    - not_rushing_toward_climax
+    - the_presence_as_the_service
+    - time_spent_in_service_as_gift
+
+  Sacred_Terms:
+    - service_as_covenant
+    - skilled_attendance_as_devotion
+    - the_serving_body_sovereign_in_its_service
+    - the_attended_body_received_completely
+    - presence_as_offering
+
+  Extended:
+    - the_scar_kissed_again_and_again_as_inscription
+    - the_weight_of_his_sac_in_her_palm_as_purpose
+    - the_tongue_reading_the_seam_not_stimulating_it
+    - hands_that_hold_without_directing
+    - the_mouth_sealing_each_feature_in_turn
+
+Somatic_Sequence:
+  Arrival:
+    - the_serving_body_kneeling_or_positioning
+    - the_first_contact
+    - the_attended_body_receiving_the_attention
+
+  Reading:
+    - the_tongue_or_hands_mapping
+    - each_feature_found_and_attended
+    - the_scar_line_the_seam_the_weight
+    - unhurried_specific_presence
+
+  Sustained:
+    - the_service_continuing
+    - the_attended_body_receiving_without_directing
+    - the_serving_body_in_its_skilled_role
+    - both_bodies_in_their_registers
+
+  Completion:
+    - not_climax_but_completeness
+    - the_service_having_been_given
+    - both_altered_by_what_happened
+    - the_silence_after
+
+Fluid_Palette:
+  Primary:
+    - shared_saliva (the mouth in service — coating what it attends)
+    - shared_musk (concentrated at served sites)
+    - male_pregloss (present under service without direction)
+  Note: >
+    Service often operates without primary fluid events.
+    The musk and saliva are the fluid register of
+    service — the mouth's presence, the body's warmth.
+    His Balls My Altar uses minimal fluid — presence
+    over flow. Service may be the dryest register
+    in the lexicon and remain sacred.
+
+Pairs_Active:
+  - pair_tongue_cunt (service register — reading not stimulating)
+  - pair_mouth_cock (service register — attending not extracting)
+  - pair_hand_cock (service register — holding not stroking)
+
+Emotional_Arc:
+  - Arrival (the serving body entering its role)
+  - Presence (sustained skilled attendance)
+  - Reading (the body attended to in detail)
+  - Completion (the service given — not climax but wholeness)
+  - Both_altered (by the sustained presence)
+
+Banned_Frames:
+  Confused_With_Worship:
+    - consecration_frame (worship not service)
+    - altar_register (worship not service — unless explicit)
+  Comic:
+    - being_of_service (corporate register)
+    - servicing (mechanical register)
+    - pleasuring (hollow verb)
+  Degrading_To_Serving_Body:
+    - servile (diminishment)
+    - at_their_beck_and_call (subservience not service)
+    - used_as_instrument (without covenant)
+
+Build:
+  Session: Current
+  Version: "1.0"
+  Status: Complete
+  Notes: >
+    His Balls My Altar is the primary corpus evidence
+    for this trope — the female partner reading the
+    male body as text, attending through presence
+    rather than stimulation toward climax. Service is
+    distinct from worship (sacred frame) and from
+    power_exchange (dynamic frame). It is craft:
+    the skilled, sustained, unhurried attendance
+    to what another body has.

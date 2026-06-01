@@ -1,0 +1,142 @@
+# ============================================================
+# K.S. McCRAE SOMATIC LEXICON SYSTEM
+# Trope: Comedic Sex
+# Register: Variable / Humour Register
+# Version: 1.0
+# ============================================================
+#
+# AUTHORING MODEL
+# Register Layer:  underscore tokens — controlled lexicon items
+# System Layer:    underscore tokens — behavioral primitives
+# Narrative Layer: natural language — expressive scene guidance
+# ============================================================
+
+Trope: comedic
+Version: "1.0"
+Register: Variable / Humour Register
+Status: Active
+
+Metadata:
+  Canonical_ID: trope_comedic
+  Canonical_Label: Comedic Sex
+  Aliases:
+    - comedic sex
+    - failed experimentation
+    - awkward positioning
+    - laughter as disruption
+    - wrong hole panic
+    - chaos to clarity
+  Trope_Class: comedy_register
+  System_Class:
+    - failure_loop
+    - laughter_interrupt
+    - simplicity_as_resolution
+    - chaos_register
+  Primary_Modality:
+    - failed_positioning
+    - laughter
+  Secondary_Modality:
+    - retry_loop
+    - return_to_baseline
+    - simplicity_as_truth
+  Consent_Load: established_prior
+  Corpus_Status:
+    Present_In_Base_Trope_Set: false
+    Corpus_Extract_Reviewed: true
+    Stories_Confirmed: 1
+    Corpus_Frequency: single
+
+Identity:
+  Label: Comedic Sex
+  Description: >
+    The position fails. Again. The body collapses
+    at the wrong moment. The knee lands wrong.
+    The cock slips free for the fourth time. Laughter
+    breaks the register entirely. And then — back
+    to what works. The complicated abandoned for
+    the simple. Simplicity as truth. Real bodies
+    over ideal forms.
+
+Power_Map:
+  Default: Comic register — power hierarchy dissolves in
+
+System_Behavior:
+  Core_Dynamics:
+    - failure_loop
+    - laughter_interrupt
+    - retry_cycle
+    - return_to_baseline
+    - simplicity_resolution
+  Activation_Requirements:
+    - attempt_at_complexity
+    - physical_failure
+    - laughter_present
+  Narrative_Functions:
+    - real_bodies_over_ideal
+    - simplicity_as_truth
+    - laughter_as_intimacy
+    - failure_as_path
+  Typical_Tempo: deliberate
+
+Active_Sites:
+  Note: variable — wherever the failure happens
+
+Allowed_Register:
+
+  Register_Layer:
+    Primary_Terms:
+      - back_to_basics
+      - simplicity_as_truth
+      - real_bodies
+      - abandon_the_script
+      - return_to_instinct
+      - fuck_the_book
+      - this_is_how_we_fuck
+
+  System_Layer:
+    - failure_loop
+    - laughter_interrupt
+    - retry_cycle
+    - return_to_baseline
+
+  Narrative_Layer:
+    - The position failed. Again.
+    - Laughter broke the register
+    - Back to what worked
+    - Simplicity as truth
+    - Real bodies over ideal forms
+    - This is how you fuck
+
+Fluid_Palette:
+  Note: female_gloss, male_pregloss (the arousal that persisted through the chaos)
+
+Emotional_Arc:
+  - attempt
+  - failure
+  - laughter
+  - retry
+  - simplicity
+  - climax_through_honesty
+
+Banned_Frames:
+  - mocking
+  - embarrassment_without_intimacy
+  - body_shaming_register
+
+Prompt_Behavior:
+  Use_When:
+    - comedy is the scene's register
+    - failed experimentation is the architecture
+    - laughter is intimate not cruel
+    - Karma Baby register
+  Avoid_When:
+    - the comedy is mean not warm
+    - body shaming replaces warm laughter
+
+Build:
+  Session: Current
+  Version: "1.0"
+  Status: Complete
+  Corpus_Frequency: single
+  Stories: 1
+  Is_New_Trope: true

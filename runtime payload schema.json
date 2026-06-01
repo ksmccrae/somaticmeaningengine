@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "KS McCrae Somatic Lexicon — Runtime Payload v2.0",
+  "description": "Schema for master_lexicon.json. All fields are structured for direct AI Agents API consumption.",
+  "type": "object",
+  "properties": {
+    "_meta": {
+      "type": "object",
+      "description": "Build metadata and statistics",
+      "properties": {
+        "version": {
+          "type": "string"
+        },
+        "compiled": {
+          "type": "string"
+        },
+        "stats": {
+          "type": "object"
+        }
+      }
+    },
+    "registers": {
+      "type": "object",
+      "description": "5 gender registers (female, male, shared, TF, TM)"
+    },
+    "anatomical": {
+      "type": "object",
+      "description": "46 anatomical entries by subdir (female/male/shared/trans)"
+    },
+    "fluids": {
+      "type": "object",
+      "description": "19 fluid entries. Each has _fluid_type field. _by_type groups by staging/atmospheric/blend/trace/parallel"
+    },
+    "tropes": {
+      "type": "object",
+      "description": "44 trope entries"
+    },
+    "pairs": {
+      "type": "object",
+      "description": "13 pair entries by type: instrument_site/dual_site/site_surface/penetration"
+    },
+    "validation": {
+      "type": "object",
+      "description": "Compiled validation. banned_terms_flat = sorted list for O(log n) lookup.",
+      "properties": {
+        "banned_terms_flat": {
+          "type": "array",
+          "description": "All absolute banned terms, lowercase, sorted",
+          "items": {
+            "type": "string"
+          }
+        },
+        "register_rules": {
+          "type": "object"
+        },
+        "tonal_governors": {
+          "type": "object"
+        }
+      }
+    },
+    "primitives": {
+      "type": "object",
+      "description": "Extracted primitives from all registers for fast lookup"
+    },
+    "_allowed_by_register": {
+      "type": "object",
+      "description": "Flat allowed-term lists per register for vocabulary validation"
+    }
+  }
+}

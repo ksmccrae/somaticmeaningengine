@@ -1,0 +1,351 @@
+# ============================================================
+# K.S. McCRAE SOMATIC LEXICON SYSTEM
+# Trope: Fluid Ritual
+# Register: Variable / Sacred_consecration
+# Version: 1.0
+# ============================================================
+#
+# AUTHORING MODEL
+# Register Layer:  underscore tokens — controlled lexicon items
+# System Layer:    underscore tokens — behavioral primitives
+# Narrative Layer: natural language — expressive scene guidance
+# ============================================================
+
+Trope: fluid_ritual
+Version: "1.0"
+Register: Variable
+Status: Active
+
+Metadata:
+  Canonical_ID: trope_fluid_ritual
+  Canonical_Label: Fluid Ritual
+  Aliases:
+    - fluid mixing
+    - fluid exchange
+    - fluid mixing ritual
+    - fluid sharing
+    - fluid circulation
+    - zero-waste erotics
+    - ingestion ritual
+    - covenant exchange
+  Trope_Class: consecration_ritual
+  System_Class:
+    - fluid_transfer
+    - body_as_vessel
+    - zero_waste_loop
+    - covenant_completion
+  Primary_Modality:
+    - fluid_exchange
+    - ingestion
+    - transfer_between_bodies
+  Secondary_Modality:
+    - mouth_mediation
+    - internal_cycling
+    - surface_coating
+  Intensity_Profile:
+    - high_intimacy
+    - ritual_weight
+    - variable_physical_intensity
+  Consent_Load: established_prior
+  Compile_Role:
+    - trope
+    - fluid_governor
+    - ritual_frame
+  Routing_Targets:
+    primary:
+      - tropes/trope_fluid_ritual.yaml
+    linked_registers:
+      - fluids/female/female_ritual_blend.yaml
+      - fluids/shared/shared_saliva.yaml
+      - fluids/female/female_gloss.yaml
+      - fluids/female/female_flood.yaml
+      - fluids/male/male_seed.yaml
+      - fluids/female/female_gold.yaml
+      - anatomical/shared/shared_mouth.yaml
+      - anatomical/shared/shared_tongue.yaml
+      - anatomical/shared/shared_arse.yaml
+      - anatomical/female/female_cunt.yaml
+  Corpus_Status:
+    Present_In_Base_Trope_Set: false
+    Corpus_Extract_Reviewed: true
+    Stories_Confirmed: 16
+    Corpus_Note: >
+      Highest frequency new trope in corpus.
+      Appears across 16 stories under many names.
+      Central to the no-waste sacred economy of the body.
+  Tags:
+    - fluid
+    - ritual
+    - covenant
+    - nothing_wasted
+    - exchange
+    - ingestion
+    - cycling
+    - consecration
+    - sacred
+
+Identity:
+  Label: Fluid Ritual
+  Register: sacred_consecration
+  Tone: covenant_economy / nothing_wasted
+  Description: >
+    Fluids move between bodies with intention. What one
+    body gives, the other receives. What is received
+    may be returned. What spills is gathered. What
+    mixes is consecrated. The no-waste economy of the
+    body in covenant — nothing lost, everything given
+    meaning by its passage. Mouth to cunt to arse
+    and back. The cycling of what bodies produce into
+    a closed sacred loop.
+
+Power_Map:
+  Default: Variable — established by scene context
+  Exchange_Note: >
+    Fluid ritual often operates reciprocally — both
+    bodies as source and receiver simultaneously or
+    in alternation. The power dynamic is carried by
+    the scene architecture, not by the fluid movement
+    itself. Gold from a sovereign body is a sovereign
+    act. Saliva passed mouth to mouth is communion.
+  Sacred_Economy: >
+    The governing principle across all fluid ritual:
+    nothing wasted. Every fluid has sacred register.
+    What the body produces is offered. What is offered
+    is received. The loop closes as covenant.
+
+System_Behavior:
+  Core_Dynamics:
+    - fluid_transfer
+    - body_as_vessel_and_source
+    - zero_waste_loop
+    - ritual_ingestion
+    - mouth_mediation
+    - internal_cycling
+    - covenant_completion
+  Activation_Requirements:
+    - fluid_present_at_site
+    - receiving_body_ready
+    - transfer_intention_established
+  Narrative_Functions:
+    - consecration_of_exchange
+    - body_as_medium
+    - covenant_through_ingestion
+    - nothing_lost_nothing_wasted
+    - loop_closed_as_vow
+  Typical_Tempo:
+    - deliberate
+    - slow_to_medium
+    - ritual_paced
+    - without_urgency
+
+Active_Sites:
+  Primary:
+    - shared_mouth (primary transfer medium)
+    - shared_tongue (instrument of transfer)
+    - female_cunt (source and receiving site)
+    - shared_arse (secondary receiving site)
+  Secondary:
+    - shared_throat (receives at depth)
+    - shared_skin (surface coating — ritual blend)
+    - shared_belly (gathering surface)
+    - shared_hand (collection and return)
+
+Compatibility:
+  Requires:
+    - fluid_present
+    - sacred_register_active
+    - transfer_intention
+  Strong_With:
+    - female_gloss
+    - female_flood
+    - male_seed
+    - shared_saliva
+    - female_gold
+    - female_ritual_blend
+    - shared_mouth
+    - shared_tongue
+  Supports:
+    - ritual_blend
+    - covenant_completion
+    - body_as_vessel
+  Adjacent_Tropes:
+    - trope_queening
+    - trope_watersports
+    - trope_worship
+    - trope_body_altar
+    - trope_group_ritual
+  Excludes_or_Limits:
+    - waste_frame
+    - pollution_language
+    - crude_mixture_language
+    - comic_food_register
+
+Allowed_Register:
+
+  Register_Layer:
+    Transfer:
+      - nothing_wasted
+      - the_loop_closed
+      - mouth_as_vessel
+      - body_as_conduit
+      - gathered_and_returned
+      - passed_between
+      - the_circuit_complete
+      - covenant_exchange
+
+    Ingestion:
+      - drank_sacrament
+      - swallowed_what_she_gave
+      - received_and_held
+      - covenant_swallow
+      - the_taste_of_what_they_gave
+      - salt_passed_tongue_to_tongue
+
+    Cycling:
+      - cunt_to_mouth
+      - mouth_to_arse
+      - returned_to_body
+      - the_loop_that_never_broke
+      - twice_lived_taste
+      - cycled_through_both
+
+    Sacred_Terms:
+      - covenant_exchange
+      - nothing_wasted
+      - sacred_economy
+      - the_closed_loop
+      - consecrated_blend
+      - twice_lived
+      - the_body_gives_and_receives
+
+  System_Layer:
+    - fluid_transfer
+    - zero_waste_loop
+    - mouth_mediation
+    - internal_cycling
+    - body_as_vessel
+    - covenant_completion
+    - ritual_ingestion
+
+  Narrative_Layer:
+    - What one body gave the other received
+    - The mouth as the medium between them
+    - Nothing on the surface that was not gathered
+    - The taste shifting: salt to musk to sweet
+    - Poured from one into the other
+    - What she spilled, he drank
+    - What he gave, she returned
+    - The loop did not break
+    - Twice lived, the taste of it
+    - Nothing in the room was not theirs
+
+Somatic_Sequence:
+  Initial_Production:
+    System_Layer:
+      - fluid_present_at_source
+      - transfer_readiness
+    Narrative_Layer:
+      - The gloss that gathered first
+      - The body producing before intention
+
+  Transfer:
+    Register_Layer:
+      - passed_between
+      - mouth_as_vessel
+      - drank_sacrament
+    Narrative_Layer:
+      - Mouth at the source
+      - Drawn and held
+      - Then given to the other body
+
+  Cycling:
+    System_Layer:
+      - internal_cycling
+      - mouth_mediation
+    Register_Layer:
+      - the_loop_that_never_broke
+      - twice_lived_taste
+    Narrative_Layer:
+      - Cunt to mouth
+      - Mouth to arse
+      - Back out
+      - Gathered again
+      - The taste changed by the passage
+
+  Consecration:
+    Register_Layer:
+      - covenant_exchange
+      - consecrated_blend
+      - nothing_wasted
+    Narrative_Layer:
+      - Everything they had given was somewhere on each other
+      - The loop closed as vow
+      - Nothing lost
+
+Fluid_Palette:
+  Primary:
+    - female_ritual_blend (governing — mixed fluids)
+    - shared_saliva (transfer medium)
+    - female_gloss (source fluid — cunt)
+    - female_flood (peak volume)
+  Secondary:
+    - male_seed (when male body present)
+    - female_gold (when watersports register active)
+    - shared_sweat (atmospheric)
+
+Emotional_Arc:
+  - offering
+  - transfer
+  - receipt
+  - cycling
+  - consecration
+  - covenant_closed
+
+Failure_Modes:
+  Structural:
+    - treating_fluids_as_waste
+    - breaking_the_loop
+    - framing_transfer_as_degradation
+    - losing_sacred_economy
+  Tonal:
+    - crude_mixture_language
+    - comic_food_register
+    - pollution_framing
+    - clinical_description
+  Build_Risks:
+    - collapsing_fluid_ritual_into_simple_oral
+    - losing_the_cycling_structure
+    - treating_ingestion_as_shock_not_covenant
+
+Banned_Frames:
+  Crude:
+    - cum_cocktail
+    - sloppy_seconds
+    - mess (applied to mixed fluids)
+  Food_Comic:
+    - soup
+    - stew
+    - smoothie
+  Degrading:
+    - pollution
+    - waste (applied to any fluid)
+    - dirty (applied to mixing)
+    - filthy (applied to fluid exchange)
+
+Prompt_Behavior:
+  Use_When:
+    - fluids move between bodies with intention
+    - the sacred economy of the body is the scene's centre
+    - ingestion carries covenant weight
+    - the loop structure is active
+  Avoid_When:
+    - fluid is incidental not central
+    - scene wants speed not ritual
+    - crude register is active
+
+Build:
+  Session: Current
+  Version: "1.0"
+  Status: Complete
+  Corpus_Frequency: high
+  Stories: 16

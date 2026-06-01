@@ -1,0 +1,197 @@
+# ============================================================
+# K.S. McCRAE SOMATIC LEXICON SYSTEM
+# Trope: Multiple Orgasm
+# Register: Variable — Extracting / Extracted
+# Version: 1.0
+# Cross-reference: female_cunt, female_clitoris,
+#                  female_flood, male_prostate,
+#                  shared_hand, shared_mouth,
+#                  trope_orgasm_control, trope_sensory_overload,
+#                  trope_milking
+# Corpus: the_gospel_of_ms_girth (multi-orgasm cascade named),
+#         dark_rich_and_creamy (repeated orgasm without recovery),
+#         rebirth_of_cunt (repeated climax through grip)
+# ============================================================
+
+Trope: multiple_orgasm
+Version: "1.0"
+Register: Variable
+Status: Active
+
+Identity:
+  Label: Multiple Orgasm / Cascade Register
+  Register: Extraction_past_first_release / Sustained_opening
+  Tone: Continued_past_recovery / The_body_beyond_reset
+  Description: >
+    Past the first. The body having released once and
+    not being permitted to close. The extraction that
+    continues. Each subsequent orgasm is different from
+    the first — heightened sensitivity, reduced barrier,
+    the body learning to release faster and with less
+    resistance. The second comes sooner than the first.
+    The third sooner than the second. The cascade
+    register: the body tumbling past its own architecture
+    of recovery, each climax closer than the last, until
+    the orgasms are not discrete events but a sustained
+    state. The body beyond its own reset.
+
+Power_Map:
+  Extracting: Variable — continues past the first
+  Extracted: Variable — body past its own recovery
+  Dynamic: >
+    Multiple orgasm requires continuing after the first.
+    This can be the female body's natural capacity
+    (multiple orgasm without refractory period) or
+    the extracted male cascade through prostate
+    stimulation. In both cases the extracting body
+    holds the permission and continues. The extracted
+    body has released once and is made to release again
+    before recovery is possible. This is distinct from
+    orgasm_control (withholding) and ruined_orgasm
+    (stripping satisfaction). Multiple orgasm is
+    extraction — past the first, and past the second.
+
+Active_Sites:
+  Female_Cascade:
+    Primary:
+      - female_cunt (releases and is held open for next)
+      - female_clitoris (hypersensitive between releases)
+      - female_gspot (bloom_point releasing repeatedly)
+    Secondary:
+      - shared_thighs (convulsing between releases)
+      - female_flood (each release with fluid)
+  Male_Cascade:
+    Primary:
+      - male_prostate (gland sustained past first)
+      - shared_arse (access maintained)
+      - male_cock (continues responding)
+
+Allowed_Register:
+
+  Continuation_Register:
+    - not_finished
+    - not_nearly_finished
+    - still_held
+    - past_the_first
+    - continued_past_recovery
+    - the_body_not_permitted_to_close
+    - kept_open_after
+    - through_the_sensitivity_and_further
+
+  Sensitivity_Register:
+    - overstimulated
+    - raw_sensitivity
+    - the_clit_screaming
+    - the_hypersensitivity_between
+    - each_touch_too_much
+    - and_yet_the_body_releasing_again
+    - past_what_she_thought_she_could_hold
+    - the_sensitivity_that_becomes_its_own_flood
+
+  Cascade_Register:
+    - the_second_coming_sooner
+    - the_third_sooner_still
+    - cascading
+    - tumbling_through
+    - one_into_the_next
+    - the_orgasms_arriving_without_gap
+    - the_body_beyond_its_own_reset
+    - the_sustained_release_state
+    - the_opening_that_would_not_close
+
+  Extraction_Register:
+    - extracted_past_the_first
+    - taken_past_recovery
+    - the_body_given_again
+    - and_again
+    - and_again
+    - each_time_the_body_gave_what_it_thought_it_had_already_spent
+
+  Sacred_Terms:
+    - the_body_beyond_its_own_limit
+    - past_what_was_thought_possible
+    - the_cascade_as_covenant
+    - each_release_sacred
+    - the_sustained_opening
+
+  Extended:
+    - she_kept_her_open_through_the_sensitivity
+    - the_third_came_before_the_second_fully_closed
+    - the_body_in_the_sustained_release_state
+    - convulsing_through_the_fourth_before_the_third_had_settled
+    - not_distinct_events_anymore_but_a_state
+
+Somatic_Sequence:
+  First_Release:
+    - the_first_orgasm_as_beginning_not_end
+    - the_body_releasing
+    - the_sensitivity_flooding_in_after
+
+  Continuation:
+    - stimulation_maintained_through_the_sensitivity
+    - the_body_registering_this_as_too_much
+    - and_the_second_building_anyway
+    - faster_than_the_first
+
+  Cascade:
+    - the_second_release
+    - sensitivity_higher
+    - the_third_arriving_sooner
+    - and_the_body_in_the_cascade_state
+    - orgasms_not_distinct_events_but_continuous
+
+  Threshold:
+    - the_body_at_the_edge_of_what_it_can_sustain
+    - the_extraction_continuing
+    - the_permission_to_stop_or_the_refusal_to
+
+  Aftermath:
+    - the_body_spent_past_exhaustion
+    - the_flooding_subsiding
+    - the_recovery_slow
+    - the_body_altered_by_the_cascade
+
+Fluid_Palette:
+  Primary:
+    - female_flood (multiple gush cycles)
+    - female_gloss (sustained and increasing)
+  Secondary:
+    - shared_tears (cathartic — past threshold)
+    - shared_sweat (exertion of sustained release)
+  Note: >
+    Multiple orgasm produces increasing fluid with
+    each release. The flood register — not a single
+    event but a series. Write each release with its
+    own fluid character. The first is the clearest.
+    The third is the largest.
+
+Emotional_Arc:
+  - First_release (and the body expecting to close)
+  - Continuation (the body held open past its own architecture)
+  - Cascade (the body past recovery — in the sustained state)
+  - Overwhelm (the body at and past its limit)
+  - Completion (the body finally permitted to rest)
+  - Aftermath (the body that held more than it thought it could)
+
+Banned_Frames:
+  Confused_With_Orgasm_Control:
+    - repeated_edging (edges are not releases)
+    - denial_and_release (one release is not cascade)
+  Crude:
+    - fucking_until_she_cant_anymore (crude)
+    - cumming_again_and_again (crude)
+  Clinical:
+    - multiple_orgasm_disorder (pathology frame)
+    - sequential_orgasm (clinical)
+
+Build:
+  Session: Current
+  Version: "1.0"
+  Status: Complete
+  Notes: >
+    Distinct from orgasm_control (withholding) and
+    ruined_orgasm (stripping). Multiple orgasm is
+    extraction past the first release. The cascade
+    register — the body learning to release sooner
+    and sooner until it is a sustained state — is
+    the signature arc of this trope.

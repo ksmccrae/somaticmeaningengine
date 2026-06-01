@@ -1,0 +1,144 @@
+# ============================================================
+# K.S. McCRAE SOMATIC LEXICON SYSTEM
+# Trope: Aftercare
+# Register: Variable / Covenant Completion
+# Version: 1.0
+# ============================================================
+#
+# AUTHORING MODEL
+# Register Layer:  underscore tokens — controlled lexicon items
+# System Layer:    underscore tokens — behavioral primitives
+# Narrative Layer: natural language — expressive scene guidance
+# ============================================================
+
+Trope: aftercare
+Version: "1.0"
+Register: Variable / Covenant Completion
+Status: Active
+
+Metadata:
+  Canonical_ID: trope_aftercare
+  Canonical_Label: Aftercare
+  Aliases:
+    - aftercare
+    - aftercare ritual
+    - aftercare as covenant closure
+    - covenant aftercare
+    - tending after
+  Trope_Class: covenant_completion
+  System_Class:
+    - grounding_register
+    - tending_protocol
+    - return_architecture
+    - covenant_seal
+  Primary_Modality:
+    - tending
+    - grounding
+    - covenant_seal
+  Secondary_Modality:
+    - cleaning
+    - holding
+    - named_return
+    - bruises_kissed
+  Consent_Load: established_prior
+  Corpus_Status:
+    Present_In_Base_Trope_Set: false
+    Corpus_Extract_Reviewed: true
+    Stories_Confirmed: 5
+    Corpus_Frequency: medium
+
+Identity:
+  Label: Aftercare
+  Description: >
+    The scene is not over when the peak passes.
+    Aftercare is the covenant's completion — the
+    tending that seals what happened. Oil applied.
+    Cloth brought. The body cleaned and held.
+    Marks kissed as relics. The breathing returned
+    to normal with attention. What was done together
+    is honoured in the tending after.
+
+Power_Map:
+  Default: Aftercare is mutual covenant. The one who tended
+
+System_Behavior:
+  Core_Dynamics:
+    - tending_active
+    - grounding_register
+    - cleaning
+    - holding
+    - breath_return
+    - marks_acknowledged
+  Activation_Requirements:
+    - peak_passed
+    - tending_intention
+    - materials_if_needed
+  Narrative_Functions:
+    - covenant_completion
+    - the_scene_honoured
+    - body_returned
+    - trust_sealed
+    - what_was_done_acknowledged
+  Typical_Tempo: deliberate
+
+Active_Sites:
+  Note: shared_skin, shared_nape, shared_belly, any marked or worked sites
+
+Allowed_Register:
+
+  Register_Layer:
+    Primary_Terms:
+      - tending
+      - held
+      - cleaned
+      - anointed
+      - bruises_kissed_as_relics
+      - the_breath_returning
+      - the_body_returned
+      - covenant_closed
+      - aftercare_as_vow
+
+  System_Layer:
+    - grounding_register
+    - tending_protocol
+    - return_architecture
+    - covenant_seal
+
+  Narrative_Layer:
+    - The cloth brought without being asked
+    - The oil spread over what had been worked
+    - The marks kissed as if relics
+    - The breathing slowed in held arms
+    - Nothing acknowledged but everything attended to
+
+Fluid_Palette:
+  Note: oil (applied in tending), shared_sweat (cleaning), tears (possible — catharsis)
+
+Emotional_Arc:
+  - peak_passed
+  - tending_arrives
+  - body_returned
+  - breath_restored
+  - covenant_sealed
+
+Banned_Frames:
+  - clinical_cool_down
+  - aftercare_checklist (clinical label)
+  - transactional_tending
+
+Prompt_Behavior:
+  Use_When:
+    - a scene of intensity has completed
+    - the covenant must be sealed
+    - trust is the scene's subject
+  Avoid_When:
+    - scene is not yet complete
+    - the peak has not arrived
+
+Build:
+  Session: Current
+  Version: "1.0"
+  Status: Complete
+  Corpus_Frequency: medium
+  Stories: 5
+  Is_New_Trope: true

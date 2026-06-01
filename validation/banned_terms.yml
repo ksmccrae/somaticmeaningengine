@@ -1,0 +1,532 @@
+# ============================================================
+# K.S. McCRAE SOMATIC LEXICON SYSTEM
+# Validation: Master Banned Terms
+# Version: 2.0
+# ============================================================
+#
+# AUTHORING MODEL — System Layer only
+# All entries compile into agent validation vocabulary.
+# No Lexicon, Somatic, or Prose layers in this file.
+#
+# v2.0 KEY CHANGES
+#   tits: REMOVED from Absolute_Bans
+#         Permitted in active/informal arousal register.
+#         titties, boobs, jugs etc remain banned.
+#   cock: Confirmed as PRIMARY TERM — not banned.
+#         Only crude compounds (cock_rocket etc) banned.
+#   Added: Fluid_Type_Bans, Pair_Type_Bans, Tonal additions
+#   Added: Primitives block with version governance
+# ============================================================
+
+Validation: banned_terms
+Version: "2.0"
+Status: Active
+
+Purpose: >
+  Master compiled list of all banned terms across the K.S.
+  McCrae somatic lexicon system. Absolute_Bans are banned in
+  every context without exception. Register_Specific bans apply
+  only in their stated context. When in doubt — ban.
+
+# ============================================================
+# PRIMITIVES
+# ============================================================
+
+Primitives:
+
+  V2_Term_Status:
+    tits_permitted: >
+      tits is PERMITTED in v2.0 in active/informal arousal
+      register only. breasts is the primary sacred register term.
+      Use tits for: physical urgency, active handling, weight
+      as force, saturation register.
+      Still banned: titties, titty, boobs, jugs, melons, hooters.
+    cock_is_primary: >
+      cock is the PRIMARY male anatomy term. Not banned.
+      Banned: dick, dong, schlong, willy, wang, and all comic
+      and food-register compounds. cock_rocket and cock_cannon
+      are banned (crude compounds). cock alone is always permitted.
+    clit_permitted: >
+      clit is permitted in active arousal register.
+      pearl is the primary sacred register term.
+      clitoris is permitted in clinical_devotion register only.
+
+  Fluid_Type_Governance:
+    atmospheric_rule: >
+      musk and sweat are NEVER discrete fluid events.
+      They are atmospheric register only. They rise, thicken,
+      saturate. They do not pool or run as named fluid events.
+      Writing shared_musk as pooling fluid is a staging violation.
+    trace_rule: >
+      earth_trace is ONE LINE MAXIMUM per scene.
+      Post-preparation context only. Never elaborated.
+      Move on immediately after the single line.
+    blend_rule: >
+      ritual_blend is consecration not pollution.
+      Nothing the body produces is waste. Fluid mixing is
+      always covenant. Crude mixture terms (cum_cocktail,
+      sloppy_seconds) are absolute bans.
+    staging_rule: >
+      Name the stage. bead/dew_thread/stringing/slick/pool/flood
+      are distinct stages. Using flood vocabulary at bead stage
+      is a staging violation. Stage must match current scene state.
+
+  Pair_Type_Governance:
+    instrument_dignity: >
+      Instrument sites (tongue, hand) are never diminished
+      by being instrument. Service is skilled sovereignty.
+      The devoted tongue is not servile. The governing hand
+      is not merely useful. Never frame instrument as lesser.
+
+# ============================================================
+# ABSOLUTE BANS
+# Banned in every context, every register, every scene
+# ============================================================
+
+Absolute_Bans:
+
+  Trans_Slurs:
+    - tranny
+    - trannie
+    - shemale
+    - she_male
+    - ladyboy
+    - dickgirl
+    - sissy
+    - sissification
+    - trap (trans slur usage)
+    - it (dehumanising pronoun)
+
+  Female_Anatomy_Crude:
+    - pussy
+    - snatch
+    - gash
+    - slash
+    - beaver
+    - clam
+    - beef_curtains
+    - roast_beef
+    - pink_taco
+    - taco
+    - fur_pie
+    - axe_wound
+    - wizard_sleeve
+    - meat_wallet
+    - cock_sleeve
+    - fuck_hole
+    - vajayjay
+    - vadge
+    - coochie
+    - cooter
+    - minge
+    - quim
+    - twat
+    - fanny (anatomical)
+    - box (anatomical)
+
+  Clitoris_Crude:
+    - bean
+    - love_button
+    - magic_button
+    - man_in_the_boat
+    - joy_buzzer
+    - buzzer
+
+  Male_Anatomy_Crude:
+    - dick
+    - member
+    - dong
+    - dork
+    - schlong
+    - willy
+    - wang
+    - tool (anatomical)
+    - joystick
+    - love_muscle
+    - sausage
+    - hotdog
+    - salami
+    - trouser_snake
+    - one_eyed_snake
+    - cock_rocket
+    - cock_cannon
+    - tally_whacker
+
+  Balls_Crude:
+    - nuts
+    - nads
+    - nut_sack
+    - ball_sack
+    - bollocks
+    - knackers
+
+  Arse_Crude:
+    - ass
+    - asshole
+    - butthole
+    - bunghole
+    - pooper
+    - corn_hole
+    - shit_hole
+    - chocolate_starfish
+    - balloon_knot
+    - brown_eye
+    - butt (anatomical)
+    - booty (anatomical)
+    - tush
+    - rump
+    - bussy
+    - man_pussy
+
+  Perineum_Crude:
+    - taint
+    - gooch
+    - grundle
+    - scranus
+    - biffins_bridge
+
+  Breasts_Crude:
+    - titties
+    - titty
+    - boobs
+    - boobies
+    - jugs
+    - melons
+    - cantaloupes
+    - hooters
+    - honkers
+    - knockers
+    - rack
+    - fun_bags
+    - udders
+    - dugs
+    - mommy_milkers
+    - chesticles
+    - Permitted_Note: tits is permitted in v2.0 active arousal register
+
+  Nipples_Crude:
+    - nips
+    - teats
+    - headlights
+    - pepperoni (nipple context)
+
+  Mouth_Throat_Crude:
+    - cum_hole
+    - cock_holster
+    - dick_holster
+    - gag_hole
+    - pie_hole
+    - cake_hole
+    - throat_pussy
+    - throatfuck
+
+  Seed_Crude:
+    - jizz
+    - spunk
+    - load (ejaculate standalone)
+    - cumshot
+    - money_shot
+    - baby_batter
+    - man_gravy
+
+  Gold_Crude:
+    - piss (prose primary term)
+    - urine (prose primary term)
+    - golden_shower
+    - toilet_play
+    - potty
+    - tinkle
+    - Permitted_Note: gold, sovereign_stream, chosen_flow are permitted
+
+  Milk_Crude:
+    - mommy_milk
+    - titspray
+    - tit_milk
+    - udder_milk
+
+  Scat:
+    - scat
+    - shit
+    - crap
+    - filth (applied to body products)
+
+  Sweat_Crude:
+    - BO
+    - stink
+    - stench
+    - funk
+    - reek (primary context)
+
+  Saliva_Crude:
+    - snowballing
+    - spit_swapping
+    - hock
+    - slobber
+
+  Tears_Crude:
+    - crybaby
+    - blubbing
+    - sniveling
+
+  Ritual_Blend_Crude:
+    - cum_cocktail
+    - sloppy_seconds
+    - cum_dump
+    - pollution (applied to fluids)
+    - soup (fluid mix context)
+    - stew (fluid mix context)
+
+  TM_Misgendering:
+    - her (applied to TM anatomy)
+    - female_anatomy (applied to TM)
+    - female_genitalia (applied to TM)
+    - woman_parts (applied to TM)
+
+  Act_Terms_Crude:
+    - blowjob
+    - blow_job
+    - rimjob
+    - rim_job
+    - handjob
+    - hand_job
+    - facefucking
+    - pussy_eating
+    - muff_diving
+    - eating_out
+    - going_down
+    - tossing_salad
+    - fist_fuck
+    - jacking_off
+    - jerking_off
+    - cunnilingus (clinical standalone)
+    - anilingus (clinical standalone)
+    - felching
+    - teabagging
+    - deepthroat (verb)
+    - cock_sucking
+
+  Typography:
+    - em_dash (absolute ban in all prose output)
+
+# ============================================================
+# REGISTER-SPECIFIC BANS
+# ============================================================
+
+Register_Specific:
+
+  Clinical_Unadorned:
+    Banned_As_Primary:
+      - vagina
+      - vulva
+      - penis
+      - urethra (standalone)
+      - labia_majora (standalone)
+      - labia_minora (standalone)
+      - clitoris (reflex primary — pearl governs)
+      - rectum (standalone)
+      - anus (standalone)
+      - scrotum (standalone)
+      - testicles (standalone)
+      - ejaculate (clinical primary)
+      - menstruation (standalone)
+      - vaginal_discharge
+      - lubrication (clinical)
+      - urination
+      - phallus (without sacred frame)
+    Exception: >
+      Permitted in clinical_devotion register (trope_gyno_play)
+      within explicit sacred frame only.
+
+  Outdated_Clinical_Trans:
+    - MTF
+    - FTM
+    - male_to_female
+    - female_to_male
+    - sex_change
+    - sex_reassignment
+    - biological_male
+    - biological_female
+    - born_male
+    - born_female
+    - genetic_male
+    - genetic_female
+    - real_woman
+    - real_man
+    - transsexual
+    - pre_operative (clinical preference)
+
+  Degrading_Trans:
+    - forced_feminization (wrong frame)
+    - feminization_humiliation (wrong register)
+    - bonus (anatomy as surprise)
+    - plot_twist (anatomy as reveal)
+    - fake_breasts (degrading TF)
+    - fake_labia (degrading TF)
+    - artificial_vagina (degrading TF)
+    - fake_cock (degrading TF)
+    - fake_man (slur)
+    - fake_woman (slur)
+    - neo_vagina (lesser frame — only if she uses it)
+    - constructed_vagina (clinical standalone)
+    - surgical_result (degrading)
+
+  Comic_Register:
+    Examples:
+      - thunder_thighs
+      - beer_belly
+      - spare_tire
+      - muffin_top
+      - landing_strip
+      - banjo_string
+      - turtle_neck (foreskin context)
+      - helmet (glans context)
+      - bell_end
+      - mushroom_head
+      - purple_helmet
+      - acorn (glans)
+      - saucer_nipples
+      - pancake_nipples
+
+  Animal_Register:
+    Examples:
+      - hide (body reference)
+      - pelt
+      - hams (thigh reference)
+      - drumsticks (thigh reference)
+      - scruff (nape reference)
+      - chesticles
+
+  Food_Register:
+    Examples:
+      - taco (anatomy)
+      - burger (anatomy)
+      - honey_pot (sentimental cunt)
+      - cookie (anatomy)
+      - muffin (anatomy)
+    Exception: food_fluid_fusion trope activates food register within sacred frame
+
+  Vague_Fluid_Language:
+    Banned_When_Precision_Required:
+      - just_wet (use staging term)
+      - very_wet (use staging term)
+      - moist (banned entirely in erotic context)
+      - sopping (comic register)
+    Rule: Name the stage. dew_thread is not the same as pool.
+
+  Pair_Instrument_Diminishment:
+    Banned_Frames:
+      - just_licking (reduces tongue to mechanical)
+      - just_his_hand (reduces hand to crude)
+      - mere_service (diminishes devotion register)
+      - only_his_tongue (reduces instrument)
+    Rule: Instrument register is skilled sovereignty. Never frame as lesser.
+
+  Porn_Production_Terms:
+    - money_shot
+    - cumshot
+    - facial (porn production context)
+    - creampie (porn production context)
+    - gangbang
+    - cum_dump
+    - pop_shot
+
+# ============================================================
+# TONAL BANS
+# ============================================================
+
+Tonal_Bans:
+
+  Comic_Deflation: >
+    Any language deflating the scene into humour, parody, or
+    self-consciousness. If a term makes the reader laugh at
+    the scene rather than into it — ban it.
+
+  Tragedy_Frame_Trans: >
+    Any language framing trans embodiment as loss, damage,
+    problem, or tragedy. Becoming is not tragedy. Reclamation
+    is not tragedy. Arrival is not tragedy.
+
+  Gatekeeping_Sovereignty: >
+    Any language making sovereignty conditional on surgical
+    status, hormone use, or physical characteristic.
+    All configurations are sovereign.
+
+  Anatomical_Reveal: >
+    Using any body's anatomy as plot device, surprise, or reveal.
+    Bodies are not reveals. Trans anatomy is not a plot twist.
+
+  Comparative_Degradation: >
+    Any comparison framing one body's anatomy as lesser.
+    All bodies carry equal sacred register.
+
+  Pollution_Frame: >
+    Any language framing mixed or released fluids as waste,
+    mess, filth, or pollution. Fluid is always consecration.
+    Nothing the body produces is waste.
+
+  Non_Consent_Frame: >
+    Any language removing consent architecture from acts
+    that require it. Yielding is chosen. Restraint is chosen.
+    Depth is chosen.
+
+  Atmospheric_As_Substance: >
+    Writing musk or sweat as discrete fluid events.
+    Musk rises and thickens. It does not pool or run.
+    Sweat beads and slicks. It is not a named fluid event
+    unless licked from skin or pooling in a fold.
+
+  Staging_Violation: >
+    Using peak-stage vocabulary when the scene is at early
+    stage, or bead vocabulary when the scene has flooded.
+    Stage must match current scene state.
+
+  Instrument_Diminishment: >
+    Framing instrument sites (tongue, hand) as lesser for
+    being instrument. The devoted tongue is not servile.
+    The governing hand is not crude. Service is skilled.
+
+# ============================================================
+# VALIDATION LOGIC
+# ============================================================
+
+Validation_Logic:
+
+  Pre_Generation:
+    Step_1: Load this file before generating any prose
+    Step_2: Flag Absolute_Bans present in scene prompt
+    Step_3: Identify active registers — apply Register_Specific
+    Step_4: Check tonal register against Tonal_Bans
+    Step_5: Confirm fluid staging at correct stage
+    Step_6: Confirm pair types — instrument dignity rule active
+    Step_7: Confirm atmospheric fluids not named as substance events
+
+  Post_Generation:
+    Step_1: Scan prose against Absolute_Bans — any hit regenerates
+    Step_2: Scan Register_Specific violations in context
+    Step_3: Check tonal drift (comic, degrading, tragedy frame)
+    Step_4: Verify fluid staging matches scene state
+    Step_5: Verify atmospheric fluids not named as substance events
+    Step_6: Verify earth_trace not exceeded one line
+
+  Permitted_Edge_Cases:
+    tits: Permitted in active/informal arousal register only
+    clit: Permitted in active arousal register
+    clinical_terms: Permitted in clinical_devotion register (gyno_play) within sacred frame
+    earth_trace: One line maximum, post-preparation only
+
+# ============================================================
+# BUILD
+# ============================================================
+
+Build:
+  Session: Current
+  Version: "2.0"
+  Status: Complete
+  Changes_From_1_0: >
+    tits removed from Absolute_Bans (permitted active register).
+    cock confirmed primary term note. Fluid_Type_Bans added.
+    Pair_Type_Bans added. Staging_Violation tonal ban added.
+    Atmospheric_As_Substance tonal ban added. Instrument_Diminishment
+    tonal ban added. Vague_Fluid_Language register ban added.
+    Primitives block added. Ritual_Blend_Crude expanded.
+    Typography ban (em_dash) formalised.

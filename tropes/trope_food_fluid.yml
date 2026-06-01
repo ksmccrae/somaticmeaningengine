@@ -1,0 +1,142 @@
+# ============================================================
+# K.S. McCRAE SOMATIC LEXICON SYSTEM
+# Trope: Food-Fluid Fusion
+# Register: Variable / Sacred_consecration
+# Version: 2.0
+# ============================================================
+#
+# AUTHORING MODEL
+# Register Layer:  underscore tokens — controlled lexicon items
+# System Layer:    underscore tokens — behavioral primitives
+# Narrative Layer: natural language — expressive scene guidance
+# ============================================================
+
+Trope: food_fluid
+Version: "2.0"
+Register: Variable / Sacred_consecration
+Status: Active
+
+Metadata:
+  Canonical_ID: trope_food_fluid
+  Canonical_Label: Food-Fluid Fusion
+  Aliases:
+    - food play
+    - food-fluid
+    - fermentation ritual
+    - communion bread
+    - sacrament bread
+    - covenant loaf
+  Trope_Class: sacrament_register
+  System_Class:
+    - body_as_medium
+    - domestic_elevated
+    - fluid_absorbed
+    - ritual_ingestion
+  Primary_Modality:
+    - body_as_table
+    - bread_christened
+  Secondary_Modality:
+    - fermentation
+    - fluid_absorbed_into_medium
+    - shared_ingestion
+  Consent_Load: established_prior
+  Corpus_Status:
+    Present_In_Base_Trope_Set: true
+    Corpus_Extract_Reviewed: true
+    Stories_Confirmed: 2
+
+Identity:
+  Label: Food-Fluid Fusion
+  Description: >
+    Food and body fluid in covenant register. The bread
+    proofed in seed. The dough that rose under his body's
+    heat. The christened loaf. The body as table — what
+    is prepared on it becomes sacred. This is not dirty
+    food play — it is the elevation of the domestic
+    and nourishing into the sacramental register.
+
+Power_Map:
+  Default: Variable by scene. The domestic elevated.
+
+System_Behavior:
+  Core_Dynamics:
+    - body_as_table
+    - fluid_absorption
+    - fermentation
+    - sacred_preparation
+    - shared_ingestion
+  Activation_Requirements:
+    - materials_present
+    - body_positioned
+    - ritual_intent
+  Narrative_Functions:
+    - domestic_elevated
+    - body_as_sacred_medium
+    - fluid_consecrates_food
+    - shared_ingestion_as_vow
+
+Active_Sites:
+  Note: shared_belly, shared_skin, male_cock, female_breasts, shared_hands
+
+Allowed_Register:
+
+  Register_Layer:
+    Primary_Terms:
+      - dough_proofed
+      - covenant_loaf
+      - anointed_grain
+      - sacrament_bread
+      - salt_christened
+      - body_as_table
+      - the_loaf_christened
+      - this_is_communion
+
+  System_Layer:
+    - body_as_medium
+    - fluid_absorption
+    - fermentation_register
+    - ritual_ingestion
+
+  Narrative_Layer:
+    - The dough rising at her warmth
+    - Flour on her belly
+    - The bread christened and baked
+    - The scent of her baked into form
+    - The sacramental bread they made and shared
+
+Fluid_Palette:
+  Note: male_seed (christening), female_gloss (warmth of proofing), female_milk (white into dough), shared_sweat
+
+Emotional_Arc:
+  - preparation
+  - consecration
+  - baking
+  - ingestion
+  - covenant_shared
+
+Banned_Frames:
+  - cum_bread (crude label)
+  - dirty_food_play
+  - food_porn (genre label)
+  - recipe_terms (breaks register)
+
+Prompt_Behavior:
+  Use_When:
+    - domestic elevated to sacrament is the register
+    - body as medium for transformation
+    - communion frame is active
+  Avoid_When:
+    - crude food register replaces sacrament
+    - scene wants speed not ritual preparation
+
+Build:
+  Session: Current
+  Version: "2.0"
+  Status: Complete
+  Corpus_Frequency: confirmed
+  Stories: 2
+  Upgrade_Actions:
+    - rebuilt_with_authoring_model
+    - metadata_layer_added
+    - system_behavior_added
+    - three_layer_register

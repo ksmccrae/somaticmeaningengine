@@ -1,0 +1,139 @@
+# ============================================================
+# K.S. McCRAE SOMATIC LEXICON SYSTEM
+# Trope: Chastity
+# Register: Female Sovereign / Male Caged
+# Version: 1.0
+# ============================================================
+#
+# AUTHORING MODEL
+# Register Layer:  underscore tokens — controlled lexicon items
+# System Layer:    underscore tokens — behavioral primitives
+# Narrative Layer: natural language — expressive scene guidance
+# ============================================================
+
+Trope: chastity
+Version: "1.0"
+Register: Female Sovereign / Male Caged
+Status: Active
+
+Metadata:
+  Canonical_ID: trope_chastity
+  Canonical_Label: Chastity
+  Aliases:
+    - chastity
+    - cock cage
+    - chastity device
+    - cage register
+    - non-penetrative ritual
+    - orgasm withheld by device
+  Trope_Class: sovereign_suppression
+  System_Class:
+    - arousal_suppression
+    - device_governance
+    - pre_gloss_evidence
+    - cage_register
+  Primary_Modality:
+    - device_suppression
+    - arousal_without_release
+  Secondary_Modality:
+    - pre_gloss_leaking
+    - cage_as_covenant
+    - permission_architecture
+  Consent_Load: explicit_high
+  Corpus_Status:
+    Present_In_Base_Trope_Set: false
+    Corpus_Extract_Reviewed: true
+    Stories_Confirmed: 2
+    Corpus_Frequency: single
+
+Identity:
+  Label: Chastity
+  Description: >
+    The cage holds what cannot rise. Arousal present
+    but suppressed. The pre-gloss finding its way
+    out through the bars. The body producing what
+    it cannot release. She holds the key — literally
+    or as governing principle. He lives in the
+    architecture she built around his cock.
+
+Power_Map:
+  Default: Her sovereignty is absolute and structural here —
+
+System_Behavior:
+  Core_Dynamics:
+    - arousal_suppression
+    - cage_holding
+    - pre_gloss_evidence
+    - permission_withheld
+    - key_register
+  Activation_Requirements:
+    - device_applied
+    - explicit_consent
+    - key_designated
+  Narrative_Functions:
+    - sovereignty_made_structural
+    - cage_as_covenant
+    - pre_gloss_as_truth
+    - permission_withheld_is_gift
+  Typical_Tempo: deliberate
+
+Active_Sites:
+  Note: male_cock, male_glans, male_balls, male_urethra
+
+Allowed_Register:
+
+  Register_Layer:
+    Primary_Terms:
+      - cage_as_covenant
+      - the_key_with_her
+      - pre_gloss_finding_its_way
+      - the_body_suppressed
+      - steel_holding
+      - not_yet
+      - the_bars
+      - withheld_as_devotion
+
+  System_Layer:
+    - arousal_suppression
+    - device_governance
+    - pre_gloss_evidence
+    - permission_withheld
+
+  Narrative_Layer:
+    - The cage held what could not rise
+    - Pre-gloss leaking through the bars
+    - She held the key
+    - He lived in the architecture she had built
+    - The withholding was its own covenant
+
+Fluid_Palette:
+  Note: male_pregloss (escapes despite cage)
+
+Emotional_Arc:
+  - cage_applied
+  - arousal_suppressed
+  - pre_gloss_truth
+  - withholding_sustained
+  - permission_or_indefinite
+
+Banned_Frames:
+  - cock_cage (crude standalone)
+  - cuckold_register (wrong frame)
+  - punishment_without_covenant
+
+Prompt_Behavior:
+  Use_When:
+    - cage architecture is the scene
+    - sovereignty encoded in device
+    - pre-gloss as truth is the register
+  Avoid_When:
+    - punishment register replaces covenant
+    - consent structure absent
+
+Build:
+  Session: Current
+  Version: "1.0"
+  Status: Complete
+  Corpus_Frequency: single
+  Stories: 2
+  Is_New_Trope: true

@@ -1,0 +1,146 @@
+# ============================================================
+# K.S. McCRAE SOMATIC LEXICON SYSTEM
+# Trope: Gyno Play
+# Register: Female Sovereign / Variable Examined
+# Version: 2.0
+# ============================================================
+#
+# AUTHORING MODEL
+# Register Layer:  underscore tokens — controlled lexicon items
+# System Layer:    underscore tokens — behavioral primitives
+# Narrative Layer: natural language — expressive scene guidance
+# ============================================================
+
+Trope: gyno_play
+Version: "2.0"
+Register: Female Sovereign / Variable Examined
+Status: Active
+
+Metadata:
+  Canonical_ID: trope_gyno_play
+  Canonical_Label: Gyno Play
+  Aliases:
+    - gyno play
+    - ceremonial examination
+    - clinical devotion
+    - sovereign display
+    - witnessed bloom
+  Trope_Class: clinical_devotion
+  System_Class:
+    - examination_register
+    - sovereign_display
+    - witness_protocol
+    - instrument_seated
+  Primary_Modality:
+    - instrument_examination
+    - sovereign_display
+  Secondary_Modality:
+    - witnessed_depth
+    - clinical_devotion
+    - depth_mapped
+  Consent_Load: explicit_high
+  Corpus_Status:
+    Present_In_Base_Trope_Set: true
+    Corpus_Extract_Reviewed: true
+    Stories_Confirmed: 2
+
+Identity:
+  Label: Gyno Play
+  Description: >
+    The body displayed and examined with deliberate
+    attention. The spreader, the cold instrument, the
+    light, the witness. Clinical devotion — the precision
+    of medical examination elevated to ritual register.
+    The examined body is sovereign in display. The
+    examiner attends with total focus. Nothing is rushed.
+    Everything is witnessed.
+
+Power_Map:
+  Default: The body examined is sovereign in display.
+
+System_Behavior:
+  Core_Dynamics:
+    - instrument_approach
+    - site_held_wide
+    - examination_active
+    - witness_attending
+    - depth_mapped
+  Activation_Requirements:
+    - explicit_consent
+    - position_held
+    - instrument_ready
+    - sovereign_display_established
+  Narrative_Functions:
+    - body_known_completely
+    - sovereign_display
+    - clinical_devotion
+    - witness_as_service
+
+Active_Sites:
+  Note: female_cunt, female_clitoris, female_labia_minora, female_labia_majora, female_gspot, shared_hand
+
+Allowed_Register:
+
+  Register_Layer:
+    Primary_Terms:
+      - spreader
+      - instrument_of_witness
+      - held_wide
+      - sovereign_display
+      - clinical_devotion
+      - witnessed_bloom
+      - depth_made_visible
+      - cold_instrument
+      - ministered
+      - attended_to
+
+  System_Layer:
+    - examination_register
+    - sovereign_display
+    - witness_protocol
+    - instrument_seated
+
+  Narrative_Layer:
+    - The spreader seated
+    - The light on what is displayed
+    - Nothing unseen
+    - The examiner attending completely
+    - The body offered to witness
+    - The depth mapped
+
+Fluid_Palette:
+  Note: female_gloss (present at site)
+
+Emotional_Arc:
+  - offered
+  - displayed
+  - attended
+  - witnessed
+  - returned
+
+Banned_Frames:
+  - speculum_porn (crude label)
+  - pussy_exam
+  - clinical_gaze (reductive)
+  - spread_eagle (comic)
+
+Prompt_Behavior:
+  Use_When:
+    - sovereign display is the register
+    - the body offered to be known completely
+    - clinical devotion frame is active
+  Avoid_When:
+    - crude clinical register replaces devotion
+    - inspection frame replaces witnessing
+
+Build:
+  Session: Current
+  Version: "2.0"
+  Status: Complete
+  Corpus_Frequency: medium
+  Stories: 2
+  Upgrade_Actions:
+    - rebuilt_with_authoring_model
+    - metadata_layer_added
+    - system_behavior_added
+    - three_layer_register

@@ -1,0 +1,136 @@
+# ============================================================
+# K.S. McCRAE SOMATIC LEXICON SYSTEM
+# Trope: Mirroring
+# Register: Variable / Reciprocal
+# Version: 1.0
+# ============================================================
+#
+# AUTHORING MODEL
+# Register Layer:  underscore tokens — controlled lexicon items
+# System Layer:    underscore tokens — behavioral primitives
+# Narrative Layer: natural language — expressive scene guidance
+# ============================================================
+
+Trope: mirroring
+Version: "1.0"
+Register: Variable / Reciprocal
+Status: Active
+
+Metadata:
+  Canonical_ID: trope_mirroring
+  Canonical_Label: Mirroring
+  Aliases:
+    - symmetry ritual
+    - mirrored acts
+    - mirrored participation
+    - bodily doubling
+    - symmetry and mirroring
+    - dual body system
+  Trope_Class: reciprocal_architecture
+  System_Class:
+    - mirrored_sequence
+    - simultaneous_act
+    - reciprocal_sensation
+    - doubled_response
+  Primary_Modality:
+    - mirrored_acts
+    - simultaneous_stimulation
+  Secondary_Modality:
+    - chained_sensation
+    - doubled_body
+    - reflected_architecture
+  Consent_Load: established_prior
+  Corpus_Status:
+    Present_In_Base_Trope_Set: false
+    Corpus_Extract_Reviewed: true
+    Stories_Confirmed: 4
+    Corpus_Frequency: low
+
+Identity:
+  Label: Mirroring
+  Description: >
+    What happens to one body is mirrored in the other.
+    Clamps on both sets of nipples. The double-ended
+    object entering both. The shared channel linking
+    them. Every tug transmitted. Every ache doubled.
+    The two bodies made into one reciprocal system.
+
+Power_Map:
+  Default: Mirroring often operates without fixed power hierarchy.
+
+System_Behavior:
+  Core_Dynamics:
+    - mirrored_sequence
+    - transmitted_sensation
+    - simultaneous_stimulation
+    - doubled_response
+    - chained_architecture
+  Activation_Requirements:
+    - shared_object_or_mechanism
+    - explicit_consent
+    - both_bodies_positioned
+  Narrative_Functions:
+    - sensation_transmitted
+    - bodies_as_one_system
+    - ache_doubled
+    - the_chain_between_them
+  Typical_Tempo: deliberate
+
+Active_Sites:
+  Note: paired sites — nipples, cunt, arse, urethra — depending on scene
+
+Allowed_Register:
+
+  Register_Layer:
+    Primary_Terms:
+      - mirrored
+      - doubled
+      - every_tug_arriving
+      - ache_transmitted
+      - chained_together
+      - one_system_two_bodies
+      - both_open_both_alive
+
+  System_Layer:
+    - mirrored_sequence
+    - transmitted_sensation
+    - simultaneous_stimulation
+    - chained_architecture
+
+  Narrative_Layer:
+    - Every tug dragged through both bodies
+    - One gasp tightening the other's nipple
+    - Both convulsing in mirrored rhythm
+    - The chain between them
+    - Indistinguishable whose sensation
+
+Fluid_Palette:
+  Note: ritual_blend (both bodies producing simultaneously)
+
+Emotional_Arc:
+  - linked
+  - transmission
+  - doubling
+  - saturation
+  - indistinguishable
+
+Banned_Frames:
+  - comic_duplication
+  - symmetry_fetish (label)
+
+Prompt_Behavior:
+  Use_When:
+    - both bodies are in a mirrored or chained system
+    - transmitted sensation is the architecture
+    - the two bodies as one system
+  Avoid_When:
+    - fixed hierarchy replaces reciprocity
+    - individual scenes are wanted
+
+Build:
+  Session: Current
+  Version: "1.0"
+  Status: Complete
+  Corpus_Frequency: low
+  Stories: 4
+  Is_New_Trope: true

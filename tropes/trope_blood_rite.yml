@@ -1,0 +1,139 @@
+# ============================================================
+# K.S. McCRAE SOMATIC LEXICON SYSTEM
+# Trope: Blood Rite
+# Register: Female Sovereign / Variable Participants
+# Version: 1.0
+# ============================================================
+#
+# AUTHORING MODEL
+# Register Layer:  underscore tokens — controlled lexicon items
+# System Layer:    underscore tokens — behavioral primitives
+# Narrative Layer: natural language — expressive scene guidance
+# ============================================================
+
+Trope: blood_rite
+Version: "1.0"
+Register: Female Sovereign / Variable Participants
+Status: Active
+
+Metadata:
+  Canonical_ID: trope_blood_rite
+  Canonical_Label: Blood Rite
+  Aliases:
+    - blood play
+    - menstrual ritual
+    - cyclical return
+    - taboo breaking
+    - blood rite
+    - covenant blood
+  Trope_Class: covenant_blood
+  System_Class:
+    - blood_register
+    - taboo_threshold
+    - cyclical_offering
+    - continuous_flow
+  Primary_Modality:
+    - menstrual_blood_as_offering
+  Secondary_Modality:
+    - witnessing
+    - taboo_threshold
+    - oral_devotion
+  Consent_Load: explicit_high
+  Corpus_Status:
+    Present_In_Base_Trope_Set: false
+    Corpus_Extract_Reviewed: true
+    Stories_Confirmed: 1
+    Corpus_Frequency: single
+
+Identity:
+  Label: Blood Rite
+  Description: >
+    The blood flows continuously and is offered.
+    Those who can receive it — who do not flinch,
+    do not turn — are the ones who receive the
+    full register. The menstrual blood as covenant.
+    The cycle as sacred register. The threshold
+    crossing of receiving what most cultures
+    have named forbidden.
+
+Power_Map:
+  Default: She offers from sovereign position. Her blood,
+
+System_Behavior:
+  Core_Dynamics:
+    - blood_flowing
+    - offering_passive
+    - witness_selection
+    - threshold_crossing
+    - covenant_receipt
+  Activation_Requirements:
+    - cycle_active
+    - offering_intent
+    - participants_selected
+  Narrative_Functions:
+    - cycle_as_covenant
+    - blood_as_lineage
+    - threshold_crossed_is_devotion
+    - the_earth_drinks_so_you_drink
+  Typical_Tempo: deliberate
+
+Active_Sites:
+  Note: female_cunt, shared_mouth, shared_lips_face
+
+Allowed_Register:
+
+  Register_Layer:
+    Primary_Terms:
+      - covenant_flow
+      - blood_as_lineage
+      - the_cycle_truth
+      - sacred_stream
+      - iron_on_the_air
+      - rite_sealed_in_red
+      - witness_and_be_bound
+
+  System_Layer:
+    - blood_flowing
+    - offering_register
+    - witness_selection
+    - threshold_crossing
+
+  Narrative_Layer:
+    - This is not play — this is lineage
+    - If you can bear this blood
+    - As the earth drinks, so you drink
+    - The rite sealed in red
+    - Witness and be bound
+
+Fluid_Palette:
+  Note: female_blood (primary — covenant flow), shared_saliva (mixing with blood)
+
+Emotional_Arc:
+  - offering
+  - witness_selection
+  - threshold
+  - receipt
+  - lineage_binding
+
+Banned_Frames:
+  - period_blood (crude)
+  - shark_week (crude)
+  - gross_register
+  - degradation_of_blood
+
+Prompt_Behavior:
+  Use_When:
+    - menstrual blood is the scene's sacred register
+    - lineage and cycle are the frame
+    - taboo threshold is architecturally intentional
+  Avoid_When:
+    - crude or degrading register replaces sacred
+    - consent from all participants not established
+
+Build:
+  Session: Current
+  Version: "1.0"
+  Status: Complete
+  Corpus_Frequency: single
+  Stories: 1
+  Is_New_Trope: true

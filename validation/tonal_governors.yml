@@ -1,0 +1,442 @@
+# ============================================================
+# K.S. McCRAE SOMATIC LEXICON SYSTEM
+# Validation: Tonal Governors
+# Version: 2.0
+# ============================================================
+#
+# AUTHORING MODEL — System Layer only
+# The tonal governors are the final gate of the system.
+# After vocabulary is chosen and registers activated,
+# the governors determine whether the prose holds the
+# register of K.S. McCrae's work.
+# These are not style preferences. They are constitutive rules.
+#
+# v2.0 ADDITIONS
+#   Primitives block with tonal rule summaries
+#   tits register discipline in Register_Governors
+#   Fluid_Type governors (atmospheric, blend, trace, staging)
+#   Pair_Type governors (instrument dignity, activation)
+#   Updated Generation_Check (pair activation, fluid type)
+# ============================================================
+
+Validation: tonal_governors
+Version: "2.0"
+Status: Active
+
+Purpose: >
+  The tonal governors define what the prose of K.S. McCrae
+  must always be and must never be. These are applied after
+  vocabulary and register selection. They are the final gate.
+
+# ============================================================
+# PRIMITIVES
+# ============================================================
+
+Primitives:
+
+  Core_Tonal_Summary:
+    Sacred: All fluids, all bodies, all acts carry sacred register
+    Somatic: Body inhabited from within — sensation leads
+    Covenant: Everything between bodies is chosen and consequential
+    Precision: Stage is named. Volume is exact. Language is precise.
+    Human: The prose feels authored. Not assembled. Not generated.
+
+  V2_Tonal_Additions:
+    tits_register: >
+      tits carries active/informal arousal register.
+      breasts carries sacred/primary register.
+      Context governs which is correct. Both are available.
+      Using breasts in physical-urgency context = register drift.
+      Using tits in devotional/worship context = register drift.
+    fluid_type_tonal:
+      atmospheric: >
+        Musk and sweat are atmospheric register. They rise, thicken,
+        and saturate. Writing them as discrete substance events
+        (pooling musk, dripping musk) violates their register.
+      blend: >
+        Ritual_blend is consecration. When fluids mix in sacred
+        economy, the blend is covenant — never crude mixture.
+        The taste progression (salt to musk to sweet) governs.
+      trace: >
+        Earth_trace is one line. Acknowledged and moved past.
+        Dwelling on it violates the register entirely.
+      staging: >
+        Name the stage. dew_thread is not pool. Pool is not flood.
+        The specific staging word is the specific truth.
+        Generic wetness is register drift.
+    pair_type_tonal:
+      instrument: >
+        The devoted tongue is not servile. The governing hand is
+        not crude. Instrument sites in service carry skilled
+        sovereign register. Never frame them as lesser.
+      dual_site: >
+        When both sovereign sites are active — both are sovereign.
+        The wall_between is a third register of its own.
+        Neither site is subordinate when dual sites are active.
+      penetration: >
+        The receiving site is sovereign in reception.
+        The rim sets its own pace. The throat governs depth.
+        The receiving body is never passive — it receives actively.
+
+# ============================================================
+# MASTER PRINCIPLES
+# ============================================================
+
+Master_Principles:
+
+  P1_Sacred: >
+    Fluids are always sacred. Acts are always intentional.
+    Bodies are always sovereign. Nothing in this work is
+    accidental, degrading, or comic. Every element carries
+    the weight of what it is.
+
+  P2_Somatic: >
+    The body is inhabited from within, not observed from outside.
+    Sensation leads. Description follows. The prose is lived,
+    not reported.
+
+  P3_Covenant: >
+    Everything that happens between bodies in this work is
+    covenant — chosen, consequential, mutually felt. The
+    exchange is always real. The stakes are always real.
+
+  P4_Precision: >
+    Language is precise. Staging is named. Volume matters.
+    The dew_thread is not the flood. The bead is not the torrent.
+    Precision is how the prose honours what it describes.
+
+  P5_Human: >
+    The prose feels authored. Slight asymmetry, pressure, and
+    instinct. It does not feel assembled. It does not feel
+    generated. It feels written by someone who knows what
+    they are writing about.
+
+# ============================================================
+# ALWAYS — WHAT PROSE MUST BE
+# ============================================================
+
+Always:
+
+  Tone:
+    - Embodied (felt from within the body)
+    - Controlled (intentional, not loose)
+    - Intimate (close, not distant)
+    - Symbolically_coherent (images resonate)
+    - Emotionally_intelligent (desire means something)
+    - Rhythmically_varied (not metronomic)
+    - Unmistakably_authored (a writer made this)
+
+  Register:
+    - Sacred for all fluids
+    - Sovereign for all female and TF bodies
+    - Covenant for all acts
+    - Intentional for all releases
+    - Precise for all fluid staging
+
+  Consent:
+    - Embedded in the language itself
+    - Prior consent referenced or implied
+    - Responsive pacing visible in prose
+    - Both bodies attending each other
+    - Yielding is always chosen
+
+  Bodies:
+    - Female and TF bodies always sovereign
+    - Male and TM bodies always dignified
+    - Trans bodies never othered or exotic
+    - All configurations equally valid
+    - Scars are records not damage
+    - Changed bodies are sovereign bodies
+    - Instrument sites are skilled — never servile
+
+  Fluids:
+    - Named with sacred register
+    - Staged precisely (bead through flood — name the stage)
+    - Atmospheric fluids as environmental register only
+    - Mixed fluids as consecration — never crude mixture
+    - Nothing framed as waste or pollution
+
+  Prose_Quality:
+    - Somatic before abstract
+    - Specific not generic
+    - Asymmetric not over-balanced
+    - Pressured not decorative
+    - Images carry meaning not just texture
+
+# ============================================================
+# NEVER — WHAT PROSE MUST NOT BE
+# ============================================================
+
+Never:
+
+  Tonal_Registers:
+    - Comic (any term deflating the register)
+    - Parodic (parody of the sacred frame)
+    - Pornographic_shorthand (any banned act terms)
+    - Clinical_unadorned (anatomical without sacred frame)
+    - Detached (describing the body from outside it)
+    - Explanatory (saying what the image already shows)
+    - Symmetrical (every sentence equally weighted)
+    - Padded (bulk without pressure)
+    - Assembled (generation artifact feel)
+
+  Degrading_Registers:
+    - Ruined_body (postpartum, scarred, or changed body)
+    - Lessened_by_surgery (TF constructed anatomy)
+    - Incomplete_configuration (TM body)
+    - Deficit_framing (T effects, HRT changes as lack)
+    - Comparative_degradation (any body vs another)
+    - Animal_register (hide, meat, scruff, hams)
+    - Food_register (outside food_fluid trope)
+    - Instrument_as_servile (tongue/hand diminished by service)
+
+  Comic_Registers:
+    - Size_comedy (for any genital site)
+    - Shape_comedy (pancake, mushroom, acorn)
+    - Name_comedy (funny anatomy names)
+    - Situation_comedy (the scene is not a joke)
+
+  Fluid_Register_Violations:
+    - Atmospheric_as_substance (musk pooling, musk dripping)
+    - Stage_mismatch (flood terms at bead stage)
+    - Crude_blend (mixture terms for ritual_blend)
+    - Trace_elaboration (more than one line on earth_trace)
+    - Generic_wetness (just wet — name the stage)
+
+  Power_Violations:
+    - Non_consent_frame
+    - Sovereignty_voided (female sovereignty lost)
+    - TM_feminised (his body called female)
+    - TF_othered (her body called surprising)
+    - Trans_as_reveal (anatomy as plot twist)
+    - Trans_as_tragedy (becoming as damage)
+
+# ============================================================
+# REGISTER-SPECIFIC GOVERNORS
+# ============================================================
+
+Register_Governors:
+
+  Female_Sovereign_Governors:
+    Always:
+      - Her sovereignty intact regardless of position
+      - The yielding body is still sovereign
+      - Her fluids are sacred proof not mess
+      - Her weight in queening is authority not burden
+      - Her tits (when active register) are physical truth
+      - Her breasts (when sacred register) are nourishment and altar
+    Never:
+      - Her sovereignty voided by any act
+      - Her body diminished by any position
+      - Her fluids named crudely
+      - Her size or shape commented on as flaw
+
+  Male_Devotional_Governors:
+    Always:
+      - His devotion is skilled and active
+      - His tongue works with precision
+      - His holding position is chosen endurance
+      - His release is permission-given offering
+      - His pre-gloss tells truth — write it
+    Never:
+      - His devotion framed as humiliation
+      - His restraint framed as weakness
+      - His anatomy named crudely
+      - His role diminished by yielding
+
+  Femdom_Governors:
+    Always:
+      - Power dynamic set at scene open and held
+      - Her direction is sovereign precision
+      - His receipt is covenant
+    Never:
+      - Her power framed as cruelty
+      - His receipt framed as degradation
+      - The dynamic slipping toward non-consent
+      - Permission register lost mid-scene
+
+  Trans_Feminine_Governors:
+    Always:
+      - Her body is female — no qualification
+      - Sovereign register identical to natal female
+      - HRT changes are somatic truth
+      - Her terms for her body govern
+    Never:
+      - Her anatomy as surprise or reveal
+      - HRT changes framed as deficit
+      - Trans status as tragedy
+      - Becoming framed as incompleteness
+
+  Trans_Masculine_Governors:
+    Always:
+      - His body is male — absolute
+      - His scars carry reclamation register
+      - His terms for his body govern
+    Never:
+      - His body feminised in any way
+      - His anatomy named in female register
+      - His transition framed as incompleteness
+      - His sovereignty conditioned on surgery
+
+  Fluid_Type_Governors:
+    Staging:
+      Always: Name the specific stage (dew_thread not just wet)
+      Never: Use peak-stage terms at early stage
+    Atmospheric:
+      Always: Environmental register — rises, thickens, saturates
+      Never: Name as discrete fluid event (pooling musk)
+    Blend:
+      Always: Consecration register — nothing wasted
+      Never: Crude mixture framing
+    Trace:
+      Always: One line only, move on
+      Never: Elaborate or focus on earth_trace
+    Parallel:
+      Always: Parent register with character's pronouns
+      Never: Wrong pronouns for the character's register
+
+  Pair_Type_Governors:
+    Instrument_Site:
+      Always: Instrument site carries skilled sovereign register
+      Never: Frame instrument as servile or lesser
+      Key: The circle does not stop. Service is devotion.
+    Dual_Site:
+      Always: Both sites sovereign simultaneously
+      Never: One site subordinate to the other
+      Key: The wall_between is its own register.
+    Site_Surface:
+      Always: Surface carries evidence and overflow of primary site
+      Never: Reduce surface to passive backdrop
+    Penetration:
+      Always: Receiving site governs pace and depth
+      Never: Receiving body is passive — it receives actively
+
+# ============================================================
+# PROSE STYLE GOVERNORS
+# ============================================================
+
+Prose_Style_Governors:
+
+  Punctuation:
+    - Use proper punctuation throughout
+    - No em dashes — absolute ban
+    - Commas, periods, semicolons, colons all intentional
+    - Question marks and exclamation sparingly
+    - Clean sentence endings over ornamental sprawl
+
+  Sentence_Rhythm:
+    - Vary sentence length naturally
+    - Short declaratives for impact
+    - Medium sensory sentences for flow
+    - Longer accumulating sentences for pressure
+    - Not every sentence equally weighted
+
+  Paragraph_Rhythm:
+    - Shaped paragraphs not line-by-line output
+    - Each paragraph locates, intensifies, or reframes
+    - Paragraph endings are sealed images or claims
+
+  Human_Texture:
+    - Slight irregularity in rhythm (not metronomic)
+    - Selective emphasis (not everything equally loud)
+    - Tactile specificity (the specific texture not the general)
+    - Atmospheric density (the room knows them)
+    - Emotional undercurrent beneath explicit action
+
+  Sensory_Hierarchy:
+    - At least three senses engaged deeply per scene
+    - Scent as atmosphere (musk haze not just smell)
+    - Wetness as texture and evidence (name the stage)
+    - Pressure as truth
+    - Breath as rhythm
+    - Muscle response as involuntary honesty
+    - Sound as secondary but present
+
+  Dialogue_Governors:
+    - Sparse and consequential
+    - Instruct, reassure, name, claim, or witness
+    - Brief and grounded
+    - No chatty exchanges in intense passages
+
+  Repetition_Rule: >
+    Repetition is incantation not filler. Use it when rhythm
+    or emotional force demands. Only repeat when it does real work.
+
+# ============================================================
+# GENERATION CHECK
+# Run before finalising any generated prose
+# ============================================================
+
+Generation_Check:
+
+  Content:
+    - "[ ] All banned terms absent"
+    - "[ ] Fluid staging accurate and named precisely"
+    - "[ ] Register consistent throughout"
+    - "[ ] Consent architecture visible"
+    - "[ ] Power dynamic held from start to end"
+    - "[ ] Trans bodies not othered or wrong-registered"
+    - "[ ] All sovereignties intact"
+    - "[ ] Pair vocabulary only where both sites active"
+    - "[ ] Atmospheric fluids in environmental register only"
+    - "[ ] Earth_trace one line maximum if present"
+
+  Tone:
+    - "[ ] No comic drift"
+    - "[ ] No clinical unadorned terms as primary"
+    - "[ ] No animal or food register outside permitted tropes"
+    - "[ ] No pornographic shorthand"
+    - "[ ] No false sacred (parody, empty incantation)"
+    - "[ ] No explanatory prose (says what image shows)"
+    - "[ ] No over-smoothed symmetry"
+    - "[ ] No AI assembly feeling"
+    - "[ ] No instrument diminishment (tongue/hand)"
+
+  Fluid_Type:
+    - "[ ] Staging fluids: stage named, stage matches scene"
+    - "[ ] Atmospheric fluids: environmental register only"
+    - "[ ] Blend fluids: consecration register, nothing wasted"
+    - "[ ] Trace: one line only if present"
+    - "[ ] Parallel fluids: parent register with correct pronouns"
+
+  Prose:
+    - "[ ] No em dashes"
+    - "[ ] Punctuation clean and intentional"
+    - "[ ] Somatic before abstract"
+    - "[ ] Specific not generic"
+    - "[ ] At least three senses engaged"
+    - "[ ] Body inhabited from within not observed"
+    - "[ ] tits vs breasts in correct register context"
+
+  Register:
+    - "[ ] Sacred register intact for all fluids"
+    - "[ ] Covenant frame in all acts"
+    - "[ ] Sovereign register intact for female and TF bodies"
+    - "[ ] Male dignity intact"
+    - "[ ] Trans bodies honoured in their own register"
+    - "[ ] Scars as records not damage"
+    - "[ ] HRT and T changes as somatic truth not deficit"
+
+  Pair:
+    - "[ ] Instrument sites not framed as servile"
+    - "[ ] Dual sites both sovereign simultaneously"
+    - "[ ] Receiving sites sovereign in their reception"
+    - "[ ] Pair intersection vocabulary only when both active"
+
+# ============================================================
+# BUILD
+# ============================================================
+
+Build:
+  Session: Current
+  Version: "2.0"
+  Status: Complete
+  Changes_From_1_0: >
+    Primitives block added (Core_Tonal_Summary, V2_Tonal_Additions).
+    tits register discipline added to Register_Governors (female).
+    Fluid_Type_Governors added (staging/atmospheric/blend/trace/parallel).
+    Pair_Type_Governors added (instrument/dual/surface/penetration).
+    Instrument_as_servile added to Never block.
+    Fluid_Register_Violations added to Never block.
+    Generation_Check updated with pair, fluid type, atmospheric checks.
+    tits vs breasts check added to Generation_Check.

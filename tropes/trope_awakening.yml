@@ -1,0 +1,141 @@
+# ============================================================
+# K.S. McCRAE SOMATIC LEXICON SYSTEM
+# Trope: Awakening
+# Register: Variable / Guided
+# Version: 1.0
+# ============================================================
+#
+# AUTHORING MODEL
+# Register Layer:  underscore tokens — controlled lexicon items
+# System Layer:    underscore tokens — behavioral primitives
+# Narrative Layer: natural language — expressive scene guidance
+# ============================================================
+
+Trope: awakening
+Version: "1.0"
+Register: Variable / Guided
+Status: Active
+
+Metadata:
+  Canonical_ID: trope_awakening
+  Canonical_Label: Awakening
+  Aliases:
+    - awakening
+    - guided initiation
+    - first flood
+    - mapping the body
+    - identity affirmation through sex
+    - first claiming
+  Trope_Class: initiation_register
+  System_Class:
+    - first_event
+    - guided_discovery
+    - progressive_opening
+    - claiming_register
+  Primary_Modality:
+    - first_encounter
+    - guided_discovery
+  Secondary_Modality:
+    - progressive_opening
+    - verbal_claiming
+    - flood_as_initiation
+  Consent_Load: established_prior
+  Corpus_Status:
+    Present_In_Base_Trope_Set: false
+    Corpus_Extract_Reviewed: true
+    Stories_Confirmed: 1
+    Corpus_Frequency: single
+
+Identity:
+  Label: Awakening
+  Description: >
+    Something happens for the first time. The first
+    flood. The first time the body is named correctly.
+    The first claiming. The experienced partner
+    guiding the discovery. Progressive opening —
+    one finger, then two, then the body discovering
+    its own capacity. Affirmation that makes the
+    discovering real.
+
+Power_Map:
+  Default: The experienced partner guides. The discovering
+
+System_Behavior:
+  Core_Dynamics:
+    - first_event
+    - guided_discovery
+    - progressive_opening
+    - verbal_claiming
+    - flood_as_proof
+  Activation_Requirements:
+    - first_time_intent
+    - guide_present
+    - patience_established
+  Narrative_Functions:
+    - the_first_time
+    - body_discovering_capacity
+    - claiming_as_truth
+    - flood_as_proof
+    - guide_as_witness
+  Typical_Tempo: deliberate
+
+Active_Sites:
+  Note: female_cunt, female_clitoris, shared_mouth, shared_hand
+
+Allowed_Register:
+
+  Register_Layer:
+    Primary_Terms:
+      - the_first_flood
+      - first_claiming
+      - mine
+      - not_broken_not_borrowed
+      - this_is_you
+      - built_to_do_this
+      - the_body_awake_now
+
+  System_Layer:
+    - first_event
+    - guided_discovery
+    - progressive_opening
+    - verbal_claiming
+
+  Narrative_Layer:
+    - The first time she flooded she was afraid
+    - Then she claimed it
+    - This is mine — and meant it
+    - Built to do this
+    - The guide witnessing without possessing
+    - Not remade — awakened
+
+Fluid_Palette:
+  Note: female_flood (initiatory), female_gloss, shared_saliva
+
+Emotional_Arc:
+  - approach
+  - guided_discovery
+  - the_first_event
+  - claiming
+  - the_body_known
+
+Banned_Frames:
+  - defloration_register (wrong frame)
+  - initiation_as_ownership
+  - guide_as_possessor
+
+Prompt_Behavior:
+  Use_When:
+    - first discovery is the scene
+    - claiming as truth is the arc
+    - guided initiation is architecturally central
+  Avoid_When:
+    - ownership rather than witnessing is the guide's register
+    - experience gap is exploited not honoured
+
+Build:
+  Session: Current
+  Version: "1.0"
+  Status: Complete
+  Corpus_Frequency: single
+  Stories: 1
+  Is_New_Trope: true

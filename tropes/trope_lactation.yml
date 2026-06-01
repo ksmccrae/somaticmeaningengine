@@ -1,0 +1,145 @@
+# ============================================================
+# K.S. McCRAE SOMATIC LEXICON SYSTEM
+# Trope: Lactation
+# Register: Female Sovereign
+# Version: 2.0
+# ============================================================
+#
+# AUTHORING MODEL
+# Register Layer:  underscore tokens — controlled lexicon items
+# System Layer:    underscore tokens — behavioral primitives
+# Narrative Layer: natural language — expressive scene guidance
+# ============================================================
+
+Trope: lactation
+Version: "2.0"
+Register: Female Sovereign
+Status: Active
+
+Metadata:
+  Canonical_ID: trope_lactation
+  Canonical_Label: Lactation
+  Aliases:
+    - lactation
+    - lactation play
+    - lactation erotica
+    - let-down register
+    - feeding flood
+  Trope_Class: sovereign_nourishment
+  System_Class:
+    - let_down_reflex
+    - dual_register
+    - nourishment_erotics
+    - sovereign_production
+  Primary_Modality:
+    - breast_stimulation
+    - let_down
+    - milk_receipt
+  Secondary_Modality:
+    - dual_register_holding
+    - feeding_and_desire_simultaneously
+  Consent_Load: established_prior
+  Corpus_Status:
+    Present_In_Base_Trope_Set: true
+    Corpus_Extract_Reviewed: true
+    Stories_Confirmed: 1
+
+Identity:
+  Label: Lactation
+  Description: >
+    The breast gives. The milk comes at her body's
+    choosing. Whoever drinks receives both the erotic
+    and the nourishment register simultaneously.
+    Neither cancels the other. The dual weight is
+    the register. Her sovereignty is in the production —
+    the body gives what it has.
+
+Power_Map:
+  Default: The milk is given by the body's own decision.
+
+System_Behavior:
+  Core_Dynamics:
+    - let_down_reflex
+    - milk_expression
+    - dual_register
+    - mouth_at_breast
+    - nourishment_receipt
+  Activation_Requirements:
+    - milk_present
+    - stimulation_at_breast
+    - let_down_reflex_ready
+  Narrative_Functions:
+    - sovereign_nourishment
+    - dual_register_embodied
+    - feeding_as_covenant
+    - let_down_as_surrender
+
+Active_Sites:
+  Note: female_breasts, shared_nipples, shared_mouth, shared_tongue
+
+Allowed_Register:
+
+  Register_Layer:
+    Primary_Terms:
+      - let_down
+      - sovereign_milk
+      - milk_flow
+      - wept
+      - feeding_flood
+      - the_let_down_against_his_mouth
+      - nourishment
+      - sovereign_flow
+
+  System_Layer:
+    - let_down_reflex
+    - milk_expression
+    - dual_register
+    - let_down_trigger
+
+  Narrative_Layer:
+    - The breast heavy with what it held
+    - The tingle before
+    - The bead at the tip
+    - The stream his mouth caught
+    - The taste: sweet and warm
+    - The dual weight of what she gave
+
+Fluid_Palette:
+  Note: female_milk (primary), shared_saliva
+
+Emotional_Arc:
+  - fullness
+  - stimulation
+  - let_down
+  - receipt
+  - dual_register
+  - nourishment_and_desire
+
+Banned_Frames:
+  - mommy_milk
+  - mommy_milkers
+  - titspray
+  - farm_imagery
+  - dairy_register
+  - udder_register
+
+Prompt_Behavior:
+  Use_When:
+    - dual register must be held (erotic and nourishing simultaneously)
+    - sovereign production is the register
+    - lactation is active in narrative
+  Avoid_When:
+    - comic or diminishing register is active
+    - farm imagery is present
+
+Build:
+  Session: Current
+  Version: "2.0"
+  Status: Complete
+  Corpus_Frequency: confirmed
+  Stories: 1
+  Upgrade_Actions:
+    - rebuilt_with_authoring_model
+    - metadata_layer_added
+    - system_behavior_added
+    - three_layer_register

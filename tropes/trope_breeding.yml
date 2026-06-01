@@ -1,0 +1,141 @@
+# ============================================================
+# K.S. McCRAE SOMATIC LEXICON SYSTEM
+# Trope: Breeding
+# Register: Variable
+# Version: 1.0
+# ============================================================
+#
+# AUTHORING MODEL
+# Register Layer:  underscore tokens — controlled lexicon items
+# System Layer:    underscore tokens — behavioral primitives
+# Narrative Layer: natural language — expressive scene guidance
+# ============================================================
+
+Trope: breeding
+Version: "1.0"
+Register: Variable
+Status: Active
+
+Metadata:
+  Canonical_ID: trope_breeding
+  Canonical_Label: Breeding
+  Aliases:
+    - breeding
+    - breeding attempt
+    - fertility desperation
+    - cum accumulation
+    - public sex
+    - selection and rejection
+    - multiple partners for purpose
+  Trope_Class: purpose_register
+  System_Class:
+    - reproductive_intent
+    - selection_protocol
+    - risk_acceptance
+    - purpose_override
+  Primary_Modality:
+    - reproductive_purpose
+    - selection_register
+  Secondary_Modality:
+    - cum_accumulation
+    - exposure
+    - risk_accepted
+  Consent_Load: established_prior
+  Corpus_Status:
+    Present_In_Base_Trope_Set: false
+    Corpus_Extract_Reviewed: true
+    Stories_Confirmed: 2
+    Corpus_Frequency: single
+
+Identity:
+  Label: Breeding
+  Description: >
+    The body opened for purpose. Not pleasure —
+    or pleasure in service of purpose. The selection
+    that precedes entry. The risk accepted as necessary.
+    The accumulation of attempts. The final partner
+    who may be the one. The cunt sovereign in
+    selection even as it receives all comers.
+    Purpose redeems the act.
+
+Power_Map:
+  Default: Female sovereignty absolute — she selects.
+
+System_Behavior:
+  Core_Dynamics:
+    - selection_protocol
+    - risk_accepted
+    - purpose_override
+    - accumulation
+    - final_partner
+  Activation_Requirements:
+    - purpose_established
+    - selection_criteria_set
+    - consent_from_participants
+  Narrative_Functions:
+    - purpose_as_redemption
+    - sovereignty_in_selection
+    - risk_accepted_as_devotion
+    - the_attempt_as_covenant
+  Typical_Tempo: deliberate
+
+Active_Sites:
+  Note: female_cunt, shared_mouth, shared_arse
+
+Allowed_Register:
+
+  Register_Layer:
+    Primary_Terms:
+      - cunt_sovereign_in_selection
+      - purpose_override
+      - accepted_entry
+      - rejected_entry
+      - the_accumulation
+      - the_final_one
+      - this_is_how_we_try
+
+  System_Layer:
+    - selection_protocol
+    - risk_acceptance
+    - purpose_override
+    - accumulation_register
+
+  Narrative_Layer:
+    - This is how we try
+    - Not random but judged
+    - Cunt sovereign in selection
+    - Risk accepted for creation
+    - The final claim still his
+    - Love persists through use
+
+Fluid_Palette:
+  Note: ritual_blend (accumulated), female_gloss, male_seed (multiple sources)
+
+Emotional_Arc:
+  - purpose_established
+  - selection_active
+  - accumulation
+  - final_partner
+  - hope
+
+Banned_Frames:
+  - gangbang (crude)
+  - cum_dump
+  - degradation_without_purpose
+
+Prompt_Behavior:
+  Use_When:
+    - reproductive intent is the scene
+    - sovereign selection governs access
+    - purpose redeems the architecture
+  Avoid_When:
+    - purpose is absent and only degradation remains
+    - consent cannot be established with all participants
+
+Build:
+  Session: Current
+  Version: "1.0"
+  Status: Complete
+  Corpus_Frequency: single
+  Stories: 2
+  Is_New_Trope: true
