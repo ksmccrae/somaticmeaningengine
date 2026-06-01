@@ -1,0 +1,254 @@
+# ============================================================
+# K.S. McCRAE SOMATIC LEXICON SYSTEM
+# Anatomical Entry: TM Cock
+# Register: trans_masculine
+# Version: 1.0
+# ============================================================
+#
+# AUTHORING MODEL
+# LEXICON LAYER:  underscore_tokens — controlled vocabulary,
+#                 compiled into allowed register
+# SYSTEM LAYER:   structured metadata — dependencies, modifies,
+#                 conditions — not prose vocabulary
+# SOMATIC LAYER:  interior sensation states — writer-facing,
+#                 not compiled, not vocabulary tokens
+# PROSE LAYER:    authoring notes — writer-facing, not compiled
+#
+# SALIENCE: Primary
+# REGISTER WEIGHT: Variable
+# ============================================================
+
+# ============================================================
+# METADATA  [System Layer]
+# ============================================================
+
+Name: tm_cock
+Version: "1.0"
+Type: anatomy
+Register: trans
+Salience: Primary
+Parent_Register: register_trans_masculine.yaml
+
+Dependencies:
+  anatomy:
+    - tm_front
+    - tm_sac
+    - male_urethra
+  fluids:
+    - male_pregloss
+    - male_seed
+  tropes:
+    - trope_body_reclamation
+    - trope_orgasm_control
+  pairs:
+
+Produces:
+  fluids:
+    - male_pregloss
+
+Modifies:
+
+Entry_Conditions:
+  requires:
+    body_active: true
+    register:
+      allowed:
+        - trans_masculine
+  power_required: any
+  trans_note: >
+    His terms govern. Never call his cock a clit unless he does. Male register absolute.
+  blocks: []
+
+Scene_Roles:
+  penetration: his_instrument
+  body_reclamation: his_claimed_site
+
+Role_Priority:
+  primary: variable
+
+Corpus_Status:
+  Corpus_Extract_Reviewed: true
+  Gap_Fill_Applied: true
+  Corpus_Terms_Found: 33
+
+# ============================================================
+# IDENTITY  [Lexicon + Prose Layers]
+# ============================================================
+
+Site: tm_cock
+Status: Active
+
+Identity:
+  Label: TM Cock
+  Preferred_Term: his_cock
+  Register_Weight: Variable
+  Scope: >
+    His cock. Whether by metoidioplasty, phalloplasty,
+    or T-growth — his cock is his cock. Male anatomy.
+    Male register throughout. Variable power register
+    by scene. Never called a clit unless he uses that term.
+  Usage_Note: >
+    His cock. His terms govern absolutely.
+    If he calls it his cock — it is his cock.
+    If he calls it his clit — that is his term for it.
+    Never impose a term on him. Default: his cock.
+
+# ============================================================
+# ALLOWED REGISTER  [Lexicon Layer]
+# ============================================================
+
+Allowed_Register:
+
+  State_Register:
+    - hard
+    - swollen
+    - responsive
+    - his
+    - T_grown
+    - meta_hard
+    - reclaimed
+    - erect
+
+  Sacred_Terms:
+    - his_cock
+    - his_all_along
+    - reclaimed
+    - T_hard
+    - his_body_his_cock
+
+  Corpus_Gap_Fill:
+    - caged cock
+    - catalogued cocks
+    - clinical metal
+    - gloss-dripping cock
+    - spit-coated metal
+    - swelling cock
+    - gloss from cock
+
+# ============================================================
+# SOMATIC REGISTER  [Somatic Layer]
+# Interior sensation states. Not vocabulary. Not compiled.
+# ============================================================
+
+Somatic:
+  Primary:
+    - his cock hard under attention
+    - the T-grown arousal — real and his
+    - his cock responding to her touch
+    - pre-gloss at his slit — his truth
+  Secondary:
+    - cock hardening through chaos
+    - cock jerking against belly
+    - cock jerking under molten pour
+    - cock leaking under obedience
+    - cock leaking under stimulation
+    - cock slipping free repeatedly
+  Atmospheric:
+    - His
+    - Reclamation
+    - Male_Register
+
+# ============================================================
+# FLUID BEHAVIOUR  [System + Lexicon Layers]
+# ============================================================
+
+Fluid_Behaviour:
+  male_pregloss:
+    stages:
+      - bead
+    escalation:
+      triggered_by:
+        - arousal
+    function:
+      - his_truth_register
+
+# ============================================================
+# SACRED REGISTER  [Lexicon Layer]
+# ============================================================
+
+Sacred_Register:
+  Primary_Terms:
+    - his_cock
+    - his_all_along
+    - reclaimed
+    - his_body_his_cock
+  Symbolic_Frames:
+    TM_Cock_As:
+      - reclamation
+      - his_instrument
+      - male_register
+  Corpus_Sacred_Terms:
+    - filthy cocktails
+    - no cock wasted
+    - their cocktail
+
+# ============================================================
+# COLLOCATES  [Lexicon Layer]
+# ============================================================
+
+Collocates:
+  Base_Clusters:
+    - his cock
+    - T-grown hard
+    - his all along
+    - his cock responding
+  Corpus_Collocates:
+    - cock and balls chambered
+    - cock slapping wet
+    - cock straining high
+    - cock to mouth
+    - cunt to cock
+    - gloss on metal
+    - harness cock gleaming
+    - just cock
+    - room of cocks
+    - cock and balls trapped
+    - lubricant coating metal
+
+Tension:
+  Toward:
+    - hand
+    - mouth
+    - permission
+    - his_claiming
+  Against:
+    - misgendered
+    - feminised
+
+# ============================================================
+# PROSE NOTES  [Prose Layer]
+# ============================================================
+
+Prose_Notes:
+  His_Terms_Absolute: >
+    His terms for his cock govern absolutely.
+    Default without his direction: his cock.
+    Never impose a feminised term on his anatomy.
+
+  Male_Register: >
+    T-growth is real. Metoidioplasty cock is real.
+    Phalloplasty cock is real. Male register throughout.
+    His cock. His arousal. His terms.
+
+# ============================================================
+# BANNED TERMS  [System Layer]
+# ============================================================
+
+Banned_Terms:
+  Absolute:
+    - clit (applied to him without his direction)
+    - her_cock
+    - female_anatomy (applied to him)
+  Misgendering:
+    - she
+    - her (applied to him)
+  Tonal_Bans:
+    Comic: Any term producing deflating or humorous effect
+    Clinical: Medical language without sacred frame
+
+Build:
+  Session: Current
+  Version: "1.0"
+  Status: Complete
+  Corpus_Gap_Fill: Applied v1.0
+  Register: trans_masculine

@@ -1,0 +1,277 @@
+# ============================================================
+# K.S. McCRAE SOMATIC LEXICON SYSTEM
+# Anatomical Entry: Nipples
+# Register: shared
+# Version: 1.0
+# ============================================================
+#
+# AUTHORING MODEL
+# LEXICON LAYER:  underscore_tokens — controlled vocabulary,
+#                 compiled into allowed register
+# SYSTEM LAYER:   structured metadata — dependencies, modifies,
+#                 conditions — not prose vocabulary
+# SOMATIC LAYER:  interior sensation states — writer-facing,
+#                 not compiled, not vocabulary tokens
+# PROSE LAYER:    authoring notes — writer-facing, not compiled
+#
+# SALIENCE: Primary
+# REGISTER WEIGHT: Variable
+# ============================================================
+
+# ============================================================
+# METADATA  [System Layer]
+# ============================================================
+
+Name: shared_nipples
+Version: "1.0"
+Type: anatomy
+Register: shared
+Salience: Primary
+Parent_Register: register_shared.yaml
+
+Dependencies:
+  anatomy:
+    - female_breasts
+    - female_areola
+    - shared_skin
+  fluids:
+    - female_milk
+  tropes:
+    - trope_lactation
+    - trope_mirroring
+    - trope_temperature_play
+    - trope_worship
+    - trope_suspension
+  pairs:
+    - pair_breasts_mouth
+
+Modifies:
+  female_milk:
+    effect: exit_point
+    trigger:
+      - let_down
+      - stimulation
+    result: milk_expression
+
+Entry_Conditions:
+  requires:
+    body_active: true
+    register:
+      allowed:
+        - female
+        - male
+        - trans_feminine
+        - trans_masculine
+  power_required: any
+  blocks: []
+
+Scene_Roles:
+  lactation: milk_exit
+  mirroring: clamped_simultaneously
+  temperature_play: ice_and_wax_target
+  worship: devoted_target
+
+Role_Priority:
+  primary: variable
+
+Corpus_Status:
+  Corpus_Extract_Reviewed: true
+  Gap_Fill_Applied: true
+  Corpus_Terms_Found: 29
+
+# ============================================================
+# IDENTITY  [Lexicon + Prose Layers]
+# ============================================================
+
+Site: nipples
+Status: Active
+
+Identity:
+  Label: Nipples
+  Preferred_Term: nipples
+  Register_Weight: Variable
+  Scope: >
+    Shared primary site. On female bodies: sovereign, linked to
+    full-body arousal and milk register. On male bodies:
+    variable, responsive, sometimes forgotten. On TF bodies:
+    HRT-responsive, sovereign. In mirroring register:
+    clamped simultaneously on both bodies.
+  Usage_Note: >
+    Nipples. Tips. Peaks. Pebbled. Never: nips, teats, headlights.
+
+# ============================================================
+# ALLOWED REGISTER  [Lexicon Layer]
+# ============================================================
+
+Allowed_Register:
+
+  State_Register:
+    - pebbled
+    - peaked
+    - darkened
+    - hard
+    - bare
+    - taut
+    - tightened
+    - responsive
+    - small_sharp
+    - swollen_buds
+    - glass_tipped
+
+  Sacred_Terms:
+    - the_peak
+    - peaked_tip
+    - sovereign_peak
+    - glass_tipped
+    - small_sharp_nipples
+    - darkened_nipples
+
+  Corpus_Gap_Fill:
+    - blood-slicked tips
+    - long nipples
+    - milk-swollen nipples
+    - pebbled nipples
+    - responsive nipples
+    - sharp nipples
+    - tightened walls
+
+# ============================================================
+# SOMATIC REGISTER  [Somatic Layer]
+# Interior sensation states. Not vocabulary. Not compiled.
+# ============================================================
+
+Somatic:
+  Primary:
+    - nipples tightening in cold or arousal
+    - full-body response from nipple stimulation
+    - the let-down tingle at the nipple tip
+    - the ache of clamping — sharp then sustained
+    - nipple stimulation triggering pelvic response
+  Secondary:
+    - body learning endurance rather than peak
+    - anticipation tightening body before climax
+    - arse tightening in echo
+    - balls tightening under heat
+    - bellies tightening
+    - nipple ache building to burn
+  Atmospheric:
+    - Sensitivity
+    - Cold_Response
+    - Signal
+
+# ============================================================
+# FLUID BEHAVIOUR  [System + Lexicon Layers]
+# ============================================================
+
+Fluid_Behaviour:
+  female_milk:
+    stages:
+      - bead
+      - drip
+      - stream
+    escalation:
+      triggered_by:
+        - let_down
+    function:
+      - milk_expression
+
+# ============================================================
+# SOUND REGISTER  [Lexicon Layer]
+# ============================================================
+
+Sound_Register:
+  - the_catch_at_stimulation
+
+# ============================================================
+# SACRED REGISTER  [Lexicon Layer]
+# ============================================================
+
+Sacred_Register:
+  Primary_Terms:
+    - the_peak
+    - peaked_tip
+    - sovereign_peak
+    - glass_tipped
+    - nipples_as_signal
+  Symbolic_Frames:
+    Nipples_As:
+      - signal_register
+      - milk_exit
+      - full_body_trigger
+
+# ============================================================
+# COLLOCATES  [Lexicon Layer]
+# ============================================================
+
+Collocates:
+  Base_Clusters:
+    - nipples tightening
+    - pebbled hard
+    - glass-tipped
+    - the peak of her
+    - nipple triggering full-body response
+  Corpus_Collocates:
+    - loop tightening
+    - nipple. pearl. root. gate.
+    - nipples twitching sharp
+    - nipples weeping milk
+    - spray stinging nipples
+
+Tension:
+  Toward:
+    - mouth
+    - clamp
+    - ice
+    - wax
+  Against:
+    - ignored
+
+# ============================================================
+# GENDER VARIANTS  [System Layer]
+# ============================================================
+
+Gender_Variants:
+  Female_Register:
+    Register: Sovereign signal — full-body response
+    Primary: True
+  Male_Register:
+    Register: Variable — responsive but secondary
+  TF_Register:
+    Register: HRT-responsive — sovereign register
+    Entry: see tf_breasts.yaml
+
+# ============================================================
+# PROSE NOTES  [Prose Layer]
+# ============================================================
+
+Prose_Notes:
+  Female_Full_Body: >
+    Female nipple stimulation can trigger full-body arousal
+    response and pelvic sensation. Write this link when active.
+    The nipple as signal registering throughout the body.
+
+  Mirroring: >
+    In mirroring both sets of nipples are clamped
+    simultaneously. Every tug through both bodies.
+    The chain between them.
+
+# ============================================================
+# BANNED TERMS  [System Layer]
+# ============================================================
+
+Banned_Terms:
+  Absolute:
+    - nips
+    - teats
+    - headlights
+    - pepperoni (nipple context)
+  Tonal_Bans:
+    Comic: Any term producing deflating or humorous effect
+    Clinical: Medical language without sacred frame
+
+Build:
+  Session: Current
+  Version: "1.0"
+  Status: Complete
+  Corpus_Gap_Fill: Applied v1.0
+  Register: shared

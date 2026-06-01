@@ -1,0 +1,286 @@
+# ============================================================
+# K.S. McCRAE SOMATIC LEXICON SYSTEM
+# Anatomical Entry: Balls
+# Register: male
+# Version: 1.0
+# ============================================================
+#
+# AUTHORING MODEL
+# LEXICON LAYER:  underscore_tokens — controlled vocabulary,
+#                 compiled into allowed register
+# SYSTEM LAYER:   structured metadata — dependencies, modifies,
+#                 conditions — not prose vocabulary
+# SOMATIC LAYER:  interior sensation states — writer-facing,
+#                 not compiled, not vocabulary tokens
+# PROSE LAYER:    authoring notes — writer-facing, not compiled
+#
+# SALIENCE: Secondary
+# REGISTER WEIGHT: Variable
+# ============================================================
+
+# ============================================================
+# METADATA  [System Layer]
+# ============================================================
+
+Name: male_balls
+Version: "1.0"
+Type: anatomy
+Register: male
+Salience: Secondary
+Parent_Register: register_male.yaml
+
+Dependencies:
+  anatomy:
+    - male_cock
+    - male_prostate
+    - shared_perineum
+  fluids:
+    - male_seed
+    - male_pregloss
+  tropes:
+    - trope_worship
+    - trope_milking
+    - trope_feminization
+    - trope_marking
+  pairs:
+    - pair_hand_cock
+
+Modifies:
+  male_seed:
+    effect: source
+    trigger:
+      - arousal_peak
+    result: sac_tightening_before_release
+
+Entry_Conditions:
+  requires:
+    body_active: true
+    register:
+      allowed:
+        - male
+        - trans_masculine
+  power_required: any
+  blocks: []
+
+Scene_Roles:
+  worship: altar
+  milking: ballgasm_site
+  feminization: repositioned_bloom_fold
+  marking: weight_present
+
+Role_Priority:
+  primary: variable
+
+Corpus_Status:
+  Corpus_Extract_Reviewed: true
+  Gap_Fill_Applied: true
+  Corpus_Terms_Found: 41
+
+# ============================================================
+# IDENTITY  [Lexicon + Prose Layers]
+# ============================================================
+
+Site: balls
+Status: Active
+
+Identity:
+  Label: Balls
+  Preferred_Term: sac
+  Register_Weight: Variable
+  Scope: >
+    The sac and its contents. Weight, warmth, creased velvet.
+    The altar of His Balls My Altar — read as text by
+    a devoted mouth. In feminization: repositioned to
+    create the bloom fold. In ballgasm: breached and
+    carried inside. Dual register — devotional and functional.
+  Usage_Note: >
+    Sac. Balls. The weight of them. Never: nuts, bag, bollocks, nads.
+
+# ============================================================
+# ALLOWED REGISTER  [Lexicon Layer]
+# ============================================================
+
+Allowed_Register:
+
+  State_Register:
+    - heavy
+    - pendulous
+    - full
+    - tight
+    - sagging
+    - loose
+    - warm
+    - velvet
+    - creased
+    - uneven
+
+  Texture_Register:
+    - creased_velvet
+    - sac_valley
+    - sac_weight
+    - pendulous_weight
+    - uneven_globes
+
+  Sacred_Terms:
+    - the_weight_of_them
+    - root_vessel
+    - covenant_weight
+    - altar_of_sac
+    - globes_endured
+
+  Corpus_Gap_Fill:
+    - heavy tits
+    - musk-heavy air
+    - heavy belly folds
+    - heavy breasts
+    - heavy curves
+    - heavy dough
+    - heavy fullness
+    - heavy gush
+    - heavy sac
+    - heavy scent
+    - iron-heavy air
+    - lifted weight
+
+# ============================================================
+# SOMATIC REGISTER  [Somatic Layer]
+# Interior sensation states. Not vocabulary. Not compiled.
+# ============================================================
+
+Somatic:
+  Primary:
+    - the weight of the sac in another's palm
+    - tightening as orgasm approaches
+    - the sac sagging heavy in resting state
+    - warmth gathered in the root
+    - the sac pulled — the sensation reaching to root
+  Secondary:
+    - internal weight demanding response
+    - arms shaking under weight
+    - balls tightening under heat
+    - breath shortened under weight and heat
+    - collapse into heavy, shared exhaustion
+    - cunt clenching around internal weight
+  Atmospheric:
+    - Weight
+    - Warmth
+    - Velvet
+
+# ============================================================
+# FLUID BEHAVIOUR  [System + Lexicon Layers]
+# ============================================================
+
+Fluid_Behaviour:
+
+# ============================================================
+# SOUND REGISTER  [Lexicon Layer]
+# ============================================================
+
+Sound_Register:
+  - the_weight_dropping
+  - sac_striking_surface
+
+Scent_Register:
+  - salt_musk
+  - root_heat
+  - truffle_dark
+
+# ============================================================
+# SACRED REGISTER  [Lexicon Layer]
+# ============================================================
+
+Sacred_Register:
+  Primary_Terms:
+    - the_weight_of_them
+    - root_vessel
+    - covenant_weight
+    - globes_endured
+    - sac_as_altar
+  Symbolic_Frames:
+    Balls_As:
+      - altar
+      - covenant_weight
+      - root_vessel
+      - bloom_fold_mirror
+  Corpus_Sacred_Terms:
+    - bread, body, and cum in sacred union
+    - globes endured
+    - weight carried
+
+# ============================================================
+# COLLOCATES  [Lexicon Layer]
+# ============================================================
+
+Collocates:
+  Base_Clusters:
+    - pendulous weight
+    - sac heavy
+    - the weight of them in her palm
+    - sac sagging low
+    - globes endured
+  Corpus_Collocates:
+    - weight dragging low
+    - ache carried in globes
+    - balls seated deep
+    - bodies pressing heavy
+    - cock and balls chambered
+    - folds sagging heavy
+    - pendulous weight spilling
+    - quick salt heavy salt
+    - sac sagging heavy
+    - weight carried in flesh
+    - weight on his face
+    - weight pooled low
+    - weight pressing into cunt
+    - weighty in hand
+    - cock and balls trapped
+
+Tension:
+  Toward:
+    - mouth
+    - hand
+    - weight_acknowledged
+  Against:
+    - ignored
+    - diminished
+
+# ============================================================
+# PROSE NOTES  [Prose Layer]
+# ============================================================
+
+Prose_Notes:
+  Altar_Register: >
+    His Balls My Altar established the devotional register.
+    The mouth reading the sac as text. Each feature
+    found and attended. The weight honoured. The scar read.
+    This is the register when balls are worshipped.
+
+  Feminization: >
+    In feminization the sac is repositioned — spread wide
+    to create the bloom fold architecture. The sac becomes
+    its own register: heavy, warm, new architecture.
+
+# ============================================================
+# BANNED TERMS  [System Layer]
+# ============================================================
+
+Banned_Terms:
+  Absolute:
+    - nuts
+    - nads
+    - bag (scrotum)
+    - bollocks
+    - knackers
+    - ball_sack
+    - nut_sack
+    - cojones
+  Tonal_Bans:
+    Comic: Any term producing deflating or humorous effect
+    Clinical: Medical language without sacred frame
+
+Build:
+  Session: Current
+  Version: "1.0"
+  Status: Complete
+  Corpus_Gap_Fill: Applied v1.0
+  Register: male

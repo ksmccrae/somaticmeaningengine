@@ -1,0 +1,176 @@
+# ============================================================
+# K.S. McCRAE SOMATIC LEXICON SYSTEM
+# Anatomical Entry: Navel
+# Register: shared
+# Version: 1.0
+# ============================================================
+#
+# AUTHORING MODEL
+# LEXICON LAYER:  underscore_tokens — controlled vocabulary,
+#                 compiled into allowed register
+# SYSTEM LAYER:   structured metadata — dependencies, modifies,
+#                 conditions — not prose vocabulary
+# SOMATIC LAYER:  interior sensation states — writer-facing,
+#                 not compiled, not vocabulary tokens
+# PROSE LAYER:    authoring notes — writer-facing, not compiled
+#
+# SALIENCE: Tertiary
+# REGISTER WEIGHT: Variable
+# ============================================================
+
+# ============================================================
+# METADATA  [System Layer]
+# ============================================================
+
+Name: shared_navel
+Version: "1.0"
+Type: anatomy
+Register: shared
+Salience: Tertiary
+Parent_Register: register_shared.yaml
+
+Dependencies:
+  anatomy:
+    - shared_belly
+    - shared_skin
+  fluids:
+    - male_seed
+  tropes:
+    - trope_marking
+    - trope_worship
+  pairs:
+
+Modifies:
+
+Entry_Conditions:
+  requires:
+    body_active: true
+    register:
+      allowed:
+        - female
+        - male
+        - trans_feminine
+        - trans_masculine
+  power_required: any
+  blocks: []
+
+Scene_Roles:
+  marking: seed_gathering_point
+
+Role_Priority:
+  primary: variable
+
+Corpus_Status:
+  Corpus_Extract_Reviewed: true
+  Gap_Fill_Applied: true
+  Corpus_Terms_Found: 1
+
+# ============================================================
+# IDENTITY  [Lexicon + Prose Layers]
+# ============================================================
+
+Site: navel
+Status: Active
+
+Identity:
+  Label: Navel
+  Preferred_Term: navel
+  Register_Weight: Variable
+  Scope: >
+    The navel hollow. Tertiary. Seed pools here in marking.
+    The tongue traces it in worship. Rarely foregrounded.
+  Usage_Note: >
+    Navel. The hollow at the navel. Rarely named directly.
+
+# ============================================================
+# ALLOWED REGISTER  [Lexicon Layer]
+# ============================================================
+
+Allowed_Register:
+
+  State_Register:
+    - hollow
+    - quivering
+    - seed_pooled
+    - warm
+
+  Sacred_Terms:
+    - the_hollow
+    - navel_quivering
+    - seed_pooled_at_navel
+
+# ============================================================
+# SOMATIC REGISTER  [Somatic Layer]
+# Interior sensation states. Not vocabulary. Not compiled.
+# ============================================================
+
+Somatic:
+  Primary:
+    - seed pooling warm in the hollow
+    - the navel quivering under tongue
+  Secondary:
+    - navels quivering hollows
+  Atmospheric:
+    - Hollow
+
+# ============================================================
+# FLUID BEHAVIOUR  [System + Lexicon Layers]
+# ============================================================
+
+Fluid_Behaviour:
+
+# ============================================================
+# SACRED REGISTER  [Lexicon Layer]
+# ============================================================
+
+Sacred_Register:
+  Primary_Terms:
+    - the_hollow
+    - navel_quivering
+    - seed_pooled_at_navel
+  Symbolic_Frames:
+    Navel_As:
+      - hollow
+      - gathering_point
+
+# ============================================================
+# COLLOCATES  [Lexicon Layer]
+# ============================================================
+
+Collocates:
+  Base_Clusters:
+    - seed pooled at navel
+    - the navel hollow
+    - navels quivering
+
+Tension:
+  Toward:
+    - tongue
+    - seed
+  Against:
+
+# ============================================================
+# PROSE NOTES  [Prose Layer]
+# ============================================================
+
+Prose_Notes:
+  Tertiary: >
+    Present when belly is active. Rarely named. Let it gather what falls there.
+
+# ============================================================
+# BANNED TERMS  [System Layer]
+# ============================================================
+
+Banned_Terms:
+  Childish:
+    - belly_button (childish register in erotic context)
+  Tonal_Bans:
+    Comic: Any term producing deflating or humorous effect
+    Clinical: Medical language without sacred frame
+
+Build:
+  Session: Current
+  Version: "1.0"
+  Status: Complete
+  Corpus_Gap_Fill: Applied v1.0
+  Register: shared

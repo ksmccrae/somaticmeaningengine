@@ -1,0 +1,214 @@
+# ============================================================
+# K.S. McCRAE SOMATIC LEXICON SYSTEM
+# Anatomical Entry: Labia Majora
+# Register: female
+# Version: 1.0
+# ============================================================
+#
+# AUTHORING MODEL
+# LEXICON LAYER:  underscore_tokens — controlled vocabulary,
+#                 compiled into allowed register
+# SYSTEM LAYER:   structured metadata — dependencies, modifies,
+#                 conditions — not prose vocabulary
+# SOMATIC LAYER:  interior sensation states — writer-facing,
+#                 not compiled, not vocabulary tokens
+# PROSE LAYER:    authoring notes — writer-facing, not compiled
+#
+# SALIENCE: Secondary
+# REGISTER WEIGHT: Sovereign
+# ============================================================
+
+# ============================================================
+# METADATA  [System Layer]
+# ============================================================
+
+Name: female_labia_majora
+Version: "1.0"
+Type: anatomy
+Register: female
+Salience: Secondary
+Parent_Register: register_female.yaml
+
+Dependencies:
+  anatomy:
+    - female_cunt
+    - female_labia_minora
+    - female_mons
+    - female_clitoris
+  fluids:
+    - female_gloss
+  tropes:
+    - trope_queening
+    - trope_gyno_play
+    - trope_feminization
+  pairs:
+    - pair_tongue_cunt
+    - pair_cunt_thighs
+
+Modifies:
+
+Entry_Conditions:
+  requires:
+    body_active: true
+    register:
+      allowed:
+        - female
+        - trans_feminine
+  power_required: any
+  blocks: []
+
+Scene_Roles:
+  queening: framing_weight
+  gyno_play: outer_architecture
+  feminization: mirrored_site
+
+Role_Priority:
+  primary: sovereign
+
+Corpus_Status:
+  Corpus_Extract_Reviewed: true
+  Gap_Fill_Applied: true
+  Corpus_Terms_Found: 1
+
+# ============================================================
+# IDENTITY  [Lexicon + Prose Layers]
+# ============================================================
+
+Site: labia_majora
+Status: Active
+
+Identity:
+  Label: Labia Majora
+  Preferred_Term: outer_folds
+  Register_Weight: Sovereign
+  Scope: >
+    The outer folds of the vulva. Framing tissue.
+    They frame the cunt and carry the weight of her body
+    in queening. Furred where present, smooth when waxed.
+    Secondary site — framing architecture.
+  Usage_Note: >
+    Outer folds, outer lips. Secondary to the cunt and labia minora.
+
+# ============================================================
+# ALLOWED REGISTER  [Lexicon Layer]
+# ============================================================
+
+Allowed_Register:
+
+  State_Register:
+    - soft
+    - full
+    - furred
+    - smooth
+    - plump
+    - swollen
+    - warm
+    - sealed
+    - parted
+    - spread
+
+  Texture_Register:
+    - soft_outer_lips
+    - plump_folds
+    - furred_edge
+    - smooth_after_wax
+
+  Sacred_Terms:
+    - outer_framing
+    - the_weight_of_her
+    - sovereign_architecture
+
+# ============================================================
+# SOMATIC REGISTER  [Somatic Layer]
+# Interior sensation states. Not vocabulary. Not compiled.
+# ============================================================
+
+Somatic:
+  Primary:
+    - warmth of the outer folds in contact
+    - parting under touch or weight
+    - the fullness of the outer lips against skin
+  Secondary:
+  Atmospheric:
+    - Warmth
+    - Weight
+    - Fullness
+
+# ============================================================
+# FLUID BEHAVIOUR  [System + Lexicon Layers]
+# ============================================================
+
+Fluid_Behaviour:
+  female_gloss:
+    stages:
+      - coat
+    escalation:
+      triggered_by:
+        - arousal_present
+    function:
+      - surface_evidence
+
+# ============================================================
+# SACRED REGISTER  [Lexicon Layer]
+# ============================================================
+
+Sacred_Register:
+  Primary_Terms:
+    - outer_framing
+    - sovereign_architecture
+    - the_weight_of_her
+  Symbolic_Frames:
+    Labia_Majora_As:
+      - framing
+      - architecture
+      - outer_gate
+
+# ============================================================
+# COLLOCATES  [Lexicon Layer]
+# ============================================================
+
+Collocates:
+  Base_Clusters:
+    - soft outer lips
+    - furred edge
+    - outer folds parted
+
+Tension:
+  Toward:
+    - parting
+    - contact
+  Against:
+    - sealed
+
+# ============================================================
+# PROSE NOTES  [Prose Layer]
+# ============================================================
+
+Prose_Notes:
+  Secondary_Register: >
+    Labia majora are framing architecture.
+    They appear when the frame of the cunt matters —
+    in queening (weight on his face), in gyno play
+    (held wide), in feminization (the sac mirroring them).
+    Rarely the focus. Always present.
+
+# ============================================================
+# BANNED TERMS  [System Layer]
+# ============================================================
+
+Banned_Terms:
+  Clinical_Unadorned:
+    - labia_majora (primary standalone)
+  Crude:
+    - beef_curtains
+    - roast_beef
+  Tonal_Bans:
+    Comic: Any term producing deflating or humorous effect
+    Clinical: Medical language without sacred frame
+
+Build:
+  Session: Current
+  Version: "1.0"
+  Status: Complete
+  Corpus_Gap_Fill: Applied v1.0
+  Register: female

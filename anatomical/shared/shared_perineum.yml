@@ -1,0 +1,243 @@
+# ============================================================
+# K.S. McCRAE SOMATIC LEXICON SYSTEM
+# Anatomical Entry: Perineum
+# Register: shared
+# Version: 1.0
+# ============================================================
+#
+# AUTHORING MODEL
+# LEXICON LAYER:  underscore_tokens — controlled vocabulary,
+#                 compiled into allowed register
+# SYSTEM LAYER:   structured metadata — dependencies, modifies,
+#                 conditions — not prose vocabulary
+# SOMATIC LAYER:  interior sensation states — writer-facing,
+#                 not compiled, not vocabulary tokens
+# PROSE LAYER:    authoring notes — writer-facing, not compiled
+#
+# SALIENCE: Secondary
+# REGISTER WEIGHT: Variable
+# ============================================================
+
+# ============================================================
+# METADATA  [System Layer]
+# ============================================================
+
+Name: shared_perineum
+Version: "1.0"
+Type: anatomy
+Register: shared
+Salience: Secondary
+Parent_Register: register_shared.yaml
+
+Dependencies:
+  anatomy:
+    - female_cunt
+    - shared_arse
+    - male_balls
+    - shared_skin
+  fluids:
+    - female_gloss
+    - shared_sweat
+    - shared_saliva
+  tropes:
+    - trope_worship
+    - trope_depth_play
+    - trope_mirroring
+  pairs:
+    - pair_cunt_arse
+    - pair_cock_arse
+
+Modifies:
+
+Entry_Conditions:
+  requires:
+    body_active: true
+    register:
+      allowed:
+        - female
+        - male
+        - trans_feminine
+        - trans_masculine
+  power_required: any
+  blocks: []
+
+Scene_Roles:
+  dual_penetration: strained_bridge
+  worship: licked_seam
+  depth_play: strained_at_limit
+
+Role_Priority:
+  primary: variable
+
+Corpus_Status:
+  Corpus_Extract_Reviewed: true
+  Gap_Fill_Applied: true
+  Corpus_Terms_Found: 48
+
+# ============================================================
+# IDENTITY  [Lexicon + Prose Layers]
+# ============================================================
+
+Site: perineum
+Status: Active
+
+Identity:
+  Label: Perineum
+  Preferred_Term: seam
+  Register_Weight: Variable
+  Scope: >
+    The bridge between cunt and arse, or between balls and arse.
+    The seam. Carries pressure from both. In dual penetration
+    register: strained between both sites. In worship: licked,
+    traced, kissed. The seam holds covenant.
+  Usage_Note: >
+    Seam. Bridge. The perineum. Never: taint, gooch, grundle.
+
+# ============================================================
+# ALLOWED REGISTER  [Lexicon Layer]
+# ============================================================
+
+Allowed_Register:
+
+  State_Register:
+    - stretched
+    - strained
+    - shiny
+    - warm
+    - taut
+    - licked
+    - kissed
+    - pressure_bridge
+
+  Sacred_Terms:
+    - the_seam
+    - seam_holds_covenant
+    - the_bridge
+    - seam_bridge
+    - shiny_perineum
+
+  Corpus_Gap_Fill:
+    - stretched seams
+    - clenching seam
+    - darkened seams
+    - loose yielding seams
+    - loosened seam
+    - open cunt seam
+    - open seams
+    - raised seam
+    - scarred seam
+    - seamless entry
+    - smooth seam
+    - split seam
+
+# ============================================================
+# SOMATIC REGISTER  [Somatic Layer]
+# Interior sensation states. Not vocabulary. Not compiled.
+# ============================================================
+
+Somatic:
+  Primary:
+    - the pressure between arse and cunt when both filled
+    - the tongue tracing the seam
+    - the stretch of it under depth
+  Secondary:
+    - readiness building as certainty not desire
+    - body balancing between two anchor sites
+    - body oscillating between control and overload
+    - body oscillating between tension and collapse
+    - breath shallow between hunger and doubt
+    - clit throbbing raw at seam
+  Atmospheric:
+    - Bridge
+    - Pressure
+    - Seam
+
+# ============================================================
+# FLUID BEHAVIOUR  [System + Lexicon Layers]
+# ============================================================
+
+Fluid_Behaviour:
+
+# ============================================================
+# SACRED REGISTER  [Lexicon Layer]
+# ============================================================
+
+Sacred_Register:
+  Primary_Terms:
+    - the_seam
+    - seam_holds_covenant
+    - the_bridge
+    - shiny_perineum
+  Symbolic_Frames:
+    Perineum_As:
+      - covenant_seam
+      - bridge_register
+      - pressure_between
+  Corpus_Sacred_Terms:
+    - no seam, no boundary
+    - seam chosen
+    - seam holds covenant
+
+# ============================================================
+# COLLOCATES  [Lexicon Layer]
+# ============================================================
+
+Collocates:
+  Base_Clusters:
+    - the seam between
+    - seam holds covenant
+    - shiny perineum stretched
+    - tongue at the seam
+  Corpus_Collocates:
+    - dripping between thighs
+    - hair tangled between thighs
+    - held between bodies
+    - mapping the seam
+    - no seam, no boundary
+    - open mouths open seams
+    - perineum stretched shiny
+    - ropes stringing between lips
+    - seam drawn pale
+    - seam stays closed
+    - seam tugged under touch
+    - seams opened wide
+    - smell rising between bodies
+    - fluid moved between cunt and arse
+    - pooled sweat between folds
+
+Tension:
+  Toward:
+    - tongue
+    - pressure
+    - strained
+  Against:
+
+# ============================================================
+# PROSE NOTES  [Prose Layer]
+# ============================================================
+
+Prose_Notes:
+  Seam_Register: >
+    The seam holds covenant. When licked or kissed it connects the cunt and arse registers. Write the bridge.
+
+# ============================================================
+# BANNED TERMS  [System Layer]
+# ============================================================
+
+Banned_Terms:
+  Absolute:
+    - taint
+    - gooch
+    - grundle
+    - scranus
+    - biffins_bridge
+  Tonal_Bans:
+    Comic: Any term producing deflating or humorous effect
+    Clinical: Medical language without sacred frame
+
+Build:
+  Session: Current
+  Version: "1.0"
+  Status: Complete
+  Corpus_Gap_Fill: Applied v1.0
+  Register: shared

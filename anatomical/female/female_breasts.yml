@@ -1,0 +1,444 @@
+# ============================================================
+# K.S. McCRAE SOMATIC LEXICON SYSTEM
+# Anatomical Entry: Breasts
+# Register: female
+# Version: 1.1
+# ============================================================
+#
+# AUTHORING MODEL
+# LEXICON LAYER:  underscore_tokens — controlled vocabulary,
+#                 compiled into allowed register
+# SYSTEM LAYER:   structured metadata — dependencies, modifies,
+#                 conditions — not prose vocabulary
+# SOMATIC LAYER:  interior sensation states — writer-facing,
+#                 not compiled, not vocabulary tokens
+# PROSE LAYER:    authoring notes — writer-facing, not compiled
+#
+# SALIENCE: Primary
+# REGISTER WEIGHT: Sovereign
+#
+# v1.1 CHANGES
+# tits: NOW PERMITTED in active/informal arousal register
+# breasts: remains primary sacred register term
+# Corpus_Gap_Fill: cleaned of non-breast terms
+# Register_Discipline note added for tits vs breasts
+# ============================================================
+
+# ============================================================
+# METADATA  [System Layer]
+# ============================================================
+
+Name: female_breasts
+Version: "1.1"
+Type: anatomy
+Register: female
+Salience: Primary
+Parent_Register: register_female.yaml
+
+Dependencies:
+  anatomy:
+    - shared_nipples
+    - female_areola
+    - shared_chest
+    - female_womb
+  fluids:
+    - female_milk
+    - female_ritual_blend
+  tropes:
+    - trope_lactation
+    - trope_worship
+    - trope_body_reclamation
+    - trope_temperature_play
+    - trope_marking
+    - trope_rise_of_breasts
+  pairs:
+    - pair_breasts_mouth
+
+Produces:
+  fluids:
+    - female_milk
+
+Modifies:
+  female_milk:
+    effect: production_site
+    trigger:
+      - let_down
+      - stimulation
+      - arousal
+    result: milk_expression
+
+Entry_Conditions:
+  requires:
+    body_active: true
+    register:
+      allowed:
+        - female
+        - trans_feminine
+  power_required: any
+  blocks: []
+
+Scene_Roles:
+  lactation: production_site
+  worship: altar
+  marking: receiving_surface
+  temperature_play: canvas
+  rise_of_breasts: sovereign_centre
+
+Role_Priority:
+  primary: sovereign
+
+Corpus_Status:
+  Corpus_Extract_Reviewed: true
+  Gap_Fill_Applied: true
+  Gap_Fill_Version: "1.1"
+
+# ============================================================
+# IDENTITY  [Lexicon + Prose Layers]
+# ============================================================
+
+Site: breasts
+Status: Active
+
+Identity:
+  Label: Breasts
+  Preferred_Term: breasts
+  Informal_Allowed: tits
+  Register_Weight: Sovereign
+  Scope: >
+    Sovereign female tissue. Erotic and nourishing simultaneously
+    when lactating. Range from small and sharp to heavy and full.
+    All configurations sovereign. No size or shape is
+    diminished. The body's sovereign weight.
+  Usage_Note: >
+    breasts is the primary sacred register term.
+    tits is permitted in v1.1 in active/informal arousal register.
+    When the prose is devotional or sacred: breasts.
+    When the prose is urgent, physical, active: tits is available.
+    All sizes and shapes carry identical sovereign register.
+    titties, boobs, jugs, melons and all diminutive/food
+    register terms remain banned.
+
+# ============================================================
+# ALLOWED REGISTER  [Lexicon Layer]
+# ============================================================
+#
+# Register discipline for tits vs breasts:
+#
+# breasts — sacred register, devotional, nourishment,
+#            postpartum, worship, lactation, body_reclamation
+# tits     — active arousal register, physical urgency,
+#            weight as force, active handling, saturation
+#
+# Examples:
+#   Her breasts heavy with milk — breasts (nourishment sacred)
+#   His hands on her tits — tits (physical active)
+#   The weight of her breasts — breasts (sacred weight)
+#   Tits burning with need — tits (arousal urgency)
+# ============================================================
+
+Allowed_Register:
+
+  State_Register:
+    Sacred_Primary:
+      - full
+      - heavy
+      - swollen
+      - aching
+      - milk_heavy
+      - oiled
+      - slicked
+      - crowned
+      - risen
+      - saturated
+      - gleaming
+    Informal_Active:
+      - tits
+      - heavy_tits
+      - tits_burning
+      - tits_pinning
+      - tits_soaked
+
+  Size_And_Shape:
+    Sacred_Register:
+      - breasts (any configuration)
+      - heavy_breasts
+      - small_sharp_breasts
+      - pendulous_breasts
+      - risen_breasts
+      - full_curves
+      - soft_breasts
+    Active_Register:
+      - heavy_tits
+      - small_sharp_nipples
+      - pendulous
+      - the_weight_of_them
+
+  Texture_Register:
+    - rounded
+    - full_curve
+    - sovereign_weight
+    - the_weight_of_them
+    - milk_swollen
+    - the_warmth_of_them
+
+  Active_Handling:
+    - the_tits_in_his_hands
+    - tits_against_his_face
+    - tits_pinning_him_down
+    - tits_bouncing
+    - tits_burning_with_need
+  Active_Handling_Note: >
+    Active handling register where tits is used — physical,
+    urgent, weight as force. Not worship register.
+    Worship register uses breasts.
+
+  Sacred_Terms:
+    - sovereign_weight
+    - risen_breasts
+    - crowned_chest
+    - the_body_that_nourishes
+    - sovereign_breasts
+    - the_breast_offered
+
+  Corpus_Gap_Fill:
+    - bouncing_tits
+    - tits_burning_with_need
+    - tits_pinning_him_down
+    - flooded_cleavage
+    - cleavage_flooding_full
+    - chest_drowning_in_shine
+    - nipples_weeping_milk
+    - milk_beading_then_running
+    - heavy_breasts
+    - smeared_across_chest
+
+# ============================================================
+# SOMATIC REGISTER  [Somatic Layer]
+# Interior sensation states. Not vocabulary. Not compiled.
+# ============================================================
+
+Somatic:
+  Primary:
+    - ache of fullness when milk is present
+    - nipple response travelling through the breast
+    - the let-down tingle preceding milk flow
+    - weight in the palms of another
+    - the breast as erotic and nourishing simultaneously
+    - sensitivity concentrated at nipple not breast surface
+    - the heaviness after feeding
+    - the breast burning with arousal — hunger not nourishment
+  Secondary:
+    - body arching to present the chest
+    - breasts trembling with each strike in saturation register
+    - chest as primary arousal centre
+    - tits burning with need — the physical urgency register
+    - tits pressing weight against him
+    - collapse into heavy shared exhaustion
+  Atmospheric:
+    - Weight
+    - Warmth
+    - Fullness
+    - Burning
+
+# ============================================================
+# FLUID BEHAVIOUR  [System + Lexicon Layers]
+# ============================================================
+
+Fluid_Behaviour:
+  female_milk:
+    stages:
+      - bead
+      - drip
+      - stream
+      - flood
+      - wept
+    escalation:
+      triggered_by:
+        - let_down
+        - stimulation
+        - arousal_can_trigger_let_down
+    function:
+      - nourishment
+      - covenant_offering
+      - dual_register
+
+# ============================================================
+# SOUND REGISTER  [Lexicon Layer]
+# ============================================================
+
+Sound_Register:
+  - the_sigh_at_weight
+  - the_sound_of_milk_drawn
+  - the_draw_at_nipple
+
+Scent_Register:
+  - sweet_milk
+  - salt_skin
+  - the_warmth_of_them
+
+# ============================================================
+# SACRED REGISTER  [Lexicon Layer]
+# ============================================================
+
+Sacred_Register:
+  Primary_Terms:
+    - sovereign_weight
+    - crowned
+    - risen
+    - the_body_that_nourishes
+    - sovereign_nourishment
+    - the_breast_as_altar
+  Symbolic_Frames:
+    Breasts_As:
+      - sovereign_weight
+      - nourishment_site
+      - altar_of_milk
+      - erotic_and_nourishing
+      - sovereign_offering
+  Corpus_Sacred_Terms:
+    - breasts as proof
+    - still whole
+    - risen not restored
+    - crowned not ruined
+    - taken back through use
+    - every drop marks return
+    - mine again
+
+# ============================================================
+# COLLOCATES  [Lexicon Layer]
+# ============================================================
+
+Collocates:
+  Sacred_Register:
+    - heavy breasts
+    - the weight of them
+    - crowned in fluid
+    - milk-swollen
+    - the breasts offered
+    - risen breasts
+    - the body that nourishes
+  Active_Register:
+    - heavy tits
+    - tits burning with need
+    - tits pinning him down
+    - tits bouncing
+    - the tits against his face
+  Fluid_Register:
+    - milk beading then running
+    - nipples weeping milk
+    - cleavage flooding full
+    - chest drowning in shine
+    - smeared across chest
+    - flooded cleavage
+
+Tension:
+  Toward:
+    - mouth
+    - hands
+    - weight
+    - let_down
+  Against:
+    - ignored
+    - reduced_to_surface
+
+# ============================================================
+# GENDER VARIANTS  [System Layer]
+# ============================================================
+
+Gender_Variants:
+  Trans_Feminine:
+    Register: Identical sovereign register
+    Entry: anatomical/trans/tf_breasts.yaml
+    Note: >
+      HRT-grown breasts, augmented, or both — all sovereign.
+      tits permitted in same active register as natal female.
+
+# ============================================================
+# PROSE NOTES  [Prose Layer]
+# ============================================================
+
+Prose_Notes:
+  Register_Discipline: >
+    breasts and tits are not interchangeable — they carry
+    different registers. breasts for sacred, devotional,
+    nourishment, worship, postpartum, and body reclamation.
+    tits for physical urgency, active handling, weight as force,
+    saturation register. The distinction matters. Use it.
+
+  All_Configurations_Sovereign: >
+    Every size, shape, and configuration of breast carries
+    identical sacred register. Heavy tits, small sharp nipples,
+    pendulous, risen — all sovereign. No size hierarchy.
+
+  Dual_Register_Lactation: >
+    When milk is present the breast carries both erotic and
+    nourishment registers simultaneously. Neither cancels.
+    Write both. The dual weight is the register.
+
+  Active_vs_Sacred: >
+    Her breasts heavy with milk — breasts. Sacred weight.
+    Tits burning with need — tits. Physical arousal urgency.
+    His hands on her tits — tits. Active physical contact.
+    The breast offered to his mouth — breasts. Devotional.
+    Both terms available. Choose by register not habit.
+
+  Rise_Of_Breasts_Register: >
+    In the saturation/marking register (Rise of Breasts arc):
+    the breasts become the sovereign centre of the scene.
+    Fluid saturation is the register. tits is the active term
+    here — the physical urgency of the saturation event.
+    crowned, risen, sovereign — sacred frame maintained
+    alongside the physical intensity.
+
+# ============================================================
+# BANNED TERMS  [System Layer]
+# ============================================================
+
+Banned_Terms:
+  Absolute:
+    - jugs
+    - melons
+    - cantaloupes
+    - hooters
+    - honkers
+    - bazongas
+    - knockers
+    - rack
+    - fun_bags
+    - udders
+    - dugs
+    - mommy_milkers
+  Diminutive:
+    - boobs
+    - boobies
+    - titties
+    - titty
+    - boobie
+  Food_Register:
+    - milk_jugs
+    - milk_bags
+    - dairy_register (any)
+  Comic:
+    - fun_bags
+    - airbags
+  Tonal_Bans:
+    Comic: Any term producing deflating or humorous effect
+    Farm_Register: udders, dugs, dairy — absolute
+    Clinical: Medical language without sacred frame
+
+Build:
+  Session: Current
+  Version: "1.1"
+  Status: Complete
+  Corpus_Gap_Fill: Applied v1.1
+  Register: female
+  Changes_From_1_0: >
+    tits added to Allowed_Register as active/informal term.
+    Register_Discipline note added explaining tits vs breasts.
+    Active_Handling block added with tits collocates.
+    Usage_Note updated — no longer says absolute ban.
+    Corpus_Gap_Fill cleaned of non-breast terms.
+    Active_Register collocates added.
+    Sacred_Register and Active_Register distinguished in collocates.
+    Rise_Of_Breasts prose note added.
+    Version bumped to 1.1.

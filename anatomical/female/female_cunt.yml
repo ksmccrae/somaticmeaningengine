@@ -1,0 +1,977 @@
+# ============================================================
+# K.S. McCRAE SOMATIC LEXICON SYSTEM
+# Anatomical Entry: Cunt
+# Register: Female Primary
+# Version: 1.3
+# ============================================================
+#
+# AUTHORING MODEL
+#
+# LEXICON LAYER
+#   What it is:   Controlled vocabulary terms permitted for
+#                 this site. The words the model may use.
+#   Format:       underscore_tokens where multi-word,
+#                 or single plain terms
+#   Compiled:     Yes — loads into allowed register at
+#                 generation time
+#   Not:          Full phrases. Sensation descriptions.
+#                 Metadata values.
+#
+# SYSTEM LAYER
+#   What it is:   Machine-readable metadata. Infrastructure.
+#   Format:       Structured YAML keys and values, not prose
+#   Compiled:     Yes — system context, not generation vocab
+#   Not:          Prose terms. Sensation descriptions.
+#
+# SOMATIC LAYER
+#   What it is:   What the body feels from within at this site.
+#                 Interior sensation states, not vocabulary terms.
+#   Format:       Natural language phrases. Present tense.
+#   Compiled:     No — writer-facing guidance only
+#   Not:          Single vocabulary tokens. Metadata.
+#
+# PROSE LAYER
+#   What it is:   Authoring notes specific to this site.
+#                 What a writer must remember.
+#   Format:       Natural language. Imperative where needed.
+#   Compiled:     No — writer-facing guidance only
+#   Not:          Vocabulary terms. System metadata.
+#
+# SALIENCE: Primary
+#   Full vocabulary range. Named directly and repeatedly.
+#   Scene centre in queening, depth play, gyno play,
+#   fluid ritual, awakening, body reclamation.
+#
+# REGISTER WEIGHT: Sovereign (fixed — never conditional)
+#
+# ============================================================
+
+# ============================================================
+# METADATA  [System Layer]
+# ============================================================
+
+Name: female_cunt
+Version: "1.3"
+Type: anatomy
+Register: female
+Salience: Primary
+Parent_Register: register_female.yaml
+
+Dependencies:
+  anatomy:
+    - female_clitoris
+    - female_labia_minora
+    - female_labia_majora
+    - female_gspot
+    - female_clitoral_hood
+    - shared_thighs
+    - shared_skin
+    - shared_perineum
+    - shared_arse
+    - shared_mouth
+    - shared_tongue
+    - shared_hand
+  fluids:
+    - female_gloss
+    - female_flood
+    - female_blood
+    - female_gold
+    - female_ritual_blend
+  tropes:
+    - trope_queening
+    - trope_depth_play
+    - trope_gyno_play
+    - trope_watersports
+    - trope_marking
+    - trope_feminization
+    - trope_postpartum
+    - trope_fluid_ritual
+    - trope_orgasm_control
+    - trope_body_reclamation
+    - trope_awakening
+    - trope_slow_sex
+    - trope_mirroring
+    - trope_breeding
+  pairs:
+    - pair_tongue_cunt
+    - pair_hand_cunt
+    - pair_cunt_arse
+    - pair_cunt_thighs
+
+Optional_Dependencies:
+  fluids:
+    - shared_saliva
+    - male_seed
+  anatomy:
+    - male_cock
+    - tf_cock
+    - tm_cock
+
+Produces:
+  fluids:
+    - female_gloss
+    - female_flood
+    - female_blood
+    - female_gold
+
+Modifies:
+  fluids:
+    female_gloss:
+      effect: volume_stage_advance
+      trigger:
+        - arousal_present
+        - direct_contact
+        - scent_proximity
+      result: stage_progression
+      note: bead -> dew_thread -> stringing -> slick -> pool -> flood
+
+    female_flood:
+      effect: release_triggered
+      trigger:
+        - peak_arousal
+        - gspot_stimulation
+        - sustained_oral
+        - orgasm_permission_granted
+      result: flood_arrival
+
+    female_gold:
+      effect: offering_enabled
+      trigger:
+        - position_above
+        - chosen_release
+      result: sovereign_stream
+
+    male_seed:
+      effect: receiving_enabled
+      trigger:
+        - penetration
+        - directed_marking
+      result: internal_or_surface_receipt
+
+  tropes:
+    trope_queening:
+      effect: primary_site_activated
+      role: throne
+      trigger:
+        - face_below
+        - weight_settled
+    trope_depth_play:
+      effect: depth_register_opened
+      role: bloom_site
+      trigger:
+        - sustained_pressure
+        - entry_beyond_knuckles
+    trope_gyno_play:
+      effect: examination_register_active
+      role: examination_site
+      trigger:
+        - held_wide
+        - displayed_for_witness
+    trope_orgasm_control:
+      effect: threshold_site_active
+      role: edge_site
+      trigger:
+        - threshold_approached
+        - permission_withheld
+    trope_body_reclamation:
+      effect: claiming_register_active
+      role: primary_claiming_site
+      trigger:
+        - naming_as_mine
+        - first_flood_claimed
+    trope_fluid_ritual:
+      effect: source_and_receiver_active
+      role: fluid_exchange_node
+      trigger:
+        - fluid_present
+        - transfer_intent
+    trope_awakening:
+      effect: initiation_register_active
+      role: primary_discovery_site
+      trigger:
+        - first_contact
+        - guided_discovery
+    trope_slow_sex:
+      effect: threshold_sustained_without_peak
+      role: held_site
+      trigger:
+        - karezza_active
+    trope_mirroring:
+      effect: mirrored_exchange_enabled
+      role: fluid_exchange_site
+      trigger:
+        - partner_cunt_present
+        - grinding_contact
+    trope_feminization:
+      effect: sac_bloom_fold_register
+      trigger:
+        - repositioning
+      note: sac repositioned to mirror cunt architecture
+
+  pairs:
+    pair_tongue_cunt:
+      effect: worship_register_active
+      role: receiving_site
+    pair_hand_cunt:
+      effect: depth_register_active
+      role: receiving_site
+    pair_cunt_arse:
+      effect: dual_register_active
+      role: bridge_site
+      note: wall_between activates when both filled
+    pair_cunt_thighs:
+      effect: atmospheric_framing_active
+      role: framed_site
+
+Entry_Conditions:
+  requires:
+    body_active: true
+    register:
+      allowed:
+        - female
+        - trans_feminine
+        - trans_masculine
+  power_required: any
+  trans_note: >
+    Trans feminine: tf_cunt.yaml, identical sovereign register.
+    Trans masculine: tm_front.yaml, his term governs, male register throughout.
+  blocks: []
+
+Scene_Roles:
+  queening: throne
+  oral_worship: primary_receiving
+  penetration: receiving
+  depth_play: bloom_site
+  gyno_play: examination_site
+  watersports: offering_channel
+  marking: receiving_surface
+  postpartum: covenant_reopened
+  fluid_ritual: exchange_node
+  ff_grinding: fluid_exchange_site
+  karezza: sustained_threshold_site
+  selection: sovereign_gating_site
+  awakening: primary_discovery_site
+  body_reclamation: claiming_site
+
+Role_Priority:
+  primary: sovereign
+  secondary:
+    - receiving
+    - bloom_site
+    - examination_site
+    - throne
+    - offering_channel
+    - exchange_node
+
+Routing_Targets:
+  self: anatomical/female/female_cunt.yaml
+  linked_fluids:
+    - fluids/female/female_gloss.yaml
+    - fluids/female/female_flood.yaml
+    - fluids/female/female_blood.yaml
+    - fluids/female/female_gold.yaml
+    - fluids/female/female_ritual_blend.yaml
+  linked_pairs:
+    - pairs/pair_tongue_cunt.yaml
+    - pairs/pair_hand_cunt.yaml
+    - pairs/pair_cunt_arse.yaml
+    - pairs/pair_cunt_thighs.yaml
+  linked_tropes:
+    - tropes/trope_queening.yaml
+    - tropes/trope_depth_play.yaml
+    - tropes/trope_fluid_ritual.yaml
+    - tropes/trope_orgasm_control.yaml
+
+Corpus_Status:
+  Corpus_Extract_Reviewed: true
+  Gap_Fill_Applied: true
+  Gap_Fill_Version: "1.0"
+  Known_Pairs_Gap: pair_cunt_cunt not yet built (ff_grinding register)
+  Notes: >
+    Gap fill v1.0 at v1.3. Added 15 descriptors,
+    17 somatic states, 12 sacred terms, 16 collocates,
+    3 scene roles. Fluid staging extended with dew_thread
+    and stringing. FF register flagged as pair gap.
+
+# ============================================================
+# IDENTITY  [Lexicon + Prose Layers]
+# ============================================================
+
+Site: cunt
+Status: Active
+
+Identity:
+  Label: Cunt
+  Preferred_Term: cunt
+  Register_Weight: Sovereign
+  Scope: >
+    The primary female genital site. Encompasses the full
+    vulval opening, vaginal canal, and surrounding tissue.
+    The central site of sovereign female erotic and emotional
+    architecture. Never named clinically. Never named crudely.
+    Never diminished. The word this body of work reaches for
+    first, and the site it returns to most.
+  Usage_Note: >
+    Cunt is anatomical and sacred register here, not vulgar.
+    Associated with agency, sovereignty, and physical realism.
+    It is precise. It is the correct word. Use it.
+
+# ============================================================
+# ALLOWED REGISTER  [Lexicon Layer]
+# ============================================================
+
+Allowed_Register:
+
+  State_Descriptors:
+    Arousal:
+      - swollen
+      - swollen_folds
+      - engorged
+      - pulsating
+      - darkened
+      - flushed
+      - slick
+      - slickened
+      - damp
+      - damp_folds
+      - soaked
+      - wet
+      - dripping
+      - dense
+      - suctioned
+      - velvet
+      - yeast_warm
+      - bloom
+      - sacred
+      - sacred_surface
+      - blood_seamed
+      - clot_bearing
+      - greedy_folds
+      - clenching_seam
+      - wet_seam
+      - wet_halo
+      - stringing_wet
+      - beading_wet
+      - dew_thread_wetness
+      - glossy_interior
+      - tender_walls
+
+    Resting:
+      - soft
+      - closed
+      - sealed_lips
+      - breathing
+      - framed
+      - textured
+      - creased
+      - hung_full
+      - hollowed
+      - smooth_cut
+      - scarred_seam
+
+    Open:
+      - open
+      - parted
+      - trembling_open
+      - yawning_open
+      - gaping
+      - stretched_obscene
+      - convulsing
+      - drooping
+      - spilling_flood
+      - loose_yielding_seams
+
+    Post_Use:
+      - sagging_folds
+      - slack_folds
+      - slack_cunt
+      - softened_aftermath
+      - held_fullness
+
+    Gripping:
+      - clenched
+      - clung
+      - twitching
+      - pulsed
+      - throbbed
+      - gripping_stronger
+
+  Texture_Register:
+    - velvet
+    - velvet_valley
+    - barley_husk
+    - husk_splitting
+    - glossy_ropes
+    - ropes_of_wet
+    - cream_thread
+    - honey_salt
+    - nectar
+    - bruised_valley
+    - yeast_warm
+
+  Fluid_Evidence:
+    - dripping
+    - soaked
+    - slick
+    - slickened
+    - glossy_ropes
+    - ropes_of_wet
+    - spilling_flood
+    - pooling
+    - leaking
+    - gathered
+    - strands
+    - viscous
+    - glistened
+    - stringing_wet
+    - beading_wet
+    - dew_thread
+    - wet_halo
+
+  Action_Descriptors:
+    Receiving:
+      - swallowed
+      - took
+      - opened_to
+      - received
+      - gripped
+      - held
+      - clung_to
+    Producing:
+      - spilled
+      - poured
+      - flooded
+      - leaked
+      - dripped
+      - gushed
+      - streamed
+    Self_Moving:
+      - pulsed
+      - throbbed
+      - twitched
+      - convulsed
+      - clenched
+      - fluttered
+      - breathed
+      - greedy_pull
+      - answering_pressure
+
+  Sacred_And_Symbolic:
+    - sacred
+    - bloom
+    - seam
+    - sacred_surface
+    - covenant_held
+    - sovereign_threshold
+    - altar_below
+    - the_gate
+    - threshold
+    - offering
+    - proof_of_pulse
+    - proof_of_desire
+    - proof_of_arousal
+    - cunt_as_cauldron
+
+  Postpartum_And_Scar:
+    - scarred_seam
+    - smooth_cut
+    - hollowed
+    - covenant_reopened
+    - proofed_seam
+    - wound_remade
+
+  Extended_Allowed:
+    - hung_full
+    - parted
+    - bruised_valley
+    - blood_seamed
+    - clot_bearing
+    - coral_dark
+    - furred_edge
+    - inner_heat
+    - the_hollow
+    - warm_hollow
+    - pressed_to_mouth
+    - riding_the_face
+    - settled_full
+    - sovereign_weight
+    - claimed_open
+    - held_wide
+    - spread_for_witness
+    - opened_by_instrument
+    - displayed
+    - mapped
+    - examined
+    - witnessed_depth
+    - glossy_interior
+
+# ============================================================
+# SOMATIC REGISTER  [Somatic Layer]
+# ============================================================
+# Interior sensation states. Not vocabulary. Not compiled.
+# Writer-facing interiority guidance only.
+# ============================================================
+
+Somatic:
+  Primary:
+    - pulse rising under touch
+    - ache deepening without release
+    - walls clenching around insertion
+    - the swell before flood
+    - stretch at the gate
+    - throb that precedes gush
+    - bloom point lighting under pressure
+    - the release that empties
+    - holding what enters
+    - heat pooling low before contact
+
+  Secondary:
+    - cunt pulsing at scent before touch arrives
+    - cunt pulsing with visible need
+    - arousal present without direct touch
+    - hole sucking tight then yawning wider
+    - folds resisting then yielding
+    - lips clinging closed then opening
+    - cunt becoming cauldron, heat total
+    - flood held without immediate release
+    - orgasm spreading rather than spiking
+    - karezza suspension at threshold
+    - sustained threshold under fullness
+    - whole body leaking under climax
+    - cunt gripping finger as proof
+    - cunt pulsing low before action
+    - wetness forming with activation
+    - release escalating from trickle to flood
+    - heat pooling in cunt
+
+  Atmospheric:
+    - Heat
+    - Weight
+    - Density
+    - Humid
+    - Warm_press
+    - Bloom_heat
+    - Covenant_warmth
+
+# ============================================================
+# FLUID BEHAVIOUR  [System + Lexicon Layers]
+# ============================================================
+# Stage names compile (Lexicon Layer).
+# Function entries are guidance only (Prose Layer).
+# ============================================================
+
+Fluid_Behaviour:
+  female_gloss:
+    stages:
+      - bead
+      - dew_thread
+      - stringing
+      - slick
+      - pool
+      - flood
+    escalation:
+      triggered_by:
+        - arousal_present
+        - direct_contact
+        - scent_proximity
+        - sustained_oral
+    function:
+      - lubrication
+      - proof_of_arousal
+      - heat_transfer
+      - evidence_of_sovereignty
+
+  female_flood:
+    stages:
+      - build
+      - the_lightning
+      - release
+      - spill
+      - aftermath
+    escalation:
+      triggered_by:
+        - peak_arousal
+        - gspot_stimulation
+        - sustained_oral
+        - orgasm_permission_granted
+    function:
+      - proof_of_release
+      - environmental_shift
+      - covenant_completion
+
+  female_blood:
+    stages:
+      - trace
+      - flow
+      - stream
+    function:
+      - covenant_flow
+      - cycle_truth
+
+  female_gold:
+    stages:
+      - thread
+      - stream
+      - flood
+    escalation:
+      triggered_by:
+        - chosen_release
+        - sovereign_position
+    function:
+      - sovereign_offering
+      - marking
+      - consecration
+
+# ============================================================
+# SOUND REGISTER  [Lexicon Layer]
+# ============================================================
+
+Sound_Register:
+  - wet_pull
+  - slick_press
+  - flood_sound
+  - breath_caught
+  - muffled_moan
+  - suction_break
+  - wet_noisy_cunt
+
+# ============================================================
+# SCENT REGISTER  [Lexicon Layer]
+# ============================================================
+
+Scent_Register:
+  - musk
+  - salt
+  - yeast_warm
+  - honey_trace
+  - bloom_musk
+  - arousal_sharp
+  - layered_with_sweat
+  - thickened_air
+  - gloss_rising_with_scent
+
+# ============================================================
+# SACRED REGISTER  [Lexicon Layer]
+# ============================================================
+
+Sacred_Register:
+  Primary_Terms:
+    - sovereign
+    - bloom
+    - covenant
+    - threshold
+    - sacred
+    - altar
+    - offering
+    - vessel
+    - proof
+    - witness
+    - my_cunt_it_is_mine
+    - gloss_sovereign
+
+  Symbolic_Frames:
+    Cunt_As:
+      - altar
+      - threshold
+      - map
+      - bloom
+      - covenant
+      - the_gate
+      - cauldron
+      - sovereign_gating_site
+
+  Fluid_As_Covenant:
+    Gloss: proof_of_desire
+    Flood: proof_of_release
+    Blood: covenant_flow
+    Gold: chosen_offering
+
+  Corpus_Sacred_Register:
+    Reclamation:
+      - my_cunt_it_is_mine
+      - your_cunt_is_awake_now
+      - every_fold_divine
+      - not_borrowed_not_broken
+    Fluid_Ritual:
+      - drink_me_with_your_cunt
+      - no_seam_no_boundary
+      - gloss_sovereign
+    Orgasm_Control:
+      - flood_held_becomes_meaning
+      - wet_blooming_through_denial
+    Postpartum:
+      - still_altar_still_covenant
+      - covenant_reopened
+    Selection:
+      - cunt_sovereign_in_selection
+    Flood:
+      - flood_me_drown_me
+    Seam:
+      - seam_holds_covenant
+
+# ============================================================
+# COLLOCATES  [Lexicon Layer]
+# ============================================================
+
+Collocates:
+  Adjective_Clusters:
+    - slick cunt
+    - swollen cunt
+    - velvet cunt
+    - open cunt
+    - sovereign cunt
+    - wet cunt
+    - bruised cunt
+    - sacred cunt
+    - dripping cunt
+    - twitching cunt
+    - greedy cunt
+    - wet noisy cunt
+
+  Verb_Clusters:
+    - cunt pulsed
+    - cunt flooded
+    - cunt clenched
+    - cunt opened
+    - cunt pressed to
+    - cunt settled on
+    - cunt held
+    - cunt throbbed
+    - cunt leaked
+    - cunt breathed
+    - cunt answering pressure
+    - cunt gripping fist
+    - cunt gripping stronger now
+
+  Preposition_Clusters:
+    - against his mouth
+    - over his face
+    - pressed to
+    - settled on
+    - held wide
+    - opened for
+    - spread beneath
+
+  Corpus_Collocates:
+    High_Frequency:
+      - ropes of wet
+      - cunt answering pressure
+      - gripping stronger now
+    Texture:
+      - cunt opening like barley husk
+      - folds clinging greedy
+      - folds peeling apart then crashing together
+      - wet halo around the entrance
+    Threshold:
+      - hole sucking tight then yawning
+      - flood held then broken
+      - wet blooming through denial
+    Fluid:
+      - flood caught and carried
+      - gloss rising with scent
+      - seam tugged under touch
+    Depth:
+      - cunt gripping fist
+      - cunt stretched wide
+      - weight pressing into cunt
+    FF_Register:
+      - cunt to cunt slipping and clinging
+      - bodies fused by wet
+
+# ============================================================
+# TENSION  [Lexicon Layer]
+# ============================================================
+
+Tension:
+  Toward:
+    - contact
+    - depth
+    - release
+    - witness
+    - weight
+    - scent_before_touch
+
+  Against:
+    - denial
+    - emptiness
+    - exposure_without_contact
+    - threshold_without_crossing
+
+  Dual_Register:
+    - sovereignty_and_vulnerability
+    - hunger_and_withholding
+    - depth_and_threshold
+    - claiming_and_offering
+
+# ============================================================
+# GENDER VARIANTS  [System Layer]
+# ============================================================
+
+Gender_Variants:
+  Trans_Feminine_Post_Op:
+    Register: Identical sovereign register
+    Entry: anatomical/trans/tf_cunt.yaml
+    Notes: >
+      Constructed cunt carries full sovereign register.
+      No qualification. Sensation maps to somatic truth.
+  Trans_Masculine:
+    Register: Male anatomy — his term governs entirely
+    Entry: anatomical/trans/tm_front.yaml
+    Notes: >
+      His cunt, male register throughout. Never feminised.
+
+# ============================================================
+# PROSE NOTES  [Prose Layer]
+# ============================================================
+
+Prose_Notes:
+  Lead_With: >
+    Always enter through sensation first. The somatic layer
+    lists the interior states available. Choose one and enter
+    through it. Pulse before appearance. Ache before colour.
+
+  Register_Principle: >
+    The cunt is never passive. Even when receiving, held open,
+    displayed, it is active. It clenches, pulses, breathes,
+    floods. The sovereignty is in the involuntary truth of it.
+    Write the involuntary response. That is where the
+    sovereign register lives.
+
+  Fluid_Precision: >
+    Gloss staging is now: bead -> dew_thread -> stringing ->
+    slick -> pool -> flood. Name the stage not just the fact
+    of wetness. Dew-thread stringing between folds is different
+    from ropes of wet. The stage tells the reader where in the
+    arousal arc the body is.
+
+  Scent_Before_Touch: >
+    The cunt pulses at scent before touch arrives. Allow
+    arousal to register before direct contact is made.
+    The scent register activates the site. Write the
+    pre-contact arousal when the scene allows it.
+
+  Post_Use_Register: >
+    Sagging folds, slack cunt — these are valid post-use
+    states. The body after use has its own register.
+    It is not diminishment. Write them without apology.
+
+  FF_Register_Gap: >
+    Cunt-to-cunt is a distinct register confirmed across
+    the corpus. Until pair_cunt_cunt is built, use the
+    FF_Register collocates above. Flag this gap.
+
+  Scene_Specific_Notes:
+    Queening: >
+      Altar and throne simultaneously. The full gravitational
+      force of her weight. The scent of her. The claim of her.
+    Karezza: >
+      Sustained threshold without crossing. Orgasm spreading
+      rather than spiking. Pleasure in the holding not breaking.
+    Awakening: >
+      First flood claimed not apologised for. Your cunt is
+      awake now. The register of first claiming.
+    Selection: >
+      Cunt sovereign in selection. She accepts and rejects.
+      Even in the most open architecture the sovereignty
+      of selection remains.
+
+# ============================================================
+# BANNED TERMS  [System Layer]
+# ============================================================
+
+Banned_Terms:
+  Primary_Banned:
+    - pussy
+    - slit
+    - slot
+    - snatch
+    - gash
+    - slash
+    - crack
+    - hole (standalone unadorned)
+    - opening (clinical standalone)
+  Food_Register:
+    - pink_taco
+    - taco
+    - fish_taco
+    - burger
+    - beef_curtains
+    - honey_pot
+    - cookie
+    - muffin
+    - fur_pie
+    - whisker_biscuit
+  Animal_Register:
+    - beaver
+    - clam
+    - bearded_clam
+  Porn_Shorthand:
+    - fuck_hole
+    - cock_sleeve
+    - cock_pocket
+    - cum_dumpster
+    - love_tunnel
+    - meat_wallet
+    - wizard_sleeve
+  Diminutive_Euphemistic:
+    - vajayjay
+    - vadge
+    - vag
+    - coochie
+    - cooter
+    - minge
+    - quim
+    - twat
+    - fanny
+    - box
+    - lady_garden
+    - lady_parts
+    - bits
+    - privates
+    - down_there
+    - hoo_ha
+    - woo_woo
+  Clinical_Unadorned:
+    - vagina
+    - vulva
+    - genitalia
+    - genital_area
+    - birth_canal
+  Childish:
+    - wee_wee
+    - fairy
+    - minnie
+    - flower
+    - tuppence
+  Tonal_Bans:
+    Comic: Any term producing deflating or humorous effect
+    Clinical: Medical language without sacred frame
+    Diminutive: Any term reducing or infantilising the site
+    Pollution: Any term framing fluids here as waste
+
+# ============================================================
+# BUILD METADATA  [System Layer]
+# ============================================================
+
+Build:
+  Session: Current
+  Version: "1.3"
+  Status: Complete
+  Source_References:
+    - BODY_LEXICON_SKILL.md
+    - register_female.yaml
+    - register_shared.yaml
+    - corpus_register_normalised.yaml
+    - ANATOMICAL_ENTRY_TEMPLATE.yaml v1.0
+  Changes_From_1_2: >
+    Four-layer authoring model applied. Corpus gap fill v1.0:
+    15 new descriptors (dew_thread, stringing, greedy_folds,
+    sagging_folds, slack_folds, tender_walls, wet_halo etc),
+    17 somatic states, 12 sacred register terms, 16 collocates,
+    3 scene roles (ff_grinding, karezza, selection).
+    Fluid staging extended: dew_thread and stringing added.
+    Scent-before-touch somatic documented.
+    FF register flagged as pair gap (pair_cunt_cunt pending).
+  Known_Gaps:
+    - pair_cunt_cunt not yet built (ff_grinding register)
+    - corpus sacred terms need routing into register_female.yaml

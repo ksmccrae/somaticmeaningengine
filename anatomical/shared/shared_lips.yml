@@ -1,0 +1,251 @@
+# ============================================================
+# K.S. McCRAE SOMATIC LEXICON SYSTEM
+# Anatomical Entry: Lips
+# Register: shared
+# Version: 1.0
+# ============================================================
+#
+# AUTHORING MODEL
+# LEXICON LAYER:  underscore_tokens — controlled vocabulary,
+#                 compiled into allowed register
+# SYSTEM LAYER:   structured metadata — dependencies, modifies,
+#                 conditions — not prose vocabulary
+# SOMATIC LAYER:  interior sensation states — writer-facing,
+#                 not compiled, not vocabulary tokens
+# PROSE LAYER:    authoring notes — writer-facing, not compiled
+#
+# SALIENCE: Secondary
+# REGISTER WEIGHT: Variable
+# ============================================================
+
+# ============================================================
+# METADATA  [System Layer]
+# ============================================================
+
+Name: shared_lips
+Version: "1.0"
+Type: anatomy
+Register: shared
+Salience: Secondary
+Parent_Register: register_shared.yaml
+
+Dependencies:
+  anatomy:
+    - shared_mouth
+    - shared_tongue
+    - shared_throat
+  fluids:
+    - male_seed
+    - female_gloss
+    - shared_saliva
+    - female_ritual_blend
+  tropes:
+    - trope_marking
+    - trope_fluid_ritual
+    - trope_worship
+  pairs:
+    - pair_mouth_cock
+    - pair_mouth_arse
+
+Modifies:
+
+Entry_Conditions:
+  requires:
+    body_active: true
+    register:
+      allowed:
+        - female
+        - male
+        - trans_feminine
+        - trans_masculine
+  power_required: any
+  blocks: []
+
+Scene_Roles:
+  marking: second_landing_site
+  fluid_ritual: transfer_surface
+  worship: kissing_instrument
+
+Role_Priority:
+  primary: variable
+
+Corpus_Status:
+  Corpus_Extract_Reviewed: true
+  Gap_Fill_Applied: true
+  Corpus_Terms_Found: 45
+
+# ============================================================
+# IDENTITY  [Lexicon + Prose Layers]
+# ============================================================
+
+Site: lips
+Status: Active
+
+Identity:
+  Label: Lips
+  Preferred_Term: lips
+  Register_Weight: Variable
+  Scope: >
+    The lips as a distinct surface from the mouth.
+    Seed lands on lips in marking register. Gloss smears
+    across lips in fluid ritual. The lips parted to receive.
+    The lips sealing a vow. A joining surface.
+  Usage_Note: >
+    Lips. The lips parted. Sealed. Smeared. Landing surface in marking register.
+
+# ============================================================
+# ALLOWED REGISTER  [Lexicon Layer]
+# ============================================================
+
+Allowed_Register:
+
+  State_Register:
+    - parted
+    - sealed
+    - smeared
+    - glossed
+    - wet
+    - swollen
+    - raw
+    - bitten
+    - strung
+    - painted
+    - tasting
+
+  Sacred_Terms:
+    - the_lips_parted
+    - lips_sealed_as_vow
+    - painted_lips
+    - receiving_lips
+    - lips_tasting
+
+  Corpus_Gap_Fill:
+    - twitching
+    - aching points
+    - aching throat
+    - blank surface
+    - blood-marked mouths
+    - clamped lips
+    - clenching seam
+    - darkened surface
+    - drenched faces
+    - drenched surface
+    - dripping interfaces
+    - drooping inner lips
+
+# ============================================================
+# SOMATIC REGISTER  [Somatic Layer]
+# Interior sensation states. Not vocabulary. Not compiled.
+# ============================================================
+
+Somatic:
+  Primary:
+    - seed on the lips — tasted
+    - the lips parting to receive
+    - the lips sealed in a vow kiss
+  Secondary:
+    - arse clenching then yielding
+    - arse twitching in echo
+    - back arching off the bed
+    - back arching with entry
+    - belly clenching as filled
+    - body arching to present chest
+  Atmospheric:
+    - Warmth
+    - Moisture
+    - Salt
+
+# ============================================================
+# FLUID BEHAVIOUR  [System + Lexicon Layers]
+# ============================================================
+
+Fluid_Behaviour:
+  male_seed:
+    stages:
+      - land
+      - cool
+    escalation:
+      triggered_by:
+        - marking_directed
+    function:
+      - second_landing_in_marking
+
+# ============================================================
+# SACRED REGISTER  [Lexicon Layer]
+# ============================================================
+
+Sacred_Register:
+  Primary_Terms:
+    - lips_sealed_as_vow
+    - the_lips_parted
+    - lips_tasting
+    - the_second_spurt_on_her_lips
+  Symbolic_Frames:
+    Lips_As:
+      - receiving_surface
+      - vow_register
+      - marking_site
+
+# ============================================================
+# COLLOCATES  [Lexicon Layer]
+# ============================================================
+
+Collocates:
+  Base_Clusters:
+    - lips parted to receive
+    - seed on her lips
+    - lips smeared and stringing
+    - lips sealed vow
+  Corpus_Collocates:
+    - muscle catching hold
+    - beads slipping down
+    - chin glossing with her flow
+    - circle watching still
+    - clit twitching bare
+    - clot slipping free
+    - cock to mouth
+    - crown at lips
+    - cunt to cunt slipping and clinging
+    - dripping from chin
+    - face buried in blood
+    - face smeared black
+    - face smeared in slop
+    - faces washed away
+    - flood smeared across chin
+
+Tension:
+  Toward:
+    - seed
+    - cock
+    - fluid
+    - vow
+  Against:
+    - sealed
+    - dry
+
+# ============================================================
+# PROSE NOTES  [Prose Layer]
+# ============================================================
+
+Prose_Notes:
+  Marking_Register: >
+    In marking: first spurt on her cheek, second on her lips. She offered them. The lips parted for it. This is the architecture.
+
+# ============================================================
+# BANNED TERMS  [System Layer]
+# ============================================================
+
+Banned_Terms:
+  Crude:
+    - cock_holster
+    - cum_lips
+  Tonal_Bans:
+    Comic: Any term producing deflating or humorous effect
+    Clinical: Medical language without sacred frame
+
+Build:
+  Session: Current
+  Version: "1.0"
+  Status: Complete
+  Corpus_Gap_Fill: Applied v1.0
+  Register: shared

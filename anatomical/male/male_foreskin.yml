@@ -1,0 +1,226 @@
+# ============================================================
+# K.S. McCRAE SOMATIC LEXICON SYSTEM
+# Anatomical Entry: Foreskin
+# Register: male
+# Version: 1.0
+# ============================================================
+#
+# AUTHORING MODEL
+# LEXICON LAYER:  underscore_tokens — controlled vocabulary,
+#                 compiled into allowed register
+# SYSTEM LAYER:   structured metadata — dependencies, modifies,
+#                 conditions — not prose vocabulary
+# SOMATIC LAYER:  interior sensation states — writer-facing,
+#                 not compiled, not vocabulary tokens
+# PROSE LAYER:    authoring notes — writer-facing, not compiled
+#
+# SALIENCE: Secondary
+# REGISTER WEIGHT: Variable
+# ============================================================
+
+# ============================================================
+# METADATA  [System Layer]
+# ============================================================
+
+Name: male_foreskin
+Version: "1.0"
+Type: anatomy
+Register: male
+Salience: Secondary
+Parent_Register: register_male.yaml
+
+Dependencies:
+  anatomy:
+    - male_cock
+    - male_glans
+    - male_frenulum
+  fluids:
+    - male_pregloss
+  tropes:
+    - trope_feminization
+    - trope_worship
+  pairs:
+    - pair_mouth_cock
+
+Modifies:
+
+Entry_Conditions:
+  requires:
+    body_active: true
+    register:
+      allowed:
+        - male
+        - trans_masculine
+  power_required: any
+  blocks: []
+
+Scene_Roles:
+  feminization: retracted_and_bound
+  worship: parted_at_approach
+
+Role_Priority:
+  primary: variable
+
+Corpus_Status:
+  Corpus_Extract_Reviewed: true
+  Gap_Fill_Applied: true
+  Corpus_Terms_Found: 34
+
+# ============================================================
+# IDENTITY  [Lexicon + Prose Layers]
+# ============================================================
+
+Site: foreskin
+Status: Active
+
+Identity:
+  Label: Foreskin
+  Preferred_Term: foreskin
+  Register_Weight: Variable
+  Scope: >
+    The fold of skin covering the glans. Where present.
+    Retracts under stimulation. Slides and glides.
+    In feminization it is drawn fully back and held there,
+    exposing the crown as tethered pearl.
+  Usage_Note: >
+    Foreskin. The fold. Retracting. Gliding. Secondary site.
+
+# ============================================================
+# ALLOWED REGISTER  [Lexicon Layer]
+# ============================================================
+
+Allowed_Register:
+
+  State_Register:
+    - drawn_back
+    - retracted
+    - hooded
+    - gliding
+    - folded
+    - folds
+    - loose
+    - tight
+
+  Sacred_Terms:
+    - the_fold
+    - foreskin_glide
+    - the_hood_of_him
+
+  Corpus_Gap_Fill:
+    - sagging folds
+    - slack folds
+    - absence of folds
+    - damp folds
+    - darker inner folds
+    - foreskin folds
+    - greedy folds
+    - heavy belly folds
+    - hooded then bared
+    - soaked folds
+    - soft belly folds
+    - stretched folds
+
+# ============================================================
+# SOMATIC REGISTER  [Somatic Layer]
+# Interior sensation states. Not vocabulary. Not compiled.
+# ============================================================
+
+Somatic:
+  Primary:
+    - the glide of foreskin under pressure
+    - the exposure as it retracts
+    - the sensitivity beneath when bare
+  Secondary:
+    - folds dragging and smearing sensation
+    - folds opening slowly with pressure
+    - folds resisting then yielding
+    - folds swallowing then clutching again
+  Atmospheric:
+    - Glide
+    - Fold
+
+# ============================================================
+# FLUID BEHAVIOUR  [System + Lexicon Layers]
+# ============================================================
+
+Fluid_Behaviour:
+
+# ============================================================
+# SACRED REGISTER  [Lexicon Layer]
+# ============================================================
+
+Sacred_Register:
+  Primary_Terms:
+    - the_fold
+    - foreskin_glide
+    - the_hood_of_him
+    - foreskin_drawn_fully_back
+  Symbolic_Frames:
+    Foreskin_As:
+      - concealment
+      - revelation
+      - glide
+  Corpus_Sacred_Terms:
+    - every fold divine
+
+# ============================================================
+# COLLOCATES  [Lexicon Layer]
+# ============================================================
+
+Collocates:
+  Base_Clusters:
+    - foreskin drawn back
+    - the fold parted
+    - gliding slow
+    - foreskin retracted and held
+  Corpus_Collocates:
+    - crown hidden in folds
+    - folds and rolls gleaming
+    - folds clinging greedy
+    - folds opening slow
+    - folds peeling apart then crashing together
+    - folds sagging heavy
+    - folds sagging wide
+    - folds smearing across face
+    - foreskin gliding slow
+    - meltwater streaking over folds
+    - press and fold
+    - sweat pooling in folds
+    - gloss beaded at folds
+    - pooled sweat between folds
+
+Tension:
+  Toward:
+    - retraction
+    - exposure
+  Against:
+    - hooded
+
+# ============================================================
+# PROSE NOTES  [Prose Layer]
+# ============================================================
+
+Prose_Notes:
+  Register: >
+    Secondary to glans. The moment of retraction — the crown revealed — carries its own register.
+
+# ============================================================
+# BANNED TERMS  [System Layer]
+# ============================================================
+
+Banned_Terms:
+  Comic:
+    - turtle_neck
+    - raincoat
+  Clinical_Unadorned:
+    - prepuce (primary)
+  Tonal_Bans:
+    Comic: Any term producing deflating or humorous effect
+    Clinical: Medical language without sacred frame
+
+Build:
+  Session: Current
+  Version: "1.0"
+  Status: Complete
+  Corpus_Gap_Fill: Applied v1.0
+  Register: male

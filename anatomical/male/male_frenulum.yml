@@ -1,0 +1,213 @@
+# ============================================================
+# K.S. McCRAE SOMATIC LEXICON SYSTEM
+# Anatomical Entry: Frenulum
+# Register: male
+# Version: 1.0
+# ============================================================
+#
+# AUTHORING MODEL
+# LEXICON LAYER:  underscore_tokens — controlled vocabulary,
+#                 compiled into allowed register
+# SYSTEM LAYER:   structured metadata — dependencies, modifies,
+#                 conditions — not prose vocabulary
+# SOMATIC LAYER:  interior sensation states — writer-facing,
+#                 not compiled, not vocabulary tokens
+# PROSE LAYER:    authoring notes — writer-facing, not compiled
+#
+# SALIENCE: Tertiary
+# REGISTER WEIGHT: Variable
+# ============================================================
+
+# ============================================================
+# METADATA  [System Layer]
+# ============================================================
+
+Name: male_frenulum
+Version: "1.0"
+Type: anatomy
+Register: male
+Salience: Tertiary
+Parent_Register: register_male.yaml
+
+Dependencies:
+  anatomy:
+    - male_cock
+    - male_glans
+    - male_foreskin
+  fluids:
+    - male_pregloss
+  tropes:
+    - trope_worship
+  pairs:
+    - pair_mouth_cock
+    - pair_cock_mouth
+
+Modifies:
+
+Entry_Conditions:
+  requires:
+    body_active: true
+    register:
+      allowed:
+        - male
+        - trans_masculine
+  power_required: any
+  blocks: []
+
+Scene_Roles:
+  oral_service: first_tongue_target
+
+Role_Priority:
+  primary: variable
+
+Corpus_Status:
+  Corpus_Extract_Reviewed: true
+  Gap_Fill_Applied: true
+  Corpus_Terms_Found: 31
+
+# ============================================================
+# IDENTITY  [Lexicon + Prose Layers]
+# ============================================================
+
+Site: frenulum
+Status: Active
+
+Identity:
+  Label: Frenulum
+  Preferred_Term: frenulum
+  Register_Weight: Variable
+  Scope: >
+    The sensitive seam on the underside of the glans
+    where the foreskin attaches. The most sensitive surface
+    on the cock after the glans itself. Found by the tongue
+    immediately on oral contact.
+  Usage_Note: >
+    Frenulum. The seam. The ridge beneath. The tongue finds it first.
+
+# ============================================================
+# ALLOWED REGISTER  [Lexicon Layer]
+# ============================================================
+
+Allowed_Register:
+
+  State_Register:
+    - raised
+    - ridged
+    - sensitive
+    - taut
+    - the_seam_beneath
+
+  Sacred_Terms:
+    - the_seam
+    - frenulum_ridge
+    - the_tongue_finds_here
+    - raised_seam
+
+  Corpus_Gap_Fill:
+    - stretched seams
+    - clenching seam
+    - darkened seams
+    - loose yielding seams
+    - loosened seam
+    - open cunt seam
+    - open seams
+    - pale ridge
+    - raised ridge tissue
+    - ridged surface
+    - ridged tension
+    - scarred seam
+
+# ============================================================
+# SOMATIC REGISTER  [Somatic Layer]
+# Interior sensation states. Not vocabulary. Not compiled.
+# ============================================================
+
+Somatic:
+  Primary:
+    - the tongue finding the seam immediately
+    - the sharp response of the frenulum
+    - concentrated sensitivity at the ridge
+  Secondary:
+    - clit throbbing raw at seam
+    - cunt gripping ridges like memory
+  Atmospheric:
+    - Sensitivity
+    - Ridge
+
+# ============================================================
+# FLUID BEHAVIOUR  [System + Lexicon Layers]
+# ============================================================
+
+Fluid_Behaviour:
+
+# ============================================================
+# SACRED REGISTER  [Lexicon Layer]
+# ============================================================
+
+Sacred_Register:
+  Primary_Terms:
+    - the_seam
+    - raised_seam
+    - the_tongue_finds_here
+  Symbolic_Frames:
+    Frenulum_As:
+      - sensitivity_ridge
+      - first_tongue_target
+  Corpus_Sacred_Terms:
+    - no seam, no boundary
+    - seam chosen
+    - seam holds covenant
+
+# ============================================================
+# COLLOCATES  [Lexicon Layer]
+# ============================================================
+
+Collocates:
+  Base_Clusters:
+    - tongue at the seam
+    - frenulum found on first stroke
+    - the ridge beneath
+  Corpus_Collocates:
+    - mapping the seam
+    - no seam, no boundary
+    - open mouths open seams
+    - ridge answering pressure
+    - ridges dragging hair inward
+    - seam drawn pale
+    - seam stays closed
+    - seam tugged under touch
+    - seams opened wide
+    - tongue reading ridge
+    - tongue-spread gloss along seam
+
+Tension:
+  Toward:
+    - tongue
+    - direct_pressure
+  Against:
+
+# ============================================================
+# PROSE NOTES  [Prose Layer]
+# ============================================================
+
+Prose_Notes:
+  Oral_Register: >
+    The tongue finds the frenulum on the first stroke down the shaft. Write this recognition.
+
+# ============================================================
+# BANNED TERMS  [System Layer]
+# ============================================================
+
+Banned_Terms:
+  Clinical_Unadorned:
+    - banjo_string (crude)
+  Tonal_Bans:
+    Comic: Any term producing deflating or humorous effect
+    Clinical: Medical language without sacred frame
+
+Build:
+  Session: Current
+  Version: "1.0"
+  Status: Complete
+  Corpus_Gap_Fill: Applied v1.0
+  Register: male

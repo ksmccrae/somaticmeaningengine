@@ -1,0 +1,220 @@
+# ============================================================
+# K.S. McCRAE SOMATIC LEXICON SYSTEM
+# Anatomical Entry: Areola
+# Register: female
+# Version: 1.0
+# ============================================================
+#
+# AUTHORING MODEL
+# LEXICON LAYER:  underscore_tokens — controlled vocabulary,
+#                 compiled into allowed register
+# SYSTEM LAYER:   structured metadata — dependencies, modifies,
+#                 conditions — not prose vocabulary
+# SOMATIC LAYER:  interior sensation states — writer-facing,
+#                 not compiled, not vocabulary tokens
+# PROSE LAYER:    authoring notes — writer-facing, not compiled
+#
+# SALIENCE: Tertiary
+# REGISTER WEIGHT: Sovereign
+# ============================================================
+
+# ============================================================
+# METADATA  [System Layer]
+# ============================================================
+
+Name: female_areola
+Version: "1.0"
+Type: anatomy
+Register: female
+Salience: Tertiary
+Parent_Register: register_female.yaml
+
+Dependencies:
+  anatomy:
+    - female_breasts
+    - shared_nipples
+  fluids:
+    - female_milk
+  tropes:
+    - trope_lactation
+  pairs:
+    - pair_breasts_mouth
+
+Modifies:
+
+Entry_Conditions:
+  requires:
+    body_active: true
+    register:
+      allowed:
+        - female
+        - trans_feminine
+  power_required: any
+  blocks: []
+
+Scene_Roles:
+  lactation: ring_around_source
+  worship: peripheral_surface
+
+Role_Priority:
+  primary: sovereign
+
+Corpus_Status:
+  Corpus_Extract_Reviewed: true
+  Gap_Fill_Applied: true
+  Corpus_Terms_Found: 55
+
+# ============================================================
+# IDENTITY  [Lexicon + Prose Layers]
+# ============================================================
+
+Site: areola
+Status: Active
+
+Identity:
+  Label: Areola
+  Preferred_Term: areola
+  Register_Weight: Sovereign
+  Scope: >
+    The pigmented ring surrounding the nipple.
+    Tertiary — present when the breast is active but
+    rarely named directly. Darkens with arousal and pregnancy.
+    Pebbles at stimulation.
+  Usage_Note: >
+    Areola when named. Pebbled ring, darkened ring. Rarely foregrounded.
+
+# ============================================================
+# ALLOWED REGISTER  [Lexicon Layer]
+# ============================================================
+
+Allowed_Register:
+
+  State_Register:
+    - darkened
+    - pebbled
+    - flushed
+    - broad
+    - small
+    - tight
+    - areola_pebbling
+
+  Sacred_Terms:
+    - the_ring_around
+    - darkened_circle
+
+  Corpus_Gap_Fill:
+    - darkened nipples
+    - broad areolae
+    - fluttering
+    - held offering
+    - long nipples
+    - milk-swollen nipples
+    - pebbled nipples
+    - responsive nipples
+    - ring-locked shafts
+    - sharp nipples
+    - small sharp nipples
+    - smearing fluids
+
+# ============================================================
+# SOMATIC REGISTER  [Somatic Layer]
+# Interior sensation states. Not vocabulary. Not compiled.
+# ============================================================
+
+Somatic:
+  Primary:
+    - pebbling under cold or arousal
+    - darkening under stimulation
+    - the ring tightening
+  Secondary:
+    - vibration triggering involuntary contraction
+    - ache blurring into burn
+    - afterspasm lingering in bellies
+    - burn flaring then dulling into ache
+    - cock stirring before touch
+    - convulsion during mirrored release
+  Atmospheric:
+    - Warmth
+
+# ============================================================
+# FLUID BEHAVIOUR  [System + Lexicon Layers]
+# ============================================================
+
+Fluid_Behaviour:
+
+# ============================================================
+# SACRED REGISTER  [Lexicon Layer]
+# ============================================================
+
+Sacred_Register:
+  Primary_Terms:
+    - darkened_circle
+    - the_ring_around
+  Symbolic_Frames:
+    Areola_As:
+      - ring
+      - circle_of_sensitivity
+  Corpus_Sacred_Terms:
+    - altar and offering
+    - body as offering and meal
+    - chocolate as offering
+    - devouring
+    - exposure as offering
+    - i’m drinking you, i’m wearing you
+
+# ============================================================
+# COLLOCATES  [Lexicon Layer]
+# ============================================================
+
+Collocates:
+  Base_Clusters:
+    - pebbled areola
+    - darkened ring
+    - the ring around the nipple
+  Corpus_Collocates:
+    - cunt answering pressure
+    - body answering body
+    - droplets pattering to floor
+    - flood pouring straight inside
+    - folds smearing across face
+    - lips smeared and stringing
+    - nipple. pearl. root. gate.
+    - nipples twitching sharp
+    - nipples weeping milk
+    - ridge answering pressure
+    - rings biting tight
+    - ropes stringing between lips
+    - spray stinging nipples
+    - steering all wrong
+    - streams pouring hot
+
+Tension:
+  Toward:
+    - nipple
+  Against:
+
+# ============================================================
+# PROSE NOTES  [Prose Layer]
+# ============================================================
+
+Prose_Notes:
+  Tertiary: >
+    Present when breast is active. Rarely named. Let it be implied.
+
+# ============================================================
+# BANNED TERMS  [System Layer]
+# ============================================================
+
+Banned_Terms:
+  Clinical_Unadorned:
+    - areola (primary standalone without context)
+  Tonal_Bans:
+    Comic: Any term producing deflating or humorous effect
+    Clinical: Medical language without sacred frame
+
+Build:
+  Session: Current
+  Version: "1.0"
+  Status: Complete
+  Corpus_Gap_Fill: Applied v1.0
+  Register: female

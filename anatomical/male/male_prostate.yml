@@ -1,0 +1,258 @@
+# ============================================================
+# K.S. McCRAE SOMATIC LEXICON SYSTEM
+# Anatomical Entry: Prostate
+# Register: male
+# Version: 1.0
+# ============================================================
+#
+# AUTHORING MODEL
+# LEXICON LAYER:  underscore_tokens — controlled vocabulary,
+#                 compiled into allowed register
+# SYSTEM LAYER:   structured metadata — dependencies, modifies,
+#                 conditions — not prose vocabulary
+# SOMATIC LAYER:  interior sensation states — writer-facing,
+#                 not compiled, not vocabulary tokens
+# PROSE LAYER:    authoring notes — writer-facing, not compiled
+#
+# SALIENCE: Secondary
+# REGISTER WEIGHT: Variable
+# ============================================================
+
+# ============================================================
+# METADATA  [System Layer]
+# ============================================================
+
+Name: male_prostate
+Version: "1.0"
+Type: anatomy
+Register: male
+Salience: Secondary
+Parent_Register: register_male.yaml
+
+Dependencies:
+  anatomy:
+    - shared_arse
+    - male_cock
+    - male_urethra
+  fluids:
+    - male_pregloss
+    - male_seed
+  tropes:
+    - trope_milking
+    - trope_sounding
+    - trope_e_stim
+  pairs:
+    - pair_cock_arse
+
+Modifies:
+  male_seed:
+    effect: extraction_source
+    trigger:
+      - sustained_pressure
+      - current
+    result: expressed_not_released
+
+Entry_Conditions:
+  requires:
+    body_active: true
+    register:
+      allowed:
+        - male
+        - trans_feminine
+  power_required: any
+  blocks: []
+
+Scene_Roles:
+  milking: extraction_site
+  anal_penetration: activated_at_depth
+  e_stim: current_terminus
+
+Role_Priority:
+  primary: variable
+
+Corpus_Status:
+  Corpus_Extract_Reviewed: true
+  Gap_Fill_Applied: true
+  Corpus_Terms_Found: 39
+
+# ============================================================
+# IDENTITY  [Lexicon + Prose Layers]
+# ============================================================
+
+Site: prostate
+Status: Active
+
+Identity:
+  Label: Prostate
+  Preferred_Term: root_pearl
+  Register_Weight: Variable
+  Scope: >
+    The interior gland. Root pearl. Found on the posterior wall
+    of the rectum at depth. Lit under pressure. The source of
+    milked seed in the milking register. Activated by the cock
+    in anal penetration.
+  Usage_Note: >
+    Root pearl. The gland. Inner swell. Never: P-spot, prostate massage table.
+
+# ============================================================
+# ALLOWED REGISTER  [Lexicon Layer]
+# ============================================================
+
+Allowed_Register:
+
+  State_Register:
+    - swollen
+    - lit
+    - pressing_back
+    - firm
+    - activated
+    - seized
+
+  Sacred_Terms:
+    - root_pearl
+    - the_gland
+    - inner_swell
+    - lit_like_fire
+    - proofed_swell
+
+  Corpus_Gap_Fill:
+    - absent clit region
+    - candlelit room
+    - exposed clit
+    - glossy interior
+    - remote-lit control
+    - sloppy interior
+    - split crust
+    - split open state
+    - split seam
+    - swollen gland
+
+# ============================================================
+# SOMATIC REGISTER  [Somatic Layer]
+# Interior sensation states. Not vocabulary. Not compiled.
+# ============================================================
+
+Somatic:
+  Primary:
+    - the gland lit under pressure
+    - involuntary clench when gland is found
+    - the depth of sensation from the root pearl
+    - current arriving at the gland — the seizure
+    - gland swelling under sustained pressure before expression
+  Secondary:
+    - clit dragged raw against surface
+    - clit jolted by misaligned thrusts
+    - clit overstimulated then numbed
+    - clit shocked by breaking texture
+    - clit swelling under repeated exposure
+    - clit throbbing raw at seam
+  Atmospheric:
+    - Depth
+    - Interior_heat
+    - Current
+
+# ============================================================
+# FLUID BEHAVIOUR  [System + Lexicon Layers]
+# ============================================================
+
+Fluid_Behaviour:
+  male_seed:
+    stages:
+      - expressed_not_released
+    escalation:
+      triggered_by:
+        - sustained_pressure
+        - current
+    function:
+      - extraction_without_orgasm
+
+# ============================================================
+# SACRED REGISTER  [Lexicon Layer]
+# ============================================================
+
+Sacred_Register:
+  Primary_Terms:
+    - root_pearl
+    - the_gland
+    - inner_swell
+    - lit_like_fire
+    - proofed_swell
+    - pressed_release
+  Symbolic_Frames:
+    Prostate_As:
+      - root_pearl
+      - interior_covenant
+      - gland_as_truth
+  Corpus_Sacred_Terms:
+    - chains crossed them like liturgy
+    - liturgy written into flesh and grain
+
+# ============================================================
+# COLLOCATES  [Lexicon Layer]
+# ============================================================
+
+Collocates:
+  Base_Clusters:
+    - root pearl found
+    - gland lit
+    - the gland answering
+    - inner swell under pressure
+  Corpus_Collocates:
+    - bead gathered at slit
+    - body split across tasks
+    - clit bare and furious
+    - clit battered raw
+    - clit jutted bare
+    - clit shy clit bare
+    - clit to clit grinding
+    - clit twitching bare
+    - crust splitting open
+    - neat as a slit
+    - stuffed and split
+    - thin streams from slit
+
+Tension:
+  Toward:
+    - pressure
+    - current
+    - depth
+  Against:
+    - missed
+    - insufficient_depth
+
+# ============================================================
+# GENDER VARIANTS  [System Layer]
+# ============================================================
+
+Gender_Variants:
+  Trans_Feminine:
+    Register: Present if pre-op or non-op — full register
+    Entry: tf_prostate.yaml
+
+# ============================================================
+# PROSE NOTES  [Prose Layer]
+# ============================================================
+
+Prose_Notes:
+  Milking: >
+    Milked seed arrives in drops and threads not arcs. The gland is milked not stimulated to orgasm. Write the distinction.
+
+# ============================================================
+# BANNED TERMS  [System Layer]
+# ============================================================
+
+Banned_Terms:
+  Crude:
+    - P_spot
+    - prostate_massage
+    - milking_table
+  Tonal_Bans:
+    Comic: Any term producing deflating or humorous effect
+    Clinical: Medical language without sacred frame
+
+Build:
+  Session: Current
+  Version: "1.0"
+  Status: Complete
+  Corpus_Gap_Fill: Applied v1.0
+  Register: male

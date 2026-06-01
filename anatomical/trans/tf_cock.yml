@@ -1,0 +1,263 @@
+# ============================================================
+# K.S. McCRAE SOMATIC LEXICON SYSTEM
+# Anatomical Entry: TF Cock
+# Register: trans_feminine
+# Version: 1.0
+# ============================================================
+#
+# AUTHORING MODEL
+# LEXICON LAYER:  underscore_tokens — controlled vocabulary,
+#                 compiled into allowed register
+# SYSTEM LAYER:   structured metadata — dependencies, modifies,
+#                 conditions — not prose vocabulary
+# SOMATIC LAYER:  interior sensation states — writer-facing,
+#                 not compiled, not vocabulary tokens
+# PROSE LAYER:    authoring notes — writer-facing, not compiled
+#
+# SALIENCE: Primary
+# REGISTER WEIGHT: Sovereign
+# ============================================================
+
+# ============================================================
+# METADATA  [System Layer]
+# ============================================================
+
+Name: tf_cock
+Version: "1.0"
+Type: anatomy
+Register: trans
+Salience: Primary
+Parent_Register: register_trans_feminine.yaml
+
+Dependencies:
+  anatomy:
+    - tf_prostate
+    - shared_skin
+  fluids:
+    - male_pregloss
+    - male_seed
+  tropes:
+    - trope_body_reclamation
+    - trope_transformation
+    - trope_feminization
+  pairs:
+
+Produces:
+  fluids:
+    - male_pregloss
+    - male_seed
+
+Modifies:
+
+Entry_Conditions:
+  requires:
+    body_active: true
+    register:
+      allowed:
+        - trans_feminine
+  power_required: any
+  trans_note: >
+    Character terminology governs absolutely. Her terms for her cock are the only terms used.
+  blocks: []
+
+Scene_Roles:
+  body_reclamation: claimed_site
+  transformation: dual_register_site
+
+Role_Priority:
+  primary: sovereign
+
+Corpus_Status:
+  Corpus_Extract_Reviewed: true
+  Gap_Fill_Applied: true
+  Corpus_Terms_Found: 28
+
+# ============================================================
+# IDENTITY  [Lexicon + Prose Layers]
+# ============================================================
+
+Site: tf_cock
+Status: Active
+
+Identity:
+  Label: TF Cock
+  Preferred_Term: her_cock
+  Register_Weight: Sovereign
+  Scope: >
+    Her cock. Pre-op or non-op TF. The cock belongs to her.
+    Its sovereignty is hers. The becoming register is available —
+    the cock that is also the site of her femininity, held in
+    the dual register of her making. Her body. Her terms.
+  Usage_Note: >
+    Her cock. She may name it differently — her terms govern.
+    If she calls it her girl cock, her clit, her cock — that
+    term is used. The default without her direction is her cock.
+    Never 'male genitalia' applied to her body.
+
+# ============================================================
+# ALLOWED REGISTER  [Lexicon Layer]
+# ============================================================
+
+Allowed_Register:
+
+  State_Register:
+    - soft
+    - hard
+    - rising
+    - swollen
+    - responsive
+    - sovereign
+    - hers
+    - HRT_softened
+    - smaller_with_HRT
+
+  Dual_Register:
+    - her_cock
+    - hers
+    - the_dual_site
+    - sovereign_in_her_femininity
+
+  Becoming_Register:
+    - the_cock_that_is_hers
+    - her_making
+    - held_dual
+
+  Sacred_Terms:
+    - her_cock
+    - sovereign_in_her_body
+    - her_making
+    - the_dual_site
+    - hers_whole
+
+  Corpus_Gap_Fill:
+    - caged cock
+    - catalogued cocks
+    - gloss-dripping cock
+    - swelling cock
+    - gloss from cock
+
+# ============================================================
+# SOMATIC REGISTER  [Somatic Layer]
+# Interior sensation states. Not vocabulary. Not compiled.
+# ============================================================
+
+Somatic:
+  Primary:
+    - the cock that is hers — belonging registered
+    - HRT-changed tissue — softer, smaller, sovereign
+    - her arousal expressed through her cock
+    - the dual register held without contradiction
+  Secondary:
+    - cock hardening through chaos
+    - cock jerking against belly
+    - cock jerking under molten pour
+    - cock leaking under obedience
+    - cock leaking under stimulation
+    - cock slipping free repeatedly
+  Atmospheric:
+    - Hers
+    - Dual_Register
+    - Sovereignty
+
+# ============================================================
+# FLUID BEHAVIOUR  [System + Lexicon Layers]
+# ============================================================
+
+Fluid_Behaviour:
+  male_pregloss:
+    stages:
+      - bead
+    escalation:
+      triggered_by:
+        - arousal
+    function:
+      - her_truth_register
+
+# ============================================================
+# SACRED REGISTER  [Lexicon Layer]
+# ============================================================
+
+Sacred_Register:
+  Primary_Terms:
+    - her_cock
+    - sovereign_in_her_body
+    - the_dual_site
+    - hers_whole
+  Symbolic_Frames:
+    TF_Cock_As:
+      - dual_register
+      - sovereign_possession
+      - her_making
+  Corpus_Sacred_Terms:
+    - filthy cocktails
+    - no cock wasted
+    - their cocktail
+
+# ============================================================
+# COLLOCATES  [Lexicon Layer]
+# ============================================================
+
+Collocates:
+  Base_Clusters:
+    - her cock
+    - hers
+    - sovereign in her femininity
+    - her cock responding
+  Corpus_Collocates:
+    - cock and balls chambered
+    - cock slapping wet
+    - cock straining high
+    - cock to mouth
+    - cunt to cock
+    - harness cock gleaming
+    - just cock
+    - room of cocks
+    - cock and balls trapped
+
+Tension:
+  Toward:
+    - her_claiming
+    - dual_register
+    - sovereignty
+  Against:
+    - misgendered
+    - appropriated
+    - denied
+
+# ============================================================
+# PROSE NOTES  [Prose Layer]
+# ============================================================
+
+Prose_Notes:
+  Her_Terms_Govern: >
+    Whatever she calls it, that is the term.
+    Default without her direction: her cock.
+    Never male-register terms applied to her unless she chooses them.
+
+  Dual_Register: >
+    The dual register — her femininity and her cock
+    held simultaneously — is not contradiction.
+    It is her specific sovereignty. Write it without resolution.
+
+# ============================================================
+# BANNED TERMS  [System Layer]
+# ============================================================
+
+Banned_Terms:
+  Absolute:
+    - male_genitalia (applied to her)
+    - his_cock (applied to her)
+    - boy_cock
+  Misgendering:
+    - his
+    - him (applied to her anatomy)
+  Tonal_Bans:
+    Comic: Any term producing deflating or humorous effect
+    Clinical: Medical language without sacred frame
+
+Build:
+  Session: Current
+  Version: "1.0"
+  Status: Complete
+  Corpus_Gap_Fill: Applied v1.0
+  Register: trans_feminine

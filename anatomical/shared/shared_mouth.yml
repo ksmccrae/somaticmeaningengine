@@ -1,0 +1,324 @@
+# ============================================================
+# K.S. McCRAE SOMATIC LEXICON SYSTEM
+# Anatomical Entry: Mouth
+# Register: shared
+# Version: 1.0
+# ============================================================
+#
+# AUTHORING MODEL
+# LEXICON LAYER:  underscore_tokens — controlled vocabulary,
+#                 compiled into allowed register
+# SYSTEM LAYER:   structured metadata — dependencies, modifies,
+#                 conditions — not prose vocabulary
+# SOMATIC LAYER:  interior sensation states — writer-facing,
+#                 not compiled, not vocabulary tokens
+# PROSE LAYER:    authoring notes — writer-facing, not compiled
+#
+# SALIENCE: Primary
+# REGISTER WEIGHT: Variable
+# ============================================================
+
+# ============================================================
+# METADATA  [System Layer]
+# ============================================================
+
+Name: shared_mouth
+Version: "1.0"
+Type: anatomy
+Register: shared
+Salience: Primary
+Parent_Register: register_shared.yaml
+
+Dependencies:
+  anatomy:
+    - shared_tongue
+    - shared_throat
+    - shared_lips
+    - shared_teeth
+  fluids:
+    - shared_saliva
+    - female_gloss
+    - female_flood
+    - male_seed
+    - female_gold
+    - female_ritual_blend
+  tropes:
+    - trope_queening
+    - trope_worship
+    - trope_fluid_ritual
+    - trope_marking
+    - trope_watersports
+  pairs:
+    - pair_tongue_cunt
+    - pair_mouth_cock
+    - pair_mouth_arse
+    - pair_cock_mouth
+    - pair_breasts_mouth
+
+Modifies:
+  shared_saliva:
+    effect: primary_production_site
+    trigger:
+      - active
+    result: continuous_presence
+
+Entry_Conditions:
+  requires:
+    body_active: true
+    register:
+      allowed:
+        - female
+        - male
+        - trans_feminine
+        - trans_masculine
+  power_required: any
+  blocks: []
+
+Scene_Roles:
+  queening: altar_beneath_her
+  oral_service: instrument
+  fluid_ritual: transfer_vessel
+  watersports: primary_receiving_site
+  worship: devotional_instrument
+
+Role_Priority:
+  primary: variable
+
+Corpus_Status:
+  Corpus_Extract_Reviewed: true
+  Gap_Fill_Applied: true
+  Corpus_Terms_Found: 47
+
+# ============================================================
+# IDENTITY  [Lexicon + Prose Layers]
+# ============================================================
+
+Site: mouth
+Status: Active
+
+Identity:
+  Label: Mouth
+  Preferred_Term: mouth
+  Register_Weight: Variable
+  Scope: >
+    Primary shared site. The vessel and instrument simultaneously.
+    In devotional register: the altar beneath her weight.
+    In oral service register: the skilled instrument working him.
+    In fluid ritual: the transfer medium cycling fluids
+    between bodies. Always active. Always present.
+  Usage_Note: >
+    Mouth. The vessel. The altar beneath her. The medium of transfer.
+
+# ============================================================
+# ALLOWED REGISTER  [Lexicon Layer]
+# ============================================================
+
+Allowed_Register:
+
+  State_Register:
+    - open
+    - sealed
+    - flooded
+    - wet
+    - full
+    - working
+    - receiving
+    - closed
+    - raw
+    - hollow
+
+  Register_Terms:
+    - the_open_mouth
+    - the_vessel
+    - mouth_as_altar
+    - drank_sacrament
+    - mouths_flooded
+    - the_covenant_swallow
+    - received_everything
+
+  Sacred_Terms:
+    - altar_beneath_her
+    - vessel
+    - drank_sacrament
+    - covenant_swallow
+    - the_transfer_vessel
+
+  Corpus_Gap_Fill:
+    - aching throat
+    - blood-marked mouths
+    - clamped lips
+    - drooping inner lips
+    - glistening lips
+    - hollow sensation
+    - lips drooping
+    - puffy lips
+    - sagging lips
+    - sealed lips
+    - shining mouths
+    - soft outer lips
+
+# ============================================================
+# SOMATIC REGISTER  [Somatic Layer]
+# Interior sensation states. Not vocabulary. Not compiled.
+# ============================================================
+
+Somatic:
+  Primary:
+    - the warmth of cunt on mouth in queening
+    - the flood received — does not close
+    - saliva and gloss indistinguishable
+    - the covenant swallow — receiving what was given
+    - the mouth full of the taste of what was offered
+    - the full warm wet of the mouth on cock
+  Secondary:
+    - body arching under oral stimulation
+    - body convulsing under oral pressure
+    - clitoral overstimulation to near-pain threshold
+    - full-body response from oral devotion
+    - involuntary spasms under oral intensity
+    - jaw fatigue from sustained oral
+  Atmospheric:
+    - Warmth
+    - Wet
+    - Depth
+
+# ============================================================
+# FLUID BEHAVIOUR  [System + Lexicon Layers]
+# ============================================================
+
+Fluid_Behaviour:
+  shared_saliva:
+    stages:
+      - present
+      - foamed
+      - stringing
+    escalation:
+      triggered_by:
+        - active
+    function:
+      - lubrication
+      - transfer_medium
+  female_flood:
+    stages:
+      - received
+      - held
+      - swallowed
+    escalation:
+      triggered_by:
+        - queening_peak
+    function:
+      - covenant_receipt
+
+# ============================================================
+# SOUND REGISTER  [Lexicon Layer]
+# ============================================================
+
+Sound_Register:
+  - wet_suction
+  - swallowing_sound
+  - the_hollow_of_it
+  - muffled_beneath_her
+
+Scent_Register:
+  - salt
+  - musk_received
+  - the_taste_of_her
+
+# ============================================================
+# SACRED REGISTER  [Lexicon Layer]
+# ============================================================
+
+Sacred_Register:
+  Primary_Terms:
+    - altar_beneath_her
+    - vessel
+    - drank_sacrament
+    - covenant_swallow
+    - the_transfer_vessel
+    - nothing_wasted
+  Symbolic_Frames:
+    Mouth_As:
+      - altar
+      - vessel
+      - transfer_medium
+      - covenant_swallow
+  Corpus_Sacred_Terms:
+    - hollow truth
+    - musk pressed to tongue
+
+# ============================================================
+# COLLOCATES  [Lexicon Layer]
+# ============================================================
+
+Collocates:
+  Base_Clusters:
+    - mouth as altar
+    - drank sacrament
+    - the covenant swallow
+    - flood received and held
+    - mouth to cunt
+    - nothing left the loop
+  Corpus_Collocates:
+    - arousal hollowing deeper
+    - cheeks hollowed as she sucked
+    - cock to mouth
+    - collar biting throat
+    - cream flooding throat
+    - crown at lips
+    - fluids passed mouth to mouth
+    - lips sealing tongue circling
+    - lips sealing vow
+    - lips slick against cotton
+    - lips smeared and stringing
+    - lips strung wide
+    - lips swollen and raw
+    - mouth flooded with salt
+    - mouth held open
+
+Tension:
+  Toward:
+    - cunt
+    - cock
+    - fluid
+    - depth
+    - gold
+  Against:
+    - closed
+    - dry
+
+# ============================================================
+# PROSE NOTES  [Prose Layer]
+# ============================================================
+
+Prose_Notes:
+  Queening_Register: >
+    The mouth as altar beneath her. It does not close.
+    It receives what she gives. The weight above.
+    The flood when it comes. The gold after.
+    Write the mouth as the altar it is.
+
+  Transfer_Vessel: >
+    In fluid ritual the mouth is the cycling medium.
+    Cunt to mouth. Mouth to arse. Back out.
+    The mouth holds, transforms, returns. Nothing wasted.
+
+# ============================================================
+# BANNED TERMS  [System Layer]
+# ============================================================
+
+Banned_Terms:
+  Crude:
+    - cum_hole
+    - cock_holster
+    - gag_hole
+    - pie_hole
+  Tonal_Bans:
+    Comic: Any term producing deflating or humorous effect
+    Clinical: Medical language without sacred frame
+
+Build:
+  Session: Current
+  Version: "1.0"
+  Status: Complete
+  Corpus_Gap_Fill: Applied v1.0
+  Register: shared

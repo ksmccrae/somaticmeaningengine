@@ -1,0 +1,297 @@
+# ============================================================
+# K.S. McCRAE SOMATIC LEXICON SYSTEM
+# Anatomical Entry: Tongue
+# Register: shared
+# Version: 1.0
+# ============================================================
+#
+# AUTHORING MODEL
+# LEXICON LAYER:  underscore_tokens — controlled vocabulary,
+#                 compiled into allowed register
+# SYSTEM LAYER:   structured metadata — dependencies, modifies,
+#                 conditions — not prose vocabulary
+# SOMATIC LAYER:  interior sensation states — writer-facing,
+#                 not compiled, not vocabulary tokens
+# PROSE LAYER:    authoring notes — writer-facing, not compiled
+#
+# SALIENCE: Primary
+# REGISTER WEIGHT: Instrument
+# ============================================================
+
+# ============================================================
+# METADATA  [System Layer]
+# ============================================================
+
+Name: shared_tongue
+Version: "1.0"
+Type: anatomy
+Register: shared
+Salience: Primary
+Parent_Register: register_shared.yaml
+
+Dependencies:
+  anatomy:
+    - shared_mouth
+    - female_cunt
+    - male_cock
+    - shared_arse
+    - male_balls
+  fluids:
+    - shared_saliva
+    - female_gloss
+    - female_flood
+  tropes:
+    - trope_queening
+    - trope_worship
+    - trope_fluid_ritual
+  pairs:
+    - pair_tongue_cunt
+    - pair_tongue_arse
+    - pair_mouth_cock
+    - pair_mouth_arse
+
+Modifies:
+  shared_saliva:
+    effect: distribution
+    trigger:
+      - tongue_active
+    result: surface_coating
+
+Entry_Conditions:
+  requires:
+    body_active: true
+    register:
+      allowed:
+        - female
+        - male
+        - trans_feminine
+        - trans_masculine
+  power_required: any
+  blocks: []
+
+Scene_Roles:
+  queening: primary_devotional_instrument
+  worship: reading_instrument
+  rim_worship: circling_instrument
+  fluid_transfer: cycling_medium
+
+Role_Priority:
+  primary: instrument
+
+Corpus_Status:
+  Corpus_Extract_Reviewed: true
+  Gap_Fill_Applied: true
+  Corpus_Terms_Found: 47
+
+# ============================================================
+# IDENTITY  [Lexicon + Prose Layers]
+# ============================================================
+
+Site: tongue
+Status: Active
+
+Identity:
+  Label: Tongue
+  Preferred_Term: tongue
+  Register_Weight: Instrument
+  Scope: >
+    The primary instrument of oral devotion. The tongue reads
+    what it attends. Precise, warm, always present in oral scenes.
+    It finds the pearl, the frenulum, the seam, the rim.
+    Instrument register: never diminished by service.
+  Usage_Note: >
+    Tongue. The devoted tongue. The tongue that reads. Instrument register.
+
+# ============================================================
+# ALLOWED REGISTER  [Lexicon Layer]
+# ============================================================
+
+Allowed_Register:
+
+  State_Register:
+    - warm
+    - flat
+    - pointed
+    - circling
+    - dragging
+    - lapping
+    - reading
+    - attending
+    - not_stopping
+    - precise
+
+  Register_Terms:
+    - devoted_tongue
+    - the_circle
+    - tongue_reading
+    - the_tongue_attends
+    - not_stopping
+    - broad_stroke
+    - the_tip_at_pearl
+    - tongue_dragging_through_wet
+
+  Sacred_Terms:
+    - devoted_tongue
+    - the_tongue_that_reads
+    - instrument_of_devotion
+    - the_circle_at_the_pearl
+
+  Corpus_Gap_Fill:
+    - slick
+    - blood-slicked tips
+    - collapsed bodies
+    - collapsed instruments
+    - collapsed posture
+    - collapsing
+    - fluid-slick bodies
+    - oil-slick flesh
+    - oil-slick skin
+    - oil-slick steel
+    - slicked sheets
+    - slickened surface
+
+# ============================================================
+# SOMATIC REGISTER  [Somatic Layer]
+# Interior sensation states. Not vocabulary. Not compiled.
+# ============================================================
+
+Somatic:
+  Primary:
+    - the tongue finding the frenulum on first stroke
+    - the circle at the pearl — steady, not stopping
+    - the tongue reading the sac as text
+    - the seam traced under tongue
+    - tongue in the gloss — warmth meeting warmth
+    - the rim softening under sustained tongue
+  Secondary:
+    - body arching under oral stimulation
+    - body collapsing after overload
+    - body collapsing after release
+    - body convulsing under oral pressure
+    - body oscillating between tension and collapse
+    - clitoral overstimulation to near-pain threshold
+  Atmospheric:
+    - Warmth
+    - Precision
+    - Devotion
+
+# ============================================================
+# FLUID BEHAVIOUR  [System + Lexicon Layers]
+# ============================================================
+
+Fluid_Behaviour:
+  shared_saliva:
+    stages:
+      - distribute
+      - coat
+    escalation:
+      triggered_by:
+        - tongue_active
+    function:
+      - lubrication
+      - gloss_mixing
+  female_gloss:
+    stages:
+      - received
+      - tasted
+    escalation:
+      triggered_by:
+        - cunt_active
+    function:
+      - communion_register
+
+# ============================================================
+# SACRED REGISTER  [Lexicon Layer]
+# ============================================================
+
+Sacred_Register:
+  Primary_Terms:
+    - devoted_tongue
+    - the_tongue_that_reads
+    - instrument_of_devotion
+    - the_circle_at_the_pearl
+  Symbolic_Frames:
+    Tongue_As:
+      - instrument
+      - reading_register
+      - devotional_instrument
+  Corpus_Sacred_Terms:
+    - collapse is completion
+    - musk pressed to tongue
+
+# ============================================================
+# COLLOCATES  [Lexicon Layer]
+# ============================================================
+
+Collocates:
+  Base_Clusters:
+    - devoted tongue
+    - the circle at the pearl
+    - tongue dragging through wet
+    - tongue reading the sac
+    - not stopping
+  Corpus_Collocates:
+    - weight dragging low
+    - channels overlapping
+    - cock slapping wet
+    - collapse after suspension
+    - collapse into each other
+    - collapse into mess
+    - collapse into return
+    - collapse into silence
+    - collapse into wet silence
+    - cum dragging thick
+    - hinge clicking open
+    - lick it clean
+    - lips sealing tongue circling
+    - lips slick against cotton
+    - piss-slick kisses
+
+Tension:
+  Toward:
+    - pearl
+    - frenulum
+    - seam
+    - rim
+    - gloss
+  Against:
+    - stopping
+    - distracted
+
+# ============================================================
+# PROSE NOTES  [Prose Layer]
+# ============================================================
+
+Prose_Notes:
+  Reading_Register: >
+    The tongue reads what it attends. It maps the site.
+    It does not perform — it attends. The broad stroke then
+    the circle at the pearl. The seam traced. The rim
+    read. Write the tongue's knowledge of what it finds.
+
+  Not_Stopping: >
+    The devoted tongue does not stop. This is the
+    register. Write the sustained attention. The circle
+    continuing after the first response. The reading.
+
+# ============================================================
+# BANNED TERMS  [System Layer]
+# ============================================================
+
+Banned_Terms:
+  Crude:
+    - pussy_eating
+    - eating_out
+    - going_down
+    - tossing_salad
+    - eating_ass
+  Tonal_Bans:
+    Comic: Any term producing deflating or humorous effect
+    Clinical: Medical language without sacred frame
+
+Build:
+  Session: Current
+  Version: "1.0"
+  Status: Complete
+  Corpus_Gap_Fill: Applied v1.0
+  Register: shared
