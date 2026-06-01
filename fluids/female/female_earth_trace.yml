@@ -1,0 +1,134 @@
+# ============================================================
+# K.S. McCRAE SOMATIC LEXICON SYSTEM
+# Fluid: Female Earth Trace
+# Register: female
+# Fluid_Type: trace
+# Version: 1.0
+# ============================================================
+#
+# AUTHORING MODEL
+# LEXICON LAYER:  stage names, appearance, scent, taste,
+#                 surface-state terms — compiled
+# SYSTEM LAYER:   Production_Source, Carrier_Sites, Mixing,
+#                 Sacred_Economy — compiled as system context
+# SOMATIC LAYER:  sensation of producing/receiving — not compiled
+# PROSE LAYER:    staging discipline, scene notes — not compiled
+# ============================================================
+
+Fluid: female_earth_trace
+Version: "1.0"
+Type: fluid
+Fluid_Type: trace
+Register: female
+Parent_Register: register_female.yaml
+Status: Active
+
+Production_Source:
+  Produced_By:
+    Primary:
+      - shared_arse (post-preparation context only)
+  Triggered_By:
+    - post_enema_context
+    - depth_play_preparation
+    - anal_scene_preparation
+  Suppressed_By:
+    - absence_of_preparation_context
+  Production_Note: >
+    Earth trace is the minimal presence of the body's interior environment after preparation. It is not a discrete fluid — it is a trace. One line maximum in prose. Never foregrounded. Present only when the scene architecture has specifically included preparation.
+
+Stages:
+  trace:
+    Terms:
+      - earth_trace
+      - the_trace
+      - earth
+      - clean_depth
+      - the_minimal_present
+      - after_preparation
+    Behavior: >
+      One trace. Then the scene moves on.
+
+Trace_Constraints:
+  Max_Prose_Lines: 1
+  Context_Required: post_preparation_depth_play_only
+  Forbidden_Foregrounding: true
+  Activation_Condition: only_after_explicitly_stated_preparation
+  Note: >
+    Earth trace is background. One line maximum. Never foregrounded. The scene has already moved past preparation before this fluid appears. If it needs more than one line it is not earth trace — it is a different register entirely. Move on.
+
+Allowed_Register:
+
+  Minimal_Register:
+    - earth_trace
+    - the_trace
+    - clean_depth
+    - earth
+    - minimal_present
+  Sacred_Terms:
+    - the_earth_of_the_body
+    - depth_acknowledged
+    - the_body_complete
+
+Sacred_Economy:
+  Nothing_Wasted: true
+  Loop_Position: source
+  Offering_Register:
+    - the_body_complete_in_its_depth
+  Receipt_Register:
+    - acknowledged_once
+  Sacred_Meaning: >
+    Earth trace acknowledges the full interior of the body without dwelling. The body is complete — it includes everything. One acknowledgment. Then the scene continues.
+  Fluid_As_Covenant:
+    - the_body_complete
+    - depth_acknowledged
+    - earth_register
+  Corpus_Sacred_Terms:
+    - not humiliation, preparation
+    - preparation as ritual
+
+Collocates:
+  Base:
+    - earth trace
+    - after preparation
+    - clean depth
+    - the minimal
+  Corpus:
+    - cleaned and restored
+    - earth drinking below
+    - lick it clean
+    - piss rinsing clean
+    - spill without trace
+    - earth absorption
+
+Prose_Notes:
+  One_Line_Maximum: >
+    Earth trace is one line. One. Then move on. It acknowledges the body's interior truth and keeps moving. If you find yourself writing more than one line about earth trace, you are in the wrong register.
+
+  Post_Preparation_Only: >
+    Earth trace only appears when the scene architecture has explicitly included preparation (enema, cleaning). It does not appear in anal scenes without stated preparation. Do not add it speculatively.
+
+Banned_Terms:
+  Primary_Banned:
+    - shit
+    - scat
+    - feces
+    - excrement
+    - anal_discharge
+    - brown (fluid reference)
+  Crude:
+    - dirty (depth reference)
+  Tonal_Bans:
+    Waste_Register: Never frame this fluid as waste or pollution
+    Comic: Any term producing deflating or humorous effect
+
+Corpus_Status:
+  Corpus_Extract_Reviewed: true
+  Gap_Fill_Applied: true
+  Gap_Fill_Version: "1.0"
+
+Build:
+  Session: Current
+  Version: "1.0"
+  Status: Complete
+  Fluid_Type_Confirmed: trace
+  Register: female

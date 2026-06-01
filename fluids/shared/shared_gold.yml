@@ -1,0 +1,241 @@
+# ============================================================
+# K.S. McCRAE SOMATIC LEXICON SYSTEM
+# Fluid: Shared Gold / Watersports (Shared Register)
+# Register: shared
+# Fluid_Type: staging
+# Version: 1.0
+# ============================================================
+#
+# AUTHORING MODEL
+# LEXICON LAYER:  stage names, appearance, scent, taste,
+#                 surface-state terms — compiled
+# SYSTEM LAYER:   Production_Source, Carrier_Sites, Mixing,
+#                 Sacred_Economy — compiled as system context
+# SOMATIC LAYER:  sensation of producing/receiving — not compiled
+# PROSE LAYER:    staging discipline, scene notes — not compiled
+# ============================================================
+
+Fluid: shared_gold
+Version: "1.0"
+Type: fluid
+Fluid_Type: staging
+Register: shared
+Parent_Register: register_shared.yaml
+Status: Active
+
+Production_Source:
+  Produced_By:
+    Primary:
+      - shared_urethra (via body)
+  Triggered_By:
+    - chosen_release
+    - watersports_register_active
+    - sovereign_offering_from_either_body
+  Production_Note: >
+    Shared gold encompasses the watersports register for both bodies. Female gold carries sovereign offering register (see female_gold). When male body is the source, the same sacred register applies — chosen, deliberate, offered. The shared register allows both directions. Never degradation. Always offering and receipt in covenant.
+
+Stages:
+  thread:
+    Terms:
+      - thread
+      - first_thread
+      - the_beginning_of_gold
+      - gold_thread
+    Trigger_To_Next:
+      - flow_established
+    Behavior: >
+      First thread. Offering beginning.
+  stream:
+    Terms:
+      - stream
+      - golden_stream
+      - gold_stream
+      - warm_stream
+      - the_offering_stream
+      - sovereign_stream
+      - gold_arc
+    Trigger_To_Next:
+      - continued_release
+    Behavior: >
+      Full stream. Warm. Deliberate. The offering in expression.
+  flood:
+    Terms:
+      - flood
+      - heavy_stream
+      - the_full_gold
+      - rinse
+      - rinsing_gold
+      - gold_flood
+    Peak: true
+    Behavior: >
+      Peak offering. Full volume. Rinsing. The gold river.
+  last:
+    Terms:
+      - last_thread
+      - offering_closing
+      - the_end_of_gold
+    Is_Post: true
+    Behavior: >
+      Closing. Both still.
+
+Carrier_Sites:
+  Primary:
+    - site: shared_mouth
+      behavior: receives
+    - site: shared_skin
+      behavior: anointed
+  Secondary:
+    - site: shared_face
+      behavior: marked
+    - site: shared_chest
+      behavior: christened
+  Environmental:
+    - sheets
+    - floor
+    - stone
+
+Mixing:
+  Nothing_Wasted: true
+  Compatible_With:
+    - fluid: shared_saliva
+      blend_name: gold_saliva
+      sacred_register: received_and_held
+      behavior: >
+        Gold received in the mouth — with saliva. Tasted and held.
+    - fluid: female_gloss
+      blend_name: sovereign_blend
+      sacred_register: full_offering
+      behavior: >
+        Gloss and gold together at the site — both sovereign offerings.
+  Mixing_Note: >
+    Both directions sacred. Received and offered from either body in covenant.
+
+Allowed_Register:
+
+  Appearance:
+    Color:
+      - gold
+      - golden
+      - warm_gold
+      - pale_gold
+      - gold_river
+  Sacred_Terms:
+    - gold
+    - golden_arc
+    - covenant_stream
+    - sovereign_offering
+    - anointing
+    - consecration
+    - gold_river
+    - warm_claim
+    - piss_slick_kisses
+  Extended:
+    - watersports_register
+    - the_gold_of_them
+    - gold_received
+    - rinsed_in_gold
+    - christened_warm
+  Corpus_Gap_Fill:
+    - golden crust
+    - piss-soaked
+    - thin streams
+
+Sensory_Register:
+  Scent:
+    Near:
+      - warm_salt
+      - body_offering
+    Post:
+      - cooled_gold
+      - salt_trace
+  Taste:
+    First:
+      - warm_salt
+      - the_taste_of_offering
+    After:
+      - salt_remaining
+  Temperature:
+    - warm
+    - hot
+    - body_warmth
+  Sound:
+    - stream_on_skin
+    - the_offering_audible
+
+Sacred_Economy:
+  Nothing_Wasted: true
+  Loop_Position: source
+  Offering_Register:
+    - chosen_offering_from_either_body
+    - sovereign_act
+  Receipt_Register:
+    - received_open
+    - anointed
+  Sacred_Meaning: >
+    Shared gold is always sovereign offering regardless of direction. Both bodies may offer. Both bodies may receive. The sacred register is identical — chosen, deliberate, consecrating. Anointing. The warm claim.
+  Fluid_As_Covenant:
+    - sovereign_offering
+    - the_warm_claim
+    - anointing
+    - covenant_stream
+    - gold_as_consecration
+
+Somatic:
+  Production:
+    - the deliberateness of choosing to give gold
+    - the warmth of the offering as it releases
+  Receipt:
+    - warmth arriving
+    - anointed and altered
+  Atmospheric:
+    - warm salt after
+
+Collocates:
+  Base:
+    - gold river
+    - golden arc
+    - warm claim
+    - anointing stream
+    - received open
+    - piss-slick kisses
+    - the offering warm
+    - sovereign stream
+  Corpus:
+    - gold rinsing flesh
+    - gold river coiled behind gates
+    - piss rinsing clean
+    - stream unbroken
+    - streams pouring hot
+    - white streak across gold
+    - hot streams spattering shaft
+    - piss flowing through rod
+
+Prose_Notes:
+  Sacred_Always: >
+    Gold is always sovereign offering in both directions. Never degradation. The offering and the receiving are both covenant acts.
+
+  Register_Discipline: >
+    Never write gold as piss in primary prose. The register is offering, anointing, consecration.
+
+Banned_Terms:
+  Primary_Banned:
+    - piss (primary prose)
+    - urination (clinical)
+    - toilet_play
+    - bathroom_play
+    - golden_shower (porn cliché)
+  Tonal_Bans:
+    Waste_Register: Never frame this fluid as waste or pollution
+    Comic: Any term producing deflating or humorous effect
+
+Corpus_Status:
+  Corpus_Extract_Reviewed: true
+  Gap_Fill_Applied: true
+  Gap_Fill_Version: "1.0"
+
+Build:
+  Session: Current
+  Version: "1.0"
+  Status: Complete
+  Fluid_Type_Confirmed: staging
+  Register: shared

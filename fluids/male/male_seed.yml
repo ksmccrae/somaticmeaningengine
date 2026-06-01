@@ -1,0 +1,359 @@
+# ============================================================
+# K.S. McCRAE SOMATIC LEXICON SYSTEM
+# Fluid: Seed / Male Ejaculation
+# Register: male
+# Fluid_Type: staging
+# Version: 1.0
+# ============================================================
+#
+# AUTHORING MODEL
+# LEXICON LAYER:  stage names, appearance, scent, taste,
+#                 surface-state terms — compiled
+# SYSTEM LAYER:   Production_Source, Carrier_Sites, Mixing,
+#                 Sacred_Economy — compiled as system context
+# SOMATIC LAYER:  sensation of producing/receiving — not compiled
+# PROSE LAYER:    staging discipline, scene notes — not compiled
+# ============================================================
+
+Fluid: male_seed
+Version: "1.0"
+Type: fluid
+Fluid_Type: staging
+Register: male
+Parent_Register: register_male.yaml
+Status: Active
+
+Production_Source:
+  Produced_By:
+    Primary:
+      - male_cock
+      - male_urethra
+    Secondary:
+      - male_balls (origin)
+      - male_prostate (source and passage)
+  Triggered_By:
+    - orgasm_permission_granted
+    - climax
+    - prostate_milking (expression_not_release)
+    - directed_release
+  Suppressed_By:
+    - permission_withheld
+    - cage_present
+    - ruined_orgasm (strips_satisfaction)
+  Production_Note: >
+    Seed is covenant. In permission-governed scenes it releases only when she permits. The permission is her gift. His release is his offering. Both are covenant. In milking register seed is expressed in drops and threads — not arcs. The gland gives without granting orgasm.
+
+Stages:
+  thread:
+    Terms:
+      - thread
+      - drool
+      - single_thread
+      - pre_drool
+      - the_thread
+      - first_thread
+    Trigger_To_Next:
+      - continued_arousal
+    Behavior: >
+      The first thread at release — slow, single. The seed beginning to express.
+  rope:
+    Terms:
+      - rope
+      - first_rope
+      - the_rope
+      - thick_rope
+      - white_rope
+      - the_first_rope
+    Trigger_To_Next:
+      - full_orgasm
+    Behavior: >
+      The first real rope — the seed gaining volume and velocity. Dense and white.
+  arc:
+    Terms:
+      - arc
+      - arcing
+      - arced
+      - the_arc
+      - arc_of_seed
+      - white_arc
+      - the_long_arc
+    Trigger_To_Next:
+      - continued_release
+    Behavior: >
+      Full ejaculatory arc. Seed under pressure, carrying distance. The rope in its full expression.
+  flood:
+    Terms:
+      - flood
+      - seed_flood
+      - full_release
+      - jets
+      - broken_jets
+      - ropes
+      - multiple_ropes
+      - streaming
+      - cream_flooding
+    Peak: true
+    Behavior: >
+      Full release — multiple ropes or sustained stream. The offering at peak volume.
+  milked:
+    Terms:
+      - expressed
+      - drops
+      - threads_not_ropes
+      - milked_seed
+      - the_gland_giving
+      - slow_expression
+      - drop_by_drop
+    Behavior: >
+      In milking register — seed expressed in drops and threads. Not arcs. The prostate giving without orgasm. Different register entirely.
+  cooling:
+    Terms:
+      - cooling
+      - cooled
+      - cooling_on_skin
+      - the_seed_cooling
+      - spent_seed
+      - white_cooling
+      - christened
+    Is_Post: true
+    Behavior: >
+      Seed on skin cooling. The warmth of landing then the cooling. The white remaining. The christening.
+
+Carrier_Sites:
+  Primary:
+    - site: female_cunt
+      behavior: internal_receipt
+    - site: shared_skin
+      behavior: external_christening
+    - site: shared_lips
+      behavior: marking_surface
+  Secondary:
+    - site: shared_belly
+      behavior: pools_cools
+    - site: shared_chest
+      behavior: streaked
+    - site: shared_face
+      behavior: marked
+  Environmental:
+    - sheets
+    - floor
+    - surface
+
+Mixing:
+  Nothing_Wasted: true
+  Compatible_With:
+    - fluid: female_gloss
+      blend_name: covenant_blend
+      sacred_register: sealing_covenant
+      behavior: >
+        Seed into gloss — the seeding of her wet. Layers then combines. ritual_blend governs.
+    - fluid: shared_saliva
+      blend_name: oral_covenant
+      sacred_register: swallowed_vow
+      behavior: >
+        Seed in the mouth — swallowed as covenant. Saliva mixed with seed in the throat.
+    - fluid: female_ritual_blend
+      blend_name: full_ritual
+      sacred_register: consecrated_blend
+      behavior: >
+        Seed entering the full ritual blend — the loop receiving the male offering.
+  Mixing_Note: >
+    Seed is offered not spent. In permission architecture it lands where she directs. The direction is her sovereignty. The offering is his.
+
+Allowed_Register:
+
+  Appearance:
+    Color:
+      - white
+      - cream
+      - pale_white
+      - thick_white
+    Viscosity:
+      - thick
+      - creamy_salt
+      - dense
+      - the_weight_of_it
+  Sacred_Terms:
+    - seed
+    - offering
+    - covenant_seed
+    - christened
+    - christening
+    - seed_as_vow
+    - the_offering
+    - the_gift
+    - covenant_landing
+    - nothing_wasted
+  Extended:
+    - pearl_beads
+    - cream
+    - the_salt_of_him
+    - thick_and_salted
+    - streaked
+    - painted
+    - smeared
+    - cooled_on_skin
+    - seed_pooled
+    - spread_like_vow
+    - the_white_of_his_offering
+  Corpus_Gap_Fill:
+    - glossy ropes
+    - streaked thighs
+    - clear ropes
+    - creamy
+    - cum-coated chest
+    - cum-coated skin
+    - gathered seed
+    - quantified seed
+
+Sensory_Register:
+  Scent:
+    Near:
+      - salt_heavy
+      - the_salt_of_him
+      - musk_with_salt
+    Post:
+      - cooled_salt
+      - the_trace_of_seed
+  Taste:
+    First:
+      - salt
+      - thick_salt
+      - the_salt_of_him
+      - bitter_edge_salt
+    Sustained:
+      - the_full_salt
+      - creamy_salt
+    After:
+      - salt_remaining
+      - the_aftertaste_of_covenant
+  Temperature:
+    - warm
+    - body_warm
+    - the_warmth_of_landing
+    - cooling_fast
+  Sound:
+    - the_arc_sound
+    - seed_on_skin
+    - the_wet_of_it
+
+Sacred_Economy:
+  Nothing_Wasted: true
+  Loop_Position: source
+  Offering_Register:
+    - the_permitted_offering
+    - given_where_directed
+    - seed_as_vow
+    - the_christening
+  Receipt_Register:
+    - received_on_skin
+    - received_in_cunt
+    - swallowed_as_covenant
+    - anointed
+  Sacred_Meaning: >
+    Seed is the male offering. In permission-governed scenes it releases only at her permission. The permission is her gift. His release is his offering of what he has been holding. In the sacred economy seed is source-fluid with covenant meaning: the christening, the marking, the vow made visible. Nothing wasted — every landing has meaning.
+  Fluid_As_Covenant:
+    - seed_as_vow
+    - christening
+    - covenant_landing
+    - the_offering
+    - nothing_wasted
+    - directed_seed
+    - permission_as_gift
+  Corpus_Sacred_Terms:
+    - cum christening the loaf
+    - seed displayed
+    - seed fails, blood does not
+    - seed taken
+
+Somatic:
+  Production:
+    - the permission arriving — and the body releasing
+    - the cock releasing what it has held
+    - the arc of it — felt from within
+    - in milking: the gland giving without the release
+    - the offering given where directed
+  Receipt:
+    - seed on skin — warm then cooling
+    - the christening on her face or lips
+    - seed received internally — warmth within
+    - swallowed covenant — the throat receiving
+  Atmospheric:
+    - the salt of seed in the air after
+    - the scent of him remaining
+  Corpus_Somatic_Gap_Fill:
+    - back arching off the bed
+    - back arching with entry
+    - body arching to present chest
+    - body arching under oral stimulation
+    - convulsions building through accumulation
+    - cumulative exhaustion
+    - cumulative stimulation intensifying sensitivity
+    - internal fullness building cumulatively
+
+Collocates:
+  Base:
+    - seed as vow
+    - christened
+    - the arc of it
+    - painted white
+    - the long rope
+    - cooling on skin
+    - received where directed
+    - the offering landing
+    - thick and salted
+    - streaked across
+    - seed pooled at navel
+    - permission granted
+  Corpus:
+    - ropes of wet
+    - arcs crossing
+    - arcs spraying high
+    - bead and rope
+    - beard painted wet
+    - cream and seed mingled
+    - cream flooding throat
+    - creamy gush streaking down
+
+Prose_Notes:
+  Permission_Architecture: >
+    In femdom register seed releases only at permission. Write the permission as covenant — her gift, his offering. Both sovereign in the exchange. The direction of where seed lands is hers. The giving is his.
+
+  Milking_Distinction: >
+    In milking register seed arrives in drops and threads — not arcs. The prostate milked rather than the orgasm released. Write the difference. It is architecturally significant.
+
+  Marking_Register: >
+    In marking (Arc 5 Made to Receive) — first spurt on her cheek, second on her lips. She offered them. The lips parted for it. Write the directed sequence as covenant.
+
+  Cooling_Register: >
+    The cooling of seed on skin has its own register. The warmth of landing then the cooling. The christening present in both states.
+
+Banned_Terms:
+  Primary_Banned:
+    - jizz
+    - cum_shot
+    - money_shot
+    - cum (standalone primary)
+    - spunk
+    - sperm (clinical primary)
+    - ejaculate (clinical primary)
+  Comic:
+    - man_juice
+    - ball_juice
+    - pearl_necklace (porn cliché)
+    - facial (porn production label)
+  Tonal_Bans:
+    Waste_Register: Never frame this fluid as waste or pollution
+    Comic: Any term producing deflating or humorous effect
+
+Corpus_Status:
+  Corpus_Extract_Reviewed: true
+  Gap_Fill_Applied: true
+  Gap_Fill_Version: "1.0"
+
+Build:
+  Session: Current
+  Version: "1.0"
+  Status: Complete
+  Fluid_Type_Confirmed: staging
+  Register: male

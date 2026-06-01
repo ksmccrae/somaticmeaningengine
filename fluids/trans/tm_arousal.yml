@@ -1,0 +1,127 @@
+# K.S. McCRAE SOMATIC LEXICON SYSTEM
+# Fluid: TM Arousal
+# Register: trans_masculine
+# Fluid_Type: PARALLEL
+# Version: 1.0
+# ============================================================
+# AUTHORING MODEL
+# LEXICON LAYER: inherited from parent + override terms
+# SYSTEM LAYER: parallel notes, production source
+# SOMATIC LAYER: writer-facing, not compiled
+# PROSE LAYER: register discipline notes
+# ============================================================
+
+Fluid: tm_arousal
+Version: "1.0"
+Type: fluid
+Fluid_Type: parallel
+Register: trans_masculine
+Parent_Register: register_trans_masculine.yaml
+Status: Active
+
+Parallel_Notes:
+  Parent_Fluid: female_gloss
+  Register_Difference: >
+    His arousal fluid from his front. Male register throughout. Apply female_gloss staging with his pronouns. His terms govern entirely.
+  Inherits: all_parent_allowed_register
+  Override_Terms:
+    - his_arousal
+    - tm_arousal
+    - his_front_fluid
+    - his_wet
+  Trans_Specific_Sacred:
+    - his_arousal_sovereign
+    - his_body_his_truth
+    - his_front_declaring
+
+Production_Source:
+  Produced_By:
+    Primary:
+      - tm_front
+  Triggered_By:
+    - arousal
+    - stimulation
+    - his_body_responding
+  Production_Note: >
+    His arousal fluid from his front. Apply female_gloss staging with his pronouns throughout. Male register absolute.
+
+Allowed_Register:
+
+  Inherits:
+    Note: female_gloss staging and terms with male pronouns
+  Override:
+    - his_arousal
+    - his_front_fluid
+    - his_wet
+    - his_body_declaring
+  Trans_Sacred:
+    - his_arousal_sovereign
+    - his_body_his_truth
+    - his_front_declaring
+  Corpus_Gap_Fill:
+    - traitorous arousal
+
+Sacred_Economy:
+  Nothing_Wasted: true
+  Loop_Position: source
+  Sacred_Meaning: >
+    His arousal fluid — his body's sovereign declaration. Male register throughout. His front producing his truth. Nothing wasted.
+  Fluid_As_Covenant:
+    - his_arousal_sovereign
+    - his_body_his_truth
+    - his_front_declaring
+    - nothing_wasted
+
+Somatic:
+  Production:
+    - his front producing what it produces
+    - his wet forming without his permission
+    - his body declaring his arousal
+  Receipt:
+    - his arousal fluid on fingers — his truth
+    - the slick of his front on the hand
+  Corpus_Somatic_Gap_Fill:
+    - arousal building despite failure
+    - arousal building from alternative pathways
+    - arousal moderated through slowed pacing
+    - arousal rising through humiliation
+    - arousal suppressed then intensified
+    - arousal through ritual framing
+    - arousal tied to perceived perfection
+    - arousal under observation
+
+Collocates:
+  Base:
+    - his arousal
+    - his wet
+    - his front declaring
+    - his body its truth
+  Corpus:
+    - arousal hollowing deeper
+    - limp to forced arousal
+    - mixed milk + arousal fluid
+
+Prose_Notes:
+  Register_Discipline: >
+    Male pronouns absolute. His front. His arousal. His wet. His body. Never female register.
+
+Banned_Terms:
+  Primary_Banned:
+    - her_arousal (applied to him)
+    - vaginal_fluid (applied to him)
+    - she (applied to him)
+  Tonal_Bans:
+    Waste_Register: Never frame this fluid as waste or pollution
+    Misgendering: Never apply wrong register pronouns
+
+Corpus_Status:
+  Corpus_Extract_Reviewed: true
+  Gap_Fill_Applied: true
+  Gap_Fill_Version: "1.0"
+
+Build:
+  Session: Current
+  Version: "1.0"
+  Status: Complete
+  Fluid_Type_Confirmed: parallel
+  Register: trans_masculine

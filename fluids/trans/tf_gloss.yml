@@ -1,0 +1,129 @@
+# K.S. McCRAE SOMATIC LEXICON SYSTEM
+# Fluid: TF Gloss
+# Register: trans_feminine
+# Fluid_Type: PARALLEL
+# Version: 1.0
+# ============================================================
+# AUTHORING MODEL
+# LEXICON LAYER: inherited from parent + override terms
+# SYSTEM LAYER: parallel notes, production source
+# SOMATIC LAYER: writer-facing, not compiled
+# PROSE LAYER: register discipline notes
+# ============================================================
+
+Fluid: tf_gloss
+Version: "1.0"
+Type: fluid
+Fluid_Type: parallel
+Register: trans_feminine
+Parent_Register: register_trans_feminine.yaml
+Status: Active
+
+Parallel_Notes:
+  Parent_Fluid: female_gloss
+  Register_Difference: >
+    Her gloss. Post-op TF cunt produces gloss — sovereign register identical to female_gloss. Apply all staging and vocabulary. Her terms govern.
+  Inherits: all_parent_allowed_register
+  Override_Terms:
+    - her_gloss
+    - tf_gloss
+    - her_cunt_declaring
+  Trans_Specific_Sacred:
+    - her_gloss_sovereign
+    - constructed_and_wet
+    - her_body_its_truth
+
+Production_Source:
+  Produced_By:
+    Primary:
+      - tf_cunt
+  Triggered_By:
+    - arousal
+    - stimulation
+    - scent_proximity
+  Production_Note: >
+    Her gloss. Constructed cunt producing her body's truth. Apply female_gloss register fully.
+
+Allowed_Register:
+
+  Inherits:
+    Note: All female_gloss allowed_register applies
+  Override:
+    - her_gloss
+    - tf_gloss
+    - her_cunt_declaring
+    - her_body_its_truth
+  Trans_Sacred:
+    - her_gloss_sovereign
+    - constructed_and_wet
+    - her_cunt_declaring
+  Corpus_Gap_Fill:
+    - gloss
+    - clinging gloss
+    - glossy ropes
+    - covenant gloss
+    - dark gloss
+    - gloss without cling
+    - gloss-dripping cock
+    - gloss-threaded hair
+
+Sacred_Economy:
+  Nothing_Wasted: true
+  Loop_Position: source
+  Sacred_Meaning: >
+    Her gloss is her cunt's sovereign declaration. Constructed anatomy producing her body's truth. Same sacred register as female_gloss — proof of arousal, the body cannot lie. Her body. Her truth. Sovereign.
+  Fluid_As_Covenant:
+    - her_gloss_sovereign
+    - constructed_and_declaring
+    - her_body_its_truth
+    - nothing_wasted
+  Corpus_Sacred_Terms:
+    - gloss sovereign
+
+Somatic:
+  Production:
+    - her constructed cunt producing what it produces
+    - her arousal declared in gloss
+  Receipt:
+    - her gloss received — her truth on tongue
+
+Collocates:
+  Base:
+    - her gloss
+    - her cunt declaring
+    - her body its truth
+    - constructed and wet
+  Corpus:
+    - chin glossing with her flow
+    - gloss clinging to strands
+    - gloss laid thin
+    - gloss on metal
+    - gloss rising with scent
+    - gloss running down ribs
+    - gloss spilling down
+    - gloss then gone
+
+Prose_Notes:
+  Register_Discipline: >
+    Her gloss. No qualification. Apply female_gloss register fully. Her terms govern.
+
+Banned_Terms:
+  Primary_Banned:
+    - neo_vaginal_fluid
+    - surgical_secretion
+    - artificial_lubrication (applied to her)
+  Tonal_Bans:
+    Waste_Register: Never frame this fluid as waste or pollution
+    Misgendering: Never apply wrong register pronouns
+
+Corpus_Status:
+  Corpus_Extract_Reviewed: true
+  Gap_Fill_Applied: true
+  Gap_Fill_Version: "1.0"
+
+Build:
+  Session: Current
+  Version: "1.0"
+  Status: Complete
+  Fluid_Type_Confirmed: parallel
+  Register: trans_feminine

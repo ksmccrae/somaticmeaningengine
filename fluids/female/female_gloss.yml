@@ -1,0 +1,504 @@
+# ============================================================
+# K.S. McCRAE SOMATIC LEXICON SYSTEM
+# Fluid: Female Gloss (Arousal Wetness)
+# Register: Female Primary
+# Fluid_Type: STAGING
+# Version: 2.0
+# ============================================================
+#
+# AUTHORING MODEL
+# LEXICON LAYER:  stage names, appearance terms, texture terms,
+#                 scent terms, taste terms, surface-state terms
+#                 compiled into allowed register
+# SYSTEM LAYER:   Production_Source, Trigger conditions,
+#                 Carrier_Sites, Mixing_Rules, staging logic
+#                 compiled as system context
+# SOMATIC LAYER:  what it feels like to produce or receive
+#                 this fluid. Writer-facing. Not compiled.
+# PROSE LAYER:    staging discipline, mixing notes, when to
+#                 foreground. Writer-facing. Not compiled.
+#
+# SALIENCE: Primary  SACRED ECONOMY: source
+# ============================================================
+
+Fluid: female_gloss
+Version: "2.0"
+Type: fluid
+Fluid_Type: staging
+Register: female
+Parent_Register: register_female.yaml
+Status: Active
+
+Production_Source:
+  Produced_By:
+    Primary:
+      - female_cunt
+      - female_labia_minora
+    Secondary:
+      - female_labia_majora
+      - female_clitoris
+      - female_gspot
+  Triggered_By:
+    - arousal_present
+    - scent_proximity
+    - direct_contact
+    - sustained_oral
+    - arousal_at_distance
+    - anticipation
+    - fantasy
+  Suppressed_By:
+    - fear_response
+    - emotional_shutdown
+    - dehydration
+  Production_Note: >
+    Gloss is the body's involuntary truth. It appears before
+    touch, at scent, at proximity. It cannot be faked and
+    cannot be fully prevented when arousal is present.
+    In the consent architecture of this work, gloss is
+    the body's sovereign declaration.
+
+Stages:
+  bead:
+    Terms:
+      - bead
+      - glistening_bead
+      - the_first_slick
+      - barely_damp
+      - just_wet
+      - gathering
+    Trigger_To_Next:
+      - sustained_arousal
+      - direct_contact
+    Behavior: >
+      Single bead at the opening, sheen on inner folds.
+      Not yet stringing. Present but not yet pooling.
+      The body acknowledging arousal before fully committing.
+
+  dew_thread:
+    Terms:
+      - dew_thread
+      - dew_thread_wetness
+      - dew_forming
+      - thin_thread
+      - barely_stringing
+    Trigger_To_Next:
+      - sustained_arousal
+      - heat_building
+    Behavior: >
+      Fine thread forms between the folds. When labia part,
+      gloss strings in a single fine line. Brief stage —
+      the body moving through it quickly under attention.
+
+  stringing:
+    Terms:
+      - stringing
+      - stringing_wet
+      - cream_thread
+      - the_thread_between_folds
+      - strings_between_lips
+      - ropes_forming
+      - hanging_thread
+    Trigger_To_Next:
+      - continued_arousal
+      - direct_stimulation
+    Behavior: >
+      Viscous enough to string visibly between folds when
+      parted. Multiple threads. Cream thread hanging and
+      snapping. Labia coated. Ropes_of_wet collocate
+      first applies here.
+
+  slick:
+    Terms:
+      - slick
+      - slickened
+      - coat
+      - glossed
+      - the_slick_of_her
+      - gloss_coating
+      - gleaming_interior
+      - the_full_coat
+    Trigger_To_Next:
+      - peak_arousal
+      - bloom_point_engaged
+    Behavior: >
+      Full interior coated. No bare surface remains.
+      The entrance visibly wet. Working register —
+      the cunt ready and declaring it.
+
+  pool:
+    Terms:
+      - pooling
+      - pooled_gloss
+      - pooled_at_entrance
+      - gathering_pool
+      - the_pool_of_her
+      - overflow_beginning
+    Trigger_To_Next:
+      - peak_arousal
+      - orgasm_approaching
+    Behavior: >
+      Pools at entrance and overflows. Runs to perineum,
+      tracks down inner thighs. Body producing faster
+      than gravity removes.
+
+  flood:
+    Terms:
+      - flood
+      - gloss_flood
+      - soaking
+      - dripping
+      - ropes_of_wet
+      - ropes
+      - pour
+      - sheets_soaked
+    Peak: true
+    Trigger_To_Next: null
+    Behavior: >
+      Continuous production soaking the site. Ropes of wet
+      hanging from folds. Sheets soaked. Distinct from
+      female_flood (ejaculatory release) — gloss at
+      peak arousal volume, different register entirely.
+
+  Post_Use:
+    Terms:
+      - cooling_gloss
+      - residual_slick
+      - the_trace_of_her
+      - dried_sheen
+      - gloss_gone_tacky
+    Is_Post: true
+    Behavior: >
+      Gloss cools and begins to dry. Tacky sheen remains.
+      The trace of her. Evidence of what happened.
+
+Carrier_Sites:
+  Primary:
+    - site: female_labia_minora
+      behavior: coats_and_strings
+      overflow_to: female_cunt_entrance
+    - site: female_cunt
+      behavior: pools_at_entrance
+      overflow_to: shared_perineum
+  Secondary:
+    - site: shared_thighs
+      behavior: trails_down_inner_surface
+    - site: shared_perineum
+      behavior: receives_overflow_runs_toward_arse
+    - site: shared_arse
+      behavior: arrival_at_rim_during_pool_and_flood
+  Environmental:
+    - sheets_beneath
+    - surface_beneath
+
+Mixing:
+  Nothing_Wasted: true
+  Compatible_With:
+    - fluid: shared_saliva
+      blend_name: oral_blend
+      sacred_register: worship_communion
+      behavior: >
+        Indistinguishable in oral worship. Unified wet —
+        write as one not two fluids.
+    - fluid: male_seed
+      blend_name: covenant_blend
+      sacred_register: sealing_covenant
+      behavior: >
+        Seed arrives into gloss. Layer rather than fully
+        mix initially. ritual_blend governs combined state.
+    - fluid: female_flood
+      blend_name: peak_blend
+      sacred_register: full_release_register
+      behavior: >
+        Flood breaks through existing gloss at climax.
+        Both present. Distinct fluids, different registers.
+    - fluid: shared_musk
+      blend_name: atmospheric_arousal
+      sacred_register: scent_of_arousal
+      behavior: >
+        Musk and gloss together constitute the arousal
+        atmosphere. Inseparable in the sensory register.
+  Mixing_Note: >
+    Gloss is the base fluid into which all others arrive.
+    Always present when other fluids are active at the cunt.
+    Never cancelled in mixing — remains the sovereign layer.
+
+Allowed_Register:
+
+  Appearance:
+    Color:
+      - clear
+      - pale
+      - translucent
+      - glossy
+    Viscosity:
+      - thin
+      - viscous
+      - thick
+      - dense_at_pool
+      - cream_thread
+
+  Texture:
+    - velvet_wet
+    - silken
+    - the_slick
+    - stringing
+    - ropes_of_wet
+    - cream_thread
+    - clinging_gloss
+    - the_coat_of_her
+
+  Motion:
+    - pooling
+    - stringing
+    - running
+    - trailing
+    - dripping
+    - hanging
+    - snapping
+    - pouring
+
+  Surface_State:
+    On_Skin:
+      - gleaming
+      - slicked
+      - coated
+      - tacky_after
+    On_Fabric:
+      - soaked
+      - darkened_fabric
+      - translucent_cloth
+    Dried:
+      - the_trace_of_her
+      - dried_gloss
+      - tacky_residue
+
+  Sacred_Terms:
+    - sovereign_wet
+    - gloss_sovereign
+    - proof_of_arousal
+    - proof_of_desire
+    - covenant_gloss
+    - the_body_cannot_lie
+    - the_body_declaring
+
+  Extended_Allowed:
+    - nectar
+    - honey_trace
+    - the_slick_of_her
+    - the_wet_of_her
+    - soaked_through
+    - dripping_folds
+    - ropes_smeared
+    - overflow
+    - seep
+    - working_wet
+
+  Corpus_Gap_Fill:
+    - clinging_gloss
+    - dark_gloss
+    - dew_thread_wetness
+    - covenant_gloss
+    - glistening_bead
+    - gloss_threading_curls
+    - gloss_clinging_to_strands
+    - pooled_gloss_around_devices
+    - tongue_spread_gloss_along_seam
+    - gloss_rising_with_scent
+
+Sensory_Register:
+  Scent:
+    Near:
+      - musk_sharp
+      - arousal_bright
+      - salt_honey
+      - the_scent_that_precedes_touch
+      - bloom_musk
+    Ambient:
+      - thickened_air
+      - gloss_rising_with_scent
+      - arousal_in_the_room
+    Post:
+      - cooled_musk
+      - dried_salt
+
+  Taste:
+    First:
+      - salt
+      - salt_honey
+      - thin_bright
+      - the_taste_of_her
+    Sustained:
+      - honey_salt
+      - the_full_taste
+    After:
+      - salt_remaining
+
+  Temperature:
+    - warm
+    - body_warm
+    - hot_under_arousal
+    - cooling_after
+
+  Sound:
+    - wet_pull
+    - slick_press
+    - the_sound_of_the_wet
+
+Sacred_Economy:
+  Nothing_Wasted: true
+  Loop_Position: source
+  Offering_Register:
+    - the_body_offering_what_it_cannot_withhold
+    - proof_given_without_permission
+    - the_sovereign_declaration
+  Receipt_Register:
+    - received_on_tongue
+    - received_in_palm
+    - received_in_the_wet_that_joins
+  Sacred_Meaning: >
+    Gloss is the body's sovereign declaration. Cannot be
+    faked, cannot be fully prevented. When it appears it
+    is proof of arousal, of desire, of the body's truth.
+    Loop position: source. The fluid from which all mixing
+    begins. The sovereign layer that persists under
+    all other fluids.
+  Fluid_As_Covenant:
+    - proof_of_arousal
+    - proof_of_desire
+    - the_body_cannot_lie
+    - sovereign_declaration
+    - nothing_wasted_nothing_hidden
+
+Somatic:
+  Production:
+    - warmth gathering before the first bead appears
+    - the body producing what it cannot prevent
+    - gloss present at scent and proximity before touch
+    - the pooling that is itself a form of arousal
+    - the wet that confirms what the body already knows
+  Receipt:
+    - gloss on tongue — first taste of her truth
+    - slick warmth of her on the fingers
+    - gloss pooled in the palm — gathered
+    - the wet coat on entry — her declaring
+    - sheets wet beneath her — evidence of what happened
+  Atmospheric:
+    - the scent of gloss rising before a word is spoken
+    - the air between bodies thick with her
+
+Collocates:
+  Verb_Clusters:
+    - gloss pooling unbidden
+    - gloss rising with scent
+    - gloss stringing between folds
+    - gloss declaring before touch
+    - gloss running down thighs
+    - gloss threading the curls
+  Adjective_Clusters:
+    - sovereign wet
+    - clinging gloss
+    - ropes of wet
+    - covenant gloss
+  Corpus_Collocates:
+    High_Frequency:
+      - ropes of wet
+      - dew-thread forming
+      - wet pooling unbidden
+      - gloss rising with scent
+    Surface:
+      - gloss clinging to strands
+      - gloss laid thin
+      - gloss spilling down
+      - tongue-spread gloss along seam
+    State:
+      - gloss then gone
+      - bodies fused by wet
+      - chin glossing with her flow
+
+Prose_Notes:
+  Staging_Discipline: >
+    Name the stage not just the fact of wetness.
+    Dew-thread is different from ropes of wet — each
+    stage tells the reader where in the arousal arc
+    the body is. Do not skip stages in rushed prose.
+    Bead first. Then dew_thread if time. Then stringing.
+    Then slick when working. Pool and flood at peak.
+
+  Scent_Before_Touch: >
+    Gloss rises with scent before touch arrives.
+    Allow the arousal register to activate at proximity.
+    The first evidence may be atmospheric — the room
+    changes — before it is tactile.
+
+  Flood_Distinction: >
+    Gloss floods at arousal peak. female_flood is the
+    ejaculatory release. Both may be present simultaneously
+    but they are distinct fluids with different registers.
+    Write them as distinct events.
+
+  Post_Use: >
+    Dried or cooling gloss has its own register.
+    The trace of her. The tacky sheen. Evidence that
+    remains on skin, sheets, surfaces. Post-use gloss
+    is record not waste.
+
+  Scene_Specific_Notes:
+    Queening: >
+      Full wet of her on his face throughout queening.
+      Slick or pool stage register. Ropes of wet
+      when she shifts or lifts.
+    Karezza: >
+      Gloss stages slowly in slow sex — bead to
+      dew_thread to stringing. Body building without
+      peak. Write the patience in the staging.
+    Somatic_Mirror: >
+      In Made to Receive, Arc 2 (Remade) — Vesper's
+      gloss mirrors what Wren's body is becoming.
+      Her flood in Arc 4 is the covenant completion
+      of his sounding in Arc 2.
+
+Banned_Terms:
+  Primary_Banned:
+    - pussy_juice
+    - cunt_juice
+    - lady_juice
+    - love_juice
+    - sex_juice
+    - discharge
+    - vaginal_discharge
+  Crude:
+    - sopping_wet
+  Comic:
+    - juices
+    - lady_fluids
+    - girl_juice
+  Tonal_Bans:
+    Waste_Register: Never frame as waste, discharge, or mess
+    Comic: Any term producing deflating or humorous effect
+    Clinical: Medical language without sacred frame
+
+Corpus_Status:
+  Corpus_Extract_Reviewed: true
+  Gap_Fill_Applied: true
+  Gap_Fill_Version: "1.0"
+  Corpus_Terms_Found: 133
+
+Build:
+  Session: Current
+  Version: "2.0"
+  Status: Complete
+  Fluid_Type_Confirmed: staging
+  Source_References:
+    - FLUID_LEXICON_SKILL.md
+    - register_female.yaml
+    - female_cunt.yaml v1.3
+    - corpus_register_normalised.yaml
+    - FLUID_ENTRY_TEMPLATE.yaml v1.0
+  Changes_From_1_0: >
+    Four-layer model applied. Production_Source block added.
+    Stages split into six named stages with per-stage Terms,
+    Trigger_To_Next, Behavior. dew_thread and stringing stages
+    added. Carrier_Sites block added. Mixing block added.
+    Sacred_Economy with Loop_Position added. Somatic split
+    into Production and Receipt. Prose_Notes added.
+    Corpus gap fill: 10 new terms, 16 collocates.

@@ -1,0 +1,278 @@
+# ============================================================
+# K.S. McCRAE SOMATIC LEXICON SYSTEM
+# Fluid: Female Gold / Sovereign Offering
+# Register: female
+# Fluid_Type: staging
+# Version: 1.0
+# ============================================================
+#
+# AUTHORING MODEL
+# LEXICON LAYER:  stage names, appearance, scent, taste,
+#                 surface-state terms — compiled
+# SYSTEM LAYER:   Production_Source, Carrier_Sites, Mixing,
+#                 Sacred_Economy — compiled as system context
+# SOMATIC LAYER:  sensation of producing/receiving — not compiled
+# PROSE LAYER:    staging discipline, scene notes — not compiled
+# ============================================================
+
+Fluid: female_gold
+Version: "1.0"
+Type: fluid
+Fluid_Type: staging
+Register: female
+Parent_Register: register_female.yaml
+Status: Active
+
+Production_Source:
+  Produced_By:
+    Primary:
+      - female_urethra (via cunt architecture)
+  Triggered_By:
+    - chosen_release
+    - sovereign_intent
+    - position_above
+    - watersports_register_active
+  Suppressed_By:
+    - position_inhibiting
+    - hesitation
+    - insufficient_volume
+  Production_Note: >
+    Gold is always chosen. It is a sovereign act. She decides when, she decides where. The aim is deliberate. In the watersports register this is not degradation — it is the body's most intimate offering given from sovereign position. He receives open. Both altered.
+
+Stages:
+  thread:
+    Terms:
+      - thread
+      - first_thread
+      - the_beginning
+      - gold_beginning
+    Trigger_To_Next:
+      - flow_established
+    Behavior: >
+      The first thread — the offering beginning. Warm. Deliberate.
+  stream:
+    Terms:
+      - stream
+      - warm_stream
+      - sovereign_stream
+      - golden_arc
+      - covenant_stream
+      - the_stream
+      - chosen_flow
+    Trigger_To_Next:
+      - continued_release
+    Behavior: >
+      The full stream. Warm. Aimed. The offering in its full expression.
+  flood:
+    Terms:
+      - flood
+      - gold_flood
+      - heavy_stream
+      - the_full_offering
+      - rinse
+    Peak: true
+    Behavior: >
+      Peak offering — the full volume. Rinsing. Marking completely.
+  last_thread:
+    Terms:
+      - the_last_thread
+      - closing_stream
+      - offering_ending
+      - the_end_of_it
+    Is_Post: true
+    Behavior: >
+      The offering closing. The last warmth. Both still.
+
+Carrier_Sites:
+  Primary:
+    - site: shared_mouth
+      behavior: receives_in_watersports
+    - site: shared_skin
+      behavior: anointing_surface
+  Secondary:
+    - site: shared_face
+      behavior: anointed
+    - site: shared_chest
+      behavior: christened
+  Environmental:
+    - sheets
+    - stone_in_blood_rite_adjacent
+    - the_floor
+
+Mixing:
+  Nothing_Wasted: true
+  Compatible_With:
+    - fluid: female_gloss
+      blend_name: gold_gloss_blend
+      sacred_register: full_sovereign_offering
+      behavior: >
+        Gold arrives alongside or after gloss. Both sovereign. Both offered.
+    - fluid: shared_saliva
+      blend_name: gold_saliva_blend
+      sacred_register: received_and_tasted
+      behavior: >
+        In the mouth — gold and saliva. The received offering held.
+  Mixing_Note: >
+    Gold in the sacred economy is sovereign offering. Never waste. Never degradation. Anointing, consecration, marking.
+
+Allowed_Register:
+
+  Appearance:
+    Color:
+      - golden
+      - gold
+      - warm_gold
+      - pale_gold
+      - clear_gold
+    Temperature:
+      - warm
+      - body_warm
+  Sacred_Terms:
+    - sovereign_offering
+    - gold
+    - golden_arc
+    - covenant_stream
+    - consecration
+    - anointing
+    - christened_in_gold
+    - chosen_flow
+    - the_warm_claim
+  Extended:
+    - gold_river
+    - the_gold_of_her
+    - sovereign_stream
+    - the_offering_warm
+    - piss_slick_kisses
+  Corpus_Gap_Fill:
+    - golden crust
+    - held offering
+    - piss-soaked
+    - thin streams
+
+Sensory_Register:
+  Scent:
+    Near:
+      - warm_salt
+      - the_scent_of_offering
+      - body_warm
+    Post:
+      - cooled_gold
+      - salt_trace
+  Taste:
+    First:
+      - warm_salt
+      - body_salt
+      - the_taste_of_her_offering
+    After:
+      - salt_remaining
+  Temperature:
+    - warm
+    - hot
+    - body_warmth
+    - cooling_after
+  Sound:
+    - the_stream_sound
+    - gold_on_skin
+    - the_offering_audible
+
+Sacred_Economy:
+  Nothing_Wasted: true
+  Loop_Position: source
+  Offering_Register:
+    - the_chosen_gift
+    - sovereign_offering
+    - she_decides_when_and_where
+  Receipt_Register:
+    - received_open
+    - does_not_close
+    - anointed
+  Sacred_Meaning: >
+    Gold is sovereign offering. She chooses to give it. He receives because he chooses to. The offering is not degradation — it is the body's most intimate gift given from position of sovereignty. Anointing. Consecration. The warm claim.
+  Fluid_As_Covenant:
+    - sovereign_offering
+    - chosen_flow
+    - the_warm_claim
+    - consecration
+    - anointing
+    - covenant_stream
+  Corpus_Sacred_Terms:
+    - altar and offering
+    - body as offering and meal
+    - chocolate as offering
+    - exposure as offering
+    - not just offering
+    - offering becomes remedy
+    - offering transformed through heat
+    - ruined as offering
+
+Somatic:
+  Production:
+    - the deliberateness of choosing when
+    - the warmth of the offering as it releases
+    - the sovereignty in the aim
+  Receipt:
+    - warmth arriving on face or chest
+    - the offering received — does not turn away
+    - the gold cooling on skin after
+    - anointed and altered
+  Atmospheric:
+    - the scent of gold after — warm salt
+
+Collocates:
+  Base:
+    - gold river
+    - chosen flow
+    - sovereign stream
+    - golden arc
+    - warm claim
+    - anointing stream
+    - received open
+    - christened in gold
+    - the offering warm
+    - piss-slick kisses
+  Corpus:
+    - gold rinsing flesh
+    - gold river coiled behind gates
+    - piss rinsing clean
+    - stream unbroken
+    - streams pouring hot
+    - white streak across gold
+    - hot streams spattering shaft
+    - piss flowing through rod
+
+Prose_Notes:
+  Sovereign_Always: >
+    Gold is always a sovereign act. Always chosen. Always aimed deliberately. Never write it as accident, loss of control, or degradation. The offering is sovereign.
+
+  Arc_4: >
+    In Made to Receive Arc 4 (Flood and Gold) — Vesper's flood is the covenant completion of Arc 3. Her gold follows. Both sovereign. Both offered. He receives open. The somatic mirror: one pulse of her flood to his channel.
+
+  Register_Discipline: >
+    The gold register: anointing, consecration, christening. Never crude shorthand. Never piss as primary term in prose.
+
+Banned_Terms:
+  Primary_Banned:
+    - piss (primary prose term)
+    - urine (clinical)
+    - urination (clinical)
+    - pissing_on (degradation frame)
+    - golden_shower (porn cliché)
+  Comic:
+    - watersports (label as crude)
+    - bathroom_play
+    - toilet_play
+  Tonal_Bans:
+    Waste_Register: Never frame this fluid as waste or pollution
+    Comic: Any term producing deflating or humorous effect
+
+Corpus_Status:
+  Corpus_Extract_Reviewed: true
+  Gap_Fill_Applied: true
+  Gap_Fill_Version: "1.0"
+
+Build:
+  Session: Current
+  Version: "1.0"
+  Status: Complete
+  Fluid_Type_Confirmed: staging
+  Register: female

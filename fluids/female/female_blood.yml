@@ -1,0 +1,305 @@
+# ============================================================
+# K.S. McCRAE SOMATIC LEXICON SYSTEM
+# Fluid: Female Blood / Menstrual Covenant
+# Register: female
+# Fluid_Type: staging
+# Version: 1.0
+# ============================================================
+#
+# AUTHORING MODEL
+# LEXICON LAYER:  stage names, appearance, scent, taste,
+#                 surface-state terms — compiled
+# SYSTEM LAYER:   Production_Source, Carrier_Sites, Mixing,
+#                 Sacred_Economy — compiled as system context
+# SOMATIC LAYER:  sensation of producing/receiving — not compiled
+# PROSE LAYER:    staging discipline, scene notes — not compiled
+# ============================================================
+
+Fluid: female_blood
+Version: "1.0"
+Type: fluid
+Fluid_Type: staging
+Register: female
+Parent_Register: register_female.yaml
+Status: Active
+
+Production_Source:
+  Produced_By:
+    Primary:
+      - female_womb
+      - female_cunt
+  Triggered_By:
+    - menstrual_cycle_active
+    - cycle_onset
+    - uterine_contraction
+  Suppressed_By:
+    - pregnancy
+    - hormonal_suppression
+    - cycle_absence
+  Production_Note: >
+    The cycle blood. Covenant register throughout. Not shameful, not clinical. The body doing what it does — the monthly offering the earth receives. In the blood rite register it is the sacred fluid offered. In postpartum it is the return of the cycle after.
+
+Stages:
+  trace:
+    Terms:
+      - trace
+      - the_first_trace
+      - spot
+      - brownish_trace
+      - the_cycle_beginning
+    Trigger_To_Next:
+      - cycle_established
+    Behavior: >
+      The first trace — before full flow. Brown or darkened. The cycle announcing itself.
+  flow:
+    Terms:
+      - flow
+      - the_flow
+      - dark_flow
+      - covenant_flow
+      - cycle_blood
+      - the_red
+      - the_dark_red
+      - iron_flow
+    Trigger_To_Next:
+      - heavy_day
+      - peak_cycle
+    Behavior: >
+      Established flow. Dark red. The iron scent present. The cycle in its middle register.
+  stream:
+    Terms:
+      - stream
+      - red_stream
+      - heavy_flow
+      - clot_passing
+      - the_heavy_day
+    Peak: true
+    Behavior: >
+      Peak flow. Heavy. May carry clots — each a distinct register in the blood rite. The body in full cycle expression.
+  clot:
+    Terms:
+      - clot
+      - clot_passing
+      - clot_falling
+      - dark_mass
+      - the_clot
+    Behavior: >
+      Clots passing in the stream. In the blood rite register: the body offering specific presence. Each clot distinct and named.
+  ebb:
+    Terms:
+      - ebbing
+      - the_ebb
+      - cycle_ending
+      - the_last_of_it
+    Is_Post: true
+    Behavior: >
+      The cycle ending. Flow lightening. The return to resting state.
+
+Carrier_Sites:
+  Primary:
+    - site: female_cunt
+      behavior: exit_channel
+      overflow_to: shared_thighs
+  Secondary:
+    - site: shared_thighs
+      behavior: trails_dark
+    - site: shared_perineum
+      behavior: pools_at_seam
+  Environmental:
+    - cloth
+    - moss_in_blood_rite
+    - granite_in_blood_rite
+    - sheets
+
+Mixing:
+  Nothing_Wasted: true
+  Compatible_With:
+    - fluid: shared_saliva
+      blend_name: blood_communion
+      sacred_register: lineage_tasted
+      behavior: >
+        Blood and saliva in the blood rite — the tasting register. Iron on the tongue mixed with the mouth's own.
+    - fluid: female_gloss
+      blend_name: cycle_arousal_blend
+      sacred_register: cycle_sovereignty
+      behavior: >
+        When arousal and cycle are simultaneous — both present. Both sovereign. Neither cancels.
+  Mixing_Note: >
+    Blood in this register is always sacred. Never degrading. The mixing is consecration not contamination.
+
+Allowed_Register:
+
+  Appearance:
+    Color:
+      - dark_red
+      - iron_dark
+      - deep_red
+      - brownish_trace
+      - the_red_of_it
+    Texture:
+      - viscous
+      - clot_carrying
+      - flow
+      - stream
+  Sacred_Terms:
+    - covenant_flow
+    - cycle_truth
+    - lineage_register
+    - the_iron_covenant
+    - blood_as_vow
+    - still_it_flows
+    - witness_and_be_bound
+  Extended:
+    - iron_on_the_air
+    - rite_sealed_in_red
+    - mouths_stained_red
+    - tongue_dragging_through
+    - earth_drinking
+    - pool_on_stone
+  Corpus_Gap_Fill:
+    - smeared
+    - anchored bodies
+    - blood at glans
+    - blood-marked mouths
+    - blood-slicked tips
+    - blurred
+    - clot fall
+    - collared
+
+Sensory_Register:
+  Scent:
+    Near:
+      - iron_sharp
+      - salt_iron
+      - the_scent_of_cycle
+    Ambient:
+      - iron_on_the_air
+      - cycle_in_the_room
+  Taste:
+    First:
+      - iron
+      - salt_iron
+      - the_taste_of_lineage
+    Sustained:
+      - iron_sustained
+      - the_iron_covenant
+  Temperature:
+    - warm
+    - body_warm
+    - cooling_on_surface
+  Sound:
+    - the_clot_slipping
+    - blood_on_stone
+    - drip
+
+Sacred_Economy:
+  Nothing_Wasted: true
+  Loop_Position: source
+  Offering_Register:
+    - the_cycle_offered
+    - the_body_giving_what_it_gives
+    - lineage_offered
+  Receipt_Register:
+    - drank_iron
+    - received_the_covenant
+    - witness_the_cycle
+  Sacred_Meaning: >
+    The menstrual blood is covenant flow. The cycle truth. In the blood rite it is the sacred fluid offered to witnesses — those who can bear the iron receive the lineage. As the earth drinks, so you drink. Nothing the body produces is waste. The cycle is proof of the body's power.
+  Fluid_As_Covenant:
+    - covenant_flow
+    - cycle_truth
+    - lineage_register
+    - still_it_flows
+    - witness_and_be_bound
+    - seed_fails_blood_does_not
+  Corpus_Sacred_Terms:
+    - chambered and waiting
+    - gathered and kept
+    - globes endured
+    - maps redrawn
+    - risen not restored
+    - seed fails, blood does not
+    - shared history honored in use
+    - “my bitch” as naming rite
+
+Somatic:
+  Production:
+    - the cramp that precedes the flow
+    - the warmth of it coming
+    - the clot passing — distinct, present
+    - the cycle as its own calendar
+  Receipt:
+    - iron on the tongue — the first taste
+    - the warmth of it on the face
+    - swallowing the iron covenant
+    - the earth drinking beneath
+  Atmospheric:
+    - iron on the air before blood is seen
+    - the room carrying the cycle scent
+  Corpus_Somatic_Gap_Fill:
+    - muscle rediscovery through repetition
+    - orgasm triggered through forced contraction
+    - ache mirrored and doubled
+    - collapse into heavy, shared exhaustion
+    - collapse into shared exhaustion
+    - convulsion during mirrored release
+    - convulsions triggered without control
+    - gag reflex triggered during intake
+
+Collocates:
+  Base:
+    - clot slipping free
+    - iron on the air
+    - mouths stained red
+    - tongues dragging deep
+    - swallow the iron
+    - earth drinking below
+    - blood streaking thighs
+    - rite sealed in red
+    - pool on stone
+  Corpus:
+    - ache mirrored and doubled
+    - anointed and restored
+    - bead gathered at slit
+    - bite until blood
+    - bodies mirrored across time
+    - body reduced to geometry
+    - chamber fired
+    - cleaned and restored
+
+Prose_Notes:
+  Sacred_Always: >
+    Blood in this register is always sacred. Never write it as disgusting, shameful, or clinical. The iron covenant. The cycle truth. The earth receives it — so do willing witnesses.
+
+  Blood_Rite: >
+    In the blood rite (trope_blood_rite) blood is the central fluid — offered passively and received deliberately. Write the threshold crossing of the witnesses. The tasting is devotion.
+
+  Postpartum: >
+    In postpartum register the return of the cycle is arrival — the body announcing its return. Write it with tenderness not clinical distance.
+
+Banned_Terms:
+  Primary_Banned:
+    - period_blood (casual primary)
+    - shark_week
+    - that_time_of_month
+    - on_the_rag
+    - menstruation (clinical standalone)
+  Crude:
+    - gross
+    - dirty
+    - contaminated
+  Tonal_Bans:
+    Waste_Register: Never frame this fluid as waste or pollution
+    Comic: Any term producing deflating or humorous effect
+
+Corpus_Status:
+  Corpus_Extract_Reviewed: true
+  Gap_Fill_Applied: true
+  Gap_Fill_Version: "1.0"
+
+Build:
+  Session: Current
+  Version: "1.0"
+  Status: Complete
+  Fluid_Type_Confirmed: staging
+  Register: female

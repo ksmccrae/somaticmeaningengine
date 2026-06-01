@@ -1,0 +1,119 @@
+# K.S. McCRAE SOMATIC LEXICON SYSTEM
+# Fluid: TF Seed
+# Register: trans_feminine
+# Fluid_Type: PARALLEL
+# Version: 1.0
+# ============================================================
+# AUTHORING MODEL
+# LEXICON LAYER: inherited from parent + override terms
+# SYSTEM LAYER: parallel notes, production source
+# SOMATIC LAYER: writer-facing, not compiled
+# PROSE LAYER: register discipline notes
+# ============================================================
+
+Fluid: tf_seed
+Version: "1.0"
+Type: fluid
+Fluid_Type: parallel
+Register: trans_feminine
+Parent_Register: register_trans_feminine.yaml
+Status: Active
+
+Parallel_Notes:
+  Parent_Fluid: male_seed
+  Register_Difference: >
+    Her seed from her cock. Same covenant register as male_seed with her pronouns throughout. Sovereign. HRT may alter volume.
+  Inherits: all_parent_allowed_register
+  Override_Terms:
+    - her_seed
+    - tf_seed
+    - her_offering
+    - her_cock_offering
+  Trans_Specific_Sacred:
+    - her_seed_sovereign
+    - her_offering
+    - hers
+
+Production_Source:
+  Produced_By:
+    Primary:
+      - tf_cock
+  Triggered_By:
+    - arousal_peak
+    - her_own_release
+  Production_Note: >
+    Her seed. From her cock. All male_seed sacred register applies with her pronouns throughout.
+
+Allowed_Register:
+
+  Inherits:
+    Note: All male_seed allowed_register applies with her pronouns
+  Override:
+    - her_seed
+    - tf_seed
+    - her_offering
+    - her_christening
+  Trans_Sacred:
+    - her_seed_sovereign
+    - her_offering
+    - hers_to_give
+  Corpus_Gap_Fill:
+    - gathered seed
+    - quantified seed
+    - syringe-filled seed
+
+Sacred_Economy:
+  Nothing_Wasted: true
+  Loop_Position: source
+  Sacred_Meaning: >
+    Her seed. Her offering. Same covenant as male_seed — the permission, the christening — with her sovereignty throughout.
+  Fluid_As_Covenant:
+    - her_seed_sovereign
+    - her_offering
+    - her_christening
+    - hers_to_give
+  Corpus_Sacred_Terms:
+    - seed displayed
+    - seed fails, blood does not
+    - seed taken
+
+Somatic:
+  Production:
+    - her cock releasing what it held
+    - her seed giving at her release
+  Receipt:
+    - her seed on skin — her christening
+
+Collocates:
+  Base:
+    - her seed
+    - her cock offering
+    - her christening
+    - hers to give
+  Corpus:
+    - cream and seed mingled
+    - seed in glass
+
+Prose_Notes:
+  Register_Discipline: >
+    Apply male_seed register fully with her pronouns throughout. Her cock. Her seed. Her offering.
+
+Banned_Terms:
+  Primary_Banned:
+    - his_cum (applied to her)
+    - man_seed (applied to her)
+  Tonal_Bans:
+    Waste_Register: Never frame this fluid as waste or pollution
+    Misgendering: Never apply wrong register pronouns
+
+Corpus_Status:
+  Corpus_Extract_Reviewed: true
+  Gap_Fill_Applied: true
+  Gap_Fill_Version: "1.0"
+
+Build:
+  Session: Current
+  Version: "1.0"
+  Status: Complete
+  Fluid_Type_Confirmed: parallel
+  Register: trans_feminine
