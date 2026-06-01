@@ -40,6 +40,14 @@ How sensation or activation from this site tends to move:
 - Direct stimulation → strong clitoral and internal resonance → pelvic floor and breath response
 - Often creates blended sensations with clitoral and internal stimulation
 
+## Associated Structures
+
+Related or functionally linked anatomical elements:
+- Clit
+- Cunt
+- G-spot area
+- Skene’s glands
+
 ## Emotional / Symbolic Associations
 
 Common emotional or symbolic meanings:
