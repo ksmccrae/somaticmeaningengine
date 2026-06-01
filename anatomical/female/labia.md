@@ -41,6 +41,14 @@ How sensation or activation from this site tends to move:
 - External touch → clitoral and internal awareness → pelvic floor engagement
 - Often creates broad, diffuse arousal rather than pinpoint intensity
 
+## Associated Structures
+
+Related or functionally linked anatomical elements:
+- Clit
+- Cunt
+- Urethra
+- Perineum
+
 ## Emotional / Symbolic Associations
 
 Common emotional or symbolic meanings:
