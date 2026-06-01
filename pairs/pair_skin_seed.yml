@@ -1,0 +1,267 @@
+# ============================================================
+# K.S. McCRAE SOMATIC LEXICON SYSTEM
+# Pair: Skin + Seed
+# Pair_Type: site_surface
+# Register: Variable
+# Version: 2.0
+# ============================================================
+#
+# AUTHORING MODEL
+# LEXICON LAYER:  intersection terms, motion primitives,
+#                 collocate bridge — compiled when both
+#                 sites active simultaneously
+# SYSTEM LAYER:   dependencies, site roles, power map,
+#                 entry conditions — system context
+# SOMATIC LAYER:  site_A perspective, site_B perspective,
+#                 simultaneous sensation — not compiled
+# PROSE LAYER:    motion discipline, fluid discipline,
+#                 scene notes — not compiled
+#
+# ACTIVATION: Pair vocabulary only activates when BOTH
+# sites are simultaneously present in scene.
+# ============================================================
+
+Pair: skin_seed
+Version: "2.0"
+Type: pair
+Pair_Type: site_surface
+Register: Variable
+Status: Active
+
+Sites:
+  A:
+    id: male_seed
+    file: fluids/male/male_seed.yaml
+    role_in_pair: landing_fluid
+  B:
+    id: shared_skin
+    file: anatomical/shared/shared_skin.yaml
+    role_in_pair: receiving_surface
+
+Dependencies:
+  anatomy:
+    - shared_skin
+    - shared_skin  # face as primary skin surface
+    - shared_belly
+    - shared_chest
+  fluids:
+    - male_seed
+    - shared_sweat
+  tropes:
+    - trope_marking
+    - trope_orgasm_control
+
+Entry_Conditions:
+  requires:
+    - seed_released
+    - skin_as_landing_surface
+    - directed_release
+  power_required: any
+  register_notes: >
+    The direction of where seed lands is sovereign — she directs, he offers. The skin receives the christening. Both the direction and the arrival are covenant.
+
+Power_Map:
+  Site_A_Role: offering
+  Site_B_Role: receiving_consecrated
+  Governing_Register: sovereign_body_directs_landing
+  Note: >
+    The sovereign body directs. The seed lands where directed. The skin receiving the christening is consecrated by the arrival.
+
+Corpus_Status:
+  Corpus_Extract_Reviewed: true
+  Gap_Fill_Applied: true
+  Gap_Fill_Version: "1.0"
+
+Identity:
+  Label: Skin + Seed
+  Description: >
+    Seed on skin. The christening register. Seed lands where directed — cheek, lips, chest, belly. Warm on landing then cooling. The white on skin. The mark that remains. In the marking trope this is the covenant completion: first spurt on the cheek, second on the lips.
+
+# ============================================================
+# INTERSECTION REGISTER  [Lexicon Layer]
+# ============================================================
+
+Intersection_Register:
+
+  Contact_Terms:
+    - seed_landing_on_skin
+    - the_christening
+    - the_rope_striking
+    - the_arc_arriving
+    - the_mark_on_skin
+  Motion_Primitives:
+    - the_arc_to_surface
+    - the_rope_landing
+    - the_streak
+    - the_cooling
+  Arrival_Terms:
+    - seed_arriving_on_skin
+    - the_warmth_of_landing
+  Completion_Terms:
+    - the_christening_complete
+    - the_mark_remaining
+    - cooled_and_staying
+  Sacred_Intersection:
+    - christening
+    - consecrated_surface
+    - the_mark_that_remains
+    - warm_then_cooling
+    - nothing_wasted
+    - cartography etched in skin
+    - perfume of cunt smeared to skin
+    - seed displayed
+    - seed fails, blood does not
+
+Surface_Register:
+  Primary_Site: shared_skin
+  Surface_Site: male_seed
+  Surface_Function: receives_christening
+  Overflow_Terms:
+    - seed_running_on_skin
+    - the_ropes_on_skin
+    - seed_cooling_on_surface
+  Framing_Register:
+    - the_skin_consecrated
+    - the_christened_surface
+    - the_mark_remaining
+
+Fluid_Register:
+  - fluid: male_seed
+    role_in_pair: primary_fluid_landing
+    intersection_terms:
+      - seed_on_skin
+      - the_christening
+      - rope_on_skin
+      - seed_cooling
+      - the_white_on_her
+    behavior_note: >
+      The seed is the active fluid. The skin receives it. The rope strikes, the arc lands, and then the cooling begins.
+  - fluid: shared_sweat
+    role_in_pair: already_on_skin_beneath
+    intersection_terms:
+      - seed_into_sweat
+      - the_mixed_surface
+
+# ============================================================
+# SOMATIC REGISTER  [Somatic Layer]
+# Not vocabulary. Not compiled. Writer-facing.
+# ============================================================
+
+Somatic:
+  Site_A_Perspective:
+    - the warmth of landing on skin — felt from below
+    - the weight of the rope landing
+    - the cooling that follows warmth
+    - the mark present and cooling
+  Site_B_Perspective:
+    - the arc released landing where directed
+    - the rope striking the surface
+    - the warmth of landing then the cooling
+  Simultaneous:
+    - the christening — both aware of where it lands
+    - the mark they both know is there
+  Corpus_Gap_Fill:
+    - breath catching at tack pulling skin
+    - shock from heat on skin
+
+Sensory_Register:
+  Touch:
+    - seed_warm_on_skin
+    - the_rope_striking
+    - cooling_on_surface
+  Sound:
+    - seed_on_skin
+    - the_arc_landing
+  Scent:
+    - warm_seed_salt
+    - cooling_seed
+  Taste:
+    - seed_on_skin_licked
+    - the_salt_of_the_christening
+
+Sacred_Economy:
+  Loop_Position: consecration
+  Pair_Covenant: >
+    Seed on skin is the christening — the covenant made visible. Where the seed lands is the sovereign direction. The skin receives the offering. The cooling is the covenant remaining. Nothing wasted — the mark is the proof.
+  Sacred_Terms:
+    - christening
+    - the_mark_that_remains
+    - consecrated_surface
+    - nothing_wasted
+    - warm_then_cooling
+    - covenant_landing
+
+Transition:
+  Seed_to_Skin:
+    System_Layer:
+      from: male_seed
+      to: shared_skin
+      mechanism: seed_directed_to_surface
+    Prose_Layer:
+      - The direction given before release
+      - The arc traveling to the named site
+      - The rope landing
+  Skin_to_Seed:
+    System_Layer:
+      from: shared_skin
+      to: male_seed
+      mechanism: cooling_and_staying
+    Prose_Layer:
+      - The seed cooling on skin
+      - The mark staying
+      - The christening completed
+
+Collocate_Bridge:
+  Base:
+    - christened
+    - the rope landing
+    - warm on skin
+    - cooling after
+    - the mark remaining
+    - seed on her face
+    - the arc directed
+    - the white on her
+  Corpus:
+    - ropes of wet
+    - body marked and used
+    - clear ropes spilling around the rim
+    - cream and seed mingled
+    - foreskin gliding slow
+    - glossy ropes trembling then snapping
+    - marked as chosen
+    - mess smeared across skin
+
+Corpus_Interactions_Gap_Fill:
+  - dough pulled and released from skin
+  - fluid transfer by fingers, mouths, and skin
+  - pulling foreskin to expose crown
+
+Linked_Tropes:
+  - trope: trope_marking
+    pair_role: primary_pair
+  - trope: trope_orgasm_control
+    pair_role: directed_release_pair
+
+Prose_Notes:
+  Warmth_Then_Cooling: >
+    Seed is warm on landing then cools. Write both states. The warmth of the arriving rope and the cooling that follows. Both are the christening.
+
+  Direction_Is_Sovereign: >
+    Where seed lands is directed. The direction carries the covenant. Write the directed arrival — the first spurt on the cheek, the second on the lips — as the sovereign architecture it is.
+
+Build:
+  Session: Current
+  Version: "2.0"
+  Status: Complete
+  Pair_Type_Confirmed: site_surface
+  Is_New_Pair: false
+  Corpus_Gap_Fill: Applied v1.0
+  Upgrade_Actions:
+    - four_layer_authoring_model_added
+    - metadata_system_layer_added
+    - site_roles_declared
+    - somatic_split_by_perspective
+    - sensory_register_split
+    - sacred_economy_added
+    - transition_split_by_layer
+    - corpus_gap_fill_applied

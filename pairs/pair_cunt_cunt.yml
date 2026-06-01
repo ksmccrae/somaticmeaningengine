@@ -1,0 +1,310 @@
+# ============================================================
+# K.S. McCRAE SOMATIC LEXICON SYSTEM
+# Pair: Cunt + Cunt (FF Register)
+# Pair_Type: dual_site
+# Register: Female_sovereign / Female_sovereign
+# Version: 2.0
+# ============================================================
+#
+# AUTHORING MODEL
+# LEXICON LAYER:  intersection terms, motion primitives,
+#                 collocate bridge — compiled when both
+#                 sites active simultaneously
+# SYSTEM LAYER:   dependencies, site roles, power map,
+#                 entry conditions — system context
+# SOMATIC LAYER:  site_A perspective, site_B perspective,
+#                 simultaneous sensation — not compiled
+# PROSE LAYER:    motion discipline, fluid discipline,
+#                 scene notes — not compiled
+#
+# ACTIVATION: Pair vocabulary only activates when BOTH
+# sites are simultaneously present in scene.
+# ============================================================
+
+Pair: cunt_cunt
+Version: "2.0"
+Type: pair
+Pair_Type: dual_site
+Register: Female_sovereign / Female_sovereign
+Status: Active
+
+Sites:
+  A:
+    id: female_cunt
+    file: anatomical/female/female_cunt.yaml
+    role_in_pair: sovereign_fluid_exchange_site
+  B:
+    id: female_cunt
+    file: anatomical/female/female_cunt.yaml
+    role_in_pair: sovereign_fluid_exchange_site
+
+Dependencies:
+  anatomy:
+    - female_cunt
+    - female_clitoris
+    - female_labia_minora
+    - female_labia_majora
+    - shared_thighs
+  fluids:
+    - female_gloss
+    - female_flood
+    - shared_saliva
+    - female_ritual_blend
+  tropes:
+    - trope_fluid_ritual
+    - trope_mirroring
+    - trope_body_reclamation
+
+Entry_Conditions:
+  requires:
+    - both_cunts_active
+    - contact_established_between_them
+  power_required: any
+  register_notes: >
+    Both cunts sovereign. Neither is instrument. Both produce and receive. The fluid exchange is reciprocal and is the register's centre.
+
+Power_Map:
+  Site_A_Role: sovereign
+  Site_B_Role: sovereign
+  Governing_Register: dual_sovereign_reciprocal
+  Note: >
+    Both cunts sovereign simultaneously. Neither governs the other. The fluid exchange is the covenant register — both bodies giving and receiving simultaneously.
+
+Corpus_Status:
+  Corpus_Extract_Reviewed: true
+  Gap_Fill_Applied: true
+  Gap_Fill_Version: "1.0"
+
+Identity:
+  Label: Cunt + Cunt (FF Register)
+  Description: >
+    Cunt against cunt. The FF register. Folds peeling apart then crashing together. Bodies fused by wet. The gloss of both bodies mingling. The clits finding each other — or not — at the grinding centre. The fluid that belongs to both bodies simultaneously. The register of dual sovereignty in contact.
+
+# ============================================================
+# INTERSECTION REGISTER  [Lexicon Layer]
+# ============================================================
+
+Intersection_Register:
+
+  Contact_Terms:
+    - cunt_to_cunt
+    - the_grinding
+    - folds_peeling_apart_then_crashing_together
+    - bodies_fused_by_wet
+    - the_seam_of_both
+    - gloss_exchanged
+    - dual_sovereignty
+  Motion_Primitives:
+    - cunt_to_cunt_grinding
+    - the_circular_grind
+    - folds_peeling_apart
+    - folds_crashing_together
+    - clit_to_clit_pressure
+    - the_rhythm_of_two
+    - scissoring
+    - bodies_rocking
+  Depth_Terms:
+    - the_depth_of_contact_between
+  Arrival_Terms:
+    - the_first_contact_of_both
+    - cunts_meeting
+  Completion_Terms:
+    - dual_flood
+    - both_bodies_releasing
+    - the_loop_closed_between_them
+  Sacred_Intersection:
+    - no_seam_no_boundary
+    - bodies_fused_by_wet
+    - dual_sovereignty_in_contact
+    - the_loop_closed_between_them
+    - both_sovereign_both_receiving
+    - gloss_indistinguishable
+    - altar and offering
+    - body as offering and meal
+    - chocolate as offering
+    - cunt as cauldron
+
+Bridge_Register:
+  Bridge_Site: bodies_in_contact
+  Bridge_Terms:
+    - the_point_of_contact
+    - the_grinding_centre
+    - where_both_meet
+    - the_seal_of_both
+  Wall_Between:
+    Terms:
+      - no_wall_between
+      - bodies_fused
+      - fluid_indistinguishable
+    Behavior: >
+      There is no wall between in this pair — the two cunts are in direct contact, both producing gloss, the fluids indistinguishable. What one produces the other receives. Both are simultaneously source and receiver. The loop is closed between them.
+
+Fluid_Register:
+  - fluid: female_gloss
+    role_in_pair: primary_dual_source
+    intersection_terms:
+      - gloss_of_both
+      - indistinguishable_gloss
+      - the_wet_of_both
+      - bodies_fused_by_wet
+      - cunt_to_cunt_slipping
+    behavior_note: >
+      Both cunts produce gloss simultaneously. The fluids mingle and become indistinguishable. This is the defining fluid register of this pair. Neither body's gloss can be separated from the other's. Write them as one.
+  - fluid: female_flood
+    role_in_pair: dual_source_at_peak
+    intersection_terms:
+      - dual_flood
+      - both_flooding
+      - flood_meeting_flood
+    behavior_note: >
+      When both reach peak the floods meet. Both sovereign releases simultaneously. This is the peak register of this pair.
+  - fluid: female_ritual_blend
+    role_in_pair: governing_blend
+    intersection_terms:
+      - the_blend_of_both
+      - nothing_wasted
+      - the_loop_between_them
+    behavior_note: >
+      This pair is the purest expression of the female_ritual_blend — two bodies exchanging fluid in closed loop. Both source, both receiver.
+
+# ============================================================
+# SOMATIC REGISTER  [Somatic Layer]
+# Not vocabulary. Not compiled. Writer-facing.
+# ============================================================
+
+Somatic:
+  Site_A_Perspective:
+    - the warmth of another cunt against this one
+    - the folds recognising each other
+    - gloss not knowing which body it came from
+    - clit finding clit if the grinding aligns
+    - the flood arriving into the flood of the other
+  Site_B_Perspective:
+    - the mirror sensation — what this cunt does the other feels
+    - the folds peeling apart then the bodies crashing back
+    - the indistinguishable wet of both
+  Simultaneous:
+    - the wet that belongs to both simultaneously
+    - no origin no destination — just the loop between
+    - both flooding at once — flood meeting flood
+    - the saturation of being both source and receiver
+  Corpus_Gap_Fill:
+    - cunt gripping finger in proof
+    - cunt gripping stronger than before
+    - cunt seizing under electrical pulse
+    - aftershocks in cunt and arse
+
+Sensory_Register:
+  Touch:
+    - folds_against_folds
+    - the_grinding_pressure
+    - clit_against_clit
+    - the_seal_of_both_bodies
+  Sound:
+    - wet_grinding
+    - folds_meeting
+    - the_wet_noisy_register_of_both
+  Scent:
+    - double_bloom_musk
+    - arousal_of_two_cunts
+    - the_thickened_air_of_both
+  Taste:
+    - gloss_of_both
+    - indistinguishable_taste
+    - the_everything_of_both
+
+Sacred_Economy:
+  Loop_Position: consecration
+  Pair_Covenant: >
+    Two sovereign cunts in contact. The wet belongs to both simultaneously. No boundary between what one gives and what the other receives. The loop is closed between them. Both source, both receiver. Nothing wasted. No seam, no boundary.
+  Sacred_Terms:
+    - no_seam_no_boundary
+    - bodies_fused_by_wet
+    - dual_sovereignty_in_contact
+    - the_loop_closed_between_them
+    - both_sovereign
+    - gloss_of_both
+
+Transition:
+  Cunt_to_Cunt:
+    System_Layer:
+      from: female_cunt
+      to: female_cunt
+      mechanism: grinding_rhythm_change
+    Prose_Layer:
+      - The grinding intensifying
+      - Folds peeling apart
+      - Then the bodies crashing back together
+      - The rhythm finding itself
+  Cunt_to_Cunt:
+    System_Layer:
+      from: female_cunt
+      to: female_cunt
+      mechanism: the_reciprocal_return
+    Prose_Layer:
+      - What one does the other feels
+      - The mirroring rhythm
+      - Both giving both receiving
+
+Collocate_Bridge:
+  Base:
+    - cunt to cunt slipping and clinging
+    - folds peeling apart then crashing together
+    - bodies fused by wet
+    - no seam no boundary
+    - gloss of both
+    - dual flood
+    - clit to clit grinding
+    - indistinguishable wet
+  Corpus:
+    - cunt answering pressure
+    - cunt clamping on fingers
+    - cunt gaping wide
+    - cunt gleaming black
+    - cunt gripping fist
+    - cunt gushing wet
+    - cunt milking molten
+    - cunt open to the night
+
+Corpus_Interactions_Gap_Fill:
+  - arses and cunts used in sequence as thresholds
+  - body suspended by rope cuffs
+  - chocolate melting inside cunt
+  - clit suction and grinding
+  - cunt grinding into dough mass
+  - cunt gushing in response to pain and cold
+
+Linked_Tropes:
+  - trope: trope_fluid_ritual
+    pair_role: primary_ff_fluid_exchange_pair
+  - trope: trope_mirroring
+    pair_role: dual_sovereign_pair
+  - trope: trope_body_reclamation
+    pair_role: ff_reclamation_register
+
+Prose_Notes:
+  No_Seam_No_Boundary: >
+    The defining vocabulary of this pair is no seam, no boundary — the fluids of both cunts indistinguishable. Write toward this indistinguishability. The wet belongs to both.
+
+  Dual_Sovereignty: >
+    Both cunts sovereign simultaneously. Neither serves the other. Write the reciprocity — both giving, both receiving, the loop closed between them.
+
+  Corpus_Gap: >
+    This pair was not in the original pair set but confirmed across multiple corpus stories (cocktails_for_two, birth_of_cunt, bound_in_symmetry). Now built.
+
+Build:
+  Session: Current
+  Version: "2.0"
+  Status: Complete
+  Pair_Type_Confirmed: dual_site
+  Is_New_Pair: true
+  Corpus_Gap_Fill: Applied v1.0
+  Upgrade_Actions:
+    - four_layer_authoring_model_added
+    - metadata_system_layer_added
+    - site_roles_declared
+    - somatic_split_by_perspective
+    - sensory_register_split
+    - sacred_economy_added
+    - transition_split_by_layer
+    - corpus_gap_fill_applied

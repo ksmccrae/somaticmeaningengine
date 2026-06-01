@@ -1,0 +1,280 @@
+# ============================================================
+# K.S. McCRAE SOMATIC LEXICON SYSTEM
+# Pair: Hand + Cock
+# Pair_Type: instrument_site
+# Register: Variable
+# Version: 2.0
+# ============================================================
+#
+# AUTHORING MODEL
+# LEXICON LAYER:  intersection terms, motion primitives,
+#                 collocate bridge — compiled when both
+#                 sites active simultaneously
+# SYSTEM LAYER:   dependencies, site roles, power map,
+#                 entry conditions — system context
+# SOMATIC LAYER:  site_A perspective, site_B perspective,
+#                 simultaneous sensation — not compiled
+# PROSE LAYER:    motion discipline, fluid discipline,
+#                 scene notes — not compiled
+#
+# ACTIVATION: Pair vocabulary only activates when BOTH
+# sites are simultaneously present in scene.
+# ============================================================
+
+Pair: hand_cock
+Version: "2.0"
+Type: pair
+Pair_Type: instrument_site
+Register: Variable
+Status: Active
+
+Sites:
+  A:
+    id: shared_hand
+    file: anatomical/shared/shared_hand.yaml
+    role_in_pair: governing_instrument
+  B:
+    id: male_cock
+    file: anatomical/male/male_cock.yaml
+    role_in_pair: governed_instrument
+
+Dependencies:
+  anatomy:
+    - shared_hand
+    - male_cock
+    - male_glans
+    - male_prostate
+  fluids:
+    - male_pregloss
+    - male_seed
+  tropes:
+    - trope_orgasm_control
+    - trope_milking
+    - trope_marking
+
+Entry_Conditions:
+  requires:
+    - hand_slicked
+    - cock_in_scene
+    - contact_established
+  power_required: any
+  register_notes: >
+    The hand governs what the cock receives and when it releases. In permission architecture the hand holds the edge — gives and withholds as the scene requires.
+
+Power_Map:
+  Site_A_Role: instrument_governing
+  Site_B_Role: governed
+  Governing_Register: hand_holds_permission
+  Note: >
+    The hand that holds the cock holds the permission. This pair is the most direct expression of orgasm control — the hand reads the pre-gloss truth and decides.
+
+Corpus_Status:
+  Corpus_Extract_Reviewed: true
+  Gap_Fill_Applied: true
+  Gap_Fill_Version: "1.0"
+
+Identity:
+  Label: Hand + Cock
+  Description: >
+    The hand on the cock. The grip that governs. The stroke that brings to edge and the withdrawal that withholds. The cock's pre-gloss tells the truth to the hand. The hand reads it and decides. In milking register the hand extracts without granting release.
+
+# ============================================================
+# INTERSECTION REGISTER  [Lexicon Layer]
+# ============================================================
+
+Intersection_Register:
+
+  Contact_Terms:
+    - grip_at_base
+    - the_cock_in_the_hand
+    - the_hand_governing
+    - pre_gloss_on_palm
+    - the_stroke_and_the_stop
+  Motion_Primitives:
+    - the_grip
+    - the_stroke
+    - the_edge_stop
+    - the_withdrawal_at_threshold
+    - the_milking_press
+    - the_extraction_move
+    - directed_at_landing_site
+  Arrival_Terms:
+    - hand_closing_on_cock
+    - the_grip_established
+  Completion_Terms:
+    - directed_release
+    - seed_at_permission
+    - milked_extraction
+  Sacred_Intersection:
+    - the_hand_that_holds_permission
+    - pre_gloss_truth_in_palm
+    - the_governing_grip
+    - edge_held_by_hand
+    - filthy cocktails
+    - no cock wasted
+    - their cocktail
+
+Instrument_Register:
+  Instrument_Site: shared_hand
+  Served_Site: male_cock
+  Motion_Vocabulary:
+    - the_grip
+    - the_stroke
+    - edge_withdrawal
+    - milking_press
+    - extraction_move
+    - direction_at_landing
+  Service_Register:
+    - the_hand_governing_what_the_cock_receives
+    - pre_gloss_read_by_hand
+    - the_edge_held_or_given
+  Not_Diminished_Note: >
+    The governing hand is not crude. It is precise. It reads what the body cannot hide.
+
+Fluid_Register:
+  - fluid: male_pregloss
+    role_in_pair: primary_truth_register
+    intersection_terms:
+      - pre_gloss_on_palm
+      - the_truth_in_the_hand
+      - drooling_into_grip
+    behavior_note: >
+      Pre-gloss coats the hand as it works. The hand reads the pre-gloss as evidence of threshold — the cock cannot lie to the hand.
+  - fluid: male_seed
+    role_in_pair: permission_release
+    intersection_terms:
+      - seed_in_palm
+      - directed_at_landing
+      - the_offering_in_the_hand
+    behavior_note: >
+      When permission is given, seed releases into the hand or is directed by it. The hand governs where it lands.
+
+# ============================================================
+# SOMATIC REGISTER  [Somatic Layer]
+# Not vocabulary. Not compiled. Writer-facing.
+# ============================================================
+
+Somatic:
+  Site_A_Perspective:
+    - the cock slicking the hand with pre-gloss
+    - the hand at the edge — the cock at its limit
+    - the milking pressure without release
+    - seed releasing into the governing palm
+  Site_B_Perspective:
+    - the grip reading the threshold
+    - pre-gloss telling the truth before he speaks
+    - the edge held or given — the hand's decision
+    - the cock at the limit the hand determines
+  Simultaneous:
+    - the threshold that both feel — cock at edge, hand holding permission
+    - the truth of the pre-gloss between them
+  Corpus_Gap_Fill:
+    - cunt gripping finger in proof
+    - cunt gripping stronger than before
+    - cock hardening through chaos
+    - cock jerking against belly
+
+Sensory_Register:
+  Touch:
+    - the_grip_warmth
+    - pre_gloss_slicking_palm
+    - the_stroke_pressure
+    - extraction_press
+  Sound:
+    - the_slick_stroke
+    - pre_gloss_dripping
+    - the_edge_sounds
+  Scent:
+    - pre_gloss_salt_in_palm
+    - seed_after
+
+Sacred_Economy:
+  Loop_Position: transfer
+  Pair_Covenant: >
+    The hand holds what the cock cannot withhold from it. The pre-gloss is the truth between them. The grip governs. In permission architecture this is the most direct expression of orgasm control — the hand as the sovereign body of the governing party.
+  Sacred_Terms:
+    - the_hand_holds_permission
+    - pre_gloss_truth
+    - the_governing_grip
+    - edge_held_in_palm
+
+Transition:
+  Hand_to_Cock:
+    System_Layer:
+      from: shared_hand
+      to: male_cock
+      mechanism: stroke_rhythm_change
+    Prose_Layer:
+      - The grip establishing
+      - The stroke beginning
+      - The approach to edge — she reads it
+      - The withdrawal before the break
+      - Or the direction at the moment of permission
+  Cock_to_Hand:
+    System_Layer:
+      from: male_cock
+      to: shared_hand
+      mechanism: return_to_stroke_or_release
+    Prose_Layer:
+      - From edge back to stroke
+      - Or from stroke to milking press
+      - Or from milking to the full extraction
+
+Collocate_Bridge:
+  Base:
+    - the governing grip
+    - pre-gloss in her palm
+    - held at the edge
+    - the cock cannot lie
+    - the stroke and the stop
+    - directed at landing
+    - the extraction
+  Corpus:
+    - gripping stronger now
+    - proof in grip
+    - brushstrokes of covenant
+    - cock and balls chambered
+    - cock slapping wet
+    - cock straining high
+    - cock to mouth
+    - cunt gripping fist
+
+Corpus_Interactions_Gap_Fill:
+  - repeated climax through intensity of grip
+  - aggressive breast handling
+  - application of constriction rings to separate cock and balls
+  - cock dragged across table surface
+  - cock stimulated but denied release
+  - cock-to-mouth exchange
+
+Linked_Tropes:
+  - trope: trope_orgasm_control
+    pair_role: primary_edge_management_pair
+  - trope: trope_milking
+    pair_role: extraction_instrument_pair
+  - trope: trope_marking
+    pair_role: direction_instrument_pair
+
+Prose_Notes:
+  Truth_In_Palm: >
+    Pre-gloss in the palm is the cock's truth. Write the hand reading it — not consciously but in how it responds. She reads him in the pre-gloss before he speaks.
+
+  Edge_Discipline: >
+    The edge withdrawal at threshold — write the exact moment. The hand stops at the precise moment of inevitability. What comes without satisfaction is the ruined orgasm. What comes at permission is the offering.
+
+Build:
+  Session: Current
+  Version: "2.0"
+  Status: Complete
+  Pair_Type_Confirmed: instrument_site
+  Is_New_Pair: false
+  Corpus_Gap_Fill: Applied v1.0
+  Upgrade_Actions:
+    - four_layer_authoring_model_added
+    - metadata_system_layer_added
+    - site_roles_declared
+    - somatic_split_by_perspective
+    - sensory_register_split
+    - sacred_economy_added
+    - transition_split_by_layer
+    - corpus_gap_fill_applied

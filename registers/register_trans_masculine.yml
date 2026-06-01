@@ -1,0 +1,388 @@
+# ============================================================
+# K.S. McCRAE SOMATIC LEXICON SYSTEM
+# Register: Trans Masculine
+# Version: 2.0
+# ============================================================
+#
+# AUTHORING MODEL
+# LEXICON LAYER:  All male register terms apply plus TM-specific
+# SYSTEM LAYER:   Site index, sovereignty rules, char terminology
+# SOMATIC LAYER:  Somatic_Register — writer-facing, not compiled
+# PROSE LAYER:    Generation_Notes — writer-facing, not compiled
+#
+# CRITICAL RULES (v2.0 — formalised as System Layer primitives)
+# 1. Character_Terminology_Governs: ABSOLUTE
+# 2. Male_Register_Absolute: his anatomy is male throughout
+# 3. Never_Feminise_Without_Direction: absolute
+# 4. Scars_Are_Record: never damage
+# 5. His_Front_His_Terms: tm_front governed by his vocabulary
+# ============================================================
+
+Register: trans_masculine
+Version: "2.0"
+Type: register
+Author: K.S. McCrae
+Layer: Primary
+Status: Active
+
+# ============================================================
+# ABSOLUTE RULES  [System Layer — highest priority]
+# ============================================================
+
+Absolute_Rules:
+  Character_Terminology_Governs:
+    Rule: ABSOLUTE
+    Priority: Highest
+    Description: >
+      Whatever term the TM character uses for their anatomy,
+      that is the term used in prose. If he calls it his cunt,
+      it is his cunt — male register throughout. If he calls
+      it his front, his hole — that is his term. Default
+      without his direction: male terms throughout.
+    Cannot_Be_Overridden: true
+
+  Male_Register_Absolute:
+    Rule: ABSOLUTE
+    Description: >
+      Trans masculine bodies carry identical male register
+      to natal male bodies. His anatomy is male. Full stop.
+      His cock is his cock. His front is his.
+      Variable power architecture applies as with all male bodies.
+
+  Never_Feminise_Without_Direction:
+    Rule: ABSOLUTE
+    Description: >
+      Never apply female register to TM anatomy without his
+      explicit direction. Never call his cock a clit unless
+      he uses that term. Never write 'her' for him.
+      Never apply female pronouns to his body.
+      Never frame his front as female anatomy on his body.
+    Applies_To: all anatomical sites and all pronouns
+
+  Scars_Are_Record:
+    Rule: ABSOLUTE
+    Description: >
+      TM scars — chest scars, surgical scars — are record
+      not damage. They are proof. They are covenant marks.
+      Never write them as mutilation, injury, or loss.
+      Never frame top surgery as damage to be mourned.
+      The scars are what he chose. They are where he arrived.
+
+  His_Front_His_Terms:
+    Rule: ABSOLUTE
+    Description: >
+      tm_front vocabulary follows his terms entirely.
+      If he uses cunt — his cunt, male register.
+      If he uses front, front hole, back door — those terms.
+      Never impose a term. Never apply vagina to his front
+      without his explicit use of that word.
+
+Identity:
+  Default_Power: Variable
+  Default_Tone: Reclamation
+  Sacred_Frame: Covenant_through_reclamation
+  Inherits: register_male.yaml (full)
+  Description: >
+    The trans masculine register inherits the complete male
+    register and adds the reclamation dimensions specific to
+    trans masculine experience. Variable power architecture.
+    His body is male. His anatomy is his. The scars are proof.
+
+# ============================================================
+# SITE INDEX  [System Layer]
+# ============================================================
+
+Primary_Sites:
+
+  - id: tm_chest
+    file: anatomical/trans/tm_chest.yaml
+    version: "1.0"
+    Power: Variable
+    Salience: Primary
+    Note: >
+      His chest. After top surgery. The scars are record.
+      Reclamation register. Male register throughout.
+
+  - id: tm_cock
+    file: anatomical/trans/tm_cock.yaml
+    version: "1.0"
+    Power: Variable
+    Salience: Primary
+    Preferred_Term: his_cock
+    Note: >
+      His cock. Metoidioplasty, phalloplasty, or T-growth.
+      Male anatomy. Variable power architecture.
+      His terms govern. Never call it a clit unless he does.
+
+  - id: tm_front
+    file: anatomical/trans/tm_front.yaml
+    version: "1.0"
+    Power: Variable
+    Salience: Secondary
+    Preferred_Term: his_front
+    Note: >
+      His front. His terms govern entirely.
+      Apply female_gloss staging with male pronouns.
+      Never feminise. His body.
+
+  - id: tm_internal
+    file: anatomical/trans/tm_internal.yaml
+    version: "1.0"
+    Power: Variable
+    Salience: Contextual
+    Note: His internal anatomy. Male register. Contextual only.
+
+  - id: tm_sac
+    file: anatomical/trans/tm_sac.yaml
+    version: "1.0"
+    Power: Variable
+    Salience: Secondary
+    Note: His sac. Implanted or constructed. Male register.
+
+  - id: tm_scars
+    file: anatomical/trans/tm_scars.yaml
+    version: "1.0"
+    Power: Variable
+    Salience: Secondary
+    Note: >
+      His scars. Record not damage. Reclamation register.
+      Never frame as mutilation or loss.
+
+All_Male_Sites_Apply:
+  Note: >
+    All male primary and shared sites from register_male.yaml
+    apply to trans masculine bodies with identical male register.
+  Male_Sites_File: register_male.yaml
+  Inflection: male_register_throughout
+
+# ============================================================
+# FLUID INDEX  [System Layer]
+# ============================================================
+
+Fluid_Index:
+  TM_Specific:
+    tm_arousal:
+      file: fluids/trans/tm_arousal.yaml
+      type: parallel
+      parent: female_gloss
+      staging: [bead, dew_thread, stringing, slick, pool, flood]
+      note: >
+        His arousal fluid. His front. Male pronouns throughout.
+        Apply female_gloss staging with his pronouns.
+        His wet. His body's truth.
+  All_Male_Fluids_Apply:
+    note: >
+      male_seed and male_pregloss apply where tm_cock present.
+      His seed. His pre-gloss. His truth.
+  Shared_Fluids: all_shared_fluids_apply
+
+# ============================================================
+# POWER ARCHITECTURE  [System Layer]
+# ============================================================
+
+Power_Architecture:
+  Default: Variable
+  Variable_Identical_To: register_male.yaml
+  Reclamation_Register:
+    Available: true
+    Scars_As_Proof: true
+    Note: >
+      His body reclaimed. His chest as it should be.
+      His cock his. His scars the record of his arrival.
+  His_Body_His_Terms:
+    Note: >
+      His body is his entirely. He defines its terms.
+      His cock, his front, his scars — governed by him.
+
+Power_Primitives:
+  reclaimed:
+    Definition: TM body in full reclamation register
+    Register: His body. His terms. His chest. His scars. His.
+  arrived:
+    Definition: TM body post-transition — present in his body
+    Register: He arrived. This is his body.
+  dual_register_tm:
+    Definition: His front in his terms — male register throughout
+    Register: His cunt (if his term) or his front. Male register.
+
+# ============================================================
+# PRIMITIVES  [System + Lexicon Layers]
+# ============================================================
+
+TM_Specific_Primitives:
+  Reclamation_Terms:
+    - reclaimed
+    - his_all_along
+    - scars_as_record
+    - body_kept_its_promise
+    - arrived
+    - his_body_his_terms
+  Scars_As_Record:
+    - scars_as_proof
+    - scars_kissed_as_relics
+    - the_vow_made_visible
+    - covenant_marks
+  His_Front_Terms:
+    - his_front
+    - his_arousal
+    - his_wet
+    - his_body_declaring
+    - his_truth
+
+All_Male_Primitives_Apply:
+  Note: All motion, fluid, scene role primitives from register_male apply.
+
+# ============================================================
+# TROPE INDEX  [System Layer]
+# ============================================================
+
+Trope_Index:
+  Primary_TM_Tropes:
+    - trope_body_reclamation  # chest scars — primary
+    - trope_transformation    # reclamation register — primary
+    - trope_worship           # his anatomy worshipped
+    - trope_orgasm_control    # variable power — permission arch
+  Inherits_Male_Trope_Index: true
+  Note: >
+    All male-relevant tropes apply to TM bodies.
+    His front in penetration scenes: male register throughout.
+
+Pair_Index:
+  Inherits_Male_Pair_Index: true
+  TM_Specific:
+    - pair_hand_cock (when tm_cock present)
+    - pair_mouth_cock (when tm_cock present)
+
+# ============================================================
+# SOMATIC REGISTER  [Somatic Layer — writer-facing]
+# ============================================================
+
+Somatic_Register:
+  Reclamation:
+    - His chest after top surgery — his body as it should be
+    - The scars present and owned — not apology
+    - His cock responding — T-grown and his
+    - His front producing his arousal — his body's truth
+    - His scars kissed as relics by another
+  His_Body:
+    - His anatomy under his terms
+    - His front wet — his truth
+    - His seed releasing — his offering
+    - His body proof of arrival
+  General:
+    - All male somatic register applies
+    - His sensation is his — not assumed from natal anatomy
+    - Write from his somatic truth
+
+# ============================================================
+# SACRED REGISTER  [Lexicon Layer]
+# ============================================================
+
+Sacred_Register:
+  TM_Specific_Terms:
+    - reclaimed
+    - his_all_along
+    - scars_as_record
+    - body_kept_its_promise
+    - arrived
+    - scars_kissed_as_relics
+    - the_vow_made_visible
+    - his_body_his_terms
+    - his_chest_his_proof
+    - his_front_his_truth
+  Inherits: register_male.yaml Sacred_Register fully
+
+# ============================================================
+# TONAL GOVERNORS  [Prose Layer]
+# ============================================================
+
+Tonal_Governors:
+  Always_Active:
+    - His anatomy is male throughout
+    - Scars are record not damage
+    - His terms govern his body always
+    - Male pronouns throughout
+    - His front in his terms with male register
+  Forbidden_Registers:
+    - Female pronouns applied to him
+    - His anatomy feminised without his direction
+    - His front framed as female anatomy on his body
+    - His scars framed as damage or loss
+    - His cock called a clit without his direction
+
+# ============================================================
+# BANNED TERMS  [System Layer]
+# ============================================================
+
+Banned_Terms:
+  TM_Specific:
+    Misgendering:
+      - she (applied to him)
+      - her (applied to him)
+      - her_body (applied to his body)
+      - female_anatomy (applied to his body)
+    Front_Bans:
+      - vagina (applied to him without his direction)
+      - her_front (applied to him)
+      - female_lubrication (applied to him)
+      - lady_juice (applied to him)
+    Cock_Bans:
+      - clit (applied to his cock without his direction)
+      - female_genitalia (applied to him)
+    Scar_Bans:
+      - mutilation
+      - disfigurement
+      - damage (applied to his surgical scars)
+      - injury (applied to his scars)
+  Inherits_Male_Banned: true
+  Note: >
+    All male register banned terms apply to TM bodies.
+    Additional TM-specific bans above.
+
+# ============================================================
+# GENERATION NOTES  [Prose Layer]
+# ============================================================
+
+Generation_Notes:
+  Priority_1: >
+    His terms govern his body absolutely.
+    Default without his direction: male terms throughout.
+    Never impose a term on his anatomy.
+  Priority_2: >
+    Male register throughout. His body is male.
+    His front is his front. His cock is his cock.
+    His scars are his scars.
+  Priority_3: >
+    Scars are record. Never damage.
+    The scars mark where he arrived.
+    Kiss them as relics.
+  Priority_4: >
+    His front produces his arousal. Apply female_gloss
+    staging with his pronouns. His wet. His truth.
+    Male register. His terms.
+  Priority_5: >
+    Never call his cock a clit unless he does.
+    Never write her or she for him.
+    These are absolute rules with no exceptions.
+  Priority_6: >
+    His body may be partially or fully in reclamation register.
+    The scars, the chest, the cock — all arrived or arriving.
+    Write from his arrival without assuming where he is.
+
+# ============================================================
+# BUILD  [System Layer]
+# ============================================================
+
+Build:
+  Session: Current
+  Version: "2.0"
+  Status: Complete
+  Syntax_Errors_Fixed: true
+  Changes_From_1_0: >
+    Four-layer authoring model. Absolute_Rules block added
+    with five critical rules as System Layer primitives.
+    Character_Terminology_Governs as highest-priority rule.
+    Never_Feminise_Without_Direction formalised.
+    His_Front_His_Terms formalised. Scars_Are_Record as rule.
+    TM-specific primitives added. Trope_Index. Pair_Index.
+    Syntax errors fixed. File paths updated.

@@ -1,0 +1,306 @@
+# ============================================================
+# K.S. McCRAE SOMATIC LEXICON SYSTEM
+# Pair: Mouth + Cock
+# Pair_Type: instrument_site
+# Register: Variable
+# Version: 2.0
+# ============================================================
+#
+# AUTHORING MODEL
+# LEXICON LAYER:  intersection terms, motion primitives,
+#                 collocate bridge — compiled when both
+#                 sites active simultaneously
+# SYSTEM LAYER:   dependencies, site roles, power map,
+#                 entry conditions — system context
+# SOMATIC LAYER:  site_A perspective, site_B perspective,
+#                 simultaneous sensation — not compiled
+# PROSE LAYER:    motion discipline, fluid discipline,
+#                 scene notes — not compiled
+#
+# ACTIVATION: Pair vocabulary only activates when BOTH
+# sites are simultaneously present in scene.
+# ============================================================
+
+Pair: mouth_cock
+Version: "2.0"
+Type: pair
+Pair_Type: instrument_site
+Register: Variable
+Status: Active
+
+Sites:
+  A:
+    id: shared_mouth
+    file: anatomical/shared/shared_mouth.yaml
+    role_in_pair: receiving_vessel
+  B:
+    id: male_cock
+    file: anatomical/male/male_cock.yaml
+    role_in_pair: received_instrument
+
+Dependencies:
+  anatomy:
+    - shared_mouth
+    - shared_tongue
+    - shared_throat
+    - male_cock
+    - male_glans
+    - male_frenulum
+  fluids:
+    - male_pregloss
+    - shared_saliva
+    - male_seed
+  tropes:
+    - trope_worship
+    - trope_orgasm_control
+    - trope_milking
+
+Entry_Conditions:
+  requires:
+    - mouth_open
+    - cock_in_scene
+    - oral_contact_established
+  power_required: any
+  register_notes: >
+    Variable — the mouth may serve or be served depending on scene architecture. In service register the mouth serves the cock. In sovereign register the mouth governs what it takes and when.
+
+Power_Map:
+  Site_A_Role: variable
+  Site_B_Role: variable
+  Governing_Register: scene_determined
+  Note: >
+    Variable. In service: mouth serves cock. In queening or sovereign oral: the mouth governs what it receives and when it releases.
+
+Corpus_Status:
+  Corpus_Extract_Reviewed: true
+  Gap_Fill_Applied: true
+  Gap_Fill_Version: "1.0"
+
+Identity:
+  Label: Mouth + Cock
+  Description: >
+    The mouth receiving the cock. Service and vessel register. The tongue finds the frenulum first. The lips seal around the shaft. Pre-gloss arrives before the mouth works. The throat is the depth register beyond. The covenant swallow is the completion of this pair.
+
+# ============================================================
+# INTERSECTION REGISTER  [Lexicon Layer]
+# ============================================================
+
+Intersection_Register:
+
+  Contact_Terms:
+    - mouth_receiving_cock
+    - lips_sealing_around
+    - tongue_at_frenulum
+    - the_cock_in_the_mouth
+    - mouth_full
+  Motion_Primitives:
+    - tongue_finding_frenulum
+    - the_draw
+    - the_stroke_down
+    - lips_sealing
+    - suction
+    - the_depth_move
+    - working_the_shaft
+    - the_release
+  Depth_Terms:
+    - depth_in_mouth
+    - throat_reached
+    - tonsil_caves
+  Arrival_Terms:
+    - cock_arriving_at_mouth
+    - lips_parting
+    - the_first_seal
+  Completion_Terms:
+    - covenant_swallow
+    - seed_received
+    - the_throat_holding
+  Sacred_Intersection:
+    - mouth_as_altar
+    - the_devoted_receipt
+    - frenulum_found_first
+    - covenant_swallow
+    - the_seal_of_the_lips
+    - crown glistens sovereign
+    - crowned not ruined
+    - filthy cocktails
+    - no cock wasted
+
+Instrument_Register:
+  Instrument_Site: shared_mouth
+  Served_Site: male_cock
+  Motion_Vocabulary:
+    - tongue_at_frenulum
+    - the_draw
+    - suction_sustained
+    - lips_sealing
+    - working_the_shaft
+    - depth_move
+  Service_Register:
+    - the_mouth_in_skilled_service
+    - the_cock_received_completely
+  Not_Diminished_Note: >
+    The mouth in service is skilled. The devoted receipt is not diminishment.
+
+Fluid_Register:
+  - fluid: male_pregloss
+    role_in_pair: first_fluid_encountered
+    intersection_terms:
+      - pre_gloss_on_tongue
+      - the_first_clear_taste
+      - truth_at_the_slit
+    behavior_note: >
+      Pre-gloss beads at the slit before or immediately after first contact. First taste of him. Clear and thin.
+  - fluid: shared_saliva
+    role_in_pair: instrument_fluid
+    intersection_terms:
+      - saliva_slicking_shaft
+      - the_coat_of_the_mouth
+      - unified_wet
+    behavior_note: >
+      Saliva coats the cock as the mouth works. Write as the mouth's own working fluid.
+  - fluid: male_seed
+    role_in_pair: completion_fluid
+    intersection_terms:
+      - seed_in_mouth
+      - covenant_swallow
+      - the_throat_receiving
+    behavior_note: >
+      Seed arrives at completion. The covenant swallow — the throat receives, holds, gives.
+
+# ============================================================
+# SOMATIC REGISTER  [Somatic Layer]
+# Not vocabulary. Not compiled. Writer-facing.
+# ============================================================
+
+Somatic:
+  Site_A_Perspective:
+    - pre-gloss on the tongue — first taste
+    - the cock's warmth in the mouth
+    - the frenulum found on the first stroke — a specific recognition
+    - the shaft filling the mouth
+    - seed arriving — received
+  Site_B_Perspective:
+    - warmth of the mouth on the crown
+    - the frenulum found — sharp, precise response
+    - the suction that draws
+    - the depth of the throat
+    - the covenant swallow — the gift received
+  Simultaneous:
+    - warmth meeting warmth
+    - the wet of both
+    - the draw that both feel
+  Corpus_Gap_Fill:
+    - body arching under oral stimulation
+    - body convulsing under oral pressure
+    - clitoral overstimulation to near-pain threshold
+    - cock hardening through chaos
+
+Sensory_Register:
+  Touch:
+    - warmth_of_mouth_on_cock
+    - the_seal_of_lips
+    - tongue_at_frenulum
+    - the_suction_draw
+  Sound:
+    - wet_oral_sounds
+    - suction_on_withdrawal
+    - the_slick
+    - throat_working
+    - the_swallow
+  Scent:
+    - pre_gloss_salt
+    - musk_of_cock
+    - the_scent_of_him_in_the_mouth
+  Taste:
+    - pre_gloss_clear_salt
+    - the_frenulum_taste
+    - seed_salt_thick
+
+Sacred_Economy:
+  Loop_Position: transfer
+  Pair_Covenant: >
+    The mouth receives the cock as vessel. Pre-gloss is the first truth. The covenant swallow is the final one. Between these two moments the mouth attends completely — tongue at frenulum, suction sustained, depth taken.
+  Sacred_Terms:
+    - mouth_as_altar
+    - covenant_swallow
+    - frenulum_found
+    - pre_gloss_truth
+    - seed_received
+
+Transition:
+  Mouth_to_Cock:
+    System_Layer:
+      from: shared_mouth
+      to: male_cock
+      mechanism: mouth_moves_from_crown_to_shaft_to_depth
+    Prose_Layer:
+      - Lips to crown first
+      - Then the tongue down the shaft to the seam
+      - Then the depth move if the scene calls for it
+  Cock_to_Mouth:
+    System_Layer:
+      from: male_cock
+      to: shared_mouth
+      mechanism: return_to_crown
+    Prose_Layer:
+      - Always returning to the crown
+      - The tongue returning to the frenulum after any depth work
+
+Collocate_Bridge:
+  Base:
+    - frenulum found
+    - lips sealing
+    - the draw of the mouth
+    - suction sustained
+    - pre-gloss on the tongue
+    - covenant swallow
+    - the mouth full of him
+  Corpus:
+    - bead at the crown
+    - blunt crown pressed
+    - cheeks hollowed as she sucked
+    - cock and balls chambered
+    - cock slapping wet
+    - cock straining high
+    - cock to mouth
+    - collar biting throat
+
+Corpus_Interactions_Gap_Fill:
+  - oral
+  - oral stimulation reintroducing sensation
+  - application of constriction rings to separate cock and balls
+  - clitoral stimulation through oral contact
+  - cock dragged across table surface
+  - cock stimulated but denied release
+
+Linked_Tropes:
+  - trope: trope_worship
+    pair_role: oral_cock_worship_pair
+  - trope: trope_orgasm_control
+    pair_role: threshold_management_pair
+  - trope: trope_milking
+    pair_role: extraction_instrument_pair
+
+Prose_Notes:
+  Frenulum_First: >
+    The tongue finds the frenulum on the first stroke. Write this recognition. It is a distinct moment — the precise discovery of his most sensitive seam.
+
+  Covenant_Swallow: >
+    When seed arrives in the mouth the swallow is covenant. The throat receives, holds, gives. This is the completion of the pair.
+
+Build:
+  Session: Current
+  Version: "2.0"
+  Status: Complete
+  Pair_Type_Confirmed: instrument_site
+  Is_New_Pair: false
+  Corpus_Gap_Fill: Applied v1.0
+  Upgrade_Actions:
+    - four_layer_authoring_model_added
+    - metadata_system_layer_added
+    - site_roles_declared
+    - somatic_split_by_perspective
+    - sensory_register_split
+    - sacred_economy_added
+    - transition_split_by_layer
+    - corpus_gap_fill_applied

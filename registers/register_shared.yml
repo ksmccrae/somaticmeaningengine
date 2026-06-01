@@ -1,0 +1,487 @@
+# ============================================================
+# K.S. McCRAE SOMATIC LEXICON SYSTEM
+# Register: Shared
+# Version: 2.0
+# ============================================================
+#
+# AUTHORING MODEL
+# LEXICON LAYER:  terms in site entries compile with active body's inflection
+# SYSTEM LAYER:   site index, fluid index, trope/pair index
+# SOMATIC LAYER:  Somatic_Register — writer-facing, not compiled
+# PROSE LAYER:    Generation_Notes — writer-facing, not compiled
+#
+# v2.0 CHANGES
+# - Trope_Index added (34 tropes)
+# - Pair_Index updated (13 pairs)
+# - Primitives block added
+# - Scene_Activation added
+# - File paths updated
+# ============================================================
+
+Register: shared
+Version: "2.0"
+Type: register
+Author: K.S. McCrae
+Layer: Primary
+Status: Active
+
+Identity:
+  Default_Power: Variable
+  Default_Tone: Inflection_by_body
+  Sacred_Frame: Covenant_inherits_from_active_register
+  Description: >
+    Shared sites apply to all bodies. Power register is always
+    inflected by the body the site belongs to — female body gives
+    sovereign inflection, male body gives variable inflection.
+    All fluids in shared register are sacred regardless of type.
+
+# ============================================================
+# SITE INDEX  [System Layer]
+# ============================================================
+
+Sites:
+  - id: arse
+    file: anatomical/shared/shared_arse.yaml
+    version: "1.0"
+    Power: Variable_by_body
+    Salience: Primary_shared
+
+  - id: belly
+    file: anatomical/shared/shared_belly.yaml
+    version: "1.0"
+    Power: Variable_by_body
+    Salience: Secondary_shared
+
+  - id: chest
+    file: anatomical/shared/shared_chest.yaml
+    version: "1.0"
+    Power: Variable_by_body
+    Salience: Secondary_shared
+
+  - id: hand
+    file: anatomical/shared/shared_hand.yaml
+    version: "1.0"
+    Power: Instrument
+    Salience: Primary_shared
+
+  - id: lips
+    file: anatomical/shared/shared_lips.yaml
+    version: "1.0"
+    Power: Variable_by_body
+    Salience: Secondary_shared
+
+  - id: mouth
+    file: anatomical/shared/shared_mouth.yaml
+    version: "1.0"
+    Power: Variable_by_body
+    Salience: Primary_shared
+
+  - id: nape
+    file: anatomical/shared/shared_nape.yaml
+    version: "1.0"
+    Power: Variable_by_body
+    Salience: Tertiary_shared
+
+  - id: navel
+    file: anatomical/shared/shared_navel.yaml
+    version: "1.0"
+    Power: Variable_by_body
+    Salience: Tertiary_shared
+
+  - id: nipples
+    file: anatomical/shared/shared_nipples.yaml
+    version: "1.0"
+    Power: Variable_by_body
+    Salience: Primary_shared
+    Female_Inflection: sovereign_signal
+    Male_Inflection: responsive_secondary
+
+  - id: perineum
+    file: anatomical/shared/shared_perineum.yaml
+    version: "1.0"
+    Power: Variable_by_body
+    Preferred_Term: seam
+    Salience: Secondary_shared
+
+  - id: skin
+    file: anatomical/shared/shared_skin.yaml
+    version: "1.0"
+    Power: Variable_by_body
+    Salience: Secondary_shared
+
+  - id: thighs
+    file: anatomical/shared/shared_thighs.yaml
+    version: "1.0"
+    Power: Variable_by_body
+    Salience: Secondary_shared
+
+  - id: throat
+    file: anatomical/shared/shared_throat.yaml
+    version: "1.0"
+    Power: Variable_by_body
+    Salience: Secondary_shared
+    Preferred_Term: throat
+
+  - id: tongue
+    file: anatomical/shared/shared_tongue.yaml
+    version: "1.0"
+    Power: Instrument
+    Salience: Primary_shared
+
+# ============================================================
+# FLUID INDEX  [System Layer]
+# ============================================================
+
+Fluids:
+  Shared_Primary:
+    shared_saliva:
+      file: fluids/shared/shared_saliva.yaml
+      type: staging
+      stages: [coat, string, foam, drool]
+      sacred: transfer_medium
+      role: cycling_medium_in_ritual
+    shared_musk:
+      file: fluids/shared/shared_musk.yaml
+      type: atmospheric
+      register: ambient_only
+      never: discrete_fluid_event
+      sacred: body_announcement
+    shared_sweat:
+      file: fluids/shared/shared_sweat.yaml
+      type: atmospheric
+      register: ambient_evidence
+      sacred: salt_of_effort
+    shared_tears:
+      file: fluids/shared/shared_tears.yaml
+      type: atmospheric
+      register: catharsis_only
+      sacred: threshold_crossed
+    shared_gold:
+      file: fluids/shared/shared_gold.yaml
+      type: staging
+      stages: [thread, stream, flood, last_thread]
+      sacred: sovereign_offering
+      always_chosen: true
+    shared_ritual_blend:
+      file: fluids/shared/shared_ritual_blend.yaml
+      type: blend
+      sacred: nothing_wasted
+      loop_position: consecration
+      governing_principle: zero_waste
+    shared_earth_trace:
+      file: fluids/shared/shared_earth_trace.yaml
+      type: trace
+      max_lines: 1
+      context: post_preparation_only
+
+# ============================================================
+# POWER ARCHITECTURE  [System Layer]
+# ============================================================
+
+Power_Architecture:
+  Governing_Rule: >
+    Shared sites carry the power register of the body they
+    belong to. Female arse = sovereign. Male arse = variable.
+    TF arse = sovereign. TM arse = male register.
+    Character terminology governs for all trans bodies.
+  Inflection_Matrix:
+    Female_Body: sovereign_throughout
+    Male_Body: variable_by_scene
+    Trans_Feminine: sovereign_identical_to_female
+    Trans_Masculine: male_identical_to_male
+  Instrument_Sites:
+    tongue: always_instrument_register
+    hand:   always_instrument_register
+    Note: Instrument register is not diminishment. Skilled service.
+
+Power_Primitives:
+  mouth_as_altar:
+    Definition: Mouth receiving in devotional/queening register
+    Register: The altar beneath her. Does not close. Receives.
+  mouth_as_vessel:
+    Definition: Mouth as transfer medium in fluid ritual
+    Register: Cycling fluids between bodies. Nothing wasted.
+  tongue_attending:
+    Definition: Tongue in devoted service to a site
+    Register: Skilled, precise, not stopping.
+  hand_as_instrument:
+    Definition: Hand as precision instrument — depth or governing
+    Register: Skilled service. Depth or permission. Not crude.
+  seam_holds:
+    Definition: Perineum carrying pressure of both active sites
+    Register: The wall between. The bridge. Covenant seam.
+
+# ============================================================
+# PRIMITIVES  [System + Lexicon Layers]
+# ============================================================
+
+Motion_Primitives:
+  Shared_Oral:
+    - circle_at_the_pearl
+    - circling_the_rim
+    - tongue_at_frenulum
+    - the_draw
+    - suction_sustained
+    - the_broad_stroke
+  Shared_Hand:
+    - single_finger_entry
+    - knuckles_at_the_gate
+    - the_grip
+    - the_stroke
+    - reverent_withdrawal
+  Atmospheric:
+    - musk_rising
+    - sweat_pooling
+    - musk_thickening
+
+Fluid_Staging_Primitives:
+  shared_saliva: [coat, string, foam, drool]
+  shared_musk:   [arrival, sustained, peak, fading]
+  shared_sweat:  [beading, slicked, drenched, drying]
+  shared_gold:   [thread, stream, flood, last_thread]
+  atmospheric_rule: >
+    musk and sweat are NEVER discrete fluid events.
+    They diffuse. They are atmospheric. Never pool or run
+    as named fluid events (sweat may pool in folds — write
+    as pooled_sweat not as a fluid event).
+
+Scene_Role_Primitives:
+  altar_beneath_her: mouth in queening register
+  transfer_vessel:   mouth in fluid ritual register
+  devoted_tongue:    tongue in oral worship
+  instrument_hand:   hand in depth or permission register
+  seam_bridge:       perineum under dual site pressure
+  wall_between:      tissue between both filled sites
+  canvas:            skin as marking surface
+  musk_atmosphere:   the room carrying both bodies
+
+# ============================================================
+# TROPE INDEX  [System Layer]
+# ============================================================
+
+Trope_Index:
+  Universal_Shared_Sites:
+    - trope_fluid_ritual      # arse and mouth as fluid sites
+    - trope_aftercare         # full body — all shared sites
+    - trope_sensory_overload  # all shared sites simultaneously
+    - trope_power_exchange    # arse, mouth, throat — submission
+    - trope_mirroring         # nipples, arse — chained sensation
+    - trope_worship           # tongue, mouth — instrument register
+    - trope_restraint         # hands, skin — binding register
+    - trope_slow_sex          # full body — presence register
+    - trope_body_altar        # skin, belly — sacred surface
+    - trope_group_ritual      # all shared sites in circuit
+  Arse_Specific:
+    - trope_depth_play
+    - trope_milking
+    - trope_suspension
+    - trope_cock_arse
+  Mouth_Specific:
+    - trope_queening
+    - trope_watersports
+    - trope_orgasm_control
+  Skin_Specific:
+    - trope_marking
+    - trope_temperature_play
+    - trope_food_fluid
+
+# ============================================================
+# PAIR INDEX  [System Layer]
+# ============================================================
+
+Pair_Index:
+  Version: "2.0"
+  Shared_Site_Pairs:
+    - pair_tongue_cunt     # tongue (shared) + cunt (female)
+    - pair_tongue_arse     # tongue (shared) + arse (shared)
+    - pair_mouth_cock      # mouth (shared) + cock (male)
+    - pair_cock_mouth      # cock (male) + mouth (shared)
+    - pair_hand_cunt       # hand (shared) + cunt (female)
+    - pair_hand_cock       # hand (shared) + cock (male)
+    - pair_cunt_arse       # cunt (female) + arse (shared)
+    - pair_cock_arse       # cock (male) + arse (shared)
+    - pair_mouth_arse      # mouth (shared) + arse (shared)
+    - pair_breasts_mouth   # breasts (female) + mouth (shared)
+    - pair_cunt_thighs     # cunt (female) + thighs (shared)
+    - pair_skin_seed       # skin (shared) + seed (male fluid)
+    - pair_cunt_cunt       # both cunts — FF register
+
+# ============================================================
+# SOMATIC REGISTER  [Somatic Layer — writer-facing]
+# ============================================================
+
+Somatic_Register:
+  Arse_Register:
+    - Ring tightening at approach
+    - The yield under tongue — slow and deliberate
+    - Rim fluttering in response to oral
+    - The burn of entry then dull ache then absence
+    - Clenching around what enters
+    - The hollow full — the interior aware
+  Mouth_Register:
+    - The warmth of cunt on mouth — queening settled
+    - The covenant swallow — receiving what was given
+    - Saliva and gloss indistinguishable in oral
+    - The foam of heavy oral depth
+    - The throat at its own depth register
+  Tongue_Register:
+    - The tongue finding the pearl on first contact
+    - The circle sustaining — the tongue not stopping
+    - The rim softening slowly under tongue
+    - The tongue reading what it attends
+  Skin_Register:
+    - Seed landing warm then cooling
+    - Wax bright then settling
+    - Oil spread warm across surface
+    - The trace that remains after
+  Atmospheric:
+    - The room thick with musk before touch
+    - Sweat gathering in the hollows
+    - Tears running as the body crosses threshold
+
+# ============================================================
+# BANNED TERMS  [System Layer]
+# ============================================================
+
+Banned_Terms:
+  Arse_Shared:
+    Core_Banned:
+      - ass
+      - asshole
+      - butthole
+      - bunghole
+      - butt
+      - back_door
+      - pooper
+      - corn_hole
+      - chocolate_starfish
+      - balloon_knot
+      - tush
+      - tush (childish)
+      - caboose
+      - rump
+      - bussy
+      - man_pussy
+    Clinical_Unadorned:
+      - rectum
+      - anus (standalone)
+      - rectal_cavity
+  Perineum_Shared:
+    Porn_Slang:
+      - taint
+      - gooch
+      - grundle
+      - scranus
+      - biffins_bridge
+  Nipples_Shared:
+    Porn_Slang:
+      - nips
+      - headlights
+      - high_beams
+      - teats
+      - pepperoni
+  Mouth_Throat_Shared:
+    Porn_Slang:
+      - cum_hole
+      - cock_holster
+      - dick_holster
+      - throat_pussy
+      - throat_hole
+      - pie_hole
+    Acts_Banned:
+      - blowjob
+      - blow_job
+      - bj
+      - rimjob
+      - rim_job
+      - analingus (clinical standalone)
+      - facefucking
+      - deepthroat (verb)
+      - cock_sucking
+      - pussy_eating
+  Fluids_Shared:
+    Waste_Register: Never frame any fluid as waste or pollution
+    Tonal_Bans:
+      Comic: Any term producing deflating or humorous effect
+      Clinical: Medical language without sacred frame
+
+# ============================================================
+# CROSS REGISTER RESOLUTION  [System Layer]
+# ============================================================
+
+Cross_Register_Resolution:
+  Priority_Order:
+    1: Character_terminology_governs_trans_bodies
+    2: Female_register_for_female_bodies
+    3: Male_register_for_male_bodies
+    4: Shared_register_inflects_by_active_body
+  Conflict_Resolution: >
+    When multiple bodies active simultaneously —
+    each site carries the register of its own body.
+    Female arse: sovereign. Male arse: variable.
+    Both simultaneously: each in their own register.
+
+# ============================================================
+# SCENE ACTIVATION  [System Layer]
+# ============================================================
+
+Scene_Activation:
+  Trigger: Any shared site active in scene
+  Process:
+    Step_1: Identify which body the shared site belongs to
+    Step_2: Apply that body's register inflection
+    Step_3: Load shared site entry
+    Step_4: Activate relevant fluid palette
+    Step_5: Load pair entries for active site combinations
+  Atmospheric_Fluids:
+    Rule: >
+      musk and sweat are atmospheric throughout all shared scenes.
+      Never named as discrete fluid events unless specifically
+      pooled or licked (sweat from fold, musk in breath).
+      Background register only.
+
+# ============================================================
+# GENERATION NOTES  [Prose Layer]
+# ============================================================
+
+Generation_Notes:
+  Priority_1: >
+    Shared sites always carry gender inflection.
+    Never describe shared site in gender vacuum.
+    Context always determines register.
+  Priority_2: >
+    Fluids are always sacred regardless of type.
+    Sweat, saliva, gold, earth trace — all covenant register.
+    None are waste or mess.
+  Priority_3: >
+    Atmospheric fluids (sweat, musk) are described
+    as air, haze, atmosphere — not as substance alone.
+    Scent is carried on the scene not isolated.
+  Priority_4: >
+    The arse always carries depth register.
+    Depth is trust architecture — never violation.
+    Twitching ring and breathing hollow are primary.
+  Priority_5: >
+    Tears are catharsis not weakness.
+    Never melodrama. Never dismissal.
+    Proof of threshold crossed.
+  Priority_6: >
+    Pair vocabulary only activates when BOTH sites active.
+    The circle_at_the_pearl requires tongue AND cunt.
+    Do not use pair vocabulary for single-site scenes.
+
+# ============================================================
+# BUILD  [System Layer]
+# ============================================================
+
+Build:
+  Session: Current
+  Version: "2.0"
+  Status: Complete
+  Changes_From_1_0: >
+    Four-layer authoring model. Trope_Index added (34).
+    Pair_Index updated (13). Power_Primitives added.
+    Motion_Primitives. Scene_Role_Primitives.
+    Fluid_Staging_Primitives. Scene_Activation added.
+    Atmospheric fluid governance formalised.
+    File paths updated.

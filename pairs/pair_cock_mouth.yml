@@ -1,0 +1,281 @@
+# ============================================================
+# K.S. McCRAE SOMATIC LEXICON SYSTEM
+# Pair: Cock + Mouth (Depth Register)
+# Pair_Type: penetration
+# Register: Variable
+# Version: 2.0
+# ============================================================
+#
+# AUTHORING MODEL
+# LEXICON LAYER:  intersection terms, motion primitives,
+#                 collocate bridge — compiled when both
+#                 sites active simultaneously
+# SYSTEM LAYER:   dependencies, site roles, power map,
+#                 entry conditions — system context
+# SOMATIC LAYER:  site_A perspective, site_B perspective,
+#                 simultaneous sensation — not compiled
+# PROSE LAYER:    motion discipline, fluid discipline,
+#                 scene notes — not compiled
+#
+# ACTIVATION: Pair vocabulary only activates when BOTH
+# sites are simultaneously present in scene.
+# ============================================================
+
+Pair: cock_mouth
+Version: "2.0"
+Type: pair
+Pair_Type: penetration
+Register: Variable
+Status: Active
+
+Sites:
+  A:
+    id: male_cock
+    file: anatomical/male/male_cock.yaml
+    role_in_pair: entering_instrument
+  B:
+    id: shared_mouth
+    file: anatomical/shared/shared_mouth.yaml
+    role_in_pair: receiving_depth_vessel
+
+Dependencies:
+  anatomy:
+    - male_cock
+    - shared_mouth
+    - shared_throat
+    - shared_tongue
+  fluids:
+    - male_pregloss
+    - shared_saliva
+    - male_seed
+  tropes:
+    - trope_power_exchange
+    - trope_orgasm_control
+
+Entry_Conditions:
+  requires:
+    - cock_hard
+    - mouth_open
+    - depth_architecture_established
+  power_required: any
+  register_notes: >
+    Variable — depth is governed by scene architecture. In femdom: the mouth receives what it is given. In service: the mouth offers depth. The throat is the depth register beyond the mouth's capacity.
+
+Power_Map:
+  Site_A_Role: variable
+  Site_B_Role: variable
+  Governing_Register: scene_determined
+  Note: >
+    Cock enters the mouth by scene architecture. The throat register opens when depth exceeds the mouth's normal capacity.
+
+Corpus_Status:
+  Corpus_Extract_Reviewed: true
+  Gap_Fill_Applied: true
+  Gap_Fill_Version: "1.0"
+
+Identity:
+  Label: Cock + Mouth (Depth Register)
+  Description: >
+    The cock in the mouth at depth — the full penetration register. Different from mouth_cock (devotional service). This is the cock entering the vessel, the throat register opening, the depth taken or given. Saliva foams. The tonsil caves are the depth register.
+
+# ============================================================
+# INTERSECTION REGISTER  [Lexicon Layer]
+# ============================================================
+
+Intersection_Register:
+
+  Contact_Terms:
+    - cock_in_the_mouth
+    - the_depth_taken
+    - the_throat_register
+    - the_seal_at_shaft
+  Motion_Primitives:
+    - the_thrust
+    - the_withdrawal
+    - depth_control
+    - the_pause_at_depth
+  Arrival_Terms:
+    - crown_arriving_at_lips
+    - the_entry
+  Completion_Terms:
+    - seed_in_throat
+    - the_deep_receipt
+    - swallowed_covenant
+  Sacred_Intersection:
+    - tonsil_caves
+    - the_throat_as_depth
+    - the_vessel_at_full
+    - deep_receipt
+    - covenant carved in depth
+    - filthy cocktails
+    - no cock wasted
+    - root to depth
+
+Depth_Register:
+  Entering_Site: male_cock
+  Receiving_Site: shared_mouth
+  Depth_Sequence:
+    Entry:
+      Terms: ['crown_at_lips', 'the_entering', 'the_seal_forming']
+      Behavior: Crown at lips, lips parting, the seal establishing.
+    Mid:
+      Terms: ['shaft_in_mouth', 'the_working_depth', 'the_stroke']
+      Behavior: Shaft working through the mouth. Tongue managing the shaft.
+    Depth:
+      Terms: ['at_depth', 'tonsil_caves', 'the_throat_opening', 'full_depth']
+      Behavior: Crown at the throat. The depth register opening. Tonsil caves.
+    Withdrawal:
+      Terms: ['the_draw_back', 'withdrawal_slick', 'the_string_leaving']
+      Behavior: Withdrawal slicked with saliva and pre-gloss. The string between.
+  Interior_Register:
+    - tonsil_caves_register
+    - throat_holding
+    - the_depth_taken
+
+Fluid_Register:
+  - fluid: shared_saliva
+    role_in_pair: foams_under_depth
+    intersection_terms:
+      - saliva_foaming
+      - the_foam_of_depth
+      - heavy_drool_at_depth
+    behavior_note: >
+      Saliva foams and drools at sustained depth. Write this honestly — the foam at the lips, the jaw wet.
+  - fluid: male_pregloss
+    role_in_pair: present_at_throat
+    intersection_terms:
+      - pre_gloss_at_depth
+      - tasting_him_at_depth
+  - fluid: male_seed
+    role_in_pair: arrival_at_depth
+    intersection_terms:
+      - seed_at_throat
+      - deep_covenant_swallow
+
+# ============================================================
+# SOMATIC REGISTER  [Somatic Layer]
+# Not vocabulary. Not compiled. Writer-facing.
+# ============================================================
+
+Somatic:
+  Site_A_Perspective:
+    - the warmth of the throat around the crown
+    - the tightening of the throat at depth
+    - the hold of the throat at full depth
+    - withdrawal slicked
+  Site_B_Perspective:
+    - the cock at the throat — the depth register
+    - the throat managing the crown
+    - the gag response — managed or present
+    - the foam of depth
+  Simultaneous:
+    - the depth both feel simultaneously
+    - the hold at full depth — both bodies still
+  Corpus_Gap_Fill:
+    - pelvic floor engaging reflexively
+    - belly spasming at depth
+    - cock hardening through chaos
+    - cock jerking against belly
+
+Sensory_Register:
+  Touch:
+    - cock_at_throat
+    - the_tightening_at_depth
+  Sound:
+    - wet_heavy_at_depth
+    - the_foam_sound
+    - throat_working
+    - the_slick_of_withdrawal
+  Scent:
+    - pre_gloss_at_throat
+    - musk_of_him_at_depth
+  Taste:
+    - pre_gloss_deep
+    - seed_at_depth
+
+Sacred_Economy:
+  Loop_Position: transfer
+  Pair_Covenant: >
+    The throat receives at depth what the cock offers. The covenant swallow at depth is the completion of the deepest receipt. The tonsil caves the marker of what was taken.
+  Sacred_Terms:
+    - tonsil_caves
+    - deep_receipt
+    - the_throat_as_depth
+    - swallowed_covenant
+
+Transition:
+  Cock_to_Mouth:
+    System_Layer:
+      from: male_cock
+      to: shared_mouth
+      mechanism: depth_increase_through_controlled_entry
+    Prose_Layer:
+      - Crown at lips
+      - Then shaft
+      - Then depth if the scene calls it
+      - The pause at depth
+  Mouth_to_Cock:
+    System_Layer:
+      from: shared_mouth
+      to: male_cock
+      mechanism: withdrawal_slicked
+    Prose_Layer:
+      - The slick withdrawal
+      - The string of saliva and pre-gloss leaving
+      - The mouth empty but carrying the taste
+
+Collocate_Bridge:
+  Base:
+    - at the tonsil caves
+    - the foam at his lips
+    - throat managing
+    - the slick of withdrawal
+    - seed at depth
+    - the throat receiving
+  Corpus:
+    - cock and balls chambered
+    - cock slapping wet
+    - cock straining high
+    - cock to mouth
+    - collar biting throat
+    - cream and seed mingled
+    - cream flooding throat
+    - cunt to cock
+
+Corpus_Interactions_Gap_Fill:
+  - application of constriction rings to separate cock and balls
+  - choking and gagging under fluid release
+  - cock dragged across table surface
+  - cock stimulated but denied release
+  - cock-to-mouth exchange
+  - cum released into mouth during oral
+
+Linked_Tropes:
+  - trope: trope_power_exchange
+    pair_role: depth_submission_register
+  - trope: trope_orgasm_control
+    pair_role: depth_permission_pair
+
+Prose_Notes:
+  Depth_vs_Service: >
+    cock_mouth is the depth and penetration register. mouth_cock is the devotional service register. Different architectures. Use depth_sequence for cock_mouth. Use motion_vocabulary for mouth_cock.
+
+  Foam_Register: >
+    At sustained depth saliva foams. Write it honestly — not as degradation, as the body doing what the body does at depth.
+
+Build:
+  Session: Current
+  Version: "2.0"
+  Status: Complete
+  Pair_Type_Confirmed: penetration
+  Is_New_Pair: false
+  Corpus_Gap_Fill: Applied v1.0
+  Upgrade_Actions:
+    - four_layer_authoring_model_added
+    - metadata_system_layer_added
+    - site_roles_declared
+    - somatic_split_by_perspective
+    - sensory_register_split
+    - sacred_economy_added
+    - transition_split_by_layer
+    - corpus_gap_fill_applied

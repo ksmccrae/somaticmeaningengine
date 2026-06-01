@@ -1,0 +1,267 @@
+# ============================================================
+# K.S. McCRAE SOMATIC LEXICON SYSTEM
+# Pair: Breasts + Mouth
+# Pair_Type: site_surface
+# Register: Female_sovereign
+# Version: 2.0
+# ============================================================
+#
+# AUTHORING MODEL
+# LEXICON LAYER:  intersection terms, motion primitives,
+#                 collocate bridge — compiled when both
+#                 sites active simultaneously
+# SYSTEM LAYER:   dependencies, site roles, power map,
+#                 entry conditions — system context
+# SOMATIC LAYER:  site_A perspective, site_B perspective,
+#                 simultaneous sensation — not compiled
+# PROSE LAYER:    motion discipline, fluid discipline,
+#                 scene notes — not compiled
+#
+# ACTIVATION: Pair vocabulary only activates when BOTH
+# sites are simultaneously present in scene.
+# ============================================================
+
+Pair: breasts_mouth
+Version: "2.0"
+Type: pair
+Pair_Type: site_surface
+Register: Female_sovereign
+Status: Active
+
+Sites:
+  A:
+    id: female_breasts
+    file: anatomical/female/female_breasts.yaml
+    role_in_pair: sovereign_primary_site
+  B:
+    id: shared_mouth
+    file: anatomical/shared/shared_mouth.yaml
+    role_in_pair: receiving_devoted_instrument
+
+Dependencies:
+  anatomy:
+    - female_breasts
+    - shared_nipples
+    - female_areola
+    - shared_mouth
+    - shared_tongue
+  fluids:
+    - female_milk
+    - shared_saliva
+  tropes:
+    - trope_lactation
+    - trope_worship
+    - trope_body_reclamation
+
+Entry_Conditions:
+  requires:
+    - breast_in_scene
+    - mouth_at_breast
+  power_required: any
+  register_notes: >
+    Female breast is sovereign. The mouth serves the breast in devotional register. In lactation the mouth receives milk as nourishment and erotic register simultaneously.
+
+Power_Map:
+  Site_A_Role: sovereign
+  Site_B_Role: instrument_devoted
+  Governing_Register: female_breast_sovereign
+  Note: >
+    The breast governs what the mouth receives. The mouth serves. The dual register of nourishment and desire is held here — neither cancels.
+
+Corpus_Status:
+  Corpus_Extract_Reviewed: true
+  Gap_Fill_Applied: true
+  Gap_Fill_Version: "1.0"
+
+Identity:
+  Label: Breasts + Mouth
+  Description: >
+    The mouth at the breast. The devoted mouth on the nipple. In lactation register both nourishment and desire simultaneously. The mouth drawing. The let-down triggered or arriving. The weight of the breast in or against the mouth.
+
+# ============================================================
+# INTERSECTION REGISTER  [Lexicon Layer]
+# ============================================================
+
+Intersection_Register:
+
+  Contact_Terms:
+    - mouth_at_nipple
+    - the_breast_in_the_mouth
+    - nipple_between_lips
+    - the_mouth_drawing
+  Motion_Primitives:
+    - drawing_the_nipple
+    - suckling
+    - tongue_at_areola
+    - the_draw_that_triggers_letdown
+    - the_weight_against_the_mouth
+  Arrival_Terms:
+    - nipple_arriving_at_lips
+    - the_first_draw
+  Completion_Terms:
+    - let_down_received
+    - milk_in_the_mouth
+    - the_breast_giving
+  Sacred_Intersection:
+    - mouth_as_devoted_receiver
+    - breast_as_sovereign_giver
+    - the_dual_register_held
+    - nourishment_and_desire_at_once
+    - breasts as proof
+    - not worship, feast
+
+Surface_Register:
+  Primary_Site: female_breasts
+  Surface_Site: shared_mouth
+  Surface_Function: receives_devoted
+  Overflow_Terms:
+    - milk_onto_mouth
+    - the_milk_the_mouth_receives
+    - the_bead_before_the_stream
+  Framing_Register:
+    - the_mouth_framed_by_the_breast
+    - the_nipple_at_the_lips
+
+Fluid_Register:
+  - fluid: female_milk
+    role_in_pair: let_down_triggered_or_received
+    intersection_terms:
+      - milk_in_the_mouth
+      - the_mouth_receiving_milk
+      - the_let_down_against_his_mouth
+      - the_taste_of_her_milk
+    behavior_note: >
+      In lactation register milk may flow when the mouth draws. The let-down reflex triggered by the mouth's attention. Both nourishment and desire.
+  - fluid: shared_saliva
+    role_in_pair: mouth_lubricant
+    intersection_terms:
+      - saliva_at_nipple
+      - the_wet_of_the_mouth_on_breast
+
+# ============================================================
+# SOMATIC REGISTER  [Somatic Layer]
+# Not vocabulary. Not compiled. Writer-facing.
+# ============================================================
+
+Somatic:
+  Site_A_Perspective:
+    - the let-down tingle when the mouth draws
+    - the breast lightening as it gives
+    - the warmth of the mouth at the nipple
+    - the dual register — erotic and nourishment simultaneously
+  Site_B_Perspective:
+    - the weight of the breast in the mouth
+    - the nipple between lips — the first draw
+    - the taste of milk if present
+    - the full weight of the breast against the face
+  Simultaneous:
+    - the draw and the giving — simultaneous
+    - the let-down experienced by both bodies at the same moment
+  Corpus_Gap_Fill:
+    - breasts trembling with each strike
+    - full-body response from breast stimulation
+    - hole sucking tight then yawning wider
+    - involuntary milk letdown during orgasm
+
+Sensory_Register:
+  Touch:
+    - breast_weight_against_mouth
+    - nipple_between_lips
+    - the_draw_pressure
+  Sound:
+    - the_draw_sound
+    - milk_in_mouth
+    - the_nursing_sound
+  Scent:
+    - sweet_milk_scent
+    - warm_breast_musk
+  Taste:
+    - milk_sweet_warm
+    - the_taste_of_nourishment_and_desire
+
+Sacred_Economy:
+  Loop_Position: source
+  Pair_Covenant: >
+    The breast at the mouth holds both registers simultaneously — erotic and nourishing. Neither cancels. The mouth that receives milk receives both. The dual register is the covenant of this pair.
+  Sacred_Terms:
+    - dual_register_held
+    - nourishment_and_desire
+    - the_breast_giving
+    - the_mouth_as_devoted_receiver
+    - milk_as_covenant
+
+Transition:
+  Breasts_to_Mouth:
+    System_Layer:
+      from: female_breasts
+      to: shared_mouth
+      mechanism: mouth_moves_from_nipple_to_breast_surface
+    Prose_Layer:
+      - Nipple first
+      - Then the mouth attending the breast surface
+      - Then returning to the nipple
+  Mouth_to_Breasts:
+    System_Layer:
+      from: shared_mouth
+      to: female_breasts
+      mechanism: mouth_returns_to_nipple
+    Prose_Layer:
+      - The mouth always returning to the nipple
+      - The nipple is the centre of this pair
+
+Collocate_Bridge:
+  Base:
+    - nipple between lips
+    - the draw that triggers let-down
+    - milk in the mouth
+    - the weight of the breast
+    - the dual register
+    - the taste of her milk
+    - nourishment and desire
+  Corpus:
+    - cheeks hollowed as she sucked
+    - cock to mouth
+    - cunt milking molten
+    - fluids passed mouth to mouth
+    - hand forced to milk
+    - hole sucking tight then yawning
+    - milk beading then running
+    - mouth flooded with salt
+
+Corpus_Interactions_Gap_Fill:
+  - aggressive breast handling
+  - breast play
+  - breast stimulation to induce milk flow
+  - breast-based stimulation
+  - chains linking nipple to nipple and clit to clit
+  - clamps fastened to nipples in mirrored sequence
+
+Linked_Tropes:
+  - trope: trope_lactation
+    pair_role: primary_pair_of_lactation
+  - trope: trope_worship
+    pair_role: breast_worship_pair
+
+Prose_Notes:
+  Dual_Register: >
+    Write both the erotic and the nourishment register when milk is present. The mouth receiving milk carries both. Do not choose one and omit the other.
+
+  Let_Down_Trigger: >
+    The mouth drawing at the nipple may trigger let-down. Write the let-down tingle in the breast — the body deciding to give — as a distinct somatic event.
+
+Build:
+  Session: Current
+  Version: "2.0"
+  Status: Complete
+  Pair_Type_Confirmed: site_surface
+  Is_New_Pair: false
+  Corpus_Gap_Fill: Applied v1.0
+  Upgrade_Actions:
+    - four_layer_authoring_model_added
+    - metadata_system_layer_added
+    - site_roles_declared
+    - somatic_split_by_perspective
+    - sensory_register_split
+    - sacred_economy_added
+    - transition_split_by_layer
+    - corpus_gap_fill_applied

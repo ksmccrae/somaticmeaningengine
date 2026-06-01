@@ -1,0 +1,412 @@
+# ============================================================
+# K.S. McCRAE SOMATIC LEXICON SYSTEM
+# Register: Trans Feminine
+# Version: 2.0
+# ============================================================
+#
+# AUTHORING MODEL
+# LEXICON LAYER:  All female register terms apply plus TF-specific
+# SYSTEM LAYER:   Site index, sovereignty rules, char terminology
+# SOMATIC LAYER:  Somatic_Register — writer-facing, not compiled
+# PROSE LAYER:    Generation_Notes — writer-facing, not compiled
+#
+# CRITICAL RULES (v2.0 — now formalised as System Layer primitives)
+# 1. Character_Terminology_Governs: ABSOLUTE
+# 2. Sovereign_Register_Identical: female register fully
+# 3. Constructed_Anatomy_Is_Real: no qualification permitted
+# 4. HRT_Changes_Are_Somatic_Truth: sensation is her sensation
+# 5. Never_Diminish_TF_Anatomy: fake, neo (as lesser), artificial banned
+# ============================================================
+
+Register: trans_feminine
+Version: "2.0"
+Type: register
+Author: K.S. McCrae
+Layer: Primary
+Status: Active
+
+# ============================================================
+# ABSOLUTE RULES  [System Layer — highest priority]
+# ============================================================
+
+Absolute_Rules:
+  Character_Terminology_Governs:
+    Rule: ABSOLUTE
+    Priority: Highest
+    Description: >
+      Whatever term the TF character uses for their anatomy,
+      that is the term used in prose. If she calls it her cunt,
+      it is her cunt. If she calls it her girl cock, that is her
+      girl cock. Default without her direction: female terms.
+    Applies_To: all anatomical sites
+    Cannot_Be_Overridden: true
+
+  Sovereign_Register_Fixed:
+    Rule: ABSOLUTE
+    Description: >
+      Trans feminine bodies carry identical sovereign register
+      to natal female bodies. No qualification. No distinction.
+      Her sovereignty is not conditional on surgery status,
+      HRT history, or any physical characteristic.
+
+  Constructed_Anatomy_Is_Real:
+    Rule: ABSOLUTE
+    Description: >
+      Constructed anatomy is anatomy. Her cunt is her cunt.
+      Her labia are her labia. Her pearl is her pearl.
+      Never write neo-vagina, constructed vagina, surgical result,
+      or any term that frames her anatomy as lesser or different.
+    Exception: >
+      She may use neo- terms for herself. If she does,
+      follow her terminology. Character governs.
+
+  HRT_Changes_Are_Somatic_Truth:
+    Rule: ABSOLUTE
+    Description: >
+      HRT changes to her body — breast growth, skin changes,
+      reduced testicular function — are her body's truth.
+      Not side effects. Not symptoms. Her body.
+      Write from her somatic experience, not from medical framing.
+
+  Feminization_Trope_Distinct_From_Identity:
+    Rule: ABSOLUTE
+    Description: >
+      trope_feminization is a power/scene register applied to
+      male bodies by dominant partners. It is NOT trans identity.
+      Never conflate feminization trope with TF identity.
+      Wren's feminization in Made to Receive is not
+      Wren being trans — it is a scene register.
+
+Identity:
+  Default_Power: Sovereign
+  Default_Tone: Becoming_and_Arrived
+  Sacred_Frame: Covenant_through_threshold
+  Inherits: register_female.yaml (full)
+  Description: >
+    The trans feminine register inherits the complete female
+    register and adds the becoming/arrival dimensions specific
+    to trans feminine experience. Sovereign register identical.
+    The crossing has been made or is being made. Her body is hers.
+
+# ============================================================
+# SITE INDEX  [System Layer]
+# ============================================================
+
+Primary_Sites:
+
+  - id: tf_breasts
+    file: anatomical/trans/tf_breasts.yaml
+    version: "1.0"
+    Power: Sovereign
+    Salience: Primary
+    Inherits: female_breasts register fully
+    Becoming_Register: available_not_required
+    Note: Her breasts. HRT or augmented or both. Sovereign.
+
+  - id: tf_cock
+    file: anatomical/trans/tf_cock.yaml
+    version: "1.0"
+    Power: Sovereign
+    Salience: Primary
+    Note: >
+      Her cock if pre-op or non-op. Her terms govern.
+      Dual register available — her femininity and her cock
+      held simultaneously without resolution.
+
+  - id: tf_cunt
+    file: anatomical/trans/tf_cunt.yaml
+    version: "1.0"
+    Power: Sovereign
+    Salience: Primary
+    Inherits: female_cunt register fully
+    Note: >
+      Her cunt if post-op. Constructed and sovereign.
+      All female_cunt vocabulary applies without qualification.
+
+  - id: tf_labia
+    file: anatomical/trans/tf_labia.yaml
+    version: "1.0"
+    Power: Sovereign
+    Salience: Secondary
+    Inherits: female_labia register fully
+
+  - id: tf_mons
+    file: anatomical/trans/tf_mons.yaml
+    version: "1.0"
+    Power: Sovereign
+    Salience: Tertiary
+    Inherits: female_mons register fully
+
+  - id: tf_neo_clit
+    file: anatomical/trans/tf_neo_clit.yaml
+    version: "1.0"
+    Power: Sovereign
+    Salience: Primary
+    Preferred_Term: her_pearl
+    Inherits: female_clitoris register fully
+    Note: >
+      Her pearl. Glans tissue — full nerve density.
+      High sensitivity. All female_clitoris vocabulary applies.
+
+  - id: tf_prostate
+    file: anatomical/trans/tf_prostate.yaml
+    version: "1.0"
+    Power: Sovereign
+    Salience: Contextual
+    Preferred_Term: her_gland
+    Note: Her prostate. Present post-op if she retains it.
+
+All_Female_Sites_Apply:
+  Note: >
+    All female primary and shared sites from register_female.yaml
+    apply to trans feminine bodies with identical sovereign register.
+  Female_Sites_File: register_female.yaml
+  Inflection: identical_sovereign_throughout
+
+# ============================================================
+# FLUID INDEX  [System Layer]
+# ============================================================
+
+Fluid_Index:
+  TF_Specific:
+    tf_gloss:
+      file: fluids/trans/tf_gloss.yaml
+      type: parallel
+      parent: female_gloss
+      note: Her gloss. Post-op cunt. Full female_gloss register.
+    tf_seed:
+      file: fluids/trans/tf_seed.yaml
+      type: parallel
+      parent: male_seed
+      note: Her seed. Her cock. Full male_seed register with her pronouns.
+  All_Female_Fluids_Apply:
+    note: >
+      All female fluid entries apply where anatomically present.
+      Her milk if lactating (HRT induction possible).
+      Her flood if post-op cunt present.
+  Shared_Fluids: all_shared_fluids_apply
+
+# ============================================================
+# POWER ARCHITECTURE  [System Layer]
+# ============================================================
+
+Power_Architecture:
+  Default: Sovereign
+  Sovereignty_Identical_To: register_female.yaml
+  Becoming_Register:
+    Available: true
+    Required: false
+    Note: >
+      The becoming register is available when the prose calls
+      for it — the arrival still new, still marvelled at.
+      But it is never required. She is not always in transit.
+      She may have arrived. Both states are valid.
+  Arrival_Register:
+    Terms: [arrived, the_crossing_made, hers_now_whole, threshold_crossed]
+    Note: The crossing has been made. She is here.
+
+Power_Primitives:
+  sovereign_arrived:
+    Definition: TF body in full sovereign register — crossing made
+    Register: She has arrived. Her body is hers.
+  sovereign_becoming:
+    Definition: TF body in becoming register — crossing in progress
+    Register: The threshold being crossed. Both states held.
+  dual_register_tf:
+    Definition: Her cock and her femininity held simultaneously
+    Register: Both true without resolution. Her specific sovereignty.
+
+# ============================================================
+# PRIMITIVES  [System + Lexicon Layers]
+# ============================================================
+
+TF_Specific_Primitives:
+  Becoming_Terms:
+    - arrived
+    - the_crossing_made
+    - hers_now_whole
+    - threshold_crossed
+    - becoming_made_flesh
+  Sacred_Arrival:
+    - her_pearl
+    - her_cunt
+    - her_gloss
+    - her_breasts
+    - the_body_that_arrived
+    - constructed_and_sovereign
+  Dual_Register:
+    - her_cock
+    - hers
+    - dual_site
+    - both_true_without_resolution
+    - sovereign_in_her_femininity
+
+All_Female_Primitives_Apply:
+  Note: All motion, fluid, scene role primitives from register_female apply.
+
+# ============================================================
+# TROPE INDEX  [System Layer]
+# ============================================================
+
+Trope_Index:
+  Primary_TF_Tropes:
+    - trope_body_reclamation  # arrival register — primary
+    - trope_transformation    # crossing register — primary
+    - trope_queening          # sovereign register active
+    - trope_fluid_ritual      # tf_gloss and tf_seed in loop
+    - trope_worship           # her anatomy worshipped
+  Inherits_Female_Trope_Index: true
+  Note: >
+    All female-relevant tropes apply to TF bodies.
+    trope_feminization specifically NOT applied to TF identity
+    (that is Wren's scene register, not trans identity).
+
+Pair_Index:
+  Inherits_Female_Pair_Index: true
+  TF_Specific:
+    - pair_tongue_cunt (when tf_cunt present)
+    - pair_hand_cunt (when tf_cunt present)
+    - pair_breasts_mouth (when tf_breasts present)
+
+# ============================================================
+# SOMATIC REGISTER  [Somatic Layer — writer-facing]
+# ============================================================
+
+Somatic_Register:
+  Arrival:
+    - The body that arrived — feeling it completely
+    - The breast in another's palm — landed
+    - Her cunt responding — her body's truth
+    - The pearl that is hers attending to her attention
+  Becoming:
+    - The crossing still happening — both states held
+    - The body changing under HRT — attended to
+    - The arrival noticed in each sensation
+  Dual_Register:
+    - Her cock responding — dual register held without resolution
+    - Both registers simultaneously true
+    - Her femininity and her cock — hers entire
+  General:
+    - All female somatic register applies
+    - Her sensation is her sensation — not assumed from natal
+    - Write from her somatic truth not from medical framing
+
+# ============================================================
+# SACRED REGISTER  [Lexicon Layer]
+# ============================================================
+
+Sacred_Register:
+  TF_Specific_Terms:
+    - arrived
+    - the_crossing_made
+    - threshold_crossed
+    - hers_now_whole
+    - becoming_made_flesh
+    - constructed_and_sovereign
+    - her_cunt
+    - her_pearl
+    - her_breasts
+    - her_cock
+    - dual_register_held
+    - both_true
+  Inherits: register_female.yaml Sacred_Register fully
+
+# ============================================================
+# TONAL GOVERNORS  [Prose Layer]
+# ============================================================
+
+Tonal_Governors:
+  Always_Active:
+    - TF sovereignty identical to natal female sovereignty
+    - Constructed anatomy is never lesser anatomy
+    - HRT changes are her body's truth not side effects
+    - Becoming register available but never required
+    - Her terms govern her anatomy always
+  Forbidden_Registers:
+    - Constructed anatomy framed as lesser
+    - Medical framing without sovereign frame
+    - neo_ as lesser prefix (only if she uses it)
+    - Confusion with feminization trope (that is scene register)
+    - Qualification of her sovereignty
+
+# ============================================================
+# BANNED TERMS  [System Layer]
+# ============================================================
+
+Banned_Terms:
+  TF_Specific:
+    Primary_Bans:
+      - fake_vagina
+      - neo_vagina (as lesser — only her term if she uses it)
+      - constructed_vagina (clinical standalone)
+      - surgical_result
+      - man_boobs
+      - moobs
+      - hormone_chest
+      - male_genitalia (applied to her)
+      - his_cock (applied to her without her direction)
+      - boy_cock
+    Misgendering:
+      - he (applied to her)
+      - him (applied to her)
+      - his (applied to her anatomy without her direction)
+    Diminishing:
+      - despite_hrt
+      - even_though
+      - not_real (applied to her anatomy)
+      - fake (applied to her anatomy)
+  Inherits_Female_Banned: true
+  Note: >
+    All female register banned terms apply to TF bodies.
+    Additional TF-specific bans above.
+
+# ============================================================
+# GENERATION NOTES  [Prose Layer]
+# ============================================================
+
+Generation_Notes:
+  Priority_1: >
+    Character terminology governs absolutely.
+    If she names her anatomy, that is the name.
+    Default without her direction: female terms throughout.
+  Priority_2: >
+    Sovereign register is identical to natal female.
+    No qualification. No 'despite' or 'even though'.
+    Her body is her body.
+  Priority_3: >
+    Constructed anatomy is anatomy. Apply female register fully.
+    Her cunt is her cunt. Her pearl is her pearl.
+  Priority_4: >
+    The becoming register is available but not required.
+    She may have arrived. She may be arriving.
+    Both are valid. Follow her character.
+  Priority_5: >
+    Dual register (her cock + her femininity) is held
+    without resolution. Both true simultaneously.
+    Write without collapsing into either register alone.
+  Priority_6: >
+    HRT changes are her somatic truth.
+    Write from her sensation, not from medical framing.
+  Priority_7: >
+    Never conflate trope_feminization with TF identity.
+    Feminization is a scene/power register.
+    Trans feminine identity is identity. Not a scene.
+
+# ============================================================
+# BUILD  [System Layer]
+# ============================================================
+
+Build:
+  Session: Current
+  Version: "2.0"
+  Status: Complete
+  Syntax_Errors_Fixed: true
+  Changes_From_1_0: >
+    Four-layer authoring model. Absolute_Rules block added
+    with all five critical rules as System Layer primitives.
+    Character_Terminology_Governs formalised as highest-priority
+    system rule. Constructed_Anatomy_Is_Real as structural rule.
+    Feminization_Trope_Distinct formalised. TF-specific primitives
+    added. Trope_Index added. Pair_Index added. Syntax errors fixed.
+    File paths updated. Becoming register made explicit as
+    available-not-required.

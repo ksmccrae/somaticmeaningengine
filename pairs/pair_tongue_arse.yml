@@ -1,0 +1,285 @@
+# ============================================================
+# K.S. McCRAE SOMATIC LEXICON SYSTEM
+# Pair: Tongue + Arse
+# Pair_Type: instrument_site
+# Register: Variable / Tongue_devotional
+# Version: 2.0
+# ============================================================
+#
+# AUTHORING MODEL
+# LEXICON LAYER:  intersection terms, motion primitives,
+#                 collocate bridge — compiled when both
+#                 sites active simultaneously
+# SYSTEM LAYER:   dependencies, site roles, power map,
+#                 entry conditions — system context
+# SOMATIC LAYER:  site_A perspective, site_B perspective,
+#                 simultaneous sensation — not compiled
+# PROSE LAYER:    motion discipline, fluid discipline,
+#                 scene notes — not compiled
+#
+# ACTIVATION: Pair vocabulary only activates when BOTH
+# sites are simultaneously present in scene.
+# ============================================================
+
+Pair: tongue_arse
+Version: "2.0"
+Type: pair
+Pair_Type: instrument_site
+Register: Variable / Tongue_devotional
+Status: Active
+
+Sites:
+  A:
+    id: shared_tongue
+    file: anatomical/shared/shared_tongue.yaml
+    role_in_pair: instrument_of_devotion
+  B:
+    id: shared_arse
+    file: anatomical/shared/shared_arse.yaml
+    role_in_pair: receiving_site_sovereign_in_register
+
+Dependencies:
+  anatomy:
+    - shared_tongue
+    - shared_arse
+    - shared_perineum
+    - shared_mouth
+  fluids:
+    - shared_saliva
+    - shared_musk
+    - female_gloss
+  tropes:
+    - trope_worship
+    - trope_power_exchange
+
+Entry_Conditions:
+  requires:
+    - tongue_active
+    - arse_in_scene
+    - rim_contact_established
+  power_required: any
+  register_notes: >
+    The arse carries the register of the body it belongs to. The tongue is instrument — devoted, precise. The circling does not stop.
+
+Power_Map:
+  Site_A_Role: instrument
+  Site_B_Role: variable
+  Governing_Register: body_register_of_arse_owner
+  Note: >
+    The arse's register is governed by the body it belongs to. Female arse: sovereign. Male arse: variable. The tongue serves in all cases.
+
+Corpus_Status:
+  Corpus_Extract_Reviewed: true
+  Gap_Fill_Applied: true
+  Gap_Fill_Version: "1.0"
+
+Identity:
+  Label: Tongue + Arse
+  Description: >
+    The tongue at the rim. Rim worship register. The tongue circles the ring — warm, slow, deliberate. The ring softens under sustained attention. The musk here is truffle-dark, concentrated. The tongue reads the rim as it reads every surface — finding, attending, returning.
+
+# ============================================================
+# INTERSECTION REGISTER  [Lexicon Layer]
+# ============================================================
+
+Intersection_Register:
+
+  Contact_Terms:
+    - tongue_at_the_ring
+    - tongue_on_rim
+    - circling_the_ring
+    - rim_against_tongue
+    - the_hollow_attended
+  Motion_Primitives:
+    - circling_the_rim
+    - pressing_at_ring
+    - tongue_working_the_rim
+    - the_rim_softening
+    - the_entry_of_tongue
+  Arrival_Terms:
+    - tongue_arriving_at_rim
+    - the_first_warm_circle
+  Completion_Terms:
+    - rim_yielded
+    - the_hollow_opened
+  Sacred_Intersection:
+    - rim_as_threshold
+    - tongue_at_the_covenant_entrance
+    - the_devoted_circle_at_rim
+    - the_ring_read_as_text
+    - altar and offering
+    - arse learns first
+    - body as offering and meal
+    - chocolate as offering
+
+Instrument_Register:
+  Instrument_Site: shared_tongue
+  Served_Site: shared_arse
+  Motion_Vocabulary:
+    - circling_the_rim
+    - pressing_at_ring
+    - tongue_flattening_on_ring
+    - the_slow_circle
+    - entry_tongue
+  Service_Register:
+    - tongue_softening_the_ring
+    - the_warm_approach_to_the_rim
+    - attending_the_hollow
+  Not_Diminished_Note: >
+    Rim worship is devotional register. The tongue at the rim is skilled service.
+
+Fluid_Register:
+  - fluid: shared_saliva
+    role_in_pair: primary_lubricant
+    intersection_terms:
+      - saliva_on_rim
+      - the_wet_of_the_tongue_there
+      - the_coat_the_tongue_brings
+    behavior_note: >
+      Saliva is what the tongue brings to the rim — preparation and devotion simultaneously.
+  - fluid: shared_musk
+    role_in_pair: atmospheric_primary
+    intersection_terms:
+      - truffle_musk_concentrated
+      - the_depth_musk
+      - the_full_musk_of_the_rim
+    behavior_note: >
+      Musk is most concentrated at the rim. Write the truffle-dark register as distinct from bloom musk.
+  - fluid: female_gloss
+    role_in_pair: secondary_when_female_arse
+    intersection_terms:
+      - gloss_from_cunt_reaching_rim
+    behavior_note: >
+      When female body — gloss may overflow from cunt to perineum to rim. Both fluids present.
+
+# ============================================================
+# SOMATIC REGISTER  [Somatic Layer]
+# Not vocabulary. Not compiled. Writer-facing.
+# ============================================================
+
+Somatic:
+  Site_A_Perspective:
+    - musk concentrated under the tongue
+    - the ring softening slowly
+    - the ring yielding to sustained attention
+    - warmth of the rim against the tongue
+  Site_B_Perspective:
+    - the warm circle arriving at the ring
+    - the ring recognising the tongue's approach
+    - the slow yield to sustained tongue
+    - the hollow attended
+  Simultaneous:
+    - warmth meeting warmth at the ring
+    - the musk between tongue and rim
+    - the circle that softens what was tight
+  Corpus_Gap_Fill:
+    - vibration triggering involuntary contraction
+    - ache blurring into burn
+    - aftershocks in cunt and arse
+    - afterspasm lingering in bellies
+
+Sensory_Register:
+  Touch:
+    - warm_tongue_on_ring
+    - the_circle_at_rim
+    - the_press_inward
+  Sound:
+    - wet_circle_sound
+    - the_soft_sounds_of_rim_worship
+    - breath_at_the_hollow
+  Scent:
+    - truffle_dark_concentrated
+    - depth_musk
+    - body_salt_at_rim
+  Taste:
+    - truffle_salt
+    - the_depth_taste
+    - musk_on_tongue
+
+Sacred_Economy:
+  Loop_Position: transfer
+  Pair_Covenant: >
+    The tongue at the rim is the covenant of total attention to the body — no part excluded from devotion. The rim softens under the circle. What was tight yields to sustained warmth. This is the complete register.
+  Sacred_Terms:
+    - rim_attended
+    - the_devoted_circle
+    - threshold_of_the_ring
+    - no_site_excluded
+    - tongue_at_the_covenant_entrance
+
+Transition:
+  Tongue_to_Arse:
+    System_Layer:
+      from: shared_tongue
+      to: shared_arse
+      mechanism: tongue_moves_from_perineum_to_rim
+    Prose_Layer:
+      - From the seam to the rim
+      - The tongue tracing the perineum to arrive at the ring
+      - The circle beginning at first contact
+  Arse_to_Tongue:
+    System_Layer:
+      from: shared_arse
+      to: shared_tongue
+      mechanism: tongue_returns_to_perineum_or_cunt
+    Prose_Layer:
+      - The tongue following the seam upward
+      - From rim back to perineum
+      - The tongue returning to the cunt after attending the rim
+
+Collocate_Bridge:
+  Base:
+    - tongue at the ring
+    - the warm circle
+    - rim softening
+    - the hollow attended
+    - truffle musk
+    - the rim yielding
+    - devoted tongue at the ring
+  Corpus:
+    - cunt answering pressure
+    - body answering body
+    - bush breathing musk
+    - citrus and musk
+    - clear ropes spilling around the rim
+    - droplets pattering to floor
+    - flood pouring straight inside
+    - folds smearing across face
+
+Corpus_Interactions_Gap_Fill:
+  - dual-site stimulation during intercourse
+  - remote-controlled vibration during daily activity
+  - addition of third ring to increase separation
+  - application of constriction rings
+  - application of constriction rings to separate cock and balls
+  - arse holding and releasing fluid
+
+Linked_Tropes:
+  - trope: trope_worship
+    pair_role: rim_worship_instrument_pair
+  - trope: trope_power_exchange
+    pair_role: total_attention_register
+
+Prose_Notes:
+  Circle_Register: >
+    The rim worship circle is slower than the pearl circle. Warmer. More deliberate. The ring takes time. Write the patience.
+
+  Musk_Register: >
+    The truffle-dark musk at the rim is distinct from the bloom musk of the cunt. Write the distinction. This is the deepest body register.
+
+Build:
+  Session: Current
+  Version: "2.0"
+  Status: Complete
+  Pair_Type_Confirmed: instrument_site
+  Is_New_Pair: false
+  Corpus_Gap_Fill: Applied v1.0
+  Upgrade_Actions:
+    - four_layer_authoring_model_added
+    - metadata_system_layer_added
+    - site_roles_declared
+    - somatic_split_by_perspective
+    - sensory_register_split
+    - sacred_economy_added
+    - transition_split_by_layer
+    - corpus_gap_fill_applied
