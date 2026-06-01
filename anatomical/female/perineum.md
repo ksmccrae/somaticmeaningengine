@@ -41,6 +41,13 @@ How sensation or activation from this site tends to move:
 - Touch or pressure → pelvic floor engagement → internal and clitoral awareness
 - Strong connection to both genital and anal sensation
 
+## Associated Structures
+
+Related or functionally linked anatomical elements:
+- Cunt
+- Arse
+- Pelvic floor
+
 ## Emotional / Symbolic Associations
 
 Common emotional or symbolic meanings:
