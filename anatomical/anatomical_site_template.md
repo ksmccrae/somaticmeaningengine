@@ -43,6 +43,29 @@ Common emotional or symbolic meanings attached to this site:
 - 
 - 
 
+## Governance
+
+```yaml
+governance:
+  baseline_allowed: true
+  weights:
+    register: 0.0
+    sacred: 0.0
+    slang: 0.0
+    clinical: 0.0
+    comic: 0.0
+  thresholds:
+    clinical:
+      default: 0.15
+      allowed_contexts: []
+    comic:
+      default: 0.00
+      allowed_when: []
+  author_override:
+    allowed: true
+    requires_reason: true
+```
+
 ## Notes / Constraints
 
 - 
