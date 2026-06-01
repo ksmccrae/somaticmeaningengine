@@ -44,6 +44,13 @@ How sensation or activation from this site tends to move:
 - Often creates whole-body waves of sensation
 - Strong propagation into emotional and somatic softening
 
+## Associated Structures
+
+Related or functionally linked anatomical elements:
+- Cunt
+- Urethra
+- Labia
+
 ## Emotional / Symbolic Associations
 
 Common emotional or symbolic meanings:
