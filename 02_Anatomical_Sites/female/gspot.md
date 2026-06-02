@@ -45,6 +45,7 @@ Sites this area commonly mirrors to:
 - [[Urethra]] and urethral sponge
 - Pelvic floor
 - Deep internal sensation and emotional states
+- See internal/pelvic mirror notes for related patterns
 
 ## Propagation Patterns
 
