@@ -53,8 +53,9 @@ How sensation or activation from this site tends to move:
 ## Associated Structures
 
 Related or functionally linked anatomical elements:
-- Labia majora
-- Clitoris
+- [[Vulva]]
+- [[Clitoris]]
+- [[Labia Majora]]
 - Vaginal opening
 - Urethra
 
@@ -83,9 +84,6 @@ governance:
     allowed: true
     requires_reason: true
 ```
-
-## Related Embodiment Layer
-[[Female]]
 
 ## Related Registers
 
