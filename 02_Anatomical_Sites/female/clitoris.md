@@ -41,7 +41,7 @@ How this site typically feels and responds:
 
 Sites this area commonly mirrors to:
 - [[Vulva]]
-- [[Nipples]] and breasts (very strong) — see [[Clitoris_Pelvic_Mirrors]] and breast/nipple mirror notes
+- Nipples and breasts (very strong)
 - Pelvic floor
 - [[Urethra]]
 - Full-body tension and release
