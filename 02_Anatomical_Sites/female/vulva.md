@@ -63,8 +63,8 @@ Related or functionally linked anatomical elements:
 - [[Labia Minora]]
 - [[G-Spot]]
 - [[Vaginal Wall]]
-- [[Urethra]]
-- Perineum
+- [[Female Urethra]]
+- [[Perineum]]
 
 ## Emotional / Symbolic Associations
 
