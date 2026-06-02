@@ -52,9 +52,9 @@ How sensation or activation from this site tends to move:
 ## Associated Structures
 
 Related or functionally linked anatomical elements:
-- Labia minora
-- Clitoris
-- Vulva
+- [[Vulva]]
+- [[Clitoris]]
+- [[Labia Minora]]
 - Perineum
 
 ## Emotional / Symbolic Associations
@@ -82,9 +82,6 @@ governance:
     allowed: true
     requires_reason: true
 ```
-
-## Related Embodiment Layer
-[[Female]]
 
 ## Related Registers
 
