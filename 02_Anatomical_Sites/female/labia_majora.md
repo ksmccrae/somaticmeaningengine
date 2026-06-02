@@ -54,6 +54,7 @@ How sensation or activation from this site tends to move:
 Related or functionally linked anatomical elements:
 - Labia minora
 - Clitoris
+- Vulva
 - Perineum
 
 ## Emotional / Symbolic Associations
@@ -63,10 +64,27 @@ Common emotional or symbolic meanings:
 - Erotic aesthetics
 - Vulnerability when parted
 
-## Notes / Constraints
+## Governance
 
-- Important for both visual and tactile dimensions of the vulva
-- Less neurologically dense than labia minora or clitoris but still significant
+```yaml
+governance:
+  baseline_allowed: true
+  weights:
+    register: 0.75
+    sacred: 0.60
+    slang: 0.35
+    clinical: 0.55
+    comic: 0.00
+  thresholds:
+    clinical:
+      default: 0.25
+  author_override:
+    allowed: true
+    requires_reason: true
+```
+
+## Related Embodiment Layer
+[[Female]]
 
 ## Related Registers
 
