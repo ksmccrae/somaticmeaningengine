@@ -40,10 +40,10 @@ How this site typically feels and responds:
 ## Mirror Potential
 
 Sites this area commonly mirrors to:
-- Vulva / cunt
-- Nipples and breasts (very strong)
+- [[Vulva]]
+- [[Nipples]] and breasts (very strong) — see [[Clitoris_Pelvic_Mirrors]] and breast/nipple mirror notes
 - Pelvic floor
-- Urethra
+- [[Urethra]]
 - Full-body tension and release
 
 ## Propagation Patterns
@@ -55,9 +55,9 @@ How sensation or activation from this site tends to move:
 ## Associated Structures
 
 Related or functionally linked anatomical elements:
-- Vulva
-- Labia minora
-- Urethra
+- [[Vulva]]
+- [[Labia Minora]]
+- [[Urethra]]
 - Vaginal opening
 
 ## Emotional / Symbolic Associations

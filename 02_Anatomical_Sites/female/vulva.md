@@ -43,7 +43,7 @@ How this site typically feels and responds:
 ## Mirror Potential
 
 Sites this area commonly mirrors to:
-- Clitoris (very strong)
+- [[Clitoris]] (very strong)
 - Nipples and breasts
 - Pelvic floor
 - Perineum and anus
@@ -61,9 +61,10 @@ Related or functionally linked anatomical elements:
 - [[Clitoris]]
 - [[Labia Majora]]
 - [[Labia Minora]]
-- Urethra
+- [[G-Spot]]
+- [[Vaginal Wall]]
+- [[Urethra]]
 - Perineum
-- Vaginal opening
 
 ## Emotional / Symbolic Associations
 

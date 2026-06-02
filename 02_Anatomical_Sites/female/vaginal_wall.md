@@ -39,9 +39,9 @@ How this site typically feels and responds:
 ## Mirror Potential
 
 Sites this area commonly mirrors to:
-- G-Spot
-- Clitoris (via internal connections)
-- Urethra and Skene’s glands
+- [[G-Spot]]
+- [[Clitoris]] (via internal connections)
+- [[Urethra]] and Skene’s glands
 - Pelvic floor
 - Deep internal and emotional states
 
@@ -55,8 +55,8 @@ How sensation or activation from this site tends to move:
 
 Related or functionally linked anatomical elements:
 - [[G-Spot]]
-- Skene’s glands
-- Urethra
+- [[Skene’s Glands]]
+- [[Urethra]]
 - [[Vulva]]
 - Cervix (at the internal end)
 
