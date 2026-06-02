@@ -95,11 +95,8 @@ governance:
     requires_reason: true
 ```
 
-## Notes / Constraints
-
-- Primary external erotic site in female embodiment
-- Strong mirror and propagation connections
-- Requires precise language depending on register
+## Related Embodiment Layer
+[[Female]]
 
 ## Related Registers
 
