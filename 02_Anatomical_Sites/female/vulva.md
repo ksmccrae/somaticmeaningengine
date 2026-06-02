@@ -58,9 +58,9 @@ How sensation or activation from this site tends to move:
 ## Associated Structures
 
 Related or functionally linked anatomical elements:
-- Labia majora
-- Labia minora
-- Clitoris
+- [[Clitoris]]
+- [[Labia Majora]]
+- [[Labia Minora]]
 - Urethra
 - Perineum
 - Vaginal opening
