@@ -38,9 +38,9 @@ How this site typically feels and responds:
 ## Mirror Potential
 
 Sites this area commonly mirrors to:
-- G-Spot
-- Urethra
-- Clitoris (via internal connections)
+- [[G-Spot]]
+- [[Urethra]]
+- [[Clitoris]] (via internal connections)
 - Pelvic floor
 
 ## Propagation Patterns
@@ -54,7 +54,7 @@ How sensation or activation from this site tends to move:
 Related or functionally linked anatomical elements:
 - [[G-Spot]]
 - Urethral sponge
-- Anterior vaginal wall (future dedicated site)
+- [[Vaginal Wall]] (future dedicated site)
 - [[Vulva]]
 
 ## Emotional / Symbolic Associations
