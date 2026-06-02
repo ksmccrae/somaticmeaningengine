@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "4849fc7bee34da86",
+        "id": "b6ced0c473f59135",
         "type": "tabs",
         "children": [
           {
-            "id": "214f9622ea1dd94b",
+            "id": "d7285851a79f95dc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00_Master_Embodiment_Layers/female/Female.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Female"
+              "title": "New tab"
             }
           }
         ]
@@ -192,35 +188,45 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "214f9622ea1dd94b",
+  "active": "9cab35594af36586",
   "lastOpenFiles": [
-    "anatomical/female/clit.md",
-    "00_Master_Embodiment_Layers/female/Female.md",
-    "00_Master_Embodiment_Layers/male/Male.md",
-    "anatomical/trans_masculine",
-    "anatomical/female/vulva.md",
-    "anatomical/female/urethra.md",
-    "anatomical/female/perineum.md",
-    "anatomical/female/labia_minora.md",
-    "anatomical/female/labia_majora.md",
-    "anatomical/female/labia.md",
-    "anatomical/female/gspot.md",
-    "anatomical/female/cunt.md",
-    "anatomical/female/clitoris.md",
-    "anatomical/female/arse.md",
-    "anatomical/female/anus.md",
-    "anatomical/anatomical_site_template.md",
-    "02_Cross_Cutting_Layers/propagation/Uterine_Menstrual_to_Emotional_Fatigue.md",
-    "02_Cross_Cutting_Layers/propagation/Clitoris_to_Breath_Posture.md",
-    "02_Cross_Cutting_Layers/propagation/Clitoris_Nipple_to_FullBody_Softening.md",
-    "02_Cross_Cutting_Layers/propagation/Clitoral_to_Breath_Posture.md",
-    "02_Cross_Cutting_Layers/propagation/Breast_Nipple_to_FullBody_Softening.md",
-    "02_Cross_Cutting_Layers/mirrors/Vaginal_Internal_Mirrors.md",
-    "02_Cross_Cutting_Layers/mirrors/Uterine_Menstrual_Mirrors.md",
-    "02_Cross_Cutting_Layers/mirrors/Cross_Embodiment_Female_Mirrors.md",
-    "02_Cross_Cutting_Layers/mirrors/Clitoris_Pelvic_Mirrors.md",
-    "02_Cross_Cutting_Layers/mirrors/Clitoral_Pelvic_Mirrors.md",
-    "02_Cross_Cutting_Layers/mirrors/Breast_Nipple_Mirrors.md",
+    "05_Voice_Systems/human_drift",
+    "05_Voice_Systems/example_register",
+    "05_Voice_Systems",
+    "04_Cross_Cutting_Layers/mirrors/Vaginal_Internal_Mirrors.md",
+    "04_Cross_Cutting_Layers/mirrors/Uterine_Menstrual_Mirrors.md",
+    "04_Cross_Cutting_Layers/mirrors/Cross_Embodiment_Female_Mirrors.md",
+    "04_Cross_Cutting_Layers/mirrors/Clitoris_Pelvic_Mirrors.md",
+    "04_Cross_Cutting_Layers/mirrors/Clitoral_Pelvic_Mirrors.md",
+    "04_Cross_Cutting_Layers/mirrors/Breast_Nipple_Mirrors.md",
+    "04_Cross_Cutting_Layers/propagation/Uterine_Menstrual_to_Emotional_Fatigue.md",
+    "04_Cross_Cutting_Layers/propagation/Clitoris_Nipple_to_FullBody_Softening.md",
+    "04_Cross_Cutting_Layers/propagation/Clitoris_to_Breath_Posture.md",
+    "04_Cross_Cutting_Layers/fluids/trans_masculine",
+    "04_Cross_Cutting_Layers/propagation/Clitoral_to_Breath_Posture.md",
+    "04_Cross_Cutting_Layers/propagation/Breast_Nipple_to_FullBody_Softening.md",
+    "04_Cross_Cutting_Layers/fluids/trans_feminine",
+    "04_Cross_Cutting_Layers/fluids/shared",
+    "04_Cross_Cutting_Layers/fluids/male",
+    "04_Cross_Cutting_Layers/fluids/female",
+    "04_Cross_Cutting_Layers/mirrors",
+    "04_Cross_Cutting_Layers/relational",
+    "04_Cross_Cutting_Layers/propagation",
+    "03_Cross_Cutting_Layers/mirrors/Vaginal_Internal_Mirrors.md",
+    "03_Cross_Cutting_Layers/mirrors/Uterine_Menstrual_Mirrors.md",
+    "03_Cross_Cutting_Layers/mirrors/Cross_Embodiment_Female_Mirrors.md",
+    "03_Cross_Cutting_Layers/mirrors/Clitoris_Pelvic_Mirrors.md",
+    "03_Cross_Cutting_Layers/mirrors/Clitoral_Pelvic_Mirrors.md",
+    "03_Cross_Cutting_Layers/mirrors/Breast_Nipple_Mirrors.md",
+    "03_Cross_Cutting_Layers/propagation/Uterine_Menstrual_to_Emotional_Fatigue.md",
+    "03_Cross_Cutting_Layers/propagation/Clitoris_to_Breath_Posture.md",
+    "03_Cross_Cutting_Layers/propagation/Clitoris_Nipple_to_FullBody_Softening.md",
+    "03_Cross_Cutting_Layers/propagation/Breast_Nipple_to_FullBody_Softening.md",
+    "03_Cross_Cutting_Layers/propagation/Clitoral_to_Breath_Posture.md",
+    "02_Anatomical_Sites/female/vulva.md",
+    "02_Anatomical_Sites/female/urethra.md",
+    "02_Anatomical_Sites/female/perineum.md",
+    "Untitled 1.canvas",
     "Untitled.canvas"
   ]
 }
