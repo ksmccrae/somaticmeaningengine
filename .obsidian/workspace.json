@@ -11,10 +11,14 @@
             "id": "214f9622ea1dd94b",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "00_Master_Embodiment_Layers/female/Female.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Female"
             }
           }
         ]
@@ -190,6 +194,9 @@
   },
   "active": "214f9622ea1dd94b",
   "lastOpenFiles": [
+    "anatomical/female/clit.md",
+    "00_Master_Embodiment_Layers/female/Female.md",
+    "00_Master_Embodiment_Layers/male/Male.md",
     "anatomical/trans_masculine",
     "anatomical/female/vulva.md",
     "anatomical/female/urethra.md",
@@ -200,7 +207,6 @@
     "anatomical/female/gspot.md",
     "anatomical/female/cunt.md",
     "anatomical/female/clitoris.md",
-    "anatomical/female/clit.md",
     "anatomical/female/arse.md",
     "anatomical/female/anus.md",
     "anatomical/anatomical_site_template.md",
@@ -215,7 +221,6 @@
     "02_Cross_Cutting_Layers/mirrors/Clitoris_Pelvic_Mirrors.md",
     "02_Cross_Cutting_Layers/mirrors/Clitoral_Pelvic_Mirrors.md",
     "02_Cross_Cutting_Layers/mirrors/Breast_Nipple_Mirrors.md",
-    "01_Tropes/Transformation.md",
     "Untitled.canvas"
   ]
 }
