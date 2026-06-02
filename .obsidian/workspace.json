@@ -11,10 +11,14 @@
             "id": "d7285851a79f95dc",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "02_Anatomical_Sites/female/anus.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "anus"
             }
           }
         ]
@@ -188,8 +192,10 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "9cab35594af36586",
+  "active": "d7285851a79f95dc",
   "lastOpenFiles": [
+    "02_Anatomical_Sites/female/arse.md",
+    "02_Anatomical_Sites/female/anus.md",
     "05_Voice_Systems/human_drift",
     "05_Voice_Systems/example_register",
     "05_Voice_Systems",
@@ -211,7 +217,6 @@
     "04_Cross_Cutting_Layers/fluids/female",
     "04_Cross_Cutting_Layers/mirrors",
     "04_Cross_Cutting_Layers/relational",
-    "04_Cross_Cutting_Layers/propagation",
     "03_Cross_Cutting_Layers/mirrors/Vaginal_Internal_Mirrors.md",
     "03_Cross_Cutting_Layers/mirrors/Uterine_Menstrual_Mirrors.md",
     "03_Cross_Cutting_Layers/mirrors/Cross_Embodiment_Female_Mirrors.md",
@@ -225,7 +230,6 @@
     "03_Cross_Cutting_Layers/propagation/Clitoral_to_Breath_Posture.md",
     "02_Anatomical_Sites/female/vulva.md",
     "02_Anatomical_Sites/female/urethra.md",
-    "02_Anatomical_Sites/female/perineum.md",
     "Untitled 1.canvas",
     "Untitled.canvas"
   ]
