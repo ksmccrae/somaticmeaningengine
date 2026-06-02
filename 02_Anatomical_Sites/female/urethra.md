@@ -39,9 +39,9 @@ How this site typically feels and responds:
 ## Mirror Potential
 
 Sites this area commonly mirrors to:
-- Clitoris (very strong)
-- G-Spot
-- Vaginal opening / Vulva
+- [[Clitoris]] (very strong)
+- [[G-Spot]]
+- [[Vulva]]
 - Pelvic floor
 
 ## Propagation Patterns
@@ -55,8 +55,8 @@ How sensation or activation from this site tends to move:
 Related or functionally linked anatomical elements:
 - [[Vulva]]
 - [[G-Spot]]
-- Skene’s glands
-- Clitoris
+- [[Skene’s Glands]]
+- [[Clitoris]]
 
 ## Emotional / Symbolic Associations
 
