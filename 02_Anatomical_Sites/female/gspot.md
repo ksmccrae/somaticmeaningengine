@@ -41,8 +41,8 @@ How this site typically feels and responds:
 ## Mirror Potential
 
 Sites this area commonly mirrors to:
-- Clitoris (very strong)
-- Urethra and urethral sponge
+- [[Clitoris]] (very strong)
+- [[Urethra]] and urethral sponge
 - Pelvic floor
 - Deep internal sensation and emotional states
 
@@ -57,10 +57,10 @@ How sensation or activation from this site tends to move:
 
 Related or functionally linked anatomical elements:
 - [[Vulva]]
-- Skene’s glands
+- [[Skene’s Glands]]
 - Urethral sponge
-- Anterior vaginal wall (future dedicated site)
-- Clitoris (via internal structure)
+- [[Vaginal Wall]] (future dedicated site)
+- [[Clitoris]] (via internal structure)
 
 ## Emotional / Symbolic Associations
 
