@@ -89,11 +89,8 @@ governance:
     requires_reason: true
 ```
 
-## Notes / Constraints
-
-- Highest erotic nerve density in female anatomy
-- Extremely strong mirror connections (especially nipples)
-- Requires high precision in language and stimulation
+## Related Embodiment Layer
+[[Female]]
 
 ## Related Registers
 
