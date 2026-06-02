@@ -3,14 +3,24 @@
 **Type:** Anatomical Site Register  
 **Primary Embodiment:** Female
 
+## Clinical / Anatomical Name
+G-Spot
+
+## Neutral / Somatic Terms
+- G-spot area
+- Anterior vaginal wall sensitivity
+
+## Explicit Erotic Terms
+- G-Spot
+
 ## Purpose
 
-The G-spot (Gräfenberg spot) refers to an area of heightened sensitivity on the anterior (front) vaginal wall, roughly 5–8 cm inside. It is closely associated with the urethral sponge and Skene’s glands and is often linked to deeper, more internal sensations and specific types of orgasm.
+The G-Spot (Gräfenberg spot) refers to an area of heightened sensitivity on the anterior (front) vaginal wall, roughly 5–8 cm inside. It is closely associated with the urethral sponge and Skene’s glands and is often linked to deeper, more internal sensations and specific types of orgasm.
 
 ## Allowed Terms
 
 Preferred / precise terms:
-- G-spot
+- G-Spot (clinical/erotic)
 - Anterior vaginal wall (more anatomical)
 - Urethral sponge area
 
@@ -31,7 +41,7 @@ How this site typically feels and responds:
 ## Mirror Potential
 
 Sites this area commonly mirrors to:
-- Clit (very strong)
+- Clitoris (very strong)
 - Urethra and urethral sponge
 - Pelvic floor
 - Deep internal sensation and emotional states
@@ -46,10 +56,11 @@ How sensation or activation from this site tends to move:
 ## Associated Structures
 
 Related or functionally linked anatomical elements:
+- [[Vulva]]
 - Skene’s glands
 - Urethral sponge
-- Anterior vaginal wall
-- Clit (via internal structure)
+- Anterior vaginal wall (future dedicated site)
+- Clitoris (via internal structure)
 
 ## Emotional / Symbolic Associations
 
@@ -58,12 +69,24 @@ Common emotional or symbolic meanings:
 - Intensity and overwhelm
 - Sometimes linked to emotional release or “female ejaculation” themes
 
-## Notes / Constraints
+## Governance
 
-- One of the more debated but neurologically significant areas
-- Requires clear communication and patience in exploration
-- Strong mirror connections to clitoris and urethra
-- Best understood as part of a broader internal pleasure system rather than an isolated spot
+```yaml
+governance:
+  baseline_allowed: true
+  weights:
+    register: 0.82
+    sacred: 0.68
+    slang: 0.48
+    clinical: 0.55
+    comic: 0.00
+  thresholds:
+    clinical:
+      default: 0.25
+  author_override:
+    allowed: true
+    requires_reason: true
+```
 
 ## Related Registers
 
