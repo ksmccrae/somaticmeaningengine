@@ -65,11 +65,27 @@ Common emotional or symbolic meanings:
 - Softness and receptivity
 - Visual and tactile erotic power
 
-## Notes / Constraints
+## Governance
 
-- More neurologically dense and erotically responsive than labia majora
-- Important site for both sensation and aesthetics
-- Strong mirror connection to clitoris
+```yaml
+governance:
+  baseline_allowed: true
+  weights:
+    register: 0.78
+    sacred: 0.62
+    slang: 0.38
+    clinical: 0.58
+    comic: 0.00
+  thresholds:
+    clinical:
+      default: 0.25
+  author_override:
+    allowed: true
+    requires_reason: true
+```
+
+## Related Embodiment Layer
+[[Female]]
 
 ## Related Registers
 
