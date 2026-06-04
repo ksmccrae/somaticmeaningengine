@@ -3,44 +3,65 @@
 **Type:** Anatomical Site Register  
 **Primary Embodiment:** Female
 
-## Clinical / Anatomical Name
-Vaginal Wall (Anterior)
-
-## Neutral / Somatic Terms
-- Vaginal wall
-- Anterior vaginal wall
-
-## Explicit Erotic Terms
-- Vaginal wall (in context of internal stimulation)
-
 ## Purpose
 
 The vaginal wall (particularly the anterior wall) is the muscular lining of the vagina. The anterior portion is especially significant due to its proximity to the G-Spot, Skene’s glands, and urethral sponge, making it a key site for deep internal sensation and stimulation.
 
-## Allowed Terms
+## Ontological Metadata
 
-Preferred / precise terms:
+### Node Type
+- **Composite** (contains functional zones such as G-Spot and Skene’s glands area)
+
+### Ontological Role
+- Sensory Hub (deep internal)
+- Propagation Hub
+
+### Salience
+```yaml
+embodiment: female
+weight: 0.80
+```
+
+### Temporal Characteristics
+- Reactive
+- Accumulative
+
+### Story System Affinities
+```yaml
+resonance: 0.70
+thermodynamic: 0.80
+optimization: 0.45
+ethical_dignity: 0.60
+```
+
+### Sacred Associations
+- Deep receptivity
+- Internal fullness
+- Transformation
+
+## Terms
+
+**Primary Clinical / Anatomical Name:** Vaginal Wall (Anterior)
+
+**Primary Neutral / Somatic Term:** Anterior vaginal wall
+
+**Primary Explicit Erotic Term:** Vaginal wall (internal stimulation)
+
+### Precise Terms
 - Vaginal wall (clinical)
 - Anterior vaginal wall
 
-## Banned Terms
+### Restricted Contextual Terms
+- Internal vaginal wall
 
-Terms to avoid:
+### No Exception Banned Terms
 - Overly generic or distancing language in erotic contexts
-
-## Somatic Descriptions
-
-How this site typically feels and responds:
-- Can produce deep, internal pressure and fullness sensations
-- Responsive to firm, sustained pressure and stretching
-- Closely linked to G-Spot and Skene’s glands response
-- Important in deeper penetration and internal stimulation
 
 ## Mirror Potential
 
 Sites this area commonly mirrors to:
 - [[G-Spot]]
-- [[Clitoris]] (via internal connections)
+- [[Clitoral Complex]]
 - [[Urethra]] and Skene’s glands
 - Pelvic floor
 - Deep internal and emotional states
@@ -57,8 +78,18 @@ Related or functionally linked anatomical elements:
 - [[G-Spot]]
 - [[Skene’s Glands]]
 - [[Urethra]]
-- [[Vulva]]
+- [[Clitoral Complex]]
 - Cervix (at the internal end)
+
+## Related Embodiment Layer
+[[Vulva]]
+
+## Related Registers
+
+- Somatic: Deep internal responsiveness
+- Sensory: Pressure, stretch, and deep sensation
+- Mirrors: Strong G-Spot, urethral, and clitoral mirrors
+- Propagation: Slower, deeper internal propagation
 
 ## Emotional / Symbolic Associations
 
@@ -66,6 +97,14 @@ Common emotional or symbolic meanings:
 - Deep internal receptivity and surrender
 - Intensity and fullness
 - Connection to broader internal pleasure systems
+
+## Somatic Descriptions
+
+How this site typically feels and responds:
+- Can produce deep, internal pressure and fullness sensations
+- Responsive to firm, sustained pressure and stretching
+- Closely linked to G-Spot and Skene’s glands response
+- Important in deeper penetration and internal stimulation
 
 ## Governance
 
@@ -75,8 +114,8 @@ governance:
   weights:
     register: 0.78
     sacred: 0.65
-    slang: 0.40
-    clinical: 0.70
+    slang: 0.38
+    clinical: 0.65
     comic: 0.00
   thresholds:
     clinical:
@@ -86,9 +125,7 @@ governance:
     requires_reason: true
 ```
 
-## Related Registers
+## Notes / Constraints
 
-- Somatic: Deep internal responsiveness
-- Sensory: Pressure, stretch, and deep sensation
-- Mirrors: Strong G-Spot, urethral, and clitoral mirrors
-- Propagation: Slower, deeper internal propagation pathways
+- Composite nature due to containing G-Spot and Skene’s glands zones
+- Important for deep internal sensation and propagation
