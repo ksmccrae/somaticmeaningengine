@@ -5,25 +5,68 @@
 
 ## Purpose
 
-[Brief description of this anatomical site and its role in the ontology]
+[Brief, precise description of this anatomical site and its core role in the ontology]
 
-## Allowed Terms
+## Ontological Metadata
 
-Preferred / precise terms for this site:
-- 
-- 
+### Node Type
+- **Composite** (contains sub-structures)  
+  or  
+- **Atomic** (discrete, non-grouped site)
 
-## Banned Terms
+### Ontological Role
+- Sensory Hub
+- Mirror Hub
+- Propagation Hub
+- Fluid Source
+- Relational Site
+- Symbolic Site
 
-Terms to avoid for this site:
-- 
-- 
+### Salience
+```yaml
+embodiment: female   # or male / shared / trans_feminine / trans_masculine
+weight: 0.85          # overall importance within the embodiment (0.0 – 1.0)
+```
 
-## Somatic Descriptions
+### Temporal Characteristics
+- Cyclical
+- Reactive
+- Persistent
+- Transitional
+- Accumulative
 
-How this site typically feels and responds:
-- 
-- 
+### Fluid Relationships
+```yaml
+primary:
+  - lubrication
+secondary:
+  - blood
+shared:
+  - sweat
+```
+
+### Story System Affinities
+```yaml
+resonance: 0.75
+thermodynamic: 0.90
+optimization: 0.30
+ethical_dignity: 0.60
+```
+
+### Witness Characteristics
+```yaml
+visible: true
+externally_observable: true
+self_observable: limited
+symbolic_visibility: high
+```
+
+### Sacred Associations
+- Becoming
+- Creation
+- Vulnerability
+- Sovereignty
+- Cyclical renewal
 
 ## Mirror Potential
 
@@ -43,9 +86,37 @@ Related or functionally linked anatomical elements:
 - 
 - 
 
+## Related Embodiment Layer
+[[Female]]   # or Male / Shared / Trans Feminine / Trans Masculine
+
+## Related Registers
+
+- Somatic:
+- Sensory:
+- Mirrors:
+- Propagation:
+
 ## Emotional / Symbolic Associations
 
 Common emotional or symbolic meanings attached to this site:
+- 
+- 
+
+## Allowed Terms
+
+Preferred / precise terms for this site:
+- 
+- 
+
+## Banned Terms
+
+Terms to avoid for this site:
+- 
+- 
+
+## Somatic Descriptions
+
+How this site typically feels and responds:
 - 
 - 
 
@@ -76,10 +147,3 @@ governance:
 
 - 
 - 
-
-## Related Registers
-
-- Somatic:
-- Sensory:
-- Mirrors:
-- Propagation:
