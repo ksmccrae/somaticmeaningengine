@@ -10,16 +10,17 @@ The vulva is the external female genitalia, encompassing the labia majora, labia
 ## Ontological Metadata
 
 ### Node Type
-- **Composite** (contains sub-structures: Clitoris, Labia Majora, Labia Minora, Vestibular Bulbs, etc.)
+- #Composite
+  - contains sub-structures: Clitoris, Labia Majora, Labia Minora, Vestibular Bulbs, etc.)
 
 ### Ontological Role
-- Sensory Hub
-- Mirror Hub
-- Symbolic Site
+- #Sensory Hub
+- #Mirror Hub
+- #Symbolic Site
 
 ### Temporal Characteristics
-- Cyclical
-- Reactive
+- #Cyclical
+- #Reactive
 
 ## Associated Structures
 
