@@ -68,6 +68,30 @@ symbolic_visibility: high
 - Sovereignty
 - Cyclical renewal
 
+## Terms
+
+**Primary Clinical / Anatomical Name:** Vulva
+
+**Primary Neutral / Somatic Term:** Vulval Area
+
+**Primary Explicit Erotic Term:** Cunt
+
+### Precise Terms
+- Vulva (clinical/anatomical)
+- Labia majora, labia minora
+- Clitoris, clitoral glans
+- Vaginal vestibule
+
+### Restricted Contextual Terms
+- Term A
+- Term B
+- Term C
+
+### No Exception Banned Terms
+- Term A
+- Term B
+- Term C
+
 ## Mirror Potential
 
 Sites this area commonly mirrors to:
@@ -99,18 +123,6 @@ Related or functionally linked anatomical elements:
 ## Emotional / Symbolic Associations
 
 Common emotional or symbolic meanings attached to this site:
-- 
-- 
-
-## Allowed Terms
-
-Preferred / precise terms for this site:
-- 
-- 
-
-## Banned Terms
-
-Terms to avoid for this site:
 - 
 - 
 
