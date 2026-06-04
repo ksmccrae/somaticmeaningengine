@@ -1,7 +1,7 @@
 # Vulva
 
 **Type:** Anatomical Site Register  
-**Primary Embodiment:** Female
+**Primary Embodiment:** #Female
 
 ## Purpose
 
@@ -17,55 +17,38 @@ The vulva is the external female genitalia, encompassing the labia majora, labia
 - Mirror Hub
 - Symbolic Site
 
-### Salience
-```yaml
-embodiment: female
-weight: 0.95
-```
-
 ### Temporal Characteristics
 - Cyclical
 - Reactive
 
-### Fluid Relationships
-```yaml
-primary:
-  - lubrication
-secondary:
-  - blood
-shared:
-  - sweat
-```
+## Associated Structures
 
-### Story System Affinities
-```yaml
-resonance: 0.80
-thermodynamic: 0.85
-optimization: 0.40
-ethical_dignity: 0.75
-```
+## Related Embodiment Layer
+[[Female]]
 
-### Witness Characteristics
-```yaml
-visible: true
-externally_observable: true
-self_observable: limited
-symbolic_visibility: high
-```
+### Related or functionally linked anatomical elements:
+- [[Clitoris]]
+- [[Labia Majora]]
+- [[Labia Minora]]
+- [[G-Spot]]
+- [[Vaginal Wall]]
+- [[Urethra]]
+- Perineum
 
-### Sacred Associations
-- Becoming
-- Vulnerability
-- Sovereignty
-- Cyclical renewal
+### Related Registers
+
+- Somatic: High responsiveness
+- Sensory: Rich tactile and pressure sensation
+- Mirrors: Strong clitoral, nipple, and pelvic mirrors
+- Propagation: Good external-to-internal propagation
 
 ## Terms
 
-**Primary Clinical / Anatomical Name:** Vulva
+**Primary Clinical / Anatomical Name:** #Vulva
 
-**Primary Neutral / Somatic Term:** Vulval Area
+**Primary Neutral / Somatic Term:** #Vulval Area
 
-**Primary Explicit Erotic Term:** Cunt
+**Primary Explicit Erotic Term:** #Cunt
 
 ### Precise Terms
 - Vulva (clinical/anatomical)
@@ -80,6 +63,12 @@ symbolic_visibility: high
 - Overly crude language without context
 - Clinical distancing in erotic writing
 
+### Sacred Associations
+- Becoming
+- Vulnerability
+- Sovereignty
+- Cyclical renewal
+
 ## Mirror Potential
 
 Sites this area commonly mirrors to:
@@ -88,33 +77,6 @@ Sites this area commonly mirrors to:
 - Pelvic floor
 - Perineum and anus
 - Emotional states (vulnerability, power, surrender)
-
-## Propagation Patterns
-
-How sensation or activation from this site tends to move:
-- External stimulation → clitoral and internal awareness → pelvic floor and breath response
-- Strong connection between external touch and deeper internal sensation
-
-## Associated Structures
-
-Related or functionally linked anatomical elements:
-- [[Clitoris]]
-- [[Labia Majora]]
-- [[Labia Minora]]
-- [[G-Spot]]
-- [[Vaginal Wall]]
-- [[Urethra]]
-- Perineum
-
-## Related Embodiment Layer
-[[Female]]
-
-## Related Registers
-
-- Somatic: High responsiveness
-- Sensory: Rich tactile and pressure sensation
-- Mirrors: Strong clitoral, nipple, and pelvic mirrors
-- Propagation: Good external-to-internal propagation
 
 ## Emotional / Symbolic Associations
 
@@ -131,6 +93,12 @@ How this site typically feels and responds:
 - Strong arousal response (swelling, lubrication, sensitivity)
 - Connection between external and internal sensation
 - Can hold both tension and openness
+
+## Propagation Patterns
+
+How sensation or activation from this site tends to move:
+- External stimulation → clitoral and internal awareness → pelvic floor and breath response
+- Strong connection between external touch and deeper internal sensation
 
 ## Governance
 
@@ -152,6 +120,38 @@ governance:
   author_override:
     allowed: true
     requires_reason: true
+```
+
+### Fluid Relationships
+```yaml
+primary:
+  - lubrication
+secondary:
+  - blood
+shared:
+  - sweat
+```
+
+### Salience
+```yaml
+embodiment: female
+weight: 0.95
+```
+
+### Story System Affinities
+```yaml
+resonance: 0.80
+thermodynamic: 0.85
+optimization: 0.40
+ethical_dignity: 0.75
+```
+
+### Witness Characteristics
+```yaml
+visible: true
+externally_observable: true
+self_observable: limited
+symbolic_visibility: high
 ```
 
 ## Notes / Constraints
