@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Skene’s Glands
 
 **Type:** Anatomical Site Register  
@@ -88,3 +89,6 @@ governance:
 - Sensory: Deep and diffuse internal sensation
 - Mirrors: Strong G-Spot and urethral mirrors
 - Propagation: Integrated with G-Spot stimulation pathways
+=======
+PLACEHOLDER
+>>>>>>> a01e3cdaef835a3e8eabb22f00bf9cc02c436441

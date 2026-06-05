@@ -1,48 +1,69 @@
+<<<<<<< HEAD
 # Labia Minora
 
 **Type:** Anatomical Site Register  
 **Primary Embodiment:** Female
 
-## Clinical / Anatomical Name
-Labia Minora
-
-## Neutral / Somatic Terms
-- Inner labia
-- Inner lips
-
-## Explicit Erotic Terms
-- Inner cunt lips
-
 ## Purpose
 
 The labia minora are the inner folds of skin within the vulva. They are highly sensitive and play a significant role in arousal and erotic sensation.
 
-## Allowed Terms
+## Ontological Metadata
 
-Preferred / precise terms:
+### Node Type
+- **Atomic**
+
+### Ontological Role
+- Sensory Hub
+- Mirror Hub
+
+### Salience
+```yaml
+embodiment: female
+weight: 0.78
+```
+
+### Temporal Characteristics
+- Reactive
+
+### Story System Affinities
+```yaml
+resonance: 0.70
+thermodynamic: 0.75
+optimization: 0.35
+ethical_dignity: 0.68
+```
+
+### Sacred Associations
+- Sensitivity
+- Exposure
+- Softness
+
+## Terms
+
+**Primary Clinical / Anatomical Name:** Labia Minora
+
+**Primary Neutral / Somatic Term:** Inner labia
+
+**Primary Explicit Erotic Term:** Inner cunt lips
+
+### Precise Terms
 - Labia minora (clinical)
 - Inner labia
 
-## Banned Terms
+### Restricted Contextual Terms
+- Inner lips
 
-Terms to avoid:
+### No Exception Banned Terms
 - Overly crude language without context
-
-## Somatic Descriptions
-
-How this site typically feels and responds:
-- Highly sensitive to touch, pressure, and stretch
-- Swells significantly with arousal
-- Can be very responsive and erotically significant
-- Often more sensitive than labia majora
 
 ## Mirror Potential
 
 Sites this area commonly mirrors to:
-- Clitoris
-- Labia majora
-- Vaginal opening
-- Perineum
+- [[Clitoral Complex]]
+- [[Labia Majora]]
+- Vestibular bulbs
+- Pelvic floor
 
 ## Propagation Patterns
 
@@ -54,10 +75,19 @@ How sensation or activation from this site tends to move:
 
 Related or functionally linked anatomical elements:
 - [[Vulva]]
-- [[Clitoris]]
+- [[Clitoral Complex]]
 - [[Labia Majora]]
 - Vaginal opening
-- Urethra
+
+## Related Embodiment Layer
+[[Vulva]]
+
+## Related Registers
+
+- Somatic: High tactile responsiveness
+- Sensory: Significant localized sensation
+- Mirrors: Strong clitoral mirror
+- Propagation: Good connection to internal sensation
 
 ## Emotional / Symbolic Associations
 
@@ -66,15 +96,23 @@ Common emotional or symbolic meanings:
 - Softness and receptivity
 - Visual and tactile erotic power
 
+## Somatic Descriptions
+
+How this site typically feels and responds:
+- Highly sensitive to touch, pressure, and stretch
+- Swells significantly with arousal
+- Can be very responsive and erotically significant
+- Often more sensitive than labia majora
+
 ## Governance
 
 ```yaml
 governance:
   baseline_allowed: true
   weights:
-    register: 0.78
+    register: 0.75
     sacred: 0.62
-    slang: 0.38
+    slang: 0.35
     clinical: 0.58
     comic: 0.00
   thresholds:
@@ -85,9 +123,10 @@ governance:
     requires_reason: true
 ```
 
-## Related Registers
+## Notes / Constraints
 
-- Somatic: High tactile responsiveness
-- Sensory: Significant localized sensation
-- Mirrors: Strong clitoral mirror
-- Propagation: Good connection to internal sensation
+- Highly sensitive inner structure of the vulva
+- Strong mirror connection to clitoral complex
+=======
+PLACEHOLDER
+>>>>>>> a01e3cdaef835a3e8eabb22f00bf9cc02c436441

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Anterior Fornix (A-Spot)
 
 **Type:** Anatomical Site Register  
@@ -91,3 +92,6 @@ governance:
 - Sensory: Deep, diffuse internal sensation
 - Mirrors: Moderate to strong connection to G-Spot and internal mirrors
 - Propagation: Slower, deeper internal propagation
+=======
+PLACEHOLDER
+>>>>>>> a01e3cdaef835a3e8eabb22f00bf9cc02c436441
