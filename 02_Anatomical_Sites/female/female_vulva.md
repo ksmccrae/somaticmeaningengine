@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Vulva
 
 **Type:** Anatomical Site Register  
@@ -104,10 +103,10 @@ governance:
 ## Mirror Potential
 
 Sites this area commonly mirrors to:
-- [[Clitoris]] (very strong)
+- [[Clitoral Complex]] (very strong)
 - Nipples and breasts
 - Pelvic floor
-- Perineum and anus
+- Perineum (Shared)
 - Emotional states (vulnerability, power, surrender)
 
 ## Propagation Patterns
@@ -119,13 +118,13 @@ How sensation or activation from this site tends to move:
 ## Associated Structures
 
 Related or functionally linked anatomical elements:
-- [[Clitoris]]
+- [[Clitoral Complex]]
 - [[Labia Majora]]
 - [[Labia Minora]]
 - [[G-Spot]]
 - [[Vaginal Wall]]
-- [[Female Urethra]]
-- [[Perineum]]
+- [[Urethra]]
+- Perineum (Shared)
 
 ## Emotional / Symbolic Associations
 
@@ -160,6 +159,3 @@ externally_observable: true
 self_observable: limited
 symbolic_visibility: high
 ```
-=======
-CONTENT FROM PREVIOUS VULVA UPDATE
->>>>>>> a01e3cdaef835a3e8eabb22f00bf9cc02c436441
