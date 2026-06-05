@@ -54,6 +54,7 @@ The Clitoral Complex is the complete erectile clitoral system in female embodime
 ## Mirror Potential
 
 Sites this area commonly mirrors to:
+- [[Clitoris]]
 - [[Clitoral Hood]]
 - [[Clitoral Crura]]
 - [[Vestibular Bulbs]]
@@ -71,6 +72,7 @@ How sensation or activation from this site tends to move:
 ## Associated Structures
 
 Related or functionally linked anatomical elements:
+- [[Clitoris]]
 - [[Clitoral Hood]]
 - [[Clitoral Crura]]
 - [[Vestibular Bulbs]]
