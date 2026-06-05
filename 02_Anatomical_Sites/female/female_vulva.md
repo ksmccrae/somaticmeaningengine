@@ -36,11 +36,11 @@ The vulva is the external female genitalia, encompassing the labia majora, labia
 
 ## Terms
 
-**Primary Clinical / Anatomical Name:** Vulva
+**Primary Clinical / Anatomical Name:** #Vulva
 
-**Primary Neutral / Somatic Term:** Vulval Area
+**Primary Neutral / Somatic Term:** #Vulval #Area
 
-**Primary Explicit Erotic Term:** Cunt
+**Primary Explicit Erotic Term:** #Cunt
 
 ### Precise Terms
 - Vulva (clinical/anatomical)
