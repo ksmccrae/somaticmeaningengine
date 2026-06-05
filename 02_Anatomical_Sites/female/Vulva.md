@@ -8,8 +8,6 @@ aliases:
   - Vulval Area
   - Cunt
 ---
-# Vulva
-
 **Type:** Anatomical Site Register  
 **Primary Embodiment:** Female
 
@@ -68,7 +66,7 @@ The vulva is the external female genitalia, encompassing the labia majora, labia
 ## Mirror Potential
 
 Sites this area commonly mirrors to:
-- [[female_clitoral_complex]] (very strong)
+- [[Clitoral Complex]] (very strong)
 - Nipples and breasts
 - Pelvic floor
 - Perineum (Shared)
@@ -83,11 +81,11 @@ How sensation or activation from this site tends to move:
 ## Associated Structures
 
 Related or functionally linked anatomical elements:
-- [[female_clitoral_complex]]
-- [[female_vaginal_wall]]
-- [[female_urethra]]
-- [[shared_perineum]]
-- [[shared_anus]]
+- [[Clitoral Complex]]
+- [[Vaginal Wall]]
+- [[Urethra]]
+- [[Perineum]]
+- [[Anus]]
 
 ## Emotional / Symbolic Associations
 

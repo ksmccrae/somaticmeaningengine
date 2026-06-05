@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-# Labia Minora
 
 **Type:** Anatomical Site Register  
 **Primary Embodiment:** Female

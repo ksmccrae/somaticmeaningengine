@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-# Skene’s Glands
 
 **Type:** Anatomical Site Register  
 **Primary Embodiment:** Female

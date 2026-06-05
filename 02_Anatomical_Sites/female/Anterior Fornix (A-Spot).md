@@ -1,4 +1,3 @@
-# Anterior Fornix (A-Spot)
 
 **Type:** Anatomical Site Register  
 **Primary Embodiment:** Female

@@ -1,4 +1,3 @@
-# Anus
 
 **Type:** Anatomical Site Register  
 **Primary Embodiment:** Shared

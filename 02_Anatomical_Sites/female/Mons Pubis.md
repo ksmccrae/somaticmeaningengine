@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-# Mons Pubis
 
 **Type:** Anatomical Site Register  
 **Primary Embodiment:** Female

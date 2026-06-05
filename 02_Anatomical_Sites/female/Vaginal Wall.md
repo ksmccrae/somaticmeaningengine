@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-# Vaginal Wall
 
 **Type:** Anatomical Site Register  
 **Primary Embodiment:** Female

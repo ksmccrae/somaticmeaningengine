@@ -1,4 +1,3 @@
-# Clitoral Hood
 
 **Type:** Anatomical Site Register  
 **Primary Embodiment:** Female

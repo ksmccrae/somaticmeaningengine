@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-# Labia Majora
 
 **Type:** Anatomical Site Register  
 **Primary Embodiment:** Female

@@ -1,4 +1,4 @@
-# G-Spot
+
 
 **Type:** Anatomical Site Register  
 **Primary Embodiment:** Female

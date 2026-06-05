@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-# Clitoris
 
 **Type:** Anatomical Site Register  
 **Primary Embodiment:** Female

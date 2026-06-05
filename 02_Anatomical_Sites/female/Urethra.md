@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-# Female Urethra
 
 **Type:** Anatomical Site Register  
 **Primary Embodiment:** Female
