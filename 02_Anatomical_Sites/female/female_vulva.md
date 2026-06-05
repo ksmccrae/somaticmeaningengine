@@ -1,3 +1,13 @@
+---
+tags:
+  - Composite
+  - Sensory
+  - Mirror
+  - Symbolic
+aliases:
+  - Vulval Area
+  - Cunt
+---
 # Vulva
 
 **Type:** Anatomical Site Register  
@@ -36,11 +46,11 @@ The vulva is the external female genitalia, encompassing the labia majora, labia
 
 ## Terms
 
-**Primary Clinical / Anatomical Name:** #Vulva
+**Primary Clinical / Anatomical Name:** Vulva
 
-**Primary Neutral / Somatic Term:** #Vulval #Area
+**Primary Neutral / Somatic Term:** Vulval Area
 
-**Primary Explicit Erotic Term:** #Cunt
+**Primary Explicit Erotic Term:** Cunt
 
 ### Precise Terms
 - Vulva (clinical/anatomical)
@@ -58,7 +68,7 @@ The vulva is the external female genitalia, encompassing the labia majora, labia
 ## Mirror Potential
 
 Sites this area commonly mirrors to:
-- [[Clitoral Complex]] (very strong)
+- [[female_clitoral_complex]] (very strong)
 - Nipples and breasts
 - Pelvic floor
 - Perineum (Shared)
@@ -73,13 +83,11 @@ How sensation or activation from this site tends to move:
 ## Associated Structures
 
 Related or functionally linked anatomical elements:
-- [[Clitoral Complex]]
-- [[Labia Majora]]
-- [[Labia Minora]]
-- [[G-Spot]]
-- [[Vaginal Wall]]
-- [[Urethra]]
-- Perineum (Shared)
+- [[female_clitoral_complex]]
+- [[female_vaginal_wall]]
+- [[female_urethra]]
+- [[shared_perineum]]
+- [[shared_anus]]
 
 ## Emotional / Symbolic Associations
 

@@ -11,10 +11,14 @@
             "id": "d7285851a79f95dc",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "02_Anatomical_Sites/female/female_vulva.md",
+                "mode": "preview",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "female_vulva"
             }
           }
         ]
@@ -188,11 +192,19 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "882dec4ec7042277",
+  "active": "d7285851a79f95dc",
   "lastOpenFiles": [
+    "02_Anatomical_Sites/shared/shared_anus.md",
+    "02_Anatomical_Sites/shared/shared_perineum.md",
+    "Clitoral Complex.md",
+    "02_Anatomical_Sites/female/female_vulva.md",
+    "02_Anatomical_Sites/female/female_clitoral_complex.md",
+    "02_Anatomical_Sites/female/female_anterior_fornix.md",
+    "BUILD NOTES CURRENT.pdf",
+    "2026-06-05.md",
+    "Female.md",
     "02_Anatomical_Sites/female_genitalia_hierarchy_Specification.md",
     "Vulva.md",
-    "02_Anatomical_Sites/female/female_vulva.md",
     "00_Master_Embodiment_Layers/female/Female.md",
     "02_Anatomical_Sites/female/clitoris.md",
     "embodiment_layer_template.md",
@@ -209,15 +221,8 @@
     "02_Anatomical_Sites/female/female_mons_pubis.md",
     "02_Anatomical_Sites/female/female_labia_minora.md",
     "02_Anatomical_Sites/female/female_labia_majora.md",
-    "02_Anatomical_Sites/female/female_g-spot.md",
-    "02_Anatomical_Sites/female/female_clitoris.md",
-    "02_Anatomical_Sites/female/female_clitoral_crura.md",
-    "02_Anatomical_Sites/female/female_cervix.md",
-    "02_Anatomical_Sites/female/female_anterior_fornix.md",
     "Untitled.canvas",
     "Untitled 1.canvas",
-    "02_Anatomical_Sites/female/anterior_fornix.md",
-    "01_Tropes/Breeding.md",
     "03_Cross_Cutting_Layers/pairs",
     "03_Cross_Cutting_Layers",
     "05_Voice_Systems/human_drift",
@@ -226,7 +231,6 @@
     "04_Cross_Cutting_Layers/fluids/trans_masculine",
     "04_Cross_Cutting_Layers/fluids/trans_feminine",
     "04_Cross_Cutting_Layers/fluids/shared",
-    "04_Cross_Cutting_Layers/fluids/male",
-    "04_Cross_Cutting_Layers/fluids/female"
+    "04_Cross_Cutting_Layers/fluids/male"
   ]
 }
