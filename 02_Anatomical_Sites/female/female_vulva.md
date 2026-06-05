@@ -1,7 +1,7 @@
 # Vulva
 
 **Type:** Anatomical Site Register  
-**Primary Embodiment:** Female
+**Primary Embodiment:** #Female
 
 ## Purpose
 
@@ -10,12 +10,13 @@ The vulva is the external female genitalia, encompassing the labia majora, labia
 ## Ontological Metadata
 
 ### Node Type
-- **Composite** (contains sub-structures: Clitoris, Labia Majora, Labia Minora, Vestibular Bulbs, etc.)
+- #**Composite**
+  - contains sub-structures: Clitoris, Labia Majora, Labia Minora, Vestibular Bulbs, etc.
 
 ### Ontological Role
-- Sensory Hub
-- Mirror Hub
-- Symbolic Site
+- #Sensory Hub
+- #Mirror Hub
+- #Symbolic Site
 
 ## Related Embodiment Layer
 [[Female]]
@@ -35,11 +36,11 @@ The vulva is the external female genitalia, encompassing the labia majora, labia
 
 ## Terms
 
-**Primary Clinical / Anatomical Name:** Vulva
+**Primary Clinical / Anatomical Name:** #Vulva
 
-**Primary Neutral / Somatic Term:** Vulval Area
+**Primary Neutral / Somatic Term:** #Vulval Area
 
-**Primary Explicit Erotic Term:** Cunt
+**Primary Explicit Erotic Term:** #Cunt
 
 ### Precise Terms
 - Vulva (clinical/anatomical)
