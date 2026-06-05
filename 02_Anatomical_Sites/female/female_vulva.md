@@ -17,52 +17,6 @@ The vulva is the external female genitalia, encompassing the labia majora, labia
 - Mirror Hub
 - Symbolic Site
 
-### Salience
-```yaml
-embodiment: female
-weight: 0.95
-```
-
-### Temporal Characteristics
-- Cyclical
-- Reactive
-
-### Story System Affinities
-```yaml
-resonance: 0.80
-thermodynamic: 0.85
-optimization: 0.40
-ethical_dignity: 0.75
-```
-
-### Sacred Associations
-- Becoming
-- Vulnerability
-- Sovereignty
-- Cyclical renewal
-
-## Governance
-
-```yaml
-governance:
-  baseline_allowed: true
-  weights:
-    register: 0.85
-    sacred: 0.70
-    slang: 0.45
-    clinical: 0.60
-    comic: 0.00
-  thresholds:
-    clinical:
-      default: 0.30
-      allowed_contexts: [medical, educational]
-    comic:
-      default: 0.00
-  author_override:
-    allowed: true
-    requires_reason: true
-```
-
 ## Related Embodiment Layer
 [[Female]]
 
@@ -141,6 +95,52 @@ How this site typically feels and responds:
 - Strong arousal response (swelling, lubrication, sensitivity)
 - Connection between external and internal sensation
 - Can hold both tension and openness
+
+### Salience
+```yaml
+embodiment: female
+weight: 0.95
+```
+
+### Temporal Characteristics
+- Cyclical
+- Reactive
+
+### Story System Affinities
+```yaml
+resonance: 0.80
+thermodynamic: 0.85
+optimization: 0.40
+ethical_dignity: 0.75
+```
+
+### Sacred Associations
+- Becoming
+- Vulnerability
+- Sovereignty
+- Cyclical renewal
+
+## Governance
+
+```yaml
+governance:
+  baseline_allowed: true
+  weights:
+    register: 0.85
+    sacred: 0.70
+    slang: 0.45
+    clinical: 0.60
+    comic: 0.00
+  thresholds:
+    clinical:
+      default: 0.30
+      allowed_contexts: [medical, educational]
+    comic:
+      default: 0.00
+  author_override:
+    allowed: true
+    requires_reason: true
+```
 
 ## Fluid Relationships
 ```yaml
