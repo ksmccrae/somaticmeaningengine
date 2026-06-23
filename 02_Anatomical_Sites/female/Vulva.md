@@ -12,21 +12,21 @@ Somatic Term: Vulval Area
 Erotic Term: Cunt
 ---
 
-# Vulva
+# 🧬 Vulva
 
-- **Type:** Anatomical Site Register  
-- **Primary Embodiment:** Female
+**Type:** Anatomical Site Register  
+**Primary Embodiment:** [[Female]]
 
 ## Purpose
 
 The vulva is the external female genitalia, encompassing the labia majora, labia minora, clitoris, vaginal opening, urethral opening, and surrounding structures. It is a primary site of erotic sensation, arousal, and symbolic significance.
 
-## Ontological Metadata
+## 🧠 Ontological Metadata
 
 ### Node Type
 
-- **Composite**
-  - contains sub-structures: Clitoris, Labia Majora, Labia Minora, Vestibular Bulbs, etc.
+**Composite**  
+Contains sub-structures: [[Clitoral Complex]], [[Labia Majora]], [[Labia Minora]], Vestibular Bulbs, etc.
 
 ### Ontological Role
 
@@ -34,30 +34,28 @@ The vulva is the external female genitalia, encompassing the labia majora, labia
 - Mirror Hub
 - Symbolic Site
 
-## Related Embodiment Layer
+## 🔗 Related Embodiment Layer
 
 [[Female]]
 
-## Related Registers
+## 🔗 Related Registers
 
-- Somatic: High responsiveness
-- Sensory: Rich tactile and pressure sensation
-- Mirrors: Strong clitoral, nipple, and pelvic mirrors
-- Propagation: Good external-to-internal propagation
+- **Somatic:** High responsiveness
+- **Sensory:** Rich tactile and pressure sensation
+- **Mirrors:** Strong clitoral, nipple, and pelvic mirrors
+- **Propagation:** Good external-to-internal propagation
 
-## Notes / Constraints
+## 📋 Notes / Constraints
 
 - Primary external erotic site in female embodiment
 - Strong mirror and propagation connections
 - Requires precise language depending on register
 
-## Terms
+## 📝 Terms
 
-- **Primary Clinical / Anatomical Name:** Vulva
-
-- **Primary Neutral / Somatic Term:** Vulval Area
-
-- **Primary Explicit Erotic Term:** Cunt
+**Primary Clinical / Anatomical Name:** Vulva  
+**Primary Neutral / Somatic Term:** Vulval Area  
+**Primary Explicit Erotic Term:** Cunt
 
 ### Precise Terms
 
@@ -68,41 +66,75 @@ The vulva is the external female genitalia, encompassing the labia majora, labia
 
 ### Restricted Contextual Terms
 
-- Pussy (contextual, register-dependent)
+- Pussy *(only in very specific ironic, reclaimed, or partner-voiced contexts — use sparingly)*
 
 ### No Exception Banned Terms
 
-- Overly crude language without context
-- Clinical distancing in erotic writing
+#### Primary Banned
 
-## Mirror Potential
+- pussy, slit, slot, snatch, gash, slash, crack
+- hole (standalone, unadorned)
+- opening (clinical standalone)
+
+#### Food Register
+
+- pink taco, taco, fish taco, burger, beef curtains, honey pot, cookie, muffin, fur pie, whisker biscuit
+
+#### Animal Register
+
+- beaver, clam, bearded clam
+
+#### Porn Shorthand
+
+- fuck hole, cock sleeve, cock pocket, cum dumpster, love tunnel, meat wallet, wizard sleeve
+
+#### Diminutive / Euphemistic
+
+- vajayjay, vadge, vag, coochie, cooter, minge, quim, twat, fanny, box, lady garden, lady parts, bits, privates, down there, hoo ha, woo woo
+
+#### Clinical (Unadorned)
+
+- vagina, vulva, genitalia, genital area, birth canal
+
+#### Childish
+
+- wee wee, fairy, minnie, flower, tuppence
+
+#### Tonal Bans
+
+- **Comic**: Any term that produces a deflating or humorous effect
+- **Clinical**: Medical language without sacred or sovereign framing
+- **Diminutive**: Any term that reduces or infantilises the site
+- **Pollution**: Any term that frames fluids here as waste or dirty
+
+## 🪞 Mirror Potential
 
 Sites this area commonly mirrors to:
 
-- Clitoral Complex (very strong)
+- [[Clitoral Complex]] (very strong)
 - Nipples and breasts
 - Pelvic floor
-- Perineum (Shared)
+- Perineum (Shared register)
 - Emotional states (vulnerability, power, surrender)
 
-## Propagation Patterns
+## 🔄 Propagation Patterns
 
 How sensation or activation from this site tends to move:
 
 - External stimulation → clitoral and internal awareness → pelvic floor and breath response
 - Strong connection between external touch and deeper internal sensation
 
-## Associated Structures
+## 🔗 Associated Structures
 
 Related or functionally linked anatomical elements:
 
 - [[Clitoral Complex]]
 - [[Vaginal Wall]]
 - [[Urethra]]
-- [[Perineum]]
-- [[Anus]]
+- Perineum (Shared register)
+- Anus (Shared register)
 
-## Emotional / Symbolic Associations
+## 💭 Emotional / Symbolic Associations
 
 Common emotional or symbolic meanings:
 
@@ -111,7 +143,7 @@ Common emotional or symbolic meanings:
 - Surrender and receptivity
 - Sacred or ritual significance in some contexts
 
-## Somatic Descriptions
+## 🧍 Somatic Descriptions
 
 How this site typically feels and responds:
 
@@ -120,16 +152,13 @@ How this site typically feels and responds:
 - Connection between external and internal sensation
 - Can hold both tension and openness
 
-## Fluid Relationships
+## 💧 Fluid Relationships
 
-- **Primary:**
-  - lubrication
-- **Secondary**:
-  - blood
-- **Shared**:
-  - sweat
+- **Primary:** lubrication
+- **Secondary:** blood
+- **Shared:** sweat
 
-## Additional
+## 📊 Properties
 
 ### Salience
 
@@ -146,7 +175,7 @@ How this site typically feels and responds:
 - Resonance: 0.80
 - Thermodynamic: 0.85
 - Optimization: 0.40
-- Ethical_dignity: 0.75
+- Ethical Dignity: 0.75
 
 ### Sacred Associations
 
@@ -155,28 +184,9 @@ How this site typically feels and responds:
 - Sovereignty
 - Cyclical renewal
 
-## Governance
-
-- baseline_allowed: true
-- weights:
-  - register: 0.85
-  - sacred: 0.70
-  - slang: 0.45
-  - clinical: 0.60
-  - comic: 0.00
-- thresholds:
-  - clinical:
-    - default: 0.30
-    - allowed_contexts: [medical, educational]
-  - comic:
-    - default: 0.00
-- Author Ooverride:
-  - allowed: true
-  - requires_reason: true
-
-## Witness Characteristics
+### Witness Characteristics
 
 - Visible: true
-- Externally_observable: true
-- Self_observable: limited
-- Symbolic_visibility: high
+- Externally observable: true
+- Self observable: limited
+- Symbolic visibility: high
