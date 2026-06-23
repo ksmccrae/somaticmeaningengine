@@ -1,29 +1,29 @@
-# {{Anatomical Site Name}}
-
-**Type:** Anatomical Site Register  
-**Primary Embodiment:** {{Female / Male / Trans Feminine / Trans Masculine / Shared}}
+---
+tags:
+  - type/atomic        # type/composite | type/atomic | type/functional
+  - role/sensory-hub   # role/mirror-hub | role/propagation-hub | role/fluid-source | role/relational-site | role/symbolic-site
+aliases:
+  - <Neutral / somatic alias>
+  - <Other accepted alias>
+---
+**Type:** Anatomical Site Register
+**Primary Embodiment:** <Female | Male | Shared | Trans_Feminine | Trans_Masculine>
 
 ## Purpose
 
-[Brief, precise description of this anatomical site and its core role in the ontology]
+<Brief, precise description of this site and its core role in the ontology. Structural/clinical, not explicit.>
 
 ## Ontological Metadata
 
 ### Node Type
-- **Composite** (contains sub-structures)  
-  or  
-- **Atomic** (discrete, non-grouped site)
+- type/<composite | atomic | functional>
+  - <If composite: list direct child nodes by canonical anatomical name, e.g. [[Labia Majora]], [[Clitoral Complex]]>
 
 ### Ontological Role
-- Sensory Hub
-- Mirror Hub
-- Propagation Hub
-- Fluid Source
-- Relational Site
-- Symbolic Site
+- <Sensory Hub | Mirror Hub | Propagation Hub | Fluid Source | Relational Site | Symbolic Site | Transition Zone>
 
 ## Related Embodiment Layer
-[[Female]]   # or Male / Shared / Trans Feminine / Trans Masculine
+[[<Female | Male | Shared | Trans_Feminine | Trans_Masculine>]]
 
 ## Related Registers
 
@@ -34,71 +34,65 @@
 
 ## Notes / Constraints
 
-- 
-- 
+-
+-
 
 ## Terms
 
-**Primary Clinical / Anatomical Name:** 
+> Vocabulary is governed by register (see Governance block) and the [[Anatomical Node Conventions]] note.
 
-**Primary Neutral / Somatic Term:** 
+**Primary Clinical / Anatomical Name:**
 
-**Primary Explicit Erotic Term:** 
+**Primary Neutral / Somatic Term:**
+
+**Primary Register Term:** <scoped by register>
 
 ### Precise Terms
-- 
-- 
+-
+-
 
 ### Restricted Contextual Terms
-- 
-- 
+- <term> (contextual, register-dependent)
 
-### No Exception Banned Terms
-- 
-- 
+### Banned / No-Exception Terms
+- <term or framing — note the register scope, e.g. "clinical distancing within erotic register">
 
 ## Mirror Potential
 
-Sites this area commonly mirrors to:
-- 
-- 
+Sites this node commonly mirrors to:
+- [[<Node>]] (<strength>)
+- <Emotional / symbolic states>
 
 ## Propagation Patterns
 
-How sensation or activation from this site tends to move:
-- 
-- 
+How sensation or activation from this node tends to move:
+- <pathway A → pathway B → pathway C>
 
 ## Associated Structures
 
-Related or functionally linked anatomical elements:
-- 
-- 
+Related or functionally linked nodes (canonical anatomical names):
+- [[<Node>]]
+- [[<Node>]]
 
 ## Emotional / Symbolic Associations
 
-Common emotional or symbolic meanings attached to this site:
-- 
-- 
+-
+-
 
 ## Somatic Descriptions
 
-How this site typically feels and responds:
-- 
-- 
+How this node typically feels and responds (structural, non-explicit):
+-
+-
 
 ### Salience
 ```yaml
-embodiment: female   # or male / shared / trans_feminine / trans_masculine
-weight: 0.85          # overall importance within the embodiment (0.0 – 1.0)
+embodiment: female   # male | shared | trans_feminine | trans_masculine
+weight: 0.85         # importance within the embodiment (0.0 – 1.0)
 ```
 
 ### Temporal Characteristics
-- Cyclical
-- Reactive
-- Persistent
-- Transitional
-- Accumulative
+- <Cyclical | Reactive | Persistent | Transitional | Accumulative>
 
 ### Story System Affinities
 ```yaml
@@ -109,11 +103,7 @@ ethical_dignity: 0.60
 ```
 
 ### Sacred Associations
-- Becoming
-- Creation
-- Vulnerability
-- Sovereignty
-- Cyclical renewal
+- <Becoming | Creation | Vulnerability | Sovereignty | Cyclical renewal>
 
 ## Governance
 
@@ -129,7 +119,7 @@ governance:
   thresholds:
     clinical:
       default: 0.15
-      allowed_contexts: []
+      allowed_contexts: [medical, educational]
     comic:
       default: 0.00
       allowed_when: []
@@ -141,11 +131,11 @@ governance:
 ## Fluid Relationships
 ```yaml
 primary:
-  - 
+  -
 secondary:
-  - 
+  -
 shared:
-  - 
+  -
 ```
 
 ## Witness Characteristics

@@ -1,3 +1,8 @@
+---
+Clinical Term: "Vaginal Wall (Anterior)"
+Somatic Term: "Anterior vaginal wall"
+Erotic Term: ""
+---
 
 **Type:** Anatomical Site Register  
 **Primary Embodiment:** Female
@@ -128,6 +133,3 @@ governance:
 
 - Composite nature due to containing G-Spot and Skene’s glands zones
 - Important for deep internal sensation and propagation
-=======
-PLACEHOLDER
->>>>>>> a01e3cdaef835a3e8eabb22f00bf9cc02c436441

@@ -1,3 +1,8 @@
+---
+Clinical Term: "G-Spot"
+Somatic Term: "Anterior vaginal wall sensitivity"
+Erotic Term: ""
+---
 
 
 **Type:** Anatomical Site Register  

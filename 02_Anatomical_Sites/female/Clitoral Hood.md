@@ -1,3 +1,8 @@
+---
+Clinical Term: "Clitoral Hood"
+Somatic Term: "Clitoral hood"
+Erotic Term: ""
+---
 
 **Type:** Anatomical Site Register  
 **Primary Embodiment:** Female

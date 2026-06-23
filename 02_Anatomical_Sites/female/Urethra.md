@@ -1,3 +1,8 @@
+---
+Clinical Term: "Urethra"
+Somatic Term: "Urethra"
+Erotic Term: ""
+---
 
 **Type:** Anatomical Site Register  
 **Primary Embodiment:** Female
@@ -123,6 +128,3 @@ governance:
 
 - Closely connected to G-Spot and Skene’s glands
 - Requires care around consent and cultural associations with urination
-=======
-PLACEHOLDER
->>>>>>> a01e3cdaef835a3e8eabb22f00bf9cc02c436441

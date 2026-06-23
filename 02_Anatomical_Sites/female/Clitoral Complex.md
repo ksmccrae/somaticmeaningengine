@@ -1,3 +1,8 @@
+---
+Clinical Term: "Clitoral Complex"
+Somatic Term: "Internal clitoris / clitoral network"
+Erotic Term: ""
+---
 
 
 **Type:** Anatomical Site Register  

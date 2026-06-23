@@ -1,3 +1,8 @@
+---
+Clinical Term: "Mons Pubis"
+Somatic Term: "Pubic mound"
+Erotic Term: ""
+---
 
 **Type:** Anatomical Site Register  
 **Primary Embodiment:** Female
@@ -121,6 +126,3 @@ governance:
 
 - Often overlooked but can be erotically significant
 - Moderate mirror connections
-=======
-PLACEHOLDER
->>>>>>> a01e3cdaef835a3e8eabb22f00bf9cc02c436441

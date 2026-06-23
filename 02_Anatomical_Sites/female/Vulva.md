@@ -7,9 +7,15 @@ tags:
 aliases:
   - Vulval Area
   - Cunt
+Clinical Term: Vulva
+Somatic Term: Vulval Area
+Erotic Term: Cunt
 ---
-**Type:** Anatomical Site Register  
-**Primary Embodiment:** Female
+
+# Vulva
+
+- **Type:** Anatomical Site Register  
+- **Primary Embodiment:** Female
 
 ## Purpose
 
@@ -18,15 +24,18 @@ The vulva is the external female genitalia, encompassing the labia majora, labia
 ## Ontological Metadata
 
 ### Node Type
-- #**Composite**
+
+- **Composite**
   - contains sub-structures: Clitoris, Labia Majora, Labia Minora, Vestibular Bulbs, etc.
 
 ### Ontological Role
+
 - Sensory Hub
 - Mirror Hub
 - Symbolic Site
 
 ## Related Embodiment Layer
+
 [[Female]]
 
 ## Related Registers
@@ -44,29 +53,33 @@ The vulva is the external female genitalia, encompassing the labia majora, labia
 
 ## Terms
 
-**Primary Clinical / Anatomical Name:** Vulva
+- **Primary Clinical / Anatomical Name:** Vulva
 
-**Primary Neutral / Somatic Term:** Vulval Area
+- **Primary Neutral / Somatic Term:** Vulval Area
 
-**Primary Explicit Erotic Term:** Cunt
+- **Primary Explicit Erotic Term:** Cunt
 
 ### Precise Terms
+
 - Vulva (clinical/anatomical)
 - Labia majora, labia minora
 - Clitoris, clitoral glans
 - Vaginal vestibule
 
 ### Restricted Contextual Terms
+
 - Pussy (contextual, register-dependent)
 
 ### No Exception Banned Terms
+
 - Overly crude language without context
 - Clinical distancing in erotic writing
 
 ## Mirror Potential
 
 Sites this area commonly mirrors to:
-- [[Clitoral Complex]] (very strong)
+
+- Clitoral Complex (very strong)
 - Nipples and breasts
 - Pelvic floor
 - Perineum (Shared)
@@ -75,12 +88,14 @@ Sites this area commonly mirrors to:
 ## Propagation Patterns
 
 How sensation or activation from this site tends to move:
+
 - External stimulation → clitoral and internal awareness → pelvic floor and breath response
 - Strong connection between external touch and deeper internal sensation
 
 ## Associated Structures
 
 Related or functionally linked anatomical elements:
+
 - [[Clitoral Complex]]
 - [[Vaginal Wall]]
 - [[Urethra]]
@@ -90,6 +105,7 @@ Related or functionally linked anatomical elements:
 ## Emotional / Symbolic Associations
 
 Common emotional or symbolic meanings:
+
 - Vulnerability and exposure
 - Erotic power and aesthetics
 - Surrender and receptivity
@@ -98,30 +114,42 @@ Common emotional or symbolic meanings:
 ## Somatic Descriptions
 
 How this site typically feels and responds:
+
 - Highly sensitive to touch, pressure, temperature, and stretch
 - Strong arousal response (swelling, lubrication, sensitivity)
 - Connection between external and internal sensation
 - Can hold both tension and openness
 
+## Fluid Relationships
+
+- **Primary:**
+  - lubrication
+- **Secondary**:
+  - blood
+- **Shared**:
+  - sweat
+
+## Additional
+
 ### Salience
-```yaml
-embodiment: female
-weight: 0.95
-```
+
+- embodiment: female
+- weight: 0.95
 
 ### Temporal Characteristics
+
 - Cyclical
 - Reactive
 
 ### Story System Affinities
-```yaml
-resonance: 0.80
-thermodynamic: 0.85
-optimization: 0.40
-ethical_dignity: 0.75
-```
+
+- Resonance: 0.80
+- Thermodynamic: 0.85
+- Optimization: 0.40
+- Ethical_dignity: 0.75
 
 ### Sacred Associations
+
 - Becoming
 - Vulnerability
 - Sovereignty
@@ -129,40 +157,26 @@ ethical_dignity: 0.75
 
 ## Governance
 
-```yaml
-governance:
-  baseline_allowed: true
-  weights:
-    register: 0.85
-    sacred: 0.70
-    slang: 0.45
-    clinical: 0.60
-    comic: 0.00
-  thresholds:
-    clinical:
-      default: 0.30
-      allowed_contexts: [medical, educational]
-    comic:
-      default: 0.00
-  author_override:
-    allowed: true
-    requires_reason: true
-```
-
-## Fluid Relationships
-```yaml
-primary:
-  - lubrication
-secondary:
-  - blood
-shared:
-  - sweat
-```
+- baseline_allowed: true
+- weights:
+  - register: 0.85
+  - sacred: 0.70
+  - slang: 0.45
+  - clinical: 0.60
+  - comic: 0.00
+- thresholds:
+  - clinical:
+    - default: 0.30
+    - allowed_contexts: [medical, educational]
+  - comic:
+    - default: 0.00
+- Author Ooverride:
+  - allowed: true
+  - requires_reason: true
 
 ## Witness Characteristics
-```yaml
-visible: true
-externally_observable: true
-self_observable: limited
-symbolic_visibility: high
-```
+
+- Visible: true
+- Externally_observable: true
+- Self_observable: limited
+- Symbolic_visibility: high

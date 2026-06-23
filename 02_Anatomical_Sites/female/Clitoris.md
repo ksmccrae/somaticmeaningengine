@@ -1,3 +1,8 @@
+---
+Clinical Term: "Clitoris"
+Somatic Term: "Clitoral area"
+Erotic Term: ""
+---
 
 **Type:** Anatomical Site Register  
 **Primary Embodiment:** Female
@@ -124,6 +129,3 @@ governance:
 - The visible glans is only the external portion
 - Internal structures are now modeled under Clitoral Complex
 - Extremely strong mirror connections (especially nipples)
-=======
-PLACEHOLDER
->>>>>>> a01e3cdaef835a3e8eabb22f00bf9cc02c436441

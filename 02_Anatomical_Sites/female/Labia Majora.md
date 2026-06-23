@@ -1,3 +1,8 @@
+---
+Clinical Term: "Labia Majora"
+Somatic Term: "Outer labia"
+Erotic Term: ""
+---
 
 **Type:** Anatomical Site Register  
 **Primary Embodiment:** Female
@@ -124,6 +129,3 @@ governance:
 
 - Outer protective layer of the vulva
 - Moderate mirror and propagation connections
-=======
-PLACEHOLDER
->>>>>>> a01e3cdaef835a3e8eabb22f00bf9cc02c436441

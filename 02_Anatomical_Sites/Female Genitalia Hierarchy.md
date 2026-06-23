@@ -1,4 +1,7 @@
-# Female Genitalia Hierarchy
+---
+tags:
+  - Hierarchy
+---
 
 **Type:** Anatomical Hierarchy Specification  
 **Status:** Draft v1  

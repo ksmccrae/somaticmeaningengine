@@ -1,3 +1,8 @@
+---
+Clinical Term: "Labia Minora"
+Somatic Term: "Inner labia"
+Erotic Term: ""
+---
 
 **Type:** Anatomical Site Register  
 **Primary Embodiment:** Female
@@ -125,6 +130,3 @@ governance:
 
 - Highly sensitive inner structure of the vulva
 - Strong mirror connection to clitoral complex
-=======
-PLACEHOLDER
->>>>>>> a01e3cdaef835a3e8eabb22f00bf9cc02c436441

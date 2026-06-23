@@ -1,3 +1,8 @@
+---
+Clinical Term: "Vestibular Bulbs"
+Somatic Term: "Bulbs of the vestibule"
+Erotic Term: ""
+---
 
 **Type:** Anatomical Site Register  
 **Primary Embodiment:** Female
@@ -126,6 +131,3 @@ governance:
 - Part of the Clitoral Complex (modern anatomical view)
 - Important for sensations of fullness and pressure
 - Moderate to strong mirror and propagation connections
-=======
-PLACEHOLDER
->>>>>>> a01e3cdaef835a3e8eabb22f00bf9cc02c436441
