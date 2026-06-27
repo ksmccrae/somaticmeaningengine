@@ -12,12 +12,12 @@ aliases:
   - Somatic Meaning Engine
   - K.S. McCrae Ontology
   - Repository README
-title: K.S. McCrae Ontology: Somatic Meaning Engine
+title: "K.S. McCrae Ontology: Somatic Meaning Engine"
 document_type: README
-repository_phase: Ontology v2 Foundation
+repository_phase: "Ontology v2 Foundation"
 status: Foundation
-source_of_truth: GitHub repository
-authoring_environment: Obsidian Markdown
+source_of_truth: "GitHub repository"
+authoring_environment: "Obsidian Markdown"
 last_updated: 2026-06-26
 ---
 
@@ -30,7 +30,11 @@ last_updated: 2026-06-26
 ![Obsidian](https://img.shields.io/badge/Obsidian-Compatible-7C3AED)
 ![Source](https://img.shields.io/badge/Source-GitHub-black)
 
-**From embodiment to meaning through governed knowledge.**
+> From embodiment to meaning through governed knowledge.
+
+---
+
+## 🧭 Overview
 
 The **K.S. McCrae Ontology: Somatic Meaning Engine** is a governed ontology and knowledge architecture for modelling human embodiment, physiological systems, sensory experience, symbolic meaning, and narrative relationships.
 
@@ -38,73 +42,30 @@ It is designed as the canonical knowledge model for the K.S. McCrae writing fram
 
 > **The ontology defines the knowledge. The works demonstrate its expression.**
 
----
-
-## Status
-
-| Field | Value |
+| Characteristic | Description |
 |---|---|
-| Project | K.S. McCrae Ontology: Somatic Meaning Engine |
-| Repository Phase | Ontology v2 Foundation |
-| Primary Function | Governed knowledge architecture |
-| Authoring Environment | Obsidian Markdown |
-| Source of Truth | GitHub repository |
-| Graph Tooling | Planned |
-| Validation Tooling | Planned |
-| Corpus Annotation | Planned |
-| Current Priority | Architecture first, content second |
+| 🧬 **Canonical embodiment** | Models anatomy, physiology, fluids, sensory mechanisms, and biological foundations |
+| ⚡ **Activation-aware** | Captures activation, propagation, mirror, modulation, and systemic response pathways |
+| 🧠 **Meaning-oriented** | Separates objective knowledge from somatic, sensory, symbolic, and authorial interpretation |
+| 🛡️ **Governed by design** | Uses templates, edge families, lifecycle status, and revision gates to prevent architectural drift |
+| 🕸️ **Graph-ready** | Designed for Obsidian discovery, Dataview queries, future parsers, and graph database export |
+| 📚 **Corpus-compatible** | Treats stories, songs, essays, and research as annotated instances rather than canonical definitions |
 
 ---
 
-## Table of Contents
+## 👥 Who This Is For
 
-- [Vision](#vision)
-- [Purpose](#purpose)
-- [Operating Philosophy](#operating-philosophy)
-- [Project Instructions](#project-instructions)
-- [Epistemic Boundaries](#epistemic-boundaries)
-- [Layer Architecture](#layer-architecture)
-- [Repository Architecture](#repository-architecture)
-- [Controlled Ontology Language](#controlled-ontology-language)
-- [Edge Families](#edge-families)
-- [Traversal Model](#traversal-model)
-- [Node Lifecycle](#node-lifecycle)
-- [Architecture First](#architecture-first)
-- [Ontology Smell Tests](#ontology-smell-tests)
-- [Architectural Decision Records](#architectural-decision-records)
-- [Development Roadmap](#development-roadmap)
-- [Long-Term Platform Vision](#long-term-platform-vision)
-- [Repository Principles](#repository-principles)
-- [Glossary](#glossary)
-- [Current Starting Point](#current-starting-point)
+**Primary audience:** K.S. McCrae ontology development, authorial systems design, and AI-assisted knowledge architecture.
+
+**Secondary audience:** Readers, collaborators, and future tools that need to understand how embodiment, activation, meaning, and authored expression are represented in a governed knowledge graph.
+
+> If you care about embodied knowledge, semantic consistency, graph traversal, and the separation of domain knowledge from creative expression, this repository is the source of truth.
 
 ---
 
-## Vision
+## 🎯 Purpose
 
-The **Somatic Meaning Engine** is a structured ontology for modelling how embodied knowledge becomes meaning.
-
-It does not function primarily as a dictionary, glossary, or lexicon. It is a composable knowledge graph made from:
-
-- Canonical entities
-- Typed relationships
-- Layered systems
-- Explicit governance
-- Reusable templates
-- Annotated corpus references
-- Future traversal and validation tooling
-
-The repository is intended to become a durable authorial knowledge system, capable of supporting multiple downstream uses without redefining the underlying knowledge each time.
-
-Stories, songs, essays, research notes, and future AI tools are consumers of the ontology.
-
-They do not define it.
-
----
-
-## Purpose
-
-The K.S. McCrae Ontology: Somatic Meaning Engine exists to provide a governed, layered knowledge architecture for:
+The Somatic Meaning Engine exists to provide a governed, layered knowledge architecture for:
 
 - Human embodiment
 - Anatomy and physiology
@@ -134,7 +95,7 @@ The ontology prioritises:
 
 ---
 
-## Operating Philosophy
+## 🧱 Operating Philosophy
 
 ### Model the domain, not the application
 
@@ -154,19 +115,141 @@ flowchart TD
 
 ### Build once. Reference everywhere.
 
-A concept should be defined once and referenced wherever it appears.
-
-The same anatomical site, fluid, activation pathway, mirror, meaning system, or authorial constraint should not be redefined across multiple stories or notes.
+A concept should be defined once and referenced wherever it appears. The same anatomical site, fluid, activation pathway, mirror, meaning system, or authorial constraint should not be redefined across multiple stories or notes.
 
 ### Architecture first. Content second.
 
-The ontology is designed before it is populated.
+The ontology is designed before it is populated. Every architectural decision should simplify the creation, validation, and traversal of thousands of future nodes.
 
-Every architectural decision should simplify the creation, validation, and traversal of thousands of future nodes.
+> **Slow architecture. Fast content.**
 
 ---
 
-## Project Instructions
+## 🏗️ System Architecture
+
+The ontology is organised into four primary layers plus an annotated corpus layer.
+
+```mermaid
+flowchart TD
+    CE["🧬 Canonical Embodiment\nWhat exists"]
+    AT["⚡ Activation and Translation\nHow systems respond"]
+    EL["🧠 Expressive Layers\nHow experience is perceived"]
+    AS["✍️ Authorial Systems\nHow experience is communicated"]
+    AC["📚 Annotated Corpus\nWhere the ontology is expressed"]
+
+    CE --> AT
+    AT --> EL
+    EL --> AS
+    AS --> AC
+
+    CE --> FL["💧 Fluid Layer"]
+    CE --> ML["🪞 Mirror Layer"]
+    CE --> PL["🌊 Propagation Layer"]
+    CE --> AL["⚡ Activation Layer"]
+
+    FL --> EL
+    ML --> EL
+    PL --> EL
+    AL --> EL
+```
+
+---
+
+## 🧬 Epistemic Boundaries
+
+Each layer represents a distinct category of knowledge. Knowledge should remain within its appropriate layer.
+
+| Layer | Defines | Includes |
+|---|---|---|
+| **Canonical Embodiment** | What exists | Anatomy, physiology, structures, fluids, hormones, objective sensory mechanisms |
+| **Activation and Translation** | How systems respond | Activation, propagation, mirrors, relational influence, environmental interaction |
+| **Expressive Layers** | How experience is perceived and interpreted | Somatic, sensory, emotional, symbolic, sonic, environmental, liturgical, temporal systems |
+| **Authorial Layers** | How experience is communicated | Story Operating Systems, Human Drift Register, Example Register, voice, cadence, stylistic governance |
+| **Corpus** | Where the ontology is expressed | Stories, songs, essays, research, annotations, future creative works |
+
+```mermaid
+flowchart LR
+    A[What exists] --> B[How it responds]
+    B --> C[Where response travels]
+    C --> D[How it is perceived]
+    D --> E[What it means]
+    E --> F[How it is communicated]
+    F --> G[Where it appears]
+```
+
+---
+
+## 🗂️ Repository Structure
+
+This repository is authored as an Obsidian-compatible Markdown vault and versioned through GitHub.
+
+- **Obsidian** is the authoring interface.
+- **GitHub** is the source of truth.
+- Future parsers, validators, graph tools, and AI workflows should consume the Markdown structure rather than replace it.
+
+Obsidian works best with natural language folder names. This repository avoids folder numbering, underscores, and machine-first naming unless technically necessary.
+
+```text
+Somatic Meaning Engine/
+│
+├── 📄 README.md                         ← You are here
+│
+├── 📁 Archive/                          ← Historical material retained for reference
+│
+├── 📁 Governance/                       ← Architecture, rules, decisions, and revision gates
+│   ├── Architecture.md
+│   ├── Node Specification.md
+│   ├── Relationship Specification.md
+│   ├── Traversal Rules.md
+│   ├── Revision Gate.md
+│   └── Architectural Decision Records/
+│
+├── 📁 Templates/                        ← Reusable node and document templates
+│
+├── 📁 Canonical Embodiment/             ← Objective embodiment nodes
+│   ├── Female/
+│   ├── Male/
+│   ├── Trans Feminine/
+│   ├── Trans Masculine/
+│   └── Shared/
+│
+├── 📁 Activation Layer/                 ← Activation logic and response initiation
+├── 📁 Propagation Layer/                ← Movement of response through systems
+├── 📁 Mirror Layer/                     ← Cross-body and cross-system mirroring
+├── 📁 Fluid Layer/                      ← Fluid entities and fluid relationships
+├── 📁 Meaning Layer/                    ← Meaning objects and interpretive relationships
+│
+├── 📁 Expressive Layers/                ← Somatic, sensory, emotional, symbolic, sonic, temporal systems
+│
+├── 📁 Authorial Systems/                ← Voice, story systems, human drift, and authorial governance
+│
+├── 📁 Corpus/                           ← Stories, songs, essays, research, and annotated works
+│
+└── 📁 Scratchpad/                       ← Temporary development material
+```
+
+---
+
+## 🔗 Quick Navigation
+
+| Topic | Purpose |
+|---|---|
+| [Governance](Governance/) | Architecture, rules, revision gates, and decision records |
+| [Templates](Templates/) | Reusable structures for future ontology nodes |
+| [Canonical Embodiment](Canonical%20Embodiment/) | Objective embodiment knowledge |
+| [Activation Layer](Activation%20Layer/) | Activation and response initiation |
+| [Propagation Layer](Propagation%20Layer/) | Movement of response across systems |
+| [Mirror Layer](Mirror%20Layer/) | Mirroring and sympathetic correspondence |
+| [Fluid Layer](Fluid%20Layer/) | Fluid entities and relationships |
+| [Meaning Layer](Meaning%20Layer/) | Interpretive meaning objects |
+| [Expressive Layers](Expressive%20Layers/) | Somatic, sensory, emotional, symbolic, sonic, environmental, liturgical, and temporal systems |
+| [Authorial Systems](Authorial%20Systems/) | Voice, cadence, example register, story operating systems, and authorial governance |
+| [Corpus](Corpus/) | Annotated stories, songs, essays, and research |
+| [Scratchpad](Scratchpad/) | Temporary working material |
+
+---
+
+## 🧾 Project Instructions
 
 Treat this repository as an ontology engineering and knowledge architecture project.
 
@@ -199,212 +282,7 @@ When reviewing or extending the ontology:
 
 ---
 
-## Epistemic Boundaries
-
-Each layer of the ontology represents a different category of knowledge.
-
-Knowledge should remain within its appropriate layer.
-
-```mermaid
-flowchart TD
-    A[Canonical Embodiment] -->|defines what exists| B[Activation and Translation]
-    B -->|defines how systems respond| C[Expressive Layers]
-    C -->|defines how experience is perceived| D[Authorial Layers]
-    D -->|defines how experience is communicated| E[Annotated Corpus]
-```
-
-### Canonical Embodiment
-
-Defines **what exists**.
-
-Includes:
-
-- Anatomy
-- Physiology
-- Biological structures
-- Fluids
-- Hormonal systems
-- Objective sensory mechanisms
-- Embodiment-specific biological foundations
-
-This layer should remain grounded in clinically or biologically accurate reference knowledge wherever objective knowledge exists.
-
-### Activation and Translation
-
-Defines **how systems respond**.
-
-Includes:
-
-- Activation
-- Propagation
-- Mirrors
-- Relational influence
-- Environmental interaction
-- Systemic modulation
-
-These layers describe movement, response, influence, and transformation across systems.
-
-### Expressive Layers
-
-Defines **how experience is perceived and interpreted**.
-
-Includes:
-
-- Somatic
-- Sensory
-- Emotional
-- Symbolic
-- Sonic
-- Environmental
-- Liturgical
-- Temporal
-- Meaning systems
-
-These layers translate biological and activation systems into lived experience and interpretive meaning.
-
-### Authorial Layers
-
-Defines **how experience is communicated**.
-
-Includes:
-
-- Story Operating Systems
-- Human Drift Register
-- Example Register
-- Voice systems
-- Cadence systems
-- Controlled variation
-- Stylistic governance
-
-These layers protect authorial coherence and prevent architectural drift in downstream expression.
-
----
-
-## Layer Architecture
-
-The ontology is organised into four primary layers plus a corpus layer.
-
-```text
-Level 0  Canonical Embodiment
-Level 1  Activation and Translation
-Level 2  Expressive Systems
-Level 3  Authorial Systems
-Level 4  Annotated Corpus
-```
-
-```mermaid
-flowchart TD
-    A[Level 0: Canonical Embodiment]
-    B[Level 1: Activation Layer]
-    C[Level 1: Propagation Layer]
-    D[Level 1: Mirror Layer]
-    E[Level 1: Fluid Layer]
-    F[Level 2: Expressive Layers]
-    G[Level 2: Meaning Layer]
-    H[Level 3: Authorial Systems]
-    I[Level 4: Corpus]
-
-    A --> B
-    A --> C
-    A --> D
-    A --> E
-
-    B --> F
-    C --> F
-    D --> F
-    E --> F
-
-    F --> G
-    G --> H
-    H --> I
-```
-
-### Core Flow
-
-```mermaid
-flowchart LR
-    A[Canonical Embodiment] --> B[Activation]
-    B --> C[Propagation]
-    C --> D[Mirrors]
-    D --> E[Meaning]
-    E --> F[Authorial Systems]
-    F --> G[Corpus]
-```
-
-### Knowledge Flow
-
-```mermaid
-flowchart TD
-    A[What exists] --> B[How it responds]
-    B --> C[Where response travels]
-    C --> D[How it is perceived]
-    D --> E[What it means]
-    E --> F[How it is communicated]
-    F --> G[Where it appears]
-```
-
----
-
-## Repository Architecture
-
-The repository is authored as an Obsidian-compatible Markdown vault and versioned through GitHub.
-
-Obsidian is the authoring interface.
-
-GitHub is the source of truth.
-
-Future parsers, validators, graph tools, and AI workflows should consume the Markdown structure rather than replace it.
-
-### Preferred Folder Naming
-
-Obsidian prefers natural language naming.
-
-Therefore this repository avoids:
-
-- Folder numbering
-- Underscores in folder names
-- Special characters in folder names
-- Machine-first naming where human-readable naming is clearer
-
-### Planned Folder Structure
-
-```text
-Archive/
-Governance/
-Canonical Embodiment/
-Activation Layer/
-Propagation Layer/
-Mirror Layer/
-Fluid Layer/
-Meaning Layer/
-Expressive Layers/
-Authorial Systems/
-Corpus/
-Templates/
-Scratchpad/
-```
-
-### Folder Responsibilities
-
-| Folder | Responsibility |
-|---|---|
-| Archive | Historical material retained for reference |
-| Governance | Architecture, rules, decisions, and revision gates |
-| Canonical Embodiment | Objective embodiment nodes |
-| Activation Layer | Activation logic and response initiation |
-| Propagation Layer | Movement of response through systems |
-| Mirror Layer | Cross-body and cross-system mirroring |
-| Fluid Layer | Fluid entities and fluid relationships |
-| Meaning Layer | Meaning objects and interpretive relationships |
-| Expressive Layers | Somatic, sensory, emotional, symbolic, sonic, environmental, liturgical, and temporal systems |
-| Authorial Systems | Voice, story operating systems, human drift, and authorial governance |
-| Corpus | Stories, songs, essays, research, and annotated creative works |
-| Templates | Reusable node templates |
-| Scratchpad | Temporary development material |
-
----
-
-## Controlled Ontology Language
+## 🧠 Controlled Ontology Language
 
 The ontology uses a controlled relationship language.
 
@@ -438,167 +316,89 @@ This controlled language supports:
 - Future graph database import
 - Future traversal weighting
 
-### Human Language and Query Language
-
-Human-facing relationship text may remain natural.
-
-Query-facing tags should remain compact.
-
-Example relationship in a note body:
-
-```text
-Pelvic Floor PROPAGATES Breath
-```
-
-Example tag:
-
-```text
-Edge/Activation/PROPAGATES
-```
-
-This keeps the ontology readable while allowing consistent graph filtering and machine interpretation.
-
 ---
 
-## Edge Families
+## 🧭 Edge Families
 
 Relationships are organised into four edge families.
 
 ```mermaid
 flowchart TD
-    A[Edge Families]
-    A --> B[Canonical]
-    A --> C[Activation]
-    A --> D[Interpretive]
-    A --> E[Governance]
+    EF[Edge Families]
+    EF --> C[Canonical]
+    EF --> A[Activation]
+    EF --> I[Interpretive]
+    EF --> G[Governance]
 
-    B --> B1[Defines what exists]
-    C --> C1[Defines how systems respond]
-    D --> D1[Defines how meaning is interpreted]
-    E --> E1[Defines what is required or constrained]
+    C --> C1[Defines what exists]
+    A --> A1[Defines how systems respond]
+    I --> I1[Defines how meaning is interpreted]
+    G --> G1[Defines what is required or constrained]
 ```
 
 ### Canonical Edges
 
 Canonical edges define objective or structural relationships.
 
-They describe what exists and how entities are structurally related.
-
-| Verb | Use |
-|---|---|
-| HAS | Source contains or possesses the target |
-| BELONGS | Source belongs to the target category or embodiment |
-| CONNECTS | Source is structurally or functionally connected to target |
-| CONTAINS | Source contains target as an internal element |
-| PRODUCES | Source produces target |
-| RECEIVES | Source receives input, influence, fluid, or signal from target |
-
-Example tags:
-
-```text
-Edge/Canonical/HAS
-Edge/Canonical/BELONGS
-Edge/Canonical/CONNECTS
-Edge/Canonical/CONTAINS
-Edge/Canonical/PRODUCES
-Edge/Canonical/RECEIVES
-```
+| Verb | Use | Example Tag |
+|---|---|---|
+| HAS | Source contains or possesses the target | `Edge/Canonical/HAS` |
+| BELONGS | Source belongs to the target category or embodiment | `Edge/Canonical/BELONGS` |
+| CONNECTS | Source is structurally or functionally connected to target | `Edge/Canonical/CONNECTS` |
+| CONTAINS | Source contains target as an internal element | `Edge/Canonical/CONTAINS` |
+| PRODUCES | Source produces target | `Edge/Canonical/PRODUCES` |
+| RECEIVES | Source receives input, influence, fluid, or signal from target | `Edge/Canonical/RECEIVES` |
 
 ### Activation Edges
 
 Activation edges define response, movement, modulation, and influence.
 
-They describe how systems interact.
-
-| Verb | Use |
-|---|---|
-| ACTIVATES | Source initiates response in target |
-| PROPAGATES | Source carries or transmits response to target |
-| MODULATES | Source alters intensity, timing, or quality of target |
-| TRIGGERS | Source initiates target under specific conditions |
-| AMPLIFIES | Source increases target intensity |
-| INHIBITS | Source reduces or suppresses target |
-
-Example tags:
-
-```text
-Edge/Activation/ACTIVATES
-Edge/Activation/PROPAGATES
-Edge/Activation/MODULATES
-Edge/Activation/TRIGGERS
-Edge/Activation/AMPLIFIES
-Edge/Activation/INHIBITS
-```
+| Verb | Use | Example Tag |
+|---|---|---|
+| ACTIVATES | Source initiates response in target | `Edge/Activation/ACTIVATES` |
+| PROPAGATES | Source carries or transmits response to target | `Edge/Activation/PROPAGATES` |
+| MODULATES | Source alters intensity, timing, or quality of target | `Edge/Activation/MODULATES` |
+| TRIGGERS | Source initiates target under specific conditions | `Edge/Activation/TRIGGERS` |
+| AMPLIFIES | Source increases target intensity | `Edge/Activation/AMPLIFIES` |
+| INHIBITS | Source reduces or suppresses target | `Edge/Activation/INHIBITS` |
 
 ### Interpretive Edges
 
 Interpretive edges define meaning, representation, annotation, and expression.
 
-They describe how systems are perceived, interpreted, represented, or used.
-
-| Verb | Use |
-|---|---|
-| SYMBOLIZES | Source symbolically means or evokes target |
-| REPRESENTS | Source represents target in an expressive or conceptual system |
-| REFERENCES | Source refers to target |
-| MANIFESTS | Source appears through target |
-| EXPRESSES | Source communicates target |
-| REFLECTS | Source reflects target without fully representing it |
-| ANNOTATES | Source annotates target |
-
-Example tags:
-
-```text
-Edge/Interpretive/SYMBOLIZES
-Edge/Interpretive/REPRESENTS
-Edge/Interpretive/REFERENCES
-Edge/Interpretive/MANIFESTS
-Edge/Interpretive/EXPRESSES
-Edge/Interpretive/REFLECTS
-Edge/Interpretive/ANNOTATES
-```
+| Verb | Use | Example Tag |
+|---|---|---|
+| SYMBOLIZES | Source symbolically means or evokes target | `Edge/Interpretive/SYMBOLIZES` |
+| REPRESENTS | Source represents target in an expressive or conceptual system | `Edge/Interpretive/REPRESENTS` |
+| REFERENCES | Source refers to target | `Edge/Interpretive/REFERENCES` |
+| MANIFESTS | Source appears through target | `Edge/Interpretive/MANIFESTS` |
+| EXPRESSES | Source communicates target | `Edge/Interpretive/EXPRESSES` |
+| REFLECTS | Source reflects target without fully representing it | `Edge/Interpretive/REFLECTS` |
+| ANNOTATES | Source annotates target | `Edge/Interpretive/ANNOTATES` |
 
 ### Governance Edges
 
 Governance edges define control, validation, constraints, inheritance, and revision logic.
 
-They describe what is allowed, required, protected, deprecated, or constrained.
-
-| Verb | Use |
-|---|---|
-| REQUIRES | Source requires target to be valid |
-| CONSTRAINS | Source limits or governs target |
-| PROTECTS | Source protects target from drift or misuse |
-| VALIDATES | Source validates target |
-| PROHIBITS | Source disallows target |
-| DEPRECATES | Source marks target as obsolete |
-| OVERRIDES | Source supersedes target under defined conditions |
-| INHERITS | Source inherits rules or properties from target |
-| PERMITS | Source allows target under defined conditions |
-
-Example tags:
-
-```text
-Edge/Governance/REQUIRES
-Edge/Governance/CONSTRAINS
-Edge/Governance/PROTECTS
-Edge/Governance/VALIDATES
-Edge/Governance/PROHIBITS
-Edge/Governance/DEPRECATES
-Edge/Governance/OVERRIDES
-Edge/Governance/INHERITS
-Edge/Governance/PERMITS
-```
+| Verb | Use | Example Tag |
+|---|---|---|
+| REQUIRES | Source requires target to be valid | `Edge/Governance/REQUIRES` |
+| CONSTRAINS | Source limits or governs target | `Edge/Governance/CONSTRAINS` |
+| PROTECTS | Source protects target from drift or misuse | `Edge/Governance/PROTECTS` |
+| VALIDATES | Source validates target | `Edge/Governance/VALIDATES` |
+| PROHIBITS | Source disallows target | `Edge/Governance/PROHIBITS` |
+| DEPRECATES | Source marks target as obsolete | `Edge/Governance/DEPRECATES` |
+| OVERRIDES | Source supersedes target under defined conditions | `Edge/Governance/OVERRIDES` |
+| INHERITS | Source inherits rules or properties from target | `Edge/Governance/INHERITS` |
+| PERMITS | Source allows target under defined conditions | `Edge/Governance/PERMITS` |
 
 ---
 
-## Traversal Model
+## 🔄 Traversal Model
 
 The ontology is designed for future traversal.
 
-A traversal route may move through canonical, activation, interpretive, and governance edges.
-
-Governance edges act as control rails for traversal.
+A traversal route may move through canonical, activation, interpretive, and governance edges. Governance edges act as control rails for traversal.
 
 ```mermaid
 flowchart LR
@@ -632,62 +432,16 @@ Find all paths from Female Embodiment to Sovereignty using Canonical, Activation
 
 ---
 
-## Node Lifecycle
+## 📋 Node Lifecycle
 
 Every ontology node should answer four questions.
 
-### What am I?
-
-Defines identity.
-
-Examples:
-
-- Node type
-- Layer
-- Embodiment scope
-- Canonical name
-- Aliases
-- Purpose
-
-### How am I connected?
-
-Defines relationships.
-
-Examples:
-
-- Incoming edges
-- Outgoing edges
-- Parent nodes
-- Child nodes
-- Related systems
-- Inverse relationships
-
-### How do I participate?
-
-Defines behaviour.
-
-Examples:
-
-- Activation
-- Propagation
-- Modulation
-- Mirror behaviour
-- Sensory role
-- Somatic role
-- Meaning role
-
-### How am I governed?
-
-Defines constraints.
-
-Examples:
-
-- Required fields
-- Validation rules
-- Scope limits
-- Deprecation status
-- Inheritance rules
-- Review requirements
+| Question | Defines | Examples |
+|---|---|---|
+| **What am I?** | Identity | Node type, layer, embodiment scope, canonical name, aliases, purpose |
+| **How am I connected?** | Relationships | Incoming edges, outgoing edges, parents, children, inverse relationships |
+| **How do I participate?** | Behaviour | Activation, propagation, modulation, mirrors, sensory role, somatic role, meaning role |
+| **How am I governed?** | Constraints | Required fields, validation rules, scope limits, inheritance, review requirements |
 
 ```mermaid
 flowchart TD
@@ -698,10 +452,6 @@ flowchart TD
     E --> F[Canonical Node]
     F --> G[Referenced by Corpus]
 ```
-
-### Node Status
-
-Nodes may use lifecycle status values such as:
 
 | Status | Meaning |
 |---|---|
@@ -714,42 +464,7 @@ Nodes may use lifecycle status values such as:
 
 ---
 
-## Architecture First
-
-This repository follows the principle:
-
-> **Slow architecture. Fast content.**
-
-The early phase of the project prioritises architecture, governance, templates, and relationship design.
-
-Once the architecture stabilises, content creation should accelerate because each node instantiates an existing structure rather than inventing one.
-
-### Before adding a concept, ask:
-
-- Is this a node?
-- Is this an edge?
-- Is this a property?
-- Is this a governance rule?
-- Is this an annotation?
-
-### Before adding a new section, ask:
-
-- Is this intrinsic to the node?
-- Is this better represented as a linked entity?
-- Is this duplicated elsewhere?
-- Will future nodes repeat this structure?
-
-### Before adding a new layer, ask:
-
-- Does it define what exists?
-- Does it define how systems respond?
-- Does it define how experience is perceived?
-- Does it define how experience is communicated?
-- Does it instantiate the ontology in a creative work?
-
----
-
-## Ontology Smell Tests
+## 🧪 Ontology Smell Tests
 
 The following are signs that the architecture may need refinement.
 
@@ -767,7 +482,7 @@ The following are signs that the architecture may need refinement.
 
 ---
 
-## Architectural Decision Records
+## 🧾 Architectural Decision Records
 
 Significant architectural choices should be captured as Architectural Decision Records in the Governance folder.
 
@@ -790,92 +505,21 @@ Status: Accepted.
 
 ---
 
-## Development Roadmap
+## 🗺️ Development Roadmap
 
-### Phase 1: Foundation
-
-Current phase.
-
-Goals:
-
-- Establish repository architecture
-- Rewrite README
-- Define governance model
-- Define node lifecycle
-- Define controlled ontology language
-- Define edge families
-- Create template structure
-
-### Phase 2: Canonical Embodiment
-
-Goals:
-
-- Build anatomical site templates
-- Build anatomical structure templates
-- Build canonical embodiment folders
-- Develop female embodiment first as validation set
-- Extend to male, trans feminine, trans masculine, and shared embodiment after validation
-
-### Phase 3: Activation and Translation
-
-Goals:
-
-- Define activation nodes
-- Define propagation nodes
-- Define mirror nodes
-- Define fluid nodes
-- Define modulation rules
-- Establish bidirectional relationship checks where needed
-
-### Phase 4: Expressive Systems
-
-Goals:
-
-- Define somatic layer
-- Define sensory layer
-- Define emotional layer
-- Define symbolic layer
-- Define sonic layer
-- Define temporal layer
-- Define environmental and liturgical systems
-
-### Phase 5: Authorial Systems
-
-Goals:
-
-- Define Story Operating Systems
-- Define Human Drift Register
-- Define Example Register
-- Define voice and cadence systems
-- Establish authorial governance
-
-### Phase 6: Corpus Annotation
-
-Goals:
-
-- Annotate existing stories
-- Annotate songs and lyrics
-- Link corpus instances to ontology nodes
-- Identify recurring routes
-- Validate ontology against existing works
-
-### Phase 7: Tooling
-
-Goals:
-
-- Build Markdown parser
-- Extract nodes and edges
-- Generate backlink reports
-- Detect orphaned nodes
-- Detect duplicate aliases
-- Validate required fields
-- Export JSON
-- Export graph formats
-- Prepare for future graph database integration
+| Phase | Focus | Goals |
+|---|---|---|
+| **Phase 1** | Foundation | Repository architecture, README, governance, node lifecycle, edge families, templates |
+| **Phase 2** | Canonical Embodiment | Anatomical site templates, anatomical structure templates, embodiment folders, female validation set |
+| **Phase 3** | Activation and Translation | Activation nodes, propagation nodes, mirror nodes, fluid nodes, modulation rules |
+| **Phase 4** | Expressive Systems | Somatic, sensory, emotional, symbolic, sonic, temporal, environmental, and liturgical systems |
+| **Phase 5** | Authorial Systems | Story Operating Systems, Human Drift Register, Example Register, voice and cadence governance |
+| **Phase 6** | Corpus Annotation | Existing stories, songs, lyrics, essays, research, recurring routes |
+| **Phase 7** | Tooling | Markdown parser, edge extraction, backlink reports, orphan detection, JSON and graph export |
 
 ---
 
-## Long-Term Platform Vision
+## 🔮 Long-Term Platform Vision
 
 The Somatic Meaning Engine is intended to evolve from Markdown knowledge base into a graph-backed meaning platform.
 
@@ -918,13 +562,11 @@ Future capabilities may include:
 
 ---
 
-## Repository Principles
+## 🧷 Repository Principles
 
 ### Every Markdown file represents a knowledge object
 
-Files are not merely notes.
-
-Each file should represent a node, rule, template, annotation, or architectural decision.
+Files are not merely notes. Each file should represent a node, rule, template, annotation, or architectural decision.
 
 ### Every new concept must earn its place
 
@@ -944,65 +586,32 @@ Governance rules exist to prevent drift, duplication, and uncontrolled expansion
 
 ---
 
-## Glossary
+## 📖 Glossary
 
-### Ontology
-
-A structured model of entities, relationships, rules, and categories within a domain.
-
-### Node
-
-A discrete knowledge object represented by a Markdown file.
-
-### Edge
-
-A typed relationship between two nodes.
-
-### Edge Family
-
-A category of relationship types, such as Canonical, Activation, Interpretive, or Governance.
-
-### Canonical Embodiment
-
-The layer defining objective embodiment knowledge, including anatomy, physiology, fluids, and biological systems.
-
-### Activation
-
-The initiation of response within or between systems.
-
-### Propagation
-
-The movement of response, signal, sensation, influence, or meaning from one node or system to another.
-
-### Mirror
-
-A cross-body, cross-system, relational, or symbolic correspondence where one node reflects, echoes, or responds to another.
-
-### Expressive Layer
-
-A layer that describes how embodied knowledge becomes perceived, felt, interpreted, or symbolically meaningful.
-
-### Authorial System
-
-A governed system that controls how ontology-derived meaning is communicated in the K.S. McCrae framework.
-
-### Corpus
-
-The body of stories, songs, essays, research, and creative works annotated against the ontology.
-
-### Governance
-
-The rule system that defines requirements, constraints, validation, inheritance, deprecation, and architectural protection.
+| Term | Definition |
+|---|---|
+| **Ontology** | A structured model of entities, relationships, rules, and categories within a domain |
+| **Node** | A discrete knowledge object represented by a Markdown file |
+| **Edge** | A typed relationship between two nodes |
+| **Edge Family** | A category of relationship types, such as Canonical, Activation, Interpretive, or Governance |
+| **Canonical Embodiment** | The layer defining objective embodiment knowledge, including anatomy, physiology, fluids, and biological systems |
+| **Activation** | The initiation of response within or between systems |
+| **Propagation** | The movement of response, signal, sensation, influence, or meaning from one node or system to another |
+| **Mirror** | A cross-body, cross-system, relational, or symbolic correspondence where one node reflects, echoes, or responds to another |
+| **Expressive Layer** | A layer that describes how embodied knowledge becomes perceived, felt, interpreted, or symbolically meaningful |
+| **Authorial System** | A governed system that controls how ontology-derived meaning is communicated in the K.S. McCrae framework |
+| **Corpus** | The body of stories, songs, essays, research, and creative works annotated against the ontology |
+| **Governance** | The rule system that defines requirements, constraints, validation, inheritance, deprecation, and architectural protection |
 
 ---
 
-## Current Starting Point
+## 🚦 Current Starting Point
 
 This repository has been reset into a clean ontology-first structure.
 
 Earlier material has been retained in the Archive folder for historical reference.
 
-The current development priority is:
+Current development priority:
 
 ```text
 README
