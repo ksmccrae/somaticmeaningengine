@@ -1,4 +1,34 @@
+---
+tags:
+  - Document/README
+  - Document/Repository Entry
+  - Document/Architecture
+  - Project/Somatic Meaning Engine
+  - Status/Foundation
+  - Phase/Ontology v2
+  - Tool/Obsidian
+  - Tool/GitHub
+aliases:
+  - Somatic Meaning Engine
+  - K.S. McCrae Ontology
+  - Repository README
+title: K.S. McCrae Ontology: Somatic Meaning Engine
+document_type: README
+repository_phase: Ontology v2 Foundation
+status: Foundation
+source_of_truth: GitHub repository
+authoring_environment: Obsidian Markdown
+last_updated: 2026-06-26
+---
+
 # K.S. McCrae Ontology: Somatic Meaning Engine
+
+![Status](https://img.shields.io/badge/Status-Foundation-blue)
+![Version](https://img.shields.io/badge/Version-v2.0-success)
+![Architecture](https://img.shields.io/badge/Architecture-Governed%20Ontology-purple)
+![Graph](https://img.shields.io/badge/Graph-Markdown%20Native-orange)
+![Obsidian](https://img.shields.io/badge/Obsidian-Compatible-7C3AED)
+![Source](https://img.shields.io/badge/Source-GitHub-black)
 
 **From embodiment to meaning through governed knowledge.**
 
@@ -37,12 +67,16 @@ It is designed as the canonical knowledge model for the K.S. McCrae writing fram
 - [Repository Architecture](#repository-architecture)
 - [Controlled Ontology Language](#controlled-ontology-language)
 - [Edge Families](#edge-families)
+- [Traversal Model](#traversal-model)
 - [Node Lifecycle](#node-lifecycle)
 - [Architecture First](#architecture-first)
 - [Ontology Smell Tests](#ontology-smell-tests)
+- [Architectural Decision Records](#architectural-decision-records)
 - [Development Roadmap](#development-roadmap)
 - [Long-Term Platform Vision](#long-term-platform-vision)
+- [Repository Principles](#repository-principles)
 - [Glossary](#glossary)
+- [Current Starting Point](#current-starting-point)
 
 ---
 
