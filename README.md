@@ -121,27 +121,30 @@ Core decisions now considered stable:
 | Authorial Systems | [Authorial Systems](Authorial%20Systems/README.md) | Defines authorial systems |
 | Corpus | [Corpus](Corpus/README.md) | Contains annotated works |
 | Templates | [Templates](Templates/README.md) | Contains reusable structures |
+| Scratchpad | [Scratchpad](Scratchpad/README.md) | Holds temporary work |
 
 ### Canonical Embodiment
 
 | Folder | Link |
 |---|---|
 | Female | [Female](Canonical%20Embodiment/Female/README.md) |
+| Male | [Male](Canonical%20Embodiment/Male/README.md) |
 | Shared | [Shared](Canonical%20Embodiment/Shared/README.md) |
 | Trans Feminine | [Trans Feminine](Canonical%20Embodiment/Trans%20Feminine/README.md) |
 | Trans Masculine | [Trans Masculine](Canonical%20Embodiment/Trans%20Masculine/README.md) |
-
-The `Male` folder is part of the defined architecture and should be added manually if connector filtering prevents automated creation.
 
 ### Expressive Layers
 
 | Folder | Link |
 |---|---|
+| Somatic | [Somatic](Expressive%20Layers/Somatic/README.md) |
 | Sensory | [Sensory](Expressive%20Layers/Sensory/README.md) |
 | Emotional | [Emotional](Expressive%20Layers/Emotional/README.md) |
 | Symbolic | [Symbolic](Expressive%20Layers/Symbolic/README.md) |
-
-Additional defined expressive folders include Somatic, Sonic, Environmental, Liturgical, and Temporal. These remain part of the architecture even if their placeholder files are added manually.
+| Sonic | [Sonic](Expressive%20Layers/Sonic/README.md) |
+| Environmental | [Environmental](Expressive%20Layers/Environmental/README.md) |
+| Liturgical | [Liturgical](Expressive%20Layers/Liturgical/README.md) |
+| Temporal | [Temporal](Expressive%20Layers/Temporal/README.md) |
 
 ### Authorial Systems
 
@@ -149,6 +152,7 @@ Additional defined expressive folders include Somatic, Sonic, Environmental, Lit
 |---|---|
 | Story Operating Systems | [Story Operating Systems](Authorial%20Systems/Story%20Operating%20Systems/README.md) |
 | Example Register | [Example Register](Authorial%20Systems/Example%20Register/README.md) |
+| Human Drift Register | [Human Drift Register](Authorial%20Systems/Human%20Drift%20Register/README.md) |
 
 ### Corpus
 
@@ -167,6 +171,7 @@ Additional defined expressive folders include Somatic, Sonic, Environmental, Lit
 | Translation | [Translation](Templates/Translation/README.md) |
 | Expressive | [Expressive](Templates/Expressive/README.md) |
 | Authorial | [Authorial](Templates/Authorial/README.md) |
+| Annotation | [Annotation](Templates/Annotation/README.md) |
 
 ---
 
