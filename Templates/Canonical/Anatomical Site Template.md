@@ -12,7 +12,7 @@ template_type: Canonical
 node_type: Anatomical Site
 layer: Canonical Embodiment
 status: Review
-version: 0.3
+version: 0.4
 last_updated: 2026-06-29
 ---
 
@@ -82,6 +82,8 @@ Laterality may be meaningful when a structure has or may have:
 - image or scene annotation requiring a side-specific anchor
 
 This exception is especially important for Trans Feminine and Trans Masculine chest or breast modelling, where surgical history, scarring, nipple placement, sensation, or activation may differ by side.
+
+The same principle applies to labial structures. Labia Majora and Labia Minora are paired structures and should remain plural paired nodes by default. Side-specific labial nodes should only be created where separation carries ontological meaning, such as asymmetry, injury, scar records, swelling, surgery, activation difference, sensory difference, image annotation, or corpus-specific annotation.
 
 When laterality is needed, represent it explicitly:
 
