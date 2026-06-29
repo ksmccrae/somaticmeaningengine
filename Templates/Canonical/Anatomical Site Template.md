@@ -2,7 +2,7 @@
 tags:
   - Template/Canonical
   - Template/Anatomical Site
-  - Status/Review
+  - Status/Baseline
 aliases:
   - Anatomical Site Template
   - Canonical Anatomical Site Template
@@ -11,8 +11,8 @@ file_class: Template
 template_type: Canonical
 node_type: Anatomical Site
 layer: Canonical Embodiment
-status: Review
-version: 0.4
+status: Baseline
+version: 1.0
 last_updated: 2026-06-29
 ---
 
@@ -40,8 +40,8 @@ Examples:
 
 ```text
 Female - Vulva.md
-Female - Nipple.md
-Male - Nipple.md
+Female - Nipples.md
+Male - Nipples.md
 Trans Feminine - Chest.md
 Trans Masculine - Pelvic Floor.md
 ```
@@ -300,6 +300,6 @@ Use this section to capture unresolved ontology questions before the node become
 
 ## Status
 
-Draft v0.1.
+Baseline v1.0.
 
-This node should be reviewed before being marked Canonical.
+This template has been validated against the first-pass Female genital and breast anatomical node set and may be used for further canonical anatomical site construction.
