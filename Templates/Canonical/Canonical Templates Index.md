@@ -2,11 +2,11 @@
 tags:
   - Document/Index
   - Templates/Canonical
-  - Status/Draft
+  - Status/Baseline
 title: Canonical Templates Index
 file_class: Document
 document_type: Index
-status: Draft
+status: Baseline
 last_updated: 2026-06-29
 ---
 
@@ -20,14 +20,25 @@ This index lists reusable templates for Canonical Embodiment nodes.
 
 | Template | Purpose | Status |
 |---|---|---|
-| [[Anatomical Site Template]] | Defines the structure for canonical anatomical site nodes. | Draft v0.1 |
+| [[Anatomical Site Template]] | Defines the structure for canonical anatomical site nodes. | Baseline v1.0 |
 
-## Next Validation Case
+## Validation History
 
-The first validation case is expected to be:
+The Anatomical Site Template was validated against the first-pass Female genital and breast anatomical node set.
+
+Validation confirmed:
+
+- canonical anatomical nodes should exclude activation, fluid, sensory, mirror, symbolic, authorial, and corpus details
+- paired structures should remain plural paired nodes by default
+- laterality should be introduced only when side-specific meaning is ontologically necessary
+- review questions should remain in draft nodes until they are resolved or promoted into governance rules
+
+## Next Template Candidate
+
+The next likely template candidate is:
 
 ```text
-Female - Vulva.md
+Fluid Profile Template
 ```
 
-This will test whether the template cleanly separates canonical anatomy from sensory, mirror, propagation, symbolic, fluid, authorial, and corpus layers.
+Fluid profiles should link back to canonical anatomical nodes rather than redefine anatomical structure.
