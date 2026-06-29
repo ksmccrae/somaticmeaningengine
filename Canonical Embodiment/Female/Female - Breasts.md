@@ -13,9 +13,10 @@ layer: Canonical Embodiment
 embodiment_scope: Female
 classification: Paired Composite Anatomical Node
 status: Draft
-version: 0.1
+version: 0.2
 parent: Female - Thorax
 paired: true
+laterality: null
 distributed: false
 transitional: false
 ---
@@ -30,6 +31,8 @@ This node defines the breasts as canonical anatomical sites within Female Embodi
 
 Female - Breasts are paired thoracic anatomical structures associated with the chest region.
 
+This node represents the paired structure as a plural paired node. Left and right breast nodes should only be created when laterality becomes ontologically necessary for surgical history, scar mapping, asymmetry, corpus annotation, or side-specific activation records.
+
 ## Parent Relationships
 
 ```text
@@ -41,8 +44,6 @@ Female - Thorax BELONGS_TO Female Embodiment
 
 | Child Structure | Proposed Node | Classification |
 |---|---|---|
-| Left Breast | [[Female - Left Breast]] | Composite Anatomical Node |
-| Right Breast | [[Female - Right Breast]] | Composite Anatomical Node |
 | Nipple | [[Female - Nipple]] | Paired Atomic Node |
 | Areola | [[Female - Areola]] | Paired Atomic Node |
 | Mammary Tissue | [[Female - Mammary Tissue]] | Distributed or Composite Node |
@@ -55,11 +56,16 @@ Female - Thorax BELONGS_TO Female Embodiment
 
 Activation, sensory, somatic, mirror, symbolic, fluid, terminology, and corpus details belong to downstream layers.
 
+## Resolved Governance Notes
+
+- Female - Breasts remains plural because it represents a paired anatomical structure.
+- Left and right breast nodes are not created by default.
+- Laterality is represented as a property unless side-specific modelling becomes necessary.
+
 ## Review Questions
 
-1. Should Female - Breasts be the primary node, or should Female - Breast be singular with paired property?
-2. Should left and right breast be explicit child nodes or laterality properties only?
+1. Should any child structures be moved primarily under Skin and Surface, Musculoskeletal Support, or Circulatory and Lymphatic Systems, with cross-links back to Breasts?
 
 ## Status
 
-Draft v0.1.
+Draft v0.2.
