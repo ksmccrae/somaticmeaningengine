@@ -11,14 +11,10 @@
             "id": "c5461ef0ea05c9b9",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Canonical Embodiment/Female/Female Embodiment Framework.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Female Embodiment Framework"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -171,13 +167,24 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
+          },
+          {
+            "id": "954bc0c8a832b90a",
+            "type": "leaf",
+            "state": {
+              "type": "claudian-view",
+              "state": {},
+              "icon": "bot",
+              "title": "Claudian"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -188,37 +195,38 @@
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
       "obsidian-git:Open Git source control": false,
-      "templater-obsidian:Templater": false
+      "templater-obsidian:Templater": false,
+      "realclaudian:Open Claudian": false
     }
   },
-  "active": "c5461ef0ea05c9b9",
+  "active": "9cab35594af36586",
   "lastOpenFiles": [
-    "Canonical Embodiment/README.md",
-    "Canonical Embodiment/Index.md",
-    "Expressive Layers/README.md",
-    "Expressive Layers/Environmental/README.md",
-    "Templates/Translation/README.md",
-    "Governance/Specifications/Document Specification.md",
-    "Templates/Translation/Translation Templates Index.md",
-    "Templates/Templates Framework.md",
-    "Templates/Canonical/Canonical Templates Index.md",
-    "Templates/Authorial/Authorial Templates Index.md",
-    "Scratchpad/Index.md",
-    "Propagation Layer/Propagation Layer Framework.md",
-    "Meaning Layer/Meaning Layer Framework.md",
-    "Governance/Standards/YAML Standard.md",
-    "Governance/Standards/Standards Framework.md",
-    "Governance/Standards/Repository Lifecycle Standard.md",
-    "Governance/Standards/Metadata Standard.md",
-    "Governance/Standards/Markdown Standard.md",
-    "Governance/Specifications/Specification Framework.md",
-    "Governance/Governance Framework.md",
-    "Governance/Decisions/Decision Records Framework.md",
-    "Governance/Architecture/Architecture Framework.md",
-    "Expressive Layers/Temporal/Temporal Index.md",
-    "Expressive Layers/Symbolic/Symbolic Index.md",
-    "Expressive Layers/Sensory/Sensory Index.md",
-    "Corpus/Stories/Stories Index.md",
+    "Canonical Embodiment/Trans Feminine/README.md",
+    "Canonical Embodiment/Male/README.md",
+    "Canonical Embodiment/Female/README.md",
+    "Canonical Embodiment/Female/Female - Vaginal Mucosa.md",
+    "Templates/Translation/Fluid Entity Template.md",
+    "Fluid Layer/Female - Vaginal Canal Fluid Profile.md",
+    "Fluid Layer/Female - Skene's Glands Fluid Profile.md",
+    "Fluid Layer/Female - Breasts Fluid Profile.md",
+    "Templates/Translation/Fluid Profile Template.md",
+    "Fluid Layer/Female - Vulva Fluid Profile.md",
+    "Canonical Embodiment/Female/Female - Skene's Glands.md",
+    "Canonical Embodiment/Female/Female - Nipples.md",
+    "Canonical Embodiment/Female/Female - Areolae.md",
+    "Canonical Embodiment/Female/Female - Anterior Fornix.md",
+    "Canonical Embodiment/Female/Female - Vestibular Gland Openings.md",
+    "Canonical Embodiment/Female/Female - Vestibular Bulbs.md",
+    "Canonical Embodiment/Female/Female - Vaginal Opening.md",
+    "Canonical Embodiment/Female/Female - Vaginal Fornix.md",
+    "Canonical Embodiment/Female/Female - Vaginal Canal.md",
+    "Canonical Embodiment/Female/Female - Uterus.md",
+    "Canonical Embodiment/Female/Female - Urethral Opening.md",
+    "Canonical Embodiment/Female/Female - Right Breast.md",
+    "Canonical Embodiment/Female/Female - Posterior Vaginal Wall.md",
+    "Canonical Embodiment/Female/Female - Perineum.md",
+    "Canonical Embodiment/Female/Female - Perineal Boundary.md",
+    "Canonical Embodiment/Female/Female - Pelvic Floor.md",
     "Corpus/Stories",
     "Corpus/Research",
     "Corpus/Songs",
