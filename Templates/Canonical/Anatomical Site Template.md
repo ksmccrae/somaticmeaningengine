@@ -12,7 +12,7 @@ template_type: Canonical
 node_type: Anatomical Site
 layer: Canonical Embodiment
 status: Review
-version: 0.2
+version: 0.3
 last_updated: 2026-06-29
 ---
 
@@ -63,19 +63,27 @@ Female - Labia Minora.md
 Female - Ovaries.md
 ```
 
-Do not create left/right child nodes by default.
+Do not create left/right child nodes merely because a structure is paired.
 
-Left/right nodes should only be created when laterality itself becomes ontologically necessary, such as:
+Left/right nodes should be created only when laterality itself becomes ontologically meaningful.
+
+Laterality may be meaningful when a structure has or may have:
 
 - asymmetrical anatomy
 - surgical history
 - scar records
+- reconstruction history
+- nipple or areola relocation
+- implant, graft, or tissue-transfer history
 - medical annotation
 - corpus-specific annotation
 - activation differences by side
+- sensory differences by side
 - image or scene annotation requiring a side-specific anchor
 
-When laterality is needed, it should be represented explicitly:
+This exception is especially important for Trans Feminine and Trans Masculine chest or breast modelling, where surgical history, scarring, nipple placement, sensation, or activation may differ by side.
+
+When laterality is needed, represent it explicitly:
 
 ```yaml
 laterality: Left
@@ -87,7 +95,7 @@ or
 laterality: Right
 ```
 
-Until then, pairedness should remain a property of the plural anatomical node.
+Until laterality is needed, pairedness should remain a property of the plural anatomical node.
 
 ---
 
@@ -113,6 +121,7 @@ status: Draft
 version: 0.1
 parent: Embodiment - Parent Node
 paired: false
+laterality: null
 distributed: false
 transitional: false
 ---
@@ -196,7 +205,7 @@ If the node is atomic, state:
 This node has no child structures at the current modelling resolution.
 ```
 
-Do not add left/right child structures only to represent pairedness. Use the paired property unless laterality is ontologically required.
+Do not add left/right child structures only to represent pairedness. Use the paired property unless laterality is ontologically meaningful.
 
 ---
 
