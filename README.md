@@ -19,7 +19,7 @@ repository_phase: "Ontology v2 Foundation"
 status: Baseline
 source_of_truth: "GitHub repository"
 authoring_environment: "Obsidian Markdown"
-last_updated: 2026-06-26
+last_updated: 2026-06-29
 ---
 
 # K.S. McCrae Ontology: Somatic Meaning Engine
@@ -58,7 +58,7 @@ It is designed as the canonical knowledge model for the K.S. McCrae writing fram
 
 The repository is now operating from the **Architecture Baseline v2.0**.
 
-Future architecture changes should be handled through an architectural decision record in [Governance/Decisions](Governance/Decisions/README.md).
+Future architecture changes should be handled through an architectural decision record in [Governance/Decisions](Governance/Decisions/Decision%20Records%20Framework.md).
 
 Core decisions now considered stable:
 
@@ -78,11 +78,11 @@ Core decisions now considered stable:
 
 | Area | Link | Purpose |
 |---|---|---|
-| Governance | [Governance](Governance/README.md) | Architecture, specifications, standards, and decisions |
-| Architecture | [Governance/Architecture](Governance/Architecture/README.md) | Architecture-level documents |
-| Specifications | [Governance/Specifications](Governance/Specifications/README.md) | Implementation specifications |
-| Standards | [Governance/Standards](Governance/Standards/README.md) | Naming and repository standards |
-| Decisions | [Governance/Decisions](Governance/Decisions/README.md) | Architectural decision records |
+| Governance | [Governance](Governance/Governance%20Framework.md) | Architecture, specifications, standards, and decisions |
+| Architecture | [Governance/Architecture](Governance/Architecture/Architecture%20Framework.md) | Architecture-level documents |
+| Specifications | [Governance/Specifications](Governance/Specifications/Specification%20Framework.md) | Implementation specifications |
+| Standards | [Governance/Standards](Governance/Standards/Standards%20Framework.md) | Naming and repository standards |
+| Decisions | [Governance/Decisions](Governance/Decisions/Decision%20Records%20Framework.md) | Architectural decision records |
 
 ### Core Specifications
 
@@ -94,9 +94,18 @@ Core decisions now considered stable:
 | Node Specification | [Node Specification](Governance/Specifications/Node%20Specification.md) |
 | Relationship Specification | [Relationship Specification](Governance/Specifications/Relationship%20Specification.md) |
 | Template Specification | [Template Specification](Governance/Specifications/Template%20Specification.md) |
-| Naming Standard | [Naming Standard](Governance/Standards/Naming%20Standard.md) |
 | Traversal Specification | [Traversal Specification](Governance/Specifications/Traversal%20Specification.md) |
 | Validation Philosophy | [Validation Philosophy](Governance/Specifications/Validation%20Philosophy.md) |
+
+### Standards
+
+| Standard | Link |
+|---|---|
+| Naming Standard | [Naming Standard](Governance/Standards/Naming%20Standard.md) |
+| Metadata Standard | [Metadata Standard](Governance/Standards/Metadata%20Standard.md) |
+| YAML Standard | [YAML Standard](Governance/Standards/YAML%20Standard.md) |
+| Markdown Standard | [Markdown Standard](Governance/Standards/Markdown%20Standard.md) |
+| Repository Lifecycle Standard | [Repository Lifecycle Standard](Governance/Standards/Repository%20Lifecycle%20Standard.md) |
 
 ### Architectural Decisions
 
@@ -111,66 +120,66 @@ Core decisions now considered stable:
 
 | Folder | Link | Function |
 |---|---|---|
-| Canonical Embodiment | [Canonical Embodiment](Canonical%20Embodiment/README.md) | Defines objective embodiment knowledge |
-| Activation Layer | [Activation Layer](Activation%20Layer/README.md) | Defines response initiation |
-| Propagation Layer | [Propagation Layer](Propagation%20Layer/README.md) | Defines movement across systems |
+| Canonical Embodiment | [Canonical Embodiment](Canonical%20Embodiment/Index.md) | Defines objective embodiment knowledge |
+| Activation Layer | [Activation Layer](Activation%20Layer/Activation%20Layer%20Framework.md) | Defines response initiation |
+| Propagation Layer | [Propagation Layer](Propagation%20Layer/Propagation%20Layer%20Framework.md) | Defines movement across systems |
 | Mirror Layer | [Mirror Layer](Mirror%20Layer/README.md) | Defines mirror relationships |
 | Fluid Layer | [Fluid Layer](Fluid%20Layer/README.md) | Defines fluid entities and relationships |
-| Meaning Layer | [Meaning Layer](Meaning%20Layer/README.md) | Defines meaning objects |
+| Meaning Layer | [Meaning Layer](Meaning%20Layer/Meaning%20Layer%20Framework.md) | Defines meaning objects |
 | Expressive Layers | [Expressive Layers](Expressive%20Layers/README.md) | Defines expressive systems |
-| Authorial Systems | [Authorial Systems](Authorial%20Systems/README.md) | Defines authorial systems |
-| Corpus | [Corpus](Corpus/README.md) | Contains annotated works |
-| Templates | [Templates](Templates/README.md) | Contains reusable structures |
-| Scratchpad | [Scratchpad](Scratchpad/README.md) | Holds temporary work |
+| Authorial Systems | [Authorial Systems](Authorial%20Systems/Authorial%20Systems%20Framework.md) | Defines authorial systems |
+| Corpus | [Corpus](Corpus/Corpus%20Framework.md) | Contains annotated works |
+| Templates | [Templates](Templates/Templates%20Framework.md) | Contains reusable structures |
+| Scratchpad | [Scratchpad](Scratchpad/Index.md) | Holds temporary work |
 
 ### Canonical Embodiment
 
 | Folder | Link |
 |---|---|
-| Female | [Female](Canonical%20Embodiment/Female/README.md) |
-| Male | [Male](Canonical%20Embodiment/Male/README.md) |
+| Female | [Female](Canonical%20Embodiment/Female/Female%20Embodiment%20Framework.md) |
+| Male | [Male](Canonical%20Embodiment/Male/Male%20Embodiment%20Framework.md) |
 | Shared | [Shared](Canonical%20Embodiment/Shared/README.md) |
-| Trans Feminine | [Trans Feminine](Canonical%20Embodiment/Trans%20Feminine/README.md) |
-| Trans Masculine | [Trans Masculine](Canonical%20Embodiment/Trans%20Masculine/README.md) |
+| Trans Feminine | [Trans Feminine](Canonical%20Embodiment/Trans%20Feminine/Trans%20Feminine%20Embodiment%20Framework.md) |
+| Trans Masculine | [Trans Masculine](Canonical%20Embodiment/Trans%20Masculine/Trans%20Masculine%20Embodiment%20Framework.md) |
 
 ### Expressive Layers
 
 | Folder | Link |
 |---|---|
 | Somatic | [Somatic](Expressive%20Layers/Somatic/README.md) |
-| Sensory | [Sensory](Expressive%20Layers/Sensory/README.md) |
+| Sensory | [Sensory](Expressive%20Layers/Sensory/Sensory%20Index.md) |
 | Emotional | [Emotional](Expressive%20Layers/Emotional/README.md) |
-| Symbolic | [Symbolic](Expressive%20Layers/Symbolic/README.md) |
+| Symbolic | [Symbolic](Expressive%20Layers/Symbolic/Symbolic%20Index.md) |
 | Sonic | [Sonic](Expressive%20Layers/Sonic/README.md) |
 | Environmental | [Environmental](Expressive%20Layers/Environmental/README.md) |
 | Liturgical | [Liturgical](Expressive%20Layers/Liturgical/README.md) |
-| Temporal | [Temporal](Expressive%20Layers/Temporal/README.md) |
+| Temporal | [Temporal](Expressive%20Layers/Temporal/Temporal%20Index.md) |
 
 ### Authorial Systems
 
 | Folder | Link |
 |---|---|
-| Story Operating Systems | [Story Operating Systems](Authorial%20Systems/Story%20Operating%20Systems/README.md) |
-| Example Register | [Example Register](Authorial%20Systems/Example%20Register/README.md) |
-| Human Drift Register | [Human Drift Register](Authorial%20Systems/Human%20Drift%20Register/README.md) |
+| Story Operating Systems | [Story Operating Systems](Authorial%20Systems/Story%20Operating%20Systems/Story%20Operating%20Systems%20Index.md) |
+| Example Register | [Example Register](Authorial%20Systems/Example%20Register/Example%20Register%20Index.md) |
+| Human Drift Register | [Human Drift Register](Authorial%20Systems/Human%20Drift%20Register/Human%20Drift%20Register%20Index.md) |
 
 ### Corpus
 
 | Folder | Link |
 |---|---|
-| Stories | [Stories](Corpus/Stories/README.md) |
+| Stories | [Stories](Corpus/Stories/Stories%20Index.md) |
 | Songs | [Songs](Corpus/Songs/README.md) |
-| Essays | [Essays](Corpus/Essays/README.md) |
-| Research | [Research](Corpus/Research/README.md) |
+| Essays | [Essays](Corpus/Essays/Essays%20Index.md) |
+| Research | [Research](Corpus/Research/Research%20Index.md) |
 
 ### Templates
 
 | Folder | Link |
 |---|---|
-| Canonical | [Canonical](Templates/Canonical/README.md) |
-| Translation | [Translation](Templates/Translation/README.md) |
+| Canonical | [Canonical](Templates/Canonical/Canonical%20Templates%20Index.md) |
+| Translation | [Translation](Templates/Translation/Translation%20Templates%20Index.md) |
 | Expressive | [Expressive](Templates/Expressive/README.md) |
-| Authorial | [Authorial](Templates/Authorial/README.md) |
+| Authorial | [Authorial](Templates/Authorial/Authorial%20Templates%20Index.md) |
 | Annotation | [Annotation](Templates/Annotation/README.md) |
 
 ---
