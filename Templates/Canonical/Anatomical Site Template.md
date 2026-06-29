@@ -2,7 +2,7 @@
 tags:
   - Template/Canonical
   - Template/Anatomical Site
-  - Status/Draft
+  - Status/Review
 aliases:
   - Anatomical Site Template
   - Canonical Anatomical Site Template
@@ -11,8 +11,8 @@ file_class: Template
 template_type: Canonical
 node_type: Anatomical Site
 layer: Canonical Embodiment
-status: Draft
-version: 0.1
+status: Review
+version: 0.2
 last_updated: 2026-06-29
 ---
 
@@ -24,7 +24,7 @@ This template defines the required structure for canonical anatomical site nodes
 
 An anatomical site node defines anatomical existence, placement, containment, boundaries, and canonical relationships.
 
-It does not define sensory experience, symbolic meaning, authorial language, activation behaviour, propagation behaviour, or corpus usage. Those belong to downstream layers.
+It does not define sensory experience, symbolic meaning, authorial language, activation behaviour, propagation behaviour, fluid behaviour, or corpus usage. Those belong to downstream layers.
 
 ---
 
@@ -45,6 +45,49 @@ Male - Nipple.md
 Trans Feminine - Chest.md
 Trans Masculine - Pelvic Floor.md
 ```
+
+---
+
+## Paired Structure Rule
+
+Paired structures should be modelled as plural paired nodes by default.
+
+Use:
+
+```text
+Female - Breasts.md
+Female - Nipples.md
+Female - Areolae.md
+Female - Labia Majora.md
+Female - Labia Minora.md
+Female - Ovaries.md
+```
+
+Do not create left/right child nodes by default.
+
+Left/right nodes should only be created when laterality itself becomes ontologically necessary, such as:
+
+- asymmetrical anatomy
+- surgical history
+- scar records
+- medical annotation
+- corpus-specific annotation
+- activation differences by side
+- image or scene annotation requiring a side-specific anchor
+
+When laterality is needed, it should be represented explicitly:
+
+```yaml
+laterality: Left
+```
+
+or
+
+```yaml
+laterality: Right
+```
+
+Until then, pairedness should remain a property of the plural anatomical node.
 
 ---
 
@@ -75,6 +118,15 @@ transitional: false
 ---
 ```
 
+For paired structures, use:
+
+```yaml
+paired: true
+laterality: null
+```
+
+Only add side-specific laterality when a separate left/right node is justified.
+
 ---
 
 # Embodiment - Anatomical Node
@@ -85,7 +137,7 @@ This node defines `[Anatomical Node]` as a canonical anatomical site within `[Em
 
 It exists to describe anatomical structure, containment relationships, boundaries, and canonical placement in the Somatic Meaning Engine.
 
-This node does not define activation, sensory register, somatic experience, symbolic meaning, authorial usage, or corpus annotation.
+This node does not define activation, sensory register, somatic experience, symbolic meaning, authorial usage, fluid behaviour, or corpus annotation.
 
 ---
 
@@ -114,6 +166,7 @@ The definition should answer:
 | Region | Embodiment - Region |
 | External / Internal | External / Internal / Mixed |
 | Paired | true / false |
+| Laterality | null / Left / Right |
 | Distributed | true / false |
 | Transitional | true / false |
 
@@ -142,6 +195,8 @@ If the node is atomic, state:
 ```text
 This node has no child structures at the current modelling resolution.
 ```
+
+Do not add left/right child structures only to represent pairedness. Use the paired property unless laterality is ontologically required.
 
 ---
 
@@ -179,6 +234,7 @@ Do not include:
 - emotional associations
 - propagation patterns
 - mirror behaviour
+- fluid behaviour
 - corpus usage
 
 ---
@@ -212,6 +268,7 @@ Use this section to identify likely future records without defining them inside 
 | Embodiment - Anatomical Node Mirror Profile | Mirror relationships |
 | Embodiment - Anatomical Node Propagation Profile | Activation movement and pathways |
 | Embodiment - Anatomical Node Symbolic Profile | Symbolic or ritual associations |
+| Embodiment - Anatomical Node Fluid Profile | Fluid relationships |
 | Embodiment - Anatomical Node Term Register | Allowed, restricted, and banned language |
 | Embodiment - Anatomical Node Corpus Annotations | Usage across stories, songs, essays, or research |
 
@@ -224,8 +281,9 @@ Use this section to capture unresolved ontology questions before the node become
 1. Is this node Composite, Atomic, Distributed, Transitional, or a combination?
 2. Does this node require child structures now, or can they wait?
 3. Is pairedness a property of this node?
-4. Are the parent and region relationships correct?
-5. Are any downstream-layer details accidentally included in this canonical node?
+4. Does laterality need to be explicit, or should this remain a plural paired node?
+5. Are the parent and region relationships correct?
+6. Are any downstream-layer details accidentally included in this canonical node?
 
 ---
 
