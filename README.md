@@ -94,9 +94,18 @@ Core decisions now considered stable:
 | Node Specification | [Node Specification](Governance/Specifications/Node%20Specification.md) |
 | Relationship Specification | [Relationship Specification](Governance/Specifications/Relationship%20Specification.md) |
 | Template Specification | [Template Specification](Governance/Specifications/Template%20Specification.md) |
-| Naming Standard | [Naming Standard](Governance/Standards/Naming%20Standard.md) |
 | Traversal Specification | [Traversal Specification](Governance/Specifications/Traversal%20Specification.md) |
 | Validation Philosophy | [Validation Philosophy](Governance/Specifications/Validation%20Philosophy.md) |
+
+### Standards
+
+| Standard | Link |
+|---|---|
+| Naming Standard | [Naming Standard](Governance/Standards/Naming%20Standard.md) |
+| Metadata Standard | [Metadata Standard](Governance/Standards/Metadata%20Standard.md) |
+| YAML Standard | [YAML Standard](Governance/Standards/YAML%20Standard.md) |
+| Markdown Standard | [Markdown Standard](Governance/Standards/Markdown%20Standard.md) |
+| Repository Lifecycle Standard | [Repository Lifecycle Standard](Governance/Standards/Repository%20Lifecycle%20Standard.md) |
 
 ### Architectural Decisions
 
