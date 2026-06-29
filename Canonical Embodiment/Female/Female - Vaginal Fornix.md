@@ -13,9 +13,10 @@ layer: Canonical Embodiment
 embodiment_scope: Female
 classification: Anatomical Region Node
 status: Draft
-version: 0.1
+version: 0.2
 parent: Female - Vaginal Canal
 paired: false
+laterality: null
 distributed: false
 transitional: true
 ---
@@ -37,12 +38,19 @@ Female - Vaginal Fornix BELONGS_TO Female - Vaginal Canal
 Female - Vaginal Canal BELONGS_TO Female - Internal Reproductive System
 ```
 
+## Child Structures
+
+| Child Structure | Proposed Node | Classification |
+|---|---|---|
+| Anterior Fornix | [[Female - Anterior Fornix]] | Anatomical Region Node |
+
 ## Boundary Notes
 
 | Nearby Structure | Distinction |
 |---|---|
 | [[Female - Cervix]] | Adjacent cervical structure |
 | [[Female - Vaginal Canal]] | Parent internal passage |
+| [[Female - Anterior Vaginal Wall]] | Anterior wall region rather than fornix region |
 
 ## Layer Separation
 
@@ -51,7 +59,8 @@ Activation, sensory, somatic, mirror, symbolic, fluid, terminology, and corpus d
 ## Review Questions
 
 1. Should Vaginal Fornix be a separate node at v1 or deferred?
+2. Should additional fornix regions be added now or only when needed?
 
 ## Status
 
-Draft v0.1.
+Draft v0.2.
