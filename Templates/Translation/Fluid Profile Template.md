@@ -12,7 +12,7 @@ template_type: Translation
 node_type: Fluid Profile
 layer: Fluid Layer
 status: Draft
-version: 0.2
+version: 0.3
 last_updated: 2026-06-29
 ---
 
@@ -20,17 +20,42 @@ last_updated: 2026-06-29
 
 ## Purpose
 
-This template defines the required structure for fluid profile nodes in the Somatic Meaning Engine.
+This template defines the required structure for anatomical fluid profile nodes in the Somatic Meaning Engine.
 
-A fluid profile describes how bodily fluids relate to a canonical anatomical anchor.
+A fluid profile describes how one or more reusable fluid entities relate to a canonical anatomical anchor.
 
-It does not redefine anatomy, sensory experience, symbolic meaning, activation behaviour, propagation behaviour, authorial language, or corpus usage.
+It does not define the fluid entity itself, redefine anatomy, define sensory experience, define symbolic meaning, define activation behaviour, define propagation behaviour, define authorial language, or describe corpus usage.
+
+---
+
+## Architectural Rule
+
+Fluid profiles are relationship records.
+
+They sit between canonical anatomy and reusable fluid entities.
+
+```text
+Fluid Entity
+= what the fluid is
+
+Anatomical Fluid Profile
+= how one or more fluids relate to a local anatomical anchor
+
+Activation Profile
+= what process produces, moves, releases, exposes, withholds, or alters fluid across one or more anatomical sites
+```
+
+A fluid profile may reference multiple fluid entities.
+
+A fluid entity may appear in multiple fluid profiles.
+
+An activation profile may involve multiple anatomical sites and multiple fluid entities.
 
 ---
 
 ## Layer Boundary
 
-Fluid profiles may describe observable or physiologically grounded fluid qualities.
+Fluid profiles may describe local observable or physiologically grounded fluid qualities only where those qualities are specific to the anatomical relationship.
 
 Examples:
 
@@ -105,7 +130,7 @@ fluid_relevance: Present / Conditional / Adjacent / None
 
 This node defines fluid relationships associated with `Embodiment - Anatomical Node`.
 
-It links to the canonical anatomical node without redefining anatomical structure.
+It links to the canonical anatomical node and reusable fluid entities without redefining either.
 
 ---
 
@@ -119,90 +144,79 @@ It links to the canonical anatomical node without redefining anatomical structur
 
 ---
 
+## Referenced Fluid Entities
+
+List fluid entities referenced by this anatomical profile.
+
+| Fluid Entity | Relationship To Anchor | Notes |
+|---|---|---|
+| [[Fluid Entity]] | Produces / Stores / Conducts / Receives / Surface Presence / Adjacent / Output Site | Neutral relationship note only |
+
+Only reference reusable fluid entity nodes here. Do not define the fluid entity inside the anatomical profile.
+
+---
+
 ## Fluid Relationship Type
 
-Describe the type of fluid relationship without using symbolic, sensory, or authorial language.
+Describe the type of relationship between the anatomical anchor and each referenced fluid entity without using symbolic, sensory, or authorial language.
 
 | Relationship Type | Description |
 |---|---|
-| Produces | The anatomical anchor produces or secretes fluid |
-| Conducts | The anatomical anchor conducts fluid from another structure |
-| Receives | The anatomical anchor receives or contains fluid from another structure |
-| Surface Moisture | Fluid is present on or across the anatomical surface |
-| Cyclical | Fluid relationship varies through hormonal or reproductive cycles |
-| Contextual | Fluid relationship appears only under specific physiological conditions |
-| Adjacent | Fluid belongs to a nearby structure rather than this anchor directly |
+| Produces | The anatomical anchor produces or secretes a referenced fluid entity |
+| Stores | The anatomical anchor stores a referenced fluid entity |
+| Conducts | The anatomical anchor conducts a referenced fluid entity from another structure |
+| Receives | The anatomical anchor receives or contains a referenced fluid entity from another structure |
+| Output Site | A referenced fluid exits or becomes externally present at this anatomical anchor |
+| Surface Presence | A referenced fluid is present on or across the anatomical surface |
+| Cyclical | The relationship varies through hormonal or reproductive cycles |
+| Contextual | The relationship appears only under specific physiological conditions |
+| Adjacent | The fluid belongs to a nearby structure rather than this anchor directly |
 | None | No meaningful fluid relationship at current modelling resolution |
 
 ---
 
-## Fluid Categories
+## Anatomical Sources, Conduits, and Output Sites
 
-Use this section to list relevant fluids or fluid categories without converting them into sensory, symbolic, or authorial meaning.
+Separate source, pathway, and output relationships so fluids are not incorrectly assigned to nearby external structures.
 
-| Fluid Category | Relationship | Notes |
-|---|---|---|
-| Fluid Name | Present / Conditional / Cyclical / Adjacent | Neutral physiological note only |
-
-Common Female Embodiment fluid categories may include:
-
-```text
-urine
-menstrual fluid
-vaginal fluid
-cervical mucus
-paraurethral glandular fluid
-lactation fluid / milk
-surface moisture
-```
-
-Only include categories relevant to the anatomical anchor.
+| Role | Anatomical Node | Fluid Entity | Notes |
+|---|---|---|---|
+| Source | [[Embodiment - Source Node]] | [[Fluid Entity]] | Produces or stores the fluid |
+| Conduit | [[Embodiment - Conduit Node]] | [[Fluid Entity]] | Conducts the fluid |
+| Output Site | [[Embodiment - Output Node]] | [[Fluid Entity]] | External or surface site where fluid appears |
+| Adjacent Site | [[Embodiment - Adjacent Node]] | [[Fluid Entity]] | Nearby but not source or primary conduit |
 
 ---
 
-## Fluid Sources
+## Local Fluid Qualities
 
-List sources only when anatomically or physiologically appropriate.
-
-| Source | Relationship | Notes |
-|---|---|---|
-| [[Embodiment - Source Node]] | Produces / Conducts / Receives / Adjacent | Canonical note only |
-
-If no source applies, state:
-
-```text
-No direct fluid source is defined at the current modelling resolution.
-```
-
----
-
-## Fluid Outputs or Presence
-
-Describe outputs, surface presence, or containment in neutral anatomical language.
-
-| Fluid Presence | Relationship | Notes |
-|---|---|---|
-| Fluid Name | Present / Conditional / Cyclical / Adjacent | Canonical physiological note only |
-
----
-
-## Fluid Qualities
-
-Use this section for neutral observable or physiologically grounded properties of the fluid.
+Use this section for neutral observable or physiologically grounded properties only when those qualities are specific to the anatomical relationship.
 
 Do not describe subjective experience here.
 
-| Quality | Range / Description | Notes |
+| Fluid Entity | Quality | Range / Description | Notes |
+|---|---|---|---|
+| [[Fluid Entity]] | Viscosity | Thin / watery / thick / variable | Neutral description only |
+| [[Fluid Entity]] | Density | Low / moderate / high / variable | Use only if meaningful at this modelling resolution |
+| [[Fluid Entity]] | Colour | Clear / white / yellow / red / brown / variable | Neutral description only |
+| [[Fluid Entity]] | Opacity | Clear / translucent / opaque / variable | Neutral description only |
+| [[Fluid Entity]] | Odour | None / mild / strong / variable | Neutral description only |
+| [[Fluid Entity]] | Taste | Neutral / saline / metallic / bitter / variable | Use only where relevant and not authorialized |
+| [[Fluid Entity]] | Volume | Trace / low / moderate / high / variable | Neutral description only |
+| [[Fluid Entity]] | Flow | Static / surface / discharge / stream / cyclical / variable | Neutral description only |
+| [[Fluid Entity]] | Cyclicity | None / cyclical / hormonal / reproductive / contextual | Neutral description only |
+
+---
+
+## Activation Hooks
+
+Use this section to reference likely activation profiles without defining activation mechanics.
+
+| Activation Profile | Fluid Entity | Role |
 |---|---|---|
-| Viscosity | Thin / watery / thick / variable | Neutral description only |
-| Density | Low / moderate / high / variable | Use only if meaningful at this modelling resolution |
-| Colour | Clear / white / yellow / red / brown / variable | Neutral description only |
-| Opacity | Clear / translucent / opaque / variable | Neutral description only |
-| Odour | None / mild / strong / variable | Neutral description only |
-| Taste | Neutral / saline / metallic / bitter / variable | Use only where relevant and not authorialized |
-| Volume | Trace / low / moderate / high / variable | Neutral description only |
-| Flow | Static / surface / discharge / stream / cyclical / variable | Neutral description only |
-| Cyclicity | None / cyclical / hormonal / reproductive / contextual | Neutral description only |
+| [[Activation Profile]] | [[Fluid Entity]] | Produces / Releases / Moves / Withholds / Alters / Exposes |
+
+Activation profiles may involve multiple anatomical sites and multiple fluid entities.
 
 ---
 
@@ -212,11 +226,12 @@ Clarify what this fluid profile must not include.
 
 Do not include:
 
+- definitions of the fluid entity itself
 - sensory pleasure or discomfort
 - erotic terminology
 - symbolic meaning
 - emotional associations
-- activation pathways
+- activation mechanics
 - propagation routes
 - authorial usage
 - corpus examples
@@ -229,9 +244,11 @@ Use controlled relationship language.
 
 ```text
 Embodiment - Anatomical Node Fluid Profile DESCRIBES_FLUID_RELATIONSHIPS_OF Embodiment - Anatomical Node
+Embodiment - Anatomical Node Fluid Profile REFERENCES_FLUID_ENTITY Fluid Entity
 Embodiment - Anatomical Node Fluid Profile REFERENCES_FLUID_SOURCE Embodiment - Source Node
-Embodiment - Anatomical Node Fluid Profile HAS_FLUID_CATEGORY Fluid Category
-Embodiment - Anatomical Node Fluid Profile HAS_FLUID_QUALITY Fluid Quality
+Embodiment - Anatomical Node Fluid Profile REFERENCES_FLUID_CONDUIT Embodiment - Conduit Node
+Embodiment - Anatomical Node Fluid Profile REFERENCES_FLUID_OUTPUT_SITE Embodiment - Output Node
+Embodiment - Anatomical Node Fluid Profile MAY_BE_CHANGED_BY Activation Profile
 ```
 
 ---
@@ -243,10 +260,10 @@ Use this section to identify likely future records without defining them here.
 | Future Record | Purpose |
 |---|---|
 | Embodiment - Anatomical Node Activation Profile | Activation behaviour involving fluid changes |
-| Embodiment - Anatomical Node Sensory Profile | Sensory experience of moisture, pressure, dryness, smell, taste, or texture |
-| Embodiment - Anatomical Node Symbolic Profile | Symbolic meaning attached to fluid imagery |
-| Embodiment - Anatomical Node Term Register | Authorial terminology and language constraints |
-| Embodiment - Anatomical Node Corpus Annotations | Story, song, essay, or research usage |
+| Fluid Entity Sensory Profile | Sensory perception of fluid qualities |
+| Fluid Entity Symbolic Profile | Symbolic meaning attached to the fluid entity |
+| Fluid Entity Term Register | Authorial terminology and language constraints |
+| Fluid Entity Corpus Annotations | Story, song, essay, or research usage |
 
 ---
 
@@ -256,16 +273,17 @@ Use this section to capture unresolved ontology questions before the node become
 
 1. Is the fluid relationship direct, adjacent, conditional, cyclical, or absent?
 2. Does this profile accidentally redefine anatomy from the canonical anchor?
-3. Does this profile accidentally include activation, sensory, symbolic, or authorial material?
-4. Are fluid sources represented as anatomical nodes, fluid entities, or both?
-5. Should this profile exist for this anatomical anchor, or should fluid relationships be inherited from a parent node?
-6. Are fluid qualities neutral and observable, or have they crossed into sensory interpretation?
-7. Are urine and menstrual fluid represented where relevant without collapsing urinary and reproductive systems into the same node?
+3. Does this profile accidentally define the fluid entity rather than referencing it?
+4. Does this profile accidentally include activation mechanics, sensory perception, symbolic meaning, or authorial material?
+5. Are source, conduit, output site, and adjacent site separated clearly?
+6. Should this profile exist for this anatomical anchor, or should fluid relationships be inherited from a parent node?
+7. Are fluid qualities neutral and observable, or have they crossed into sensory interpretation?
+8. Does this profile support multi-site, multi-fluid activation events?
 
 ---
 
 ## Status
 
-Draft v0.2.
+Draft v0.3.
 
-This template should be validated against a small set of Female genital and breast anatomical nodes before being marked Baseline.
+This template should be validated together with the Fluid Entity Template before being marked Baseline.
