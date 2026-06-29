@@ -22,19 +22,47 @@ Translation-layer records link canonical anatomical anchors to fluid, activation
 
 | Template | Purpose | Status |
 |---|---|---|
-| [[Fluid Profile Template]] | Defines the structure for fluid-layer profiles attached to canonical anatomical nodes. | Draft v0.1 |
+| [[Fluid Entity Template]] | Defines reusable fluid entities independent of one anatomical site. | Draft v0.1 |
+| [[Fluid Profile Template]] | Defines local relationships between canonical anatomical anchors and reusable fluid entities. | Draft v0.3 |
+
+## Fluid Architecture Rule
+
+Fluid modelling now uses a two-part structure:
+
+```text
+Fluid Entity
+= what the fluid is
+
+Fluid Profile
+= how that fluid relates to a specific anatomical anchor
+```
+
+Activation profiles will later describe processes that produce, release, move, expose, withhold, or alter one or more fluid entities across one or more anatomical sites.
 
 ## Validation Plan
 
-The Fluid Profile Template should be validated against a small set of Female genital and breast anatomical anchors before it is marked Baseline.
+The Fluid Entity Template and Fluid Profile Template should be validated together before either is marked Baseline.
 
-Recommended validation anchors:
+Recommended validation entities:
 
 ```text
-Female - Vulva
-Female - Vaginal Canal
-Female - Skene's Glands
-Female - Breasts
+Tears
+Urine
+Menstrual Fluid
+Vaginal Fluid
+Milk
+Blood
+Sweat
+Saliva
 ```
 
-This should test direct, adjacent, conditional, and low-relevance fluid relationships.
+Recommended validation profiles:
+
+```text
+Female - Vulva Fluid Profile
+Female - Vaginal Canal Fluid Profile
+Female - Skene's Glands Fluid Profile
+Female - Breasts Fluid Profile
+```
+
+This should test direct, adjacent, conditional, cyclical, glandular-source, cross-body, and multi-site fluid relationships.
