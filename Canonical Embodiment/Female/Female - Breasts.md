@@ -13,7 +13,7 @@ layer: Canonical Embodiment
 embodiment_scope: Female
 classification: Paired Composite Anatomical Node
 status: Draft
-version: 0.2
+version: 0.3
 parent: Female - Thorax
 paired: true
 laterality: null
@@ -44,8 +44,8 @@ Female - Thorax BELONGS_TO Female Embodiment
 
 | Child Structure | Proposed Node | Classification |
 |---|---|---|
-| Nipple | [[Female - Nipple]] | Paired Atomic Node |
-| Areola | [[Female - Areola]] | Paired Atomic Node |
+| Nipples | [[Female - Nipples]] | Paired Atomic Node |
+| Areolae | [[Female - Areolae]] | Paired Atomic Node |
 | Mammary Tissue | [[Female - Mammary Tissue]] | Distributed or Composite Node |
 | Breast Skin | [[Female - Breast Skin]] | Surface Node |
 | Breast Fat Pad | [[Female - Breast Fat Pad]] | Composite or Tissue Node |
@@ -68,4 +68,4 @@ Activation, sensory, somatic, mirror, symbolic, fluid, terminology, and corpus d
 
 ## Status
 
-Draft v0.2.
+Draft v0.3.
