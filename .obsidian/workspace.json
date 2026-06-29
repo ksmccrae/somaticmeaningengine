@@ -11,10 +11,14 @@
             "id": "c5461ef0ea05c9b9",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Governance/Specifications/Document Specification.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Document Specification"
             }
           }
         ]
@@ -70,8 +74,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -190,6 +193,19 @@
   },
   "active": "c5461ef0ea05c9b9",
   "lastOpenFiles": [
+    "Governance/Specifications/Node Specification.md",
+    "Governance/Specifications/README.md",
+    "Governance/Specifications/Document Specification.md",
+    "Governance/Decisions/README.md",
+    "Governance/Decisions/ADR 002 Architecture Baseline v2.md",
+    "Governance/Decisions/ADR 001 Repository Foundation.md",
+    "Governance/Architecture/Architecture.md",
+    "Governance/Architecture/README.md",
+    "Fluid Layer/README.md",
+    "Authorial Systems/Human Drift Register/README.md",
+    "Authorial Systems/Story Operating Systems/README.md",
+    "Activation Layer/README.md",
+    "Governance/Specifications/Relationship Specification.md",
     "Corpus/Stories/README.md",
     "Corpus/Research/README.md",
     "Corpus/Songs/README.md",
@@ -213,19 +229,6 @@
     "Templates/Translation/README.md",
     "Templates/Expressive/README.md",
     "Templates/Canonical/README.md",
-    "Templates/Authorial/README.md",
-    "Templates/Annotation/README.md",
-    "Scratchpad/README.md",
-    "Expressive Layers/Sonic/README.md",
-    "Expressive Layers/Somatic/README.md",
-    "Expressive Layers/Symbolic/README.md",
-    "Expressive Layers/Sensory/README.md",
-    "Expressive Layers/Temporal/README.md",
-    "Expressive Layers/Liturgical/README.md",
-    "Expressive Layers/Environmental/README.md",
-    "Expressive Layers/Emotional/README.md",
-    "Expressive Layers/README.md",
-    "Authorial Systems/Story Operating Systems/README.md",
     "Untitled 1.canvas",
     "Untitled.canvas"
   ]
