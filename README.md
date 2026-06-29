@@ -138,7 +138,6 @@ Core decisions now considered stable:
 |---|---|
 | Female | [Female](Canonical%20Embodiment/Female/Female%20Embodiment%20Framework.md) |
 | Male | [Male](Canonical%20Embodiment/Male/Male%20Embodiment%20Framework.md) |
-| Shared | [Shared](Canonical%20Embodiment/Shared/README.md) |
 | Trans Feminine | [Trans Feminine](Canonical%20Embodiment/Trans%20Feminine/Trans%20Feminine%20Embodiment%20Framework.md) |
 | Trans Masculine | [Trans Masculine](Canonical%20Embodiment/Trans%20Masculine/Trans%20Masculine%20Embodiment%20Framework.md) |
 
