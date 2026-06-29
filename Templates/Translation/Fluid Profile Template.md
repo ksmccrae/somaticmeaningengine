@@ -12,7 +12,7 @@ template_type: Translation
 node_type: Fluid Profile
 layer: Fluid Layer
 status: Draft
-version: 0.1
+version: 0.2
 last_updated: 2026-06-29
 ---
 
@@ -25,6 +25,34 @@ This template defines the required structure for fluid profile nodes in the Soma
 A fluid profile describes how bodily fluids relate to a canonical anatomical anchor.
 
 It does not redefine anatomy, sensory experience, symbolic meaning, activation behaviour, propagation behaviour, authorial language, or corpus usage.
+
+---
+
+## Layer Boundary
+
+Fluid profiles may describe observable or physiologically grounded fluid qualities.
+
+Examples:
+
+```text
+viscosity
+thickness
+density
+colour
+opacity
+odour
+taste
+volume
+flow
+cyclicity
+presence / absence
+```
+
+These are treated as fluid-layer qualities when described neutrally.
+
+The Sensory Layer describes embodied perception of those qualities, such as how wetness, dryness, thickness, odour, taste, temperature, pressure, or texture are experienced.
+
+The Symbolic, Emotional, Authorial, and Corpus layers may interpret or use these qualities, but they should not be defined inside the fluid profile.
 
 ---
 
@@ -108,6 +136,30 @@ Describe the type of fluid relationship without using symbolic, sensory, or auth
 
 ---
 
+## Fluid Categories
+
+Use this section to list relevant fluids or fluid categories without converting them into sensory, symbolic, or authorial meaning.
+
+| Fluid Category | Relationship | Notes |
+|---|---|---|
+| Fluid Name | Present / Conditional / Cyclical / Adjacent | Neutral physiological note only |
+
+Common Female Embodiment fluid categories may include:
+
+```text
+urine
+menstrual fluid
+vaginal fluid
+cervical mucus
+paraurethral glandular fluid
+lactation fluid / milk
+surface moisture
+```
+
+Only include categories relevant to the anatomical anchor.
+
+---
+
 ## Fluid Sources
 
 List sources only when anatomically or physiologically appropriate.
@@ -131,6 +183,26 @@ Describe outputs, surface presence, or containment in neutral anatomical languag
 | Fluid Presence | Relationship | Notes |
 |---|---|---|
 | Fluid Name | Present / Conditional / Cyclical / Adjacent | Canonical physiological note only |
+
+---
+
+## Fluid Qualities
+
+Use this section for neutral observable or physiologically grounded properties of the fluid.
+
+Do not describe subjective experience here.
+
+| Quality | Range / Description | Notes |
+|---|---|---|
+| Viscosity | Thin / watery / thick / variable | Neutral description only |
+| Density | Low / moderate / high / variable | Use only if meaningful at this modelling resolution |
+| Colour | Clear / white / yellow / red / brown / variable | Neutral description only |
+| Opacity | Clear / translucent / opaque / variable | Neutral description only |
+| Odour | None / mild / strong / variable | Neutral description only |
+| Taste | Neutral / saline / metallic / bitter / variable | Use only where relevant and not authorialized |
+| Volume | Trace / low / moderate / high / variable | Neutral description only |
+| Flow | Static / surface / discharge / stream / cyclical / variable | Neutral description only |
+| Cyclicity | None / cyclical / hormonal / reproductive / contextual | Neutral description only |
 
 ---
 
@@ -158,6 +230,8 @@ Use controlled relationship language.
 ```text
 Embodiment - Anatomical Node Fluid Profile DESCRIBES_FLUID_RELATIONSHIPS_OF Embodiment - Anatomical Node
 Embodiment - Anatomical Node Fluid Profile REFERENCES_FLUID_SOURCE Embodiment - Source Node
+Embodiment - Anatomical Node Fluid Profile HAS_FLUID_CATEGORY Fluid Category
+Embodiment - Anatomical Node Fluid Profile HAS_FLUID_QUALITY Fluid Quality
 ```
 
 ---
@@ -169,7 +243,7 @@ Use this section to identify likely future records without defining them here.
 | Future Record | Purpose |
 |---|---|
 | Embodiment - Anatomical Node Activation Profile | Activation behaviour involving fluid changes |
-| Embodiment - Anatomical Node Sensory Profile | Sensory experience of moisture, pressure, or dryness |
+| Embodiment - Anatomical Node Sensory Profile | Sensory experience of moisture, pressure, dryness, smell, taste, or texture |
 | Embodiment - Anatomical Node Symbolic Profile | Symbolic meaning attached to fluid imagery |
 | Embodiment - Anatomical Node Term Register | Authorial terminology and language constraints |
 | Embodiment - Anatomical Node Corpus Annotations | Story, song, essay, or research usage |
@@ -185,11 +259,13 @@ Use this section to capture unresolved ontology questions before the node become
 3. Does this profile accidentally include activation, sensory, symbolic, or authorial material?
 4. Are fluid sources represented as anatomical nodes, fluid entities, or both?
 5. Should this profile exist for this anatomical anchor, or should fluid relationships be inherited from a parent node?
+6. Are fluid qualities neutral and observable, or have they crossed into sensory interpretation?
+7. Are urine and menstrual fluid represented where relevant without collapsing urinary and reproductive systems into the same node?
 
 ---
 
 ## Status
 
-Draft v0.1.
+Draft v0.2.
 
 This template should be validated against a small set of Female genital and breast anatomical nodes before being marked Baseline.
