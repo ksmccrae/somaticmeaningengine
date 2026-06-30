@@ -12,7 +12,7 @@ template_type: Translation
 node_type: Mirror Profile
 layer: Mirror Layer
 status: Draft
-version: 0.2
+version: 0.3
 last_updated: 2026-06-30
 ---
 
@@ -44,6 +44,36 @@ A single mirror profile may be bidirectional, directional, or contextual. Do not
 
 ---
 
+## Composite-First Mirror Rule
+
+Mirror profiles should usually anchor at the highest meaningful composite node that contains the mirror field.
+
+This prevents prematurely narrowing a mirror to one atomic child when multiple child structures may participate downstream.
+
+Example:
+
+```text
+Female - Clitoral Complex ↔ Female - Breasts
+= composite-first mirror
+
+Potential child traversal:
+Female - Clitoral Glans
+Female - Clitoral Hood
+Female - Clitoral Body
+Female - Clitoral Crura
+Female - Vestibular Bulbs
+
+Potential child traversal:
+Female - Nipples
+Female - Areolae
+Female - Breast Skin
+Female - Mammary Tissue
+```
+
+A lower-level focal mirror may still be created later, but only when the narrower correspondence has a distinct modelling purpose.
+
+---
+
 ## File Naming Rule
 
 Mirror profile nodes should use the pattern:
@@ -58,7 +88,7 @@ Examples:
 
 ```text
 Female - Vulva to Female - Clitoral Complex Mirror Profile.md
-Female - Clitoral Glans to Female - Nipples Mirror Profile.md
+Female - Clitoral Complex to Female - Breasts Mirror Profile.md
 Female - Vulva to Female - Anus Mirror Profile.md
 ```
 
@@ -84,6 +114,8 @@ source_object: Source Object
 target_object: Target Object
 directionality: Bidirectional / Source-to-Target / Target-to-Source / Contextual
 inverse_profile_required: true / false
+anchor_level: Composite / Atomic / Mixed / Contextual
+child_traversal_allowed: true / false
 validation_status: Supported / Candidate / Blocked
 ---
 ```
@@ -111,6 +143,8 @@ It records the basis of correspondence without redefining either object.
 | Target Object | [[Target Object]] |
 | Directionality | Bidirectional / Source-to-Target / Target-to-Source / Contextual |
 | Inverse Profile Required | true / false |
+| Anchor Level | Composite / Atomic / Mixed / Contextual |
+| Child Traversal Allowed | true / false |
 | Validation Status | Supported / Candidate / Blocked |
 
 ---
@@ -155,6 +189,7 @@ inside/outside contrast
 front/back contrast
 central/peripheral contrast
 focal-site to focal-site correspondence
+composite-to-composite correspondence
 composite-to-component correspondence
 ```
 
@@ -162,22 +197,37 @@ composite-to-component correspondence
 
 ## Hierarchy-Level Check
 
-Mirror profiles should compare objects at a clear hierarchy level.
+Mirror profiles should compare objects at the highest useful hierarchy level.
 
 Examples:
 
 ```text
 Clitoral Complex ↔ Breasts
-= broad composite-to-composite or region-to-region mirror
+= broad composite-to-composite mirror with child traversal allowed
 
 Clitoral Glans ↔ Nipples
-= focal anatomical site to focal anatomical site mirror
+= focal anatomical site to focal anatomical site mirror, used only if lower-level correspondence is independently meaningful
 
 Vulva ↔ Anus
 = external pelvic site to external pelvic site boundary mirror
 ```
 
-If hierarchy levels are mismatched, explain why the mismatch is useful or choose a cleaner target.
+If hierarchy levels are mismatched, explain why the mismatch is useful or choose a cleaner composite anchor.
+
+---
+
+## Child Traversal
+
+Use this section when the primary mirror anchors are composite nodes.
+
+| Side | Child Node | Traversal Role | Notes |
+|---|---|---|---|
+| Source | [[Source Child Node]] | Candidate child traversal | Does not redefine mirror anchor |
+| Target | [[Target Child Node]] | Candidate child traversal | Does not redefine mirror anchor |
+
+Child traversal identifies likely lower-level nodes that may participate in downstream activation, sensory, symbolic, authorial, or corpus work.
+
+It does not create separate mirror profiles unless those lower-level correspondences become independently meaningful.
 
 ---
 
@@ -233,6 +283,8 @@ Source Object to Target Object Mirror Profile MIRRORS Source Object
 Source Object to Target Object Mirror Profile MIRRORS Target Object
 Source Object to Target Object Mirror Profile HAS_MIRROR_TYPE Mirror Type
 Source Object to Target Object Mirror Profile HAS_DIRECTIONALITY Directionality
+Source Object to Target Object Mirror Profile HAS_ANCHOR_LEVEL Anchor Level
+Source Object to Target Object Mirror Profile ALLOWS_CHILD_TRAVERSAL true / false
 Source Object to Target Object Mirror Profile HAS_CORRESPONDENCE_BASIS Basis
 Source Object to Target Object Mirror Profile MAY_SUPPORT Expressive Profile
 ```
@@ -242,17 +294,19 @@ Source Object to Target Object Mirror Profile MAY_SUPPORT Expressive Profile
 ## Review Questions
 
 1. Are both mirrored objects already valid ontology nodes?
-2. Is the mirror anatomical, functional, sensory-adjacent, symbolic, relational, contrastive, or boundary-based?
-3. Is directionality explicit?
-4. Is an inverse profile actually required, or does directionality solve it?
-5. Are the mirrored objects at compatible hierarchy levels?
-6. Does this mirror accidentally redefine anatomy or meaning?
-7. Does this mirror require candidate downstream profiles before baseline?
+2. Is the mirror anchored at the highest useful composite level?
+3. Is child traversal needed?
+4. Is the mirror anatomical, functional, sensory-adjacent, symbolic, relational, contrastive, or boundary-based?
+5. Is directionality explicit?
+6. Is an inverse profile actually required, or does directionality solve it?
+7. Are the mirrored objects at compatible hierarchy levels?
+8. Does this mirror accidentally redefine anatomy or meaning?
+9. Does this mirror require candidate downstream profiles before baseline?
 
 ---
 
 ## Status
 
-Draft v0.2.
+Draft v0.3.
 
 This template should be validated with a small mirror profile set before being marked Baseline.
