@@ -10,7 +10,7 @@ file_class: Ontology Node
 node_type: Mirror Profile
 layer: Mirror Layer
 status: Draft
-version: 0.4
+version: 0.5
 mirror_type: Anatomical / Sensory-Adjacent
 source_object: Female - Clitoral Complex
 target_object: Female - Breasts
@@ -212,6 +212,10 @@ Female - Clitoral Complex to Female - Breasts Mirror Profile HAS_BASELINE_MIRROR
 Female - Clitoral Complex to Female - Breasts Mirror Profile HAS_ACTIVATION_DEPENDENCY Activation-Dependent
 Female - Clitoral Complex to Female - Breasts Mirror Profile HAS_TRAVERSAL_PRIORITY Primary
 Female - Clitoral Complex to Female - Breasts Mirror Profile HAS_CORRESPONDENCE_BASIS Composite-to-composite correspondence
+Female - Clitoral Complex to Female - Breasts Mirror Profile MAY_SUPPORT Female - Clitoral Complex Sensory Profile
+Female - Clitoral Complex to Female - Breasts Mirror Profile MAY_SUPPORT Female - Breasts Sensory Profile
+Female - Clitoral Complex to Female - Breasts Mirror Profile MAY_BE_USED_BY Authorial Term Register
+Female - Clitoral Complex to Female - Breasts Mirror Profile MAY_BE_ANNOTATED_IN Corpus Annotation
 ```
 
 ---
@@ -223,9 +227,10 @@ Female - Clitoral Complex to Female - Breasts Mirror Profile HAS_CORRESPONDENCE_
 3. Are [[Female - Nipples]] to [[Female - Vaginal Canal]] and [[Female - Nipples]] to [[Female - Anus]] likely standalone mirrors, or should they remain descendant candidates?
 4. Should [[Female - Areolae]] be treated as a major child traversal node for this mirror?
 5. Are routing hints lightweight enough, or have they crossed into activation or expressive modelling?
+6. Are downstream-use relationships sufficiently constrained as candidate links rather than definitions?
 
 ---
 
 ## Status
 
-Draft v0.4.
+Draft v0.5.
