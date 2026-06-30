@@ -12,8 +12,8 @@ document_type: Framework
 layer: Canonical Embodiment
 embodiment_scope: Female
 status: Draft
-version: 0.1
-last_updated: 2026-06-29
+version: 0.2
+last_updated: 2026-06-30
 ---
 
 # Female Embodiment Framework
@@ -36,7 +36,7 @@ Female Embodiment is treated as a complete embodiment root.
 
 Genital anatomy is one branch of Female Embodiment, not the root of the hierarchy.
 
-Breast, nipple, pelvic, reproductive, skin, sensory, nervous, endocrine, musculoskeletal, and surface structures may all participate in activation and should therefore be represented in the embodied taxonomy.
+Breast, nipple, pelvic, reproductive, urinary, anal, skin, sensory, nervous, endocrine, musculoskeletal, and surface structures may all participate in activation and should therefore be represented in the embodied taxonomy.
 
 ### Governing Principles
 
@@ -63,11 +63,12 @@ Embodiment - Anatomical Node.md
 Examples:
 
 ```text
-Female - Breast.md
-Female - Nipple.md
+Female - Breasts.md
+Female - Nipples.md
 Female - Neck.md
 Female - Vulva.md
 Female - Pelvic Floor.md
+Female - Anus.md
 ```
 
 This prevents ambiguity across embodiment roots and supports clean Obsidian graph traversal.
@@ -75,8 +76,8 @@ This prevents ambiguity across embodiment roots and supports clean Obsidian grap
 YAML may still preserve the clean anatomical name:
 
 ```yaml
-title: Female - Nipple
-canonical_name: Nipple
+title: Female - Nipples
+canonical_name: Nipples
 embodiment_scope: Female
 ```
 
@@ -109,13 +110,14 @@ Atomic does not mean biologically indivisible. It means the ontology does not cu
 
 Examples:
 
-- Female - Nipple
-- Female - Areola
+- Female - Nipples
+- Female - Areolae
 - Female - Labia Majora
 - Female - Labia Minora
 - Female - Clitoral Glans
 - Female - Urethral Opening
 - Female - Cervix
+- Female - Anus
 
 ### Paired Structure
 
@@ -163,6 +165,7 @@ Examples:
 - Female - Cervix
 - Female - Mouth
 - Female - Perineum
+- Female - Anus
 
 ---
 
@@ -231,7 +234,7 @@ Female Embodiment
 
 **Children:** Chest, Breasts, Sternum, Ribcage, Heart, Lungs, Diaphragm.
 
-**Activation-Relevant Sites:** Breast, Nipple, Areola, Sternum, Chest Wall, Diaphragm.
+**Activation-Relevant Sites:** Breasts, Nipples, Areolae, Sternum, Chest Wall, Diaphragm.
 
 ---
 
@@ -249,9 +252,9 @@ Female Embodiment
 
 **Type:** Composite Anatomical Region
 
-**Children:** External Genitalia, Internal Reproductive System, Pelvic Floor, Perineum, Urinary Structures, Pelvic Bowl, Pelvic Bones.
+**Children:** External Genitalia, Internal Reproductive System, Pelvic Floor, Perineum, Anus, Urinary Structures, Pelvic Bowl, Pelvic Bones.
 
-**Activation-Relevant Sites:** Vulva, Clitoral Complex, Vestibule, Vaginal Opening, Vaginal Canal, Cervix, Pelvic Floor, Perineum, Lower Abdomen.
+**Activation-Relevant Sites:** Vulva, Clitoral Complex, Vestibule, Vaginal Opening, Vaginal Canal, Cervix, Pelvic Floor, Perineum, Anus, Lower Abdomen.
 
 ---
 
@@ -359,6 +362,7 @@ Pelvis
 │   └── Ovaries
 ├── Pelvic Floor
 ├── Perineum
+│   └── Anus
 ├── Urinary Structures
 ├── Pelvic Bowl
 └── Pelvic Bones
@@ -372,10 +376,8 @@ Pelvis
 Thorax
 ├── Chest
 ├── Breasts
-│   ├── Left Breast
-│   ├── Right Breast
-│   ├── Nipple
-│   ├── Areola
+│   ├── Nipples
+│   ├── Areolae
 │   ├── Mammary Tissue
 │   ├── Breast Skin
 │   ├── Breast Fat Pad
@@ -398,17 +400,19 @@ Thorax
 | [[Female - Thorax]] | [[Female Embodiment]] | Composite Region | Draft |
 | [[Female - Abdomen]] | [[Female Embodiment]] | Composite Region | Draft |
 | [[Female - Pelvis]] | [[Female Embodiment]] | Composite Region | Draft |
-| [[Female - Breast]] | [[Female - Thorax]] | Composite Node | Review |
-| [[Female - Nipple]] | [[Female - Breast]] | Atomic Node | Review |
-| [[Female - Areola]] | [[Female - Breast]] | Atomic Node | Review |
-| [[Female - Vulva]] | [[Female - Pelvis]] | Composite Node | Review |
-| [[Female - Clitoral Complex]] | [[Female - Vulva]] | Composite Node | Review |
-| [[Female - Vestibule]] | [[Female - Vulva]] | Composite Node | Review |
-| [[Female - Vaginal Canal]] | [[Female - Internal Reproductive System]] | Composite Node | Review |
-| [[Female - Cervix]] | [[Female - Internal Reproductive System]] | Atomic Node | Review |
-| [[Female - Uterus]] | [[Female - Internal Reproductive System]] | Composite Node | Review |
-| [[Female - Ovaries]] | [[Female - Internal Reproductive System]] | Paired Atomic or Composite | Review |
-| [[Female - Pelvic Floor]] | [[Female - Pelvis]] | Composite Node | Review |
+| [[Female - Breasts]] | [[Female - Thorax]] | Composite Node | Draft |
+| [[Female - Nipples]] | [[Female - Breasts]] | Paired Atomic Node | Draft |
+| [[Female - Areolae]] | [[Female - Breasts]] | Paired Atomic Node | Draft |
+| [[Female - Vulva]] | [[Female - Pelvis]] | Composite Node | Draft |
+| [[Female - Clitoral Complex]] | [[Female - Vulva]] | Composite Node | Draft |
+| [[Female - Vestibule]] | [[Female - Vulva]] | Composite Node | Draft |
+| [[Female - Vaginal Canal]] | [[Female - Internal Reproductive System]] | Composite Node | Draft |
+| [[Female - Cervix]] | [[Female - Internal Reproductive System]] | Atomic Node | Draft |
+| [[Female - Uterus]] | [[Female - Internal Reproductive System]] | Composite Node | Draft |
+| [[Female - Ovaries]] | [[Female - Internal Reproductive System]] | Paired Atomic or Composite | Draft |
+| [[Female - Pelvic Floor]] | [[Female - Pelvis]] | Composite Node | Draft |
+| [[Female - Perineum]] | [[Female - Pelvis]] | Transitional Anatomical Region | Draft |
+| [[Female - Anus]] | [[Female - Perineum]] | Transitional Anatomical Opening | Draft |
 | [[Female - Skin]] | [[Female - Skin and Surface]] | Distributed Composite | Review |
 | [[Female - Breath]] | [[Female - Whole-Body Regulatory Systems]] | Process Candidate | Review |
 | [[Female - Hormonal Cycles]] | [[Female - Endocrine System]] | Process Candidate | Review |
@@ -435,12 +439,14 @@ flowchart TD
     FE --> WR[Whole-Body Regulatory Systems]
 
     TH --> BR[Breasts]
-    BR --> NI[Nipple]
-    BR --> AR[Areola]
+    BR --> NI[Nipples]
+    BR --> AR[Areolae]
 
     PE --> EG[External Genitalia]
     PE --> IR[Internal Reproductive System]
     PE --> PF[Pelvic Floor]
+    PE --> PR[Perineum]
+    PR --> AN[Anus]
     EG --> VU[Vulva]
     VU --> CC[Clitoral Complex]
     VU --> VE[Vestibule]
@@ -459,6 +465,7 @@ flowchart TD
 3. Should Hormonal Cycles be handled as a process node?
 4. Should Scar Tissue be canonical, modifier, event-derived, or sensory-layer dependent?
 5. Which candidate nodes become the first Anatomical Node Template validation set?
+6. Should Female - Anus remain parented to Female - Perineum, or should an Anal Region node be introduced later?
 
 ---
 
