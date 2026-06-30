@@ -12,7 +12,7 @@ template_type: Translation
 node_type: Mirror Profile
 layer: Mirror Layer
 status: Draft
-version: 0.5
+version: 0.6
 last_updated: 2026-06-30
 ---
 
@@ -120,6 +120,7 @@ Female - Nipples ↔ Female - Vaginal Canal
 Female - Nipples ↔ Female - Anus
 Female - Areolae ↔ Female - Vestibule
 Female - Breast Skin ↔ Female - Vulva
+Female - Clitoral Glans ↔ Female - Nipples
 ```
 
 These candidate descendant mirrors should become standalone mirror profiles only when a downstream activation, sensory, symbolic, authorial, or corpus use makes the narrower correspondence independently meaningful.
@@ -163,7 +164,7 @@ node_type: Mirror Profile
 layer: Mirror Layer
 status: Draft
 version: 0.1
-mirror_type: Anatomical / Functional / Sensory-Adjacent / Symbolic / Relational / Inversion / Echo / Contrast / Boundary
+mirror_type: Anatomical / Functional / Sensory-Adjacent / Symbolic / Relational / Inversion / Echo / Contrast / Boundary / Anatomical-Adjacent
 source_object: Source Object
 target_object: Target Object
 directionality: Bidirectional / Source-to-Target / Target-to-Source / Contextual
@@ -196,7 +197,7 @@ It records the basis of correspondence without redefining either object.
 |---|---|
 | Node Type | Mirror Profile |
 | Layer | Mirror Layer |
-| Mirror Type | Anatomical / Functional / Sensory-Adjacent / Symbolic / Relational / Inversion / Echo / Contrast / Boundary |
+| Mirror Type | Anatomical / Functional / Sensory-Adjacent / Symbolic / Relational / Inversion / Echo / Contrast / Boundary / Anatomical-Adjacent |
 | Source Object | [[Source Object]] |
 | Target Object | [[Target Object]] |
 | Directionality | Bidirectional / Source-to-Target / Target-to-Source / Contextual |
@@ -265,6 +266,7 @@ central/peripheral contrast
 focal-site to focal-site correspondence
 composite-to-composite correspondence
 composite-to-component correspondence
+boundary-region reference
 ```
 
 ---
@@ -332,6 +334,18 @@ List layers this mirror may reference without redefining them.
 
 ---
 
+## Boundary Region References
+
+Use this section only when a mirror route depends on a shared or adjacent boundary region.
+
+Boundary region references identify a traversal aid; they do not redefine canonical anatomy.
+
+| Boundary Region | Relationship | Notes |
+|---|---|---|
+| [[Boundary Region]] | REFERENCES_BOUNDARY_REGION | Use only when boundary context is necessary for traversal |
+
+---
+
 ## Excluded Interpretations
 
 State what this mirror does not claim.
@@ -378,7 +392,10 @@ Source Object to Target Object Mirror Profile HAS_BASELINE_MIRROR_LIKELIHOOD Lik
 Source Object to Target Object Mirror Profile HAS_ACTIVATION_DEPENDENCY Dependency
 Source Object to Target Object Mirror Profile HAS_TRAVERSAL_PRIORITY Priority
 Source Object to Target Object Mirror Profile HAS_CORRESPONDENCE_BASIS Basis
+Source Object to Target Object Mirror Profile REFERENCES_BOUNDARY_REGION Boundary Region
 Source Object to Target Object Mirror Profile MAY_SUPPORT Expressive Profile
+Source Object to Target Object Mirror Profile MAY_BE_USED_BY Authorial System
+Source Object to Target Object Mirror Profile MAY_BE_ANNOTATED_IN Corpus Annotation
 ```
 
 ---
@@ -389,18 +406,19 @@ Source Object to Target Object Mirror Profile MAY_SUPPORT Expressive Profile
 2. Is the mirror anchored at the highest useful composite level?
 3. Is child traversal needed?
 4. Are descendant mirror candidates useful, or would they overbuild the layer?
-5. Is the mirror anatomical, functional, sensory-adjacent, symbolic, relational, contrastive, or boundary-based?
+5. Is the mirror anatomical, functional, sensory-adjacent, symbolic, relational, contrastive, boundary-based, or anatomical-adjacent?
 6. Is directionality explicit?
 7. Is an inverse profile actually required, or does directionality solve it?
 8. Are routing hints lightweight enough, or have they crossed into Activation or Expressive layers?
 9. Are the mirrored objects at compatible hierarchy levels?
 10. Does this mirror accidentally redefine anatomy or meaning?
 11. Does this mirror require candidate downstream profiles before baseline?
+12. If the profile references a boundary region, is that reference a traversal aid rather than a canonical anatomical definition?
 
 ---
 
 ## Status
 
-Draft v0.5.
+Draft v0.6.
 
-This template should be validated with a small mirror profile set before being marked Baseline.
+This template reflects the current validation profile fields, the controlled mirror type list, descendant mirror candidate examples, boundary-region reference support, and downstream-use relationship statements.
