@@ -1,0 +1,112 @@
+---
+tags:
+  - Ontology Node
+  - Fluid Layer
+  - Fluid Profile
+  - Female Embodiment
+  - Status/Draft
+title: Female - Vaginal Canal Fluid Profile
+file_class: Ontology Node
+node_type: Fluid Profile
+layer: Fluid Layer
+embodiment_scope: Female
+status: Draft
+version: 0.2
+anatomical_anchor: Female - Vaginal Canal
+canonical_layer_reference: Canonical Embodiment
+fluid_relevance: Present / Cyclical / Contextual
+---
+
+# Female - Vaginal Canal Fluid Profile
+
+## Purpose
+
+This node defines fluid relationships associated with [[Female - Vaginal Canal]].
+
+It links the canonical anatomical anchor to reusable fluid entities without redefining anatomy or the fluid entities themselves.
+
+---
+
+## Anatomical Anchor
+
+| Field | Value |
+|---|---|
+| Anatomical Anchor | [[Female - Vaginal Canal]] |
+| Anchor Layer | Canonical Embodiment |
+| Fluid Layer Role | Present / Cyclical / Contextual |
+
+---
+
+## Referenced Fluid Entities
+
+| Fluid Entity | Relationship To Anchor | Notes |
+|---|---|---|
+| [[Vaginal Fluid]] | Surface Presence / Contains / Conducts | Primary local fluid entity for this anatomical anchor |
+| [[Menstrual Fluid]] | Conducts / Receives | Conducted through the vaginal canal during relevant cycle conditions |
+| Cervical Mucus | Receives / Conducts / Adjacent Source | Candidate fluid entity needed; should remain distinct from Vaginal Fluid |
+
+---
+
+## Anatomical Sources, Conduits, and Output Sites
+
+| Role | Anatomical Node | Fluid Entity | Notes |
+|---|---|---|---|
+| Source / Surface | [[Female - Vaginal Mucosa]] | [[Vaginal Fluid]] | Local mucosal surface relationship |
+| Conduit | [[Female - Vaginal Canal]] | [[Vaginal Fluid]] | Internal canal relationship |
+| Conduit | [[Female - Vaginal Canal]] | [[Menstrual Fluid]] | Reproductive-cycle pathway |
+| Adjacent / Source | [[Female - Cervix]] | Cervical Mucus | Candidate fluid entity required |
+| Output Site | [[Female - Vaginal Opening]] | [[Vaginal Fluid]] | External transition site |
+| Output Site | [[Female - Vaginal Opening]] | [[Menstrual Fluid]] | External transition site during relevant conditions |
+
+---
+
+## Local Fluid Qualities
+
+Local qualities should be inherited primarily from the referenced fluid entities.
+
+This profile may record anatomical-contextual variation such as internal surface presence, discharge, flow path, or cyclical conduction.
+
+---
+
+## Activation Hooks
+
+| Activation Profile | Fluid Entity | Role |
+|---|---|---|
+| Vaginal Lubrication Activation Profile | [[Vaginal Fluid]] | Produces / Alters / Exposes |
+| Menstruation Activation Profile | [[Menstrual Fluid]] | Releases / Moves / Exposes |
+| Cervical Mucus Cycle Activation Profile | Cervical Mucus | Alters / Releases / Moves |
+
+---
+
+## Boundary Rules
+
+Do not collapse Vaginal Fluid, Menstrual Fluid, Cervical Mucus, Urine, or paraurethral glandular fluid into one category.
+
+Do not include sensory interpretation, symbolic meaning, emotional interpretation, activation mechanics, authorial language, or corpus examples.
+
+---
+
+## Relationship Statements
+
+```text
+Female - Vaginal Canal Fluid Profile DESCRIBES_FLUID_RELATIONSHIPS_OF Female - Vaginal Canal
+Female - Vaginal Canal Fluid Profile REFERENCES_FLUID_ENTITY Vaginal Fluid
+Female - Vaginal Canal Fluid Profile REFERENCES_FLUID_ENTITY Menstrual Fluid
+Female - Vaginal Canal Fluid Profile REFERENCES_FLUID_SOURCE Female - Vaginal Mucosa
+Female - Vaginal Canal Fluid Profile REFERENCES_FLUID_CONDUIT Female - Vaginal Canal
+Female - Vaginal Canal Fluid Profile REFERENCES_FLUID_OUTPUT_SITE Female - Vaginal Opening
+```
+
+---
+
+## Review Questions
+
+1. Should Cervical Mucus be created before this profile is validated?
+2. Should Vaginal Mucosa have a separate fluid profile or remain represented through this profile?
+3. Which cycle or hormonal activation profiles are required before baseline?
+
+---
+
+## Status
+
+Draft v0.2.
