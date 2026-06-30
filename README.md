@@ -97,6 +97,9 @@ Composite-first anchoring
 
 Lightweight routing hints
 = route priority without defining activation, sensation, or meaning
+
+Boundary-region references
+= traversal aids that do not redefine canonical anatomy
 ```
 
 ---
@@ -185,6 +188,7 @@ mirror does not create symbolic meaning by itself
 mirror does not authorialize language
 mirror supports traversal without collapsing layers
 mirror may guide route priority without defining response intensity
+boundary-region references are traversal aids, not anatomical definitions
 ```
 
 Current Mirror validation set:
@@ -200,7 +204,7 @@ Female - Vulva to Female - Anus Mirror Profile
 | Subfolder | Link | Function |
 |---|---|---|
 | Fluid Properties | [Fluid Properties](Fluid%20Layer/Fluid%20Properties/Fluid%20Properties%20Index.md) | Reusable fluid qualities such as viscosity, colour, odour, taste, volume, flow, cyclicity, and surface presence |
-| Fluid Entities | [Fluid Entities](Fluid%20Layer/Fluid%20Entities/Fluid%20Entities%20Index.md) | Reusable fluid objects such as tears, urine, menstrual fluid, vaginal fluid, milk, blood, sweat, and saliva |
+| Fluid Entities | [Fluid Entities](Fluid%20Layer/Fluid%20Entities/Fluid%20Entities%20Index.md) | Reusable fluid objects such as tears, urine, menstrual fluid, vaginal fluid, cervical mucus, paraurethral glandular fluid, milk, blood, sweat, and saliva |
 | Fluid Profiles | [Fluid Profiles](Fluid%20Layer/Fluid%20Profiles/Fluid%20Profiles%20Index.md) | Anatomical relationship records linking fluid entities to canonical anatomical anchors |
 
 Fluid modelling follows this governance rule:
