@@ -10,7 +10,7 @@ file_class: Ontology Node
 node_type: Mirror Profile
 layer: Mirror Layer
 status: Draft
-version: 0.2
+version: 0.3
 mirror_type: Anatomical / Sensory-Adjacent
 source_object: Female - Clitoral Complex
 target_object: Female - Breasts
@@ -18,6 +18,7 @@ directionality: Bidirectional
 inverse_profile_required: false
 anchor_level: Composite
 child_traversal_allowed: true
+descendant_mirror_candidates: true
 validation_status: Supported
 ---
 
@@ -44,6 +45,7 @@ It records a composite-first anatomical and sensory-adjacent correspondence with
 | Inverse Profile Required | false |
 | Anchor Level | Composite |
 | Child Traversal Allowed | true |
+| Descendant Mirror Candidates | true |
 | Validation Status | Supported |
 
 ---
@@ -88,7 +90,7 @@ Female - Breasts
 = composite paired anatomical node containing multiple possible downstream traversal sites
 ```
 
-This avoids prematurely reducing the mirror to:
+This avoids prematurely reducing the mirror to one focal correspondence such as:
 
 ```text
 Female - Clitoral Glans ↔ Female - Nipples
@@ -113,6 +115,22 @@ That lower-level mirror may be created later only if a focal-site correspondence
 | Target | [[Female - Mammary Tissue]] | Candidate child traversal | Tissue child node; may matter in lactation or body-state contexts |
 
 Child traversal does not create separate mirror profiles unless the lower-level correspondence becomes independently meaningful.
+
+---
+
+## Descendant Mirror Candidates
+
+These candidate mirrors preserve possible future traversal routes without creating standalone profiles too early.
+
+| Candidate Mirror | Basis | Status | Notes |
+|---|---|---|---|
+| [[Female - Nipples]] to [[Female - Vaginal Canal]] | Thoracic focal site to internal pelvic canal | Candidate | Use canonical `Female - Vaginal Canal`; do not canonicalize informal terms here |
+| [[Female - Nipples]] to [[Female - Anus]] | Thoracic focal site to posterior pelvic opening | Candidate | May become relevant through boundary, activation, sensory, or corpus traversal |
+| [[Female - Areolae]] to [[Female - Vestibule]] | Paired thoracic surface field to genital transitional field | Candidate | Requires downstream validation before standalone profile |
+| [[Female - Breast Skin]] to [[Female - Vulva]] | Thoracic surface field to external genital composite site | Candidate | Broad surface-to-surface route only |
+| [[Female - Clitoral Glans]] to [[Female - Nipples]] | Focal genital site to paired thoracic focal site | Candidate | Previously considered as validation node, now retained as possible lower-level route |
+
+Candidate descendant mirrors should become standalone profiles only when a downstream activation, sensory, symbolic, authorial, or corpus use makes the narrower correspondence independently meaningful.
 
 ---
 
@@ -167,6 +185,7 @@ Female - Clitoral Complex to Female - Breasts Mirror Profile HAS_MIRROR_TYPE Ana
 Female - Clitoral Complex to Female - Breasts Mirror Profile HAS_DIRECTIONALITY Bidirectional
 Female - Clitoral Complex to Female - Breasts Mirror Profile HAS_ANCHOR_LEVEL Composite
 Female - Clitoral Complex to Female - Breasts Mirror Profile ALLOWS_CHILD_TRAVERSAL true
+Female - Clitoral Complex to Female - Breasts Mirror Profile HAS_DESCENDANT_MIRROR_CANDIDATES true
 Female - Clitoral Complex to Female - Breasts Mirror Profile HAS_CORRESPONDENCE_BASIS Composite-to-composite correspondence
 ```
 
@@ -176,11 +195,11 @@ Female - Clitoral Complex to Female - Breasts Mirror Profile HAS_CORRESPONDENCE_
 
 1. Should Sensory-Adjacent remain a mirror type, or should it be treated only as a downstream candidate?
 2. Which child-level traversals should become explicit only after sensory or activation profiles exist?
-3. Should a future focal mirror exist between [[Female - Clitoral Glans]] and [[Female - Nipples]], or is child traversal sufficient?
+3. Are [[Female - Nipples]] to [[Female - Vaginal Canal]] and [[Female - Nipples]] to [[Female - Anus]] likely standalone mirrors, or should they remain descendant candidates?
 4. Should [[Female - Areolae]] be treated as a major child traversal node for this mirror?
 
 ---
 
 ## Status
 
-Draft v0.2.
+Draft v0.3.
