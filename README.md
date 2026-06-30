@@ -83,6 +83,22 @@ Fluid Profile
 = local anatomical relationship between fluid entities and canonical anatomical anchors
 ```
 
+Recent construction work has also expanded the Mirror Layer into a governed traversal model:
+
+```text
+Mirror Profile
+= reusable correspondence route
+
+Directionality
+= explicit traversal direction or contextual direction
+
+Composite-first anchoring
+= mirror at the highest useful composite level before creating child-level mirrors
+
+Lightweight routing hints
+= route priority without defining activation, sensation, or meaning
+```
+
 ---
 
 ## Repository Map
@@ -136,7 +152,7 @@ Fluid Profile
 | Canonical Embodiment | [Canonical Embodiment](Canonical%20Embodiment/Index.md) | Defines objective embodiment knowledge |
 | Activation Layer | [Activation Layer](Activation%20Layer/Activation%20Layer%20Framework.md) | Defines response initiation and activation processes |
 | Propagation Layer | [Propagation Layer](Propagation%20Layer/Propagation%20Layer%20Framework.md) | Defines movement across systems |
-| Mirror Layer | [Mirror Layer](Mirror%20Layer/README.md) | Defines mirror relationships |
+| Mirror Layer | [Mirror Layer](Mirror%20Layer/Mirror%20Layer%20Framework.md) | Defines governed correspondence routes and traversal hints |
 | Fluid Layer | [Fluid Layer](Fluid%20Layer/Fluid%20Layer%20Framework.md) | Defines fluid properties, fluid entities, and anatomical fluid profiles |
 | Meaning Layer | [Meaning Layer](Meaning%20Layer/Meaning%20Layer%20Framework.md) | Defines meaning objects |
 | Expressive Layers | [Expressive Layers](Expressive%20Layers/README.md) | Defines expressive systems |
@@ -153,6 +169,31 @@ Fluid Profile
 | Male | [Male](Canonical%20Embodiment/Male/Male%20Embodiment%20Framework.md) |
 | Trans Feminine | [Trans Feminine](Canonical%20Embodiment/Trans%20Feminine/Trans%20Feminine%20Embodiment%20Framework.md) |
 | Trans Masculine | [Trans Masculine](Canonical%20Embodiment/Trans%20Masculine/Trans%20Masculine%20Embodiment%20Framework.md) |
+
+### Mirror Layer
+
+| Subfolder | Link | Function |
+|---|---|---|
+| Mirror Profiles | [Mirror Profiles](Mirror%20Layer/Mirror%20Profiles/Mirror%20Profiles%20Index.md) | Governed correspondence records between ontology objects |
+
+Mirror modelling follows these governance rules:
+
+```text
+mirror does not redefine anatomy
+mirror does not initiate activation
+mirror does not create symbolic meaning by itself
+mirror does not authorialize language
+mirror supports traversal without collapsing layers
+mirror may guide route priority without defining response intensity
+```
+
+Current Mirror validation set:
+
+```text
+Female - Vulva to Female - Clitoral Complex Mirror Profile
+Female - Clitoral Complex to Female - Breasts Mirror Profile
+Female - Vulva to Female - Anus Mirror Profile
+```
 
 ### Fluid Layer
 
@@ -219,6 +260,7 @@ Current translation-layer templates include:
 | Fluid Property Template | [Fluid Property Template](Templates/Translation/Fluid%20Property%20Template.md) | Defines reusable fluid property nodes |
 | Fluid Entity Template | [Fluid Entity Template](Templates/Translation/Fluid%20Entity%20Template.md) | Defines reusable fluid entity nodes |
 | Fluid Profile Template | [Fluid Profile Template](Templates/Translation/Fluid%20Profile%20Template.md) | Defines anatomical fluid relationship profiles |
+| Mirror Profile Template | [Mirror Profile Template](Templates/Translation/Mirror%20Profile%20Template.md) | Defines governed mirror correspondence profiles |
 
 ---
 
