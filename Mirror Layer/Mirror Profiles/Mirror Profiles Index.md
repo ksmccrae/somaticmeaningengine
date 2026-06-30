@@ -9,7 +9,7 @@ file_class: Document
 document_type: Index
 layer: Mirror Layer
 status: Draft
-version: 0.5
+version: 0.6
 last_updated: 2026-06-30
 ---
 
@@ -23,11 +23,31 @@ Mirror profiles define governed correspondences between ontology objects without
 
 ## Validation Set
 
-| Mirror Profile | Mirror Type | Directionality | Anchor Level | Child Traversal | Baseline Likelihood | Activation Dependency | Traversal Priority | Status |
-|---|---|---|---|---|---|---|---|---|
-| [[Female - Vulva to Female - Clitoral Complex Mirror Profile]] | Anatomical / Functional | Contextual | Mixed | true | High | Contextual | Primary | Draft v0.2 |
-| [[Female - Clitoral Complex to Female - Breasts Mirror Profile]] | Anatomical / Sensory-Adjacent | Bidirectional | Composite | true | Moderate | Activation-Dependent | Primary | Draft v0.4 |
-| [[Female - Vulva to Female - Anus Mirror Profile]] | Boundary / Anatomical-Adjacent | Bidirectional | Mixed | true | Moderate | Contextual | Primary | Draft v0.2 |
+| Mirror Profile | Source Object | Target Object | Mirror Type | Directionality | Inverse Required | Anchor Level | Child Traversal | Descendant Candidates | Baseline Likelihood | Activation Dependency | Traversal Priority | Validation Status | Document Status |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| [[Female - Vulva to Female - Clitoral Complex Mirror Profile]] | [[Female - Vulva]] | [[Female - Clitoral Complex]] | Anatomical / Functional | Contextual | false | Mixed | true | false | High | Contextual | Primary | Supported | Draft v0.2 |
+| [[Female - Clitoral Complex to Female - Breasts Mirror Profile]] | [[Female - Clitoral Complex]] | [[Female - Breasts]] | Anatomical / Sensory-Adjacent | Bidirectional | false | Composite | true | true | Moderate | Activation-Dependent | Primary | Supported | Draft v0.4 |
+| [[Female - Vulva to Female - Anus Mirror Profile]] | [[Female - Vulva]] | [[Female - Anus]] | Boundary / Anatomical-Adjacent | Bidirectional | false | Mixed | true | true | Moderate | Contextual | Primary | Supported | Draft v0.2 |
+
+## Index Column Notes
+
+`Document Status` records the file maturity and version.
+
+`Validation Status` records whether the mirror profile is supported, candidate, or blocked.
+
+These are intentionally separate fields and should not be collapsed.
+
+## Controlled Mirror Types Currently Used
+
+```text
+Anatomical
+Functional
+Sensory-Adjacent
+Boundary
+Anatomical-Adjacent
+```
+
+Other controlled mirror types remain available in the framework and template but are not yet used by the validation set.
 
 ## Composite-First Rule
 
@@ -96,6 +116,22 @@ activation_dependency
 traversal_priority
 ```
 
+## Boundary Region References
+
+Boundary region references are allowed only as traversal aids.
+
+```text
+REFERENCES_BOUNDARY_REGION
+```
+
+This relationship may identify a canonical boundary region that helps explain a mirror route, but it must not redefine anatomy.
+
+Current use:
+
+```text
+Female - Vulva to Female - Anus Mirror Profile REFERENCES_BOUNDARY_REGION Female - Perineum
+```
+
 ## Governance Notes
 
 Mirror profiles should preserve the following rules:
@@ -107,6 +143,7 @@ mirror does not create symbolic meaning by itself
 mirror does not authorialize language
 mirror supports traversal without collapsing layers
 mirror may guide route priority without defining response intensity
+boundary-region references are traversal aids, not anatomical definitions
 ```
 
 ## Validation Notes
@@ -121,8 +158,9 @@ composite-to-composite correspondence with child traversal
 external pelvic boundary correspondence
 explicit directionality
 lightweight routing hints
+boundary-region references
 ```
 
 ## Status
 
-Draft v0.5.
+Draft v0.6.
