@@ -8,7 +8,7 @@ file_class: Document
 document_type: Framework
 layer: Fluid Layer
 status: Draft
-version: 0.3
+version: 0.4
 last_updated: 2026-06-30
 ---
 
@@ -16,11 +16,11 @@ last_updated: 2026-06-30
 
 ## Purpose
 
-The Fluid Layer models bodily fluids as reusable ontology objects and defines their relationships to anatomy, activation, sensory perception, symbolic meaning, authorial systems, and corpus annotation.
+The Fluid Layer models bodily fluids as reusable ontology objects and defines their properties and relationships to anatomy, activation, sensory perception, symbolic meaning, authorial systems, and corpus annotation.
 
-This layer exists so fluids are not duplicated inside anatomical nodes, activation nodes, sensory profiles, or symbolic registers.
+This layer exists so fluids and fluid properties are not duplicated inside anatomical nodes, activation nodes, sensory profiles, or symbolic registers.
 
-Fluid records define fluid identity and local fluid relationships. They do not redefine anatomy, activation mechanics, sensory experience, symbolic meaning, authorial language, or corpus usage.
+Fluid records define fluid identity, fluid properties, and local fluid relationships. They do not redefine anatomy, activation mechanics, sensory experience, symbolic meaning, authorial language, or corpus usage.
 
 ---
 
@@ -33,7 +33,7 @@ Canonical Embodiment
 → defines anatomical structures and systems
 
 Fluid Layer
-→ defines reusable fluid entities and local anatomical fluid relationships
+→ defines reusable fluid properties, fluid entities, and local anatomical fluid relationships
 
 Activation Layer
 → defines processes that produce, release, move, expose, withhold, or alter fluids
@@ -57,6 +57,8 @@ Fluid Layer records are organized into dedicated subfolders.
 ```text
 Fluid Layer
 ├── Fluid Layer Framework.md
+├── Fluid Properties
+│   └── Fluid Properties Index.md
 ├── Fluid Entities
 │   ├── Fluid Entities Index.md
 │   ├── Tears.md
@@ -75,15 +77,18 @@ Fluid Layer
     └── Female - Breasts Fluid Profile.md
 ```
 
-This structure separates reusable fluid entities from local anatomical fluid profiles.
+This structure separates reusable fluid properties, reusable fluid entities, and local anatomical fluid profiles.
 
 ---
 
 ## Core Architectural Rule
 
-Fluid modelling uses a two-part structure.
+Fluid modelling uses a three-part structure.
 
 ```text
+Fluid Property
+= reusable quality or attribute
+
 Fluid Entity
 = what the fluid is
 
@@ -91,9 +96,45 @@ Fluid Profile
 = how that fluid relates to a specific anatomical anchor
 ```
 
-Activation profiles may later connect one or more fluid entities across one or more anatomical sites.
+Activation profiles may later connect one or more fluid entities across one or more anatomical sites and may alter one or more fluid properties.
 
-This prevents any one anatomical node from owning the full meaning or behaviour of a fluid.
+This prevents any one anatomical node, fluid entity, or activation profile from owning the full meaning or behaviour of a fluid.
+
+---
+
+## Fluid Properties
+
+Fluid properties define reusable observable, measurable, or physiologically grounded qualities.
+
+Examples:
+
+```text
+Viscosity
+Density
+Colour
+Opacity
+Odour
+Taste
+Temperature
+Volume
+Flow
+Cyclicity
+Surface Presence
+```
+
+Fluid properties may be referenced by fluid entities and local fluid profiles.
+
+They are sensory-adjacent, but they are not sensory profiles.
+
+Example:
+
+```text
+Odour
+= fluid property
+
+Odour Sensory Profile
+= how odour is perceived, tolerated, desired, rejected, remembered, or interpreted
+```
 
 ---
 
@@ -119,7 +160,7 @@ Pre-Ejaculate
 Surface Moisture
 ```
 
-Fluid entities may include neutral physiological qualities such as viscosity, density, colour, opacity, odour, taste, volume, flow, and cyclicity.
+Fluid entities should reference fluid properties rather than redefine property categories locally.
 
 They may reference common sources, conduits, and output sites, but they should not become local anatomical profiles.
 
@@ -184,6 +225,8 @@ is adjacent to a fluid source or output site
 
 Fluid profiles should separate source, conduit, output site, and adjacent site so fluids are not assigned to nearby structures incorrectly.
 
+Local fluid profiles may reference fluid properties only where local anatomical context alters or foregrounds a property.
+
 ---
 
 ## Activation Relationship
@@ -191,6 +234,8 @@ Fluid profiles should separate source, conduit, output site, and adjacent site s
 The Fluid Layer does not define activation mechanics.
 
 Activation profiles define events or processes that produce, release, move, expose, withhold, or alter one or more fluids across one or more anatomical sites.
+
+Activation profiles may also alter fluid properties such as volume, flow, temperature, opacity, colour, or surface presence.
 
 Example:
 
@@ -208,13 +253,13 @@ Smack Activation Profile
 → may involve skin, hand, local tissue, blood, sweat, saliva, tears, surface moisture, and multiple sensory consequences
 ```
 
-Activation is therefore not owned by one anatomical site or one fluid.
+Activation is therefore not owned by one anatomical site, one fluid, or one property.
 
 ---
 
 ## Expressive Layer Relationship
 
-Fluid entities and fluid profiles may be referenced by expressive records, but expressive meaning is not defined inside the Fluid Layer.
+Fluid entities, fluid properties, and fluid profiles may be referenced by expressive records, but expressive meaning is not defined inside the Fluid Layer.
 
 Examples:
 
@@ -225,6 +270,9 @@ Blood Symbolic Profile
 Sweat Sensory Profile
 Menstrual Fluid Symbolic Profile
 Milk Symbolic Profile
+Colour Sensory Profile
+Odour Sensory Profile
+Viscosity Sensory Profile
 ```
 
 The Fluid Layer may describe neutral qualities such as colour, odour, taste, viscosity, or volume.
@@ -260,12 +308,29 @@ Those concerns belong to their own layers.
 
 | Template | Purpose | Status |
 |---|---|---|
+| [[Fluid Property Template]] | Defines reusable fluid properties. | Draft v0.1 |
 | [[Fluid Entity Template]] | Defines reusable fluid entities independent of one anatomical site. | Draft v0.1 |
 | [[Fluid Profile Template]] | Defines local relationships between anatomical anchors and reusable fluid entities. | Draft v0.3 |
 
 ---
 
 ## Current Validation Set
+
+Fluid property validation set:
+
+```text
+Viscosity
+Density
+Colour
+Opacity
+Odour
+Taste
+Temperature
+Volume
+Flow
+Cyclicity
+Surface Presence
+```
 
 Fluid entity validation set:
 
@@ -300,31 +365,34 @@ anatomy does not own fluid
 fluid does not own activation
 activation does not own meaning
 meaning does not redefine biology
+properties do not become perception
 ```
 
-This allows graph traversal from fluid entities into anatomy, activation, sensory perception, symbolism, authorial systems, and corpus annotation without duplication.
+This allows graph traversal from fluid properties and entities into anatomy, activation, sensory perception, symbolism, authorial systems, and corpus annotation without duplication.
 
 ---
 
 ## Resolved Decisions
 
-1. Fluid entities use a dedicated `Fluid Entities` subfolder.
-2. Anatomical fluid profiles use a dedicated `Fluid Profiles` subfolder.
-3. Existing validation profiles have been migrated out of the Fluid Layer root.
-4. Surface Moisture is a relationship type by default, but may become a fluid entity when it is mixed, nonspecific, accumulated, transferred, or independently reusable.
+1. Fluid properties use a dedicated `Fluid Properties` subfolder.
+2. Fluid entities use a dedicated `Fluid Entities` subfolder.
+3. Anatomical fluid profiles use a dedicated `Fluid Profiles` subfolder.
+4. Existing validation profiles have been migrated out of the Fluid Layer root.
+5. Surface Moisture is a relationship type by default, but may become a fluid entity when it is mixed, nonspecific, accumulated, transferred, or independently reusable.
 
 ---
 
 ## Open Review Questions
 
-1. Which additional fluid entities are required before the Fluid Entity Template is frozen?
-2. Which activation profiles must exist before fluid modelling can be considered stable?
-3. Which missing canonical anatomical anchors are required before urinary and reproductive fluid validation?
+1. Which fluid properties should be full nodes and which should remain controlled values?
+2. Which additional fluid entities are required before the Fluid Entity Template is frozen?
+3. Which activation profiles must exist before fluid modelling can be considered stable?
+4. Which missing canonical anatomical anchors are required before urinary and reproductive fluid validation?
 
 ---
 
 ## Status
 
-Draft v0.3.
+Draft v0.4.
 
-This framework reflects the current split between Fluid Entity and Fluid Profile modelling, the adopted subfolder structure, and the conditional Surface Moisture rule.
+This framework reflects the current split between Fluid Property, Fluid Entity, and Fluid Profile modelling, the adopted subfolder structure, and the conditional Surface Moisture rule.
