@@ -9,7 +9,7 @@ file_class: Document
 document_type: Index
 layer: Mirror Layer
 status: Draft
-version: 0.6
+version: 0.7
 last_updated: 2026-06-30
 ---
 
@@ -25,9 +25,9 @@ Mirror profiles define governed correspondences between ontology objects without
 
 | Mirror Profile | Source Object | Target Object | Mirror Type | Directionality | Inverse Required | Anchor Level | Child Traversal | Descendant Candidates | Baseline Likelihood | Activation Dependency | Traversal Priority | Validation Status | Document Status |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| [[Female - Vulva to Female - Clitoral Complex Mirror Profile]] | [[Female - Vulva]] | [[Female - Clitoral Complex]] | Anatomical / Functional | Contextual | false | Mixed | true | false | High | Contextual | Primary | Supported | Draft v0.2 |
-| [[Female - Clitoral Complex to Female - Breasts Mirror Profile]] | [[Female - Clitoral Complex]] | [[Female - Breasts]] | Anatomical / Sensory-Adjacent | Bidirectional | false | Composite | true | true | Moderate | Activation-Dependent | Primary | Supported | Draft v0.4 |
-| [[Female - Vulva to Female - Anus Mirror Profile]] | [[Female - Vulva]] | [[Female - Anus]] | Boundary / Anatomical-Adjacent | Bidirectional | false | Mixed | true | true | Moderate | Contextual | Primary | Supported | Draft v0.2 |
+| [[Female - Vulva to Female - Clitoral Complex Mirror Profile]] | [[Female - Vulva]] | [[Female - Clitoral Complex]] | Anatomical / Functional | Contextual | false | Mixed | true | false | High | Contextual | Primary | Supported | Draft v0.3 |
+| [[Female - Clitoral Complex to Female - Breasts Mirror Profile]] | [[Female - Clitoral Complex]] | [[Female - Breasts]] | Anatomical / Sensory-Adjacent | Bidirectional | false | Composite | true | true | Moderate | Activation-Dependent | Primary | Supported | Draft v0.5 |
+| [[Female - Vulva to Female - Anus Mirror Profile]] | [[Female - Vulva]] | [[Female - Anus]] | Boundary / Anatomical-Adjacent | Bidirectional | false | Mixed | true | true | Moderate | Contextual | Primary | Supported | Draft v0.3 |
 
 ## Index Column Notes
 
@@ -163,4 +163,4 @@ boundary-region references
 
 ## Status
 
-Draft v0.6.
+Draft v0.7.
