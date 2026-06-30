@@ -8,7 +8,7 @@ file_class: Document
 document_type: Framework
 layer: Fluid Layer
 status: Draft
-version: 0.2
+version: 0.3
 last_updated: 2026-06-30
 ---
 
@@ -122,6 +122,36 @@ Surface Moisture
 Fluid entities may include neutral physiological qualities such as viscosity, density, colour, opacity, odour, taste, volume, flow, and cyclicity.
 
 They may reference common sources, conduits, and output sites, but they should not become local anatomical profiles.
+
+---
+
+## Surface Moisture Rule
+
+Surface Moisture may be either a relationship type or a fluid entity depending on modelling need.
+
+By default, use Surface Moisture as a relationship type when describing local presence of another identifiable fluid on a surface.
+
+Examples:
+
+```text
+Vaginal Fluid HAS_SURFACE_PRESENCE_ON Female - Vulva
+Urine HAS_ADJACENT_SURFACE_PRESENCE_NEAR Female - Vulva
+Milk HAS_SURFACE_PRESENCE_ON Female - Nipples
+Sweat HAS_SURFACE_PRESENCE_ON Skin Surface
+```
+
+Create Surface Moisture as a fluid entity only when the moisture itself becomes reusable, mixed, nonspecific, accumulated, transferred, or compositionally meaningful enough to be referenced directly.
+
+Examples:
+
+```text
+Skin Surface Moisture
+Mixed Surface Moisture
+Transferred Surface Moisture
+Environmental Surface Moisture
+```
+
+This prevents premature creation of a vague fluid entity while preserving the option to model surface wetness as its own reusable object later.
 
 ---
 
@@ -281,20 +311,20 @@ This allows graph traversal from fluid entities into anatomy, activation, sensor
 1. Fluid entities use a dedicated `Fluid Entities` subfolder.
 2. Anatomical fluid profiles use a dedicated `Fluid Profiles` subfolder.
 3. Existing validation profiles have been migrated out of the Fluid Layer root.
+4. Surface Moisture is a relationship type by default, but may become a fluid entity when it is mixed, nonspecific, accumulated, transferred, or independently reusable.
 
 ---
 
 ## Open Review Questions
 
-1. Should Surface Moisture be a fluid entity, a quality, or a relationship type?
-2. Which additional fluid entities are required before the Fluid Entity Template is frozen?
-3. Which activation profiles must exist before fluid modelling can be considered stable?
-4. Which missing canonical anatomical anchors are required before urinary and reproductive fluid validation?
+1. Which additional fluid entities are required before the Fluid Entity Template is frozen?
+2. Which activation profiles must exist before fluid modelling can be considered stable?
+3. Which missing canonical anatomical anchors are required before urinary and reproductive fluid validation?
 
 ---
 
 ## Status
 
-Draft v0.2.
+Draft v0.3.
 
-This framework reflects the current split between Fluid Entity and Fluid Profile modelling and the adopted subfolder structure.
+This framework reflects the current split between Fluid Entity and Fluid Profile modelling, the adopted subfolder structure, and the conditional Surface Moisture rule.
