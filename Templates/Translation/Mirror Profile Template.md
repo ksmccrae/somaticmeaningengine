@@ -2,7 +2,7 @@
 tags:
   - Template/Translation
   - Template/Mirror Profile
-  - Status/Draft
+  - Status/Validated
 aliases:
   - Mirror Profile Template
   - Mirror Relationship Template
@@ -11,8 +11,8 @@ file_class: Template
 template_type: Translation
 node_type: Mirror Profile
 layer: Mirror Layer
-status: Draft
-version: 0.6
+status: Validated
+version: 0.7
 last_updated: 2026-06-30
 ---
 
@@ -417,8 +417,50 @@ Source Object to Target Object Mirror Profile MAY_BE_ANNOTATED_IN Corpus Annotat
 
 ---
 
+## Validation Result
+
+Validated against the current three-profile Mirror Layer validation set:
+
+```text
+Female - Vulva to Female - Clitoral Complex Mirror Profile
+Female - Clitoral Complex to Female - Breasts Mirror Profile
+Female - Vulva to Female - Anus Mirror Profile
+```
+
+Validation confirmed:
+
+```text
+all expected YAML fields present in live profiles
+relationship statements consistent across validation set
+Index reflects live profile field values and document statuses
+README, Framework, Index, Template, and profiles agree on governance rules
+boundary-region references are governed as traversal aids
+no unresolved mechanical drift remains
+```
+
+This template is validated for continued construction use. It is not yet Baseline.
+
+---
+
+## Baseline Blockers
+
+Before this template can be marked Baseline, resolve or formally defer:
+
+```text
+Which mirror types should remain controlled values?
+Should Sensory-Adjacent remain a mirror type, or become only a downstream candidate?
+Are routing hints sufficiently lightweight across broader use?
+Are downstream-use relationships sufficiently constrained as candidate links rather than definitions?
+Which descendant mirror candidates should remain hints rather than standalone profiles?
+Which mirror profiles are needed before Activation Layer validation?
+Which mirror profiles are needed before Expressive Layer validation?
+Whether a Mirror Layer ADR is required before Baseline status.
+```
+
+---
+
 ## Status
 
-Draft v0.6.
+Validated v0.7.
 
-This template reflects the current validation profile fields, the controlled mirror type list, descendant mirror candidate examples, boundary-region reference support, and downstream-use relationship statements.
+This template is validated against the current Mirror Layer validation set and remains pre-Baseline pending governance resolution or formal deferral.
