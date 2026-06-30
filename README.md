@@ -19,7 +19,7 @@ repository_phase: "Ontology v2 Foundation"
 status: Baseline
 source_of_truth: "GitHub repository"
 authoring_environment: "Obsidian Markdown"
-last_updated: 2026-06-29
+last_updated: 2026-06-30
 ---
 
 # K.S. McCrae Ontology: Somatic Meaning Engine
@@ -50,13 +50,13 @@ It is designed as the canonical knowledge model for the K.S. McCrae writing fram
 | Authoring Environment | Obsidian Markdown |
 | Source of Truth | GitHub repository |
 | Current Mode | Construction |
-| Priority | Architecture locked, content creation next |
+| Priority | Template-governed node construction and validation |
 
 ---
 
 ## Architecture Baseline
 
-The repository is now operating from the **Architecture Baseline v2.0**.
+The repository is operating from **Architecture Baseline v2.0**.
 
 Future architecture changes should be handled through an architectural decision record in [Governance/Decisions](Governance/Decisions/Decision%20Records%20Framework.md).
 
@@ -69,6 +69,19 @@ Core decisions now considered stable:
 - Controlled relationship language
 - Metadata conventions
 - Architecture-first workflow
+
+Recent construction work has expanded the Fluid Layer into a three-part governed model:
+
+```text
+Fluid Property
+= reusable observable or physiologically grounded quality
+
+Fluid Entity
+= reusable fluid object
+
+Fluid Profile
+= local anatomical relationship between fluid entities and canonical anatomical anchors
+```
 
 ---
 
@@ -121,10 +134,10 @@ Core decisions now considered stable:
 | Folder | Link | Function |
 |---|---|---|
 | Canonical Embodiment | [Canonical Embodiment](Canonical%20Embodiment/Index.md) | Defines objective embodiment knowledge |
-| Activation Layer | [Activation Layer](Activation%20Layer/Activation%20Layer%20Framework.md) | Defines response initiation |
+| Activation Layer | [Activation Layer](Activation%20Layer/Activation%20Layer%20Framework.md) | Defines response initiation and activation processes |
 | Propagation Layer | [Propagation Layer](Propagation%20Layer/Propagation%20Layer%20Framework.md) | Defines movement across systems |
 | Mirror Layer | [Mirror Layer](Mirror%20Layer/README.md) | Defines mirror relationships |
-| Fluid Layer | [Fluid Layer](Fluid%20Layer/README.md) | Defines fluid entities and relationships |
+| Fluid Layer | [Fluid Layer](Fluid%20Layer/Fluid%20Layer%20Framework.md) | Defines fluid properties, fluid entities, and anatomical fluid profiles |
 | Meaning Layer | [Meaning Layer](Meaning%20Layer/Meaning%20Layer%20Framework.md) | Defines meaning objects |
 | Expressive Layers | [Expressive Layers](Expressive%20Layers/README.md) | Defines expressive systems |
 | Authorial Systems | [Authorial Systems](Authorial%20Systems/Authorial%20Systems%20Framework.md) | Defines authorial systems |
@@ -134,20 +147,30 @@ Core decisions now considered stable:
 
 ### Canonical Embodiment
 
-<<<<<<< Updated upstream
 | Folder | Link |
 |---|---|
 | Female | [Female](Canonical%20Embodiment/Female/Female%20Embodiment%20Framework.md) |
 | Male | [Male](Canonical%20Embodiment/Male/Male%20Embodiment%20Framework.md) |
 | Trans Feminine | [Trans Feminine](Canonical%20Embodiment/Trans%20Feminine/Trans%20Feminine%20Embodiment%20Framework.md) |
-=======
-| Folder          | Link                                                                                                      |
-| --------------- | --------------------------------------------------------------------------------------------------------- |
-| Female          | [Female](Canonical%20Embodiment/Female/Female%20Embodiment%20Framework.md)                                |
-| Male            | [Male](Canonical%20Embodiment/Male/Male%20Embodiment%20Framework.md)                                      |
-| Trans Feminine  | [Trans Feminine](Canonical%20Embodiment/Trans%20Feminine/Trans%20Feminine%20Embodiment%20Framework.md)    |
->>>>>>> Stashed changes
 | Trans Masculine | [Trans Masculine](Canonical%20Embodiment/Trans%20Masculine/Trans%20Masculine%20Embodiment%20Framework.md) |
+
+### Fluid Layer
+
+| Subfolder | Link | Function |
+|---|---|---|
+| Fluid Properties | [Fluid Properties](Fluid%20Layer/Fluid%20Properties/Fluid%20Properties%20Index.md) | Reusable fluid qualities such as viscosity, colour, odour, taste, volume, flow, cyclicity, and surface presence |
+| Fluid Entities | [Fluid Entities](Fluid%20Layer/Fluid%20Entities/Fluid%20Entities%20Index.md) | Reusable fluid objects such as tears, urine, menstrual fluid, vaginal fluid, milk, blood, sweat, and saliva |
+| Fluid Profiles | [Fluid Profiles](Fluid%20Layer/Fluid%20Profiles/Fluid%20Profiles%20Index.md) | Anatomical relationship records linking fluid entities to canonical anatomical anchors |
+
+Fluid modelling follows this governance rule:
+
+```text
+anatomy does not own fluid
+fluid does not own activation
+activation does not own meaning
+meaning does not redefine biology
+properties do not become perception
+```
 
 ### Expressive Layers
 
@@ -188,6 +211,14 @@ Core decisions now considered stable:
 | Expressive | [Expressive](Templates/Expressive/README.md) |
 | Authorial | [Authorial](Templates/Authorial/Authorial%20Templates%20Index.md) |
 | Annotation | [Annotation](Templates/Annotation/README.md) |
+
+Current translation-layer templates include:
+
+| Template | Link | Purpose |
+|---|---|---|
+| Fluid Property Template | [Fluid Property Template](Templates/Translation/Fluid%20Property%20Template.md) | Defines reusable fluid property nodes |
+| Fluid Entity Template | [Fluid Entity Template](Templates/Translation/Fluid%20Entity%20Template.md) | Defines reusable fluid entity nodes |
+| Fluid Profile Template | [Fluid Profile Template](Templates/Translation/Fluid%20Profile%20Template.md) | Defines anatomical fluid relationship profiles |
 
 ---
 
@@ -263,7 +294,7 @@ flowchart TD
 
 ## Construction Mode
 
-The repository has now moved from architecture design into construction mode.
+The repository has moved from architecture design into construction mode.
 
 From this point forward, the default question is no longer:
 
@@ -275,7 +306,7 @@ The default question becomes:
 
 Future work should focus on:
 
-- Creating templates
+- Creating and validating templates
 - Creating canonical nodes
 - Building embodiment layers
 - Adding activation and translation structures
