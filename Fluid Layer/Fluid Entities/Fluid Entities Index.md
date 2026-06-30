@@ -9,7 +9,7 @@ file_class: Document
 document_type: Index
 layer: Fluid Layer
 status: Draft
-version: 0.1
+version: 0.2
 last_updated: 2026-06-30
 ---
 
@@ -29,6 +29,8 @@ Fluid entities define fluids independently from any single anatomical site, acti
 | [[Urine]] | Urinary fluid | Cross-Embodiment | Draft v0.1 |
 | [[Menstrual Fluid]] | Reproductive / cyclical fluid | Anatomy-Dependent | Draft v0.1 |
 | [[Vaginal Fluid]] | Mucosal / reproductive tract fluid | Anatomy-Dependent | Draft v0.1 |
+| [[Cervical Mucus]] | Cervical / reproductive mucosal fluid | Anatomy-Dependent | Draft v0.1 |
+| [[Paraurethral Glandular Fluid]] | Paraurethral glandular fluid | Anatomy-Dependent | Draft v0.1 |
 | [[Milk]] | Lactation fluid | Conditional / Anatomy-Dependent | Draft v0.1 |
 | [[Blood]] | Circulatory fluid | Cross-Embodiment | Draft v0.1 |
 | [[Sweat]] | Surface / thermoregulatory fluid | Cross-Embodiment | Draft v0.1 |
@@ -49,13 +51,19 @@ Activation Profile
 = what process produces, releases, moves, exposes, withholds, or alters the fluid
 ```
 
+## Surface Moisture Note
+
+Surface Moisture is not listed as a fluid entity by default.
+
+Current governance treats Surface Moisture primarily as a relationship or property state unless mixed, nonspecific, accumulated, transferred, or independently reusable surface wetness requires a standalone fluid entity.
+
 ## Review Questions
 
-1. Should fluid entities remain in a dedicated `Fluid Entities` subfolder?
-2. Should there be a separate `Fluid Profiles` subfolder for anatomical fluid profiles?
-3. Should Surface Moisture be a fluid entity, a quality, or a relationship type?
-4. Which entities require embodiment-specific variants?
+1. Which entities require embodiment-specific variants?
+2. Should Cervical Mucus require a dedicated Cervical Canal anatomical node before baseline?
+3. Should Paraurethral Glandular Fluid require refined gland opening anatomy before baseline?
+4. Should Surface Moisture remain outside the entity register for now?
 
 ## Status
 
-Draft v0.1.
+Draft v0.2.
