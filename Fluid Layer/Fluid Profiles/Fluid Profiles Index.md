@@ -1,0 +1,51 @@
+---
+tags:
+  - Document/Index
+  - Layer/Fluid
+  - Fluid Profiles
+  - Status/Draft
+title: Fluid Profiles Index
+file_class: Document
+document_type: Index
+layer: Fluid Layer
+status: Draft
+version: 0.1
+last_updated: 2026-06-30
+---
+
+# Fluid Profiles Index
+
+## Purpose
+
+This index lists anatomical fluid profile nodes in the Fluid Layer.
+
+Fluid profiles define local relationships between canonical anatomical anchors and reusable fluid entities.
+
+They do not define the fluid entity itself, redefine canonical anatomy, define activation mechanics, define sensory perception, define symbolic meaning, define authorial language, or describe corpus usage.
+
+## Validation Set
+
+| Fluid Profile | Anatomical Anchor | Referenced Fluid Entities | Status |
+|---|---|---|---|
+| [[Female - Vulva Fluid Profile]] | [[Female - Vulva]] | [[Urine]], [[Menstrual Fluid]], [[Vaginal Fluid]], [[Paraurethral Glandular Fluid]] candidate | Draft v0.2 |
+| [[Female - Vaginal Canal Fluid Profile]] | [[Female - Vaginal Canal]] | [[Vaginal Fluid]], [[Cervical Mucus]] candidate, [[Menstrual Fluid]] | Draft v0.2 |
+| [[Female - Skene's Glands Fluid Profile]] | [[Female - Skene's Glands]] | [[Paraurethral Glandular Fluid]] candidate | Draft v0.2 |
+| [[Female - Breasts Fluid Profile]] | [[Female - Breasts]] | [[Milk]] | Draft v0.2 |
+
+## Governance Notes
+
+Fluid profiles should separate:
+
+```text
+source
+conduit
+output site
+surface presence
+adjacent site
+```
+
+This prevents nearby anatomical structures from being mistaken for the source of a fluid.
+
+## Status
+
+Draft v0.1.
