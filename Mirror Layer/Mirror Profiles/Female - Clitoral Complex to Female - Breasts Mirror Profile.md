@@ -10,7 +10,7 @@ file_class: Ontology Node
 node_type: Mirror Profile
 layer: Mirror Layer
 status: Draft
-version: 0.3
+version: 0.4
 mirror_type: Anatomical / Sensory-Adjacent
 source_object: Female - Clitoral Complex
 target_object: Female - Breasts
@@ -19,6 +19,9 @@ inverse_profile_required: false
 anchor_level: Composite
 child_traversal_allowed: true
 descendant_mirror_candidates: true
+baseline_mirror_likelihood: Moderate
+activation_dependency: Activation-Dependent
+traversal_priority: Primary
 validation_status: Supported
 ---
 
@@ -46,7 +49,24 @@ It records a composite-first anatomical and sensory-adjacent correspondence with
 | Anchor Level | Composite |
 | Child Traversal Allowed | true |
 | Descendant Mirror Candidates | true |
+| Baseline Mirror Likelihood | Moderate |
+| Activation Dependency | Activation-Dependent |
+| Traversal Priority | Primary |
 | Validation Status | Supported |
+
+---
+
+## Routing Hints
+
+These routing hints guide graph traversal only.
+
+They do not define activation mechanics, response strength, sensory experience, symbolic meaning, or authorial use.
+
+| Field | Value | Boundary |
+|---|---|---|
+| Baseline Mirror Likelihood | Moderate | Plausible route, but not universal |
+| Activation Dependency | Activation-Dependent | Likely requires activation context before becoming salient |
+| Traversal Priority | Primary | Primary composite route for this anatomical correspondence field |
 
 ---
 
@@ -122,13 +142,13 @@ Child traversal does not create separate mirror profiles unless the lower-level 
 
 These candidate mirrors preserve possible future traversal routes without creating standalone profiles too early.
 
-| Candidate Mirror | Basis | Status | Notes |
-|---|---|---|---|
-| [[Female - Nipples]] to [[Female - Vaginal Canal]] | Thoracic focal site to internal pelvic canal | Candidate | Use canonical `Female - Vaginal Canal`; do not canonicalize informal terms here |
-| [[Female - Nipples]] to [[Female - Anus]] | Thoracic focal site to posterior pelvic opening | Candidate | May become relevant through boundary, activation, sensory, or corpus traversal |
-| [[Female - Areolae]] to [[Female - Vestibule]] | Paired thoracic surface field to genital transitional field | Candidate | Requires downstream validation before standalone profile |
-| [[Female - Breast Skin]] to [[Female - Vulva]] | Thoracic surface field to external genital composite site | Candidate | Broad surface-to-surface route only |
-| [[Female - Clitoral Glans]] to [[Female - Nipples]] | Focal genital site to paired thoracic focal site | Candidate | Previously considered as validation node, now retained as possible lower-level route |
+| Candidate Mirror | Basis | Baseline Likelihood | Traversal Priority | Status | Notes |
+|---|---|---|---|---|---|
+| [[Female - Nipples]] to [[Female - Vaginal Canal]] | Thoracic focal site to internal pelvic canal | Contextual | Candidate | Candidate | Use canonical `Female - Vaginal Canal`; do not canonicalize informal terms here |
+| [[Female - Nipples]] to [[Female - Anus]] | Thoracic focal site to posterior pelvic opening | Low / Contextual | Candidate | Candidate | May become relevant through boundary, activation, sensory, or corpus traversal |
+| [[Female - Areolae]] to [[Female - Vestibule]] | Paired thoracic surface field to genital transitional field | Contextual | Candidate | Candidate | Requires downstream validation before standalone profile |
+| [[Female - Breast Skin]] to [[Female - Vulva]] | Thoracic surface field to external genital composite site | Contextual | Candidate | Candidate | Broad surface-to-surface route only |
+| [[Female - Clitoral Glans]] to [[Female - Nipples]] | Focal genital site to paired thoracic focal site | Moderate / Contextual | Secondary | Candidate | Previously considered as validation node, now retained as possible lower-level route |
 
 Candidate descendant mirrors should become standalone profiles only when a downstream activation, sensory, symbolic, authorial, or corpus use makes the narrower correspondence independently meaningful.
 
@@ -158,6 +178,7 @@ This mirror does not define activation behaviour.
 This mirror does not define sensory pleasure or discomfort.
 This mirror does not define symbolic meaning.
 This mirror does not create authorial language rules.
+This mirror does not define intensity, felt meaning, or narrative effect.
 ```
 
 ---
@@ -166,6 +187,7 @@ This mirror does not create authorial language rules.
 
 | Future Record | Purpose |
 |---|---|
+| Activation Mirror Mapping | May define when this mirror is activated and with what strength |
 | Female - Clitoral Complex Sensory Profile | May reference one side of the composite mirror |
 | Female - Breasts Sensory Profile | May reference one side of the composite mirror |
 | Female - Clitoral Complex Activation Profile | May reference coordinated activation only if later validated |
@@ -186,6 +208,9 @@ Female - Clitoral Complex to Female - Breasts Mirror Profile HAS_DIRECTIONALITY 
 Female - Clitoral Complex to Female - Breasts Mirror Profile HAS_ANCHOR_LEVEL Composite
 Female - Clitoral Complex to Female - Breasts Mirror Profile ALLOWS_CHILD_TRAVERSAL true
 Female - Clitoral Complex to Female - Breasts Mirror Profile HAS_DESCENDANT_MIRROR_CANDIDATES true
+Female - Clitoral Complex to Female - Breasts Mirror Profile HAS_BASELINE_MIRROR_LIKELIHOOD Moderate
+Female - Clitoral Complex to Female - Breasts Mirror Profile HAS_ACTIVATION_DEPENDENCY Activation-Dependent
+Female - Clitoral Complex to Female - Breasts Mirror Profile HAS_TRAVERSAL_PRIORITY Primary
 Female - Clitoral Complex to Female - Breasts Mirror Profile HAS_CORRESPONDENCE_BASIS Composite-to-composite correspondence
 ```
 
@@ -197,9 +222,10 @@ Female - Clitoral Complex to Female - Breasts Mirror Profile HAS_CORRESPONDENCE_
 2. Which child-level traversals should become explicit only after sensory or activation profiles exist?
 3. Are [[Female - Nipples]] to [[Female - Vaginal Canal]] and [[Female - Nipples]] to [[Female - Anus]] likely standalone mirrors, or should they remain descendant candidates?
 4. Should [[Female - Areolae]] be treated as a major child traversal node for this mirror?
+5. Are routing hints lightweight enough, or have they crossed into activation or expressive modelling?
 
 ---
 
 ## Status
 
-Draft v0.3.
+Draft v0.4.
