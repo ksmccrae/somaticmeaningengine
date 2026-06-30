@@ -12,7 +12,7 @@ template_type: Translation
 node_type: Mirror Profile
 layer: Mirror Layer
 status: Draft
-version: 0.3
+version: 0.4
 last_updated: 2026-06-30
 ---
 
@@ -74,6 +74,27 @@ A lower-level focal mirror may still be created later, but only when the narrowe
 
 ---
 
+## Descendant Mirror Candidate Rule
+
+Composite-first mirror profiles may name possible descendant mirrors without creating them immediately.
+
+This allows the graph to preserve future routes while avoiding unnecessary node proliferation.
+
+Examples:
+
+```text
+Female - Nipples ↔ Female - Vaginal Canal
+Female - Nipples ↔ Female - Anus
+Female - Areolae ↔ Female - Vestibule
+Female - Breast Skin ↔ Female - Vulva
+```
+
+These candidate descendant mirrors should become standalone mirror profiles only when a downstream activation, sensory, symbolic, authorial, or corpus use makes the narrower correspondence independently meaningful.
+
+Use canonical anatomical names for candidate mirrors. For example, use `Female - Vaginal Canal` rather than informal wording such as vaginal tunnel.
+
+---
+
 ## File Naming Rule
 
 Mirror profile nodes should use the pattern:
@@ -116,6 +137,7 @@ directionality: Bidirectional / Source-to-Target / Target-to-Source / Contextual
 inverse_profile_required: true / false
 anchor_level: Composite / Atomic / Mixed / Contextual
 child_traversal_allowed: true / false
+descendant_mirror_candidates: true / false
 validation_status: Supported / Candidate / Blocked
 ---
 ```
@@ -145,6 +167,7 @@ It records the basis of correspondence without redefining either object.
 | Inverse Profile Required | true / false |
 | Anchor Level | Composite / Atomic / Mixed / Contextual |
 | Child Traversal Allowed | true / false |
+| Descendant Mirror Candidates | true / false |
 | Validation Status | Supported / Candidate / Blocked |
 
 ---
@@ -231,6 +254,18 @@ It does not create separate mirror profiles unless those lower-level corresponde
 
 ---
 
+## Descendant Mirror Candidates
+
+Use this section to list possible child or descendant mirror routes that may later become standalone mirror profiles.
+
+| Candidate Mirror | Basis | Status | Notes |
+|---|---|---|---|
+| [[Source Child Node]] to [[Target Child Node]] | Candidate basis | Candidate | Do not create until independently needed |
+
+Candidate descendant mirrors should preserve traversal possibilities without overbuilding the Mirror Layer.
+
+---
+
 ## Included Layers
 
 List layers this mirror may reference without redefining them.
@@ -285,6 +320,7 @@ Source Object to Target Object Mirror Profile HAS_MIRROR_TYPE Mirror Type
 Source Object to Target Object Mirror Profile HAS_DIRECTIONALITY Directionality
 Source Object to Target Object Mirror Profile HAS_ANCHOR_LEVEL Anchor Level
 Source Object to Target Object Mirror Profile ALLOWS_CHILD_TRAVERSAL true / false
+Source Object to Target Object Mirror Profile HAS_DESCENDANT_MIRROR_CANDIDATES true / false
 Source Object to Target Object Mirror Profile HAS_CORRESPONDENCE_BASIS Basis
 Source Object to Target Object Mirror Profile MAY_SUPPORT Expressive Profile
 ```
@@ -296,17 +332,18 @@ Source Object to Target Object Mirror Profile MAY_SUPPORT Expressive Profile
 1. Are both mirrored objects already valid ontology nodes?
 2. Is the mirror anchored at the highest useful composite level?
 3. Is child traversal needed?
-4. Is the mirror anatomical, functional, sensory-adjacent, symbolic, relational, contrastive, or boundary-based?
-5. Is directionality explicit?
-6. Is an inverse profile actually required, or does directionality solve it?
-7. Are the mirrored objects at compatible hierarchy levels?
-8. Does this mirror accidentally redefine anatomy or meaning?
-9. Does this mirror require candidate downstream profiles before baseline?
+4. Are descendant mirror candidates useful, or would they overbuild the layer?
+5. Is the mirror anatomical, functional, sensory-adjacent, symbolic, relational, contrastive, or boundary-based?
+6. Is directionality explicit?
+7. Is an inverse profile actually required, or does directionality solve it?
+8. Are the mirrored objects at compatible hierarchy levels?
+9. Does this mirror accidentally redefine anatomy or meaning?
+10. Does this mirror require candidate downstream profiles before baseline?
 
 ---
 
 ## Status
 
-Draft v0.3.
+Draft v0.4.
 
 This template should be validated with a small mirror profile set before being marked Baseline.
