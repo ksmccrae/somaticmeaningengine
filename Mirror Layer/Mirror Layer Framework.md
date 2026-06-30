@@ -8,7 +8,7 @@ file_class: Document
 document_type: Framework
 layer: Mirror Layer
 status: Draft
-version: 0.1
+version: 0.2
 last_updated: 2026-06-30
 ---
 
@@ -16,17 +16,17 @@ last_updated: 2026-06-30
 
 ## Purpose
 
-The Mirror Layer models structured correspondences between ontology objects.
+The Mirror Layer models governed correspondences between ontology objects.
 
-A mirror is not an anatomical structure, activation process, sensory experience, symbolic meaning, authorial device, or corpus example. It is a governed relationship pattern that allows two or more ontology objects to be compared, reflected, inverted, echoed, paired, contrasted, or traversed together.
+A mirror is not an anatomical structure, activation process, sensory experience, symbolic meaning, authorial device, or corpus example. It is a reusable relationship pattern that allows two or more ontology objects to be compared, reflected, echoed, paired, contrasted, traversed, or held in boundary relation without duplicating their definitions.
 
-Mirror records help the graph express reusable relational structures without duplicating definitions across layers.
+Mirror records help the graph preserve relational routes while keeping canonical, activation, fluid, expressive, authorial, and corpus layers distinct.
 
 ---
 
 ## Layer Position
 
-The Mirror Layer sits between canonical knowledge and interpretive systems.
+The Mirror Layer sits between canonical knowledge and downstream interpretive systems.
 
 ```text
 Canonical Embodiment
@@ -39,7 +39,7 @@ Activation Layer
 → defines processes and responses
 
 Mirror Layer
-→ defines structured correspondences between ontology objects
+→ defines structured correspondences and traversal routes
 
 Expressive Layers
 → define perceived, emotional, symbolic, sensory, and temporal experience
@@ -50,6 +50,22 @@ Authorial Systems
 Corpus
 → records specific instances in works
 ```
+
+---
+
+## Folder Structure
+
+```text
+Mirror Layer
+├── Mirror Layer Framework.md
+└── Mirror Profiles
+    ├── Mirror Profiles Index.md
+    ├── Female - Vulva to Female - Clitoral Complex Mirror Profile.md
+    ├── Female - Clitoral Complex to Female - Breasts Mirror Profile.md
+    └── Female - Vulva to Female - Anus Mirror Profile.md
+```
+
+Mirror profiles live in a dedicated `Mirror Profiles` subfolder.
 
 ---
 
@@ -71,72 +87,117 @@ A mirror profile may link objects across the same layer or across different laye
 
 ## Mirror Types
 
-Initial mirror types include:
+Initial controlled mirror types include:
 
 ```text
-Anatomical Mirror
-Functional Mirror
-Sensory Mirror
-Symbolic Mirror
-Relational Mirror
-Inversion Mirror
-Echo Mirror
-Contrast Mirror
-Corpus Mirror
+Anatomical
+Functional
+Sensory-Adjacent
+Symbolic
+Relational
+Inversion
+Echo
+Contrast
+Boundary
+Anatomical-Adjacent
 ```
 
 These should remain controlled values until repeated patterns justify more detailed subtypes.
 
 ---
 
-## Mirror Profiles
+## Directionality
 
-Mirror profiles define the relationship between two or more objects.
-
-Examples:
+Every mirror profile must state directionality.
 
 ```text
-Female - Nipples to Female - Clitoral Glans Mirror Profile
-Tears to Rain Symbolic Mirror Profile
-Breath to Tide Echo Mirror Profile
-Blood to Menstrual Fluid Boundary Mirror Profile
-Hand to Mouth Relational Mirror Profile
+Bidirectional
+= traversal is valid in either direction using the same correspondence basis
+
+Source-to-Target
+= traversal is valid primarily from source object to target object
+
+Target-to-Source
+= traversal is valid primarily from target object to source object
+
+Contextual
+= traversal direction depends on activation, expressive, authorial, or corpus context
 ```
 
-A mirror profile should specify:
-
-```text
-mirror source
-mirror target
-mirror type
-basis of correspondence
-layer boundary
-allowed traversal direction
-excluded interpretations
-candidate downstream uses
-```
+A bidirectional profile does not require a duplicate inverse file unless the inverse route has a different correspondence basis, layer boundary, or governance rule.
 
 ---
 
-## Layer Boundaries
+## Composite-First Mirror Rule
 
-Mirror profiles may reference multiple layers, but they must not collapse them.
+Mirror profiles should usually anchor at the highest meaningful composite node that contains the mirror field.
+
+This prevents prematurely narrowing a mirror to one atomic child when multiple child structures may participate downstream.
+
+Example:
+
+```text
+Female - Clitoral Complex ↔ Female - Breasts
+= composite-first mirror
+
+Potential child traversal:
+Female - Clitoral Glans
+Female - Clitoral Hood
+Female - Clitoral Body
+Female - Clitoral Crura
+Female - Vestibular Bulbs
+
+Potential child traversal:
+Female - Nipples
+Female - Areolae
+Female - Breast Skin
+Female - Mammary Tissue
+```
+
+A lower-level focal mirror may still be created later, but only when the narrower correspondence has a distinct modelling purpose.
+
+---
+
+## Descendant Mirror Candidates
+
+Composite-first mirror profiles may name possible descendant mirrors without creating standalone mirror files immediately.
+
+This preserves future traversal routes while avoiding unnecessary node proliferation.
 
 Examples:
 
 ```text
-Anatomical mirror
-→ may compare two canonical anatomical nodes
-→ must not define sensory response
-
-Symbolic mirror
-→ may compare symbolic meanings
-→ must not redefine biological anatomy
-
-Corpus mirror
-→ may record an instance in a work
-→ must not become the canonical definition
+Female - Nipples ↔ Female - Vaginal Canal
+Female - Nipples ↔ Female - Anus
+Female - Areolae ↔ Female - Vestibule
+Female - Breast Skin ↔ Female - Vulva
+Female - Clitoral Glans ↔ Female - Nipples
 ```
+
+Candidate descendant mirrors should become standalone mirror profiles only when downstream activation, sensory, symbolic, authorial, or corpus use makes the narrower correspondence independently meaningful.
+
+---
+
+## Lightweight Routing Hints
+
+Mirror profiles may include lightweight routing hints so the graph can prioritize plausible routes.
+
+Routing hints are not activation mechanics and not expressive interpretation.
+
+```text
+Mirror Layer may rank plausible correspondence routes.
+Mirror Layer must not define when, how strongly, or with what felt meaning those routes activate.
+```
+
+Allowed routing fields:
+
+```text
+baseline_mirror_likelihood: High / Moderate / Low / Contextual / Unknown
+activation_dependency: Independent / Activation-Dependent / Expressive-Dependent / Corpus-Dependent / Unknown
+traversal_priority: Primary / Secondary / Tertiary / Candidate / Unknown
+```
+
+Activation and Expressive layers later decide what actually fires, how strongly, and how it is experienced.
 
 ---
 
@@ -146,16 +207,16 @@ Mirror is not activation.
 
 Activation describes response initiation, physiological process, or change.
 
-Mirror describes correspondence.
+Mirror describes correspondence and route plausibility.
 
 Example:
 
 ```text
-Smack Activation Profile
-→ defines event/process relationships
+Nipple Touch Activation Profile
+→ may activate or weight a mirror route
 
-Hand to Skin Mirror Profile
-→ defines relational correspondence or paired meaning between contact surfaces
+Female - Clitoral Complex to Female - Breasts Mirror Profile
+→ records a composite correspondence route that may become salient under activation
 ```
 
 A mirror may be activated by an event, but the mirror itself is not the event.
@@ -197,6 +258,7 @@ emotional interpretation as definition
 symbolic meaning as definition
 authorial language rules
 corpus examples as canonical truth
+intensity, felt meaning, or narrative effect
 ```
 
 They may point to these layers as candidate downstream uses.
@@ -211,6 +273,13 @@ Use controlled relationship language.
 Mirror Profile MIRRORS Source Object
 Mirror Profile MIRRORS Target Object
 Mirror Profile HAS_MIRROR_TYPE Mirror Type
+Mirror Profile HAS_DIRECTIONALITY Directionality
+Mirror Profile HAS_ANCHOR_LEVEL Anchor Level
+Mirror Profile ALLOWS_CHILD_TRAVERSAL true / false
+Mirror Profile HAS_DESCENDANT_MIRROR_CANDIDATES true / false
+Mirror Profile HAS_BASELINE_MIRROR_LIKELIHOOD Likelihood
+Mirror Profile HAS_ACTIVATION_DEPENDENCY Dependency
+Mirror Profile HAS_TRAVERSAL_PRIORITY Priority
 Mirror Profile HAS_CORRESPONDENCE_BASIS Basis
 Mirror Profile MAY_SUPPORT Expressive Profile
 Mirror Profile MAY_BE_USED_BY Authorial System
@@ -219,20 +288,23 @@ Mirror Profile MAY_BE_ANNOTATED_IN Corpus Annotation
 
 ---
 
-## Candidate Validation Set
-
-The first validation set should include a small number of mirror profiles that test different mirror types without overbuilding the layer.
-
-Recommended candidates:
+## Current Validation Set
 
 ```text
-Female - Nipples to Female - Clitoral Glans Mirror Profile
-Tears to Rain Mirror Profile
-Hand to Mouth Mirror Profile
-Blood to Menstrual Fluid Boundary Mirror Profile
+Female - Vulva to Female - Clitoral Complex Mirror Profile
+Female - Clitoral Complex to Female - Breasts Mirror Profile
+Female - Vulva to Female - Anus Mirror Profile
 ```
 
-These test anatomical, symbolic, relational, and boundary-sensitive mirror relationships.
+These test:
+
+```text
+composite-to-component correspondence
+composite-to-composite correspondence with child traversal
+external pelvic boundary correspondence
+explicit directionality
+lightweight routing hints
+```
 
 ---
 
@@ -246,6 +318,7 @@ mirror does not initiate activation
 mirror does not create symbolic meaning by itself
 mirror does not authorialize language
 mirror supports traversal without collapsing layers
+mirror may guide route priority without defining response intensity
 ```
 
 ---
@@ -253,15 +326,16 @@ mirror supports traversal without collapsing layers
 ## Review Questions
 
 1. Which mirror types should become controlled values?
-2. Should Mirror Profiles live directly in the Mirror Layer root or in a dedicated Mirror Profiles subfolder?
-3. Should mirror directionality be explicit, bidirectional by default, or controlled per profile?
-4. Which mirror profiles are needed before Activation Layer validation?
-5. Which mirror profiles are needed before Expressive Layer validation?
+2. Should Sensory-Adjacent remain a mirror type, or become only a downstream candidate?
+3. Which candidate descendant mirrors should remain hints rather than standalone nodes?
+4. Are routing hints lightweight enough, or have they crossed into Activation or Expressive layers?
+5. Which mirror profiles are needed before Activation Layer validation?
+6. Which mirror profiles are needed before Expressive Layer validation?
 
 ---
 
 ## Status
 
-Draft v0.1.
+Draft v0.2.
 
-This framework should be validated with a small mirror profile set before the Mirror Layer is marked Baseline.
+This framework reflects the current Mirror Profile Template, composite-first anchoring, descendant mirror candidates, explicit directionality, and lightweight routing hints.
