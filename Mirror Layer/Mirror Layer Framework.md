@@ -8,7 +8,7 @@ file_class: Document
 document_type: Framework
 layer: Mirror Layer
 status: Draft
-version: 0.2
+version: 0.3
 last_updated: 2026-06-30
 ---
 
@@ -201,6 +201,23 @@ Activation and Expressive layers later decide what actually fires, how strongly,
 
 ---
 
+## Boundary Region References
+
+Mirror profiles may reference a boundary region when the mirrored route depends on shared or adjacent anatomical territory.
+
+The boundary reference is a traversal aid. It must not redefine canonical anatomy.
+
+Example:
+
+```text
+Female - Vulva to Female - Anus Mirror Profile
+REFERENCES_BOUNDARY_REGION Female - Perineum
+```
+
+This means the perineum helps explain the boundary route. It does not create a new anatomical definition of the perineum, vulva, or anus.
+
+---
+
 ## Relationship to Activation
 
 Mirror is not activation.
@@ -281,6 +298,7 @@ Mirror Profile HAS_BASELINE_MIRROR_LIKELIHOOD Likelihood
 Mirror Profile HAS_ACTIVATION_DEPENDENCY Dependency
 Mirror Profile HAS_TRAVERSAL_PRIORITY Priority
 Mirror Profile HAS_CORRESPONDENCE_BASIS Basis
+Mirror Profile REFERENCES_BOUNDARY_REGION Boundary Region
 Mirror Profile MAY_SUPPORT Expressive Profile
 Mirror Profile MAY_BE_USED_BY Authorial System
 Mirror Profile MAY_BE_ANNOTATED_IN Corpus Annotation
@@ -304,6 +322,7 @@ composite-to-composite correspondence with child traversal
 external pelvic boundary correspondence
 explicit directionality
 lightweight routing hints
+boundary-region references
 ```
 
 ---
@@ -319,6 +338,7 @@ mirror does not create symbolic meaning by itself
 mirror does not authorialize language
 mirror supports traversal without collapsing layers
 mirror may guide route priority without defining response intensity
+boundary-region references are traversal aids, not anatomical definitions
 ```
 
 ---
@@ -329,13 +349,14 @@ mirror may guide route priority without defining response intensity
 2. Should Sensory-Adjacent remain a mirror type, or become only a downstream candidate?
 3. Which candidate descendant mirrors should remain hints rather than standalone nodes?
 4. Are routing hints lightweight enough, or have they crossed into Activation or Expressive layers?
-5. Which mirror profiles are needed before Activation Layer validation?
-6. Which mirror profiles are needed before Expressive Layer validation?
+5. Are boundary-region references sufficiently constrained as traversal aids?
+6. Which mirror profiles are needed before Activation Layer validation?
+7. Which mirror profiles are needed before Expressive Layer validation?
 
 ---
 
 ## Status
 
-Draft v0.2.
+Draft v0.3.
 
-This framework reflects the current Mirror Profile Template, composite-first anchoring, descendant mirror candidates, explicit directionality, and lightweight routing hints.
+This framework reflects the current Mirror Profile Template, composite-first anchoring, descendant mirror candidates, explicit directionality, lightweight routing hints, and formal boundary-region reference support.
