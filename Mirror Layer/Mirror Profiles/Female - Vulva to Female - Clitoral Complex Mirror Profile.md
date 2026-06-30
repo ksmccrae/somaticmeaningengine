@@ -10,11 +10,18 @@ file_class: Ontology Node
 node_type: Mirror Profile
 layer: Mirror Layer
 status: Draft
-version: 0.1
+version: 0.2
 mirror_type: Anatomical / Functional
 source_object: Female - Vulva
 target_object: Female - Clitoral Complex
 directionality: Contextual
+inverse_profile_required: false
+anchor_level: Mixed
+child_traversal_allowed: true
+descendant_mirror_candidates: false
+baseline_mirror_likelihood: High
+activation_dependency: Contextual
+traversal_priority: Primary
 validation_status: Supported
 ---
 
@@ -38,7 +45,40 @@ It records a structured anatomical and functional correspondence without redefin
 | Source Object | [[Female - Vulva]] |
 | Target Object | [[Female - Clitoral Complex]] |
 | Directionality | Contextual |
+| Inverse Profile Required | false |
+| Anchor Level | Mixed |
+| Child Traversal Allowed | true |
+| Descendant Mirror Candidates | false |
+| Baseline Mirror Likelihood | High |
+| Activation Dependency | Contextual |
+| Traversal Priority | Primary |
 | Validation Status | Supported |
+
+---
+
+## Routing Hints
+
+These routing hints guide graph traversal only.
+
+They do not define activation mechanics, response strength, sensory experience, symbolic meaning, or authorial use.
+
+| Field | Value | Boundary |
+|---|---|---|
+| Baseline Mirror Likelihood | High | Strong canonical traversal route because clitoral complex is contained within the vulval region |
+| Activation Dependency | Contextual | Mirror may be anatomical, activation-adjacent, expressive, or authorial depending on traversal purpose |
+| Traversal Priority | Primary | Primary route from broad external genital region to focal composite structure |
+
+---
+
+## Directionality Rule
+
+This mirror is contextual.
+
+Traversal from [[Female - Vulva]] to [[Female - Clitoral Complex]] is useful when moving from regional anatomy to a focal composite structure.
+
+Traversal from [[Female - Clitoral Complex]] to [[Female - Vulva]] is useful when moving from focal structure back to broader regional context.
+
+No separate inverse mirror profile is required unless a future downstream layer defines a meaningfully different reverse-use case.
 
 ---
 
@@ -46,7 +86,7 @@ It records a structured anatomical and functional correspondence without redefin
 
 The vulva is a composite external genital anatomical region that includes the clitoral complex as one of its contained or related structures.
 
-The mirror is therefore not a simple equivalence. It is a composite-to-contained-structure mirror that supports traversal between the wider anatomical site and a major sensory-relevant anatomical complex.
+The mirror is therefore not a simple equivalence. It is a composite-to-contained-structure mirror that supports traversal between the wider anatomical site and a major downstream-relevant anatomical complex.
 
 Neutral correspondence basis:
 
@@ -54,8 +94,39 @@ Neutral correspondence basis:
 composite-to-component relationship
 external genital region to specialized erectile/sensory structure
 surface boundary to internal/external complex
-regional anchor to focal anatomical anchor
+regional anchor to focal composite anatomical anchor
 ```
+
+---
+
+## Hierarchy-Level Check
+
+This profile intentionally uses a mixed hierarchy level.
+
+```text
+Female - Vulva
+= broad composite external genital region
+
+Female - Clitoral Complex
+= contained composite anatomical structure within or related to that region
+```
+
+The hierarchy mismatch is useful because it supports traversal between regional anatomy and a focal composite child without forcing each child node into a separate mirror.
+
+---
+
+## Child Traversal
+
+| Side | Child Node | Traversal Role | Notes |
+|---|---|---|---|
+| Source | [[Female - Vestibule]] | Candidate child traversal | Regional transitional child |
+| Source | [[Female - Labia Majora]] | Candidate child traversal | Surface boundary child |
+| Source | [[Female - Labia Minora]] | Candidate child traversal | Surface boundary child |
+| Target | [[Female - Clitoral Glans]] | Candidate child traversal | Focal child node |
+| Target | [[Female - Clitoral Hood]] | Candidate child traversal | Surface / covering child node |
+| Target | [[Female - Vestibular Bulbs]] | Candidate child traversal | Distributed internal child node |
+
+Child traversal does not create separate mirror profiles unless lower-level correspondences become independently meaningful.
 
 ---
 
@@ -79,6 +150,7 @@ This mirror does not define clitoral activation behaviour.
 This mirror does not define sensory pleasure or discomfort.
 This mirror does not define symbolic meaning.
 This mirror does not create authorial language rules.
+This mirror does not define intensity, felt meaning, or narrative effect.
 ```
 
 ---
@@ -87,11 +159,11 @@ This mirror does not create authorial language rules.
 
 | Future Record | Purpose |
 |---|---|
-| Female - Clitoral Complex Sensory Profile | May reference focal sensory traversal from regional site |
-| Female - Vulva Sensory Profile | May reference broader surface and boundary perception |
-| Female - Clitoral Complex Activation Profile | May reference activation pathway without being defined here |
+| Female - Vulva Sensory Profile | May reference broad regional perception |
+| Female - Clitoral Complex Sensory Profile | May reference focal composite perception |
+| Female - Clitoral Complex Activation Profile | May reference activation only if later validated |
 | Authorial Term Register | May govern language distinction between regional and focal terms |
-| Corpus Annotation | May record use in a work |
+| Corpus Annotation | May record mirror use in a work |
 
 ---
 
@@ -101,6 +173,12 @@ This mirror does not create authorial language rules.
 Female - Vulva to Female - Clitoral Complex Mirror Profile MIRRORS Female - Vulva
 Female - Vulva to Female - Clitoral Complex Mirror Profile MIRRORS Female - Clitoral Complex
 Female - Vulva to Female - Clitoral Complex Mirror Profile HAS_MIRROR_TYPE Anatomical / Functional
+Female - Vulva to Female - Clitoral Complex Mirror Profile HAS_DIRECTIONALITY Contextual
+Female - Vulva to Female - Clitoral Complex Mirror Profile HAS_ANCHOR_LEVEL Mixed
+Female - Vulva to Female - Clitoral Complex Mirror Profile ALLOWS_CHILD_TRAVERSAL true
+Female - Vulva to Female - Clitoral Complex Mirror Profile HAS_BASELINE_MIRROR_LIKELIHOOD High
+Female - Vulva to Female - Clitoral Complex Mirror Profile HAS_ACTIVATION_DEPENDENCY Contextual
+Female - Vulva to Female - Clitoral Complex Mirror Profile HAS_TRAVERSAL_PRIORITY Primary
 Female - Vulva to Female - Clitoral Complex Mirror Profile HAS_CORRESPONDENCE_BASIS Composite-to-component relationship
 ```
 
@@ -108,12 +186,13 @@ Female - Vulva to Female - Clitoral Complex Mirror Profile HAS_CORRESPONDENCE_BA
 
 ## Review Questions
 
-1. Should this be classified primarily as anatomical or functional?
-2. Should composite-to-component be a formal mirror subtype?
-3. Should directionality be source-to-target when traversing from broad region to focal structure?
+1. Should composite-to-component be a formal mirror subtype?
+2. Should directionality remain contextual rather than source-to-target?
+3. Which child traversals should become explicit only after activation or sensory profiles exist?
+4. Are routing hints lightweight enough, or have they crossed into activation or expressive modelling?
 
 ---
 
 ## Status
 
-Draft v0.1.
+Draft v0.2.
