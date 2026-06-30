@@ -8,8 +8,8 @@ file_class: Document
 document_type: Framework
 layer: Fluid Layer
 status: Draft
-version: 0.1
-last_updated: 2026-06-29
+version: 0.2
+last_updated: 2026-06-30
 ---
 
 # Fluid Layer Framework
@@ -47,6 +47,35 @@ Authorial Systems
 Corpus
 → records how fluids appear in specific works
 ```
+
+---
+
+## Folder Structure
+
+Fluid Layer records are organized into dedicated subfolders.
+
+```text
+Fluid Layer
+├── Fluid Layer Framework.md
+├── Fluid Entities
+│   ├── Fluid Entities Index.md
+│   ├── Tears.md
+│   ├── Urine.md
+│   ├── Menstrual Fluid.md
+│   ├── Vaginal Fluid.md
+│   ├── Milk.md
+│   ├── Blood.md
+│   ├── Sweat.md
+│   └── Saliva.md
+└── Fluid Profiles
+    ├── Fluid Profiles Index.md
+    ├── Female - Vulva Fluid Profile.md
+    ├── Female - Vaginal Canal Fluid Profile.md
+    ├── Female - Skene's Glands Fluid Profile.md
+    └── Female - Breasts Fluid Profile.md
+```
+
+This structure separates reusable fluid entities from local anatomical fluid profiles.
 
 ---
 
@@ -208,16 +237,7 @@ Those concerns belong to their own layers.
 
 ## Current Validation Set
 
-Fluid modelling is currently being validated through a small Female Embodiment set:
-
-```text
-Female - Vulva Fluid Profile
-Female - Vaginal Canal Fluid Profile
-Female - Skene's Glands Fluid Profile
-Female - Breasts Fluid Profile
-```
-
-The next validation set should include reusable fluid entities such as:
+Fluid entity validation set:
 
 ```text
 Tears
@@ -228,6 +248,15 @@ Milk
 Blood
 Sweat
 Saliva
+```
+
+Fluid profile validation set:
+
+```text
+Female - Vulva Fluid Profile
+Female - Vaginal Canal Fluid Profile
+Female - Skene's Glands Fluid Profile
+Female - Breasts Fluid Profile
 ```
 
 ---
@@ -247,18 +276,25 @@ This allows graph traversal from fluid entities into anatomy, activation, sensor
 
 ---
 
-## Review Questions
+## Resolved Decisions
 
-1. Should fluid entities live directly in the Fluid Layer root or in a dedicated Fluid Entities subfolder?
-2. Should anatomical fluid profiles live directly in the Fluid Layer root or in a dedicated Fluid Profiles subfolder?
-3. Which fluid entities should be validated before the Fluid Entity Template is frozen?
-4. Should Surface Moisture be a fluid entity, a quality, or a relationship type?
-5. Which activation profiles must exist before fluid modelling can be considered stable?
+1. Fluid entities use a dedicated `Fluid Entities` subfolder.
+2. Anatomical fluid profiles use a dedicated `Fluid Profiles` subfolder.
+3. Existing validation profiles have been migrated out of the Fluid Layer root.
+
+---
+
+## Open Review Questions
+
+1. Should Surface Moisture be a fluid entity, a quality, or a relationship type?
+2. Which additional fluid entities are required before the Fluid Entity Template is frozen?
+3. Which activation profiles must exist before fluid modelling can be considered stable?
+4. Which missing canonical anatomical anchors are required before urinary and reproductive fluid validation?
 
 ---
 
 ## Status
 
-Draft v0.1.
+Draft v0.2.
 
-This framework reflects the current split between Fluid Entity and Fluid Profile modelling and should be reviewed before the Fluid Layer is marked Baseline.
+This framework reflects the current split between Fluid Entity and Fluid Profile modelling and the adopted subfolder structure.
