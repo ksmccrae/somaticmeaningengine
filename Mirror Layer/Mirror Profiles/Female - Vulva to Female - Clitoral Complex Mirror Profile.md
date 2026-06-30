@@ -10,7 +10,7 @@ file_class: Ontology Node
 node_type: Mirror Profile
 layer: Mirror Layer
 status: Draft
-version: 0.2
+version: 0.3
 mirror_type: Anatomical / Functional
 source_object: Female - Vulva
 target_object: Female - Clitoral Complex
@@ -176,10 +176,14 @@ Female - Vulva to Female - Clitoral Complex Mirror Profile HAS_MIRROR_TYPE Anato
 Female - Vulva to Female - Clitoral Complex Mirror Profile HAS_DIRECTIONALITY Contextual
 Female - Vulva to Female - Clitoral Complex Mirror Profile HAS_ANCHOR_LEVEL Mixed
 Female - Vulva to Female - Clitoral Complex Mirror Profile ALLOWS_CHILD_TRAVERSAL true
+Female - Vulva to Female - Clitoral Complex Mirror Profile HAS_DESCENDANT_MIRROR_CANDIDATES false
 Female - Vulva to Female - Clitoral Complex Mirror Profile HAS_BASELINE_MIRROR_LIKELIHOOD High
 Female - Vulva to Female - Clitoral Complex Mirror Profile HAS_ACTIVATION_DEPENDENCY Contextual
 Female - Vulva to Female - Clitoral Complex Mirror Profile HAS_TRAVERSAL_PRIORITY Primary
 Female - Vulva to Female - Clitoral Complex Mirror Profile HAS_CORRESPONDENCE_BASIS Composite-to-component relationship
+Female - Vulva to Female - Clitoral Complex Mirror Profile MAY_SUPPORT Female - Clitoral Complex Sensory Profile
+Female - Vulva to Female - Clitoral Complex Mirror Profile MAY_BE_USED_BY Authorial Term Register
+Female - Vulva to Female - Clitoral Complex Mirror Profile MAY_BE_ANNOTATED_IN Corpus Annotation
 ```
 
 ---
@@ -190,9 +194,10 @@ Female - Vulva to Female - Clitoral Complex Mirror Profile HAS_CORRESPONDENCE_BA
 2. Should directionality remain contextual rather than source-to-target?
 3. Which child traversals should become explicit only after activation or sensory profiles exist?
 4. Are routing hints lightweight enough, or have they crossed into activation or expressive modelling?
+5. Are downstream-use relationships sufficiently constrained as candidate links rather than definitions?
 
 ---
 
 ## Status
 
-Draft v0.2.
+Draft v0.3.
