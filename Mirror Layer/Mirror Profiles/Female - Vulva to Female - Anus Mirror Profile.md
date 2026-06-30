@@ -10,7 +10,7 @@ file_class: Ontology Node
 node_type: Mirror Profile
 layer: Mirror Layer
 status: Draft
-version: 0.2
+version: 0.3
 mirror_type: Boundary / Anatomical-Adjacent
 source_object: Female - Vulva
 target_object: Female - Anus
@@ -155,6 +155,16 @@ Candidate descendant mirrors should become standalone profiles only when a downs
 
 ---
 
+## Boundary Region References
+
+Boundary region references identify traversal aids only. They do not redefine canonical anatomy.
+
+| Boundary Region | Relationship | Notes |
+|---|---|---|
+| [[Female - Perineum]] | REFERENCES_BOUNDARY_REGION | Regional boundary anchor connecting the external anterior pelvic site and posterior pelvic opening |
+
+---
+
 ## Excluded Interpretations
 
 ```text
@@ -165,6 +175,7 @@ This mirror does not define sensory pleasure or discomfort.
 This mirror does not define symbolic meaning.
 This mirror does not create authorial language rules.
 This mirror does not define intensity, felt meaning, or narrative effect.
+This mirror does not redefine Female - Perineum, Female - Vulva, or Female - Anus.
 ```
 
 ---
@@ -198,6 +209,9 @@ Female - Vulva to Female - Anus Mirror Profile HAS_ACTIVATION_DEPENDENCY Context
 Female - Vulva to Female - Anus Mirror Profile HAS_TRAVERSAL_PRIORITY Primary
 Female - Vulva to Female - Anus Mirror Profile HAS_CORRESPONDENCE_BASIS External pelvic adjacency
 Female - Vulva to Female - Anus Mirror Profile REFERENCES_BOUNDARY_REGION Female - Perineum
+Female - Vulva to Female - Anus Mirror Profile MAY_SUPPORT Female - Anus Sensory Profile
+Female - Vulva to Female - Anus Mirror Profile MAY_BE_USED_BY Authorial Term Register
+Female - Vulva to Female - Anus Mirror Profile MAY_BE_ANNOTATED_IN Corpus Annotation
 ```
 
 ---
@@ -209,9 +223,10 @@ Female - Vulva to Female - Anus Mirror Profile REFERENCES_BOUNDARY_REGION Female
 3. Should a future Female - Anal Region node sit between Female - Perineum and Female - Anus?
 4. Should this mirror remain bidirectional, or become contextual depending on downstream use?
 5. Are routing hints lightweight enough, or have they crossed into activation or expressive modelling?
+6. Is the boundary-region reference sufficiently constrained as a traversal aid rather than a canonical anatomical definition?
 
 ---
 
 ## Status
 
-Draft v0.2.
+Draft v0.3.
