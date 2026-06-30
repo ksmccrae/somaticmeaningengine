@@ -12,7 +12,7 @@ template_type: Translation
 node_type: Mirror Profile
 layer: Mirror Layer
 status: Draft
-version: 0.4
+version: 0.5
 last_updated: 2026-06-30
 ---
 
@@ -41,6 +41,39 @@ Mirrored Object
 ```
 
 A single mirror profile may be bidirectional, directional, or contextual. Do not create duplicate inverse mirror files unless the inverse relationship has a different correspondence basis, different layer boundary, or different governance rule.
+
+---
+
+## Lightweight Routing Rule
+
+Mirror profiles may include lightweight routing hints so the graph can prioritize plausible routes.
+
+Routing hints are not activation mechanics and not expressive interpretation.
+
+```text
+Mirror Layer may rank plausible correspondence routes.
+Mirror Layer must not define when, how strongly, or with what felt meaning those routes activate.
+```
+
+Use routing hints to answer:
+
+```text
+Is this mirror a likely route?
+Is this mirror usually primary or secondary?
+Does this mirror depend on activation, expressive framing, or corpus use?
+```
+
+Do not use routing hints to answer:
+
+```text
+What causes the response?
+How intense is the response?
+How is it felt?
+What does it mean symbolically?
+How should it be written?
+```
+
+Those belong to Activation, Expressive, Symbolic, Authorial, and Corpus layers.
 
 ---
 
@@ -138,6 +171,9 @@ inverse_profile_required: true / false
 anchor_level: Composite / Atomic / Mixed / Contextual
 child_traversal_allowed: true / false
 descendant_mirror_candidates: true / false
+baseline_mirror_likelihood: High / Moderate / Low / Contextual / Unknown
+activation_dependency: Independent / Activation-Dependent / Expressive-Dependent / Corpus-Dependent / Unknown
+traversal_priority: Primary / Secondary / Tertiary / Candidate / Unknown
 validation_status: Supported / Candidate / Blocked
 ---
 ```
@@ -168,7 +204,22 @@ It records the basis of correspondence without redefining either object.
 | Anchor Level | Composite / Atomic / Mixed / Contextual |
 | Child Traversal Allowed | true / false |
 | Descendant Mirror Candidates | true / false |
+| Baseline Mirror Likelihood | High / Moderate / Low / Contextual / Unknown |
+| Activation Dependency | Independent / Activation-Dependent / Expressive-Dependent / Corpus-Dependent / Unknown |
+| Traversal Priority | Primary / Secondary / Tertiary / Candidate / Unknown |
 | Validation Status | Supported / Candidate / Blocked |
+
+---
+
+## Routing Hints
+
+Use this section to give the graph enough guidance to prioritize traversal without defining activation or expressive experience.
+
+| Field | Value | Boundary |
+|---|---|---|
+| Baseline Mirror Likelihood | High / Moderate / Low / Contextual / Unknown | Plausibility of mirror route only |
+| Activation Dependency | Independent / Activation-Dependent / Expressive-Dependent / Corpus-Dependent / Unknown | Points to dependency, does not define mechanism |
+| Traversal Priority | Primary / Secondary / Tertiary / Candidate / Unknown | Graph priority, not intensity |
 
 ---
 
@@ -258,9 +309,9 @@ It does not create separate mirror profiles unless those lower-level corresponde
 
 Use this section to list possible child or descendant mirror routes that may later become standalone mirror profiles.
 
-| Candidate Mirror | Basis | Status | Notes |
-|---|---|---|---|
-| [[Source Child Node]] to [[Target Child Node]] | Candidate basis | Candidate | Do not create until independently needed |
+| Candidate Mirror | Basis | Baseline Likelihood | Traversal Priority | Status | Notes |
+|---|---|---|---|---|---|
+| [[Source Child Node]] to [[Target Child Node]] | Candidate basis | Contextual | Candidate | Candidate | Do not create until independently needed |
 
 Candidate descendant mirrors should preserve traversal possibilities without overbuilding the Mirror Layer.
 
@@ -293,6 +344,7 @@ This mirror does not define activation behaviour.
 This mirror does not define sensory pleasure or discomfort.
 This mirror does not define symbolic meaning.
 This mirror does not create authorial language rules.
+This mirror does not define intensity, felt meaning, or narrative effect.
 ```
 
 ---
@@ -301,6 +353,7 @@ This mirror does not create authorial language rules.
 
 | Future Record | Purpose |
 |---|---|
+| Activation Mirror Mapping | May define when this mirror is activated and with what strength |
 | Sensory Profile | May reference mirrored sensory correspondence |
 | Symbolic Profile | May reference mirrored symbolic correspondence |
 | Activation Profile | May reference coordinated activation or response |
@@ -321,6 +374,9 @@ Source Object to Target Object Mirror Profile HAS_DIRECTIONALITY Directionality
 Source Object to Target Object Mirror Profile HAS_ANCHOR_LEVEL Anchor Level
 Source Object to Target Object Mirror Profile ALLOWS_CHILD_TRAVERSAL true / false
 Source Object to Target Object Mirror Profile HAS_DESCENDANT_MIRROR_CANDIDATES true / false
+Source Object to Target Object Mirror Profile HAS_BASELINE_MIRROR_LIKELIHOOD Likelihood
+Source Object to Target Object Mirror Profile HAS_ACTIVATION_DEPENDENCY Dependency
+Source Object to Target Object Mirror Profile HAS_TRAVERSAL_PRIORITY Priority
 Source Object to Target Object Mirror Profile HAS_CORRESPONDENCE_BASIS Basis
 Source Object to Target Object Mirror Profile MAY_SUPPORT Expressive Profile
 ```
@@ -336,14 +392,15 @@ Source Object to Target Object Mirror Profile MAY_SUPPORT Expressive Profile
 5. Is the mirror anatomical, functional, sensory-adjacent, symbolic, relational, contrastive, or boundary-based?
 6. Is directionality explicit?
 7. Is an inverse profile actually required, or does directionality solve it?
-8. Are the mirrored objects at compatible hierarchy levels?
-9. Does this mirror accidentally redefine anatomy or meaning?
-10. Does this mirror require candidate downstream profiles before baseline?
+8. Are routing hints lightweight enough, or have they crossed into Activation or Expressive layers?
+9. Are the mirrored objects at compatible hierarchy levels?
+10. Does this mirror accidentally redefine anatomy or meaning?
+11. Does this mirror require candidate downstream profiles before baseline?
 
 ---
 
 ## Status
 
-Draft v0.4.
+Draft v0.5.
 
 This template should be validated with a small mirror profile set before being marked Baseline.
