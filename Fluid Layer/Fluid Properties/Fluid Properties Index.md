@@ -9,7 +9,7 @@ file_class: Document
 document_type: Index
 layer: Fluid Layer
 status: Draft
-version: 0.1
+version: 0.2
 last_updated: 2026-06-30
 ---
 
@@ -23,21 +23,21 @@ Fluid properties define observable, measurable, or physiologically grounded qual
 
 They do not define fluid entities, anatomical sites, activation mechanics, sensory experience, symbolic meaning, authorial usage, or corpus examples.
 
-## Initial Property Register
+## Property Register
 
 | Property | Property Class | Primary Use | Status |
 |---|---|---|---|
-| [[Viscosity]] | Physical | Fluid Entity / Fluid Profile | Candidate |
-| [[Density]] | Physical | Fluid Entity / Fluid Profile | Candidate |
-| [[Colour]] | Visual | Fluid Entity / Fluid Profile | Candidate |
-| [[Opacity]] | Visual | Fluid Entity / Fluid Profile | Candidate |
-| [[Odour]] | Olfactory | Fluid Entity / Fluid Profile | Candidate |
-| [[Taste]] | Gustatory | Fluid Entity / Fluid Profile | Candidate |
-| [[Temperature]] | Thermal | Fluid Profile / Sensory Boundary | Candidate |
-| [[Volume]] | Physical / Quantitative | Fluid Entity / Fluid Profile | Candidate |
-| [[Flow]] | Relational / Physical | Fluid Profile / Activation Boundary | Candidate |
-| [[Cyclicity]] | Temporal | Fluid Entity / Activation Boundary | Candidate |
-| [[Surface Presence]] | Relational | Fluid Profile | Candidate |
+| [[Viscosity]] | Physical | Fluid Entity / Fluid Profile | Draft v0.1 |
+| [[Density]] | Physical | Fluid Entity / Fluid Profile | Draft v0.1 |
+| [[Colour]] | Visual | Fluid Entity / Fluid Profile | Draft v0.1 |
+| [[Opacity]] | Visual | Fluid Entity / Fluid Profile | Draft v0.1 |
+| [[Odour]] | Olfactory | Fluid Entity / Fluid Profile | Draft v0.1 |
+| [[Taste]] | Gustatory | Fluid Entity / Fluid Profile | Draft v0.1 |
+| [[Temperature]] | Thermal | Fluid Profile / Sensory Boundary | Draft v0.1 |
+| [[Volume]] | Physical / Quantitative | Fluid Entity / Fluid Profile | Draft v0.1 |
+| [[Flow]] | Relational / Physical | Fluid Profile / Activation Boundary | Draft v0.1 |
+| [[Cyclicity]] | Temporal | Fluid Entity / Activation Boundary | Draft v0.1 |
+| [[Surface Presence]] | Relational | Fluid Profile | Draft v0.1 |
 
 ## Governance Notes
 
@@ -51,13 +51,21 @@ Seeing red, dark, bright, pale, alarming, beautiful, shameful, sacred, or danger
 = sensory / symbolic / authorial interpretation depending on layer
 ```
 
+Fluid properties may be referenced by fluid entities as general properties and by fluid profiles as local anatomical variations.
+
+## Validation Notes
+
+The first validation set is intentionally broad enough to test physical, visual, olfactory, gustatory, thermal, temporal, and relational properties.
+
+The next validation pass should check whether property value ranges are reusable enough across the first fluid entity set.
+
 ## Review Questions
 
-1. Which properties should be created as full nodes before template validation?
-2. Which properties should remain simple controlled values?
+1. Which properties require stricter governed value ranges?
+2. Which properties should remain broad controlled values rather than expanding into subproperties?
 3. Should Surface Presence remain a relationship property rather than a fluid entity?
-4. Which properties need governed value ranges?
+4. Should Temperature and Flow be treated as activation-adjacent properties?
 
 ## Status
 
-Draft v0.1.
+Draft v0.2.
