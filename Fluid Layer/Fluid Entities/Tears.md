@@ -10,7 +10,7 @@ file_class: Ontology Node
 node_type: Fluid Entity
 layer: Fluid Layer
 status: Draft
-version: 0.1
+version: 0.2
 primary_system: Lacrimal System
 embodiment_scope: Cross-Embodiment
 fluid_class: Exocrine / Surface
@@ -60,18 +60,19 @@ They may also be referenced by activation profiles involving crying, irritation,
 | Eyelids | Conducts / Surface Presence | Local profile required |
 | Face / Cheeks | Surface Presence | Downstream anatomical anchors required |
 
-## Fluid Qualities
+## Fluid Properties
 
-| Quality | Range / Description | Notes |
+| Fluid Property | Range / Description | Notes |
 |---|---|---|
-| Viscosity | Thin / watery / variable | Neutral description only |
-| Colour | Clear / variable | Neutral description only |
-| Opacity | Clear / translucent | Neutral description only |
-| Odour | None / mild / variable | Neutral description only |
-| Taste | Saline / variable | Use only where relevant and not authorialized |
-| Volume | Trace / low / moderate / high / variable | Context-dependent |
-| Flow | Surface / stream / variable | Local profile determines anatomical path |
-| Cyclicity | None / contextual | Not cyclical by default |
+| [[Viscosity]] | Thin / watery / variable | Neutral description only |
+| [[Colour]] | Clear / variable | Neutral description only |
+| [[Opacity]] | Clear / translucent | Neutral description only |
+| [[Odour]] | None / mild / variable | Neutral description only |
+| [[Taste]] | Saline / variable | Use only where relevant and not authorialized |
+| [[Volume]] | Trace / low / moderate / high / variable | Context-dependent |
+| [[Flow]] | Surface / stream / variable | Local profile determines anatomical path |
+| [[Cyclicity]] | None / contextual | Not cyclical by default |
+| [[Surface Presence]] | Trace / surface / stream / transferred / variable | Local profile defines anatomical relation |
 
 ## Common Activation Processes
 
@@ -98,6 +99,17 @@ Do not include activation mechanics, sensory interpretation, symbolic meaning, e
 
 ```text
 Tears IS_FLUID_ENTITY
+Tears HAS_COMMON_SOURCE Lacrimal Glands
+Tears HAS_COMMON_OUTPUT_SITE Eye
+Tears HAS_FLUID_PROPERTY Viscosity
+Tears HAS_FLUID_PROPERTY Colour
+Tears HAS_FLUID_PROPERTY Opacity
+Tears HAS_FLUID_PROPERTY Odour
+Tears HAS_FLUID_PROPERTY Taste
+Tears HAS_FLUID_PROPERTY Volume
+Tears HAS_FLUID_PROPERTY Flow
+Tears HAS_FLUID_PROPERTY Cyclicity
+Tears HAS_FLUID_PROPERTY Surface Presence
 Tears MAY_BE_PRODUCED_BY Crying Activation Profile
 Tears MAY_BE_PRODUCED_BY Reflex Tearing Activation Profile
 Tears MAY_BE_REFERENCED_BY Eye Fluid Profile
@@ -111,4 +123,4 @@ Tears MAY_BE_REFERENCED_BY Eye Fluid Profile
 
 ## Status
 
-Draft v0.1.
+Draft v0.2.
