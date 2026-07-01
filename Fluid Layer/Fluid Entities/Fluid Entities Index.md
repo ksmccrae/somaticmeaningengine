@@ -9,7 +9,7 @@ file_class: Document
 document_type: Index
 layer: Fluid Layer
 status: Draft
-version: 0.2
+version: 0.3
 last_updated: 2026-06-30
 ---
 
@@ -25,16 +25,16 @@ Fluid entities define fluids independently from any single anatomical site, acti
 
 | Fluid Entity | Primary Role | Embodiment Scope | Status |
 |---|---|---|---|
-| [[Tears]] | Lacrimal / expressive-adjacent fluid | Cross-Embodiment | Draft v0.1 |
-| [[Urine]] | Urinary fluid | Cross-Embodiment | Draft v0.1 |
-| [[Menstrual Fluid]] | Reproductive / cyclical fluid | Anatomy-Dependent | Draft v0.1 |
-| [[Vaginal Fluid]] | Mucosal / reproductive tract fluid | Anatomy-Dependent | Draft v0.1 |
+| [[Tears]] | Lacrimal / expressive-adjacent fluid | Cross-Embodiment | Draft v0.2 |
+| [[Urine]] | Urinary fluid | Cross-Embodiment | Draft v0.2 |
+| [[Menstrual Fluid]] | Reproductive / cyclical fluid | Anatomy-Dependent | Draft v0.2 |
+| [[Vaginal Fluid]] | Mucosal / reproductive tract fluid | Anatomy-Dependent | Draft v0.2 |
 | [[Cervical Mucus]] | Cervical / reproductive mucosal fluid | Anatomy-Dependent | Draft v0.1 |
 | [[Paraurethral Glandular Fluid]] | Paraurethral glandular fluid | Anatomy-Dependent | Draft v0.1 |
-| [[Milk]] | Lactation fluid | Conditional / Anatomy-Dependent | Draft v0.1 |
-| [[Blood]] | Circulatory fluid | Cross-Embodiment | Draft v0.1 |
-| [[Sweat]] | Surface / thermoregulatory fluid | Cross-Embodiment | Draft v0.1 |
-| [[Saliva]] | Oral / digestive fluid | Cross-Embodiment | Draft v0.1 |
+| [[Milk]] | Lactation fluid | Conditional / Anatomy-Dependent | Draft v0.2 |
+| [[Blood]] | Circulatory fluid | Cross-Embodiment | Draft v0.2 |
+| [[Sweat]] | Surface / thermoregulatory fluid | Cross-Embodiment | Draft v0.2 |
+| [[Saliva]] | Oral / digestive fluid | Cross-Embodiment | Draft v0.2 |
 
 ## Governance Notes
 
@@ -51,6 +51,8 @@ Activation Profile
 = what process produces, releases, moves, exposes, withholds, or alters the fluid
 ```
 
+Fluid entities should reference fluid property nodes through `HAS_FLUID_PROPERTY` relationship statements rather than redefining property categories locally.
+
 ## Surface Moisture Note
 
 Surface Moisture is not listed as a fluid entity by default.
@@ -63,7 +65,8 @@ Current governance treats Surface Moisture primarily as a relationship or proper
 2. Should Cervical Mucus require a dedicated Cervical Canal anatomical node before baseline?
 3. Should Paraurethral Glandular Fluid require refined gland opening anatomy before baseline?
 4. Should Surface Moisture remain outside the entity register for now?
+5. Should all current validation entities be migrated to Draft v0.2 after confirming property-node pattern parity?
 
 ## Status
 
-Draft v0.2.
+Draft v0.3.
