@@ -10,7 +10,7 @@ file_class: Ontology Node
 node_type: Fluid Entity
 layer: Fluid Layer
 status: Draft
-version: 0.1
+version: 0.2
 primary_system: Integumentary System
 embodiment_scope: Cross-Embodiment
 fluid_class: Exocrine / Surface
@@ -59,18 +59,19 @@ It may be referenced by anatomical fluid profiles involving skin surfaces, palms
 | Face | Surface Presence | Local profile may be required |
 | Axillary Region | Surface Presence | Local profile may be required |
 
-## Fluid Qualities
+## Fluid Properties
 
-| Quality | Range / Description | Notes |
+| Fluid Property | Range / Description | Notes |
 |---|---|---|
-| Viscosity | Thin / watery / variable | Neutral description only |
-| Colour | Clear / variable | Neutral description only |
-| Opacity | Clear / translucent | Neutral description only |
-| Odour | None / mild / strong / variable | Neutral description only |
-| Taste | Saline / variable | Use only where relevant and not authorialized |
-| Volume | Trace / low / moderate / high / variable | Context-dependent |
-| Flow | Surface / bead / film / stream / variable | Local profile defines surface pattern |
-| Cyclicity | None / contextual | Not cyclical by default |
+| [[Viscosity]] | Thin / watery / variable | Neutral description only |
+| [[Colour]] | Clear / variable | Neutral description only |
+| [[Opacity]] | Clear / translucent | Neutral description only |
+| [[Odour]] | None / mild / strong / variable | Neutral description only |
+| [[Taste]] | Saline / variable | Use only where relevant and not authorialized |
+| [[Volume]] | Trace / low / moderate / high / variable | Context-dependent |
+| [[Flow]] | Surface / bead / film / stream / variable | Local profile defines surface pattern |
+| [[Cyclicity]] | None / contextual | Not cyclical by default |
+| [[Surface Presence]] | Surface / film / bead / accumulated / transferred / variable | Local profile defines anatomical relation |
 
 ## Common Activation Processes
 
@@ -100,7 +101,18 @@ Do not define sweating mechanics here. Do not include sensory interpretation, sy
 Sweat IS_FLUID_ENTITY
 Sweat HAS_COMMON_SOURCE Sweat Glands
 Sweat HAS_COMMON_OUTPUT_SITE Skin Surface
+Sweat HAS_FLUID_PROPERTY Viscosity
+Sweat HAS_FLUID_PROPERTY Colour
+Sweat HAS_FLUID_PROPERTY Opacity
+Sweat HAS_FLUID_PROPERTY Odour
+Sweat HAS_FLUID_PROPERTY Taste
+Sweat HAS_FLUID_PROPERTY Volume
+Sweat HAS_FLUID_PROPERTY Flow
+Sweat HAS_FLUID_PROPERTY Cyclicity
+Sweat HAS_FLUID_PROPERTY Surface Presence
 Sweat MAY_BE_PRODUCED_BY Sweating Activation Profile
+Sweat MAY_BE_PRODUCED_BY Heat Response Activation Profile
+Sweat MAY_BE_PRODUCED_BY Stress Response Activation Profile
 ```
 
 ## Review Questions
@@ -111,4 +123,4 @@ Sweat MAY_BE_PRODUCED_BY Sweating Activation Profile
 
 ## Status
 
-Draft v0.1.
+Draft v0.2.
