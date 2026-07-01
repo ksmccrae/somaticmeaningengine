@@ -2,7 +2,7 @@
 tags:
   - Template/Translation
   - Template/Fluid Profile
-  - Status/Draft
+  - Status/Validated
 aliases:
   - Fluid Profile Template
   - Fluid Layer Profile Template
@@ -11,9 +11,9 @@ file_class: Template
 template_type: Translation
 node_type: Fluid Profile
 layer: Fluid Layer
-status: Draft
-version: 0.3
-last_updated: 2026-06-29
+status: Validated
+version: 0.4
+last_updated: 2026-06-30
 ---
 
 # Fluid Profile Template
@@ -214,7 +214,7 @@ Use this section to reference likely activation profiles without defining activa
 
 | Activation Profile | Fluid Entity | Role |
 |---|---|---|
-| [[Activation Profile]] | [[Fluid Entity]] | Produces / Releases / Moves / Withholds / Alters / Exposes |
+| Activation Profile | [[Fluid Entity]] | Produces / Releases / Moves / Withholds / Alters / Exposes |
 
 Activation profiles may involve multiple anatomical sites and multiple fluid entities.
 
@@ -282,8 +282,53 @@ Use this section to capture unresolved ontology questions before the node become
 
 ---
 
+## Validation Result
+
+Validated against the current Female Fluid Profile validation set:
+
+```text
+Female - Vulva Fluid Profile
+Female - Vaginal Canal Fluid Profile
+Female - Skene's Glands Fluid Profile
+Female - Breasts Fluid Profile
+```
+
+Validation confirmed:
+
+```text
+expected YAML fields present in checked profile nodes
+expected sections present across validation set
+profiles reference Fluid Entities rather than defining them locally
+Cervical Mucus and Paraurethral Glandular Fluid are treated as existing Fluid Entity nodes, not candidate-only placeholders
+Surface Moisture remains governed as a relationship/property state by default unless mixed, nonspecific, accumulated, transferred, or independently reusable
+source, conduit, output site, surface presence, and adjacency are separated in live profiles
+activation hooks are referenced but not defined
+profiles do not redefine canonical anatomy, fluid entities, activation mechanics, sensory experience, symbolic meaning, authorial language, or corpus usage
+no mechanical drift found in the checked validation set
+```
+
+This template is validated for continued construction use. It is not yet Baseline.
+
+---
+
+## Baseline Blockers
+
+Before this template can be marked Baseline, resolve or formally defer:
+
+```text
+Whether all current Fluid Profile nodes should be individually audited again before Baseline.
+Which additional anatomical anchors require Fluid Profiles before the layer is stable.
+Whether Surface Moisture remains a relationship/property state or eventually becomes one or more standalone Fluid Entities.
+Which activation profiles must exist before Fluid Profile modelling is stable.
+Whether local fluid qualities should wikilink Fluid Property nodes in profile files or remain plain neutral descriptors.
+Whether profile relationship statements need additional controlled verbs for adjacent output sites and adjacent surface presence.
+Which cross-embodiment, trans feminine, trans masculine, male, or non-sex-specific profiles are needed before Baseline.
+```
+
+---
+
 ## Status
 
-Draft v0.3.
+Validated v0.4.
 
-This template should be validated together with the Fluid Entity Template before being marked Baseline.
+This template is validated against the current Fluid Profile validation set and remains pre-Baseline pending governance resolution or formal deferral.
