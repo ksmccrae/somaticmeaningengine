@@ -8,7 +8,7 @@ file_class: Document
 document_type: Framework
 layer: Fluid Layer
 status: Draft
-version: 0.4
+version: 0.5
 last_updated: 2026-06-30
 ---
 
@@ -58,13 +58,26 @@ Fluid Layer records are organized into dedicated subfolders.
 Fluid Layer
 ├── Fluid Layer Framework.md
 ├── Fluid Properties
-│   └── Fluid Properties Index.md
+│   ├── Fluid Properties Index.md
+│   ├── Viscosity.md
+│   ├── Density.md
+│   ├── Colour.md
+│   ├── Opacity.md
+│   ├── Odour.md
+│   ├── Taste.md
+│   ├── Temperature.md
+│   ├── Volume.md
+│   ├── Flow.md
+│   ├── Cyclicity.md
+│   └── Surface Presence.md
 ├── Fluid Entities
 │   ├── Fluid Entities Index.md
 │   ├── Tears.md
 │   ├── Urine.md
 │   ├── Menstrual Fluid.md
 │   ├── Vaginal Fluid.md
+│   ├── Cervical Mucus.md
+│   ├── Paraurethral Glandular Fluid.md
 │   ├── Milk.md
 │   ├── Blood.md
 │   ├── Sweat.md
@@ -142,19 +155,24 @@ Odour Sensory Profile
 
 Fluid entities define reusable fluids independent of any single anatomical site.
 
-Examples:
+Current validation entities:
 
 ```text
 Tears
-Blood
-Sweat
-Saliva
 Urine
 Menstrual Fluid
 Vaginal Fluid
 Cervical Mucus
 Paraurethral Glandular Fluid
 Milk
+Blood
+Sweat
+Saliva
+```
+
+Additional future candidate entities may include:
+
+```text
 Semen
 Pre-Ejaculate
 Surface Moisture
@@ -339,6 +357,8 @@ Tears
 Urine
 Menstrual Fluid
 Vaginal Fluid
+Cervical Mucus
+Paraurethral Glandular Fluid
 Milk
 Blood
 Sweat
@@ -379,6 +399,7 @@ This allows graph traversal from fluid properties and entities into anatomy, act
 3. Anatomical fluid profiles use a dedicated `Fluid Profiles` subfolder.
 4. Existing validation profiles have been migrated out of the Fluid Layer root.
 5. Surface Moisture is a relationship type by default, but may become a fluid entity when it is mixed, nonspecific, accumulated, transferred, or independently reusable.
+6. Cervical Mucus and Paraurethral Glandular Fluid are current Fluid Entity validation nodes, not candidate-only placeholders.
 
 ---
 
@@ -388,11 +409,12 @@ This allows graph traversal from fluid properties and entities into anatomy, act
 2. Which additional fluid entities are required before the Fluid Entity Template is frozen?
 3. Which activation profiles must exist before fluid modelling can be considered stable?
 4. Which missing canonical anatomical anchors are required before urinary and reproductive fluid validation?
+5. Should Surface Moisture remain outside the entity register until it becomes mixed, nonspecific, accumulated, transferred, or independently reusable?
 
 ---
 
 ## Status
 
-Draft v0.4.
+Draft v0.5.
 
-This framework reflects the current split between Fluid Property, Fluid Entity, and Fluid Profile modelling, the adopted subfolder structure, and the conditional Surface Moisture rule.
+This framework reflects the current split between Fluid Property, Fluid Entity, and Fluid Profile modelling, the adopted subfolder structure, the current ten-entity validation set, and the conditional Surface Moisture rule.
