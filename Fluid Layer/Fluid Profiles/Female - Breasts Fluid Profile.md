@@ -11,7 +11,7 @@ node_type: Fluid Profile
 layer: Fluid Layer
 embodiment_scope: Female
 status: Draft
-version: 0.2
+version: 0.3
 anatomical_anchor: Female - Breasts
 canonical_layer_reference: Canonical Embodiment
 fluid_relevance: Conditional
@@ -42,7 +42,7 @@ It links the canonical anatomical anchor to reusable fluid entities without rede
 | Fluid Entity | Relationship To Anchor | Notes |
 |---|---|---|
 | [[Milk]] | Produces / Conducts / Output Site | Conditional lactation-related fluid entity |
-| Surface Moisture | Adjacent / Surface Presence | Candidate pending decision: entity, quality, or relationship type |
+| Surface Moisture | Adjacent / Surface Presence | Relationship/property state by default unless mixed, nonspecific, accumulated, transferred, or independently reusable |
 
 ---
 
@@ -53,7 +53,7 @@ It links the canonical anatomical anchor to reusable fluid entities without rede
 | Source | [[Female - Mammary Tissue]] | [[Milk]] | Conditional lactation-related production source |
 | Organizing Anchor | [[Female - Breasts]] | [[Milk]] | Paired composite anatomical anchor |
 | Output Site | [[Female - Nipples]] | [[Milk]] | Output site under lactation conditions |
-| Adjacent Site | [[Female - Breast Skin]] | Surface Moisture | Surface presence only |
+| Adjacent Site | [[Female - Breast Skin]] | Surface Moisture | Surface-presence relationship/property state only unless a standalone entity is later justified |
 
 ---
 
@@ -78,6 +78,8 @@ This profile may record local anatomical routing such as mammary tissue source a
 
 Do not define lactation mechanics inside this profile.
 
+Do not treat Surface Moisture as a standalone fluid entity unless it becomes mixed, nonspecific, accumulated, transferred, or independently reusable.
+
 Do not include sensory interpretation, symbolic meaning, emotional interpretation, activation mechanics, authorial language, or corpus examples.
 
 ---
@@ -89,6 +91,7 @@ Female - Breasts Fluid Profile DESCRIBES_FLUID_RELATIONSHIPS_OF Female - Breasts
 Female - Breasts Fluid Profile REFERENCES_FLUID_ENTITY Milk
 Female - Breasts Fluid Profile REFERENCES_FLUID_SOURCE Female - Mammary Tissue
 Female - Breasts Fluid Profile REFERENCES_FLUID_OUTPUT_SITE Female - Nipples
+Female - Breasts Fluid Profile REFERENCES_ADJACENT_SURFACE_PRESENCE Female - Breast Skin
 ```
 
 ---
@@ -98,9 +101,10 @@ Female - Breasts Fluid Profile REFERENCES_FLUID_OUTPUT_SITE Female - Nipples
 1. Should Mammary Tissue have its own fluid profile, or is the breast-level profile sufficient for now?
 2. Should lactation be represented through a dedicated activation profile before this profile is baseline?
 3. How should Trans Feminine and Trans Masculine chest or breast configurations reference [[Milk]] when relevant?
+4. Should Surface Moisture remain a relationship/property state unless it becomes mixed, nonspecific, accumulated, transferred, or independently reusable?
 
 ---
 
 ## Status
 
-Draft v0.2.
+Draft v0.3.
