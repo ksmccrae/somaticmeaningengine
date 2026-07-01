@@ -8,8 +8,8 @@ file_class: Document
 document_type: Framework
 layer: Mirror Layer
 status: Draft
-version: 0.3
-last_updated: 2026-06-30
+version: 0.4
+last_updated: 2026-07-01
 ---
 
 # Mirror Layer Framework
@@ -60,12 +60,46 @@ Mirror Layer
 ├── Mirror Layer Framework.md
 └── Mirror Profiles
     ├── Mirror Profiles Index.md
+    ├── Female Mirror Candidate Register.md
     ├── Female - Vulva to Female - Clitoral Complex Mirror Profile.md
     ├── Female - Clitoral Complex to Female - Breasts Mirror Profile.md
-    └── Female - Vulva to Female - Anus Mirror Profile.md
+    ├── Female - Vulva to Female - Anus Mirror Profile.md
+    ├── Female - Vulva to Female - Breasts Mirror Profile.md
+    ├── Female - Nipples to Female - Vaginal Canal Mirror Profile.md
+    ├── Female - Skene's Glands to Female - Urethral Opening Mirror Profile.md
+    └── Female - Perineum to Female - Pelvic Floor Mirror Profile.md
 ```
 
-Mirror profiles live in a dedicated `Mirror Profiles` subfolder.
+Mirror profiles and candidate registers live in the dedicated `Mirror Profiles` subfolder.
+
+---
+
+## Supported and Candidate Status Model
+
+The Mirror Layer separates profile maturity into at least two operational groups.
+
+```text
+Supported Validation Set
+= profiles already audited against the validated Mirror Profile Template and confirmed as mechanically clean
+
+Expansion Candidate Set
+= structurally governed draft profiles created for traversal testing but not yet promoted to Supported
+
+Candidate Register
+= planning document for possible mirror routes, deferred candidates, and construction criteria
+```
+
+Document status and validation status must remain separate.
+
+```text
+Document Status
+= file maturity and version, for example Draft v0.1
+
+Validation Status
+= whether the profile is Supported, Candidate, or Blocked
+```
+
+Candidate profiles may be useful for Activation planning without being part of the Supported validation set.
 
 ---
 
@@ -103,6 +137,8 @@ Anatomical-Adjacent
 ```
 
 These should remain controlled values until repeated patterns justify more detailed subtypes.
+
+`Fluid-Adjacent` is not currently a controlled mirror type. Fluid adjacency may be described in prose under Anatomical, Functional, Boundary, or other governed mirror types unless an ADR or later governance decision promotes it to a controlled value.
 
 ---
 
@@ -207,14 +243,35 @@ Mirror profiles may reference a boundary region when the mirrored route depends 
 
 The boundary reference is a traversal aid. It must not redefine canonical anatomy.
 
-Example:
+Examples:
 
 ```text
 Female - Vulva to Female - Anus Mirror Profile
 REFERENCES_BOUNDARY_REGION Female - Perineum
+
+Female - Perineum to Female - Pelvic Floor Mirror Profile
+REFERENCES_BOUNDARY_REGION Female - Perineum
 ```
 
-This means the perineum helps explain the boundary route. It does not create a new anatomical definition of the perineum, vulva, or anus.
+This means the perineum helps explain the boundary route. It does not create a new anatomical definition of the perineum, vulva, anus, or pelvic floor.
+
+---
+
+## Relationship to Fluid Layer
+
+Mirror profiles may reference Fluid Layer profiles or fluid entities as candidate downstream traversal hooks.
+
+They must not define fluid entities, fluid properties, fluid production, fluid release, or fluid activation mechanics.
+
+Example:
+
+```text
+Female - Skene's Glands to Female - Urethral Opening Mirror Profile
+→ may reference Paraurethral Glandular Fluid and Urine as boundary-sensitive traversal objects
+→ must not collapse those fluids or define their activation
+```
+
+Fluid-adjacent prose is allowed as a boundary note. `Fluid-Adjacent` is not currently a controlled mirror type.
 
 ---
 
@@ -306,7 +363,7 @@ Mirror Profile MAY_BE_ANNOTATED_IN Corpus Annotation
 
 ---
 
-## Current Validation Set
+## Current Supported Validation Set
 
 ```text
 Female - Vulva to Female - Clitoral Complex Mirror Profile
@@ -324,6 +381,30 @@ explicit directionality
 lightweight routing hints
 boundary-region references
 ```
+
+---
+
+## Current Female Expansion Candidate Set
+
+```text
+Female - Vulva to Female - Breasts Mirror Profile
+Female - Nipples to Female - Vaginal Canal Mirror Profile
+Female - Skene's Glands to Female - Urethral Opening Mirror Profile
+Female - Perineum to Female - Pelvic Floor Mirror Profile
+```
+
+These candidate profiles test:
+
+```text
+composite external body-region mirroring
+focal output-site to internal-canal mirroring
+paraurethral glandular to urinary-output boundary mirroring
+boundary-region to support-structure mirroring
+Fluid Layer adjacency without fluid definition
+Activation dependency as routing hint only
+```
+
+They remain Candidate until a later audit promotes them.
 
 ---
 
@@ -352,11 +433,13 @@ boundary-region references are traversal aids, not anatomical definitions
 5. Are boundary-region references sufficiently constrained as traversal aids?
 6. Which mirror profiles are needed before Activation Layer validation?
 7. Which mirror profiles are needed before Expressive Layer validation?
+8. Should any female expansion candidates be promoted from Candidate to Supported after audit?
+9. Should Fluid-Adjacent remain descriptive prose, or become a governed mirror type in a later ADR?
 
 ---
 
 ## Status
 
-Draft v0.3.
+Draft v0.4.
 
-This framework reflects the current Mirror Profile Template, composite-first anchoring, descendant mirror candidates, explicit directionality, lightweight routing hints, and formal boundary-region reference support.
+This framework reflects the current Mirror Profile Template, composite-first anchoring, descendant mirror candidates, explicit directionality, lightweight routing hints, formal boundary-region reference support, the Supported/Candidate split, and the first female mirror expansion candidate set.
