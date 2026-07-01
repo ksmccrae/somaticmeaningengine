@@ -9,7 +9,7 @@ file_class: Document
 document_type: Index
 layer: Fluid Layer
 status: Draft
-version: 0.2
+version: 0.3
 last_updated: 2026-06-30
 ---
 
@@ -30,7 +30,7 @@ They do not define the fluid entity itself, redefine canonical anatomy, define a
 | [[Female - Vulva Fluid Profile]] | [[Female - Vulva]] | [[Urine]], [[Menstrual Fluid]], [[Vaginal Fluid]], [[Paraurethral Glandular Fluid]] | Draft v0.3 |
 | [[Female - Vaginal Canal Fluid Profile]] | [[Female - Vaginal Canal]] | [[Vaginal Fluid]], [[Cervical Mucus]], [[Menstrual Fluid]] | Draft v0.3 |
 | [[Female - Skene's Glands Fluid Profile]] | [[Female - Skene's Glands]] | [[Paraurethral Glandular Fluid]], [[Urine]] | Draft v0.3 |
-| [[Female - Breasts Fluid Profile]] | [[Female - Breasts]] | [[Milk]] | Draft v0.2 |
+| [[Female - Breasts Fluid Profile]] | [[Female - Breasts]] | [[Milk]] | Draft v0.3 |
 
 ## Governance Notes
 
@@ -46,6 +46,8 @@ adjacent site
 
 This prevents nearby anatomical structures from being mistaken for the source of a fluid.
 
+Surface Moisture should remain a relationship/property state by default unless it becomes mixed, nonspecific, accumulated, transferred, or independently reusable.
+
 ## Status
 
-Draft v0.2.
+Draft v0.3.
