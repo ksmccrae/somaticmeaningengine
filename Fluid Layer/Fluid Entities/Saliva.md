@@ -10,7 +10,7 @@ file_class: Ontology Node
 node_type: Fluid Entity
 layer: Fluid Layer
 status: Draft
-version: 0.1
+version: 0.2
 primary_system: Oral / Digestive System
 embodiment_scope: Cross-Embodiment
 fluid_class: Exocrine / Oral
@@ -59,18 +59,19 @@ It may be referenced by anatomical fluid profiles involving salivary glands, mou
 | Lips | Surface Presence / Output Site | Local profile required |
 | Skin Surface | Transfer / Surface Presence | Local profile may be required |
 
-## Fluid Qualities
+## Fluid Properties
 
-| Quality | Range / Description | Notes |
+| Fluid Property | Range / Description | Notes |
 |---|---|---|
-| Viscosity | Thin / mucosal / thick / variable | Neutral description only |
-| Colour | Clear / variable | Neutral description only |
-| Opacity | Clear / translucent / variable | Neutral description only |
-| Odour | None / mild / variable | Neutral description only |
-| Taste | Neutral / saline / variable | Use only where relevant and not authorialized |
-| Volume | Trace / low / moderate / high / variable | Context-dependent |
-| Flow | Oral surface / droplet / transfer / variable | Local profile defines path |
-| Cyclicity | None / contextual | Not cyclical by default |
+| [[Viscosity]] | Thin / mucosal / thick / variable | Neutral description only |
+| [[Colour]] | Clear / variable | Neutral description only |
+| [[Opacity]] | Clear / translucent / variable | Neutral description only |
+| [[Odour]] | None / mild / variable | Neutral description only |
+| [[Taste]] | Neutral / saline / variable | Use only where relevant and not authorialized |
+| [[Volume]] | Trace / low / moderate / high / variable | Context-dependent |
+| [[Flow]] | Oral surface / droplet / transfer / variable | Local profile defines path |
+| [[Cyclicity]] | None / contextual | Not cyclical by default |
+| [[Surface Presence]] | Oral / surface / droplet / transferred / variable | Local profile defines anatomical relation |
 
 ## Common Activation Processes
 
@@ -100,7 +101,18 @@ Do not define salivation mechanics here. Do not include sensory interpretation, 
 Saliva IS_FLUID_ENTITY
 Saliva HAS_COMMON_SOURCE Salivary Glands
 Saliva HAS_COMMON_OUTPUT_SITE Mouth
+Saliva HAS_FLUID_PROPERTY Viscosity
+Saliva HAS_FLUID_PROPERTY Colour
+Saliva HAS_FLUID_PROPERTY Opacity
+Saliva HAS_FLUID_PROPERTY Odour
+Saliva HAS_FLUID_PROPERTY Taste
+Saliva HAS_FLUID_PROPERTY Volume
+Saliva HAS_FLUID_PROPERTY Flow
+Saliva HAS_FLUID_PROPERTY Cyclicity
+Saliva HAS_FLUID_PROPERTY Surface Presence
 Saliva MAY_BE_PRODUCED_BY Salivation Activation Profile
+Saliva MAY_BE_PRODUCED_BY Swallowing Activation Profile
+Saliva MAY_BE_PRODUCED_BY Spitting Activation Profile
 ```
 
 ## Review Questions
@@ -111,4 +123,4 @@ Saliva MAY_BE_PRODUCED_BY Salivation Activation Profile
 
 ## Status
 
-Draft v0.1.
+Draft v0.2.
