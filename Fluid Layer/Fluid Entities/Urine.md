@@ -10,7 +10,7 @@ file_class: Ontology Node
 node_type: Fluid Entity
 layer: Fluid Layer
 status: Draft
-version: 0.1
+version: 0.2
 primary_system: Urinary System
 embodiment_scope: Cross-Embodiment
 fluid_class: Urinary
@@ -61,18 +61,19 @@ It may appear adjacent to external genital anatomical profiles, but those adjace
 | Vestibule | Adjacent | Relevant in Female Embodiment but not a source |
 | Vulva | Adjacent | External adjacency only, not source or conduit |
 
-## Fluid Qualities
+## Fluid Properties
 
-| Quality | Range / Description | Notes |
+| Fluid Property | Range / Description | Notes |
 |---|---|---|
-| Viscosity | Thin / watery | Neutral description only |
-| Colour | Pale yellow / yellow / amber / variable | Physiological variation possible |
-| Opacity | Clear / translucent / cloudy / variable | Neutral description only |
-| Odour | Mild / strong / variable | Neutral description only |
-| Taste | Saline / bitter / variable | Use only where relevant and not authorialized |
-| Volume | Low / moderate / high / variable | Context-dependent |
-| Flow | Stream / release / variable | Activation profile defines release mechanics |
-| Cyclicity | None / contextual | Not cyclical by default |
+| [[Viscosity]] | Thin / watery | Neutral description only |
+| [[Colour]] | Pale yellow / yellow / amber / variable | Physiological variation possible |
+| [[Opacity]] | Clear / translucent / cloudy / variable | Neutral description only |
+| [[Odour]] | Mild / strong / variable | Neutral description only |
+| [[Taste]] | Saline / bitter / variable | Use only where relevant and not authorialized |
+| [[Volume]] | Low / moderate / high / variable | Context-dependent |
+| [[Flow]] | Stream / release / variable | Activation profile defines release mechanics |
+| [[Cyclicity]] | None / contextual | Not cyclical by default |
+| [[Surface Presence]] | Adjacent / output / transferred / variable | Local profile defines anatomical relation |
 
 ## Common Activation Processes
 
@@ -100,7 +101,19 @@ Do not assign urine production to external genital structures. Do not include ac
 Urine IS_FLUID_ENTITY
 Urine HAS_COMMON_SOURCE Bladder
 Urine HAS_COMMON_OUTPUT_SITE Urethral Opening
+Urine HAS_FLUID_PROPERTY Viscosity
+Urine HAS_FLUID_PROPERTY Colour
+Urine HAS_FLUID_PROPERTY Opacity
+Urine HAS_FLUID_PROPERTY Odour
+Urine HAS_FLUID_PROPERTY Taste
+Urine HAS_FLUID_PROPERTY Volume
+Urine HAS_FLUID_PROPERTY Flow
+Urine HAS_FLUID_PROPERTY Cyclicity
+Urine HAS_FLUID_PROPERTY Surface Presence
 Urine MAY_BE_PRODUCED_BY Urination Activation Profile
+Urine MAY_BE_PRODUCED_BY Bladder Control Activation Profile
+Urine MAY_BE_REFERENCED_BY Female - Vulva Fluid Profile
+Urine MAY_BE_REFERENCED_BY Female - Skene's Glands Fluid Profile
 ```
 
 ## Review Questions
@@ -111,4 +124,4 @@ Urine MAY_BE_PRODUCED_BY Urination Activation Profile
 
 ## Status
 
-Draft v0.1.
+Draft v0.2.
