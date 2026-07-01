@@ -12,8 +12,8 @@ template_type: Translation
 node_type: Fluid Entity
 layer: Fluid Layer
 status: Draft
-version: 0.1
-last_updated: 2026-06-29
+version: 0.2
+last_updated: 2026-06-30
 ---
 
 # Fluid Entity Template
@@ -156,21 +156,26 @@ List common output, surface, or visible sites.
 
 ---
 
-## Fluid Qualities
+## Fluid Properties
 
 Use this section for neutral observable or physiologically grounded properties.
 
-| Quality | Range / Description | Notes |
+Fluid entities should reference fluid property nodes rather than redefine property categories locally.
+
+| Fluid Property | Range / Description | Notes |
 |---|---|---|
-| Viscosity | Thin / watery / thick / variable | Neutral description only |
-| Density | Low / moderate / high / variable | Use only if meaningful at this modelling resolution |
-| Colour | Clear / white / yellow / red / brown / variable | Neutral description only |
-| Opacity | Clear / translucent / opaque / variable | Neutral description only |
-| Odour | None / mild / strong / variable | Neutral description only |
-| Taste | Neutral / saline / metallic / bitter / variable | Use only where relevant and not authorialized |
-| Volume | Trace / low / moderate / high / variable | Neutral description only |
-| Flow | Static / surface / discharge / stream / cyclical / variable | Neutral description only |
-| Cyclicity | None / cyclical / hormonal / reproductive / contextual | Neutral description only |
+| [[Viscosity]] | Thin / watery / thick / variable | Neutral description only |
+| [[Density]] | Low / moderate / high / variable | Use only if meaningful at this modelling resolution |
+| [[Colour]] | Clear / white / yellow / red / brown / variable | Neutral description only |
+| [[Opacity]] | Clear / translucent / opaque / variable | Neutral description only |
+| [[Odour]] | None / mild / strong / variable | Neutral description only |
+| [[Taste]] | Neutral / saline / metallic / bitter / variable | Use only where relevant and not authorialized |
+| [[Volume]] | Trace / low / moderate / high / variable | Neutral description only |
+| [[Flow]] | Static / surface / discharge / stream / cyclical / variable | Neutral description only |
+| [[Cyclicity]] | None / cyclical / hormonal / reproductive / contextual | Neutral description only |
+| [[Surface Presence]] | None / trace / local / surface / adjacent / transferred / variable | Use when the fluid is commonly present on surfaces |
+
+Do not use this section to define how the property is perceived. Perception belongs to the Sensory Layer.
 
 ---
 
@@ -180,7 +185,7 @@ Activation processes should be referenced, not defined here.
 
 | Activation Process | Relationship | Notes |
 |---|---|---|
-| [[Activation Profile]] | Produces / Releases / Moves / Alters / Exposes | Defined in Activation Layer |
+| Activation Profile | Produces / Releases / Moves / Alters / Exposes | Defined in Activation Layer |
 
 ---
 
@@ -220,6 +225,7 @@ Use controlled relationship language.
 Fluid Name IS_FLUID_ENTITY
 Fluid Name HAS_COMMON_SOURCE Anatomical Node
 Fluid Name HAS_COMMON_OUTPUT_SITE Anatomical Node
+Fluid Name HAS_FLUID_PROPERTY Fluid Property
 Fluid Name MAY_BE_PRODUCED_BY Activation Profile
 Fluid Name MAY_BE_REFERENCED_BY Anatomical Node Fluid Profile
 ```
@@ -234,11 +240,12 @@ Fluid Name MAY_BE_REFERENCED_BY Anatomical Node Fluid Profile
 4. Are sensory and symbolic meanings excluded from this node?
 5. Should this fluid be atomic, composite, or a category containing sub-fluids?
 6. Does this fluid require embodiment-specific variants?
+7. Are fluid properties referenced as property nodes rather than redefined locally?
 
 ---
 
 ## Status
 
-Draft v0.1.
+Draft v0.2.
 
-This template should be validated before fluid entities are populated broadly.
+This template should be validated before fluid entities are populated broadly. It now uses the `Fluid Properties` wikilink pattern used by the current Cervical Mucus and Paraurethral Glandular Fluid validation nodes.
