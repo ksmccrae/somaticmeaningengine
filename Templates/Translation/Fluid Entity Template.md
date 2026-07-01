@@ -2,7 +2,7 @@
 tags:
   - Template/Translation
   - Template/Fluid Entity
-  - Status/Draft
+  - Status/Validated
 aliases:
   - Fluid Entity Template
   - Fluid Register Entity Template
@@ -11,8 +11,8 @@ file_class: Template
 template_type: Translation
 node_type: Fluid Entity
 layer: Fluid Layer
-status: Draft
-version: 0.2
+status: Validated
+version: 0.3
 last_updated: 2026-06-30
 ---
 
@@ -244,8 +244,60 @@ Fluid Name MAY_BE_REFERENCED_BY Anatomical Node Fluid Profile
 
 ---
 
+## Validation Result
+
+Validated against representative Fluid Entity nodes and the current ten-entity validation set:
+
+```text
+Tears
+Urine
+Menstrual Fluid
+Vaginal Fluid
+Cervical Mucus
+Paraurethral Glandular Fluid
+Milk
+Blood
+Sweat
+Saliva
+```
+
+Validation confirmed:
+
+```text
+expected YAML fields present in checked entity nodes
+expected sections present across validation sample
+Fluid Properties wikilink pattern adopted by the template and represented in checked live entities
+fluid entities reference Fluid Property nodes rather than redefining property categories locally
+relationship statements include HAS_FLUID_PROPERTY relationships
+activation processes are referenced but not defined
+expressive hooks remain downstream candidates, not definitions
+fluid entities do not redefine local anatomical profiles
+no stale candidate language remains for Cervical Mucus or Paraurethral Glandular Fluid
+no mechanical drift found in the checked validation sample
+```
+
+This template is validated for continued construction use. It is not yet Baseline.
+
+---
+
+## Baseline Blockers
+
+Before this template can be marked Baseline, resolve or formally defer:
+
+```text
+Whether all ten current Fluid Entity nodes should be individually audited before Baseline.
+Whether Cervical Mucus and Paraurethral Glandular Fluid should be bumped from Draft v0.1 to Draft v0.2 for version-label parity.
+Which entities require embodiment-specific variants.
+Whether Surface Moisture remains outside the entity register until it becomes mixed, nonspecific, accumulated, transferred, or independently reusable.
+Which activation profiles must exist before Fluid Entity modelling is stable.
+Which missing anatomical anchors are required before urinary, reproductive, lacrimal, oral, integumentary, circulatory, and mammary fluid modelling is stable.
+Whether any current fluid entities should be split into subtypes.
+```
+
+---
+
 ## Status
 
-Draft v0.2.
+Validated v0.3.
 
-This template should be validated before fluid entities are populated broadly. It now uses the `Fluid Properties` wikilink pattern used by the current Cervical Mucus and Paraurethral Glandular Fluid validation nodes.
+This template is validated against the current Fluid Entity validation set and remains pre-Baseline pending governance resolution or formal deferral.
