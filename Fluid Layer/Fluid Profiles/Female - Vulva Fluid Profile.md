@@ -11,7 +11,7 @@ node_type: Fluid Profile
 layer: Fluid Layer
 embodiment_scope: Female
 status: Draft
-version: 0.2
+version: 0.3
 anatomical_anchor: Female - Vulva
 canonical_layer_reference: Canonical Embodiment
 fluid_relevance: Adjacent / Surface Presence
@@ -44,8 +44,8 @@ It links the canonical anatomical anchor to reusable fluid entities without rede
 | [[Vaginal Fluid]] | Adjacent / Surface Presence | May become externally present near the vulval surface but belongs primarily to vaginal canal or vaginal opening profiles |
 | [[Menstrual Fluid]] | Adjacent / Surface Presence | May become externally present during relevant cycle conditions but is not produced by the vulva |
 | [[Urine]] | Adjacent | Associated with nearby urethral output, not vulval production |
-| Paraurethral Glandular Fluid | Adjacent | Candidate fluid entity needed for Skene's gland modelling |
-| Surface Moisture | Surface Presence | Candidate pending decision: entity, quality, or relationship type |
+| [[Paraurethral Glandular Fluid]] | Adjacent / Surface Presence | Associated with nearby paraurethral glandular structures; not produced by the vulva as a whole |
+| Surface Moisture | Surface Presence | Relationship/property state by default unless mixed, nonspecific, accumulated, transferred, or independently reusable |
 
 ---
 
@@ -56,10 +56,11 @@ It links the canonical anatomical anchor to reusable fluid entities without rede
 | Adjacent Site | [[Female - Vulva]] | [[Vaginal Fluid]] | External surface presence only |
 | Adjacent Site | [[Female - Vulva]] | [[Menstrual Fluid]] | External surface presence only |
 | Adjacent Site | [[Female - Vulva]] | [[Urine]] | Nearby urinary output, not source |
+| Adjacent Site | [[Female - Vulva]] | [[Paraurethral Glandular Fluid]] | Nearby paraurethral glandular output or surface presence, not vulval production |
 | Output Site | [[Female - Vaginal Opening]] | [[Vaginal Fluid]] | Primary output anchor for vaginal canal fluids |
 | Output Site | [[Female - Vaginal Opening]] | [[Menstrual Fluid]] | Primary visible output anchor for menstrual fluid |
 | Output Site | [[Female - Urethral Opening]] | [[Urine]] | Urinary output anchor |
-| Source / Adjacent | [[Female - Skene's Glands]] | Paraurethral Glandular Fluid | Candidate entity and profile required |
+| Source / Adjacent | [[Female - Skene's Glands]] | [[Paraurethral Glandular Fluid]] | Glandular source relationship defined through the Skene's glands profile |
 
 ---
 
@@ -78,6 +79,7 @@ This profile may record only local surface-presence patterns, such as trace, sur
 | Menstruation Activation Profile | [[Menstrual Fluid]] | Releases / Moves / Exposes |
 | Urination Activation Profile | [[Urine]] | Releases / Moves / Exposes |
 | Vaginal Lubrication Activation Profile | [[Vaginal Fluid]] | Produces / Alters / Exposes |
+| Paraurethral Glandular Activation Profile | [[Paraurethral Glandular Fluid]] | Produces / Releases / Exposes |
 
 ---
 
@@ -96,20 +98,22 @@ Female - Vulva Fluid Profile DESCRIBES_FLUID_RELATIONSHIPS_OF Female - Vulva
 Female - Vulva Fluid Profile REFERENCES_FLUID_ENTITY Vaginal Fluid
 Female - Vulva Fluid Profile REFERENCES_FLUID_ENTITY Menstrual Fluid
 Female - Vulva Fluid Profile REFERENCES_FLUID_ENTITY Urine
+Female - Vulva Fluid Profile REFERENCES_FLUID_ENTITY Paraurethral Glandular Fluid
 Female - Vulva Fluid Profile REFERENCES_FLUID_OUTPUT_SITE Female - Vaginal Opening
 Female - Vulva Fluid Profile REFERENCES_FLUID_OUTPUT_SITE Female - Urethral Opening
+Female - Vulva Fluid Profile REFERENCES_FLUID_SOURCE Female - Skene's Glands
 ```
 
 ---
 
 ## Review Questions
 
-1. Should Surface Moisture be a fluid entity, local quality, or relationship type?
-2. Should Paraurethral Glandular Fluid be created before this profile is validated?
-3. Should this profile remain mostly adjacent rather than direct?
+1. Should Surface Moisture remain a relationship/property state unless it becomes mixed, nonspecific, accumulated, transferred, or independently reusable?
+2. Should this profile remain mostly adjacent rather than direct?
+3. Are glandular fluid relationships sufficiently constrained so the vulva does not own paraurethral production?
 
 ---
 
 ## Status
 
-Draft v0.2.
+Draft v0.3.
