@@ -10,7 +10,7 @@ file_class: Ontology Node
 node_type: Fluid Entity
 layer: Fluid Layer
 status: Draft
-version: 0.1
+version: 0.2
 primary_system: Reproductive System
 embodiment_scope: Anatomy-Dependent
 fluid_class: Reproductive / Mucosal
@@ -59,18 +59,19 @@ It may be referenced by anatomical fluid profiles involving vaginal mucosa, vagi
 | Vestibule | Adjacent / Surface Presence | Existing anatomical anchor |
 | Vulva | Adjacent / Surface Presence | External presence only, not primary source |
 
-## Fluid Qualities
+## Fluid Properties
 
-| Quality | Range / Description | Notes |
+| Fluid Property | Range / Description | Notes |
 |---|---|---|
-| Viscosity | Thin / mucosal / thick / variable | Neutral description only |
-| Colour | Clear / white / pale / variable | Neutral description only |
-| Opacity | Clear / translucent / opaque / variable | Neutral description only |
-| Odour | None / mild / variable | Neutral description only |
-| Taste | Saline / acidic / variable | Use only where relevant and not authorialized |
-| Volume | Trace / low / moderate / high / variable | Context-dependent |
-| Flow | Surface / discharge / variable | Local profile defines path |
-| Cyclicity | Contextual / hormonal / reproductive / variable | Not always cyclical in the same way as menstrual fluid |
+| [[Viscosity]] | Thin / mucosal / thick / variable | Neutral description only |
+| [[Colour]] | Clear / white / pale / variable | Neutral description only |
+| [[Opacity]] | Clear / translucent / opaque / variable | Neutral description only |
+| [[Odour]] | None / mild / variable | Neutral description only |
+| [[Taste]] | Saline / acidic / variable | Use only where relevant and not authorialized |
+| [[Volume]] | Trace / low / moderate / high / variable | Context-dependent |
+| [[Flow]] | Surface / discharge / variable | Local profile defines path |
+| [[Cyclicity]] | Contextual / hormonal / reproductive / variable | Not always cyclical in the same way as menstrual fluid |
+| [[Surface Presence]] | Trace / local / surface / adjacent / variable | Local profile defines anatomical relation |
 
 ## Common Activation Processes
 
@@ -98,7 +99,18 @@ Do not collapse Vaginal Fluid with Cervical Mucus, Menstrual Fluid, Urine, or Pa
 Vaginal Fluid IS_FLUID_ENTITY
 Vaginal Fluid HAS_COMMON_SOURCE Vaginal Mucosa
 Vaginal Fluid HAS_COMMON_OUTPUT_SITE Vaginal Opening
+Vaginal Fluid HAS_FLUID_PROPERTY Viscosity
+Vaginal Fluid HAS_FLUID_PROPERTY Colour
+Vaginal Fluid HAS_FLUID_PROPERTY Opacity
+Vaginal Fluid HAS_FLUID_PROPERTY Odour
+Vaginal Fluid HAS_FLUID_PROPERTY Taste
+Vaginal Fluid HAS_FLUID_PROPERTY Volume
+Vaginal Fluid HAS_FLUID_PROPERTY Flow
+Vaginal Fluid HAS_FLUID_PROPERTY Cyclicity
+Vaginal Fluid HAS_FLUID_PROPERTY Surface Presence
 Vaginal Fluid MAY_BE_PRODUCED_BY Vaginal Lubrication Activation Profile
+Vaginal Fluid MAY_BE_REFERENCED_BY Female - Vaginal Canal Fluid Profile
+Vaginal Fluid MAY_BE_REFERENCED_BY Female - Vulva Fluid Profile
 ```
 
 ## Review Questions
@@ -109,4 +121,4 @@ Vaginal Fluid MAY_BE_PRODUCED_BY Vaginal Lubrication Activation Profile
 
 ## Status
 
-Draft v0.1.
+Draft v0.2.
