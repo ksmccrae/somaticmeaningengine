@@ -10,7 +10,7 @@ file_class: Ontology Node
 node_type: Fluid Entity
 layer: Fluid Layer
 status: Draft
-version: 0.1
+version: 0.2
 primary_system: Mammary / Lactation System
 embodiment_scope: Conditional / Anatomy-Dependent
 fluid_class: Exocrine / Reproductive-Adjacent
@@ -58,18 +58,19 @@ It may be referenced by anatomical profiles involving breasts, mammary tissue, n
 | Nipples | Output Site | Output under lactation conditions |
 | Breast Skin | Adjacent / Surface Presence | Surface presence only |
 
-## Fluid Qualities
+## Fluid Properties
 
-| Quality | Range / Description | Notes |
+| Fluid Property | Range / Description | Notes |
 |---|---|---|
-| Viscosity | Thin / creamy / variable | Neutral description only |
-| Colour | White / pale / yellowish / variable | Neutral description only |
-| Opacity | Opaque / variable | Neutral description only |
-| Odour | Mild / variable | Neutral description only |
-| Taste | Sweet / variable | Use only where relevant and not authorialized |
-| Volume | Trace / low / moderate / high / variable | Context-dependent |
-| Flow | Drop / stream / release / variable | Activation profile defines process |
-| Cyclicity | Hormonal / postpartum / contextual | Conditional rather than universal |
+| [[Viscosity]] | Thin / creamy / variable | Neutral description only |
+| [[Colour]] | White / pale / yellowish / variable | Neutral description only |
+| [[Opacity]] | Opaque / variable | Neutral description only |
+| [[Odour]] | Mild / variable | Neutral description only |
+| [[Taste]] | Sweet / variable | Use only where relevant and not authorialized |
+| [[Volume]] | Trace / low / moderate / high / variable | Context-dependent |
+| [[Flow]] | Drop / stream / release / variable | Activation profile defines process |
+| [[Cyclicity]] | Hormonal / postpartum / contextual | Conditional rather than universal |
+| [[Surface Presence]] | Trace / local / surface / transferred / variable | Local profile defines anatomical relation |
 
 ## Common Activation Processes
 
@@ -98,7 +99,18 @@ Do not define lactation mechanics here. Do not include sensory interpretation, s
 Milk IS_FLUID_ENTITY
 Milk HAS_COMMON_SOURCE Mammary Tissue
 Milk HAS_COMMON_OUTPUT_SITE Nipples
+Milk HAS_FLUID_PROPERTY Viscosity
+Milk HAS_FLUID_PROPERTY Colour
+Milk HAS_FLUID_PROPERTY Opacity
+Milk HAS_FLUID_PROPERTY Odour
+Milk HAS_FLUID_PROPERTY Taste
+Milk HAS_FLUID_PROPERTY Volume
+Milk HAS_FLUID_PROPERTY Flow
+Milk HAS_FLUID_PROPERTY Cyclicity
+Milk HAS_FLUID_PROPERTY Surface Presence
 Milk MAY_BE_PRODUCED_BY Lactation Activation Profile
+Milk MAY_BE_PRODUCED_BY Letdown Activation Profile
+Milk MAY_BE_REFERENCED_BY Female - Breasts Fluid Profile
 ```
 
 ## Review Questions
@@ -109,4 +121,4 @@ Milk MAY_BE_PRODUCED_BY Lactation Activation Profile
 
 ## Status
 
-Draft v0.1.
+Draft v0.2.
