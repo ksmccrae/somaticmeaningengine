@@ -10,7 +10,7 @@ file_class: Ontology Node
 node_type: Fluid Entity
 layer: Fluid Layer
 status: Draft
-version: 0.1
+version: 0.2
 primary_system: Circulatory System
 embodiment_scope: Cross-Embodiment
 fluid_class: Circulatory
@@ -59,18 +59,19 @@ It may be referenced by anatomical fluid profiles involving blood vessels, capil
 | Mucosal Surface | Surface Presence | Local anatomical profile required |
 | Vaginal Opening | Output Site / Contextual | Relevant to menstrual fluid distinction |
 
-## Fluid Qualities
+## Fluid Properties
 
-| Quality | Range / Description | Notes |
+| Fluid Property | Range / Description | Notes |
 |---|---|---|
-| Viscosity | Moderate / variable | Neutral description only |
-| Colour | Red / dark red / brownish / variable | Neutral description only |
-| Opacity | Opaque | Neutral description only |
-| Odour | Metallic / variable | Neutral description only |
-| Taste | Metallic / saline / variable | Use only where relevant and not authorialized |
-| Volume | Trace / low / moderate / high / variable | Context-dependent |
-| Flow | Internal circulation / surface flow / discharge / variable | Activation or injury profile defines process |
-| Cyclicity | None / contextual / reproductive-cycle related | Menstrual fluid should remain a distinct entity |
+| [[Viscosity]] | Moderate / variable | Neutral description only |
+| [[Colour]] | Red / dark red / brownish / variable | Neutral description only |
+| [[Opacity]] | Opaque | Neutral description only |
+| [[Odour]] | Metallic / variable | Neutral description only |
+| [[Taste]] | Metallic / saline / variable | Use only where relevant and not authorialized |
+| [[Volume]] | Trace / low / moderate / high / variable | Context-dependent |
+| [[Flow]] | Internal circulation / surface flow / discharge / variable | Activation or injury profile defines process |
+| [[Cyclicity]] | None / contextual / reproductive-cycle related | Menstrual fluid should remain a distinct entity |
+| [[Surface Presence]] | Internal / exposed / surface / transferred / variable | Local profile defines anatomical relation |
 
 ## Common Activation Processes
 
@@ -99,7 +100,19 @@ Do not collapse Blood with Menstrual Fluid. Do not define activation mechanics, 
 ```text
 Blood IS_FLUID_ENTITY
 Blood HAS_COMMON_SOURCE Blood Vessels
+Blood HAS_COMMON_OUTPUT_SITE Skin Surface
+Blood HAS_FLUID_PROPERTY Viscosity
+Blood HAS_FLUID_PROPERTY Colour
+Blood HAS_FLUID_PROPERTY Opacity
+Blood HAS_FLUID_PROPERTY Odour
+Blood HAS_FLUID_PROPERTY Taste
+Blood HAS_FLUID_PROPERTY Volume
+Blood HAS_FLUID_PROPERTY Flow
+Blood HAS_FLUID_PROPERTY Cyclicity
+Blood HAS_FLUID_PROPERTY Surface Presence
 Blood MAY_BE_PRODUCED_BY Bleeding Activation Profile
+Blood MAY_BE_PRODUCED_BY Bruising Activation Profile
+Blood MAY_BE_PRODUCED_BY Circulation Activation Profile
 Blood MAY_BE_REFERENCED_BY Tissue Injury Fluid Profile
 ```
 
@@ -111,4 +124,4 @@ Blood MAY_BE_REFERENCED_BY Tissue Injury Fluid Profile
 
 ## Status
 
-Draft v0.1.
+Draft v0.2.
