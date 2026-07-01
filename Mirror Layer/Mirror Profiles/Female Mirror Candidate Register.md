@@ -9,7 +9,7 @@ file_class: Document
 document_type: Register
 layer: Mirror Layer
 status: Draft
-version: 0.1
+version: 0.2
 last_updated: 2026-07-01
 ---
 
@@ -48,7 +48,7 @@ Candidate mirrors should become standalone Mirror Profiles only when the route i
 |---|---|---|---|---|---|---|
 | [[Female - Vulva to Female - Breasts Mirror Profile]] | [[Female - Vulva]] | [[Female - Breasts]] | Anatomical / Sensory-Adjacent | Primary | Created Draft v0.1 | Broad external/body-surface mirror; useful for Fluid, Sensory, and Activation routing |
 | [[Female - Nipples to Female - Vaginal Canal Mirror Profile]] | [[Female - Nipples]] | [[Female - Vaginal Canal]] | Anatomical / Sensory-Adjacent | Primary | Created Draft v0.1 | Focal output-site to internal canal mirror; descendant of Clitoral Complex/Breasts route |
-| [[Female - Skene's Glands to Female - Urethral Opening Mirror Profile]] | [[Female - Skene's Glands]] | [[Female - Urethral Opening]] | Anatomical / Functional / Fluid-Adjacent | Primary | Created Draft v0.1 | Supports paraurethral glandular fluid and urinary-boundary separation |
+| [[Female - Skene's Glands to Female - Urethral Opening Mirror Profile]] | [[Female - Skene's Glands]] | [[Female - Urethral Opening]] | Anatomical / Functional | Primary | Created Draft v0.1 | Supports paraurethral glandular fluid and urinary-boundary separation without introducing Fluid-Adjacent as a controlled mirror type |
 | [[Female - Perineum to Female - Pelvic Floor Mirror Profile]] | [[Female - Perineum]] | [[Female - Pelvic Floor]] | Anatomical / Functional / Boundary | Primary | Created Draft v0.1 | Regional boundary-to-support mirror; useful before motor/kinetic Activation work |
 
 ---
@@ -96,7 +96,7 @@ would create broken wikilinks or premature layer coupling
 ## Review Questions
 
 1. Which candidates should be promoted after first-batch audit?
-2. Should Fluid-Adjacent be introduced as a controlled mirror type, or remain a descriptive note under Functional / Anatomical mirrors?
+2. Should Fluid-Adjacent ever be introduced as a controlled mirror type, or remain only descriptive prose under Functional / Anatomical mirrors?
 3. Which deferred mouth, throat, diaphragm, and uterine mirrors require canonical anchors first?
 4. Which candidate mirrors should remain descendant hints rather than standalone profiles?
 5. Which mirrors are needed before Activation Layer validation begins?
@@ -105,6 +105,6 @@ would create broken wikilinks or premature layer coupling
 
 ## Status
 
-Draft v0.1.
+Draft v0.2.
 
-This register supports female mirror expansion after Mirror Profile Template validation and before Activation Layer construction.
+This register supports female mirror expansion after Mirror Profile Template validation and before Activation Layer construction. It keeps Fluid-Adjacent out of the controlled Candidate Type column until governance explicitly adopts it.
