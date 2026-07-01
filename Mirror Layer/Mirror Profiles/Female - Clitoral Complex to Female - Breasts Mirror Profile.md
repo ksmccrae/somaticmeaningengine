@@ -10,7 +10,7 @@ file_class: Ontology Node
 node_type: Mirror Profile
 layer: Mirror Layer
 status: Draft
-version: 0.5
+version: 0.6
 mirror_type: Anatomical / Sensory-Adjacent
 source_object: Female - Clitoral Complex
 target_object: Female - Breasts
@@ -144,7 +144,7 @@ These candidate mirrors preserve possible future traversal routes without creati
 
 | Candidate Mirror | Basis | Baseline Likelihood | Traversal Priority | Status | Notes |
 |---|---|---|---|---|---|
-| [[Female - Nipples]] to [[Female - Vaginal Canal]] | Thoracic focal site to internal pelvic canal | Contextual | Candidate | Candidate | Use canonical `Female - Vaginal Canal`; do not canonicalize informal terms here |
+| [[Female - Nipples]] to [[Female - Vaginal Canal]] | Thoracic focal site to internal pelvic canal | Contextual | Candidate | Created Draft v0.1 | Standalone candidate profile now exists; not yet Supported |
 | [[Female - Nipples]] to [[Female - Anus]] | Thoracic focal site to posterior pelvic opening | Low / Contextual | Candidate | Candidate | May become relevant through boundary, activation, sensory, or corpus traversal |
 | [[Female - Areolae]] to [[Female - Vestibule]] | Paired thoracic surface field to genital transitional field | Contextual | Candidate | Candidate | Requires downstream validation before standalone profile |
 | [[Female - Breast Skin]] to [[Female - Vulva]] | Thoracic surface field to external genital composite site | Contextual | Candidate | Candidate | Broad surface-to-surface route only |
@@ -161,6 +161,7 @@ Candidate descendant mirrors should become standalone profiles only when a downs
 | Canonical Embodiment | [[Female - Clitoral Complex]] | Source composite anatomical anchor |
 | Canonical Embodiment | [[Female - Breasts]] | Target composite anatomical anchor |
 | Fluid Layer | [[Female - Breasts Fluid Profile]] | Candidate downstream fluid relationship through breast-level profile |
+| Mirror Layer | [[Female - Nipples to Female - Vaginal Canal Mirror Profile]] | Created descendant candidate; not yet Supported |
 | Activation Layer | Female - Clitoral Complex Activation Profile | Candidate downstream activation relationship |
 | Activation Layer | Female - Breasts Activation Profile | Candidate downstream activation relationship |
 | Expressive Layer | Female - Clitoral Complex Sensory Profile | Candidate downstream sensory relationship |
@@ -224,13 +225,14 @@ Female - Clitoral Complex to Female - Breasts Mirror Profile MAY_BE_ANNOTATED_IN
 
 1. Should Sensory-Adjacent remain a mirror type, or should it be treated only as a downstream candidate?
 2. Which child-level traversals should become explicit only after sensory or activation profiles exist?
-3. Are [[Female - Nipples]] to [[Female - Vaginal Canal]] and [[Female - Nipples]] to [[Female - Anus]] likely standalone mirrors, or should they remain descendant candidates?
-4. Should [[Female - Areolae]] be treated as a major child traversal node for this mirror?
-5. Are routing hints lightweight enough, or have they crossed into activation or expressive modelling?
-6. Are downstream-use relationships sufficiently constrained as candidate links rather than definitions?
+3. Should [[Female - Nipples to Female - Vaginal Canal Mirror Profile]] remain a Candidate profile, or be promoted after a later audit?
+4. Should [[Female - Nipples]] to [[Female - Anus]] remain a descendant candidate?
+5. Should [[Female - Areolae]] be treated as a major child traversal node for this mirror?
+6. Are routing hints lightweight enough, or have they crossed into activation or expressive modelling?
+7. Are downstream-use relationships sufficiently constrained as candidate links rather than definitions?
 
 ---
 
 ## Status
 
-Draft v0.5.
+Draft v0.6.
