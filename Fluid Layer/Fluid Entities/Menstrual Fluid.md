@@ -10,7 +10,7 @@ file_class: Ontology Node
 node_type: Fluid Entity
 layer: Fluid Layer
 status: Draft
-version: 0.1
+version: 0.2
 primary_system: Reproductive System
 embodiment_scope: Anatomy-Dependent
 fluid_class: Reproductive / Mixed
@@ -59,18 +59,19 @@ It may be referenced by anatomical profiles involving uterus, cervix, vaginal ca
 | Vulva | Surface Presence / Adjacent | External presence only, not source |
 | Perineum | Adjacent / Surface Presence | Local profile may be needed later |
 
-## Fluid Qualities
+## Fluid Properties
 
-| Quality | Range / Description | Notes |
+| Fluid Property | Range / Description | Notes |
 |---|---|---|
-| Viscosity | Thin / thick / variable | Neutral description only |
-| Colour | Red / dark red / brown / variable | Neutral description only |
-| Opacity | Translucent / opaque / variable | Neutral description only |
-| Odour | Mild / metallic / variable | Neutral description only |
-| Taste | Metallic / variable | Use only where relevant and not authorialized |
-| Volume | Trace / low / moderate / high / variable | Context-dependent |
-| Flow | Cyclical / discharge / variable | Activation profile defines process |
-| Cyclicity | Reproductive / hormonal / cyclical | Fluid entity is cyclical by default |
+| [[Viscosity]] | Thin / thick / variable | Neutral description only |
+| [[Colour]] | Red / dark red / brown / variable | Neutral description only |
+| [[Opacity]] | Translucent / opaque / variable | Neutral description only |
+| [[Odour]] | Mild / metallic / variable | Neutral description only |
+| [[Taste]] | Metallic / variable | Use only where relevant and not authorialized |
+| [[Volume]] | Trace / low / moderate / high / variable | Context-dependent |
+| [[Flow]] | Cyclical / discharge / variable | Activation profile defines process |
+| [[Cyclicity]] | Reproductive / hormonal / cyclical | Fluid entity is cyclical by default |
+| [[Surface Presence]] | Output / surface / adjacent / transferred / variable | Local profile defines anatomical relation |
 
 ## Common Activation Processes
 
@@ -99,7 +100,19 @@ Do not define menstrual activation mechanics here. Do not define sensory interpr
 Menstrual Fluid IS_FLUID_ENTITY
 Menstrual Fluid HAS_COMMON_SOURCE Uterus
 Menstrual Fluid HAS_COMMON_OUTPUT_SITE Vaginal Opening
+Menstrual Fluid HAS_FLUID_PROPERTY Viscosity
+Menstrual Fluid HAS_FLUID_PROPERTY Colour
+Menstrual Fluid HAS_FLUID_PROPERTY Opacity
+Menstrual Fluid HAS_FLUID_PROPERTY Odour
+Menstrual Fluid HAS_FLUID_PROPERTY Taste
+Menstrual Fluid HAS_FLUID_PROPERTY Volume
+Menstrual Fluid HAS_FLUID_PROPERTY Flow
+Menstrual Fluid HAS_FLUID_PROPERTY Cyclicity
+Menstrual Fluid HAS_FLUID_PROPERTY Surface Presence
 Menstrual Fluid MAY_BE_PRODUCED_BY Menstruation Activation Profile
+Menstrual Fluid MAY_BE_PRODUCED_BY Cycle Regulation Activation Profile
+Menstrual Fluid MAY_BE_REFERENCED_BY Female - Vaginal Canal Fluid Profile
+Menstrual Fluid MAY_BE_REFERENCED_BY Female - Vulva Fluid Profile
 ```
 
 ## Review Questions
@@ -110,4 +123,4 @@ Menstrual Fluid MAY_BE_PRODUCED_BY Menstruation Activation Profile
 
 ## Status
 
-Draft v0.1.
+Draft v0.2.
