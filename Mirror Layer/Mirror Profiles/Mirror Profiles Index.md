@@ -9,7 +9,7 @@ file_class: Document
 document_type: Index
 layer: Mirror Layer
 status: Draft
-version: 0.8
+version: 0.9
 last_updated: 2026-07-01
 ---
 
@@ -25,14 +25,14 @@ Mirror profiles define governed correspondences between ontology objects without
 
 | Register | Purpose | Status |
 |---|---|---|
-| [[Female Mirror Candidate Register]] | Planning register for female embodiment mirror expansion | Draft v0.1 |
+| [[Female Mirror Candidate Register]] | Planning register for female embodiment mirror expansion | Draft v0.2 |
 
 ## Supported Validation Set
 
 | Mirror Profile | Source Object | Target Object | Mirror Type | Directionality | Inverse Required | Anchor Level | Child Traversal | Descendant Candidates | Baseline Likelihood | Activation Dependency | Traversal Priority | Validation Status | Document Status |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | [[Female - Vulva to Female - Clitoral Complex Mirror Profile]] | [[Female - Vulva]] | [[Female - Clitoral Complex]] | Anatomical / Functional | Contextual | false | Mixed | true | false | High | Contextual | Primary | Supported | Draft v0.3 |
-| [[Female - Clitoral Complex to Female - Breasts Mirror Profile]] | [[Female - Clitoral Complex]] | [[Female - Breasts]] | Anatomical / Sensory-Adjacent | Bidirectional | false | Composite | true | true | Moderate | Activation-Dependent | Primary | Supported | Draft v0.5 |
+| [[Female - Clitoral Complex to Female - Breasts Mirror Profile]] | [[Female - Clitoral Complex]] | [[Female - Breasts]] | Anatomical / Sensory-Adjacent | Bidirectional | false | Composite | true | true | Moderate | Activation-Dependent | Primary | Supported | Draft v0.6 |
 | [[Female - Vulva to Female - Anus Mirror Profile]] | [[Female - Vulva]] | [[Female - Anus]] | Boundary / Anatomical-Adjacent | Bidirectional | false | Mixed | true | true | Moderate | Contextual | Primary | Supported | Draft v0.3 |
 
 ## Female Expansion Candidate Set
@@ -65,6 +65,8 @@ Anatomical-Adjacent
 ```
 
 Other controlled mirror types remain available in the framework and template but are not yet used by the validation set.
+
+`Fluid-Adjacent` is not currently a controlled mirror type. Use descriptive prose rather than table/YAML classification unless governance later adopts it.
 
 ## Composite-First Rule
 
@@ -192,4 +194,4 @@ Activation dependency as routing hint only
 
 ## Status
 
-Draft v0.8.
+Draft v0.9.
