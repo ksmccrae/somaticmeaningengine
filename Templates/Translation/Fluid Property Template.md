@@ -2,7 +2,7 @@
 tags:
   - Template/Translation
   - Template/Fluid Property
-  - Status/Draft
+  - Status/Validated
 aliases:
   - Fluid Property Template
   - Fluid Properties Template
@@ -11,8 +11,8 @@ file_class: Template
 template_type: Translation
 node_type: Fluid Property
 layer: Fluid Layer
-status: Draft
-version: 0.1
+status: Validated
+version: 0.2
 last_updated: 2026-06-30
 ---
 
@@ -205,8 +205,47 @@ Fluid Property MAY_BE_INTERPRETED_BY Symbolic Profile
 
 ---
 
+## Validation Result
+
+Validated against representative Fluid Property nodes:
+
+```text
+Viscosity
+Colour
+Odour
+```
+
+Validation confirmed:
+
+```text
+expected YAML fields present in representative property nodes
+expected sections present across validation sample
+relationship statements consistent with property-node role
+Sensory Boundary sections preserve the distinction between neutral property and perception
+no checked property node defines fluid entities, anatomy, activation, sensory experience, symbolic meaning, authorial language, or corpus usage
+no mechanical drift found in the checked validation sample
+```
+
+This template is validated for continued construction use. It is not yet Baseline.
+
+---
+
+## Baseline Blockers
+
+Before this template can be marked Baseline, resolve or formally defer:
+
+```text
+Whether all eleven current Fluid Property nodes should be individually audited before Baseline.
+Which fluid properties should remain full ontology nodes and which should remain controlled values.
+Whether governed value ranges need stricter controlled vocabularies.
+Whether sensory-adjacent properties need explicit downstream Sensory Profile templates before Baseline.
+Whether symbolic interpretation hooks should remain optional relationship statements or be constrained further.
+```
+
+---
+
 ## Status
 
-Draft v0.1.
+Validated v0.2.
 
-This template should be validated before fluid property nodes are populated broadly.
+This template is validated against the current representative Fluid Property validation set and remains pre-Baseline pending governance resolution or formal deferral.
