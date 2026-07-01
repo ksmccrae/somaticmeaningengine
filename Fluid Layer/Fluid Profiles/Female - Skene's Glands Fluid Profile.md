@@ -11,7 +11,7 @@ node_type: Fluid Profile
 layer: Fluid Layer
 embodiment_scope: Female
 status: Draft
-version: 0.2
+version: 0.3
 anatomical_anchor: Female - Skene's Glands
 canonical_layer_reference: Canonical Embodiment
 fluid_relevance: Present / Contextual
@@ -41,7 +41,7 @@ It links the canonical anatomical anchor to reusable fluid entities without rede
 
 | Fluid Entity | Relationship To Anchor | Notes |
 |---|---|---|
-| Paraurethral Glandular Fluid | Produces / Conducts / Surface Presence | Candidate fluid entity required before this profile is baseline |
+| [[Paraurethral Glandular Fluid]] | Produces / Conducts / Surface Presence | Glandular fluid entity associated with paraurethral glandular structures |
 | [[Urine]] | Adjacent | Nearby urinary output; not produced by Skene's glands |
 
 ---
@@ -50,16 +50,16 @@ It links the canonical anatomical anchor to reusable fluid entities without rede
 
 | Role | Anatomical Node | Fluid Entity | Notes |
 |---|---|---|---|
-| Source | [[Female - Skene's Glands]] | Paraurethral Glandular Fluid | Glandular source relationship |
-| Conduit / Output Candidate | [[Female - Vestibular Gland Openings]] | Paraurethral Glandular Fluid | Candidate anatomical relationship needing review |
+| Source | [[Female - Skene's Glands]] | [[Paraurethral Glandular Fluid]] | Glandular source relationship |
+| Conduit / Output Candidate | [[Female - Vestibular Gland Openings]] | [[Paraurethral Glandular Fluid]] | Candidate anatomical relationship needing review |
 | Adjacent Site | [[Female - Urethral Opening]] | [[Urine]] | Nearby urinary output anchor, not a source relationship |
-| Adjacent Region | [[Female - Vestibule]] | Paraurethral Glandular Fluid | Parent transitional region |
+| Adjacent Region | [[Female - Vestibule]] | [[Paraurethral Glandular Fluid]] | Parent transitional region |
 
 ---
 
 ## Local Fluid Qualities
 
-Local qualities should be inherited primarily from the referenced fluid entity once it exists.
+Local qualities should be inherited primarily from [[Paraurethral Glandular Fluid]].
 
 This profile may record contextual presence near the vestibular or paraurethral region.
 
@@ -69,7 +69,7 @@ This profile may record contextual presence near the vestibular or paraurethral 
 
 | Activation Profile | Fluid Entity | Role |
 |---|---|---|
-| Paraurethral Glandular Activation Profile | Paraurethral Glandular Fluid | Produces / Releases / Exposes |
+| Paraurethral Glandular Activation Profile | [[Paraurethral Glandular Fluid]] | Produces / Releases / Exposes |
 
 ---
 
@@ -86,20 +86,22 @@ Do not include sensory interpretation, symbolic meaning, emotional interpretatio
 ```text
 Female - Skene's Glands Fluid Profile DESCRIBES_FLUID_RELATIONSHIPS_OF Female - Skene's Glands
 Female - Skene's Glands Fluid Profile REFERENCES_FLUID_ENTITY Paraurethral Glandular Fluid
+Female - Skene's Glands Fluid Profile REFERENCES_FLUID_ENTITY Urine
 Female - Skene's Glands Fluid Profile REFERENCES_FLUID_SOURCE Female - Skene's Glands
 Female - Skene's Glands Fluid Profile REFERENCES_FLUID_OUTPUT_SITE Female - Vestibular Gland Openings
+Female - Skene's Glands Fluid Profile REFERENCES_ADJACENT_OUTPUT_SITE Female - Urethral Opening
 ```
 
 ---
 
 ## Review Questions
 
-1. Should Paraurethral Glandular Fluid be created as a fluid entity now?
-2. Should gland openings be separated more clearly from the gland structure in canonical anatomy?
-3. Should urinary-system boundaries be represented through adjacent links only?
+1. Should gland openings be separated more clearly from the gland structure in canonical anatomy?
+2. Should urinary-system boundaries be represented through adjacent links only?
+3. Is Paraurethral Glandular Fluid sufficiently distinguished from Urine, Vaginal Fluid, and Cervical Mucus?
 
 ---
 
 ## Status
 
-Draft v0.2.
+Draft v0.3.
