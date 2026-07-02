@@ -10,7 +10,7 @@ file_class: Ontology Node
 node_type: Fluid Entity
 layer: Fluid Layer
 status: Draft
-version: 0.2
+version: 0.3
 primary_system: Reproductive System
 embodiment_scope: Anatomy-Dependent
 fluid_class: Reproductive / Mucosal
@@ -77,8 +77,8 @@ It may be referenced by anatomical fluid profiles involving vaginal mucosa, vagi
 
 | Activation Process | Relationship | Notes |
 |---|---|---|
-| Vaginal Lubrication Activation Profile | Produces / Alters / Exposes | To be defined in Activation Layer |
-| Cycle-Related Moisture Activation Profile | Alters | To be defined in Activation Layer |
+| [[Female - Vulvar Lubrication Activation Profile]] | Produces / Alters / Exposes | Supported Activation Profile |
+| Cycle-Related Moisture Activation Profile | Alters | Candidate only; not yet defined |
 
 ## Expressive Layer Hooks
 
@@ -108,7 +108,7 @@ Vaginal Fluid HAS_FLUID_PROPERTY Volume
 Vaginal Fluid HAS_FLUID_PROPERTY Flow
 Vaginal Fluid HAS_FLUID_PROPERTY Cyclicity
 Vaginal Fluid HAS_FLUID_PROPERTY Surface Presence
-Vaginal Fluid MAY_BE_PRODUCED_BY Vaginal Lubrication Activation Profile
+Vaginal Fluid MAY_BE_PRODUCED_BY Female - Vulvar Lubrication Activation Profile
 Vaginal Fluid MAY_BE_REFERENCED_BY Female - Vaginal Canal Fluid Profile
 Vaginal Fluid MAY_BE_REFERENCED_BY Female - Vulva Fluid Profile
 ```
@@ -121,4 +121,6 @@ Vaginal Fluid MAY_BE_REFERENCED_BY Female - Vulva Fluid Profile
 
 ## Status
 
-Draft v0.2.
+Draft v0.3.
+
+Canonical Activation reference synchronized with the supported Activation Profile.
