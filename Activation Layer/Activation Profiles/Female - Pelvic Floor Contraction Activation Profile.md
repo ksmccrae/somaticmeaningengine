@@ -10,13 +10,13 @@ file_class: Ontology Node
 node_type: Activation Profile
 layer: Activation Layer
 status: Draft
-version: 0.1
+version: 0.2
 activation_type: Composite Activation
 activation_components:
   - Motor / Kinetic Activation
   - Tissue-State Activation
   - Mirror-Route Activation
-activation_scope: Regional
+activation_scope: Local
 embodiment_scope: Female / Anatomy-Dependent
 primary_anatomical_anchor: Female - Pelvic Floor
 validation_status: Candidate
@@ -40,10 +40,27 @@ This profile defines motor and tissue-state process only. It does not define sen
 | Layer | Activation Layer |
 | Activation Type | Composite Activation |
 | Activation Components | Motor / Kinetic Activation; Tissue-State Activation; Mirror-Route Activation |
-| Activation Scope | Regional |
+| Activation Scope | Local |
 | Embodiment Scope | Female / Anatomy-Dependent |
 | Primary Anatomical Anchor | [[Female - Pelvic Floor]] |
 | Validation Status | Candidate |
+
+## Scope Basis
+
+The defined state change occurs at one primary anatomical anchor: [[Female - Pelvic Floor]].
+
+[[Female - Perineum]], [[Female - Vaginal Opening]], and [[Female - Anus]] provide boundary, adjacency, or mirror context but are not defined as undergoing or directly contributing to the contraction in this profile.
+
+Therefore:
+
+```text
+one active anatomical anchor
++ contextual boundary references
++ Candidate mirror engagement
+= Local activation scope
+```
+
+A later profile may use Regional scope if it explicitly models direct mechanical participation by two or more nearby anatomical nodes.
 
 ## Trigger or Condition
 
@@ -58,9 +75,9 @@ This profile defines motor and tissue-state process only. It does not define sen
 
 | Anatomical Node | Role In Activation | Notes |
 |---|---|---|
-| [[Female - Pelvic Floor]] | Primary Anchor / Contractile Support Structure | Canonical anatomy is referenced, not redefined |
-| [[Female - Perineum]] | Boundary / Regional Participant | External pelvic boundary region connected through mirror traversal |
-| [[Female - Pelvis]] | Structural Context | Broader regional container and parent structure |
+| [[Female - Pelvic Floor]] | Primary Anchor / Contractile Support Structure | Sole active anatomical anchor in this profile |
+| [[Female - Pelvis]] | Structural Context | Parent structure; not an active participant |
+| [[Female - Perineum]] | Boundary / Mirror Context | External pelvic boundary region; not a direct participant in the defined contraction |
 | [[Female - Vaginal Opening]] | Boundary-Adjacent Site | Candidate downstream mechanical relationship only |
 | [[Female - Anus]] | Boundary-Adjacent Site | Candidate downstream mechanical or reflex relationship only |
 
@@ -68,7 +85,7 @@ This profile defines motor and tissue-state process only. It does not define sen
 
 | Mirror Profile | Role | Notes |
 |---|---|---|
-| [[Female - Perineum to Female - Pelvic Floor Mirror Profile]] | May Engage / May Make Available | Candidate mirror route; activation may use it without redefining correspondence |
+| [[Female - Perineum to Female - Pelvic Floor Mirror Profile]] | May Engage / May Make Available | Candidate mirror route; activation may use it without redefining correspondence or scope |
 
 ## Referenced Fluid Entities
 
@@ -88,11 +105,11 @@ None defined.
 
 ```text
 1. Voluntary, reflexive, postural, pressure-related, or support-related context becomes relevant.
-2. Female - Pelvic Floor enters activation context as the primary anatomical anchor.
+2. Female - Pelvic Floor enters activation context as the sole active anatomical anchor.
 3. Muscular recruitment may alter contraction, shortening, tension, support, or release state.
-4. Female - Perineum may become relevant as a boundary-region participant.
+4. Female - Perineum may become relevant as boundary and mirror context without becoming a direct participant.
 5. Female - Perineum to Female - Pelvic Floor Mirror Profile may become available as a boundary-to-support route.
-6. Wider mechanical movement beyond the regional process may require future Propagation modelling.
+6. Wider mechanical movement beyond the local process may require future Propagation modelling.
 7. Downstream systems may later reference the activation without being defined by it.
 ```
 
@@ -101,7 +118,7 @@ None defined.
 | Modulator / Inhibitor | Role | Notes |
 |---|---|---|
 | Voluntary control | May Initiate / Modulate | Motor control context only |
-| Reflex activity | May Initiate / Modulate | Candidate reflex mechanism |
+| Reflex activity | May Initiate / Modulate | Candidate reflex mechanism; not yet an activation component |
 | Muscle fatigue or weakness | May Inhibit / Alter | Mechanical state modifier |
 | Hypertonicity or tissue restriction | May Alter / Inhibit | Candidate tissue-state modifier |
 | Pain, injury, surgery, neurological condition, pregnancy, postpartum state, or menopause | May Modulate / Inhibit | Requires later medical and embodiment governance |
@@ -142,6 +159,8 @@ narrative effect
 propagation mechanics beyond handoff
 ```
 
+Boundary and mirror context must not be counted as direct anatomical participation unless the process role is explicitly modelled.
+
 ## Consent Boundary
 
 ```text
@@ -162,9 +181,9 @@ Female - Pelvic Floor Contraction Activation Profile HAS_ACTIVATION_TYPE Composi
 Female - Pelvic Floor Contraction Activation Profile HAS_ACTIVATION_COMPONENT Motor / Kinetic Activation
 Female - Pelvic Floor Contraction Activation Profile HAS_ACTIVATION_COMPONENT Tissue-State Activation
 Female - Pelvic Floor Contraction Activation Profile HAS_ACTIVATION_COMPONENT Mirror-Route Activation
-Female - Pelvic Floor Contraction Activation Profile HAS_ACTIVATION_SCOPE Regional
+Female - Pelvic Floor Contraction Activation Profile HAS_ACTIVATION_SCOPE Local
 Female - Pelvic Floor Contraction Activation Profile ACTIVATES_ANATOMICAL_SITE Female - Pelvic Floor
-Female - Pelvic Floor Contraction Activation Profile INVOLVES_ANATOMICAL_NODE Female - Perineum
+Female - Pelvic Floor Contraction Activation Profile REFERENCES_ADJACENT_ANATOMICAL_SITE Female - Perineum
 Female - Pelvic Floor Contraction Activation Profile REFERENCES_ADJACENT_ANATOMICAL_SITE Female - Vaginal Opening
 Female - Pelvic Floor Contraction Activation Profile REFERENCES_ADJACENT_ANATOMICAL_SITE Female - Anus
 Female - Pelvic Floor Contraction Activation Profile MAY_ENGAGE_MIRROR_ROUTE Female - Perineum to Female - Pelvic Floor Mirror Profile
@@ -180,16 +199,15 @@ Female - Pelvic Floor Contraction Activation Profile MAY_BE_ANNOTATED_IN Corpus 
 
 ## Review Questions
 
-1. Is Regional the correct scope, or should the core contraction remain Local?
+1. Does Local scope remain correct when only Female - Pelvic Floor undergoes the defined state change?
 2. Does Motor / Kinetic Activation adequately cover contraction and release?
-3. Should Reflex Activation be an activation component or remain a trigger/modulator?
-4. Does Female - Perineum function as a participant or only as mirror/boundary context?
-5. Are Female - Vaginal Opening and Female - Anus appropriately adjacency-only references?
-6. Does this profile need a Propagation handoff before support or pressure spread is modelled?
-7. Does the profile remain independent of Fluid Layer content?
+3. What evidence would justify promoting Reflex Activation from modulator to component?
+4. Does a future Regional profile need to model direct perineal or opening-level mechanical participation?
+5. Is a candidate Propagation handoff sufficient without defining spread mechanics?
+6. Does the profile remain independent of Fluid Layer content?
 
 ## Status
 
-Draft v0.1.
+Draft v0.2.
 
-Third Candidate validation profile for the Activation Layer and first non-fluid motor/kinetic test.
+Candidate validation profile with Local scope and explicit separation between active anatomy and boundary context.
