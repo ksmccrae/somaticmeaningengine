@@ -11,15 +11,15 @@ template_type: Translation
 node_type: Activation Profile
 layer: Activation Layer
 status: Validated
-version: 0.4
-last_updated: 2026-07-01
+version: 0.5
+last_updated: 2026-07-02
 ---
 
 # Activation Profile Template
 
 ## Purpose
 
-This template defines the required structure for Activation Profile nodes. An Activation Profile defines a physiological or embodied process, state change, or response coordination event while referencing, rather than redefining, other ontology layers.
+This template defines the required structure for Activation Profile nodes.
 
 ## Classification Rule
 
@@ -34,8 +34,6 @@ activation_scope
 = Local / Regional / Cross-System
 ```
 
-Use `Composite Activation` when a profile coordinates multiple activation components.
-
 Controlled components:
 
 ```text
@@ -48,38 +46,40 @@ Hormonal / Cyclical Activation
 Reflex Activation
 ```
 
-## Scope Decision Rule
+Use `Composite Activation` when multiple components are coordinated.
+
+## Scope Rule
 
 ```text
 Local
-= one primary anatomical anchor undergoes the defined state change
+= one active anatomical anchor
 
 Regional
-= two or more nearby anatomical nodes actively participate in the same process
+= two or more nearby anatomical nodes directly participate
 
 Cross-System
-= distinct anatomical systems, physiological systems, or separated regions are coordinated
+= distinct systems or separated regions are coordinated
 ```
 
-Do not count the following as active participation by themselves:
+Do not count adjacency, mirror context, downstream references, or possible Propagation handoff as active participation.
+
+## Hormonal / Cyclical Profile Rule
+
+A profile using `Hormonal / Cyclical Activation` should include:
 
 ```text
-adjacency
-boundary context
-mirror engagement
-downstream candidate reference
-possible Propagation handoff
+cycle or phase context
+phase entry or onset
+active tissue or fluid change
+phase completion or cessation
+recurrence potential
 ```
 
-Decision sequence:
+Use neutral `hormonal or cyclical context` language when detailed hormone nodes do not exist.
 
-```text
-1. List nodes undergoing or directly contributing to the state change.
-2. Remove nodes used only for adjacency, boundary, mirror, or downstream context.
-3. One active anchor = Local.
-4. Two or more nearby active participants = Regional.
-5. Distinct systems or separated regions = Cross-System.
-```
+Do not invent Hormone Entities, endocrine pathways, receptor mechanisms, laboratory values, or diagnoses.
+
+Hormonal influence alone does not determine scope.
 
 ## YAML Pattern
 
@@ -93,9 +93,10 @@ status: Draft
 version: 0.1
 activation_type: Composite Activation
 activation_components:
-  - Motor / Kinetic Activation
+  - Hormonal / Cyclical Activation
   - Tissue-State Activation
-activation_scope: Local
+  - Fluid Activation
+activation_scope: Regional
 embodiment_scope: Anatomy-Dependent
 primary_anatomical_anchor: Anatomical Node
 validation_status: Candidate
@@ -113,6 +114,7 @@ Referenced Mirror Routes
 Referenced Fluid Entities, where applicable
 Referenced Fluid Profiles, where applicable
 Fluid Property Alterations, where applicable
+Temporal or Phase Sequence, where cyclical
 Activation Sequence
 Modulators and Inhibitors
 Candidate Downstream Links
@@ -123,45 +125,24 @@ Review Questions
 Status
 ```
 
-## Anatomical Participation Governance
-
-Use:
+## Participation Governance
 
 ```text
 ACTIVATES_ANATOMICAL_SITE
-```
+= primary site undergoing change
 
-for the primary site undergoing the defined state change.
-
-Use:
-
-```text
 INVOLVES_ANATOMICAL_NODE
-```
+= another direct participant
 
-only when another node directly participates in the same process.
-
-Use:
-
-```text
 REFERENCES_ADJACENT_ANATOMICAL_SITE
-```
+= nearby or boundary context only
 
-when a nearby or boundary object is relevant but does not undergo or directly contribute to the state change.
+INVOLVES_FLUID_ENTITY
+= fluid directly participating
 
-## Fluid Adjacency Governance
-
-Use:
-
-```text
 REFERENCES_ADJACENT_FLUID_ENTITY
+= nearby fluid used for distinction only
 ```
-
-when a nearby fluid is relevant to distinction or boundary governance but is not involved in the activation.
-
-Adjacent anatomy must not be treated as source or participant anatomy by proximity alone.
-
-Adjacent fluid must not be treated as the active fluid by location alone.
 
 ## Relationship Statements
 
@@ -189,15 +170,15 @@ Activation Profile MAY_BE_ANNOTATED_IN Corpus Annotation
 
 ## Boundary Rules
 
-Activation profiles define process only. They must not define anatomy, fluid identity, mirror correspondence, propagation mechanics, sensory perception, affective valence, desire, consent, symbolic interpretation, authorial language, corpus usage, or narrative effect.
+Activation profiles define process only. They must not define anatomy, fluid identity, hormone entities, endocrine mechanisms, mirror correspondence, propagation mechanics, sensory perception, affective interpretation, consent, authorial language, corpus usage, or narrative effect.
 
 ## Consent Boundary
 
 ```text
 Physiological activation is not consent.
-Autonomic response is not consent.
+Hormonal state is not consent.
+Cyclical state is not consent.
 Fluid release is not consent.
-Muscular contraction is not consent.
 Pleasure is not consent.
 Desire is not consent.
 Symbolic meaning is not consent.
@@ -205,21 +186,17 @@ Symbolic meaning is not consent.
 
 ## Review Questions
 
-1. Is `activation_type` a single controlled value?
-2. Are all components controlled values?
-3. Does scope follow direct participation rather than proximity?
-4. Are adjacency relationships non-participatory?
-5. Are mirror routes engaged rather than redefined?
-6. Are downstream systems candidate links only?
-7. Is a Propagation handoff required without defining propagation?
+1. Is classification normalized?
+2. Does scope follow direct participation?
+3. Are cyclical phases distinguished from endocrine mechanisms?
+4. Are hormone nodes referenced only if they exist?
+5. Are fluid entities involved without being redefined?
+6. Is Propagation limited to handoff?
+7. Are downstream systems candidate-only?
 8. Does the profile avoid implying consent?
-
-## Validation Basis
-
-This template has been successfully instantiated by three Candidate profiles covering fluid-dependent, glandular, and fluid-independent motor / kinetic activation.
 
 ## Status
 
-Validated v0.4.
+Validated v0.5.
 
-This template is validated for Activation Profile construction. It is not Baseline.
+This version adds Hormonal / Cyclical profile guidance.
