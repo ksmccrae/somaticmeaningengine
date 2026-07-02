@@ -8,7 +8,7 @@ file_class: Document
 document_type: Framework
 layer: Activation Layer
 status: Validated
-version: 0.5
+version: 0.6
 last_updated: 2026-07-02
 ---
 
@@ -59,11 +59,11 @@ Cross-System
 = distinct systems or separated regions are coordinated
 ```
 
-Adjacency, mirror engagement, downstream references, and possible Propagation handoff do not increase scope by themselves.
+Adjacency, output context, mirror engagement, downstream references, and possible Propagation handoff do not increase scope by themselves.
 
 ## Hormonal / Cyclical Activation Governance
 
-Hormonal / Cyclical Activation models a recurring or phase-dependent activation process influenced by cyclical physiological regulation.
+Hormonal / Cyclical Activation models recurring, phase-dependent, or hormonally influenced process coordination.
 
 It may define:
 
@@ -80,7 +80,7 @@ anatomical coordination across a recurring process
 It must not define:
 
 ```text
-Hormone Entities that do not yet exist
+missing Hormone Entities
 endocrine anatomy
 hormone production pathways
 receptor mechanisms
@@ -89,9 +89,27 @@ clinical diagnosis
 sensory or emotional meaning
 ```
 
-A profile may use neutral language such as `hormonal or cyclical context` when detailed endocrine nodes are not yet modelled.
+Neutral language such as `hormonal or cyclical context` is permitted when detailed endocrine nodes are not yet modelled.
 
-Hormonal influence is not automatically a separate active anatomical participant and does not by itself make scope Cross-System.
+Hormonal influence does not by itself establish Cross-System scope.
+
+## Cyclical Regulation versus Active Phase
+
+Hormonal / Cyclical profiles must distinguish between regulation of a recurring cycle and execution of one active phase.
+
+```text
+Cycle Regulation Activation Profile
+= coordinates recurrence, phase progression, timing, suppression, delay, or transition across a cycle
+
+Active Phase Activation Profile
+= defines the physiological process occurring during one bounded phase of that cycle
+```
+
+A cycle-regulation profile must not absorb every phase-specific tissue, fluid, or motor process.
+
+An active-phase profile must not become the owner of the entire cycle.
+
+A regulatory profile may contextualize or enable an active-phase profile in prose. A formal Activation-to-Activation relationship verb should not be added until repeated use establishes a stable need.
 
 ## Temporal Governance
 
@@ -101,7 +119,7 @@ Cyclical profiles should distinguish:
 cycle context
 phase entry
 active state change
-movement or release
+movement or release where applicable
 phase completion or cessation
 recurrence potential
 ```
@@ -124,7 +142,7 @@ INVOLVES_ANATOMICAL_NODE
 = another node directly participating
 
 REFERENCES_ADJACENT_ANATOMICAL_SITE
-= nearby context only
+= nearby, boundary, or output context only
 
 INVOLVES_FLUID_ENTITY
 = fluid directly participating
@@ -132,6 +150,8 @@ INVOLVES_FLUID_ENTITY
 REFERENCES_ADJACENT_FLUID_ENTITY
 = fluid used for distinction only
 ```
+
+Output territory may use `REFERENCES_ADJACENT_ANATOMICAL_SITE` until repeated use justifies a dedicated output relationship.
 
 ## Propagation Boundary
 
@@ -166,9 +186,12 @@ Female - Vulvar Lubrication Activation Profile
 Female - Paraurethral Glandular Release Activation Profile
 Female - Pelvic Floor Contraction Activation Profile
 Female - Menstruation Activation Profile
+Female - Menstrual Cycle Regulation Activation Profile
 ```
 
-The fourth profile is the first Hormonal / Cyclical validation candidate and tests recurrence, temporal sequencing, multi-node participation, and Menstrual Fluid involvement.
+The fourth profile tests active-phase Hormonal / Cyclical execution with Menstrual Fluid involvement.
+
+The fifth profile tests cycle-level regulation without requiring Fluid Activation.
 
 ## Relationship Statements
 
@@ -196,6 +219,6 @@ Activation Profile MAY_BE_ANNOTATED_IN Corpus Annotation
 
 ## Status
 
-Validated v0.5.
+Validated v0.6.
 
-This version adds Hormonal / Cyclical and temporal activation governance.
+This version separates cycle regulation from active-phase execution and clarifies output-context handling.
