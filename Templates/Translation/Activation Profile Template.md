@@ -11,7 +11,7 @@ template_type: Translation
 node_type: Activation Profile
 layer: Activation Layer
 status: Validated
-version: 0.5
+version: 0.6
 last_updated: 2026-07-02
 ---
 
@@ -61,7 +61,7 @@ Cross-System
 = distinct systems or separated regions are coordinated
 ```
 
-Do not count adjacency, mirror context, downstream references, or possible Propagation handoff as active participation.
+Do not count adjacency, output context, mirror context, downstream references, or possible Propagation handoff as active participation.
 
 ## Hormonal / Cyclical Profile Rule
 
@@ -70,7 +70,7 @@ A profile using `Hormonal / Cyclical Activation` should include:
 ```text
 cycle or phase context
 phase entry or onset
-active tissue or fluid change
+active tissue or fluid change where applicable
 phase completion or cessation
 recurrence potential
 ```
@@ -80,6 +80,24 @@ Use neutral `hormonal or cyclical context` language when detailed hormone nodes 
 Do not invent Hormone Entities, endocrine pathways, receptor mechanisms, laboratory values, or diagnoses.
 
 Hormonal influence alone does not determine scope.
+
+## Cycle Regulation versus Active Phase
+
+Choose one primary responsibility:
+
+```text
+Cycle Regulation
+= timing, recurrence, phase progression, suppression, delay, or transition across a cycle
+
+Active Phase
+= the bounded physiological process occurring within one phase
+```
+
+A cycle-regulation profile should not absorb all phase-specific anatomy, fluid, motor, or sensory processes.
+
+An active-phase profile should not claim ownership of the entire cycle.
+
+Describe regulatory-to-phase dependency in prose until a repeated graph pattern justifies a dedicated relationship verb.
 
 ## YAML Pattern
 
@@ -95,7 +113,6 @@ activation_type: Composite Activation
 activation_components:
   - Hormonal / Cyclical Activation
   - Tissue-State Activation
-  - Fluid Activation
 activation_scope: Regional
 embodiment_scope: Anatomy-Dependent
 primary_anatomical_anchor: Anatomical Node
@@ -135,7 +152,7 @@ INVOLVES_ANATOMICAL_NODE
 = another direct participant
 
 REFERENCES_ADJACENT_ANATOMICAL_SITE
-= nearby or boundary context only
+= nearby, boundary, or output context only
 
 INVOLVES_FLUID_ENTITY
 = fluid directly participating
@@ -143,6 +160,8 @@ INVOLVES_FLUID_ENTITY
 REFERENCES_ADJACENT_FLUID_ENTITY
 = nearby fluid used for distinction only
 ```
+
+Use the adjacency relationship for output territory until a dedicated output relationship is proven reusable.
 
 ## Relationship Statements
 
@@ -188,15 +207,16 @@ Symbolic meaning is not consent.
 
 1. Is classification normalized?
 2. Does scope follow direct participation?
-3. Are cyclical phases distinguished from endocrine mechanisms?
-4. Are hormone nodes referenced only if they exist?
-5. Are fluid entities involved without being redefined?
-6. Is Propagation limited to handoff?
-7. Are downstream systems candidate-only?
-8. Does the profile avoid implying consent?
+3. Is the profile regulatory or active-phase, rather than both without separation?
+4. Are cyclical phases distinguished from endocrine mechanisms?
+5. Are hormone nodes referenced only if they exist?
+6. Are fluid entities involved without being redefined?
+7. Is Propagation limited to handoff?
+8. Are downstream systems candidate-only?
+9. Does the profile avoid implying consent?
 
 ## Status
 
-Validated v0.5.
+Validated v0.6.
 
-This version adds Hormonal / Cyclical profile guidance.
+This version separates cycle regulation from active-phase execution and clarifies output-context handling.
