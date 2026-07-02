@@ -11,7 +11,7 @@ node_type: Fluid Profile
 layer: Fluid Layer
 embodiment_scope: Female
 status: Draft
-version: 0.3
+version: 0.4
 anatomical_anchor: Female - Vaginal Canal
 canonical_layer_reference: Canonical Embodiment
 fluid_relevance: Present / Cyclical / Contextual
@@ -74,9 +74,11 @@ This profile may record anatomical-contextual variation such as internal surface
 
 | Activation Profile | Fluid Entity | Role |
 |---|---|---|
-| Vaginal Lubrication Activation Profile | [[Vaginal Fluid]] | Produces / Alters / Exposes |
-| Menstruation Activation Profile | [[Menstrual Fluid]] | Releases / Moves / Exposes |
+| [[Female - Vulvar Lubrication Activation Profile]] | [[Vaginal Fluid]] | Produces / Alters / Exposes |
+| [[Female - Menstruation Activation Profile]] | [[Menstrual Fluid]] | Releases / Moves / Exposes |
 | Cervical Mucus Cycle Activation Profile | [[Cervical Mucus]] | Alters / Releases / Moves |
+
+Existing Activation Profiles are wikilinked by their canonical node names. Candidate profiles that do not yet exist remain plain text.
 
 ---
 
@@ -99,6 +101,8 @@ Female - Vaginal Canal Fluid Profile REFERENCES_FLUID_SOURCE Female - Vaginal Mu
 Female - Vaginal Canal Fluid Profile REFERENCES_FLUID_SOURCE Female - Cervix
 Female - Vaginal Canal Fluid Profile REFERENCES_FLUID_CONDUIT Female - Vaginal Canal
 Female - Vaginal Canal Fluid Profile REFERENCES_FLUID_OUTPUT_SITE Female - Vaginal Opening
+Female - Vaginal Canal Fluid Profile REFERENCES_ACTIVATION_PROFILE Female - Vulvar Lubrication Activation Profile
+Female - Vaginal Canal Fluid Profile REFERENCES_ACTIVATION_PROFILE Female - Menstruation Activation Profile
 ```
 
 ---
@@ -113,4 +117,6 @@ Female - Vaginal Canal Fluid Profile REFERENCES_FLUID_OUTPUT_SITE Female - Vagin
 
 ## Status
 
-Draft v0.3.
+Draft v0.4.
+
+Canonical Activation hook names synchronized with the Activation Layer.
