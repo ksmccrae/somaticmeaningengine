@@ -8,8 +8,8 @@ file_class: Document
 document_type: README
 layer: Activation Layer
 status: Validated
-version: 0.4
-last_updated: 2026-07-01
+version: 0.5
+last_updated: 2026-07-02
 ---
 
 # Activation Layer
@@ -38,11 +38,12 @@ Expressive and Meaning Layers
 
 - [[Activation Layer Framework]] — Validated v0.4
 - [[Activation Profile Template]] — Validated v0.4
-- [[Activation Profiles Index]] — Draft v0.4
+- [[Activation Profiles Index]] — Draft v0.5
+- [[Activation Profile Validation & Promotion Register]] — Draft v0.1
 
 The Framework and Template are validated but not Baseline.
 
-The Index and all current live profiles remain Draft/Candidate while promotion governance is developed.
+The Index, promotion register, and all current live profiles remain Draft/Candidate.
 
 ## Current Activation Profiles
 
@@ -50,7 +51,7 @@ The Index and all current live profiles remain Draft/Candidate while promotion g
 - [[Female - Paraurethral Glandular Release Activation Profile]] — Candidate, Draft v0.1
 - [[Female - Pelvic Floor Contraction Activation Profile]] — Candidate, Draft v0.2
 
-Together these validate the architecture across:
+Together these demonstrate:
 
 ```text
 fluid-dependent activation
@@ -79,7 +80,7 @@ activation_scope
 = Local / Regional / Cross-System
 ```
 
-`Composite Activation` is used as the structural type when multiple process families are coordinated.
+`Composite Activation` is used when multiple process families are coordinated.
 
 ## Scope Rule
 
@@ -96,22 +97,47 @@ Cross-System
 
 Adjacency, boundary context, mirror engagement, and candidate Propagation handoff do not increase scope by themselves.
 
-## Layer Boundaries
+## Profile Promotion Governance
 
-Activation may reference:
+Candidate-to-Supported decisions are governed by [[Activation Profile Validation & Promotion Register]].
+
+A profile must pass:
 
 ```text
-Canonical Embodiment nodes
-Fluid Entities, Fluid Profiles, and Fluid Properties
-Mirror Profiles
-candidate Propagation Profiles
-candidate Sensory Profiles
-Pleasure Register
-Desire Register
-Symbolic Meaning Register
-Authorial systems
-Corpus annotations
+mechanical completeness
+controlled classification
+scope accuracy
+canonical anatomy accuracy
+process coherence
+cross-layer discipline
+mirror-status accuracy
+fluid accuracy where applicable
+adjacency accuracy
+consent boundary
+wikilink integrity
+focused audit
+replicability review
+blocking-question review
 ```
+
+Missing downstream Sensory, Authorial, Corpus, or Propagation records do not automatically block promotion unless the Activation Profile depends on them for its own definition.
+
+Current recommendation:
+
+```text
+Female - Vulvar Lubrication
+= closest to Supported; requires focused promotion audit
+
+Female - Paraurethral Glandular Release
+= remains Candidate; anatomical and Autonomic governance unresolved
+
+Female - Pelvic Floor Contraction
+= remains Candidate; Motor / Kinetic and Reflex governance unresolved
+```
+
+## Layer Boundaries
+
+Activation may reference Canonical Embodiment, Fluid, Mirror, candidate Propagation, candidate Sensory, Pleasure, Desire, Symbolic Meaning, Authorial, and Corpus records.
 
 Activation must not define those systems.
 
@@ -136,6 +162,7 @@ Symbolic meaning is not consent.
 Activation Layer
 ├── README.md
 ├── Activation Layer Framework.md
+├── Activation Profile Validation & Promotion Register.md
 └── Activation Profiles
     ├── Activation Profiles Index.md
     ├── Female - Vulvar Lubrication Activation Profile.md
@@ -161,8 +188,9 @@ Still Draft or unresolved:
 
 ```text
 Activation Profiles Index
+Activation Profile Validation & Promotion Register
 all live Activation Profiles
-Candidate-to-Supported promotion criteria
+first actual Candidate-to-Supported decision
 Hormonal / Cyclical validation
 Cross-System validation
 Reflex Activation promotion criteria
@@ -170,8 +198,12 @@ Propagation Layer implementation
 Sensory downstream validation
 ```
 
+## Next Action
+
+Run a focused promotion audit of [[Female - Vulvar Lubrication Activation Profile]] against the new promotion register.
+
 ## Status
 
-Validated v0.4.
+Validated v0.5.
 
-This README replaces the original Foundation placeholder and reflects the current governed Activation Layer architecture.
+This README reflects the current governed Activation architecture and promotion workflow.
