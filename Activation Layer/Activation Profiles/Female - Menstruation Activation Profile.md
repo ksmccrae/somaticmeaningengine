@@ -10,7 +10,7 @@ file_class: Ontology Node
 node_type: Activation Profile
 layer: Activation Layer
 status: Draft
-version: 0.2
+version: 0.3
 activation_type: Composite Activation
 activation_components:
   - Hormonal / Cyclical Activation
@@ -19,7 +19,7 @@ activation_components:
 activation_scope: Regional
 embodiment_scope: Female / Anatomy-Dependent
 primary_anatomical_anchor: Female - Uterus
-validation_status: Candidate
+validation_status: Supported
 ---
 
 # Female - Menstruation Activation Profile
@@ -43,7 +43,7 @@ It defines activation and temporal sequence only. It does not define Hormone Ent
 | Activation Scope | Regional |
 | Embodiment Scope | Female / Anatomy-Dependent |
 | Primary Anatomical Anchor | [[Female - Uterus]] |
-| Validation Status | Candidate |
+| Validation Status | Supported |
 
 ## Trigger or Condition
 
@@ -220,8 +220,18 @@ Female - Menstruation Activation Profile MAY_BE_ANNOTATED_IN Corpus Annotation
 5. Are missing uterus and cervix Fluid Profiles non-blocking?
 6. Does the profile remain coherent without Propagation?
 
+## Promotion Record
+
+```text
+Promotion decision: Candidate to Supported
+Focused promotion audit: Pass
+Blocking defects: None
+Non-blocking open questions: Endometrium refinement; optional uterus/cervix Fluid Profiles; future formal Activation-to-Activation relationship
+Promotion date: 2026-07-02
+```
+
 ## Status
 
-Draft v0.2.
+Draft v0.3.
 
-Candidate active-phase Hormonal / Cyclical profile with cycle-regulation responsibilities explicitly separated.
+Supported active-phase Hormonal / Cyclical profile with cycle-regulation responsibilities explicitly separated.
