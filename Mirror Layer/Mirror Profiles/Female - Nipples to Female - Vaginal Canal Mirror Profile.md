@@ -10,7 +10,7 @@ file_class: Ontology Node
 node_type: Mirror Profile
 layer: Mirror Layer
 status: Draft
-version: 0.1
+version: 0.2
 mirror_type: Anatomical / Sensory-Adjacent
 source_object: Female - Nipples
 target_object: Female - Vaginal Canal
@@ -143,7 +143,7 @@ This profile is already a focal descendant candidate of broader composite mirror
 | Fluid Layer | [[Female - Breasts Fluid Profile]] | Candidate downstream fluid relationship |
 | Fluid Layer | [[Female - Vaginal Canal Fluid Profile]] | Candidate downstream fluid relationship |
 | Activation Layer | Lactation Activation Profile | Candidate downstream activation relationship |
-| Activation Layer | Vaginal Lubrication Activation Profile | Candidate downstream activation relationship |
+| Activation Layer | [[Female - Vulvar Lubrication Activation Profile]] | Existing downstream activation relationship |
 
 ---
 
@@ -191,6 +191,7 @@ Female - Nipples to Female - Vaginal Canal Mirror Profile HAS_TRAVERSAL_PRIORITY
 Female - Nipples to Female - Vaginal Canal Mirror Profile HAS_CORRESPONDENCE_BASIS Focal output-site to internal canal correspondence
 Female - Nipples to Female - Vaginal Canal Mirror Profile MAY_SUPPORT Female - Nipples Sensory Profile
 Female - Nipples to Female - Vaginal Canal Mirror Profile MAY_SUPPORT Female - Vaginal Canal Sensory Profile
+Female - Nipples to Female - Vaginal Canal Mirror Profile MAY_REFERENCE_ACTIVATION_PROFILE Female - Vulvar Lubrication Activation Profile
 Female - Nipples to Female - Vaginal Canal Mirror Profile MAY_BE_USED_BY Authorial Term Register
 Female - Nipples to Female - Vaginal Canal Mirror Profile MAY_BE_ANNOTATED_IN Corpus Annotation
 ```
@@ -209,6 +210,6 @@ Female - Nipples to Female - Vaginal Canal Mirror Profile MAY_BE_ANNOTATED_IN Co
 
 ## Status
 
-Draft v0.1.
+Draft v0.2.
 
-Candidate expansion profile. Not yet part of the supported validation set.
+Candidate expansion profile. Canonical Activation reference synchronized with the Activation Layer.
