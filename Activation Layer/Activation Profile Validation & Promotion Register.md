@@ -9,7 +9,7 @@ file_class: Document
 document_type: Governance Register
 layer: Activation Layer
 status: Draft
-version: 0.2
+version: 0.3
 last_updated: 2026-07-02
 ---
 
@@ -20,11 +20,8 @@ last_updated: 2026-07-02
 This register defines evidence required to move an Activation Profile from Candidate to Supported.
 
 ```text
-Document status
-= Draft / Validated / Baseline
-
-Profile validation status
-= Candidate / Supported / Blocked
+Document status = Draft / Validated / Baseline
+Profile validation status = Candidate / Supported / Blocked
 ```
 
 ## Required Criteria
@@ -39,12 +36,12 @@ Profile validation status
 | Cross-layer discipline | Other layers are referenced rather than defined |
 | Mirror accuracy | Existing route and status represented accurately |
 | Fluid accuracy | Existing entities, profiles, and properties remain distinct |
-| Adjacency accuracy | Proximity does not imply source, identity, or participation |
+| Adjacency accuracy | Proximity and output context do not imply direct participation |
 | Consent boundary | Physiological response is not treated as consent |
 | Wikilink integrity | Existing nodes resolve; candidate-only nodes remain plain text |
 | Audit evidence | Focused audit finds no blocking defect |
 | Replicability | Pattern is demonstrated by a contrasting profile |
-| Question review | Open questions classified as blocking or non-blocking |
+| Question review | Open questions are blocking or non-blocking |
 
 ## Blocking Conditions
 
@@ -60,7 +57,7 @@ weakened consent boundary
 unresolved mechanical drift
 ```
 
-Missing downstream Sensory, Authorial, Corpus, or candidate Propagation records are non-blocking unless the Activation Profile depends on them for its own definition.
+Missing downstream Sensory, Authorial, Corpus, candidate Propagation, or optional Fluid Profiles are non-blocking unless the Activation Profile depends on them.
 
 ## Promotion Decisions
 
@@ -71,20 +68,9 @@ Missing downstream Sensory, Authorial, Corpus, or candidate Propagation records 
 | Mechanical Result | Pass |
 | Governance Result | Pass |
 | Blocking Defect | None |
-| Non-Blocking Open Questions | Future Sensory profiles; possible Propagation handoff; broader genital-level profile may be created later |
 | Promotion Recommendation | Promote to Supported |
 | Decision Applied | Supported / Draft v0.3 |
 | Review Date | 2026-07-02 |
-
-Evidence:
-
-```text
-focused promotion audit passed all required criteria
-Regional scope supported by direct multi-node participation
-Vaginal Fluid and property boundaries preserved
-Supported mirror route represented accurately
-consent boundary explicit
-```
 
 ### Female - Paraurethral Glandular Release Activation Profile
 
@@ -110,25 +96,38 @@ consent boundary explicit
 
 | Field | Assessment |
 |---|---|
+| Mechanical Result | Pass |
+| Governance Result | Warning |
+| Blocking Defect | None |
+| Non-Blocking Open Questions | Endometrium decomposition; optional uterus/cervix Fluid Profiles; candidate Propagation handoff |
+| Promotion Recommendation | Remain Candidate pending Hormonal / Cyclical replicability audit |
+| Decision Applied | Draft v0.2; Vaginal Opening moved to output/boundary context; cycle regulation separated |
+| Review Date | 2026-07-02 |
+
+### Female - Menstrual Cycle Regulation Activation Profile
+
+| Field | Assessment |
+|---|---|
 | Mechanical Result | Pending audit |
 | Governance Result | Pending audit |
 | Blocking Defect | Not yet determined |
-| Non-Blocking Open Questions | Missing uterus and cervix Fluid Profiles; future endocrine expansion; candidate Propagation handoff |
+| Non-Blocking Open Questions | System-level primary anchor; Ovaries/Uterus participation; Tissue-State component; future Activation-to-Activation relationship |
 | Promotion Recommendation | Remain Candidate |
 | Review Date | 2026-07-02 |
 
-## Promotion Sequence
+## Hormonal / Cyclical Validation Requirement
+
+The two profiles must be audited together to confirm that:
 
 ```text
-1. Apply this register.
-2. Resolve blocking defects.
-3. Run a focused promotion audit.
-4. Record the result.
-5. Update validation_status, Index, and README.
+cycle regulation owns timing, recurrence, suppression, delay, and phase progression
+menstruation owns one active phase and its tissue/fluid process
+neither profile silently defines missing endocrine mechanisms
+shared context does not create circular dependency
 ```
 
 ## Status
 
-Draft v0.2.
+Draft v0.3.
 
-This register has now governed one completed Candidate-to-Supported promotion and remains Draft pending a second promotion test.
+This register has governed one completed promotion and now records the first paired Hormonal / Cyclical validation test.
