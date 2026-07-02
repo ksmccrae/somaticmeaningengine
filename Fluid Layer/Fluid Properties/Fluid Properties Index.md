@@ -9,8 +9,8 @@ file_class: Document
 document_type: Index
 layer: Fluid Layer
 status: Draft
-version: 0.2
-last_updated: 2026-06-30
+version: 0.3
+last_updated: 2026-07-02
 ---
 
 # Fluid Properties Index
@@ -38,6 +38,7 @@ They do not define fluid entities, anatomical sites, activation mechanics, senso
 | [[Flow]] | Relational / Physical | Fluid Profile / Activation Boundary | Draft v0.1 |
 | [[Cyclicity]] | Temporal | Fluid Entity / Activation Boundary | Draft v0.1 |
 | [[Surface Presence]] | Relational | Fluid Profile | Draft v0.1 |
+| [[Coagulation State]] | Physical | Blood-containing Fluid Entity / Fluid Profile | Draft v0.1 |
 
 ## Governance Notes
 
@@ -52,6 +53,8 @@ Seeing red, dark, bright, pale, alarming, beautiful, shameful, sacred, or danger
 ```
 
 Fluid properties may be referenced by fluid entities as general properties and by fluid profiles as local anatomical variations.
+
+`Coagulation State` governs the values `Uncoagulated`, `Partially Coagulated`, and `Clotted`. `Clotted` is the terminal traversal level; clot size, frequency, morphology, and composition are not currently modelled.
 
 ## Validation Notes
 
@@ -68,4 +71,4 @@ The next validation pass should check whether property value ranges are reusable
 
 ## Status
 
-Draft v0.2.
+Draft v0.3.
