@@ -8,7 +8,7 @@ file_class: Document
 document_type: README
 layer: Activation Layer
 status: Validated
-version: 0.7
+version: 0.8
 last_updated: 2026-07-02
 ---
 
@@ -18,15 +18,15 @@ last_updated: 2026-07-02
 
 - [[Activation Layer Framework]] — Validated v0.6
 - [[Activation Profile Template]] — Validated v0.6
-- [[Activation Profiles Index]] — Draft v0.7
-- [[Activation Profile Validation & Promotion Register]] — Draft v0.3
+- [[Activation Profiles Index]] — Draft v0.8
+- [[Activation Profile Validation & Promotion Register]] — Draft v0.4
 
 ## Current Profiles
 
 - [[Female - Vulvar Lubrication Activation Profile]] — Supported, Draft v0.3
 - [[Female - Paraurethral Glandular Release Activation Profile]] — Candidate, Draft v0.1
 - [[Female - Pelvic Floor Contraction Activation Profile]] — Candidate, Draft v0.2
-- [[Female - Menstruation Activation Profile]] — Candidate, Draft v0.2
+- [[Female - Menstruation Activation Profile]] — Supported, Draft v0.3
 - [[Female - Menstrual Cycle Regulation Activation Profile]] — Candidate, Draft v0.1
 
 ## Hormonal / Cyclical Separation
@@ -43,12 +43,19 @@ Neither profile defines missing endocrine mechanisms.
 
 ## Promotion State
 
-Female - Vulvar Lubrication Activation Profile is Supported. All other live profiles remain Candidate.
+Supported profiles:
+
+```text
+Female - Vulvar Lubrication Activation Profile
+Female - Menstruation Activation Profile
+```
+
+The Menstruation profile is Supported independently of the Candidate status of Menstrual Cycle Regulation.
 
 ## Next Action
 
-Audit the Menstruation and Menstrual Cycle Regulation profiles together for replicability, temporal ownership, scope, anatomy, endocrine boundaries, and circular dependency.
+Audit [[Female - Menstrual Cycle Regulation Activation Profile]] for system-level primary-anchor validity, regulatory Tissue-State ownership, anatomical participation, and future Activation-to-Activation traversal.
 
 ## Status
 
-Validated v0.7.
+Validated v0.8.
