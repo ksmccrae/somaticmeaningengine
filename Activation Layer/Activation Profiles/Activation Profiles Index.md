@@ -9,7 +9,7 @@ file_class: Document
 document_type: Index
 layer: Activation Layer
 status: Draft
-version: 0.2
+version: 0.3
 last_updated: 2026-07-01
 ---
 
@@ -27,6 +27,7 @@ Activation profiles define governed physiological, embodied, and processual stat
 |---|---|---|---|---|---|---|---|---|---|
 | [[Female - Vulvar Lubrication Activation Profile]] | [[Female - Vulva]] | Composite Activation | Tissue-State Activation; Fluid Activation; Mirror-Route Activation | Regional | Female / Anatomy-Dependent | [[Vaginal Fluid]] | [[Female - Vulva to Female - Clitoral Complex Mirror Profile]] | Candidate | Draft v0.2 |
 | [[Female - Paraurethral Glandular Release Activation Profile]] | [[Female - Skene's Glands]] | Composite Activation | Fluid Activation; Mirror-Route Activation; Autonomic Activation | Regional | Female / Anatomy-Dependent | [[Paraurethral Glandular Fluid]] | [[Female - Skene's Glands to Female - Urethral Opening Mirror Profile]] | Candidate | Draft v0.1 |
+| [[Female - Pelvic Floor Contraction Activation Profile]] | [[Female - Pelvic Floor]] | Composite Activation | Motor / Kinetic Activation; Tissue-State Activation; Mirror-Route Activation | Regional | Female / Anatomy-Dependent | None required | [[Female - Perineum to Female - Pelvic Floor Mirror Profile]] | Candidate | Draft v0.1 |
 
 ## Classification Rule
 
@@ -41,30 +42,23 @@ Activation Scope
 = Local / Regional / Cross-System
 ```
 
-Composite profiles use:
-
-```text
-activation_type: Composite Activation
-activation_components: governed YAML list
-```
+Composite profiles use `Composite Activation` with a governed component list.
 
 ## Validation Purpose
 
-The two-profile validation set tests whether Activation can coordinate:
+The three-profile set now tests:
 
 ```text
-canonical anatomical participants
-Fluid Layer references
-Fluid Property alterations
-Mirror Layer route availability
-composite activation classification
+fluid-dependent and fluid-independent activation
+local tissue-state change
+regional glandular release
+motor / kinetic contraction
+mirror-route availability
+adjacent anatomy and fluid distinctions
+possible Propagation handoff
 candidate downstream links
 consent boundary discipline
-fluid identity separation
-adjacent anatomy without anatomical collapse
 ```
-
-without collapsing into anatomy definitions, fluid definitions, mirror definitions, sensory perception, pleasure, desire, symbolic meaning, authorial wording, or corpus usage.
 
 ## Controlled Activation Components Currently Used
 
@@ -73,9 +67,10 @@ Tissue-State Activation
 Fluid Activation
 Mirror-Route Activation
 Autonomic Activation
+Motor / Kinetic Activation
 ```
 
-`Composite Activation` is used as the structural activation type when multiple components are coordinated.
+`Composite Activation` is the structural type used where multiple components are coordinated.
 
 ## Index Column Notes
 
@@ -83,7 +78,7 @@ Autonomic Activation
 
 `Validation Status` records whether the profile is Supported, Candidate, or Blocked.
 
-These are intentionally separate fields.
+These are intentionally separate.
 
 ## Governance Notes
 
@@ -94,13 +89,13 @@ activation may engage mirror routes, not define mirror correspondence
 activation may hand off to propagation, not define propagation
 activation may enable sensation, pleasure, desire, or symbolic meaning downstream, not define them
 activation never implies consent
+non-fluid profiles should not be forced to include Fluid Layer references
 ```
 
 ## Candidate Future Activation Profiles
 
 | Candidate Activation Profile | Reason Deferred |
 |---|---|
-| Female - Pelvic Floor Contraction Activation Profile | Requires motor / kinetic activation governance |
 | Female - Clitoral Complex Arousal Activation Profile | Requires Sensory and Pleasure boundary validation |
 | Female - Breast / Nipple Arousal Activation Profile | Requires child-level mirror route decisions |
 | Menstruation Activation Profile | Requires hormonal / cyclical activation governance |
@@ -110,12 +105,12 @@ activation never implies consent
 
 ## Review Questions
 
-1. Do both profiles demonstrate the normalized type/component/scope model?
-2. Should Autonomic Activation remain a component of the paraurethral profile or become a modulator?
-3. Are adjacent anatomy and adjacent fluid relationships sufficiently governed?
-4. Which profile should be built third to test a non-fluid activation family?
-5. When should Candidate profiles be promoted to Supported?
+1. Does the third profile prove that Activation is not merely a fluid-process layer?
+2. Is Regional the correct scope for pelvic floor contraction?
+3. Should Reflex Activation become a component in the third profile?
+4. When should the Framework and Template be promoted to Validated?
+5. Which profile should be built next to test Hormonal / Cyclical or Cross-System activation?
 
 ## Status
 
-Draft v0.2.
+Draft v0.3.
