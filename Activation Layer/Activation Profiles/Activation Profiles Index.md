@@ -9,104 +9,71 @@ file_class: Document
 document_type: Index
 layer: Activation Layer
 status: Draft
-version: 0.5
+version: 0.6
 last_updated: 2026-07-02
 ---
 
 # Activation Profiles Index
 
-## Purpose
-
-This index lists Activation Profile nodes in the Activation Layer.
-
-Activation profiles define governed physiological, embodied, and processual state changes without redefining anatomy, fluids, mirrors, sensory experience, pleasure, desire, symbolic meaning, authorial language, or corpus usage.
-
 ## Governing Documents
 
-- [[Activation Layer Framework]] — Validated v0.4
-- [[Activation Profile Template]] — Validated v0.4
-- [[Activation Profile Validation & Promotion Register]] — Draft v0.1
+- [[Activation Layer Framework]] — Validated v0.5
+- [[Activation Profile Template]] — Validated v0.5
+- [[Activation Profile Validation & Promotion Register]] — Draft v0.2
 
-The Index remains Draft while Candidate-to-Supported promotion governance is tested through an actual profile review.
+## Current Profiles
 
-## Current Validation Set
+| Activation Profile | Primary Anchor | Components | Scope | Fluid | Mirror | Validation | Document |
+|---|---|---|---|---|---|---|---|
+| [[Female - Vulvar Lubrication Activation Profile]] | [[Female - Vulva]] | Tissue-State; Fluid; Mirror-Route | Regional | [[Vaginal Fluid]] | [[Female - Vulva to Female - Clitoral Complex Mirror Profile]] | Supported | Draft v0.3 |
+| [[Female - Paraurethral Glandular Release Activation Profile]] | [[Female - Skene's Glands]] | Fluid; Mirror-Route; Autonomic | Regional | [[Paraurethral Glandular Fluid]] | [[Female - Skene's Glands to Female - Urethral Opening Mirror Profile]] | Candidate | Draft v0.1 |
+| [[Female - Pelvic Floor Contraction Activation Profile]] | [[Female - Pelvic Floor]] | Motor / Kinetic; Tissue-State; Mirror-Route | Local | None required | [[Female - Perineum to Female - Pelvic Floor Mirror Profile]] | Candidate | Draft v0.2 |
+| [[Female - Menstruation Activation Profile]] | [[Female - Uterus]] | Hormonal / Cyclical; Tissue-State; Fluid | Regional | [[Menstrual Fluid]] | None required | Candidate | Draft v0.1 |
 
-| Activation Profile | Primary Anchor | Activation Type | Activation Components | Activation Scope | Referenced Fluid Entity | Referenced Mirror Route | Validation Status | Document Status |
-|---|---|---|---|---|---|---|---|---|
-| [[Female - Vulvar Lubrication Activation Profile]] | [[Female - Vulva]] | Composite Activation | Tissue-State; Fluid; Mirror-Route | Regional | [[Vaginal Fluid]] | [[Female - Vulva to Female - Clitoral Complex Mirror Profile]] | Candidate | Draft v0.2 |
-| [[Female - Paraurethral Glandular Release Activation Profile]] | [[Female - Skene's Glands]] | Composite Activation | Fluid; Mirror-Route; Autonomic | Regional | [[Paraurethral Glandular Fluid]] | [[Female - Skene's Glands to Female - Urethral Opening Mirror Profile]] | Candidate | Draft v0.1 |
-| [[Female - Pelvic Floor Contraction Activation Profile]] | [[Female - Pelvic Floor]] | Composite Activation | Motor / Kinetic; Tissue-State; Mirror-Route | Local | None required | [[Female - Perineum to Female - Pelvic Floor Mirror Profile]] | Candidate | Draft v0.2 |
-
-## Current Promotion Assessment
-
-| Activation Profile | Mechanical Result | Governance Result | Current Recommendation |
-|---|---|---|---|
-| [[Female - Vulvar Lubrication Activation Profile]] | Pass | Warning | Remain Candidate pending focused promotion audit |
-| [[Female - Paraurethral Glandular Release Activation Profile]] | Pass | Warning | Remain Candidate; anatomical and Autonomic governance unresolved |
-| [[Female - Pelvic Floor Contraction Activation Profile]] | Pass | Warning | Remain Candidate; Motor / Kinetic and Reflex governance unresolved |
-
-## Classification Rule
+## Validation Coverage
 
 ```text
-Activation Type
-= one controlled structural class
-
-Activation Components
-= one or more controlled process families
-
-Activation Scope
-= Local / Regional / Cross-System
+Supported fluid and tissue-state profile
+Candidate glandular and Autonomic profile
+Candidate fluid-independent Motor / Kinetic profile
+Candidate Hormonal / Cyclical and temporal profile
+Local and Regional scope
+Supported and Candidate mirror routes
+profiles with and without mirror dependency
 ```
 
 ## Scope Rule
 
 ```text
-Local
-= one active anatomical anchor
-
-Regional
-= two or more nearby anatomical nodes directly participate
-
-Cross-System
-= distinct systems or separated regions are coordinated
+Local = one active anatomical anchor
+Regional = two or more nearby direct participants
+Cross-System = distinct systems or separated regions
 ```
 
-Adjacency, boundary context, mirror engagement, and candidate Propagation handoff do not increase scope by themselves.
+## Current Promotion State
 
-## Validation Purpose
-
-The three-profile set tests:
-
-```text
-fluid-dependent and fluid-independent activation
-regional fluid and glandular processes
-local motor / kinetic contraction
-Supported and Candidate mirror routes
-adjacent anatomy and fluid distinctions
-possible Propagation handoff
-candidate downstream links
-consent boundary discipline
-```
-
-## Candidate Future Activation Profiles
-
-| Candidate Activation Profile | Reason Deferred |
+| Profile | Result |
 |---|---|
-| Female - Clitoral Complex Arousal Activation Profile | Requires Sensory and Pleasure boundary validation |
-| Female - Breast / Nipple Arousal Activation Profile | Requires child-level mirror route decisions |
-| Menstruation Activation Profile | Requires Hormonal / Cyclical governance |
-| Letdown Activation Profile | Requires mammary and lactation activation governance |
-| Crying Activation Profile | Likely Cross-Embodiment and requires lacrimal anatomy expansion |
-| Sweating Activation Profile | Likely Cross-Embodiment and requires skin and surface profile expansion |
+| Female - Vulvar Lubrication | Supported after focused promotion audit |
+| Female - Paraurethral Glandular Release | Candidate; anatomical and Autonomic governance unresolved |
+| Female - Pelvic Floor Contraction | Candidate; Motor / Kinetic and Reflex governance unresolved |
+| Female - Menstruation | Candidate; first Hormonal / Cyclical audit pending |
 
-## Next Governance Action
+## Candidate Future Profiles
 
-Run a focused promotion audit of [[Female - Vulvar Lubrication Activation Profile]] against [[Activation Profile Validation & Promotion Register]].
+| Candidate | Reason Deferred |
+|---|---|
+| Female - Clitoral Complex Arousal | Requires Sensory and Pleasure boundary validation |
+| Female - Breast / Nipple Arousal | Requires child-level mirror decisions |
+| Letdown | Requires mammary and lactation governance |
+| Crying | Requires lacrimal anatomy expansion |
+| Sweating | Requires skin and surface expansion |
+| Cycle Regulation | Deferred until Menstruation profile clarifies separation of cycle context from active phase |
 
-Do not promote any profile until the register has been tested through that audit.
+## Next Action
+
+Run a compact audit of [[Female - Menstruation Activation Profile]] against Hormonal / Cyclical, temporal, anatomy, fluid, and scope governance.
 
 ## Status
 
-Draft v0.5.
-
-The Index is synchronized with the validated Framework and Template and now records formal promotion governance.
+Draft v0.6.
