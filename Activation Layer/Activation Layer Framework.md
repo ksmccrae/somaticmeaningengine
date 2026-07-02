@@ -8,7 +8,7 @@ file_class: Document
 document_type: Framework
 layer: Activation Layer
 status: Draft
-version: 0.2
+version: 0.3
 last_updated: 2026-07-01
 ---
 
@@ -64,11 +64,9 @@ Activation Profile
 = governed process node defining a physiological or embodied activation event/state-change
 ```
 
-Activation profiles may coordinate anatomy, fluid, mirror, and downstream candidates, but they define activation only.
+Activation profiles may coordinate anatomy, fluid, mirror, motor, autonomic, and downstream candidates, but they define activation only.
 
 ## Activation Classification Model
-
-Activation classification uses three distinct fields.
 
 ```text
 activation_type
@@ -78,22 +76,10 @@ activation_components
 = one or more controlled process families
 
 activation_scope
-= anatomical or systemic reach
+= Local / Regional / Cross-System
 ```
 
-Use:
-
-```yaml
-activation_type: Composite Activation
-activation_components:
-  - Fluid Activation
-  - Mirror-Route Activation
-activation_scope: Regional
-```
-
-when multiple process families are coordinated.
-
-Do not join multiple controlled values into one slash-separated YAML string.
+Use `Composite Activation` when multiple process families are coordinated.
 
 ## Controlled Activation Types and Components
 
@@ -108,19 +94,19 @@ Reflex Activation
 Composite Activation
 ```
 
-`Composite Activation` is a structural type. The other values may function as direct types for simple profiles or as components within a composite profile.
+`Composite Activation` is structural. The other values may be direct types for simple profiles or components of a composite profile.
 
 ## Activation Scope
 
 ```text
 Local
-= primarily within one anatomical anchor or tightly bounded site
+= one tightly bounded site
 
 Regional
-= coordinates multiple nearby anatomical anchors
+= multiple nearby anatomical anchors
 
 Cross-System
-= coordinates multiple systems or body regions
+= multiple systems or body regions
 ```
 
 `Composite` is not an activation scope.
@@ -132,9 +118,9 @@ trigger or condition
 physiological process
 participating anatomical nodes
 tissue-state change
-fluid entity involvement
-fluid property alteration
-fluid profile involvement
+motor or kinetic change
+fluid entity involvement where applicable
+fluid property alteration where applicable
 mirror route availability
 process sequence
 state transitions
@@ -149,7 +135,7 @@ canonical anatomical definitions
 fluid entity definitions
 fluid property definitions
 mirror correspondence definitions
-propagation routes beyond local process handoff
+propagation routes beyond handoff
 sensory perception
 pleasure or discomfort as valence
 desire or motivational orientation
@@ -163,15 +149,15 @@ narrative effect
 
 ## Relationship to Canonical Embodiment
 
-Activation profiles reference anatomical participants without redefining them.
+Activation references anatomical participants without redefining them.
 
 ## Relationship to Fluid Layer
 
-Activation may define that a process produces, releases, moves, exposes, withholds, or alters a fluid. Fluid identity and local anatomical relationships remain in the Fluid Layer.
+Activation may coordinate fluid processes where relevant. Non-fluid activation profiles must not be forced to include Fluid Layer content.
 
 ## Relationship to Mirror Layer
 
-Activation may make mirror routes available, engaged, weighted, or contextually relevant. It does not create or redefine the mirror route.
+Activation may make mirror routes available, engaged, weighted, or contextually relevant without redefining them.
 
 ## Relationship to Propagation Layer
 
@@ -185,16 +171,7 @@ Propagation
 
 ## Relationship to Downstream Systems
 
-Activation profiles may identify candidate downstream records but must not define them.
-
-```text
-Sensory Profile
-Pleasure Register
-Desire Register
-Symbolic Meaning Register
-Authorial Term Register
-Corpus Annotation
-```
+Activation may identify candidate Sensory, Pleasure, Desire, Meaning, Authorial, and Corpus records without defining them.
 
 ## Consent Boundary
 
@@ -203,6 +180,8 @@ Arousal is not consent.
 Lubrication is not consent.
 Fluid release is not consent.
 Autonomic response is not consent.
+Muscular contraction is not consent.
+Reflexive contraction is not consent.
 Pleasure is not consent.
 Desire is not consent.
 Symbolic meaning is not consent.
@@ -213,28 +192,14 @@ Symbolic meaning is not consent.
 ```text
 Female - Vulvar Lubrication Activation Profile
 Female - Paraurethral Glandular Release Activation Profile
+Female - Pelvic Floor Contraction Activation Profile
 ```
 
-The first profile tests:
+The first profile tests fluid-dependent tissue-state activation and a supported mirror route.
 
-```text
-vulvar primary anchoring
-vaginal fluid involvement
-fluid-property alteration
-supported vulva-to-clitoral-complex mirror engagement
-normalized Composite Activation classification
-```
+The second profile tests glandular release, fluid identity separation, adjacent anatomy, and a Candidate mirror route.
 
-The second profile tests:
-
-```text
-Skene's glands as primary source anatomy
-Paraurethral Glandular Fluid as a distinct fluid entity
-Urine as adjacent but separate fluid
-urethral opening as adjacent territory rather than automatic glandular source
-candidate Skene's-glands-to-urethral-opening mirror engagement
-regional glandular release process
-```
+The third profile tests Motor / Kinetic Activation, tissue-state change, a non-fluid activation route, Candidate mirror engagement, and possible Propagation handoff.
 
 ## Folder Structure
 
@@ -244,7 +209,8 @@ Activation Layer
 └── Activation Profiles
     ├── Activation Profiles Index.md
     ├── Female - Vulvar Lubrication Activation Profile.md
-    └── Female - Paraurethral Glandular Release Activation Profile.md
+    ├── Female - Paraurethral Glandular Release Activation Profile.md
+    └── Female - Pelvic Floor Contraction Activation Profile.md
 ```
 
 ## Relationship Statements
@@ -278,24 +244,25 @@ activation defines process, not anatomy
 activation coordinates fluid involvement, not fluid identity
 activation may engage mirror routes, not define mirror correspondence
 activation may hand off to propagation, not define propagation
-activation may enable sensation, pleasure, desire, or symbolic meaning downstream, not define them
+activation may enable downstream systems, not define them
 activation never implies consent
 adjacent anatomy must not be treated as source anatomy by proximity alone
 visible fluid must not be identified solely by location or surface presence
+non-fluid profiles should remain fluid-independent unless fluid participation is required
 ```
 
 ## Review Questions
 
-1. Is the type/component/scope model sufficient across multiple activation families?
-2. Should Autonomic Activation remain a component of the paraurethral profile or become a modulator?
-3. Are adjacent anatomy and adjacent fluid relationship verbs sufficiently governed?
-4. Does Female - Vestibular Gland Openings require canonical refinement?
-5. Which third activation should test a non-fluid family?
-6. Which activation profiles are required before Propagation or Sensory validation?
-7. Should consent receive separate governance before corpus stress testing resumes?
+1. Does the third profile demonstrate a genuinely general Activation architecture?
+2. Is Motor / Kinetic Activation sufficiently governed?
+3. Should Reflex Activation be a component or modulator in pelvic floor contraction?
+4. Is Regional the correct scope for pelvic floor contraction?
+5. Is a Propagation handoff sufficient without defining spread mechanics?
+6. Are three contrasting profiles enough to validate the Framework and Template?
+7. Which future profile should test Hormonal / Cyclical or Cross-System activation?
 
 ## Status
 
-Draft v0.2.
+Draft v0.3.
 
-This framework reflects the normalized activation classification model and the first two Candidate validation profiles.
+This framework reflects three Candidate validation profiles across fluid-dependent, glandular, and motor/kinetic process families.
