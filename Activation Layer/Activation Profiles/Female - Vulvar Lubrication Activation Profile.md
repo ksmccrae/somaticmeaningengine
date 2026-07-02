@@ -10,9 +10,13 @@ file_class: Ontology Node
 node_type: Activation Profile
 layer: Activation Layer
 status: Draft
-version: 0.1
-activation_type: Tissue-State Activation / Fluid Activation / Mirror-Route Activation
-activation_scope: Regional / Composite
+version: 0.2
+activation_type: Composite Activation
+activation_components:
+  - Tissue-State Activation
+  - Fluid Activation
+  - Mirror-Route Activation
+activation_scope: Regional
 embodiment_scope: Female / Anatomy-Dependent
 primary_anatomical_anchor: Female - Vulva
 validation_status: Candidate
@@ -24,11 +28,7 @@ validation_status: Candidate
 
 This node defines a female/anatomy-dependent activation process in which vulvar-region activation may coordinate local tissue-state change, vaginal-fluid involvement, fluid-property alteration, and availability of the [[Female - Vulva to Female - Clitoral Complex Mirror Profile]].
 
-It defines the activation process only.
-
-It does not define sensation, pleasure, desire, symbolic meaning, authorial language, corpus usage, or consent.
-
----
+It defines the activation process only. It does not define sensation, pleasure, desire, symbolic meaning, authorial language, corpus usage, or consent.
 
 ## Activation Classification
 
@@ -36,17 +36,14 @@ It does not define sensation, pleasure, desire, symbolic meaning, authorial lang
 |---|---|
 | Node Type | Activation Profile |
 | Layer | Activation Layer |
-| Activation Type | Tissue-State Activation / Fluid Activation / Mirror-Route Activation |
-| Activation Scope | Regional / Composite |
+| Activation Type | Composite Activation |
+| Activation Components | Tissue-State Activation; Fluid Activation; Mirror-Route Activation |
+| Activation Scope | Regional |
 | Embodiment Scope | Female / Anatomy-Dependent |
 | Primary Anatomical Anchor | [[Female - Vulva]] |
 | Validation Status | Candidate |
 
----
-
 ## Trigger or Condition
-
-This profile should be triggered only by neutral physiological or embodied-process context.
 
 | Trigger / Condition | Role | Notes |
 |---|---|---|
@@ -54,8 +51,6 @@ This profile should be triggered only by neutral physiological or embodied-proce
 | Local vulvar-region stimulation | May Initiate / Modulate | Neutral activation condition; does not define sensation |
 | Autonomic arousal context | May Modulate | Candidate autonomic contribution; not defined here |
 | Inhibition, stress, medication, hormonal state, fatigue, pain, or dissociation | May Modulate / Inhibit | Candidate modulators only; do not define emotional meaning here |
-
----
 
 ## Participating Canonical Nodes
 
@@ -67,23 +62,17 @@ This profile should be triggered only by neutral physiological or embodied-proce
 | [[Female - Vaginal Canal]] | Fluid-Relationship Participant | Referenced through vaginal fluid relationship and profile |
 | [[Female - Vaginal Opening]] | Output / Surface Transition Site | Possible external transition site for fluid surface presence |
 
----
-
 ## Referenced Mirror Routes
 
 | Mirror Profile | Role | Notes |
 |---|---|---|
-| [[Female - Vulva to Female - Clitoral Complex Mirror Profile]] | May Engage / May Make Available | Supported mirror route; Activation may engage or weight it but does not redefine it |
-
----
+| [[Female - Vulva to Female - Clitoral Complex Mirror Profile]] | May Engage / May Make Available | Supported mirror route; activation may engage or weight it but does not redefine it |
 
 ## Referenced Fluid Entities
 
 | Fluid Entity | Activation Role | Notes |
 |---|---|---|
-| [[Vaginal Fluid]] | May Alter / Expose / Increase Surface Presence | Fluid entity is referenced only; identity remains defined in Fluid Layer |
-
----
+| [[Vaginal Fluid]] | May Alter / Expose / Increase Surface Presence | Fluid identity remains defined in Fluid Layer |
 
 ## Referenced Fluid Profiles
 
@@ -91,8 +80,6 @@ This profile should be triggered only by neutral physiological or embodied-proce
 |---|---|---|
 | [[Female - Vulva Fluid Profile]] | Local Surface / Adjacent Context | Defines local relationship of fluids to vulval surface territory |
 | [[Female - Vaginal Canal Fluid Profile]] | Source / Conduit Context | Defines vaginal canal fluid relationship without being redefined here |
-
----
 
 ## Fluid Property Alterations
 
@@ -103,8 +90,6 @@ This profile should be triggered only by neutral physiological or embodied-proce
 | [[Viscosity]] | May Alter / Contextual | Neutral property shift only, if relevant |
 | [[Surface Presence]] | May Increase / Expose | Local surface presence may become more relevant near vulval or vaginal-opening territory |
 
----
-
 ## Activation Sequence
 
 ```text
@@ -114,10 +99,8 @@ This profile should be triggered only by neutral physiological or embodied-proce
 4. Vaginal Fluid may become more locally relevant through altered Volume, Flow, Viscosity, or Surface Presence.
 5. Female - Vulva Fluid Profile and Female - Vaginal Canal Fluid Profile provide local fluid-relationship context.
 6. Female - Vulva to Female - Clitoral Complex Mirror Profile may become available or weighted as a mirror route.
-7. Sensory, Pleasure, Desire, Symbolic Meaning, Authorial, or Corpus systems may later reference this activation without being defined by it.
+7. Downstream systems may later reference this activation without being defined by it.
 ```
-
----
 
 ## Modulators and Inhibitors
 
@@ -128,8 +111,6 @@ This profile should be triggered only by neutral physiological or embodied-proce
 | Medication or medical condition | May Modulate / Inhibit | Candidate medical-history relationship; not defined here |
 | Stress, fear, fatigue, pain, dissociation, or distraction | May Modulate / Inhibit | May affect activation without defining emotional meaning or consent |
 | Prior injury, surgery, menopause, postpartum state, or transition-related hormonal context | May Modulate | Candidate embodiment/medical context; requires later governance |
-
----
 
 ## Candidate Downstream Links
 
@@ -144,36 +125,11 @@ This profile should be triggered only by neutral physiological or embodied-proce
 | Authorial Term Register | May define language, restraint, or register rules |
 | Corpus Annotation | May record situated activation usage in a work |
 
-These are candidate links only.
-
----
-
 ## Boundary Rules
 
-Do not include:
-
-```text
-canonical anatomical definitions
-fluid entity definitions
-fluid property definitions
-mirror correspondence definitions
-propagation routes beyond local handoff
-sensory perception
-pleasure or discomfort as valence
-desire or motivational orientation
-consent state
-symbolic meaning
-emotional meaning
-authorial terminology
-corpus examples
-narrative effect
-```
-
----
+Do not include canonical anatomical definitions, fluid definitions, mirror definitions, propagation routes, sensory perception, pleasure, desire, consent, symbolic meaning, emotional meaning, authorial terminology, corpus examples, or narrative effect.
 
 ## Consent Boundary
-
-This activation profile must never imply consent.
 
 ```text
 Arousal is not consent.
@@ -185,16 +141,15 @@ Desire is not consent.
 Symbolic meaning is not consent.
 ```
 
-Consent requires separate governance if modelled later.
-
----
-
 ## Relationship Statements
 
 ```text
 Female - Vulvar Lubrication Activation Profile IS_ACTIVATION_PROFILE
-Female - Vulvar Lubrication Activation Profile HAS_ACTIVATION_TYPE Tissue-State Activation / Fluid Activation / Mirror-Route Activation
-Female - Vulvar Lubrication Activation Profile HAS_ACTIVATION_SCOPE Regional / Composite
+Female - Vulvar Lubrication Activation Profile HAS_ACTIVATION_TYPE Composite Activation
+Female - Vulvar Lubrication Activation Profile HAS_ACTIVATION_COMPONENT Tissue-State Activation
+Female - Vulvar Lubrication Activation Profile HAS_ACTIVATION_COMPONENT Fluid Activation
+Female - Vulvar Lubrication Activation Profile HAS_ACTIVATION_COMPONENT Mirror-Route Activation
+Female - Vulvar Lubrication Activation Profile HAS_ACTIVATION_SCOPE Regional
 Female - Vulvar Lubrication Activation Profile ACTIVATES_ANATOMICAL_SITE Female - Vulva
 Female - Vulvar Lubrication Activation Profile INVOLVES_ANATOMICAL_NODE Female - Vestibule
 Female - Vulvar Lubrication Activation Profile INVOLVES_ANATOMICAL_NODE Female - Vaginal Canal
@@ -216,23 +171,16 @@ Female - Vulvar Lubrication Activation Profile MAY_BE_USED_BY Authorial Term Reg
 Female - Vulvar Lubrication Activation Profile MAY_BE_ANNOTATED_IN Corpus Annotation
 ```
 
----
-
 ## Review Questions
 
-1. Is the name sufficiently precise, or should this be called Female - Genital Lubrication Activation Profile?
-2. Does this profile correctly anchor at Female - Vulva while referencing vaginal fluid and vaginal canal without collapsing them?
-3. Does mirror-route engagement remain a routing relationship rather than a sensory or activation-intensity claim?
-4. Are fluid properties altered neutrally rather than interpreted sensorially?
-5. Should this activation require a Propagation Layer handoff later?
-6. Are modulators and inhibitors too broad for a first validation node?
-7. Does the consent boundary remain explicit enough?
-8. Which downstream Sensory Profile should be built first to test this activation?
-
----
+1. Does this profile correctly anchor at Female - Vulva while referencing vaginal fluid and vaginal canal without collapsing them?
+2. Does mirror-route engagement remain routing rather than sensation or intensity?
+3. Are fluid properties altered neutrally rather than interpreted sensorially?
+4. Should this activation require a Propagation Layer handoff later?
+5. Which downstream Sensory Profile should be built first?
 
 ## Status
 
-Draft v0.1.
+Draft v0.2.
 
-Candidate validation profile for the initial Activation Layer construction pass.
+Candidate validation profile using the normalized activation classification model.
