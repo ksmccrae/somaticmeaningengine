@@ -10,7 +10,7 @@ file_class: Ontology Node
 node_type: Activation Profile
 layer: Activation Layer
 status: Draft
-version: 0.1
+version: 0.2
 activation_type: Composite Activation
 activation_components:
   - Hormonal / Cyclical Activation
@@ -26,7 +26,9 @@ validation_status: Candidate
 
 ## Purpose
 
-This node defines menstruation as a recurring, hormonally influenced activation process involving uterine tissue-state change, [[Menstrual Fluid]] formation or release, and passage through nearby reproductive anatomy.
+This node defines menstruation as one recurring active phase involving uterine tissue-state change, [[Menstrual Fluid]] formation or release, and passage through nearby reproductive anatomy.
+
+It does not define regulation of the entire menstrual cycle. That broader timing, recurrence, suppression, delay, and phase-progression function belongs to [[Female - Menstrual Cycle Regulation Activation Profile]].
 
 It defines activation and temporal sequence only. It does not define Hormone Entities, endocrine mechanisms, anatomy, fluid identity, sensation, emotional meaning, symbolism, authorial language, corpus usage, or consent.
 
@@ -47,20 +49,22 @@ It defines activation and temporal sequence only. It does not define Hormone Ent
 
 | Trigger / Condition | Role | Notes |
 |---|---|---|
-| Menstrual-cycle phase context | May Initiate / Contextualize | Cyclical context only |
+| Menstrual-cycle phase context | Contextualizes | Broader cycle regulation remains outside this profile |
 | Hormonal or cyclical transition | May Initiate / Modulate | Neutral influence; no Hormone Entity is defined |
-| Uterine tissue-state transition | May Initiate / Coordinate | Local physiological state change |
+| Uterine tissue-state transition | May Initiate / Coordinate | Organ-level process without detailed endometrial claims |
 | Pregnancy, postpartum state, menopause, medication, surgery, illness, stress, nutrition, or endocrine condition | May Modulate / Inhibit | Context only; no diagnosis is defined |
 
 ## Participating Canonical Nodes
 
 | Anatomical Node | Role In Activation | Notes |
 |---|---|---|
-| [[Female - Uterus]] | Primary Anchor / Origin Site | Primary tissue-state and fluid-origin context |
-| [[Female - Cervix]] | Transitional Participant | Conducts between uterus and vaginal canal |
-| [[Female - Vaginal Canal]] | Conduit / Receiving Participant | Conducts Menstrual Fluid toward output territory |
-| [[Female - Vaginal Opening]] | Output / Transition Participant | External output boundary |
-| [[Female - Vulva]] | Surface Context | External surface presence only; not source |
+| [[Female - Uterus]] | Primary Active Anchor / Origin Site | Primary tissue-state and fluid-origin context |
+| [[Female - Cervix]] | Direct Transitional Participant | Conducts between uterus and vaginal canal |
+| [[Female - Vaginal Canal]] | Direct Conduit / Receiving Participant | Receives and conducts Menstrual Fluid |
+| [[Female - Vaginal Opening]] | Output / Boundary Context | Output territory; not counted as a direct participant |
+| [[Female - Vulva]] | Adjacent Surface Context | External surface presence only; not source |
+
+Regional scope is established by direct participation of Female - Uterus, Female - Cervix, and Female - Vaginal Canal.
 
 ## Referenced Mirror Routes
 
@@ -79,7 +83,7 @@ No Mirror Profile is required for the core menstruation process.
 | [[Female - Vaginal Canal Fluid Profile]] | Conduit / Receiving Context | Existing local fluid relationship |
 | [[Female - Vulva Fluid Profile]] | Surface / Adjacent Context | External presence only; not source |
 
-No uterus-specific or cervix-specific Fluid Profile is silently assumed. Those may be created later if independently useful.
+No uterus-specific or cervix-specific Fluid Profile is silently assumed. Those remain non-blocking future candidates.
 
 ## Fluid Property Alterations
 
@@ -96,23 +100,23 @@ No uterus-specific or cervix-specific Fluid Profile is silently assumed. Those m
 ## Temporal or Phase Sequence
 
 ```text
-1. Menstrual-cycle context enters a phase in which menstruation may occur.
-2. A hormonally influenced transition becomes relevant without defining specific hormone mechanisms.
+1. A broader menstrual-cycle context reaches a phase in which menstruation may occur.
+2. A hormonally influenced transition becomes relevant without defining endocrine mechanisms.
 3. Uterine tissue state changes and Menstrual Fluid may form or become releasable.
-4. Fluid release begins, continues, varies, or ceases over time.
-5. The active phase completes.
-6. Recurrence remains possible within a later cycle.
+4. Fluid release begins, continues, varies, and ceases over time.
+5. The active menstrual phase completes.
+6. Later recurrence is governed by the broader cycle-regulation process rather than by this profile alone.
 ```
 
 ## Activation Sequence
 
 ```text
 1. Female - Uterus enters activation context as primary anchor.
-2. Uterine tissue-state change supports Menstrual Fluid formation or release.
+2. Organ-level uterine tissue-state change supports Menstrual Fluid formation or release.
 3. Female - Cervix directly participates as transitional anatomy.
-4. Female - Vaginal Canal receives and conducts Menstrual Fluid.
-5. Female - Vaginal Opening functions as output boundary.
-6. Female - Vulva may provide external surface context without becoming the source.
+4. Female - Vaginal Canal directly participates as receiving and conducting anatomy.
+5. Female - Vaginal Opening functions as output boundary context.
+6. Female - Vulva may provide adjacent external surface context without becoming the source.
 7. Existing Fluid Profiles provide canal and surface relationship context.
 8. Downstream systems may later reference the activation.
 ```
@@ -121,7 +125,7 @@ No uterus-specific or cervix-specific Fluid Profile is silently assumed. Those m
 
 | Factor | Role | Notes |
 |---|---|---|
-| Cycle regularity | May Modulate | Temporal context only |
+| Cycle regularity | May Contextualize | Broader regulatory process only |
 | Hormonal or endocrine context | May Modulate / Inhibit | No detailed endocrine mechanism defined |
 | Pregnancy, postpartum state, or menopause | May Inhibit / Alter / Contextualize | Anatomy-dependent context |
 | Medication, surgery, illness, nutrition, fatigue, or stress | May Modulate / Inhibit | Context only |
@@ -147,8 +151,10 @@ No uterus-specific or cervix-specific Fluid Profile is silently assumed. Those m
 Do not define:
 
 ```text
+regulation of the entire menstrual cycle
 specific hormone entities or levels
 endocrine pathways or receptor mechanisms
+detailed endometrial mechanics without an Endometrium node
 canonical anatomy
 Menstrual Fluid identity
 sensory perception
@@ -186,7 +192,7 @@ Female - Menstruation Activation Profile HAS_ACTIVATION_SCOPE Regional
 Female - Menstruation Activation Profile ACTIVATES_ANATOMICAL_SITE Female - Uterus
 Female - Menstruation Activation Profile INVOLVES_ANATOMICAL_NODE Female - Cervix
 Female - Menstruation Activation Profile INVOLVES_ANATOMICAL_NODE Female - Vaginal Canal
-Female - Menstruation Activation Profile INVOLVES_ANATOMICAL_NODE Female - Vaginal Opening
+Female - Menstruation Activation Profile REFERENCES_ADJACENT_ANATOMICAL_SITE Female - Vaginal Opening
 Female - Menstruation Activation Profile REFERENCES_ADJACENT_ANATOMICAL_SITE Female - Vulva
 Female - Menstruation Activation Profile INVOLVES_FLUID_ENTITY Menstrual Fluid
 Female - Menstruation Activation Profile REFERENCES_FLUID_PROFILE Female - Vaginal Canal Fluid Profile
@@ -207,16 +213,15 @@ Female - Menstruation Activation Profile MAY_BE_ANNOTATED_IN Corpus Annotation
 
 ## Review Questions
 
-1. Is Regional scope correct for uterus, cervix, vaginal canal, and vaginal opening as direct participants?
-2. Does the profile distinguish cyclical context from unmodelled endocrine mechanisms?
-3. Should uterine tissue shedding remain within Tissue-State Activation without an endometrium node?
-4. Are cervix and vaginal opening direct participants or transition/output context only?
+1. Does Regional scope remain correct with Uterus, Cervix, and Vaginal Canal as direct participants?
+2. Does the profile remain an active menstrual phase rather than whole-cycle regulation?
+3. Is organ-level uterine Tissue-State Activation sufficient until an Endometrium node exists?
+4. Are Vaginal Opening and Vulva correctly represented as output or adjacent context?
 5. Are missing uterus and cervix Fluid Profiles non-blocking?
-6. Does the sequence separate Activation from future Propagation?
-7. Should a later Cycle Regulation Activation Profile be distinct from Menstruation?
+6. Does the profile remain coherent without Propagation?
 
 ## Status
 
-Draft v0.1.
+Draft v0.2.
 
-Candidate Hormonal / Cyclical validation profile.
+Candidate active-phase Hormonal / Cyclical profile with cycle-regulation responsibilities explicitly separated.
