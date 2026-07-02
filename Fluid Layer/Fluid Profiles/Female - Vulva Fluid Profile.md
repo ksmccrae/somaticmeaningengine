@@ -11,7 +11,7 @@ node_type: Fluid Profile
 layer: Fluid Layer
 embodiment_scope: Female
 status: Draft
-version: 0.3
+version: 0.4
 anatomical_anchor: Female - Vulva
 canonical_layer_reference: Canonical Embodiment
 fluid_relevance: Adjacent / Surface Presence
@@ -76,10 +76,12 @@ This profile may record only local surface-presence patterns, such as trace, sur
 
 | Activation Profile | Fluid Entity | Role |
 |---|---|---|
-| Menstruation Activation Profile | [[Menstrual Fluid]] | Releases / Moves / Exposes |
+| [[Female - Menstruation Activation Profile]] | [[Menstrual Fluid]] | Releases / Moves / Exposes |
 | Urination Activation Profile | [[Urine]] | Releases / Moves / Exposes |
-| Vaginal Lubrication Activation Profile | [[Vaginal Fluid]] | Produces / Alters / Exposes |
-| Paraurethral Glandular Activation Profile | [[Paraurethral Glandular Fluid]] | Produces / Releases / Exposes |
+| [[Female - Vulvar Lubrication Activation Profile]] | [[Vaginal Fluid]] | Produces / Alters / Exposes |
+| [[Female - Paraurethral Glandular Release Activation Profile]] | [[Paraurethral Glandular Fluid]] | Produces / Releases / Exposes |
+
+Existing Activation Profiles are wikilinked by canonical node name. Candidate profiles that do not yet exist remain plain text.
 
 ---
 
@@ -102,6 +104,9 @@ Female - Vulva Fluid Profile REFERENCES_FLUID_ENTITY Paraurethral Glandular Flui
 Female - Vulva Fluid Profile REFERENCES_FLUID_OUTPUT_SITE Female - Vaginal Opening
 Female - Vulva Fluid Profile REFERENCES_FLUID_OUTPUT_SITE Female - Urethral Opening
 Female - Vulva Fluid Profile REFERENCES_FLUID_SOURCE Female - Skene's Glands
+Female - Vulva Fluid Profile REFERENCES_ACTIVATION_PROFILE Female - Vulvar Lubrication Activation Profile
+Female - Vulva Fluid Profile REFERENCES_ACTIVATION_PROFILE Female - Menstruation Activation Profile
+Female - Vulva Fluid Profile REFERENCES_ACTIVATION_PROFILE Female - Paraurethral Glandular Release Activation Profile
 ```
 
 ---
@@ -116,4 +121,6 @@ Female - Vulva Fluid Profile REFERENCES_FLUID_SOURCE Female - Skene's Glands
 
 ## Status
 
-Draft v0.3.
+Draft v0.4.
+
+Canonical Activation hook names synchronized with the Activation Layer.
