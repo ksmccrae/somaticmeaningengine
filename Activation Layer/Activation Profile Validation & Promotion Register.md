@@ -9,7 +9,7 @@ file_class: Document
 document_type: Governance Register
 layer: Activation Layer
 status: Draft
-version: 0.3
+version: 0.4
 last_updated: 2026-07-02
 ---
 
@@ -97,37 +97,49 @@ Missing downstream Sensory, Authorial, Corpus, candidate Propagation, or optiona
 | Field | Assessment |
 |---|---|
 | Mechanical Result | Pass |
-| Governance Result | Warning |
+| Governance Result | Pass |
 | Blocking Defect | None |
-| Non-Blocking Open Questions | Endometrium decomposition; optional uterus/cervix Fluid Profiles; candidate Propagation handoff |
-| Promotion Recommendation | Remain Candidate pending Hormonal / Cyclical replicability audit |
-| Decision Applied | Draft v0.2; Vaginal Opening moved to output/boundary context; cycle regulation separated |
+| Non-Blocking Open Questions | Endometrium refinement; optional uterus/cervix Fluid Profiles; candidate Propagation handoff; future formal Activation-to-Activation relationship |
+| Promotion Recommendation | Promote to Supported |
+| Decision Applied | Supported / Draft v0.3 |
 | Review Date | 2026-07-02 |
+
+Evidence:
+
+```text
+focused promotion audit passed all required criteria
+Regional scope supported by Uterus, Cervix, and Vaginal Canal participation
+active-phase ownership separated from cycle regulation
+Menstrual Fluid identity and property boundaries preserved
+Vaginal Opening and Vulva remain contextual rather than active source anatomy
+continued Candidate status of Cycle Regulation is non-blocking
+consent boundary explicit
+```
 
 ### Female - Menstrual Cycle Regulation Activation Profile
 
 | Field | Assessment |
 |---|---|
-| Mechanical Result | Pending audit |
-| Governance Result | Pending audit |
+| Mechanical Result | Pending focused audit |
+| Governance Result | Warning |
 | Blocking Defect | Not yet determined |
 | Non-Blocking Open Questions | System-level primary anchor; Ovaries/Uterus participation; Tissue-State component; future Activation-to-Activation relationship |
 | Promotion Recommendation | Remain Candidate |
 | Review Date | 2026-07-02 |
 
-## Hormonal / Cyclical Validation Requirement
-
-The two profiles must be audited together to confirm that:
+## Hormonal / Cyclical Validation State
 
 ```text
 cycle regulation owns timing, recurrence, suppression, delay, and phase progression
 menstruation owns one active phase and its tissue/fluid process
-neither profile silently defines missing endocrine mechanisms
+neither profile defines missing endocrine mechanisms
 shared context does not create circular dependency
 ```
 
+Menstruation is Supported independently of the Candidate status of the broader Cycle Regulation profile.
+
 ## Status
 
-Draft v0.3.
+Draft v0.4.
 
-This register has governed one completed promotion and now records the first paired Hormonal / Cyclical validation test.
+This register has now governed two completed Candidate-to-Supported promotions, including the first Hormonal / Cyclical active-phase profile.
