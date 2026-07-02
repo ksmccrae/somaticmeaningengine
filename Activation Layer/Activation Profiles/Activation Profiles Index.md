@@ -9,7 +9,7 @@ file_class: Document
 document_type: Index
 layer: Activation Layer
 status: Draft
-version: 0.6
+version: 0.7
 last_updated: 2026-07-02
 ---
 
@@ -17,9 +17,9 @@ last_updated: 2026-07-02
 
 ## Governing Documents
 
-- [[Activation Layer Framework]] — Validated v0.5
-- [[Activation Profile Template]] — Validated v0.5
-- [[Activation Profile Validation & Promotion Register]] — Draft v0.2
+- [[Activation Layer Framework]] — Validated v0.6
+- [[Activation Profile Template]] — Validated v0.6
+- [[Activation Profile Validation & Promotion Register]] — Draft v0.3
 
 ## Current Profiles
 
@@ -28,7 +28,20 @@ last_updated: 2026-07-02
 | [[Female - Vulvar Lubrication Activation Profile]] | [[Female - Vulva]] | Tissue-State; Fluid; Mirror-Route | Regional | [[Vaginal Fluid]] | [[Female - Vulva to Female - Clitoral Complex Mirror Profile]] | Supported | Draft v0.3 |
 | [[Female - Paraurethral Glandular Release Activation Profile]] | [[Female - Skene's Glands]] | Fluid; Mirror-Route; Autonomic | Regional | [[Paraurethral Glandular Fluid]] | [[Female - Skene's Glands to Female - Urethral Opening Mirror Profile]] | Candidate | Draft v0.1 |
 | [[Female - Pelvic Floor Contraction Activation Profile]] | [[Female - Pelvic Floor]] | Motor / Kinetic; Tissue-State; Mirror-Route | Local | None required | [[Female - Perineum to Female - Pelvic Floor Mirror Profile]] | Candidate | Draft v0.2 |
-| [[Female - Menstruation Activation Profile]] | [[Female - Uterus]] | Hormonal / Cyclical; Tissue-State; Fluid | Regional | [[Menstrual Fluid]] | None required | Candidate | Draft v0.1 |
+| [[Female - Menstruation Activation Profile]] | [[Female - Uterus]] | Hormonal / Cyclical; Tissue-State; Fluid | Regional | [[Menstrual Fluid]] | None required | Candidate | Draft v0.2 |
+| [[Female - Menstrual Cycle Regulation Activation Profile]] | [[Female - Internal Reproductive System]] | Hormonal / Cyclical; Tissue-State | Regional | None required | None required | Candidate | Draft v0.1 |
+
+## Hormonal / Cyclical Separation
+
+```text
+Female - Menstrual Cycle Regulation Activation Profile
+= cycle timing, recurrence, progression, delay, suppression, and transition
+
+Female - Menstruation Activation Profile
+= active menstrual phase with uterine tissue-state change and Menstrual Fluid release
+```
+
+No formal Activation-to-Activation relationship verb is yet governed.
 
 ## Validation Coverage
 
@@ -36,18 +49,10 @@ last_updated: 2026-07-02
 Supported fluid and tissue-state profile
 Candidate glandular and Autonomic profile
 Candidate fluid-independent Motor / Kinetic profile
-Candidate Hormonal / Cyclical and temporal profile
+Candidate active-phase Hormonal / Cyclical profile
+Candidate cycle-regulation Hormonal / Cyclical profile
 Local and Regional scope
-Supported and Candidate mirror routes
-profiles with and without mirror dependency
-```
-
-## Scope Rule
-
-```text
-Local = one active anatomical anchor
-Regional = two or more nearby direct participants
-Cross-System = distinct systems or separated regions
+profiles with and without Fluid or Mirror dependencies
 ```
 
 ## Current Promotion State
@@ -57,7 +62,8 @@ Cross-System = distinct systems or separated regions
 | Female - Vulvar Lubrication | Supported after focused promotion audit |
 | Female - Paraurethral Glandular Release | Candidate; anatomical and Autonomic governance unresolved |
 | Female - Pelvic Floor Contraction | Candidate; Motor / Kinetic and Reflex governance unresolved |
-| Female - Menstruation | Candidate; first Hormonal / Cyclical audit pending |
+| Female - Menstruation | Candidate; first audit passed architecture but identified non-blocking refinements |
+| Female - Menstrual Cycle Regulation | Candidate; joint Hormonal / Cyclical audit pending |
 
 ## Candidate Future Profiles
 
@@ -68,12 +74,14 @@ Cross-System = distinct systems or separated regions
 | Letdown | Requires mammary and lactation governance |
 | Crying | Requires lacrimal anatomy expansion |
 | Sweating | Requires skin and surface expansion |
-| Cycle Regulation | Deferred until Menstruation profile clarifies separation of cycle context from active phase |
+| Ovulatory Phase | Deferred until cycle-regulation architecture is audited |
+| Follicular Phase | Deferred until cycle-regulation architecture is audited |
+| Luteal Phase | Deferred until cycle-regulation architecture is audited |
 
 ## Next Action
 
-Run a compact audit of [[Female - Menstruation Activation Profile]] against Hormonal / Cyclical, temporal, anatomy, fluid, and scope governance.
+Audit [[Female - Menstruation Activation Profile]] and [[Female - Menstrual Cycle Regulation Activation Profile]] together for Hormonal / Cyclical replicability, scope, anatomy, temporal ownership, and endocrine boundaries.
 
 ## Status
 
-Draft v0.6.
+Draft v0.7.
