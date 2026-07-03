@@ -9,8 +9,8 @@ file_class: Document
 document_type: Governance Register
 layer: Activation Layer
 status: Draft
-version: 0.4
-last_updated: 2026-07-02
+version: 0.5
+last_updated: 2026-07-03
 ---
 
 # Activation Profile Validation & Promotion Register
@@ -76,11 +76,27 @@ Missing downstream Sensory, Authorial, Corpus, candidate Propagation, or optiona
 
 | Field | Assessment |
 |---|---|
-| Mechanical Result | Pass |
-| Governance Result | Warning |
-| Blocking Defect | Female - Vestibular Gland Openings remains under review; Autonomic Activation remains provisional |
-| Promotion Recommendation | Remain Candidate |
-| Review Date | 2026-07-02 |
+| Mechanical Result | Pass after revision |
+| Governance Result | Pass |
+| Blocking Defect | None after component, property, and adjacency corrections |
+| Non-Blocking Open Questions | Future Female - Paraurethral Duct Openings anatomy; stronger autonomic governance; optional Propagation handoff; future Sensory and Corpus links |
+| Promotion Recommendation | Promote to Supported |
+| Decision Applied | Supported / Draft v0.2 |
+| Review Date | 2026-07-03 |
+
+Evidence:
+
+```text
+focused promotion audit identified Mirror-Route Activation as an invalid physiological component
+Mirror traversal retained only through MAY_ENGAGE_MIRROR_ROUTE
+Autonomic Activation removed as a component and retained as contextual modulation
+Viscosity removed from MAY_ALTER_FLUID_PROPERTY
+Female - Vestibular Gland Openings downgraded from direct conduit participation to adjacent anatomical context
+Female - Skene's Glands retained as the primary active anchor and source
+Paraurethral Glandular Fluid and Urine remain distinct
+Regional scope remains supported by the glandular source, vestibular transition, and nearby output context
+consent boundary remains explicit
+```
 
 ### Female - Pelvic Floor Contraction Activation Profile
 
@@ -120,12 +136,12 @@ consent boundary explicit
 
 | Field | Assessment |
 |---|---|
-| Mechanical Result | Pending focused audit |
+| Mechanical Result | Focused audit complete; revision pending |
 | Governance Result | Warning |
-| Blocking Defect | Not yet determined |
-| Non-Blocking Open Questions | System-level primary anchor; Ovaries/Uterus participation; Tissue-State component; future Activation-to-Activation relationship |
-| Promotion Recommendation | Remain Candidate |
-| Review Date | 2026-07-02 |
+| Blocking Defect | Current ACTIVATES_ANATOMICAL_SITE assertion incorrectly treats Female - Internal Reproductive System as a primary changing site |
+| Non-Blocking Open Questions | Whether regulation profiles may use a regional coordination scope without a primary active anatomical site; Ovaries/Uterus participation; future Activation-to-Activation relationship |
+| Promotion Recommendation | Promote after minor revision; do not substitute Female - Uterus as the active anchor |
+| Review Date | 2026-07-03 |
 
 ## Hormonal / Cyclical Validation State
 
@@ -140,6 +156,6 @@ Menstruation is Supported independently of the Candidate status of the broader C
 
 ## Status
 
-Draft v0.4.
+Draft v0.5.
 
-This register has now governed two completed Candidate-to-Supported promotions, including the first Hormonal / Cyclical active-phase profile.
+This register has now governed three completed Candidate-to-Supported promotions, including the first Hormonal / Cyclical active-phase profile and the first glandular Fluid Activation profile.
