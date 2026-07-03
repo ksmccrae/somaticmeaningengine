@@ -9,8 +9,8 @@ file_class: Document
 document_type: Index
 layer: Activation Layer
 status: Draft
-version: 0.8
-last_updated: 2026-07-02
+version: 0.9
+last_updated: 2026-07-03
 ---
 
 # Activation Profiles Index
@@ -19,14 +19,14 @@ last_updated: 2026-07-02
 
 - [[Activation Layer Framework]] — Validated v0.6
 - [[Activation Profile Template]] — Validated v0.6
-- [[Activation Profile Validation & Promotion Register]] — Draft v0.4
+- [[Activation Profile Validation & Promotion Register]] — Draft v0.5
 
 ## Current Profiles
 
 | Activation Profile | Primary Anchor | Components | Scope | Fluid | Mirror | Validation | Document |
 |---|---|---|---|---|---|---|---|
 | [[Female - Vulvar Lubrication Activation Profile]] | [[Female - Vulva]] | Tissue-State; Fluid; Mirror-Route | Regional | [[Vaginal Fluid]] | [[Female - Vulva to Female - Clitoral Complex Mirror Profile]] | Supported | Draft v0.3 |
-| [[Female - Paraurethral Glandular Release Activation Profile]] | [[Female - Skene's Glands]] | Fluid; Mirror-Route; Autonomic | Regional | [[Paraurethral Glandular Fluid]] | [[Female - Skene's Glands to Female - Urethral Opening Mirror Profile]] | Candidate | Draft v0.1 |
+| [[Female - Paraurethral Glandular Release Activation Profile]] | [[Female - Skene's Glands]] | Fluid | Regional | [[Paraurethral Glandular Fluid]] | [[Female - Skene's Glands to Female - Urethral Opening Mirror Profile]] referenced only | Supported | Draft v0.2 |
 | [[Female - Pelvic Floor Contraction Activation Profile]] | [[Female - Pelvic Floor]] | Motor / Kinetic; Tissue-State; Mirror-Route | Local | None required | [[Female - Perineum to Female - Pelvic Floor Mirror Profile]] | Candidate | Draft v0.2 |
 | [[Female - Menstruation Activation Profile]] | [[Female - Uterus]] | Hormonal / Cyclical; Tissue-State; Fluid | Regional | [[Menstrual Fluid]] | None required | Supported | Draft v0.3 |
 | [[Female - Menstrual Cycle Regulation Activation Profile]] | [[Female - Internal Reproductive System]] | Hormonal / Cyclical; Tissue-State | Regional | None required | None required | Candidate | Draft v0.1 |
@@ -48,7 +48,7 @@ No formal Activation-to-Activation relationship verb is yet governed.
 ```text
 Supported fluid and tissue-state profile
 Supported active-phase Hormonal / Cyclical profile
-Candidate glandular and Autonomic profile
+Supported glandular Fluid Activation profile
 Candidate fluid-independent Motor / Kinetic profile
 Candidate cycle-regulation Hormonal / Cyclical profile
 Local and Regional scope
@@ -60,7 +60,7 @@ profiles with and without Fluid or Mirror dependencies
 | Profile | Result |
 |---|---|
 | Female - Vulvar Lubrication | Supported after focused promotion audit |
-| Female - Paraurethral Glandular Release | Candidate; anatomical and Autonomic governance unresolved |
+| Female - Paraurethral Glandular Release | Supported after focused promotion audit; Mirror traversal removed as a component, autonomic influence retained as modulator, viscosity alteration removed, and vestibular gland openings downgraded to adjacent context |
 | Female - Pelvic Floor Contraction | Candidate; Motor / Kinetic and Reflex governance unresolved |
 | Female - Menstruation | Supported after focused promotion audit |
 | Female - Menstrual Cycle Regulation | Candidate; system-level anchor and regulatory classification remain under review |
@@ -77,11 +77,12 @@ profiles with and without Fluid or Mirror dependencies
 | Ovulatory Phase | Deferred until cycle-regulation architecture is audited |
 | Follicular Phase | Deferred until cycle-regulation architecture is audited |
 | Luteal Phase | Deferred until cycle-regulation architecture is audited |
+| Female - Paraurethral Duct Openings | Candidate canonical anatomy refinement for paraurethral output routing |
 
 ## Next Action
 
-Audit [[Female - Menstrual Cycle Regulation Activation Profile]] for system-level primary-anchor validity, regulatory Tissue-State ownership, anatomical participation, and future Activation-to-Activation traversal.
+Resolve [[Female - Menstrual Cycle Regulation Activation Profile]] after the completed focused audit, including whether regulation profiles may use a regional coordination scope without asserting a primary active anatomical site.
 
 ## Status
 
-Draft v0.8.
+Draft v0.9.
