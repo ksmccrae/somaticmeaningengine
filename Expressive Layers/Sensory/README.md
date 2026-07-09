@@ -10,7 +10,7 @@ title: Sensory
 layer: Expressive Layers
 expressive_sub_layer: Sensory
 status: Draft
-version: 0.2
+version: 0.3
 last_updated: 2026-07-03
 ---
 
@@ -70,11 +70,14 @@ authorial language
 corpus truth
 ```
 
-## Sensation, Pleasure, and Desire
+## Sensation, Valence, Pleasure, and Desire
 
 ```text
 Sensation
 = what is perceived
+
+Sensory Valence
+= how perception is appraised, received, tolerated, resisted, wanted, unwanted, relieving, distressing, neutral, mixed, or ambiguous
 
 Pleasure
 = positive, wanted, relieving, satisfying, or intensifying valence applied to perception
@@ -83,17 +86,22 @@ Desire
 = motivational or affective orientation toward contact, continuation, intimacy, object, person, idea, or experience
 ```
 
-A Sensory Profile may provide input to [[Pleasure Register]] or [[Desire Register]], but it must not define either one.
+A Sensory Profile may provide input to [[Sensory Valence Register]], [[Pleasure Register]], or [[Desire Register]], but it must not define any of them.
 
 ## Current Registers
 
+- [[Sensory Valence Register]] — Draft v0.1
 - [[Pleasure Register]] — Draft v0.1
+
+## Current Profile Indexes
+
+- [[Sensory Profiles Index]] — Draft v0.1
 
 ## Planned Profiles
 
 | Planned Profile | Source | Purpose |
 |---|---|---|
-| Female - Pelvic Floor Sensory Profile | [[Female - Pelvic Floor Contraction Activation Profile]] | First fluid-independent Local sensory pilot |
+| [[Female - Pelvic Floor Sensory Profile]] | [[Female - Pelvic Floor Contraction Activation Profile]] | First fluid-independent Local sensory pilot |
 | Female - Vulva Sensory Profile | [[Female - Vulvar Lubrication Activation Profile]] | Future tissue/fluid sensory pilot |
 | Paraurethral Glandular Fluid Sensory Profile | [[Female - Paraurethral Glandular Release Activation Profile]] | Future fluid-boundary sensory pilot |
 | Menstrual Fluid Sensory Profile | [[Female - Menstruation Activation Profile]] | Future cyclical/fluid sensory pilot |
@@ -107,7 +115,7 @@ Sensory Profile MAY_REFERENCE_FLUID_ENTITY Fluid Entity
 Sensory Profile MAY_REFERENCE_FLUID_PROFILE Fluid Profile
 Sensory Profile MAY_REFERENCE_MIRROR_ROUTE Mirror Profile
 Sensory Profile MAY_DEFINE_SENSORY_QUALITY Sensory Quality
-Sensory Profile MAY_HAVE_VALENCE Pleasure Register / Discomfort Register / Neutral Valence
+Sensory Profile MAY_HAVE_VALENCE Sensory Valence Register / Pleasure Register / Discomfort / Neutral Valence
 Sensory Profile MAY_CONTEXTUALIZE Desire Register
 Sensory Profile MAY_BE_INTERPRETED_BY Symbolic Meaning Register
 Sensory Profile MAY_BE_USED_BY Authorial Term Register
@@ -118,6 +126,6 @@ Relationship names remain draft until repeated Sensory Profile use validates the
 
 ## Status
 
-Draft v0.2.
+Draft v0.3.
 
-Expanded from placeholder folder index into governed Sensory sublayer index.
+Expanded to include broad Sensory Valence governance alongside Pleasure Register.
