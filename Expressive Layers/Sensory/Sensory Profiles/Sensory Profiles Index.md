@@ -11,7 +11,7 @@ document_type: Index
 layer: Expressive Layers
 expressive_sub_layer: Sensory
 status: Draft
-version: 0.1
+version: 0.2
 last_updated: 2026-07-03
 ---
 
@@ -25,14 +25,15 @@ Sensory Profiles define perceived qualities. They do not define activation mecha
 
 - [[Expressive Layer Framework]] — Draft v0.1
 - [[Sensory Profile Template]] — Draft v0.1
-- [[Sensory]] — Draft v0.2
+- [[Sensory]] — Draft v0.3
+- [[Sensory Valence Register]] — Draft v0.1
 - [[Pleasure Register]] — Draft v0.1
 
 ## Current Profiles
 
-| Sensory Profile | Primary Sensory Anchor | Source Context | Sensory Scope | Fluid Required | Mirror Context | Validation | Document |
-|---|---|---|---|---|---|---|---|
-| [[Female - Pelvic Floor Sensory Profile]] | [[Female - Pelvic Floor]] | [[Female - Pelvic Floor Contraction Activation Profile]] | Local | None required | [[Female - Perineum to Female - Pelvic Floor Mirror Profile]] referenced only | Candidate | Draft v0.1 |
+| Sensory Profile | Primary Sensory Anchor | Source Context | Sensory Scope | Fluid Required | Mirror Context | Valence Routing | Validation | Document |
+|---|---|---|---|---|---|---|---|---|
+| [[Female - Pelvic Floor Sensory Profile]] | [[Female - Pelvic Floor]] | [[Female - Pelvic Floor Contraction Activation Profile]] | Local | None required | [[Female - Perineum to Female - Pelvic Floor Mirror Profile]] referenced only | [[Sensory Valence Register]] / [[Pleasure Register]] downstream only | Candidate | Draft v0.1 |
 
 ## Current Validation Coverage
 
@@ -40,6 +41,7 @@ Sensory Profiles define perceived qualities. They do not define activation mecha
 first fluid-independent Local Sensory Profile pilot
 upstream source is a Supported Motor / Kinetic Activation Profile
 candidate sensory-quality terms remain plain text values, not standalone nodes
+Sensory Valence Register now provides broader valence routing
 Pleasure, Desire, Symbolic Meaning, Authorial, and Corpus systems remain downstream
 Mirror traversal remains contextual only, not sensory mechanism
 ```
@@ -61,12 +63,20 @@ They are not standalone ontology nodes unless promoted later.
 
 Do not wikilink sensory-quality values unless a governed Sensory Quality node exists.
 
+## Valence Governance Note
+
+Sensory valence categories such as pleasure, discomfort, neutral valence, ambivalent valence, unwanted sensation, relief, and intensity-without-valence are currently treated as controlled candidate values or governed register entries.
+
+They are not standalone ontology nodes unless promoted later.
+
+Do not infer consent from any valence category.
+
 ## Next Action
 
 Light internal consistency pass on [[Female - Pelvic Floor Sensory Profile]], especially candidate sensory-quality values, mirror context, and downstream valence routing.
 
 ## Status
 
-Draft v0.1.
+Draft v0.2.
 
-Initial index for Sensory Profiles.
+Updated to route sensory profiles through the broad Sensory Valence Register as well as the more specific Pleasure Register.
