@@ -11,7 +11,7 @@ node_type: Sensory Profile
 layer: Expressive Layers
 expressive_sub_layer: Sensory
 status: Draft
-version: 0.1
+version: 0.2
 sensory_scope: Local
 primary_sensory_anchor: Female - Pelvic Floor
 validation_status: Candidate
@@ -23,7 +23,7 @@ validation_status: Candidate
 
 This node defines perceived sensory qualities associated with [[Female - Pelvic Floor]] in contexts where [[Female - Pelvic Floor Contraction Activation Profile]] may enable or contextualize local muscular contraction, shortening, tension, support, or release.
 
-It defines sensory perception only. It does not define pelvic-floor anatomy, activation mechanics, reflex mechanics, mirror correspondence, pleasure, desire, symbolic meaning, authorial language, corpus usage, or consent.
+It defines sensory perception only. It does not define pelvic-floor anatomy, activation mechanics, reflex mechanics, mirror correspondence, sensory valence, pleasure, desire, symbolic meaning, authorial language, corpus usage, or consent.
 
 ## Sensory Classification
 
@@ -87,6 +87,8 @@ Fluid presence, wetness, or surface moisture may co-occur in other contexts, but
 | Ache | Present / Absent / Variable | Sensory quality only; does not define discomfort valence, pain diagnosis, or emotional meaning |
 | Fullness | Present / Absent / Variable | Perceived local fullness or pressure only; not fluid identity |
 
+Sensory-quality terms are controlled candidate values. They are not standalone ontology nodes unless promoted later.
+
 ## Intensity / Rhythm / Location
 
 | Dimension | Possible Range | Notes |
@@ -100,13 +102,14 @@ Fluid presence, wetness, or surface moisture may co-occur in other contexts, but
 ## Valence Boundary
 
 ```text
+Pelvic-floor sensation is not valence.
 Pelvic-floor sensation is not pleasure.
 Pelvic-floor sensation is not discomfort.
 Pelvic-floor sensation is not desire.
 Pelvic-floor sensation is not consent.
 ```
 
-This profile may later reference [[Pleasure Register]] or a future discomfort/neutral-valence register, but it does not define valence itself.
+This profile may later reference [[Sensory Valence Register]], [[Pleasure Register]], or a future more specific discomfort/neutral-valence record, but it does not define valence itself.
 
 ## Somatic Boundary
 
@@ -115,7 +118,7 @@ Female - Pelvic Floor Sensory Profile
 = perceived local qualities such as pressure, tension, pulsing, support, and release
 
 Female - Pelvic Floor Somatic Profile
-= future whole-body or body-state experience such as bracing, holding, steadiness, collapse, grounding, or letting go
+= whole-body or body-state experience such as bracing, holding, steadiness, collapse, grounding, guarding, or letting go
 ```
 
 Do not duplicate Somatic Profile content here.
@@ -142,7 +145,9 @@ Pelvic-floor contraction is not consent.
 Pelvic-floor release is not consent.
 Reflexive contraction is not consent.
 Voluntary muscular recruitment is not consent by itself.
+Valence is not consent.
 Pleasure is not consent.
+Discomfort is not refusal by itself.
 Desire is not consent.
 Symbolic meaning is not consent.
 ```
@@ -167,6 +172,7 @@ Female - Pelvic Floor Sensory Profile MAY_DEFINE_SENSORY_QUALITY Pulsing
 Female - Pelvic Floor Sensory Profile MAY_DEFINE_SENSORY_QUALITY Support
 Female - Pelvic Floor Sensory Profile MAY_DEFINE_SENSORY_QUALITY Ache
 Female - Pelvic Floor Sensory Profile MAY_DEFINE_SENSORY_QUALITY Fullness
+Female - Pelvic Floor Sensory Profile MAY_HAVE_VALENCE Sensory Valence Register
 Female - Pelvic Floor Sensory Profile MAY_HAVE_VALENCE Pleasure Register
 Female - Pelvic Floor Sensory Profile MAY_CONTEXTUALIZE Desire Register
 Female - Pelvic Floor Sensory Profile MAY_BE_INTERPRETED_BY Symbolic Meaning Register
@@ -180,10 +186,10 @@ Female - Pelvic Floor Sensory Profile MAY_BE_ANNOTATED_IN Corpus Annotation
 2. Should Directionality remain a sensory dimension, or should directional spread belong to Propagation or Somatic profiles?
 3. Should Ache reference a future Discomfort Register rather than remain neutral here?
 4. Does Boundary-Aware location adequately handle perineal mirror context without making the mirror sensory mechanism?
-5. Should a companion Female - Pelvic Floor Somatic Profile be created before promoting this profile?
+5. Is [[Sensory Valence Register]] sufficient for first-pass non-pleasure valence routing, or is a separate Discomfort Register needed?
 
 ## Status
 
-Draft v0.1.
+Draft v0.2.
 
-First Sensory Profile pilot. Built from a Supported, Local, fluid-independent Motor / Kinetic Activation Profile to test Sensory Profile governance without fluid identity, pleasure, desire, or symbolic complexity.
+First Sensory Profile pilot. Updated to route valence through [[Sensory Valence Register]] while preserving the distinction between sensory perception, valence, pleasure, desire, symbolic meaning, and consent.
