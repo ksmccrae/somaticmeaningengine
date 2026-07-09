@@ -11,7 +11,7 @@ node_type: Somatic Profile
 layer: Expressive Layers
 expressive_sub_layer: Somatic
 status: Draft
-version: 0.1
+version: 0.2
 somatic_scope: Local / Whole-Body
 primary_somatic_anchor: Female - Pelvic Floor
 validation_status: Candidate
@@ -23,9 +23,9 @@ validation_status: Candidate
 
 This node defines body-state or embodied-orientation experience associated with [[Female - Pelvic Floor]] in contexts where [[Female - Pelvic Floor Contraction Activation Profile]] may enable or contextualize local muscular contraction, support, tension, holding, or release.
 
-It may be informed by Female - Pelvic Floor Sensory Profile, but it does not require that profile to be complete before existing as a Candidate somatic record.
+It may be informed by [[Female - Pelvic Floor Sensory Profile]], but it does not require that profile to be promoted before existing as a Candidate somatic record.
 
-It defines somatic experience only. It does not define pelvic-floor anatomy, activation mechanics, reflex mechanics, localized sensory qualities by themselves, pleasure, desire, symbolic meaning, authorial language, corpus usage, diagnosis, or consent.
+It defines somatic experience only. It does not define pelvic-floor anatomy, activation mechanics, reflex mechanics, localized sensory qualities by themselves, sensory valence, pleasure, desire, symbolic meaning, authorial language, corpus usage, diagnosis, or consent.
 
 ## Somatic Classification
 
@@ -44,7 +44,7 @@ It defines somatic experience only. It does not define pelvic-floor anatomy, act
 |---|---|---|
 | [[Female - Pelvic Floor Contraction Activation Profile]] | May Enable / Contextualize | Supported upstream Motor / Kinetic Activation Profile; does not define somatic experience directly |
 | [[Female - Pelvic Floor]] | Primary Somatic Anchor | Canonical anatomical context; not redefined here |
-| Female - Pelvic Floor Sensory Profile | May Inform | Candidate sensory companion; provides localized perception without defining whole-body state |
+| [[Female - Pelvic Floor Sensory Profile]] | May Inform | Candidate sensory companion; provides localized perception without defining whole-body state |
 | [[Female - Perineum]] | Boundary Context | May contribute to body-state localization or guardedness without becoming the somatic anchor |
 | [[Female - Pelvis]] | Structural Context | May contextualize support, grounding, or posture; not a somatic state by itself |
 
@@ -66,7 +66,7 @@ It defines somatic experience only. It does not define pelvic-floor anatomy, act
 
 | Sensory Profile | Role | Notes |
 |---|---|---|
-| Female - Pelvic Floor Sensory Profile | May Inform | Candidate sensory pilot; localized qualities such as pressure or tension may inform body-state but do not define it |
+| [[Female - Pelvic Floor Sensory Profile]] | May Inform | Candidate sensory pilot; localized qualities such as pressure or tension may inform body-state but do not define it |
 
 ## Somatic States
 
@@ -82,6 +82,8 @@ It defines somatic experience only. It does not define pelvic-floor anatomy, act
 | Grounding | Present / Absent / Variable | Body-state of embodied anchoring; not symbolic meaning by itself |
 | Guarding | Present / Absent / Variable | Protective or defensive holding pattern; not refusal or trauma diagnosis by itself |
 
+Somatic-state terms are controlled candidate values. They are not standalone ontology nodes unless promoted later.
+
 ## Body Orientation / Posture / Holding Pattern
 
 | Dimension | Possible Range | Notes |
@@ -95,13 +97,14 @@ It defines somatic experience only. It does not define pelvic-floor anatomy, act
 ## Valence Boundary
 
 ```text
+Pelvic-floor somatic state is not valence.
 Pelvic-floor somatic state is not pleasure.
 Pelvic-floor somatic state is not discomfort.
 Pelvic-floor somatic state is not desire.
 Pelvic-floor somatic state is not consent.
 ```
 
-This profile may later reference [[Pleasure Register]] or a future discomfort/neutral-valence register, but it does not define valence itself.
+This profile may later reference [[Sensory Valence Register]], [[Pleasure Register]], or a future more specific discomfort/neutral-valence record, but it does not define valence itself.
 
 ## Sensory Boundary
 
@@ -139,7 +142,9 @@ Bracing is not refusal by itself.
 Guarding is not refusal by itself.
 Release is not consent.
 Letting go is not consent.
+Valence is not consent.
 Pleasure is not consent.
+Discomfort is not refusal by itself.
 Desire is not consent.
 Symbolic meaning is not consent.
 ```
@@ -164,6 +169,7 @@ Female - Pelvic Floor Somatic Profile MAY_DEFINE_SOMATIC_STATE Steadiness
 Female - Pelvic Floor Somatic Profile MAY_DEFINE_SOMATIC_STATE Collapse
 Female - Pelvic Floor Somatic Profile MAY_DEFINE_SOMATIC_STATE Grounding
 Female - Pelvic Floor Somatic Profile MAY_DEFINE_SOMATIC_STATE Guarding
+Female - Pelvic Floor Somatic Profile MAY_HAVE_VALENCE Sensory Valence Register
 Female - Pelvic Floor Somatic Profile MAY_HAVE_VALENCE Pleasure Register
 Female - Pelvic Floor Somatic Profile MAY_CONTEXTUALIZE Desire Register
 Female - Pelvic Floor Somatic Profile MAY_BE_INTERPRETED_BY Symbolic Meaning Register
@@ -177,10 +183,10 @@ Female - Pelvic Floor Somatic Profile MAY_BE_ANNOTATED_IN Corpus Annotation
 2. Does Local / Whole-Body scope adequately capture a local pelvic-floor source with possible whole-body echo?
 3. Should Guarding remain a neutral somatic state rather than implying refusal, fear, trauma, or diagnosis?
 4. Should Letting Go be retained as a somatic state, or treated as authorial phrasing until governed?
-5. Should Female - Pelvic Floor Sensory Profile be created or promoted before this profile is advanced?
+5. Is [[Sensory Valence Register]] sufficient for first-pass non-pleasure valence routing, or is a separate Discomfort Register needed?
 
 ## Status
 
-Draft v0.1.
+Draft v0.2.
 
-First Somatic Profile pilot. Built as a companion to Female - Pelvic Floor Sensory Profile to test the distinction between localized sensory perception and whole-body or body-state experience.
+First Somatic Profile pilot. Updated to route valence through [[Sensory Valence Register]] while preserving the distinction between somatic state, localized sensory perception, valence, pleasure, desire, symbolic meaning, and consent.
