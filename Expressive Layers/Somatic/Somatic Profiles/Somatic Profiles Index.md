@@ -11,7 +11,7 @@ document_type: Index
 layer: Expressive Layers
 expressive_sub_layer: Somatic
 status: Draft
-version: 0.1
+version: 0.2
 last_updated: 2026-07-03
 ---
 
@@ -19,28 +19,31 @@ last_updated: 2026-07-03
 
 This index tracks Somatic Profiles in the Somatic Meaning Engine.
 
-Somatic Profiles define whole-body, posture-level, body-state, or embodied-orientation experience. They do not define localized sensory qualities by themselves, activation mechanics, diagnosis, pleasure, desire, symbolic meaning, authorial language, corpus truth, or consent.
+Somatic Profiles define whole-body, posture-level, body-state, or embodied-orientation experience. They do not define localized sensory qualities by themselves, activation mechanics, diagnosis, sensory valence, pleasure, desire, symbolic meaning, authorial language, corpus truth, or consent.
 
 ## Governing Documents
 
 - [[Expressive Layer Framework]] — Draft v0.1
-- [[Somatic Profile Template]] — Draft v0.1
-- [[Somatic]] — Draft v0.1
-- [[Sensory Profiles Index]] — Draft v0.1
+- [[Somatic Profile Template]] — Draft v0.2
+- [[Somatic Index]] — Draft v0.1
+- [[Sensory Profiles Index]] — Draft v0.3
+- [[Sensory Valence Register]] — Draft v0.1
+- [[Expressive Profile Validation & Promotion Register]] — Draft v0.2
 
 ## Current Profiles
 
 | Somatic Profile | Primary Somatic Anchor | Source Context | Somatic Scope | Sensory Companion | Validation | Document |
 |---|---|---|---|---|---|---|
-| [[Female - Pelvic Floor Somatic Profile]] | [[Female - Pelvic Floor]] | [[Female - Pelvic Floor Contraction Activation Profile]] | Local / Whole-Body | [[Female - Pelvic Floor Sensory Profile]] candidate companion | Candidate | Draft v0.1 |
+| [[Female - Pelvic Floor Somatic Profile]] | [[Female - Pelvic Floor]] | [[Female - Pelvic Floor Contraction Activation Profile]] | Local / Whole-Body | [[Female - Pelvic Floor Sensory Profile]] | Supported | Draft v0.3 |
 
 ## Current Validation Coverage
 
 ```text
-first Somatic Profile pilot
+first Supported Somatic Profile pilot
 upstream source is a Supported Motor / Kinetic Activation Profile
 candidate somatic-state terms remain plain text values, not standalone nodes
 Somatic layer is separated from localized Sensory Profile content
+Sensory Valence Register provides downstream valence routing
 Pleasure, Desire, Symbolic Meaning, Authorial, and Corpus systems remain downstream
 Consent boundary remains explicit
 ```
@@ -49,7 +52,6 @@ Consent boundary remains explicit
 
 | Candidate | Source Context | Reason Deferred |
 |---|---|---|
-| Female - Pelvic Floor Somatic Profile promotion review | [[Female - Pelvic Floor Contraction Activation Profile]] | Requires light consistency pass against Sensory pilot |
 | Menstrual Somatic Profile | [[Female - Menstruation Activation Profile]] | Requires cyclical body-state governance |
 | Vulvar Arousal Somatic Profile | [[Female - Vulvar Lubrication Activation Profile]] | Requires distinction from localized sensory wetness/tissue perception |
 | Paraurethral Release Somatic Profile | [[Female - Paraurethral Glandular Release Activation Profile]] | Requires boundary ambiguity and fluid-release body-state governance |
@@ -64,10 +66,10 @@ Do not wikilink somatic-state values unless a governed Somatic State node exists
 
 ## Next Action
 
-Light internal consistency pass on [[Female - Pelvic Floor Somatic Profile]], especially Sensory/Somatic separation, Local / Whole-Body scope, candidate somatic-state values, and downstream valence routing.
+Use a contrasting Somatic Profile, preferably one involving fluid, cyclical, or regional activation context, to test whether the Somatic Profile pattern holds beyond local pelvic-floor motor experience.
 
 ## Status
 
-Draft v0.1.
+Draft v0.2.
 
-Initial index for Somatic Profiles.
+Updated after first Somatic Profile promotion.
