@@ -9,7 +9,7 @@ file_class: Document
 document_type: Index
 layer: Expressive Layers
 status: Draft
-version: 0.1
+version: 0.2
 last_updated: 2026-07-03
 ---
 
@@ -21,9 +21,10 @@ Expressive Layers define how embodied processes may be perceived, felt, interpre
 
 They do not define canonical anatomy, biological mechanism, fluid identity, activation mechanics, mirror correspondence, authorial style, corpus truth, or consent.
 
-## Governing Document
+## Governing Documents
 
 - [[Expressive Layer Framework]] — Draft v0.1
+- [[Expressive Profile Validation & Promotion Register]] — Draft v0.1
 
 ## Sublayer Indexes
 
@@ -44,9 +45,19 @@ They do not define canonical anatomy, biological mechanism, fluid identity, acti
 |---|---|---|
 | [[Pleasure Register]] | Sensory | Draft v0.1 |
 | [[Sensory Valence Register]] | Sensory | Draft v0.1 |
-| [[Female - Pelvic Floor Sensory Profile]] | Sensory | Candidate / Draft v0.1 |
+| [[Female - Pelvic Floor Sensory Profile]] | Sensory | Candidate / Draft v0.2 |
 | [[Desire Register]] | Emotional / Motivational | Draft v0.1 |
-| [[Female - Pelvic Floor Somatic Profile]] | Somatic | Candidate / Draft v0.1 |
+| [[Female - Pelvic Floor Somatic Profile]] | Somatic | Candidate / Draft v0.2 |
+
+## Current Validation State
+
+```text
+Expressive framework exists
+Sensory and Somatic templates exist
+Sensory and Somatic pilot profiles exist
+Sensory Valence Register prevents Pleasure-only valence routing
+Expressive Profile Validation & Promotion Register now governs pilot promotion
+```
 
 ## Core Layer Boundary
 
@@ -72,12 +83,14 @@ Expressive Layer Framework
 → Sensory Profile Template / Somatic Profile Template
 → Female - Pelvic Floor Sensory Profile
 → Female - Pelvic Floor Somatic Profile
-→ Valence routing
+→ Sensory Valence Register
+→ Expressive Profile Validation & Promotion Register
+→ pilot profile promotion review
 → future Emotional, Symbolic, Sonic, Environmental, Liturgical, and Temporal profiles
 ```
 
 ## Status
 
-Draft v0.1.
+Draft v0.2.
 
-Created to replace folder README usage with a governed index file.
+Updated to include Expressive Profile validation and promotion governance.
