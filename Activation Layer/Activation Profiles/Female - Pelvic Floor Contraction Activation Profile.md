@@ -10,16 +10,14 @@ file_class: Ontology Node
 node_type: Activation Profile
 layer: Activation Layer
 status: Draft
-version: 0.2
-activation_type: Composite Activation
+version: 0.3
+activation_type: Motor / Kinetic Activation
 activation_components:
   - Motor / Kinetic Activation
-  - Tissue-State Activation
-  - Mirror-Route Activation
 activation_scope: Local
 embodiment_scope: Female / Anatomy-Dependent
 primary_anatomical_anchor: Female - Pelvic Floor
-validation_status: Candidate
+validation_status: Supported
 ---
 
 # Female - Pelvic Floor Contraction Activation Profile
@@ -30,7 +28,7 @@ This node defines a female/anatomy-dependent activation process in which [[Femal
 
 It may make the [[Female - Perineum to Female - Pelvic Floor Mirror Profile]] relevant as a boundary-to-support traversal route.
 
-This profile defines motor and tissue-state process only. It does not define sensation, pleasure, desire, symbolic meaning, authorial language, corpus usage, or consent.
+This profile defines a motor / kinetic process only. It does not define sensation, pleasure, desire, symbolic meaning, authorial language, corpus usage, or consent.
 
 ## Activation Classification
 
@@ -38,12 +36,12 @@ This profile defines motor and tissue-state process only. It does not define sen
 |---|---|
 | Node Type | Activation Profile |
 | Layer | Activation Layer |
-| Activation Type | Composite Activation |
-| Activation Components | Motor / Kinetic Activation; Tissue-State Activation; Mirror-Route Activation |
+| Activation Type | Motor / Kinetic Activation |
+| Activation Components | Motor / Kinetic Activation |
 | Activation Scope | Local |
 | Embodiment Scope | Female / Anatomy-Dependent |
 | Primary Anatomical Anchor | [[Female - Pelvic Floor]] |
-| Validation Status | Candidate |
+| Validation Status | Supported |
 
 ## Scope Basis
 
@@ -85,7 +83,7 @@ A later profile may use Regional scope if it explicitly models direct mechanical
 
 | Mirror Profile | Role | Notes |
 |---|---|---|
-| [[Female - Perineum to Female - Pelvic Floor Mirror Profile]] | May Engage / May Make Available | Candidate mirror route; activation may use it without redefining correspondence or scope |
+| [[Female - Perineum to Female - Pelvic Floor Mirror Profile]] | May Engage / May Make Available | Candidate mirror route; activation may use it without redefining correspondence, contraction mechanics, or scope |
 
 ## Referenced Fluid Entities
 
@@ -108,7 +106,7 @@ None defined.
 2. Female - Pelvic Floor enters activation context as the sole active anatomical anchor.
 3. Muscular recruitment may alter contraction, shortening, tension, support, or release state.
 4. Female - Perineum may become relevant as boundary and mirror context without becoming a direct participant.
-5. Female - Perineum to Female - Pelvic Floor Mirror Profile may become available as a boundary-to-support route.
+5. Female - Perineum to Female - Pelvic Floor Mirror Profile may become available as a boundary-to-support route only.
 6. Wider mechanical movement beyond the local process may require future Propagation modelling.
 7. Downstream systems may later reference the activation without being defined by it.
 ```
@@ -120,7 +118,7 @@ None defined.
 | Voluntary control | May Initiate / Modulate | Motor control context only |
 | Reflex activity | May Initiate / Modulate | Candidate reflex mechanism; not yet an activation component |
 | Muscle fatigue or weakness | May Inhibit / Alter | Mechanical state modifier |
-| Hypertonicity or tissue restriction | May Alter / Inhibit | Candidate tissue-state modifier |
+| Hypertonicity or tissue restriction | May Alter / Inhibit | Candidate tissue-state modifier; not a separate Tissue-State Activation component |
 | Pain, injury, surgery, neurological condition, pregnancy, postpartum state, or menopause | May Modulate / Inhibit | Requires later medical and embodiment governance |
 | Stress, fear, fatigue, or dissociation | May Modulate | Does not define emotional meaning or consent |
 
@@ -147,6 +145,8 @@ Do not include:
 ```text
 canonical anatomical definitions
 specific muscle-group anatomy not yet modelled
+Mirror traversal as contraction mechanics
+Reflex Activation as a formal component without future governance
 sensory perception
 pleasure or discomfort as valence
 desire or motivational orientation
@@ -177,10 +177,8 @@ Symbolic meaning is not consent.
 
 ```text
 Female - Pelvic Floor Contraction Activation Profile IS_ACTIVATION_PROFILE
-Female - Pelvic Floor Contraction Activation Profile HAS_ACTIVATION_TYPE Composite Activation
+Female - Pelvic Floor Contraction Activation Profile HAS_ACTIVATION_TYPE Motor / Kinetic Activation
 Female - Pelvic Floor Contraction Activation Profile HAS_ACTIVATION_COMPONENT Motor / Kinetic Activation
-Female - Pelvic Floor Contraction Activation Profile HAS_ACTIVATION_COMPONENT Tissue-State Activation
-Female - Pelvic Floor Contraction Activation Profile HAS_ACTIVATION_COMPONENT Mirror-Route Activation
 Female - Pelvic Floor Contraction Activation Profile HAS_ACTIVATION_SCOPE Local
 Female - Pelvic Floor Contraction Activation Profile ACTIVATES_ANATOMICAL_SITE Female - Pelvic Floor
 Female - Pelvic Floor Contraction Activation Profile REFERENCES_ADJACENT_ANATOMICAL_SITE Female - Perineum
@@ -199,15 +197,14 @@ Female - Pelvic Floor Contraction Activation Profile MAY_BE_ANNOTATED_IN Corpus 
 
 ## Review Questions
 
-1. Does Local scope remain correct when only Female - Pelvic Floor undergoes the defined state change?
-2. Does Motor / Kinetic Activation adequately cover contraction and release?
-3. What evidence would justify promoting Reflex Activation from modulator to component?
-4. Does a future Regional profile need to model direct perineal or opening-level mechanical participation?
-5. Is a candidate Propagation handoff sufficient without defining spread mechanics?
-6. Does the profile remain independent of Fluid Layer content?
+1. What evidence would justify promoting Reflex Activation from modulator to component?
+2. Does a future Regional profile need to model direct perineal or opening-level mechanical participation?
+3. Is a candidate Propagation handoff sufficient without defining spread mechanics?
+4. Does the profile remain independent of Fluid Layer content after future sensory and corpus annotation?
+5. What second Motor / Kinetic Activation Profile should be used as a contrasting replication case?
 
 ## Status
 
-Draft v0.2.
+Draft v0.3.
 
-Candidate validation profile with Local scope and explicit separation between active anatomy and boundary context.
+Supported Motor / Kinetic activation profile with Local scope and explicit separation between active anatomy and boundary context. Reclassified from Composite Activation after focused audit; Tissue-State and Mirror-Route components removed. Mirror retained as traversal via MAY_ENGAGE_MIRROR_ROUTE, and reflex remains a modulator pending future Reflex governance.
