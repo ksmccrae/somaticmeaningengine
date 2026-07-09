@@ -11,10 +11,10 @@ node_type: Somatic Profile
 layer: Expressive Layers
 expressive_sub_layer: Somatic
 status: Draft
-version: 0.2
+version: 0.3
 somatic_scope: Local / Whole-Body
 primary_somatic_anchor: Female - Pelvic Floor
-validation_status: Candidate
+validation_status: Supported
 ---
 
 # Female - Pelvic Floor Somatic Profile
@@ -23,7 +23,7 @@ validation_status: Candidate
 
 This node defines body-state or embodied-orientation experience associated with [[Female - Pelvic Floor]] in contexts where [[Female - Pelvic Floor Contraction Activation Profile]] may enable or contextualize local muscular contraction, support, tension, holding, or release.
 
-It may be informed by [[Female - Pelvic Floor Sensory Profile]], but it does not require that profile to be promoted before existing as a Candidate somatic record.
+It may be informed by [[Female - Pelvic Floor Sensory Profile]], but it does not require that profile to define somatic body-state.
 
 It defines somatic experience only. It does not define pelvic-floor anatomy, activation mechanics, reflex mechanics, localized sensory qualities by themselves, sensory valence, pleasure, desire, symbolic meaning, authorial language, corpus usage, diagnosis, or consent.
 
@@ -36,7 +36,7 @@ It defines somatic experience only. It does not define pelvic-floor anatomy, act
 | Expressive Sublayer | Somatic |
 | Somatic Scope | Local / Whole-Body |
 | Primary Somatic Anchor | [[Female - Pelvic Floor]] |
-| Validation Status | Candidate |
+| Validation Status | Supported |
 
 ## Source Context
 
@@ -44,7 +44,7 @@ It defines somatic experience only. It does not define pelvic-floor anatomy, act
 |---|---|---|
 | [[Female - Pelvic Floor Contraction Activation Profile]] | May Enable / Contextualize | Supported upstream Motor / Kinetic Activation Profile; does not define somatic experience directly |
 | [[Female - Pelvic Floor]] | Primary Somatic Anchor | Canonical anatomical context; not redefined here |
-| [[Female - Pelvic Floor Sensory Profile]] | May Inform | Candidate sensory companion; provides localized perception without defining whole-body state |
+| [[Female - Pelvic Floor Sensory Profile]] | May Inform | Sensory companion; provides localized perception without defining whole-body state |
 | [[Female - Perineum]] | Boundary Context | May contribute to body-state localization or guardedness without becoming the somatic anchor |
 | [[Female - Pelvis]] | Structural Context | May contextualize support, grounding, or posture; not a somatic state by itself |
 
@@ -66,7 +66,7 @@ It defines somatic experience only. It does not define pelvic-floor anatomy, act
 
 | Sensory Profile | Role | Notes |
 |---|---|---|
-| [[Female - Pelvic Floor Sensory Profile]] | May Inform | Candidate sensory pilot; localized qualities such as pressure or tension may inform body-state but do not define it |
+| [[Female - Pelvic Floor Sensory Profile]] | May Inform | Localized qualities such as pressure or tension may inform body-state but do not define it |
 
 ## Somatic States
 
@@ -179,7 +179,7 @@ Female - Pelvic Floor Somatic Profile MAY_BE_ANNOTATED_IN Corpus Annotation
 
 ## Review Questions
 
-1. Are Bracing, Holding, Support, Release, Letting Go, Steadiness, Collapse, Grounding, and Guarding acceptable first-generation Somatic State terms, or should they become governed nodes later?
+1. Should Bracing, Holding, Support, Release, Letting Go, Steadiness, Collapse, Grounding, and Guarding become governed Somatic State nodes after repeated use?
 2. Does Local / Whole-Body scope adequately capture a local pelvic-floor source with possible whole-body echo?
 3. Should Guarding remain a neutral somatic state rather than implying refusal, fear, trauma, or diagnosis?
 4. Should Letting Go be retained as a somatic state, or treated as authorial phrasing until governed?
@@ -187,6 +187,6 @@ Female - Pelvic Floor Somatic Profile MAY_BE_ANNOTATED_IN Corpus Annotation
 
 ## Status
 
-Draft v0.2.
+Draft v0.3.
 
-First Somatic Profile pilot. Updated to route valence through [[Sensory Valence Register]] while preserving the distinction between somatic state, localized sensory perception, valence, pleasure, desire, symbolic meaning, and consent.
+Supported first Somatic Profile pilot. Promoted after light internal consistency review confirmed somatic body-state is separated from localized sensory perception, activation mechanics, valence, pleasure, desire, symbolic meaning, authorial language, corpus usage, diagnosis, and consent.
