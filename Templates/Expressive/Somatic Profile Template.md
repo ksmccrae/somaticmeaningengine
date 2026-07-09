@@ -10,7 +10,7 @@ template_type: Expressive Profile
 layer: Expressive Layers
 expressive_sub_layer: Somatic
 status: Draft
-version: 0.1
+version: 0.2
 last_updated: 2026-07-03
 ---
 
@@ -22,7 +22,7 @@ Use this template to define a Somatic Profile.
 
 A Somatic Profile defines whole-body, posture-level, body-state, or embodied-orientation experience associated with activation, sensation, environment, rhythm, temporal condition, emotional context, or narrative condition.
 
-It defines body-state experience only. It does not define biological mechanism, localized sensory quality by itself, pleasure, desire, symbolic meaning, authorial language, corpus truth, diagnosis, or consent.
+It defines body-state experience only. It does not define biological mechanism, localized sensory quality by itself, sensory valence, pleasure, desire, symbolic meaning, authorial language, corpus truth, diagnosis, or consent.
 
 ## YAML Pattern
 
@@ -73,7 +73,7 @@ This node defines body-state or embodied-orientation experience associated with 
 
 It may be enabled or contextualized by `<upstream profile>`, but it does not define that upstream process.
 
-It defines somatic experience only. It does not define activation mechanics, anatomy, fluid identity, localized sensory qualities by themselves, pleasure, desire, symbolic meaning, authorial language, corpus usage, diagnosis, or consent.
+It defines somatic experience only. It does not define activation mechanics, anatomy, fluid identity, localized sensory qualities by themselves, sensory valence, pleasure, desire, symbolic meaning, authorial language, corpus usage, diagnosis, or consent.
 
 ## Somatic Classification
 
@@ -129,6 +129,8 @@ Use only when a sensory profile already exists or is clearly candidate.
 
 Add or remove states as appropriate.
 
+Somatic-state terms are controlled candidate values unless governed Somatic State nodes are created later. Do not wikilink somatic-state values unless the target node exists.
+
 ## Body Orientation / Posture / Holding Pattern
 
 | Dimension | Possible Range | Notes |
@@ -141,13 +143,14 @@ Add or remove states as appropriate.
 ## Valence Boundary
 
 ```text
+Somatic state is not valence.
 Somatic state is not pleasure.
 Somatic state is not discomfort.
 Somatic state is not desire.
 Somatic state is not consent.
 ```
 
-Pleasure, discomfort, neutrality, ambiguity, aversion, or relief may be referenced downstream only if a valence register or profile governs them.
+Pleasure, discomfort, neutrality, ambiguity, aversion, relief, unwanted sensation, or intensity-without-valence may be referenced downstream only if [[Sensory Valence Register]], [[Pleasure Register]], or another governed valence record supports them.
 
 ## Sensory Boundary
 
@@ -183,7 +186,9 @@ Opening is not consent.
 Relaxation is not consent.
 Bracing is not refusal by itself.
 Release is not consent.
+Valence is not consent.
 Pleasure is not consent.
+Discomfort is not refusal by itself.
 Desire is not consent.
 Symbolic meaning is not consent.
 ```
@@ -198,7 +203,8 @@ Symbolic meaning is not consent.
 <Profile Name> MAY_REFERENCE_ANATOMICAL_SITE <Canonical Node>
 <Profile Name> MAY_REFERENCE_SENSORY_PROFILE <Sensory Profile>
 <Profile Name> MAY_DEFINE_SOMATIC_STATE <Somatic State>
-<Profile Name> MAY_HAVE_VALENCE Pleasure Register / Discomfort Register / Neutral Valence
+<Profile Name> MAY_HAVE_VALENCE Sensory Valence Register
+<Profile Name> MAY_HAVE_VALENCE Pleasure Register
 <Profile Name> MAY_CONTEXTUALIZE Desire Register
 <Profile Name> MAY_BE_INTERPRETED_BY Symbolic Meaning Register
 <Profile Name> MAY_BE_USED_BY Authorial Term Register
@@ -210,13 +216,13 @@ Include only relationships actually used by the profile.
 ## Review Questions
 
 1. Are all somatic states body-state or embodied-orientation experiences rather than localized sensory qualities?
-2. Does the profile avoid defining pleasure, desire, symbolic meaning, diagnosis, and consent?
+2. Does the profile avoid defining valence, pleasure, desire, symbolic meaning, diagnosis, and consent?
 3. Are upstream Activation and Sensory records referenced without being redefined?
 4. Is the somatic scope accurate?
-5. Are candidate-only nodes left as plain text unless they already exist?
+5. Are candidate-only values left as plain text unless governed nodes already exist?
 
 ## Status
 
-Draft v0.1.
+Draft v0.2.
 
-Template for first-generation Somatic Profiles.
+Updated to align first-generation Somatic Profiles with [[Sensory Valence Register]].
