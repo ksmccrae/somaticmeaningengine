@@ -9,7 +9,7 @@ file_class: Document
 document_type: Governance Register
 layer: Expressive Layers
 status: Draft
-version: 0.1
+version: 0.2
 last_updated: 2026-07-03
 ---
 
@@ -95,7 +95,7 @@ Somatic Profiles must not define localized sensory perception by itself, diagnos
 
 The following relationship statements are currently draft-pattern relationships.
 
-They may be used in Candidate records but should not be treated as baseline until repeated profile validation confirms them.
+They may be used in Supported records but should not be treated as baseline relationship verbs until repeated profile validation confirms them.
 
 ```text
 IS_SENSORY_PROFILE
@@ -119,31 +119,61 @@ MAY_BE_USED_BY
 MAY_BE_ANNOTATED_IN
 ```
 
-## Current Promotion Decisions
+## Promotion Decisions
 
 ### Female - Pelvic Floor Sensory Profile
 
 | Field | Assessment |
 |---|---|
-| Mechanical Result | Candidate; light consistency review pending |
-| Governance Result | Pending |
-| Blocking Defect | None identified yet |
+| Mechanical Result | Pass |
+| Governance Result | Pass |
+| Blocking Defect | None |
 | Non-Blocking Open Questions | Sensory-quality value governance; directionality boundary; ache/discomfort routing; mirror context; future Discomfort Register |
-| Promotion Recommendation | Not yet assessed |
-| Decision Applied | Candidate / Draft v0.2 |
+| Promotion Recommendation | Promote to Supported |
+| Decision Applied | Supported / Draft v0.3 |
 | Review Date | 2026-07-03 |
+
+Evidence:
+
+```text
+light internal consistency review confirmed required sections are present
+Sensory Profile defines perceived qualities rather than activation mechanics
+upstream Female - Pelvic Floor Contraction Activation Profile remains the source Activation context
+Female - Pelvic Floor remains the primary sensory anchor
+Mirror route remains contextual traversal only
+Fluid Layer independence is preserved
+Sensory Valence Register and Pleasure Register remain downstream only
+Desire, Symbolic Meaning, Authorial, and Corpus systems remain downstream
+sensory-quality terms remain controlled candidate values, not wikilinked nodes
+consent boundary remains explicit
+```
 
 ### Female - Pelvic Floor Somatic Profile
 
 | Field | Assessment |
 |---|---|
-| Mechanical Result | Candidate; light consistency review pending |
-| Governance Result | Pending |
-| Blocking Defect | None identified yet |
-| Non-Blocking Open Questions | Somatic-state value governance; Local / Whole-Body scope; guarding boundary; letting-go phrasing; future Discomfort Register |
-| Promotion Recommendation | Not yet assessed |
-| Decision Applied | Candidate / Draft v0.2 |
+| Mechanical Result | Pass |
+| Governance Result | Pass |
+| Blocking Defect | None |
+| Non-Blocking Open Questions | Somatic-state value governance; Local / Whole-Body scope replication; guarding boundary; letting-go phrasing; future Discomfort Register |
+| Promotion Recommendation | Promote to Supported |
+| Decision Applied | Supported / Draft v0.3 |
 | Review Date | 2026-07-03 |
+
+Evidence:
+
+```text
+light internal consistency review confirmed required sections are present
+Somatic Profile defines body-state and embodied orientation rather than localized sensory qualities
+Female - Pelvic Floor Contraction Activation Profile remains upstream Activation context
+Female - Pelvic Floor Sensory Profile may inform but does not define somatic body-state
+Local / Whole-Body scope is retained as first-pass expression of local source with possible whole-body echo
+Somatic-state terms remain controlled candidate values, not wikilinked nodes
+Sensory Valence Register and Pleasure Register remain downstream only
+Desire, Symbolic Meaning, Authorial, and Corpus systems remain downstream
+no diagnosis, trauma inference, refusal inference, or consent inference is made
+consent boundary remains explicit
+```
 
 ## First Validation Path
 
@@ -177,6 +207,6 @@ Corpus usage is not consent.
 
 ## Status
 
-Draft v0.1.
+Draft v0.2.
 
-Initial validation register for Expressive Profiles. Created before promoting Sensory or Somatic pilot profiles.
+This register has now governed the first two Supported Expressive Profile pilots: one Sensory Profile and one Somatic Profile, both derived from a Supported, Local, fluid-independent Motor / Kinetic Activation Profile.
