@@ -10,7 +10,7 @@ document_type: Index
 layer: Expressive Layers
 expressive_sub_layer: Sensory
 status: Draft
-version: 0.2
+version: 0.3
 last_updated: 2026-07-03
 ---
 
@@ -35,13 +35,14 @@ Sensory records describe what is perceived, not what biologically causes it and 
 
 ## Current Profile Indexes
 
-- [[Sensory Profiles Index]] — Draft v0.3
+- [[Sensory Profiles Index]] — Draft v0.4
 
 ## Current Profiles
 
 | Profile | Source | Purpose | Status |
 |---|---|---|---|
 | [[Female - Pelvic Floor Sensory Profile]] | [[Female - Pelvic Floor Contraction Activation Profile]] | First fluid-independent Local sensory pilot | Supported / Draft v0.3 |
+| [[Female - Vulva Sensory Profile]] | [[Female - Vulvar Lubrication Activation Profile]] | First fluid-involving Regional sensory pilot | Candidate / Draft v0.1 |
 
 ## Scope
 
@@ -129,12 +130,11 @@ Relationship names remain draft until repeated Sensory Profile use validates the
 
 | Planned Profile | Source | Purpose |
 |---|---|---|
-| Female - Vulva Sensory Profile | [[Female - Vulvar Lubrication Activation Profile]] | Future tissue/fluid sensory pilot |
 | Paraurethral Glandular Fluid Sensory Profile | [[Female - Paraurethral Glandular Release Activation Profile]] | Future fluid-boundary sensory pilot |
 | Menstrual Fluid Sensory Profile | [[Female - Menstruation Activation Profile]] | Future cyclical/fluid sensory pilot |
 
 ## Status
 
-Draft v0.2.
+Draft v0.3.
 
-Updated after first Sensory Profile promotion.
+Updated after creation of the first fluid-involving Regional Sensory Profile pilot.
