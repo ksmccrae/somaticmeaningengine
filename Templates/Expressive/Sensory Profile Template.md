@@ -10,7 +10,7 @@ template_type: Expressive Profile
 layer: Expressive Layers
 expressive_sub_layer: Sensory
 status: Draft
-version: 0.1
+version: 0.2
 last_updated: 2026-07-03
 ---
 
@@ -22,7 +22,7 @@ Use this template to define a Sensory Profile.
 
 A Sensory Profile defines perceived qualities associated with an anatomical site, fluid, activation, mirror route, environmental condition, sonic condition, temporal condition, or other upstream context.
 
-It defines what may be perceived. It does not define biological mechanism, pleasure, desire, symbolic meaning, authorial language, corpus truth, or consent.
+It defines what may be perceived. It does not define biological mechanism, sensory valence, pleasure, desire, symbolic meaning, authorial language, corpus truth, or consent.
 
 ## YAML Pattern
 
@@ -74,7 +74,7 @@ This node defines perceived sensory qualities associated with `<source context>`
 
 It may be enabled or contextualized by `<upstream profile>`, but it does not define that upstream process.
 
-It defines sensory perception only. It does not define activation mechanics, anatomy, fluid identity, pleasure, desire, symbolic meaning, authorial language, corpus usage, or consent.
+It defines sensory perception only. It does not define activation mechanics, anatomy, fluid identity, sensory valence, pleasure, desire, symbolic meaning, authorial language, corpus usage, or consent.
 
 ## Sensory Classification
 
@@ -133,9 +133,11 @@ Use only when mirror traversal may become perceptually salient.
 | Warmth | Present / Absent / Variable | Perceived quality only |
 | Wetness | Present / Absent / Variable | Use only if fluid context exists |
 | Movement | Present / Absent / Variable | Perceived movement, not activation mechanics |
-| Ache | Present / Absent / Variable | Sensory quality, not emotional meaning |
+| Ache | Present / Absent / Variable | Sensory quality, not emotional meaning or diagnosis |
 
 Add or remove qualities as appropriate.
+
+Sensory-quality terms are controlled candidate values unless governed Sensory Quality nodes are created later. Do not wikilink sensory-quality values unless the target node exists.
 
 ## Intensity / Rhythm / Location
 
@@ -149,13 +151,14 @@ Add or remove qualities as appropriate.
 ## Valence Boundary
 
 ```text
+Sensation is not valence.
 Sensation is not pleasure.
 Sensation is not discomfort.
 Sensation is not desire.
 Sensation is not consent.
 ```
 
-Pleasure, discomfort, neutrality, ambiguity, aversion, or relief may be referenced downstream only if a valence register or profile governs them.
+Pleasure, discomfort, neutrality, ambiguity, aversion, relief, unwanted sensation, or intensity-without-valence may be referenced downstream only if [[Sensory Valence Register]], [[Pleasure Register]], or another governed valence record supports them.
 
 ## Somatic Boundary
 
@@ -187,7 +190,9 @@ Sensation does not define symbolic meaning by itself.
 
 ```text
 Sensation is not consent.
+Valence is not consent.
 Pleasure is not consent.
+Discomfort is not refusal by itself.
 Desire is not consent.
 Arousal is not consent.
 Fluid presence is not consent.
@@ -207,7 +212,8 @@ Symbolic meaning is not consent.
 <Profile Name> MAY_REFERENCE_FLUID_PROFILE <Fluid Profile>
 <Profile Name> MAY_REFERENCE_MIRROR_ROUTE <Mirror Profile>
 <Profile Name> MAY_DEFINE_SENSORY_QUALITY <Sensory Quality>
-<Profile Name> MAY_HAVE_VALENCE Pleasure Register / Discomfort Register / Neutral Valence
+<Profile Name> MAY_HAVE_VALENCE Sensory Valence Register
+<Profile Name> MAY_HAVE_VALENCE Pleasure Register
 <Profile Name> MAY_CONTEXTUALIZE Desire Register
 <Profile Name> MAY_BE_INTERPRETED_BY Symbolic Meaning Register
 <Profile Name> MAY_BE_USED_BY Authorial Term Register
@@ -219,13 +225,13 @@ Include only relationships actually used by the profile.
 ## Review Questions
 
 1. Are all sensory qualities perceptions rather than mechanisms?
-2. Does the profile avoid defining pleasure, desire, symbolic meaning, and consent?
+2. Does the profile avoid defining valence, pleasure, desire, symbolic meaning, and consent?
 3. Are upstream Activation, Fluid, and Mirror records referenced without being redefined?
 4. Is the sensory scope accurate?
-5. Are candidate-only nodes left as plain text unless they already exist?
+5. Are candidate-only values left as plain text unless governed nodes already exist?
 
 ## Status
 
-Draft v0.1.
+Draft v0.2.
 
-Template for first-generation Sensory Profiles.
+Updated to align first-generation Sensory Profiles with [[Sensory Valence Register]].
