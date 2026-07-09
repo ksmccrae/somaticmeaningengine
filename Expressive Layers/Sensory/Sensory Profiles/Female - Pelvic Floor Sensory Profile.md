@@ -11,10 +11,10 @@ node_type: Sensory Profile
 layer: Expressive Layers
 expressive_sub_layer: Sensory
 status: Draft
-version: 0.2
+version: 0.3
 sensory_scope: Local
 primary_sensory_anchor: Female - Pelvic Floor
-validation_status: Candidate
+validation_status: Supported
 ---
 
 # Female - Pelvic Floor Sensory Profile
@@ -34,7 +34,7 @@ It defines sensory perception only. It does not define pelvic-floor anatomy, act
 | Expressive Sublayer | Sensory |
 | Sensory Scope | Local |
 | Primary Sensory Anchor | [[Female - Pelvic Floor]] |
-| Validation Status | Candidate |
+| Validation Status | Supported |
 
 ## Source Context
 
@@ -182,7 +182,7 @@ Female - Pelvic Floor Sensory Profile MAY_BE_ANNOTATED_IN Corpus Annotation
 
 ## Review Questions
 
-1. Are Pressure, Tension, Tightness, Release, Pulsing, Support, Ache, and Fullness acceptable first-generation Sensory Quality terms, or should they become governed nodes later?
+1. Should Pressure, Tension, Tightness, Release, Pulsing, Support, Ache, and Fullness become governed Sensory Quality nodes after repeated use?
 2. Should Directionality remain a sensory dimension, or should directional spread belong to Propagation or Somatic profiles?
 3. Should Ache reference a future Discomfort Register rather than remain neutral here?
 4. Does Boundary-Aware location adequately handle perineal mirror context without making the mirror sensory mechanism?
@@ -190,6 +190,6 @@ Female - Pelvic Floor Sensory Profile MAY_BE_ANNOTATED_IN Corpus Annotation
 
 ## Status
 
-Draft v0.2.
+Draft v0.3.
 
-First Sensory Profile pilot. Updated to route valence through [[Sensory Valence Register]] while preserving the distinction between sensory perception, valence, pleasure, desire, symbolic meaning, and consent.
+Supported first Sensory Profile pilot. Promoted after light internal consistency review confirmed sensory perception is separated from activation mechanics, somatic body-state, valence, pleasure, desire, symbolic meaning, authorial language, corpus usage, and consent.
