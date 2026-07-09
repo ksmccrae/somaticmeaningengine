@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "56e5181f0ef31899",
+        "id": "123bf5bbb925ea11",
         "type": "tabs",
         "children": [
           {
-            "id": "c5461ef0ea05c9b9",
+            "id": "ee153a664ba5ad51",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Activation Layer/README.md",
+                "file": "Corpus/Corpus Framework.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Corpus Framework"
             }
           }
         ]
@@ -209,15 +209,24 @@
       "bases:Create new base": false,
       "obsidian-git:Open Git source control": false,
       "templater-obsidian:Templater": false,
-      "realclaudian:Open Claudian": false,
-      "publish:Publish changes...": false
+      "realclaudian:Open Claudian": false
     }
   },
-  "active": "9cab35594af36586",
+  "active": "ee153a664ba5ad51",
   "lastOpenFiles": [
-    "Activation Layer/Activation Profiles/Female - Pelvic Floor Contraction Activation Profile.md",
+    "Corpus/README.md",
+    "Corpus/Stories/The Red Grove.md",
+    "Fluid Layer/Fluid Properties/Coagulation State.md",
+    "Templates/Templates Index.md",
+    "Corpus/Songs/README.md",
     "Activation Layer/Activation Layer Framework.md",
     "Activation Layer/README.md",
+    "Activation Layer/Activation Profiles/Female - Menstrual Cycle Regulation Activation Profile.md",
+    "Activation Layer/Activation Profiles/Female - Menstruation Activation Profile.md",
+    "README.md",
+    "Templates/README.md",
+    "Activation Layer/Activation Profile Validation & Promotion Register.md",
+    "Activation Layer/Activation Profiles/Female - Pelvic Floor Contraction Activation Profile.md",
     "Governance/Standards/YAML Standard.md",
     "Governance/Decisions/Decision Records Framework.md",
     "Governance/Architecture/Architecture Framework.md",
@@ -232,16 +241,6 @@
     "Activation Layer/Activation Profiles/Activation Profiles Index.md",
     "Activation Layer/Activation Profiles",
     "Mirror Layer/Mirror Profiles/Female Mirror Candidate Register.md",
-    "Fluid Layer/Fluid Entities/Paraurethral Glandular Fluid.md",
-    "Fluid Layer/Fluid Entities/Cervical Mucus.md",
-    "Canonical Embodiment/Female/Female Embodiment.md",
-    "Canonical Embodiment/Female/Female - Pelvis.md",
-    "Expressive Layers/README.md",
-    "Fluid Layer/Fluid Properties/Volume.md",
-    "Mirror Layer/Mirror Profiles/Female - Vulva to Female - Anus Mirror Profile.md",
-    "Mirror Layer/Mirror Profiles/Female - Clitoral Complex to Female - Breasts Mirror Profile.md",
-    "Templates/Translation/Mirror Profile Template.md",
-    "Mirror Layer/Mirror Profiles/Mirror Profiles Index.md",
     "Mirror Layer/Mirror Profiles",
     "Fluid Layer/Fluid Properties",
     "Fluid Layer/Fluid Profiles",

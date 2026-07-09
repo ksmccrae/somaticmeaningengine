@@ -1,0 +1,23 @@
+{
+  "id": "conv-1783092858698-uir2kqdjw",
+  "providerId": "claude",
+  "title": "Audit female cycle activation profile",
+  "titleGenerationStatus": "success",
+  "createdAt": 1783092858700,
+  "updatedAt": 1783103145236,
+  "lastResponseAt": 1783103145236,
+  "sessionId": "28143e25-c859-4432-8ba3-254f805f3524",
+  "providerState": {
+    "providerSessionId": "28143e25-c859-4432-8ba3-254f805f3524"
+  },
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 0,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextWindow": 200000,
+    "contextTokens": 0,
+    "percentage": 0,
+    "contextWindowIsAuthoritative": true
+  }
+}
