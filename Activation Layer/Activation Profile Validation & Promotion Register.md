@@ -9,7 +9,7 @@ file_class: Document
 document_type: Governance Register
 layer: Activation Layer
 status: Draft
-version: 0.5
+version: 0.6
 last_updated: 2026-07-03
 ---
 
@@ -102,11 +102,28 @@ consent boundary remains explicit
 
 | Field | Assessment |
 |---|---|
-| Mechanical Result | Pass |
-| Governance Result | Warning |
-| Blocking Defect | Motor / Kinetic and Reflex promotion criteria need further testing |
-| Promotion Recommendation | Remain Candidate |
-| Review Date | 2026-07-02 |
+| Mechanical Result | Pass after revision |
+| Governance Result | Pass |
+| Blocking Defect | None after component reclassification |
+| Non-Blocking Open Questions | Detailed pelvic-floor muscle anatomy; future Reflex Activation architecture; optional Propagation handoff; future Sensory and Corpus links; second Motor / Kinetic replication case |
+| Promotion Recommendation | Promote to Supported |
+| Decision Applied | Supported / Draft v0.3 |
+| Review Date | 2026-07-03 |
+
+Evidence:
+
+```text
+focused promotion audit confirmed Female - Pelvic Floor as a valid primary active anchor
+Local scope retained because Female - Pelvic Floor is the sole active anatomical site
+Activation Type reclassified from Composite Activation to Motor / Kinetic Activation
+Tissue-State Activation removed as redundant with motor contraction, shortening, tension, and release
+Mirror-Route Activation removed as a component
+Mirror traversal retained only through MAY_ENGAGE_MIRROR_ROUTE
+Reflex activity remains a modulator, not a formal activation component
+profile remains independent of Fluid Layer content
+candidate Propagation handoff remains optional and non-blocking
+consent boundary remains explicit
+```
 
 ### Female - Menstruation Activation Profile
 
@@ -154,8 +171,18 @@ shared context does not create circular dependency
 
 Menstruation is Supported independently of the Candidate status of the broader Cycle Regulation profile.
 
+## Motor / Kinetic Validation State
+
+```text
+pelvic floor contraction owns local muscular recruitment, contraction, tension, support, and release
+adjacent boundary sites do not increase scope by themselves
+Mirror traversal is retained as graph traversal only, not motor mechanics
+reflex activity remains contextual until Reflex Activation governance exists
+future contrasting Motor / Kinetic profile would strengthen replication but is non-blocking for this promotion
+```
+
 ## Status
 
-Draft v0.5.
+Draft v0.6.
 
-This register has now governed three completed Candidate-to-Supported promotions, including the first Hormonal / Cyclical active-phase profile and the first glandular Fluid Activation profile.
+This register has now governed four completed Candidate-to-Supported promotions, including the first Hormonal / Cyclical active-phase profile, the first glandular Fluid Activation profile, and the first Motor / Kinetic Activation profile.
