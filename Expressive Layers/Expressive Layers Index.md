@@ -9,7 +9,7 @@ file_class: Document
 document_type: Index
 layer: Expressive Layers
 status: Draft
-version: 0.2
+version: 0.3
 last_updated: 2026-07-03
 ---
 
@@ -24,7 +24,7 @@ They do not define canonical anatomy, biological mechanism, fluid identity, acti
 ## Governing Documents
 
 - [[Expressive Layer Framework]] — Draft v0.1
-- [[Expressive Profile Validation & Promotion Register]] — Draft v0.1
+- [[Expressive Profile Validation & Promotion Register]] — Draft v0.2
 
 ## Sublayer Indexes
 
@@ -45,18 +45,19 @@ They do not define canonical anatomy, biological mechanism, fluid identity, acti
 |---|---|---|
 | [[Pleasure Register]] | Sensory | Draft v0.1 |
 | [[Sensory Valence Register]] | Sensory | Draft v0.1 |
-| [[Female - Pelvic Floor Sensory Profile]] | Sensory | Candidate / Draft v0.2 |
+| [[Female - Pelvic Floor Sensory Profile]] | Sensory | Supported / Draft v0.3 |
 | [[Desire Register]] | Emotional / Motivational | Draft v0.1 |
-| [[Female - Pelvic Floor Somatic Profile]] | Somatic | Candidate / Draft v0.2 |
+| [[Female - Pelvic Floor Somatic Profile]] | Somatic | Supported / Draft v0.3 |
 
 ## Current Validation State
 
 ```text
 Expressive framework exists
 Sensory and Somatic templates exist
-Sensory and Somatic pilot profiles exist
+Sensory and Somatic pilot profiles are Supported
 Sensory Valence Register prevents Pleasure-only valence routing
-Expressive Profile Validation & Promotion Register now governs pilot promotion
+Expressive Profile Validation & Promotion Register governs pilot promotion
+first Sensory/Somatic separation path is validated
 ```
 
 ## Core Layer Boundary
@@ -85,12 +86,12 @@ Expressive Layer Framework
 → Female - Pelvic Floor Somatic Profile
 → Sensory Valence Register
 → Expressive Profile Validation & Promotion Register
-→ pilot profile promotion review
-→ future Emotional, Symbolic, Sonic, Environmental, Liturgical, and Temporal profiles
+→ Supported Sensory/Somatic pilot profiles
+→ contrasting fluid, cyclical, regional, environmental, sonic, temporal, and symbolic profiles
 ```
 
 ## Status
 
-Draft v0.2.
+Draft v0.3.
 
-Updated to include Expressive Profile validation and promotion governance.
+Updated after promotion of the first Sensory and Somatic pilot profiles.
