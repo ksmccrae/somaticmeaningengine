@@ -10,7 +10,7 @@ document_type: Index
 layer: Expressive Layers
 expressive_sub_layer: Somatic
 status: Draft
-version: 0.1
+version: 0.2
 last_updated: 2026-07-03
 ---
 
@@ -23,17 +23,18 @@ Somatic records describe how experience is held or organized in the body as a fe
 ## Governing Documents
 
 - [[Expressive Layer Framework]] — Draft v0.1
-- [[Somatic Profile Template]] — Draft v0.1
+- [[Somatic Profile Template]] — Draft v0.2
+- [[Expressive Profile Validation & Promotion Register]] — Draft v0.2
 
 ## Current Profile Indexes
 
-- [[Somatic Profiles Index]] — Draft v0.1
+- [[Somatic Profiles Index]] — Draft v0.2
 
 ## Current Profiles
 
 | Profile | Source | Purpose | Status |
 |---|---|---|---|
-| [[Female - Pelvic Floor Somatic Profile]] | [[Female - Pelvic Floor Contraction Activation Profile]] | First body-state companion to the pelvic-floor Sensory pilot | Candidate / Draft v0.1 |
+| [[Female - Pelvic Floor Somatic Profile]] | [[Female - Pelvic Floor Contraction Activation Profile]] | First body-state companion to the pelvic-floor Sensory pilot | Supported / Draft v0.3 |
 
 ## Scope
 
@@ -121,6 +122,6 @@ Relationship names remain draft until repeated Somatic Profile use validates the
 
 ## Status
 
-Draft v0.1.
+Draft v0.2.
 
-Governed Somatic sublayer index replacing README usage.
+Updated after first Somatic Profile promotion.
