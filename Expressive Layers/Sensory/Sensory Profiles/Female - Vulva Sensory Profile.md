@@ -11,10 +11,10 @@ node_type: Sensory Profile
 layer: Expressive Layers
 expressive_sub_layer: Sensory
 status: Draft
-version: 0.1
+version: 0.2
 sensory_scope: Regional
 primary_sensory_anchor: Female - Vulva
-validation_status: Candidate
+validation_status: Supported
 ---
 
 # Female - Vulva Sensory Profile
@@ -36,7 +36,7 @@ It defines sensory perception only. It does not define vulvar anatomy, activatio
 | Expressive Sublayer | Sensory |
 | Sensory Scope | Regional |
 | Primary Sensory Anchor | [[Female - Vulva]] |
-| Validation Status | Candidate |
+| Validation Status | Supported |
 
 ## Source Context
 
@@ -108,6 +108,12 @@ Sensory-quality terms are controlled candidate values. They are not standalone o
 | Location | Localized / Regional / Boundary-Aware / Diffuse / Unclear | Does not redefine anatomy |
 | Duration | Brief / Sustained / Recurrent / Variable | Does not define temporal structure unless linked to a Temporal profile |
 | Surface Relation | Trace / Local / Surface / Adjacent / Externally Present / Variable | Perceived relationship only; Fluid Profile owns anatomical fluid relationship |
+
+## Upstream Governance Note
+
+The upstream [[Female - Vulvar Lubrication Activation Profile]] currently remains a Supported Activation Profile. This Sensory Profile treats [[Female - Vulva to Female - Clitoral Complex Mirror Profile]] as traversal context only and does not reproduce Mirror-Route Activation as sensory mechanism.
+
+Any later revision to the upstream Activation Profile should preserve this Expressive boundary.
 
 ## Valence Boundary
 
@@ -202,15 +208,15 @@ Female - Vulva Sensory Profile MAY_BE_ANNOTATED_IN Corpus Annotation
 
 ## Review Questions
 
-1. Does Regional sensory scope remain justified by vulva, vestibule, vaginal opening, vaginal canal, and fluid-surface context?
-2. Should Wetness, Surface Presence, Texture, Flow, Odour, and Taste become governed Sensory Quality nodes after repeated use?
-3. Does Surface Relation duplicate Fluid Profile relationships, or does it correctly record perceived surface relation only?
-4. Does mirror route context remain traversal-only without implying arousal, pleasure, or sensory causation?
-5. Is [[Sensory Valence Register]] sufficient for first-pass non-pleasure valence routing in fluid-involving contexts?
-6. Does this profile avoid treating wetness, lubrication, or fluid presence as consent?
+1. Should Wetness, Surface Presence, Texture, Flow, Odour, and Taste become governed Sensory Quality nodes after repeated use?
+2. Does Surface Relation duplicate Fluid Profile relationships, or does it correctly record perceived surface relation only?
+3. Does mirror route context remain traversal-only without implying arousal, pleasure, or sensory causation?
+4. Is [[Sensory Valence Register]] sufficient for first-pass non-pleasure valence routing in fluid-involving contexts?
+5. Does this profile avoid treating wetness, lubrication, or fluid presence as consent?
+6. Should the upstream [[Female - Vulvar Lubrication Activation Profile]] be reviewed later for Mirror-Route component consistency with newer Activation governance?
 
 ## Status
 
-Draft v0.1.
+Draft v0.2.
 
-Candidate contrasting Sensory Profile pilot involving Fluid Layer content. Built to test whether Sensory Profile governance holds when wetness, surface presence, flow, taste, odour, and fluid ambiguity are present.
+Supported fluid-involving Sensory Profile pilot. Promoted after light internal consistency review confirmed that Fluid Layer content is referenced without redefining fluid identity, fluid production, activation mechanics, valence, pleasure, desire, symbolic meaning, authorial language, corpus usage, or consent.
