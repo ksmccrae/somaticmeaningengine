@@ -10,7 +10,7 @@ document_type: Index
 layer: Expressive Layers
 expressive_sub_layer: Emotional / Motivational
 status: Draft
-version: 0.2
+version: 0.3
 last_updated: 2026-07-09
 ---
 
@@ -32,11 +32,11 @@ It does not define activation mechanics, sensory perception, somatic body-state,
 
 | Register | Purpose | Status |
 |---|---|---|
-| [[Desire Register]] | Motivational or affective orientation toward contact, continuation, intimacy, object, person, idea, or experience | Draft v0.1 |
+| [[Desire Register]] | Motivational or affective orientation toward contact, continuation, intimacy, object, person, idea, or experience | Draft v0.2 |
 
 ## Current Profile Indexes
 
-- [[Emotional Profiles Index]] — Draft v0.1
+- [[Emotional Profiles Index]] — Draft v0.2
 
 ## Current Profiles
 
@@ -91,6 +91,6 @@ The two may align, conflict, or occur independently.
 
 ## Status
 
-Draft v0.2.
+Draft v0.3.
 
-Updated after creation of the first route-specific Emotional / Motivational Profile.
+Aligned with [[Desire Register]] Draft v0.2 and the first route-specific Emotional / Motivational Profile.
