@@ -9,7 +9,7 @@ file_class: Document
 document_type: Governance Register
 layer: Expressive Layers
 status: Draft
-version: 0.5
+version: 0.6
 last_updated: 2026-07-09
 ---
 
@@ -24,24 +24,25 @@ Document status = Draft / Validated / Baseline
 Profile validation status = Candidate / Supported / Blocked
 ```
 
-This register covers first-generation Expressive Profile types, especially Sensory Profiles and Somatic Profiles.
+This register currently covers Sensory, Somatic, Emotional / Motivational, and Symbolic Profiles.
 
 ## Required Criteria
 
 | Criterion | Required Evidence |
 |---|---|
 | Mechanical completeness | Required sections present; YAML, body, Index, and relationships agree |
-| Controlled classification | Sublayer, profile type, scope, anchor, and validation status use governed values |
-| Source discipline | Upstream Activation, Fluid, Mirror, Canonical, Environmental, Sonic, Temporal, or Emotional sources are referenced without being redefined |
+| Controlled classification | Sublayer, profile type, scope, context, anchor, and validation status use governed or clearly candidate values |
+| Source discipline | Upstream Canonical, Activation, Fluid, Mirror, Sensory, Somatic, Valence, Emotional, Environmental, Sonic, Temporal, or Liturgical sources are referenced without being redefined |
 | Sensory / Somatic separation | Sensory Profiles define perceived qualities; Somatic Profiles define body-state or embodied orientation |
-| Valence separation | Sensation and somatic state remain distinct from valence, pleasure, discomfort, relief, neutrality, and ambiguity |
-| Desire separation | Desire and motivational orientation are referenced downstream rather than defined inside Sensory or Somatic profiles |
-| Symbolic separation | Symbolic meaning remains downstream and does not overwrite sensation, somatic state, or valence |
-| Authorial separation | Language, cadence, voice, register, and prose style remain Authorial concerns |
-| Corpus separation | Profile does not treat situated work examples as ontology definitions |
-| Consent boundary | Activation, sensation, somatic state, valence, pleasure, discomfort, desire, and symbolic meaning are not treated as consent |
-| Candidate value discipline | Sensory-quality, somatic-state, and valence-category terms remain plain text unless governed nodes exist |
-| Relationship discipline | Draft relationship statements are used consistently and not treated as validated verbs before repetition |
+| Somatic / Motivational separation | Bodily orientation remains distinct from wanting, non-wanting, aversion, curiosity, or other affective direction |
+| Valence separation | Sensation, somatic state, and motivation remain distinct from pleasure, discomfort, relief, neutrality, and ambiguity |
+| Desire separation | Desire and motivational orientation are not inferred from activation, sensation, somatic state, or valence |
+| Symbolic separation | Symbolic meaning remains downstream, optional, and non-redefining |
+| Authorial separation | Language, cadence, voice, register, metaphor, and prose style remain Authorial concerns |
+| Corpus separation | Profiles do not treat situated work examples as ontology definitions |
+| Consent boundary | Activation, sensation, somatic state, valence, pleasure, motivation, desire, and symbolic meaning are not treated as consent |
+| Candidate value discipline | Sensory qualities, somatic states, motivational orientations, and symbolic interpretations remain plain text unless governed nodes exist |
+| Relationship discipline | Draft relationship statements are used consistently and not treated as baseline verbs before repetition |
 | Graph traversal | Incoming and outgoing references support traversal without circular layer collapse |
 | Review questions | Open questions are identified as blocking or non-blocking |
 
@@ -49,71 +50,108 @@ This register covers first-generation Expressive Profile types, especially Senso
 
 ```text
 unresolved profile type
-scope conflict
+scope or primary-context conflict
 source-layer redefinition
 sensory / somatic duplication
-valence collapsed into sensation or somatic state
-desire collapsed into sensation, somatic state, or pleasure
-symbolic meaning collapsed into sensation, somatic state, or valence
+somatic / motivational collapse
+valence collapsed into sensation, somatic state, or motivation
+desire inferred from physiology, sensation, body-state, or pleasure
+symbolic meaning treated as inherent or biologically causal
+authorial language treated as ontology definition
 consent boundary weakened
 candidate values wikilinked as false nodes
 unsupported relationship statements
 incoherent upstream / downstream routing
 ```
 
-Missing downstream Authorial, Corpus, Symbolic, Emotional, or additional profile coverage is non-blocking unless the Expressive Profile depends on it.
+Missing downstream Authorial, Corpus, optional contextual profiles, or additional replication is non-blocking unless the profile depends on it.
 
 ## Profile Type Validation Notes
 
 ### Sensory Profiles
 
-Sensory Profiles must define perceived qualities.
-
-They may reference upstream Activation, Fluid, Mirror, Canonical, Environmental, Sonic, or Temporal context, but they must not define those upstream layers.
+Sensory Profiles define perceived qualities.
 
 ```text
-Sensory Profile
-= pressure, tension, wetness, warmth, ache, texture, taste, odour, sound, contact, movement, rhythm, location, intensity, etc.
+pressure, tension, wetness, warmth, ache, texture, taste, odour, sound, contact, movement, rhythm, location, intensity
 ```
 
-Sensory Profiles must not define sensory valence, pleasure, desire, symbolic meaning, authorial language, corpus truth, or consent.
+They must not define activation mechanics, somatic body-state, valence, desire, symbolic meaning, authorial language, corpus truth, or consent.
 
 ### Somatic Profiles
 
-Somatic Profiles must define body-state, posture-level, whole-body, or embodied-orientation experience.
-
-They may reference Sensory Profiles or Activation Profiles, but they must not duplicate localized sensory qualities.
+Somatic Profiles define body-state, posture-level, whole-body, or embodied-orientation experience.
 
 ```text
-Somatic Profile
-= bracing, holding, support, collapse, grounding, guarding, release, approach, withdrawal, steadiness, etc.
+bracing, holding, support, collapse, grounding, guarding, release, approach, withdrawal, steadiness, softening, containment
 ```
 
-Somatic Profiles must not define localized sensory perception by itself, diagnosis, valence, pleasure, desire, symbolic meaning, authorial language, corpus truth, or consent.
+They must not define localized sensation, diagnosis, valence, motivation, symbolic meaning, authorial language, corpus truth, or consent.
+
+### Emotional / Motivational Profiles
+
+Emotional / Motivational Profiles define affective orientation rather than bodily posture or valence.
+
+```text
+wanting, non-wanting, ambivalence, aversion, curiosity, indifference, suppression, redirection, longing
+```
+
+They must not infer desire from arousal, lubrication, wetness, pleasure, openness, approach, or any other upstream state.
+
+Somatic approach / withdrawal and motivational toward / away must remain distinguishable.
+
+### Symbolic Profiles
+
+Symbolic Profiles define optional reusable interpretation downstream from all source layers.
+
+```text
+boundary, threshold, exposure, containment, vulnerability, sovereignty, release, return, visibility, self-recognition
+```
+
+They must not redefine biology, sensation, somatic state, valence, motivation, authorial language, corpus truth, or consent.
+
+Interpretations must remain optional rather than intrinsic to every instance.
 
 ## Candidate Relationship Validation State
 
-The following relationship statements are currently draft-pattern relationships.
-
-They may be used in Supported records but should not be treated as baseline relationship verbs until repeated profile validation confirms them.
+The following statements are draft-pattern relationships. They may be used in Candidate or Supported records but are not baseline until repeated validation confirms them.
 
 ```text
 IS_SENSORY_PROFILE
 IS_SOMATIC_PROFILE
+IS_EMOTIONAL_MOTIVATIONAL_PROFILE
+IS_SYMBOLIC_PROFILE
 HAS_SENSORY_SCOPE
 HAS_SOMATIC_SCOPE
+HAS_MOTIVATIONAL_SCOPE
+HAS_SYMBOLIC_SCOPE
 HAS_PRIMARY_SENSORY_ANCHOR
 HAS_PRIMARY_SOMATIC_ANCHOR
+HAS_PRIMARY_MOTIVATIONAL_CONTEXT
+HAS_PRIMARY_SYMBOLIC_CONTEXT
 MAY_BE_ENABLED_BY
+MAY_BE_CONTEXTUALIZED_BY
 MAY_REFERENCE_ANATOMICAL_SITE
 MAY_REFERENCE_FLUID_ENTITY
 MAY_REFERENCE_FLUID_PROFILE
 MAY_REFERENCE_MIRROR_ROUTE
 MAY_REFERENCE_SENSORY_PROFILE
+MAY_REFERENCE_SOMATIC_PROFILE
+MAY_REFERENCE_VALENCE_REGISTER
+MAY_REFERENCE_DESIRE_REGISTER
+MAY_REFERENCE_SYMBOLIC_REGISTER
 MAY_DEFINE_SENSORY_QUALITY
 MAY_DEFINE_SOMATIC_STATE
+MAY_DEFINE_MOTIVATIONAL_ORIENTATION
+MAY_DEFINE_SYMBOLIC_INTERPRETATION
 MAY_HAVE_VALENCE
 MAY_CONTEXTUALIZE
+MAY_INTERPRET_ANATOMICAL_SITE
+MAY_INTERPRET_ACTIVATION_PROFILE
+MAY_INTERPRET_FLUID_ENTITY
+MAY_INTERPRET_SENSORY_PROFILE
+MAY_INTERPRET_SOMATIC_PROFILE
+MAY_INTERPRET_EMOTIONAL_PROFILE
 MAY_BE_INTERPRETED_BY
 MAY_BE_USED_BY
 MAY_BE_ANNOTATED_IN
@@ -129,22 +167,18 @@ MAY_BE_ANNOTATED_IN
 | Governance Result | Pass |
 | Blocking Defect | None |
 | Non-Blocking Open Questions | Sensory-quality value governance; directionality boundary; ache/discomfort routing; mirror context; future Discomfort Register |
-| Promotion Recommendation | Promote to Supported |
 | Decision Applied | Supported / Draft v0.3 |
 | Review Date | 2026-07-03 |
 
 Evidence:
 
 ```text
-light internal consistency review confirmed required sections are present
-Sensory Profile defines perceived qualities rather than activation mechanics
-upstream Female - Pelvic Floor Contraction Activation Profile remains the source Activation context
+perceived qualities remain distinct from activation mechanics
 Female - Pelvic Floor remains the primary sensory anchor
-Mirror route remains contextual traversal only
-Fluid Layer independence is preserved
-Sensory Valence Register and Pleasure Register remain downstream only
-Desire, Symbolic Meaning, Authorial, and Corpus systems remain downstream
-sensory-quality terms remain controlled candidate values, not wikilinked nodes
+Mirror remains contextual traversal only
+Fluid independence is preserved
+valence, desire, symbolic meaning, Authorial, and Corpus systems remain downstream
+candidate values remain plain text
 consent boundary remains explicit
 ```
 
@@ -155,8 +189,7 @@ consent boundary remains explicit
 | Mechanical Result | Pass |
 | Governance Result | Pass |
 | Blocking Defect | None |
-| Non-Blocking Open Questions | Sensory-quality value governance; surface-relation perception vs Fluid Profile relationship; taste/odour governance; future Discomfort Register |
-| Promotion Recommendation | Retain Supported |
+| Non-Blocking Open Questions | Sensory-quality governance; surface-relation perception; taste/odour governance; future Discomfort Register |
 | Decision Applied | Supported / Draft v0.3 |
 | Original Review Date | 2026-07-03 |
 | Cross-Layer Alignment Date | 2026-07-09 |
@@ -164,20 +197,13 @@ consent boundary remains explicit
 Evidence:
 
 ```text
-light internal consistency review confirmed required sections are present
-Sensory Profile defines perceived qualities rather than activation mechanics
 Female - Vulva remains the primary sensory anchor
-Regional sensory scope is justified by vulva, vestibule, vaginal opening, vaginal canal, and fluid-surface context
-Vaginal Fluid identity remains Fluid Layer content
-Female - Vulva Fluid Profile and Female - Vaginal Canal Fluid Profile provide context without defining sensation
-wetness, surface presence, flow, taste, and odour remain sensory qualities, not fluid identity or production mechanics
-surface relation records perception only and does not replace Fluid Profile anatomical relationships
-Mirror route remains contextual traversal only
-upstream Female - Vulvar Lubrication Activation Profile now uses the same Mirror boundary and no longer treats Mirror traversal as an Activation component
-Sensory Valence Register and Pleasure Register remain downstream only
-Desire, Symbolic Meaning, Authorial, and Corpus systems remain downstream
-sensory-quality terms remain controlled candidate values, not wikilinked nodes
-consent boundary explicitly rejects wetness, lubrication, fluid surface presence, taste, odour, pleasure, desire, and symbolic meaning as consent
+Regional scope is supported by local and fluid-surface context
+Vaginal Fluid and Fluid Profiles remain Fluid Layer content
+wetness, surface presence, flow, taste, and odour remain sensory qualities
+Mirror remains traversal only in both upstream Activation and downstream Sensory records
+valence, motivation, symbolic meaning, Authorial, and Corpus systems remain downstream
+wetness, lubrication, fluid presence, pleasure, and desire are not consent
 ```
 
 ### Female - Pelvic Floor Somatic Profile
@@ -187,24 +213,18 @@ consent boundary explicitly rejects wetness, lubrication, fluid surface presence
 | Mechanical Result | Pass |
 | Governance Result | Pass |
 | Blocking Defect | None |
-| Non-Blocking Open Questions | Somatic-state value governance; Local / Whole-Body scope replication; guarding boundary; letting-go phrasing; future Discomfort Register |
-| Promotion Recommendation | Promote to Supported |
+| Non-Blocking Open Questions | Somatic-state governance; Local / Whole-Body replication; guarding boundary; letting-go phrasing; future Discomfort Register |
 | Decision Applied | Supported / Draft v0.3 |
 | Review Date | 2026-07-03 |
 
 Evidence:
 
 ```text
-light internal consistency review confirmed required sections are present
-Somatic Profile defines body-state and embodied orientation rather than localized sensory qualities
-Female - Pelvic Floor Contraction Activation Profile remains upstream Activation context
-Female - Pelvic Floor Sensory Profile may inform but does not define somatic body-state
-Local / Whole-Body scope is retained as first-pass expression of local source with possible whole-body echo
-Somatic-state terms remain controlled candidate values, not wikilinked nodes
-Sensory Valence Register and Pleasure Register remain downstream only
-Desire, Symbolic Meaning, Authorial, and Corpus systems remain downstream
-no diagnosis, trauma inference, refusal inference, or consent inference is made
-consent boundary remains explicit
+body-state remains distinct from localized sensation and motor activation
+local anchor with possible whole-body echo is explicit
+candidate states remain plain text
+valence, motivation, symbolic meaning, Authorial, and Corpus systems remain downstream
+no diagnosis, trauma, refusal, or consent inference is made
 ```
 
 ### Female - Vulva Somatic Profile
@@ -214,53 +234,98 @@ consent boundary remains explicit
 | Mechanical Result | Candidate; light consistency review pending |
 | Governance Result | Pending |
 | Blocking Defect | None identified yet |
-| Non-Blocking Open Questions | Regional / Whole-Body scope; Openness and Softening boundary with anatomy and Tissue-State Activation; Approach / Withdrawal placement; distinction from Female - Pelvic Floor Somatic Profile; fluid separation; consent treatment of guarding, bracing, and withdrawal |
-| Promotion Recommendation | Not yet assessed |
+| Non-Blocking Open Questions | Regional / Whole-Body scope; Openness and Softening boundary; Approach / Withdrawal placement; distinction from Pelvic Floor Somatic Profile; fluid separation; consent treatment of guarding, bracing, and withdrawal |
 | Decision Applied | Candidate / Draft v0.1 |
 | Review Date | 2026-07-09 |
 
 Candidate evidence:
 
 ```text
-Female - Vulvar Lubrication Activation Profile is a Supported upstream source
-Female - Vulva Sensory Profile is a Supported sensory companion
+Supported Activation and Sensory sources exist
 Female - Vulva is the primary somatic anchor
-fluid identity, production, volume, flow, taste, and odour remain outside the Somatic profile
-wetness and lubrication are treated as possible sensory context rather than determinants of body-state
-Openness and Softening are defined as body-state rather than anatomy or Tissue-State Activation
-Approach and Withdrawal remain candidate somatic orientations pending Emotional / Motivational replication
-shared states with Female - Pelvic Floor Somatic Profile are distinguished by anchor and route
-somatic-state terms remain controlled candidate values, not wikilinked nodes
-consent boundary rejects openness, softening, settling, approach, release, wetness, lubrication, pleasure, desire, and symbolic meaning as consent
+fluid qualities remain outside the Somatic profile
+wetness and lubrication may inform context but do not determine body-state
+Openness and Softening are framed as body-state rather than anatomy or Tissue-State Activation
+shared states with Pelvic Floor profile remain distinguished by anchor and route
+consent boundary rejects openness, approach, release, wetness, lubrication, pleasure, and desire as consent
 guarding, bracing, and withdrawal must not be ignored or treated as permission
 ```
 
-## First Validation Path
+### Female - Vulva Emotional-Motivational Profile
+
+| Field | Assessment |
+|---|---|
+| Mechanical Result | Candidate; light consistency review pending |
+| Governance Result | Pending |
+| Blocking Defect | None identified yet |
+| Non-Blocking Open Questions | Situational / Relational scope; Wanting vs consent; Non-Wanting vs refusal; motivational direction vs Somatic orientation; ambivalent motivation vs ambivalent valence; future specialized profiles |
+| Decision Applied | Candidate / Draft v0.1 |
+| Review Date | 2026-07-09 |
+
+Candidate evidence:
+
+```text
+Supported Activation and Sensory sources and Candidate Somatic source are referenced without redefinition
+Female - Vulva provides embodied context rather than causing desire
+Wanting, Non-Wanting, Ambivalence, Aversion, Curiosity, Indifference, Suppression, Redirection, and Longing remain controlled candidate values
+Somatic approach / withdrawal is distinguished from motivational toward / away
+pleasure may occur without desire and desire may occur without pleasure
+wetness, openness, pleasure, wanting, curiosity, ambivalence, and longing do not imply consent
+non-wanting and aversion must not be ignored or treated as permission
+```
+
+### Female - Vulva Symbolic Profile
+
+| Field | Assessment |
+|---|---|
+| Mechanical Result | Candidate; light consistency review pending |
+| Governance Result | Pending |
+| Blocking Defect | None identified yet |
+| Non-Blocking Open Questions | Cross-Layer scope; Boundary vs Threshold; shared Containment / Release terms; optionality of interpretation; Sovereignty governance; Meaning Layer bridge |
+| Decision Applied | Candidate / Draft v0.1 |
+| Review Date | 2026-07-09 |
+
+Candidate evidence:
+
+```text
+Symbolic Meaning Register remains the canonical governance bridge
+source anatomy, activation, fluid, sensation, somatic state, and motivation remain separately typed
+Boundary, Threshold, Exposure, Containment, Vulnerability, Sovereignty, Release, Return, Visibility, and Self-Recognition remain optional controlled values
+shared terms are explicitly typed by layer
+Authorial systems own expression and Corpus owns situated use
+threshold, exposure, visibility, vulnerability, wetness, openness, pleasure, and desire do not imply consent
+symbolic interpretation cannot overwrite sovereignty or separately established consent
+```
+
+## Validated and Candidate Routes
+
+### Pelvic Floor Route
 
 ```text
 Female - Pelvic Floor Contraction Activation Profile
 → Female - Pelvic Floor Sensory Profile
 → Female - Pelvic Floor Somatic Profile
 → Sensory Valence Register
-→ Pleasure Register / Desire Register / Symbolic Meaning Register downstream
+→ Desire Register / Symbolic Meaning Register downstream
 ```
 
-This path is useful because the upstream Activation Profile is Supported, Local, fluid-independent, and Motor / Kinetic only.
+The Sensory and Somatic profiles are Supported.
 
-## Fluid-Involving Validation Path
+### Vulvar Route
 
 ```text
 Female - Vulvar Lubrication Activation Profile
-→ Vaginal Fluid / Female - Vulva Fluid Profile / Female - Vaginal Canal Fluid Profile
+→ Vaginal Fluid / Fluid Profiles
 → Female - Vulva Sensory Profile
 → Female - Vulva Somatic Profile
-→ Sensory Valence Register
-→ Pleasure Register / Desire Register / Symbolic Meaning Register downstream
+→ Sensory Valence Register / Pleasure Register
+→ Female - Vulva Emotional-Motivational Profile / Desire Register
+→ Female - Vulva Symbolic Profile / Symbolic Meaning Register
+→ Authorial systems
+→ Corpus Annotation
 ```
 
-The Supported Sensory profile validates that Fluid Layer content can be perceived without being redefined. The Candidate Somatic profile now tests whether fluid-enabled sensory context can inform body-state without determining it.
-
-The upstream Activation profile and downstream Sensory profile share the same Mirror boundary: traversal may be referenced, but Mirror is not a physiological or sensory mechanism.
+The Activation and Sensory profiles are Supported. Somatic, Emotional / Motivational, and Symbolic profiles are Candidate pending light internal review.
 
 ## Consent Boundary
 
@@ -272,27 +337,29 @@ Valence is not consent.
 Wetness is not consent.
 Lubrication is not consent.
 Fluid surface presence is not consent.
-Taste is not consent.
-Odour is not consent.
 Openness is not consent.
 Softening is not consent.
 Approach is not consent.
 Release is not consent.
 Pleasure is not consent.
-Discomfort is not refusal by itself.
-Relief is not consent.
-Neutrality is not consent.
+Wanting is not consent.
+Curiosity is not consent.
 Ambivalence is not consent.
+Indifference is not consent.
+Longing is not consent.
 Desire is not consent.
 Symbolic meaning is not consent.
+Exposure does not imply invitation.
+Visibility does not imply availability.
+A threshold does not imply permission to cross.
 Authorial emphasis is not consent.
 Corpus usage is not consent.
 ```
 
-Guarding, bracing, or withdrawal do not alone define a complete formal consent state, but they must not be ignored, overridden, or treated as permission.
+Non-wanting, aversion, guarding, bracing, and withdrawal must not be ignored, overridden, or treated as permission.
 
 ## Status
 
-Draft v0.5.
+Draft v0.6.
 
-This register has governed three Supported Expressive Profile pilots and now tracks the first fluid-enabled Regional / Whole-Body Somatic Profile candidate.
+The register now governs the complete core expressive profile path through Sensory, Somatic, Emotional / Motivational, and Symbolic layers. Three vulvar downstream profiles remain Candidate pending light internal review.
