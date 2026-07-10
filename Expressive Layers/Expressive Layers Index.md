@@ -9,7 +9,7 @@ file_class: Document
 document_type: Index
 layer: Expressive Layers
 status: Draft
-version: 0.5
+version: 0.6
 last_updated: 2026-07-09
 ---
 
@@ -24,7 +24,7 @@ They do not define canonical anatomy, biological mechanism, fluid identity, acti
 ## Governing Documents
 
 - [[Expressive Layer Framework]] — Draft v0.1
-- [[Expressive Profile Validation & Promotion Register]] — Draft v0.4
+- [[Expressive Profile Validation & Promotion Register]] — Draft v0.5
 
 ## Sublayer Indexes
 
@@ -49,20 +49,21 @@ They do not define canonical anatomy, biological mechanism, fluid identity, acti
 | [[Female - Vulva Sensory Profile]] | Sensory | Supported / Draft v0.3 |
 | [[Desire Register]] | Emotional / Motivational | Draft v0.1 |
 | [[Female - Pelvic Floor Somatic Profile]] | Somatic | Supported / Draft v0.3 |
+| [[Female - Vulva Somatic Profile]] | Somatic | Candidate / Draft v0.1 |
 
 ## Current Validation State
 
 ```text
 Expressive framework exists
 Sensory and Somatic templates exist
-Sensory and Somatic pilot profiles are Supported
-first fluid-independent Local Sensory Profile is Supported
+first fluid-independent Sensory and Somatic profiles are Supported
 first fluid-involving Regional Sensory Profile is Supported
+first fluid-enabled Regional / Whole-Body Somatic Profile is Candidate
 Sensory Valence Register prevents Pleasure-only valence routing
 Expressive Profile Validation & Promotion Register governs pilot promotion
-first Sensory/Somatic separation path is validated
 Fluid Layer content can be referenced by Sensory Profiles without redefining fluid identity or production
-upstream Vulvar Lubrication Activation and downstream Vulva Sensory profiles now share the same Mirror boundary
+Somatic profiles may receive fluid-enabled sensory context without making fluid qualities into body-state
+upstream Vulvar Lubrication Activation and downstream Vulva Sensory profiles share the same Mirror boundary
 ```
 
 ## Core Layer Boundary
@@ -81,6 +82,21 @@ Corpus
 = situated usage in specific works
 ```
 
+## Current Vulvar Route
+
+```text
+Female - Vulvar Lubrication Activation Profile
+→ Female - Vulva Sensory Profile
+→ Female - Vulva Somatic Profile
+→ Sensory Valence Register / Pleasure Register
+→ Desire Register
+→ Symbolic Meaning Register
+→ Authorial systems
+→ Corpus Annotation
+```
+
+The Activation and Sensory profiles are Supported. The Somatic profile is Candidate pending light internal consistency review.
+
 ## Build Path
 
 ```text
@@ -94,11 +110,14 @@ Expressive Layer Framework
 → Supported Sensory/Somatic pilot profiles
 → Female - Vulva Sensory Profile
 → cross-layer alignment with Female - Vulvar Lubrication Activation Profile
-→ contrasting fluid-boundary, cyclical, regional, environmental, sonic, temporal, and symbolic profiles
+→ Female - Vulva Somatic Profile
+→ Emotional / Motivational routing
+→ Symbolic interpretation
+→ contrasting fluid-boundary, cyclical, environmental, sonic, temporal, and liturgical profiles
 ```
 
 ## Status
 
-Draft v0.5.
+Draft v0.6.
 
-Updated after cross-layer alignment of [[Female - Vulvar Lubrication Activation Profile]] and [[Female - Vulva Sensory Profile]].
+Updated after creation of [[Female - Vulva Somatic Profile]] as the next stage of the current vulvar expressive route.
