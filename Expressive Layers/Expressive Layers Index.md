@@ -9,8 +9,8 @@ file_class: Document
 document_type: Index
 layer: Expressive Layers
 status: Draft
-version: 0.4
-last_updated: 2026-07-03
+version: 0.5
+last_updated: 2026-07-09
 ---
 
 # Expressive Layers Index
@@ -24,7 +24,7 @@ They do not define canonical anatomy, biological mechanism, fluid identity, acti
 ## Governing Documents
 
 - [[Expressive Layer Framework]] — Draft v0.1
-- [[Expressive Profile Validation & Promotion Register]] — Draft v0.3
+- [[Expressive Profile Validation & Promotion Register]] — Draft v0.4
 
 ## Sublayer Indexes
 
@@ -46,7 +46,7 @@ They do not define canonical anatomy, biological mechanism, fluid identity, acti
 | [[Pleasure Register]] | Sensory | Draft v0.1 |
 | [[Sensory Valence Register]] | Sensory | Draft v0.1 |
 | [[Female - Pelvic Floor Sensory Profile]] | Sensory | Supported / Draft v0.3 |
-| [[Female - Vulva Sensory Profile]] | Sensory | Supported / Draft v0.2 |
+| [[Female - Vulva Sensory Profile]] | Sensory | Supported / Draft v0.3 |
 | [[Desire Register]] | Emotional / Motivational | Draft v0.1 |
 | [[Female - Pelvic Floor Somatic Profile]] | Somatic | Supported / Draft v0.3 |
 
@@ -62,6 +62,7 @@ Sensory Valence Register prevents Pleasure-only valence routing
 Expressive Profile Validation & Promotion Register governs pilot promotion
 first Sensory/Somatic separation path is validated
 Fluid Layer content can be referenced by Sensory Profiles without redefining fluid identity or production
+upstream Vulvar Lubrication Activation and downstream Vulva Sensory profiles now share the same Mirror boundary
 ```
 
 ## Core Layer Boundary
@@ -92,11 +93,12 @@ Expressive Layer Framework
 → Expressive Profile Validation & Promotion Register
 → Supported Sensory/Somatic pilot profiles
 → Female - Vulva Sensory Profile
+→ cross-layer alignment with Female - Vulvar Lubrication Activation Profile
 → contrasting fluid-boundary, cyclical, regional, environmental, sonic, temporal, and symbolic profiles
 ```
 
 ## Status
 
-Draft v0.4.
+Draft v0.5.
 
-Updated after promotion of the first fluid-involving Regional Sensory Profile.
+Updated after cross-layer alignment of [[Female - Vulvar Lubrication Activation Profile]] and [[Female - Vulva Sensory Profile]].
