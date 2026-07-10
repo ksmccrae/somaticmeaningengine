@@ -10,7 +10,7 @@ document_type: Index
 layer: Expressive Layers
 expressive_sub_layer: Symbolic
 status: Draft
-version: 0.2
+version: 0.3
 last_updated: 2026-07-09
 ---
 
@@ -24,12 +24,22 @@ Symbolic records do not define objective biology, activation mechanics, sensatio
 
 - [[Expressive Layer Framework]] — Draft v0.1
 - [[Symbolic Profile Template]] — Draft v0.1
-- [[Symbolic Meaning Register]] — Existing Meaning Layer register, Draft v0.1
+- [[Symbolic Meaning Register]] — Meaning Layer governance bridge, Draft v0.2
 - [[Expressive Profile Validation & Promotion Register]] — Draft v0.6
+
+## Governance Bridge
+
+```text
+Symbolic Meaning Register
+= canonical governance for symbolic interpretation
+
+Expressive Layers/Symbolic
+= route-specific Symbolic Profiles applying that governance
+```
 
 ## Current Profile Indexes
 
-- [[Symbolic Profiles Index]] — Draft v0.1
+- [[Symbolic Profiles Index]] — Draft v0.2
 
 ## Current Profiles
 
@@ -106,6 +116,6 @@ Symbolic Containment / Release
 
 ## Status
 
-Draft v0.2.
+Draft v0.3.
 
-Updated after creation of the first route-specific Symbolic Profile.
+Aligned with the updated Meaning Layer governance bridge and the first route-specific Symbolic Profile.
