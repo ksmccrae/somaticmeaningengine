@@ -11,8 +11,8 @@ document_type: Index
 layer: Expressive Layers
 expressive_sub_layer: Sensory
 status: Draft
-version: 0.5
-last_updated: 2026-07-03
+version: 0.6
+last_updated: 2026-07-09
 ---
 
 # Sensory Profiles Index
@@ -25,17 +25,17 @@ Sensory Profiles define perceived qualities. They do not define activation mecha
 
 - [[Expressive Layer Framework]] — Draft v0.1
 - [[Sensory Profile Template]] — Draft v0.2
-- [[Sensory Index]] — Draft v0.3
+- [[Sensory Index]] — Draft v0.5
 - [[Sensory Valence Register]] — Draft v0.1
 - [[Pleasure Register]] — Draft v0.1
-- [[Expressive Profile Validation & Promotion Register]] — Draft v0.3
+- [[Expressive Profile Validation & Promotion Register]] — Draft v0.4
 
 ## Current Profiles
 
 | Sensory Profile | Primary Sensory Anchor | Source Context | Sensory Scope | Fluid Required | Mirror Context | Valence Routing | Validation | Document |
 |---|---|---|---|---|---|---|---|---|
 | [[Female - Pelvic Floor Sensory Profile]] | [[Female - Pelvic Floor]] | [[Female - Pelvic Floor Contraction Activation Profile]] | Local | None required | [[Female - Perineum to Female - Pelvic Floor Mirror Profile]] referenced only | [[Sensory Valence Register]] / [[Pleasure Register]] downstream only | Supported | Draft v0.3 |
-| [[Female - Vulva Sensory Profile]] | [[Female - Vulva]] | [[Female - Vulvar Lubrication Activation Profile]] | Regional | [[Vaginal Fluid]] optional perceptual input | [[Female - Vulva to Female - Clitoral Complex Mirror Profile]] referenced only | [[Sensory Valence Register]] / [[Pleasure Register]] downstream only | Supported | Draft v0.2 |
+| [[Female - Vulva Sensory Profile]] | [[Female - Vulva]] | [[Female - Vulvar Lubrication Activation Profile]] | Regional | [[Vaginal Fluid]] optional perceptual input | [[Female - Vulva to Female - Clitoral Complex Mirror Profile]] referenced only | [[Sensory Valence Register]] / [[Pleasure Register]] downstream only | Supported | Draft v0.3 |
 
 ## Current Validation Coverage
 
@@ -49,6 +49,7 @@ Sensory Valence Register provides broad valence routing
 Pleasure, Desire, Symbolic Meaning, Authorial, and Corpus systems remain downstream
 Mirror traversal remains contextual only, not sensory mechanism
 Fluid Layer content may be referenced without redefining fluid identity or production
+upstream Vulvar Lubrication Activation and downstream Vulva Sensory profiles now share the same Mirror boundary
 ```
 
 ## Candidate Future Profiles
@@ -81,6 +82,6 @@ Use a contrasting fluid-boundary or cyclical Sensory Profile, preferably [[Femal
 
 ## Status
 
-Draft v0.5.
+Draft v0.6.
 
-Updated after promotion of the first fluid-involving Regional Sensory Profile.
+Updated after cross-layer alignment of [[Female - Vulvar Lubrication Activation Profile]] and [[Female - Vulva Sensory Profile]].
