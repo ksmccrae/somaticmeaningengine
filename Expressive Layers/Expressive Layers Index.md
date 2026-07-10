@@ -9,7 +9,7 @@ file_class: Document
 document_type: Index
 layer: Expressive Layers
 status: Draft
-version: 0.3
+version: 0.4
 last_updated: 2026-07-03
 ---
 
@@ -24,7 +24,7 @@ They do not define canonical anatomy, biological mechanism, fluid identity, acti
 ## Governing Documents
 
 - [[Expressive Layer Framework]] — Draft v0.1
-- [[Expressive Profile Validation & Promotion Register]] — Draft v0.2
+- [[Expressive Profile Validation & Promotion Register]] — Draft v0.3
 
 ## Sublayer Indexes
 
@@ -46,6 +46,7 @@ They do not define canonical anatomy, biological mechanism, fluid identity, acti
 | [[Pleasure Register]] | Sensory | Draft v0.1 |
 | [[Sensory Valence Register]] | Sensory | Draft v0.1 |
 | [[Female - Pelvic Floor Sensory Profile]] | Sensory | Supported / Draft v0.3 |
+| [[Female - Vulva Sensory Profile]] | Sensory | Supported / Draft v0.2 |
 | [[Desire Register]] | Emotional / Motivational | Draft v0.1 |
 | [[Female - Pelvic Floor Somatic Profile]] | Somatic | Supported / Draft v0.3 |
 
@@ -55,9 +56,12 @@ They do not define canonical anatomy, biological mechanism, fluid identity, acti
 Expressive framework exists
 Sensory and Somatic templates exist
 Sensory and Somatic pilot profiles are Supported
+first fluid-independent Local Sensory Profile is Supported
+first fluid-involving Regional Sensory Profile is Supported
 Sensory Valence Register prevents Pleasure-only valence routing
 Expressive Profile Validation & Promotion Register governs pilot promotion
 first Sensory/Somatic separation path is validated
+Fluid Layer content can be referenced by Sensory Profiles without redefining fluid identity or production
 ```
 
 ## Core Layer Boundary
@@ -87,11 +91,12 @@ Expressive Layer Framework
 → Sensory Valence Register
 → Expressive Profile Validation & Promotion Register
 → Supported Sensory/Somatic pilot profiles
-→ contrasting fluid, cyclical, regional, environmental, sonic, temporal, and symbolic profiles
+→ Female - Vulva Sensory Profile
+→ contrasting fluid-boundary, cyclical, regional, environmental, sonic, temporal, and symbolic profiles
 ```
 
 ## Status
 
-Draft v0.3.
+Draft v0.4.
 
-Updated after promotion of the first Sensory and Somatic pilot profiles.
+Updated after promotion of the first fluid-involving Regional Sensory Profile.
