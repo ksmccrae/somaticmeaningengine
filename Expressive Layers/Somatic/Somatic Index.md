@@ -10,8 +10,8 @@ document_type: Index
 layer: Expressive Layers
 expressive_sub_layer: Somatic
 status: Draft
-version: 0.2
-last_updated: 2026-07-03
+version: 0.3
+last_updated: 2026-07-09
 ---
 
 # Somatic Index
@@ -24,17 +24,18 @@ Somatic records describe how experience is held or organized in the body as a fe
 
 - [[Expressive Layer Framework]] — Draft v0.1
 - [[Somatic Profile Template]] — Draft v0.2
-- [[Expressive Profile Validation & Promotion Register]] — Draft v0.2
+- [[Expressive Profile Validation & Promotion Register]] — Draft v0.5
 
 ## Current Profile Indexes
 
-- [[Somatic Profiles Index]] — Draft v0.2
+- [[Somatic Profiles Index]] — Draft v0.3
 
 ## Current Profiles
 
 | Profile | Source | Purpose | Status |
 |---|---|---|---|
 | [[Female - Pelvic Floor Somatic Profile]] | [[Female - Pelvic Floor Contraction Activation Profile]] | First body-state companion to the pelvic-floor Sensory pilot | Supported / Draft v0.3 |
+| [[Female - Vulva Somatic Profile]] | [[Female - Vulvar Lubrication Activation Profile]] and [[Female - Vulva Sensory Profile]] | First fluid-enabled Regional / Whole-Body Somatic pilot | Candidate / Draft v0.1 |
 
 ## Scope
 
@@ -61,6 +62,8 @@ expansion
 constriction
 dissociation
 orientation
+softening
+containment
 ```
 
 Somatic does not define:
@@ -69,6 +72,7 @@ Somatic does not define:
 canonical anatomy
 activation mechanics
 fluid identity
+fluid production
 localized sensory quality by itself
 pleasure or discomfort as valence
 desire or motivational orientation
@@ -89,12 +93,39 @@ Somatic Profile
 = whole-body, posture-level, body-state, or embodied orientation
 ```
 
-Example:
+Examples:
 
 ```text
-Sensory: pressure, pulsing, tension, release at the pelvic floor
-Somatic: bracing, holding, support, steadiness, letting go, collapse
+Female - Pelvic Floor Sensory Profile
+= pressure, pulsing, tension, release
+
+Female - Pelvic Floor Somatic Profile
+= bracing, holding, support, steadiness, letting go, collapse
+
+Female - Vulva Sensory Profile
+= wetness, surface presence, texture, warmth, pressure, fullness, flow, taste, odour
+
+Female - Vulva Somatic Profile
+= openness, guarding, bracing, softening, settling, containment, approach, withdrawal, grounding, release
 ```
+
+## Fluid Boundary
+
+```text
+Fluid Entity / Fluid Profile
+= fluid identity and anatomical relationship
+
+Activation Profile
+= physiological tissue/fluid process
+
+Sensory Profile
+= perceived fluid-related qualities
+
+Somatic Profile
+= body-state or embodied orientation
+```
+
+Wetness, lubrication, and fluid surface presence may inform experience but do not determine somatic state, valence, desire, symbolic meaning, or consent.
 
 ## Relationship Pattern
 
@@ -117,11 +148,10 @@ Relationship names remain draft until repeated Somatic Profile use validates the
 | Planned Profile | Source | Purpose |
 |---|---|---|
 | Menstrual Somatic Profile | [[Female - Menstruation Activation Profile]] | Future cyclical body-state pilot |
-| Vulvar Arousal Somatic Profile | [[Female - Vulvar Lubrication Activation Profile]] | Future body-state response pilot |
 | Paraurethral Release Somatic Profile | [[Female - Paraurethral Glandular Release Activation Profile]] | Future boundary ambiguity and fluid-release body-state pilot |
 
 ## Status
 
-Draft v0.2.
+Draft v0.3.
 
-Updated after first Somatic Profile promotion.
+Updated after creation of [[Female - Vulva Somatic Profile]] as the first fluid-enabled Regional / Whole-Body Somatic candidate.
