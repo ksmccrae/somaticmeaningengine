@@ -9,7 +9,7 @@ file_class: Document
 document_type: Governance Register
 layer: Expressive Layers
 status: Draft
-version: 0.2
+version: 0.3
 last_updated: 2026-07-03
 ---
 
@@ -148,6 +148,36 @@ sensory-quality terms remain controlled candidate values, not wikilinked nodes
 consent boundary remains explicit
 ```
 
+### Female - Vulva Sensory Profile
+
+| Field | Assessment |
+|---|---|
+| Mechanical Result | Pass |
+| Governance Result | Pass with upstream note |
+| Blocking Defect | None |
+| Non-Blocking Open Questions | Sensory-quality value governance; surface-relation perception vs Fluid Profile relationship; taste/odour governance; future Discomfort Register; upstream Vulvar Lubrication mirror-component consistency review |
+| Promotion Recommendation | Promote to Supported |
+| Decision Applied | Supported / Draft v0.2 |
+| Review Date | 2026-07-03 |
+
+Evidence:
+
+```text
+light internal consistency review confirmed required sections are present
+Sensory Profile defines perceived qualities rather than activation mechanics
+Female - Vulva remains the primary sensory anchor
+Regional sensory scope is justified by vulva, vestibule, vaginal opening, vaginal canal, and fluid-surface context
+Vaginal Fluid identity remains Fluid Layer content
+Female - Vulva Fluid Profile and Female - Vaginal Canal Fluid Profile provide context without defining sensation
+wetness, surface presence, flow, taste, and odour remain sensory qualities, not fluid identity or production mechanics
+surface relation records perception only and does not replace Fluid Profile anatomical relationships
+Mirror route remains contextual traversal only
+Sensory Valence Register and Pleasure Register remain downstream only
+Desire, Symbolic Meaning, Authorial, and Corpus systems remain downstream
+sensory-quality terms remain controlled candidate values, not wikilinked nodes
+consent boundary explicitly rejects wetness, lubrication, fluid surface presence, taste, odour, pleasure, desire, and symbolic meaning as consent
+```
+
 ### Female - Pelvic Floor Somatic Profile
 
 | Field | Assessment |
@@ -187,6 +217,18 @@ Female - Pelvic Floor Contraction Activation Profile
 
 This path is useful because the upstream Activation Profile is Supported, Local, fluid-independent, and Motor / Kinetic only.
 
+## Fluid-Involving Validation Path
+
+```text
+Female - Vulvar Lubrication Activation Profile
+→ Vaginal Fluid / Female - Vulva Fluid Profile / Female - Vaginal Canal Fluid Profile
+→ Female - Vulva Sensory Profile
+→ Sensory Valence Register
+→ Pleasure Register / Desire Register / Symbolic Meaning Register downstream
+```
+
+This path validates that Sensory Profiles can reference Fluid Layer content without redefining fluid identity, production, anatomical path, valence, desire, symbolic meaning, or consent.
+
 ## Consent Boundary
 
 ```text
@@ -194,6 +236,11 @@ Activation is not consent.
 Sensation is not consent.
 Somatic state is not consent.
 Valence is not consent.
+Wetness is not consent.
+Lubrication is not consent.
+Fluid surface presence is not consent.
+Taste is not consent.
+Odour is not consent.
 Pleasure is not consent.
 Discomfort is not refusal by itself.
 Relief is not consent.
@@ -207,6 +254,6 @@ Corpus usage is not consent.
 
 ## Status
 
-Draft v0.2.
+Draft v0.3.
 
-This register has now governed the first two Supported Expressive Profile pilots: one Sensory Profile and one Somatic Profile, both derived from a Supported, Local, fluid-independent Motor / Kinetic Activation Profile.
+This register has now governed three Supported Expressive Profile pilots: two Sensory Profiles and one Somatic Profile, including the first fluid-involving Regional Sensory Profile.
