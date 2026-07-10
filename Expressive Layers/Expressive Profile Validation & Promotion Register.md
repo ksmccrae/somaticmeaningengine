@@ -9,7 +9,7 @@ file_class: Document
 document_type: Governance Register
 layer: Expressive Layers
 status: Draft
-version: 0.4
+version: 0.5
 last_updated: 2026-07-09
 ---
 
@@ -207,6 +207,34 @@ no diagnosis, trauma inference, refusal inference, or consent inference is made
 consent boundary remains explicit
 ```
 
+### Female - Vulva Somatic Profile
+
+| Field | Assessment |
+|---|---|
+| Mechanical Result | Candidate; light consistency review pending |
+| Governance Result | Pending |
+| Blocking Defect | None identified yet |
+| Non-Blocking Open Questions | Regional / Whole-Body scope; Openness and Softening boundary with anatomy and Tissue-State Activation; Approach / Withdrawal placement; distinction from Female - Pelvic Floor Somatic Profile; fluid separation; consent treatment of guarding, bracing, and withdrawal |
+| Promotion Recommendation | Not yet assessed |
+| Decision Applied | Candidate / Draft v0.1 |
+| Review Date | 2026-07-09 |
+
+Candidate evidence:
+
+```text
+Female - Vulvar Lubrication Activation Profile is a Supported upstream source
+Female - Vulva Sensory Profile is a Supported sensory companion
+Female - Vulva is the primary somatic anchor
+fluid identity, production, volume, flow, taste, and odour remain outside the Somatic profile
+wetness and lubrication are treated as possible sensory context rather than determinants of body-state
+Openness and Softening are defined as body-state rather than anatomy or Tissue-State Activation
+Approach and Withdrawal remain candidate somatic orientations pending Emotional / Motivational replication
+shared states with Female - Pelvic Floor Somatic Profile are distinguished by anchor and route
+somatic-state terms remain controlled candidate values, not wikilinked nodes
+consent boundary rejects openness, softening, settling, approach, release, wetness, lubrication, pleasure, desire, and symbolic meaning as consent
+guarding, bracing, and withdrawal must not be ignored or treated as permission
+```
+
 ## First Validation Path
 
 ```text
@@ -225,13 +253,14 @@ This path is useful because the upstream Activation Profile is Supported, Local,
 Female - Vulvar Lubrication Activation Profile
 → Vaginal Fluid / Female - Vulva Fluid Profile / Female - Vaginal Canal Fluid Profile
 → Female - Vulva Sensory Profile
+→ Female - Vulva Somatic Profile
 → Sensory Valence Register
 → Pleasure Register / Desire Register / Symbolic Meaning Register downstream
 ```
 
-This path validates that Sensory Profiles can reference Fluid Layer content without redefining fluid identity, production, anatomical path, valence, desire, symbolic meaning, or consent.
+The Supported Sensory profile validates that Fluid Layer content can be perceived without being redefined. The Candidate Somatic profile now tests whether fluid-enabled sensory context can inform body-state without determining it.
 
-The upstream Activation profile and downstream Sensory profile now share the same Mirror boundary: traversal may be referenced, but Mirror is not a physiological or sensory mechanism.
+The upstream Activation profile and downstream Sensory profile share the same Mirror boundary: traversal may be referenced, but Mirror is not a physiological or sensory mechanism.
 
 ## Consent Boundary
 
@@ -245,6 +274,10 @@ Lubrication is not consent.
 Fluid surface presence is not consent.
 Taste is not consent.
 Odour is not consent.
+Openness is not consent.
+Softening is not consent.
+Approach is not consent.
+Release is not consent.
 Pleasure is not consent.
 Discomfort is not refusal by itself.
 Relief is not consent.
@@ -256,8 +289,10 @@ Authorial emphasis is not consent.
 Corpus usage is not consent.
 ```
 
+Guarding, bracing, or withdrawal do not alone define a complete formal consent state, but they must not be ignored, overridden, or treated as permission.
+
 ## Status
 
-Draft v0.4.
+Draft v0.5.
 
-This register has governed three Supported Expressive Profile pilots and now records the first explicit cross-layer alignment revision between a Supported Activation Profile and its downstream Sensory Profile.
+This register has governed three Supported Expressive Profile pilots and now tracks the first fluid-enabled Regional / Whole-Body Somatic Profile candidate.
