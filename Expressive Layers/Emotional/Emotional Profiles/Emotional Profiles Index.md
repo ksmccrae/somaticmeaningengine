@@ -11,7 +11,7 @@ document_type: Index
 layer: Expressive Layers
 expressive_sub_layer: Emotional / Motivational
 status: Draft
-version: 0.1
+version: 0.2
 last_updated: 2026-07-09
 ---
 
@@ -25,8 +25,8 @@ These profiles define affective or motivational orientation. They do not define 
 
 - [[Expressive Layer Framework]] — Draft v0.1
 - [[Emotional-Motivational Profile Template]] — Draft v0.1
-- [[Desire Register]] — Draft v0.1
-- [[Emotional Index]] — Draft v0.2
+- [[Desire Register]] — Draft v0.2
+- [[Emotional Index]] — Draft v0.3
 - [[Expressive Profile Validation & Promotion Register]] — Draft v0.6
 
 ## Current Profiles
@@ -59,6 +59,6 @@ Perform a light internal consistency pass on [[Female - Vulva Emotional-Motivati
 
 ## Status
 
-Draft v0.1.
+Draft v0.2.
 
-Initial index for Emotional / Motivational Profiles.
+Aligned with the updated [[Desire Register]] and Expressive validation governance.
