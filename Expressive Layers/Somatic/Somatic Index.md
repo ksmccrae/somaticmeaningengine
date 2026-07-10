@@ -10,7 +10,7 @@ document_type: Index
 layer: Expressive Layers
 expressive_sub_layer: Somatic
 status: Draft
-version: 0.3
+version: 0.4
 last_updated: 2026-07-09
 ---
 
@@ -24,11 +24,11 @@ Somatic records describe how experience is held or organized in the body as a fe
 
 - [[Expressive Layer Framework]] — Draft v0.1
 - [[Somatic Profile Template]] — Draft v0.2
-- [[Expressive Profile Validation & Promotion Register]] — Draft v0.5
+- [[Expressive Profile Validation & Promotion Register]] — Draft v0.6
 
 ## Current Profile Indexes
 
-- [[Somatic Profiles Index]] — Draft v0.3
+- [[Somatic Profiles Index]] — Draft v0.4
 
 ## Current Profiles
 
@@ -93,21 +93,17 @@ Somatic Profile
 = whole-body, posture-level, body-state, or embodied orientation
 ```
 
-Examples:
+## Somatic and Motivational Boundary
 
 ```text
-Female - Pelvic Floor Sensory Profile
-= pressure, pulsing, tension, release
+Somatic approach / withdrawal
+= bodily orientation
 
-Female - Pelvic Floor Somatic Profile
-= bracing, holding, support, steadiness, letting go, collapse
-
-Female - Vulva Sensory Profile
-= wetness, surface presence, texture, warmth, pressure, fullness, flow, taste, odour
-
-Female - Vulva Somatic Profile
-= openness, guarding, bracing, softening, settling, containment, approach, withdrawal, grounding, release
+Motivational toward / away
+= affective direction governed downstream
 ```
+
+The two may align, conflict, or occur independently.
 
 ## Fluid Boundary
 
@@ -125,7 +121,7 @@ Somatic Profile
 = body-state or embodied orientation
 ```
 
-Wetness, lubrication, and fluid surface presence may inform experience but do not determine somatic state, valence, desire, symbolic meaning, or consent.
+Wetness, lubrication, and fluid surface presence may inform experience but do not determine somatic state, valence, motivation, symbolic meaning, or consent.
 
 ## Relationship Pattern
 
@@ -143,6 +139,14 @@ Somatic Profile MAY_BE_ANNOTATED_IN Corpus Annotation
 
 Relationship names remain draft until repeated Somatic Profile use validates them.
 
+## Downstream Vulvar Route
+
+```text
+Female - Vulva Somatic Profile
+→ Female - Vulva Emotional-Motivational Profile
+→ Female - Vulva Symbolic Profile
+```
+
 ## Candidate Future Profiles
 
 | Planned Profile | Source | Purpose |
@@ -152,6 +156,6 @@ Relationship names remain draft until repeated Somatic Profile use validates the
 
 ## Status
 
-Draft v0.3.
+Draft v0.4.
 
-Updated after creation of [[Female - Vulva Somatic Profile]] as the first fluid-enabled Regional / Whole-Body Somatic candidate.
+Aligned with the complete Candidate vulvar route through Emotional / Motivational and Symbolic profiles.
