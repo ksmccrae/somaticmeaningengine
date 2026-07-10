@@ -11,8 +11,8 @@ document_type: Register
 layer: Expressive Layers
 expressive_sub_layer: Emotional / Motivational
 status: Draft
-version: 0.1
-last_updated: 2026-07-01
+version: 0.2
+last_updated: 2026-07-09
 ---
 
 # Desire Register
@@ -21,11 +21,9 @@ last_updated: 2026-07-01
 
 This register defines Desire as a downstream affective and motivational orientation in the Somatic Meaning Engine.
 
-Desire is not an activation process, not arousal, not lubrication, not pleasure, not symbolic meaning, not consent, not authorial language, and not corpus usage.
+Desire is not an activation process, not arousal, not lubrication, not pleasure, not somatic approach, not symbolic meaning, not consent, not authorial language, and not corpus usage.
 
-It provides a governed place for wanting, pull, approach, appetite, longing, invitation, refusal, suppression, redirection, ambivalence, or orientation toward contact, continuation, intimacy, object, person, idea, or experience.
-
----
+It provides a governed place for wanting, non-wanting, pull, motivational approach or movement away, appetite, longing, curiosity, aversion, suppression, redirection, ambivalence, or orientation toward contact, continuation, intimacy, object, person, idea, or experience.
 
 ## Architectural Placement
 
@@ -36,11 +34,17 @@ Activation Layer
 Sensory Layer
 → defines perceived sensation
 
-Pleasure Register
-→ defines sensory valence
+Somatic Layer
+→ defines body-state or embodied orientation
+
+Sensory Valence / Pleasure Registers
+→ define appraisal or valence
+
+Emotional / Motivational Profile
+→ defines route-specific affective or motivational orientation
 
 Desire Register
-→ defines motivational or affective orientation
+→ governs desire-related orientation terms and boundaries
 
 Meaning / Symbolic Layer
 → defines interpretation or significance
@@ -52,16 +56,20 @@ Corpus
 → records specific usage
 ```
 
----
-
 ## Core Distinction
 
 ```text
 Arousal
 = physiological activation state
 
+Sensation
+= what is perceived
+
+Somatic approach / withdrawal
+= bodily orientation
+
 Pleasure
-= valence applied to perceived sensation
+= positive valence applied to experience
 
 Desire
 = motivational or affective orientation toward contact, continuation, intimacy, object, person, idea, or experience
@@ -73,9 +81,11 @@ Pleasure may occur without desire.
 
 Desire may occur without pleasure.
 
-Desire may later receive symbolic interpretation, but it does not define symbolic meaning by itself.
+Somatic approach may occur without desire.
 
----
+Somatic withdrawal may coexist with desire, ambivalence, non-wanting, or conflict.
+
+Desire may later receive symbolic interpretation, but it does not define symbolic meaning by itself.
 
 ## Boundary Rules
 
@@ -87,6 +97,7 @@ activation mechanics
 fluid production, release, or surface presence
 mirror correspondence
 sensory perception
+somatic body-state
 pleasure or discomfort as valence
 consent state
 symbolic meaning
@@ -100,27 +111,34 @@ Desire is not lubrication.
 
 Desire is not pleasure.
 
+Desire is not somatic openness or approach.
+
 Desire is not consent.
 
 Desire is not symbolic meaning.
-
----
 
 ## Consent Boundary
 
 Consent must remain separately governable.
 
-Physiological arousal, lubrication, pleasure, or desire must never be treated as consent by default.
+Physiological arousal, lubrication, pleasure, somatic state, or desire must never be treated as consent by default.
 
 ```text
 Arousal does not imply desire.
 Desire does not imply consent.
 Pleasure does not imply consent.
 Lubrication does not imply consent.
+Somatic openness does not imply consent.
+Curiosity does not imply consent.
+Ambivalence does not imply consent.
+Indifference does not imply consent.
+Longing does not imply present willingness or consent.
 Symbolic meaning does not imply consent.
 ```
 
----
+Non-wanting and aversion must not be ignored, overridden, or treated as permission.
+
+Refusal, where modelled, must remain distinct from merely inferred body-state or motivation and must be respected as its own communicative or consent-relevant act.
 
 ## Candidate Inputs
 
@@ -128,16 +146,23 @@ Desire may be referenced downstream from:
 
 | Source Layer | Candidate Source | Relationship |
 |---|---|---|
-| Emotional Layer | Emotional Profile | May shape affective orientation |
+| Emotional Layer | Emotional / Motivational Profile | Defines route-specific affective orientation |
+| Somatic Layer | Somatic Profile | May provide body-state context without defining desire |
 | Sensory Layer | Sensory Profile | May provide perceived sensation that desire orients around |
-| Pleasure Register | Pleasure Register | May interact with positive valence without becoming pleasure |
+| Sensory Valence Layer | Sensory Valence Register / Pleasure Register | May interact with appraisal without becoming desire |
 | Activation Layer | Activation Profile | May provide physiological context without defining desire |
 | Mirror Layer | Mirror Profile | May provide a route that later becomes motivationally salient |
 | Corpus | Corpus Annotation | May record situated desire in a specific work |
 
 These are candidate relationships only. This register does not define those source layers.
 
----
+## Current Route-Specific Profile
+
+| Profile | Context | Status |
+|---|---|---|
+| [[Female - Vulva Emotional-Motivational Profile]] | Vulvar Activation → Sensory → Somatic route | Candidate / Draft v0.1 |
+
+The route-specific profile applies this register without making desire inherent to vulvar anatomy, lubrication, wetness, pleasure, openness, approach, or any other upstream state.
 
 ## Candidate Outputs
 
@@ -145,18 +170,19 @@ Desire may later be referenced by:
 
 | Downstream Record | Purpose |
 |---|---|
-| Symbolic Meaning Register | May interpret desire symbolically without defining desire here |
+| [[Female - Vulva Symbolic Profile]] | May interpret route-specific motivation without redefining it |
+| [[Symbolic Meaning Register]] | May interpret desire symbolically without defining desire here |
 | Authorial Term Register | May govern how desire is described, withheld, displaced, or reframed |
-| Corpus Annotation | May record desire, refusal, ambivalence, suppression, or redirection in a work |
-
----
+| Corpus Annotation | May record desire, non-wanting, ambivalence, suppression, or redirection in a work |
 
 ## Relationship Statements
 
 ```text
 Desire Register DEFINES_AFFECTIVE_ORIENTATION Desire
-Desire Register MAY_REFERENCE Emotional Profile
+Desire Register MAY_GOVERN Emotional / Motivational Profile
 Desire Register MAY_REFERENCE Sensory Profile
+Desire Register MAY_REFERENCE Somatic Profile
+Desire Register MAY_REFERENCE Sensory Valence Register
 Desire Register MAY_REFERENCE Pleasure Register
 Desire Register MAY_BE_CONTEXTUALIZED_BY Activation Profile
 Desire Register MAY_BE_ROUTED_BY Mirror Profile
@@ -165,37 +191,39 @@ Desire Register MAY_BE_USED_BY Authorial Term Register
 Desire Register MAY_BE_ANNOTATED_IN Corpus Annotation
 ```
 
----
+Relationship names remain draft pending repeated Emotional / Motivational Profile use.
 
-## Activation Boundary Example
+## Current Route Example
 
 ```text
 Female - Vulvar Lubrication Activation Profile
 → may enable tissue and fluid state changes
 
-Pleasure Register
-→ may define positive valence if perception is appraised that way
+Female - Vulva Sensory Profile
+→ may define perceived wetness, texture, warmth, pressure, fullness, or flow
+
+Female - Vulva Somatic Profile
+→ may define openness, guarding, bracing, softening, settling, containment, approach, or withdrawal
+
+Female - Vulva Emotional-Motivational Profile
+→ may define wanting, non-wanting, ambivalence, aversion, curiosity, indifference, suppression, redirection, or longing
 
 Desire Register
-→ may define motivational orientation if desire is present
+→ governs motivational distinctions and boundaries
 ```
 
-The Activation Profile must not define desire directly.
-
----
+No upstream record may define desire directly.
 
 ## Review Questions
 
-1. Should Desire remain inside Emotional, or should Motivational become a separate expressive sublayer?
-2. What controlled orientation terms are required before baseline?
-3. How should desire, refusal, ambivalence, suppression, and redirection be modelled without becoming authorial prose?
-4. How should Desire remain distinct from Arousal, Pleasure, Consent, and Symbolic Meaning?
-5. Which Activation profiles should be allowed to reference this register as a downstream candidate?
-
----
+1. Should Motivational become a separate expressive sublayer after further replication?
+2. Which orientation terms should become governed nodes rather than controlled values?
+3. How should refusal remain distinct from non-wanting, aversion, and consent communication?
+4. How should motivational approach / movement away remain distinct from Somatic approach / withdrawal?
+5. Which additional routes should validate the Emotional / Motivational Profile pattern?
 
 ## Status
 
-Draft v0.1.
+Draft v0.2.
 
-This register is a scaffold for downstream Activation validation. It is not yet validated or baseline.
+Updated to govern the first route-specific Emotional / Motivational Profile while preserving separation from physiology, sensation, somatic state, valence, symbolic meaning, and consent.
