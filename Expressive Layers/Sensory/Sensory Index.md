@@ -10,8 +10,8 @@ document_type: Index
 layer: Expressive Layers
 expressive_sub_layer: Sensory
 status: Draft
-version: 0.4
-last_updated: 2026-07-03
+version: 0.5
+last_updated: 2026-07-09
 ---
 
 # Sensory Index
@@ -24,7 +24,7 @@ Sensory records describe what is perceived, not what biologically causes it and 
 
 - [[Expressive Layer Framework]] — Draft v0.1
 - [[Sensory Profile Template]] — Draft v0.2
-- [[Expressive Profile Validation & Promotion Register]] — Draft v0.3
+- [[Expressive Profile Validation & Promotion Register]] — Draft v0.4
 
 ## Current Registers
 
@@ -35,14 +35,14 @@ Sensory records describe what is perceived, not what biologically causes it and 
 
 ## Current Profile Indexes
 
-- [[Sensory Profiles Index]] — Draft v0.5
+- [[Sensory Profiles Index]] — Draft v0.6
 
 ## Current Profiles
 
 | Profile | Source | Purpose | Status |
 |---|---|---|---|
 | [[Female - Pelvic Floor Sensory Profile]] | [[Female - Pelvic Floor Contraction Activation Profile]] | First fluid-independent Local sensory pilot | Supported / Draft v0.3 |
-| [[Female - Vulva Sensory Profile]] | [[Female - Vulvar Lubrication Activation Profile]] | First fluid-involving Regional sensory pilot | Supported / Draft v0.2 |
+| [[Female - Vulva Sensory Profile]] | [[Female - Vulvar Lubrication Activation Profile]] | First fluid-involving Regional sensory pilot | Supported / Draft v0.3 |
 
 ## Scope
 
@@ -126,6 +126,18 @@ Sensory Profile MAY_BE_ANNOTATED_IN Corpus Annotation
 
 Relationship names remain draft until repeated Sensory Profile use validates them.
 
+## Current Cross-Layer Alignment
+
+```text
+Female - Vulvar Lubrication Activation Profile
+→ Tissue-State Activation + Fluid Activation
+→ Mirror traversal referenced only
+→ Female - Vulva Sensory Profile
+→ Mirror traversal referenced only
+```
+
+The upstream Activation and downstream Sensory profiles now use the same Mirror boundary.
+
 ## Candidate Future Profiles
 
 | Planned Profile | Source | Purpose |
@@ -135,6 +147,6 @@ Relationship names remain draft until repeated Sensory Profile use validates the
 
 ## Status
 
-Draft v0.4.
+Draft v0.5.
 
-Updated after promotion of the first fluid-involving Regional Sensory Profile.
+Updated after cross-layer alignment of the Vulvar Lubrication Activation and Vulva Sensory profiles.
