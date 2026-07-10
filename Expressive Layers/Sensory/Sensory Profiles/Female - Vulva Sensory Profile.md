@@ -11,7 +11,7 @@ node_type: Sensory Profile
 layer: Expressive Layers
 expressive_sub_layer: Sensory
 status: Draft
-version: 0.2
+version: 0.3
 sensory_scope: Regional
 primary_sensory_anchor: Female - Vulva
 validation_status: Supported
@@ -109,11 +109,11 @@ Sensory-quality terms are controlled candidate values. They are not standalone o
 | Duration | Brief / Sustained / Recurrent / Variable | Does not define temporal structure unless linked to a Temporal profile |
 | Surface Relation | Trace / Local / Surface / Adjacent / Externally Present / Variable | Perceived relationship only; Fluid Profile owns anatomical fluid relationship |
 
-## Upstream Governance Note
+## Upstream Alignment Note
 
-The upstream [[Female - Vulvar Lubrication Activation Profile]] currently remains a Supported Activation Profile. This Sensory Profile treats [[Female - Vulva to Female - Clitoral Complex Mirror Profile]] as traversal context only and does not reproduce Mirror-Route Activation as sensory mechanism.
+[[Female - Vulvar Lubrication Activation Profile]] now treats [[Female - Vulva to Female - Clitoral Complex Mirror Profile]] as contextual traversal only through MAY_ENGAGE_MIRROR_ROUTE.
 
-Any later revision to the upstream Activation Profile should preserve this Expressive boundary.
+The upstream Activation profile no longer treats Mirror traversal as an Activation component, preserving the same boundary used here.
 
 ## Valence Boundary
 
@@ -210,13 +210,12 @@ Female - Vulva Sensory Profile MAY_BE_ANNOTATED_IN Corpus Annotation
 
 1. Should Wetness, Surface Presence, Texture, Flow, Odour, and Taste become governed Sensory Quality nodes after repeated use?
 2. Does Surface Relation duplicate Fluid Profile relationships, or does it correctly record perceived surface relation only?
-3. Does mirror route context remain traversal-only without implying arousal, pleasure, or sensory causation?
+3. Does Mirror-route context remain traversal-only without implying arousal, pleasure, or sensory causation?
 4. Is [[Sensory Valence Register]] sufficient for first-pass non-pleasure valence routing in fluid-involving contexts?
 5. Does this profile avoid treating wetness, lubrication, or fluid presence as consent?
-6. Should the upstream [[Female - Vulvar Lubrication Activation Profile]] be reviewed later for Mirror-Route component consistency with newer Activation governance?
 
 ## Status
 
-Draft v0.2.
+Draft v0.3.
 
-Supported fluid-involving Sensory Profile pilot. Promoted after light internal consistency review confirmed that Fluid Layer content is referenced without redefining fluid identity, fluid production, activation mechanics, valence, pleasure, desire, symbolic meaning, authorial language, corpus usage, or consent.
+Supported fluid-involving Sensory Profile pilot. Updated after the upstream Activation profile was aligned with current Mirror traversal governance.
