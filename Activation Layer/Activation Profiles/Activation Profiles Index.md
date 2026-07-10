@@ -9,8 +9,8 @@ file_class: Document
 document_type: Index
 layer: Activation Layer
 status: Draft
-version: 1.0
-last_updated: 2026-07-03
+version: 1.1
+last_updated: 2026-07-09
 ---
 
 # Activation Profiles Index
@@ -19,13 +19,13 @@ last_updated: 2026-07-03
 
 - [[Activation Layer Framework]] — Validated v0.6
 - [[Activation Profile Template]] — Validated v0.6
-- [[Activation Profile Validation & Promotion Register]] — Draft v0.6
+- [[Activation Profile Validation & Promotion Register]] — Draft v0.7
 
 ## Current Profiles
 
 | Activation Profile | Primary Anchor | Components | Scope | Fluid | Mirror | Validation | Document |
 |---|---|---|---|---|---|---|---|
-| [[Female - Vulvar Lubrication Activation Profile]] | [[Female - Vulva]] | Tissue-State; Fluid; Mirror-Route | Regional | [[Vaginal Fluid]] | [[Female - Vulva to Female - Clitoral Complex Mirror Profile]] | Supported | Draft v0.3 |
+| [[Female - Vulvar Lubrication Activation Profile]] | [[Female - Vulva]] | Tissue-State; Fluid | Regional | [[Vaginal Fluid]] | [[Female - Vulva to Female - Clitoral Complex Mirror Profile]] referenced only | Supported | Draft v0.4 |
 | [[Female - Paraurethral Glandular Release Activation Profile]] | [[Female - Skene's Glands]] | Fluid | Regional | [[Paraurethral Glandular Fluid]] | [[Female - Skene's Glands to Female - Urethral Opening Mirror Profile]] referenced only | Supported | Draft v0.2 |
 | [[Female - Pelvic Floor Contraction Activation Profile]] | [[Female - Pelvic Floor]] | Motor / Kinetic | Local | None required | [[Female - Perineum to Female - Pelvic Floor Mirror Profile]] referenced only | Supported | Draft v0.3 |
 | [[Female - Menstruation Activation Profile]] | [[Female - Uterus]] | Hormonal / Cyclical; Tissue-State; Fluid | Regional | [[Menstrual Fluid]] | None required | Supported | Draft v0.3 |
@@ -52,14 +52,15 @@ Supported glandular Fluid Activation profile
 Supported fluid-independent Motor / Kinetic profile
 Candidate cycle-regulation Hormonal / Cyclical profile
 Local and Regional scope
-profiles with and without Fluid or Mirror dependencies
+profiles with and without Fluid or Mirror context
+Mirror traversal treated as contextual graph traversal rather than Activation component
 ```
 
 ## Current Promotion State
 
 | Profile | Result |
 |---|---|
-| Female - Vulvar Lubrication | Supported after focused promotion audit |
+| Female - Vulvar Lubrication | Supported after focused promotion audit; post-promotion consistency revision removed Mirror-Route Activation as a component, retained Mirror traversal through MAY_ENGAGE_MIRROR_ROUTE, and removed viscosity alteration pending stronger process-specific evidence |
 | Female - Paraurethral Glandular Release | Supported after focused promotion audit; Mirror traversal removed as a component, autonomic influence retained as modulator, viscosity alteration removed, and vestibular gland openings downgraded to adjacent context |
 | Female - Pelvic Floor Contraction | Supported after focused promotion audit; reclassified to Motor / Kinetic Activation, Tissue-State and Mirror-Route components removed, Local scope retained |
 | Female - Menstruation | Supported after focused promotion audit |
@@ -86,4 +87,6 @@ Resolve [[Female - Menstrual Cycle Regulation Activation Profile]] after the com
 
 ## Status
 
-Draft v1.0.
+Draft v1.1.
+
+Updated after the post-promotion consistency review of [[Female - Vulvar Lubrication Activation Profile]].
