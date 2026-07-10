@@ -9,15 +9,15 @@ file_class: Document
 document_type: Governance Register
 layer: Expressive Layers
 status: Draft
-version: 0.3
-last_updated: 2026-07-03
+version: 0.4
+last_updated: 2026-07-09
 ---
 
 # Expressive Profile Validation & Promotion Register
 
 ## Purpose
 
-This register defines evidence required to move an Expressive Profile from Candidate to Supported.
+This register defines evidence required to move an Expressive Profile from Candidate to Supported and records later cross-layer alignment revisions.
 
 ```text
 Document status = Draft / Validated / Baseline
@@ -119,7 +119,7 @@ MAY_BE_USED_BY
 MAY_BE_ANNOTATED_IN
 ```
 
-## Promotion Decisions
+## Promotion and Alignment Decisions
 
 ### Female - Pelvic Floor Sensory Profile
 
@@ -153,12 +153,13 @@ consent boundary remains explicit
 | Field | Assessment |
 |---|---|
 | Mechanical Result | Pass |
-| Governance Result | Pass with upstream note |
+| Governance Result | Pass |
 | Blocking Defect | None |
-| Non-Blocking Open Questions | Sensory-quality value governance; surface-relation perception vs Fluid Profile relationship; taste/odour governance; future Discomfort Register; upstream Vulvar Lubrication mirror-component consistency review |
-| Promotion Recommendation | Promote to Supported |
-| Decision Applied | Supported / Draft v0.2 |
-| Review Date | 2026-07-03 |
+| Non-Blocking Open Questions | Sensory-quality value governance; surface-relation perception vs Fluid Profile relationship; taste/odour governance; future Discomfort Register |
+| Promotion Recommendation | Retain Supported |
+| Decision Applied | Supported / Draft v0.3 |
+| Original Review Date | 2026-07-03 |
+| Cross-Layer Alignment Date | 2026-07-09 |
 
 Evidence:
 
@@ -172,6 +173,7 @@ Female - Vulva Fluid Profile and Female - Vaginal Canal Fluid Profile provide co
 wetness, surface presence, flow, taste, and odour remain sensory qualities, not fluid identity or production mechanics
 surface relation records perception only and does not replace Fluid Profile anatomical relationships
 Mirror route remains contextual traversal only
+upstream Female - Vulvar Lubrication Activation Profile now uses the same Mirror boundary and no longer treats Mirror traversal as an Activation component
 Sensory Valence Register and Pleasure Register remain downstream only
 Desire, Symbolic Meaning, Authorial, and Corpus systems remain downstream
 sensory-quality terms remain controlled candidate values, not wikilinked nodes
@@ -229,6 +231,8 @@ Female - Vulvar Lubrication Activation Profile
 
 This path validates that Sensory Profiles can reference Fluid Layer content without redefining fluid identity, production, anatomical path, valence, desire, symbolic meaning, or consent.
 
+The upstream Activation profile and downstream Sensory profile now share the same Mirror boundary: traversal may be referenced, but Mirror is not a physiological or sensory mechanism.
+
 ## Consent Boundary
 
 ```text
@@ -254,6 +258,6 @@ Corpus usage is not consent.
 
 ## Status
 
-Draft v0.3.
+Draft v0.4.
 
-This register has now governed three Supported Expressive Profile pilots: two Sensory Profiles and one Somatic Profile, including the first fluid-involving Regional Sensory Profile.
+This register has governed three Supported Expressive Profile pilots and now records the first explicit cross-layer alignment revision between a Supported Activation Profile and its downstream Sensory Profile.
