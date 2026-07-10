@@ -11,7 +11,7 @@ document_type: Index
 layer: Expressive Layers
 expressive_sub_layer: Somatic
 status: Draft
-version: 0.3
+version: 0.4
 last_updated: 2026-07-09
 ---
 
@@ -19,16 +19,16 @@ last_updated: 2026-07-09
 
 This index tracks Somatic Profiles in the Somatic Meaning Engine.
 
-Somatic Profiles define whole-body, posture-level, body-state, or embodied-orientation experience. They do not define localized sensory qualities by themselves, activation mechanics, diagnosis, sensory valence, pleasure, desire, symbolic meaning, authorial language, corpus truth, or consent.
+Somatic Profiles define whole-body, posture-level, body-state, or embodied-orientation experience. They do not define localized sensory qualities by themselves, activation mechanics, diagnosis, sensory valence, motivation, symbolic meaning, authorial language, corpus truth, or consent.
 
 ## Governing Documents
 
 - [[Expressive Layer Framework]] — Draft v0.1
 - [[Somatic Profile Template]] — Draft v0.2
-- [[Somatic Index]] — Draft v0.3
+- [[Somatic Index]] — Draft v0.4
 - [[Sensory Profiles Index]] — Draft v0.6
 - [[Sensory Valence Register]] — Draft v0.1
-- [[Expressive Profile Validation & Promotion Register]] — Draft v0.5
+- [[Expressive Profile Validation & Promotion Register]] — Draft v0.6
 
 ## Current Profiles
 
@@ -41,15 +41,22 @@ Somatic Profiles define whole-body, posture-level, body-state, or embodied-orien
 
 ```text
 first Supported Somatic Profile pilot
-upstream source is a Supported Motor / Kinetic Activation Profile
-first fluid-enabled Regional / Whole-Body Somatic Profile candidate created
+first fluid-enabled Regional / Whole-Body Somatic Profile candidate
 fluid context is mediated through Activation and Sensory records rather than defined as somatic state
-candidate somatic-state terms remain plain text values, not standalone nodes
-Somatic layer is separated from localized Sensory Profile content
-Sensory Valence Register provides downstream valence routing
-Pleasure, Desire, Symbolic Meaning, Authorial, and Corpus systems remain downstream
-Consent boundary remains explicit
+candidate somatic-state terms remain plain text values
+Somatic layer remains separate from Sensory, Valence, Emotional / Motivational, and Symbolic records
+consent boundary remains explicit
 ```
+
+## Current Vulvar Downstream Route
+
+```text
+Female - Vulva Somatic Profile
+→ Female - Vulva Emotional-Motivational Profile
+→ Female - Vulva Symbolic Profile
+```
+
+The downstream Emotional / Motivational and Symbolic profiles may reference Somatic state but do not redefine it.
 
 ## Candidate Future Profiles
 
@@ -60,15 +67,11 @@ Consent boundary remains explicit
 
 ## Somatic State Governance Note
 
-Somatic states such as bracing, holding, support, release, letting go, steadiness, collapse, grounding, guarding, openness, softening, settling, containment, approach, and withdrawal are currently treated as controlled candidate values.
+Bracing, Holding, Support, Release, Letting Go, Steadiness, Collapse, Grounding, Guarding, Openness, Softening, Settling, Containment, Approach, and Withdrawal are controlled candidate values.
 
 They are not standalone ontology nodes unless promoted later.
 
-Do not wikilink somatic-state values unless a governed Somatic State node exists.
-
 ## Fluid Boundary Note
-
-A fluid-enabled source route does not make fluid qualities into somatic states.
 
 ```text
 Fluid Entity / Fluid Profile
@@ -78,7 +81,7 @@ Activation Profile
 → physiological tissue/fluid process
 
 Sensory Profile
-→ perceived wetness, surface presence, texture, flow, taste, or odour
+→ perceived fluid-related qualities
 
 Somatic Profile
 → body-state or embodied orientation
@@ -86,10 +89,10 @@ Somatic Profile
 
 ## Next Action
 
-Perform a light internal consistency pass on [[Female - Vulva Somatic Profile]], especially Regional / Whole-Body scope, Openness and Softening boundaries, Approach / Withdrawal placement, differentiation from [[Female - Pelvic Floor Somatic Profile]], fluid separation, and consent governance.
+Perform a light internal consistency pass on [[Female - Vulva Somatic Profile]], especially scope, Openness and Softening boundaries, Approach / Withdrawal placement, differentiation from [[Female - Pelvic Floor Somatic Profile]], fluid separation, and consent governance.
 
 ## Status
 
-Draft v0.3.
+Draft v0.4.
 
-Updated after creation of the first fluid-enabled Regional / Whole-Body Somatic Profile candidate.
+Aligned with the complete Candidate vulvar route through Emotional / Motivational and Symbolic profiles.
