@@ -11,7 +11,7 @@ document_type: Index
 layer: Expressive Layers
 expressive_sub_layer: Symbolic
 status: Draft
-version: 0.1
+version: 0.2
 last_updated: 2026-07-09
 ---
 
@@ -25,8 +25,8 @@ Symbolic Profiles define reusable interpretation or significance downstream from
 
 - [[Expressive Layer Framework]] — Draft v0.1
 - [[Symbolic Profile Template]] — Draft v0.1
-- [[Symbolic Meaning Register]] — Draft v0.1
-- [[Symbolic Index]] — Draft v0.2
+- [[Symbolic Meaning Register]] — Draft v0.2
+- [[Symbolic Index]] — Draft v0.3
 - [[Expressive Profile Validation & Promotion Register]] — Draft v0.6
 
 ## Current Profiles
@@ -39,6 +39,7 @@ Symbolic Profiles define reusable interpretation or significance downstream from
 
 ```text
 first route-specific Symbolic Profile candidate
+Meaning Layer register remains canonical governance bridge
 symbolic interpretation remains downstream from all source layers
 candidate interpretations are optional rather than inherent truths
 shared words such as Containment and Release remain typed by layer
@@ -59,6 +60,6 @@ Perform a light internal consistency pass on [[Female - Vulva Symbolic Profile]]
 
 ## Status
 
-Draft v0.1.
+Draft v0.2.
 
-Initial index for Symbolic Profiles.
+Aligned with [[Symbolic Meaning Register]] Draft v0.2 and Expressive validation governance.
