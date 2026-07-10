@@ -9,15 +9,15 @@ file_class: Document
 document_type: Governance Register
 layer: Activation Layer
 status: Draft
-version: 0.6
-last_updated: 2026-07-03
+version: 0.7
+last_updated: 2026-07-09
 ---
 
 # Activation Profile Validation & Promotion Register
 
 ## Purpose
 
-This register defines evidence required to move an Activation Profile from Candidate to Supported.
+This register defines evidence required to move an Activation Profile from Candidate to Supported and records later consistency revisions where governance evolves.
 
 ```text
 Document status = Draft / Validated / Baseline
@@ -39,7 +39,7 @@ Profile validation status = Candidate / Supported / Blocked
 | Adjacency accuracy | Proximity and output context do not imply direct participation |
 | Consent boundary | Physiological response is not treated as consent |
 | Wikilink integrity | Existing nodes resolve; candidate-only nodes remain plain text |
-| Audit evidence | Focused audit finds no blocking defect |
+| Audit evidence | Focused audit or light governed consistency review finds no blocking defect |
 | Replicability | Pattern is demonstrated by a contrasting profile |
 | Question review | Open questions are blocking or non-blocking |
 
@@ -59,18 +59,37 @@ unresolved mechanical drift
 
 Missing downstream Sensory, Authorial, Corpus, candidate Propagation, or optional Fluid Profiles are non-blocking unless the Activation Profile depends on them.
 
-## Promotion Decisions
+## Promotion and Consistency Decisions
 
 ### Female - Vulvar Lubrication Activation Profile
 
 | Field | Assessment |
 |---|---|
-| Mechanical Result | Pass |
-| Governance Result | Pass |
-| Blocking Defect | None |
-| Promotion Recommendation | Promote to Supported |
-| Decision Applied | Supported / Draft v0.3 |
-| Review Date | 2026-07-02 |
+| Original Mechanical Result | Pass |
+| Original Governance Result | Pass |
+| Post-Promotion Consistency Result | Pass after revision |
+| Blocking Defect | None after Mirror-component and fluid-property corrections |
+| Non-Blocking Open Questions | Tissue-State vs Fluid component distinction after further replication; future Propagation handoff; autonomic governance; evidence threshold for viscosity alteration |
+| Promotion Recommendation | Retain Supported |
+| Decision Applied | Supported / Draft v0.4 |
+| Original Review Date | 2026-07-02 |
+| Consistency Review Date | 2026-07-09 |
+
+Evidence:
+
+```text
+Female - Vulva remains the primary external anatomical anchor
+Composite Activation remains justified by Tissue-State Activation and Fluid Activation
+Regional scope remains supported by direct vulvar, vestibular, vaginal-canal, and vaginal-opening participation
+Mirror-Route Activation removed as a physiological component
+Mirror traversal retained only through MAY_ENGAGE_MIRROR_ROUTE
+Female - Clitoral Complex remains Mirror context rather than direct participation
+Vaginal Fluid identity and local Fluid Profiles remain defined in the Fluid Layer
+Volume, Flow, and Surface Presence remain directly alterable properties
+Viscosity alteration removed pending stronger process-specific evidence
+Female - Vulva Sensory Profile now provides governed downstream perception without redefining activation
+consent boundary explicitly rejects lubrication, wetness, volume, flow, surface presence, pleasure, desire, and symbolic meaning as consent
+```
 
 ### Female - Paraurethral Glandular Release Activation Profile
 
@@ -171,6 +190,17 @@ shared context does not create circular dependency
 
 Menstruation is Supported independently of the Candidate status of the broader Cycle Regulation profile.
 
+## Fluid and Mirror Validation State
+
+```text
+Fluid Activation may coexist with Tissue-State Activation in a Composite Activation Profile
+Fluid identity remains in the Fluid Layer
+Volume, Flow, and Surface Presence may be altered where process evidence supports them
+Viscosity requires process-specific support rather than inheritance from the Fluid Entity alone
+Mirror traversal may be referenced through MAY_ENGAGE_MIRROR_ROUTE
+Mirror traversal is not a physiological Activation component
+```
+
 ## Motor / Kinetic Validation State
 
 ```text
@@ -183,6 +213,6 @@ future contrasting Motor / Kinetic profile would strengthen replication but is n
 
 ## Status
 
-Draft v0.6.
+Draft v0.7.
 
-This register has now governed four completed Candidate-to-Supported promotions, including the first Hormonal / Cyclical active-phase profile, the first glandular Fluid Activation profile, and the first Motor / Kinetic Activation profile.
+This register has governed four completed Candidate-to-Supported promotions and now records the first post-promotion consistency revision driven by later Mirror and Fluid-property governance.
